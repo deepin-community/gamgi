@@ -1,0 +1,583 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Changelogs: GAMGI 0.07</title>
+<link rel="icon" type="image/png" href="../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../css/board.css"/>
+</head>
+
+<body>
+
+<div class="board">
+<div>GAMGI 0.08</div><div>&nbsp;</div>
+</div>
+
+<div class="contents">
+
+Finished and tested gtk_light_modify. This 
+completes the create, modify and remove mechanisms 
+for atoms, bonds, cells, lights, and layers, plus
+create, remove mechanims for windows and remove 
+mechanims for molecules. gtk_select mechanisms
+are partly implemented for all GAMGI objects but 
+need to be rewritten and extended  after GTK2.0
+comes out.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>gtk_light_modify fully implemented.</li>
+<li>gtk_cell_modify improved.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Add documentation.</li>
+<li>Clean bugs.</li>
+<li>Clean data.</li>
+<li>Write gtk_cell_link.</li>
+<li>Add XML support.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.07.31</div><div>&nbsp;</div>
+</div>
+
+<div class="contents">
+
+Lots of gtk changes. Next version should be GAMGI 0.08
+
+<h3>What is new:</h3>
+
+<ul>
+<li>gtk_layer_modify fully implemented.</li>
+<li>gtk_layer_create improved.</li>
+<li>gtk_light_create rewritten.</li>
+<li>Working on gtk_light_modify.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Finish gtk_light_modify.c.</li>
+<li>Add documentation.</li>
+<li>Clean bugs.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.07.30</div><div>&nbsp;</div>
+</div>
+
+<div class="contents">
+
+Cleaning and documentation.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Makefiles cleaned: files are not included in subsets
+anymore and are just listed in alphabetic order instead.
+Files on each directory are thus compiled in the same 
+order as they appear when listed with the ls command.</li>
+<li>Added documentation to phys_cell.c.</li>
+<li>gtk_layer_remove updated, so layers can be selected
+and removed with a pop up menu, just like lights.</li>
+<li>Cleaned and renamed gtk_layer_create, gtk_gamgi_reset, 
+gtk_gamgi_exit, gtk_window_create and main_convert files.</li>
+<li>Corrected a mistake on atom_modify.c</li>
+<li>Removed a memory leak: GtkStyles were copied but not removed,
+gtk_style_unref (style) to the rescue.</li>
+<li>Just started gtk_layer_modify.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Finish light_modify.c.</li>
+<li>Implement layer_modify.c.</li>
+<li>Clean cell_modify.c a bit more.</li>
+<li>Improve comments and other documentation in phys_cell*.c files.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.07.29</div><div>&nbsp;</div>
+</div>
+
+<div class="contents">
+
+changed gtk_remove_* functions to new style.
+cleaned and improved gtk_modify_* functions.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>gtk_atom_remove, gtk_bond_remove, gtk_molecule_remove,
+gtk_cell_remove, gtk_light_remove and gtk_layer_remove changed
+to new (global) style.</li>
+<li>gtk_atom_modify and gtk_atom_create changed to conform
+to new (global) style.</li>
+<li>gtk_atom_modify_press and gtk_bond_modify_press slightly improved.</li>
+<li>Removed Nodes and Faces imcompatibility in WS mode, in both
+gtk_cell_create.c and gtk_cell_modify.c files.</li>
+<li>gtk_cell_modify.c substantially improved, everything seems fine
+except gtk_atom_modify_ok, which needs more error test checking.</li>
+<li>a critical bug concerning rhombus cells was removed from phys_cell.c</li>
+<li>More work on gtk_light_modify.c, it is not finished though.</li>
+<li>gtk_light_remove.c completed.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Finish light_modify.c.</li>
+<li>Clean cell_modify.c.</li>
+<li>Improve comments and other documentation
+in gamgi_phys_cell* and gamgi_gtk_cell* files.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.07.28</div><div>&nbsp;</div>
+</div>
+
+<div class="contents">
+
+Euler angles and Hexagonal Conventional cells are done.
+Documentation and GTK stuff is all that is left to achieve
+version 0.08.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>reading and applying Euler angles is done. This was done
+for cells but applies for any other GAMGI object.</li>
+<li>Hexagonal Conventional cells are done.
+This is a special case that must be handled differently.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Remove Nodes and Faces imcompatibility
+in WS mode.</li>
+<li>Finish cell_modify.c.</li>
+<li>Finish light_modify.c.</li>
+<li>Improve light_remove, molecule_remove,
+atom_remove, bond_remove, cell_remove.</li>
+<li>Improve atom_modify.</li>
+<li>Improve comments and other documentation
+in gamgi_phys_cell* files.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.07.27</div><div>&nbsp;</div>
+</div>
+
+<div class="contents">
+
+Important improvements in WS and other cells. GAMGI 0.08 is getting closer.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Handling WS cells is completed, for all systems
+but Romboedric P, Monoclinic and Triclinic. This
+includes all the possible parameter permutations.</li>
+<li>Handling cell orientation, using Euler angles,
+is completed, in what regards cell_create.c. Measuring
+Euler angles, in what regards cell_modify.c, is not done yet.</li>
+<li>In FACES mode, the cell inside is now visible, after
+entering in.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Measure Euler angles in cells.</li>
+<li>Remove Nodes and Faces imcompatibility
+in WS mode.</li>
+<li>Start Hexagonal conventional cell.</li>
+<li>Finish cell_modify.c.</li>
+<li>Finish light_modify.c.</li>
+<li>Improve light_remove, molecule_remove, 
+atom_remove, bond_remove, cell_remove.</li>
+<li>Improve atom_modify.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.07.26</div><div>&nbsp;</div>
+</div>
+
+<div class="contents">
+
+Lots of improvments on WS cells.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Hexagonal P WS cells is included in Orthorhombic C WS cells,
+so there are only Orthorhombic WS cells now: Hexagonal,
+Cubic and Tetragonal are particular cases. WS cells for 
+Romboedric, Monoclinic and Triclinic systems are not handled 
+currently.</li>
+<li>The general architecture to handle faces and lines in WS 
+cells was considerably improved, so now all cases are handled 
+by a single function: loops_8, loops_12, loops_14 and lines_18.</li>
+<li>Filtering faces and lines for Faces and Edges modes in
+Orthorhombic I and Orthorhombic F WS cells is completed,
+for all possible orientations (permutations).</li>
+<li>Filtering faces and lines for Faces and Edges modes in
+Orthorhombic C (including Hexagonal P) is partially done.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Complete filtering faces and lines for Faces and Edges 
+modes in Orthorhombic C (including Hexagonal P).</li>
+<li>Improve cell_modify, which still has problems.</li>
+<li>Complete work on gamgi_gtk_light_modify.</li>
+<li>Change global mode interface on atom_modify. Change data
+interface on atom_create and atom_modify.</li>
+<li>Change global mode interface on atom_remove, bond_remove,
+molecule_remove, light_remove and layer_remove.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.07.25</div><div>&nbsp;</div>
+</div>
+
+<div class="contents">
+
+Essentially work on filtering faces and lines
+in WS cells.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Filtering faces and lines for Faces and Edges modes in
+Orthrhombic I and Orthrhombic C is mostly done.</li>
+<li>All Cubic and Tetragonal WS cells were removed
+and included as particular cases of Orthrhombic cells.</li>
+<li>More cleaning on cell_create and cell_modify.</li>
+<li>A good solution for storing data to rotate cells
+is set but not implemented.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>put final touches on cell_modify.</li>
+<li>Complete work on gamgi_gtk_light_modify.</li>
+<li>Handle Faces and Edges modes in Orthrhombic F cell,
+by filtering faces and lines.</li>
+<li>The faces description in WS cells with the same faces
+topology should be handled by a single, common, function.</li>
+<li>Change global mode interface on atom_modify. Change data
+interface on atom_create and atom_modify.</li>
+<li>Change global mode interface on atom_remove, bond_remove,
+molecule_remove, light_remove and layer_remove.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.07.24</div><div>&nbsp;</div>
+</div>
+
+<div class="contents">
+
+Cell_modify is implemented. Orthorhombic I WS cells are implemented.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>cell_modify is essentially done, needs only some finishing touches.</li>
+<li>The three Orthorhombic I WS cells are implemented and tested.</li>
+<li>Global mode interface has been changed in light_modify and bond_modify.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>put final touches on cell_modify.</li>
+<li>Complete work on gamgi_gtk_light_modify.</li>
+<li>Handle Faces and Vertices modes in most WS cells,
+by filtering faces, loops and lines.</li>
+<li>The faces description in WS cells with the same faces
+topology should be handled by a single, common, function.</li>
+<li>Change global mode interface on atom_modify. Change data
+interface on atom_create and atom_modify.</li>
+<li>Change global mode interface on atom_remove, bond_remove,
+molecule_remove, light_remove and layer_remove.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.07.23</div><div>&nbsp;</div>
+</div>
+
+<div class="contents">
+
+Implementation of cell_modify, light_modify, plus 
+improvements on cell_create, atom_modify, bond_modify.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Significant improvements have been made to cell_create 
+and cell_modify dialogs. </li>
+<li>Data transport from cell to cell_modify dialog is done.
+Most signals and callbacks are in place.</li>
+<li>Data transport from cell to cell_modify dialog is done,
+including the selection popup menu. Most signals and callbacks
+are in place.</li>
+<li>Improvements have been added to atom_modify and bond_modify dialogs.</li>
+<li>Calculations for the three Orthorhombic I WS cells are done.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Complete work on gamgi_gtk_cell_modify.</li>
+<li>Complete work on gamgi_gtk_light_modify.</li>
+<li>Handle Faces and Vertices modes in most WS cells,
+by filtering faces, loops and lines.</li>
+<li>Add code to handle the three Orthorhombic I WS cells.</li>
+<li>The faces description in WS cells with the same faces
+topology should be handled by a single, common, function.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.07.22</div><div>&nbsp;</div>
+</div>
+
+<div class="contents">
+
+General cleaning on group operations;
+Start adding code for light modify.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>work on gamgi_gtk_light_modify just started, the dialog
+is already in place but most of the callbacks are not.</li>
+<li>GAMGI_VERTICES enumeration and static_vertices routines
+changed to GAMGI_EDGES and static_edges, respectively. The
+name is better and shorter, solving a GUI little problem 
+with lack of space in gamgi_gtk_cell_modify.</li>
+<li>gamgi_gtk_group_measure and gamgi_gtk_group_modify were totally 
+cleaned. In particular, undo works with gamgi_gtk_group_modify.</li>
+<li>handling translation when creating cells is done.
+The equivalent for rotation needs to be analysed more
+carefully.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Complete work on gamgi_gtk_light_modify.</li>
+<li>Handle Faces and Vertices modes in most WS cells,
+by filtering faces, loops and lines.</li>
+<li>Add code to handle the three Orthorhombic I WS cells.</li>
+<li>The faces description in WS cells with the same faces
+topology should be handled by a single, common, function.</li>
+<li>start doing gamgi_gtk_cell_modify.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.07.21</div><div>&nbsp;</div>
+</div>
+
+<div class="contents">
+
+More work on WS cells.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>The problem of ordering the lattice parameters
+is definitely solved. Basically the length parameters are
+sorted (and the angle parameters are swaped) and a matrix
+keeps record of the whole transformation. Global sorting
+is decomposed in pair sortings, that can be described by
+rotations. The final resulting matrix is inverted so the 
+vertices can be allocated in the standard orientation and 
+then transformed back multiplying by that inverse matrix. 
+This works with all lattices, including trigonal, monoclinic, 
+and triclinic, where angles are not necessarily 90 degrees.</li>
+<li>Code was added to determine the determinant, adjunct, 
+transpose and inverse of 3x3 matrices.</li>
+<li>matrix_absolute, matrix_relative, vector_absolute, 
+vector_relative, replace and expand matrix_set, vector_set.</li>
+<li>Code was added to reduce number of points 
+in Vertices mode in Hexagonal_P and Orthorhombic_C WS cells.</li>
+<li>A math file containing sort routines, including sort2
+and sort3 for doubles and longs, was added and used
+in chem_bond.c and phys_cell.c.</li>
+<li>Code was added to handle the case where the user
+requested a WS cell not done yet: Rhomboedric_P, Monoclinic_P,
+Monoclinic_B, Orthorhombic_I, Triclinic_P.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Handle Faces and Vertices modes in most WS cells,
+by filtering faces, loops and lines.</li>
+<li>Add code to handle the three Orthorhombic I WS cells.</li>
+<li>The faces description in WS cells with the same faces
+topology should be handled by a single, common, function.</li>
+<li>Handle translation and rotation operations ordered
+by the user in the dialog box.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.07.20</div><div>&nbsp;</div>
+</div>
+
+<div class="contents">
+
+Code to handle WS cell objects was improved.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>A function was added to remove unused points, loops and lines in 
+WS cells. This function is required to clean the arrays, in Faces 
+and Vertices modes (where inner points, faces and lines are not 
+considered).</li>
+<li>Orthorhombic F WS cells are now implemented.</li>
+<li>Code to handle Hexagonal P and Orthorhombic C WS cells was
+partially rewritten, because in the Faces mode, the faces
+must use the loops array while the frame must use
+the lines array.</li>
+<li>The wired loops test was slightly changed to handle 
+these two new cases, which never use the loops array.</li>
+<li>Code was added to initialise loops and lines arrays,
+in WS cells that require the cleaning function mentioned
+above.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Everything is now ready for the final assault
+to handle Faces and Vertices modes for most WS cells.</li>
+<li>Add code to handle the three Orthorhombic I WS cells.</li>
+<li>The faces description in WS cells with the same faces
+topology should be handled by a single, common, function.</li>
+<li>Add sort2 and sort3 functions to handle tetragonal
+and orthorhombic parameters in a simple, systematic way.</li>
+<li>When the parameter order is changed, rotate cells
+in the end, so they appear with the expected orientation.</li>
+<li>Add message for WS cells which will be written later:
+Rhomboedric, Monoclinic and Triclinic.</li>
+<li>Handle translation and rotation operations ordered
+by the user in the dialog box.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.07.19</div><div>&nbsp;</div>
+</div>
+
+<div class="contents">
+
+Code to handle cell objects was improved. 
+A bug was corrected in the history mechanism.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Code was added to free the memory allocated 
+for cell arrays, when cells objects are removed.</li>
+<li>Code was added to copy cell arrays and other
+relevant parameters, when cells objects are copied.</li>
+<li>The history mechanism is working for cell create 
+and cell remove operations.</li>
+<li>A bug was discovered and corrected in the history mechanism.</li>
+<li>Code was added for the Vertices option in Hexagonal WS cells.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Code to remove inner faces when using 
+Faces or Vertices options in most WS cells.</li>
+<li>Code to clean arrays after removing inner faces 
+when using Faces or Vertices options in most WS cells.</li>
+<li>Code to handle simultaneously Faces option 
+and Vertices mode, in Hexagonal WS cells.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.07.18</div><div>&nbsp;</div>
+</div>
+
+<div class="contents">
+
+Code to implement Wigner-Seitz cells was improved.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Routines to implement Body, Faces and Vertices options
+in Orthorhombic P, Tetragonal P and Cubic P WS cells
+were rewritten using better algorithms.</li>
+<li>Routines to implement Tetragonal I low c/a, Tetragonal I high c/a,
+Orthorhombic C, and Hexagonal P WS cells were written.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Code to free arrays memory 
+when removing cell objects.</li>
+<li>Code to copy arrays when
+copying cell objects.</li>
+<li>Code to remove inner faces
+when using Faces or Vertices options in most WS cells.</li>
+<li>Code to clean arrays after
+removing inner faces when using Faces or Vertices options
+in most WS cells.</li>
+<li>Code to handle the Vertices option
+in Hexagonal WS cells.</li>
+</ul>
+
+</div>
+
+<div id="bottom">
+<a href="../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

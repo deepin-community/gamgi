@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Tutorials: Point symmetry analysis</title>
+<link rel="icon" type="image/png" href="../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Point symmetry analysis</h1>
+
+<div id="notebook">
+<ul>
+<li><a href="symmetry_page1.html">Page 1</a></li>
+<li><span>Page 2</span></li>
+</ul>
+</div>
+
+<div class="contents">
+
+<h3>C30</h3>
+
+<ol>
+<li>Press <b>Reset</b> and then select <b>File->Import</b>, to import
+the file <b>dat/molecule/symmetry/Ih_C30.xml</b>.</li>
+
+<li>Select <b>Bond->Create</b>, click on <b>Length</b> to create bonds 
+using the length criterium, and press <b>Ok</b>. The C20 fullerene 
+molecule is now clearly visible.</li>
+
+<li>Select <b>Molecule->Measure</b>, change the <b>Method</b> to 
+<b>Symmetry</b> and click on the molecule. The report produced shows 
+that indeed the molecule has icosahedric symmetry <b>Ih</b>. The symmetry
+elements found include an inversion center, around <b>0.0000, 0.0000, 
+0.0000</b>, 15 mirror planes, 31 normal axes (with orders 5, 3, 2) and 
+16 improper axes (with orders 10, 6). For each class of elements, they 
+are ordered according to increasing errors, so more accurate elements are 
+presented first.
+
+<p/>
+
+There are 24 C5 symmetry operations for 6 C5 axes only, because
+there are 4 operations for each axis: C15, C25, C35, C45. There
+are 20 C3 operations for 10 C3 axes only, because there are
+2 operations for each axis: C13 and C23. There are only 15
+C2 symmetry operations, as each C2 axis there is only one 
+symmetry operation, C12.</li>
+
+<li>Select again <b>Molecule->Measure</b>, set <b>Method</b> to 
+<b>Symmetry</b>, but this time change <b>Periodicity</b> to 
+<b>Yes</b> (<b>Symmetry</b> page), before clicking on the molecule.
+The report produced indicates that the molecule has cubic symmetry 
+<b>Th</b>, because now only rotations 2,3,4,6 can be considered. 
+
+<p/>
+
+The number of normal axes decreased to four C3, and three C2,
+the number of mirror planes decreased to 3, and the number of
+improper rotation axes decreased to four S6. It is important to
+understand why the restrictions on rotation operations afect
+also mirror and lower order normal and improper axes: for example,
+5 mirror planes around a C5 axis cannot be considered simultaneously
+without violating the condition that symmetry of order 5 is absent,
+only one of the 5 planes can be considered.
+
+<p/>
+
+As a result, different groups of symmetry can be obtained in some
+cases. For example a C24v chemical group can be downgraded to
+totally different C4v or a C6v crystallographic groups, as the
+C4 symmetry operations are not a subset of the C6. When this 
+happens, the GAMGI report shows the various options.</li>
+
+<li>For this structure, most of the errors associated with the symmetry 
+elements are between 1E-5 and 1E-4. Select again <b>Molecule->Measure</b>, 
+set <b>Method</b> to <b>Symmetry</b>, but this time change <b>Tolerance</b> 
+<b>Initial</b> and <b>Final</b> to 1E-4 (<b>Symmetry</b> page), so the 
+less accurate elements are discarded. The symmetry group is now 
+<b>Undefined</b>, as there is no group of symmetry that is compatible 
+with the symmetry information found, after discarding all the elements 
+with error above 1E-4.</li>
+
+</ol>
+
+</div>
+
+<div id="bottom">
+<a href="../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

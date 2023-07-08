@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Interfaces: Atom Create</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Atom Create</h1>
+
+<div id="notebook">
+<ul>
+<li><a href="create_element.html">Element</a></li>
+<li><a href="create_property.html">Property</a></li>
+<li><span>Analysis</span></li>
+<li><a href="create_position.html">Position</a></li>
+<li><a href="create_view.html">View</a></li>
+</ul>
+</div>
+
+<div class="contents">
+
+Set here atom features obtained from structural analysis, such as diffraction.
+
+<h3>Temperature</h3>
+
+Set here the atom temperature (X-Ray Debye-Waller factor), in Angstrom squared:
+0 &lt; T &lt; 100. Generally, T &lt; 30 signifies confidence in its position, while
+T > 60 signifies disorder. Together with structure factors, temperature information
+is needed to calculate accurate X-ray and electron diffraction patterns.
+
+<h3>Occupancy</h3>
+
+Although by default all atoms have occupancy 1.0, many experimental
+results can only be explained assuming that some positions are not always
+occupied by the same type of atom. Therefore these atoms have an average
+occupancy between 0.0 and 1.0. Apart from the structural information
+in itself, carried in these occupancy factors, they are needed to 
+accurately calculate the diffraction structure factors and the 
+corresponding diffraction patterns in solids and liquids.
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

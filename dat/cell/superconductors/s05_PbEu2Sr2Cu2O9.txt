@@ -1,0 +1,33 @@
+Superconductor (Tc = 25K): (Pb,Cu)(Eu,Ce)2(Sr,Eu)2Cu2O9
+Structure: 1201 T*
+
+Space group: 139
+
+Lattice parameters:
+3.80 29.60
+
+Wyckoff positions:
+Pb,Cu 1a
+Eu,Ce 2e, z = 0.2942
+Sr,Eu 2e, z = 0.4245
+Cu 2e, z = 0.1423
+O 1b
+O 2e, z = 0.0660
+O 4g, z = 0.3540
+O 2d
+
+1. with Cell (s05a.xml):
+Bond: Color 0.5,0.5,0.5, Scale 0.4
+
+2. with Polytopes (s05b.xml):
+Cells: 2 x 2 x 2
+Neighbours: O
+Number: 5
+
+References:
+H. Shaked, P.M. Keane, J.C. Rodriguez, F.F. Owen, R.L. Hitterman,
+J.D. Jorgensen, Crystal structures of the High-Tc Superconducting
+Copper-Oxides, Physica C, Elsevier Science, Amsterdam, 1994
+
+T. Maeda, K. Sakuyama,  S. Koriyama, A. Ichinose,
+H. Yamauchi, and S. Tanaka, Physica C 169, 133 (1990)

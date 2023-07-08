@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Formats: Help Config</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Help Config</h1>
+
+<div id="notebook">
+<ul>
+<li><span>Source</span></li>
+<li><a href="config_agent.html">Agent</a></li>
+</ul>
+</div>
+
+<div class="contents">
+            
+<h3>source</h3>
+
+Indicates whether the Help documentation should be fetched 
+from the local computer or from a remote (HTTP or FTP) server.
+
+<pre>
+Example: <b>&lt;help source="local"/></b> (default)
+Allowed values: <b>local</b>, <b>remote</b> (optional)
+</pre>
+
+<h3>local</h3>
+  
+Indicates the path to the local <b>doc</b> directory where the GAMGI documentation starts.
+It is needed only when <b>source</b> is set to <b>local</b>. This is equivalent to create
+the <b>GAMGI</b> environment variable, containing the same path.
+
+<pre>
+Example: <b>&lt;help local="/home/carlos/gamgi/gamgi"/></b> (default)
+(after defining GAMGI in ~/.bashrc: <b>GAMGI=/home/carlos/gamgi/gamgi; export GAMGI</b>)
+Allowed values: 100 ASCII characters maximum (defined in <b>GAMGI_IO_PATHNAME</b>) (optional)
+</pre>
+
+<h3>remote</h3>
+  
+Indicates the path to the remote <b>doc</b> directory where the GAMGI documentation starts.
+It is needed only when <b>source</b> is set to <b>remote</b>.
+
+<pre>
+Example: <b>&lt;help remote="http://www.gamgi.org/"/></b> (default)
+(defined in <b>GAMGI_IO_WEBSITE</b>) 
+Allowed values: 100 ASCII characters maximum (defined in <b>GAMGI_IO_PATHNAME</b>) (optional)
+</pre>
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

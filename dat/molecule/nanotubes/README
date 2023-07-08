@@ -1,0 +1,34 @@
+*************
+* Nanotubes *
+*************
+
+The files in this directory describe achiral
+Armchair (n,n) and Zigzag (n,0) nanotubes.
+They were prepared for Gamgi, by Carlos Pereira:
+http://www.gamgi.org/
+
+****************
+* Bibliography *
+****************
+
+1) Structural data:
+
+Young-Kyun Kwon, the Nanotube
+Site, Michigan State University:
+http://www.pa.msu.edu/~ykkwon/Nanotubes/coordinates.html
+
+TubeGen 3.4, J. T. Frey and D. J. Doren, University of Delaware, 2011
+http://turin.nss.udel.edu/research/tubegenonline.html
+
+2) Related links:
+
+http://www.pa.msu.edu/cmp/csc/nanotube.html
+http://en.wikipedia.org/wiki/CoNTub
+http://en.wikipedia.org/wiki/List_of_software_for_nanostructures_modeling
+http://jcrystal.com/steffenweber/gallery/NanoTubes/NanoTubes.html
+
+3) Strip algebra:
+
+Melchor, S.; Khokhriakov, N.V.; Savinskii, S.S. (1999). "Geometry of Multi-Tube
+Carbon Clusters and Electronic Transmission in Nanotube Contacts".
+Molecular Engineering 8 (4): 315 - 344. 

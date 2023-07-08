@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Formats: Introduction Identifiers</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/board.css"/>
+</head>
+
+<body>
+
+<div class="board">
+<div>Introduction Identifiers</div><div>&nbsp;</div>
+</div>
+
+<div class="contents">
+
+In GML, every non-root element can have a name, an identifier and at least a parent.
+
+<h3>name</h3>
+
+Name attributes in GML files correspond to the object names used in GAMGI,
+which exist only to help users identify the objects. All objects in GAMGI
+have an alphanumeric name, given by users, to help object identification
+and selection. This name is shown everywhere an object needs to be identified,
+including dialogs, statubars and object trees. This name is not used by
+GAMGI itself for identification purposes or others (although GAMGI
+cross checks object names and numbers to ensure that they are
+consistent).
+
+<pre>
+Example: <b>&lt;atom ... name="Si"/></b> (default Si name)
+Allowed values: 20 alphanumeric characters maximum
+(defined in <b>GAMGI_ENGINE_TOKEN</b>) (optional)
+</pre>
+
+<h3>id</h3>
+
+An id is used to uniquely identify an object when importing a file
+and is discarded as soon as the operation is completed. Apart from
+this condition of uniqueness, <b>id</b> is an alphanumeric attribute,
+exactly as <b>name</b>. There is no default for this parameter.
+Bonded atoms must have an <b>id</b>, so bonds can point to them.
+
+<p/>
+
+Identifier attributes must be unique for each import or export 
+operation, as they are used by GAMGI to relate elements that may 
+not even be in the same file. Although GAMGI uses numbers as 
+identifier attributes when exporting files, these are not related 
+in any way with the object numbers used internally in GAMGI to 
+identify the objects. Identifier attributes are required only
+when the respective elements must be referenced somewhere else,
+most notably in bonded atoms that must be referenced by the bonds.
+
+<pre>
+Example: <b>&lt;atom ... id="si1"/></b> (no default)
+Allowed values: 20 alphanumeric characters maximum
+(defined in <b>GAMGI_ENGINE_TOKEN</b>)
+(optional, required if bonded)
+</pre>
+
+<h3>parent</h3>
+
+Usually the parent of a given object is identified by file context,
+as the object that immediately encloses it in the XML hierarchy.
+However the parent object can be explicitely indicated using the
+<b>parent</b> parameter, which points to the <b>id</b>
+parameter of the parent object.
+
+<p/>
+
+<pre>
+Example: <b>&lt;atom ... parent="layer1"/></b> (no default)
+Allowed values: 20 alphanumeric characters maximum
+(defined in <b>GAMGI_ENGINE_TOKEN</b>) (optional)
+</pre>
+
+Objects can reference parents that are only defined later,
+perhaps in another file, or perhaps in another file included
+by another file, without any limit to the level of depth of 
+nested files. For example, a bond in a file can reference atoms 
+that are defined in a HTTP file, fetched from somewhere in the 
+planet. Configuration data elements have fixed parents, so 
+identifiers don't apply to them.
+
+<p/>
+
+We note that an object can only reference other objects that 
+are inside the block defined by its own parent. This important
+restriction was introduced to disable all kinds of weird
+referencing possibilities that are left open with global 
+identifiers, where everything can point to everything,
+potentially destroying the strict hierarchy that XML files 
+should have, and making it difficult for GAMGI and users 
+alike to check and understand the objects true hierarchy.
+
+<p/>
+
+Moreover, this mechanism can never be used to validate an
+object that has an impossible object enclosing it by pointing
+it to a correct parent. The XML hierarchical position of an object
+in a file must always be possible, independently of its parameters.
+
+<p/>
+
+This automatically prevents, for example, atoms belonging to 
+different layers from being bonded together, as bonds in one 
+layer cannot see atoms that are in the other layer. To see 
+both atoms, bonds would have to belong to the common window, 
+which is forbiden, because windows cannot own bonds, only 
+layers.
+  
+<h3>Good:</h3>
+
+<pre><b>
+&lt;gml>
+  &lt;bond parent1="1" parent2="2"/></b> bond can reference parents that are defined later<b>
+  &lt;group>
+    &lt;atom id="1"/></b> atom is inside the bond scope (the current layer block)<b>
+  &lt;/group>
+  &lt;atom id="2"/>
+&lt;/gml></b>
+</pre>
+
+<h3>Bad:</h3>
+
+<pre><b>
+&lt;gml>
+  &lt;atom id="1"/>
+  &lt;atom id="2"/>
+  &lt;group>
+  &lt;bond parent1="1" parent2="2"/></b> atoms are outside the bond scope (the group block)<b>
+  &lt;/group>
+&lt;/gml></b>
+</pre>
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE gml SYSTEM "http://www.gamgi.org/dtd/gamgi.dtd">
+<gml>
+  <molecule name="allyl_thiocyanate">
+    <atom id="1" element="C" x="-1.9687" y="0.3185" z="0.5560"/>
+    <atom id="2" element="C" x="-1.0207" y="-0.6245" z="0.4610"/>
+    <atom id="3" element="C" x="0.3543" y="-0.4185" z="-0.1220"/>
+    <atom id="4" element="N" x="0.6473" y="0.9595" z="-0.5740"/>
+    <atom id="5" element="C" x="1.7423" y="1.0705" z="-1.1650"/>
+    <atom id="6" element="S" x="3.1223" y="1.2115" z="-1.9120"/>
+    <atom id="7" element="H" x="-1.8097" y="1.3475" z="0.2050"/>
+    <atom id="8" element="H" x="-2.9517" y="0.0845" z="0.9940"/>
+    <atom id="9" element="H" x="-1.2497" y="-1.6395" z="0.8310"/>
+    <atom id="10" element="H" x="0.4693" y="-1.1125" z="-0.9890"/>
+    <atom id="11" element="H" x="1.1043" y="-0.6875" z="0.6600"/>
+    <bond parent1="1" parent2="2"/>
+    <bond parent1="1" parent2="7"/>
+    <bond parent1="1" parent2="8"/>
+    <bond parent1="2" parent2="3"/>
+    <bond parent1="2" parent2="9"/>
+    <bond parent1="3" parent2="4"/>
+    <bond parent1="3" parent2="10"/>
+    <bond parent1="3" parent2="11"/>
+    <bond parent1="4" parent2="5"/>
+    <bond parent1="5" parent2="6" order="2.00"/>
+  </molecule>
+</gml>

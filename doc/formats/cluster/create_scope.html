@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Formats: Cluster Create</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Cluster Create</h1>
+
+<div id="notebook">
+<ul>
+<li><a href="create_type.html">Type</a></li>
+<li><span>Scope</span></li>
+<li><a href="create_position.html">Position</a></li>
+<li><a href="create_view.html">View</a></li>
+</ul>
+</div>
+
+<div class="contents">
+
+<h3>data</h3>
+
+The geometric data defining a <b>polytope</b> cluster must be entered in order
+to make the cluster completely independent from its reference objects. This
+is accomplished with four <b>data</b> child elements, containig: 1) real data
+(atoms and vertices xyz coordinates); 2) integer data (the number of loops,
+the number of vertices for the first loop, the offset of vertices for the
+first loop, the number of vertices for the second loop, etc.); 3) real data
+(rgb colors in sequence, a new one for each loop changing color); 4) integer
+data (loop offsets in sequence, when reached they trigger a color change).
+
+<p/>
+
+The following data is for a OH Voronoi polytope cluster, with 2 x 3 = 6
+atom coordinates, with 2 x 5 = 10 faces, with 10 x 4 = 40 vertices, with
+40 x 3 = 120 vertex coordinates, with 2 colors and 2 color change triggers.
+
+<pre>
+Example:
+<b>&lt;data ... name="points" type="double" size="126">
+0.0065 0.0000 0.0000 0.9935 0.0000 0.0000 -1.0000 1.5000 1.5000 -1.0000
+-1.5000 1.5000 0.5000 -1.5000 1.5000 0.5000 1.5000 1.5000 0.5000 -1.5000
+-1.5000 -1.0000 -1.5000 -1.5000 -1.0000 1.5000 -1.5000 0.5000 1.5000
+-1.5000 0.5000 1.5000 -1.5000 -1.0000 1.5000 -1.5000 -1.0000 1.5000 1.5000
+0.5000 1.5000 1.5000 -1.0000 -1.5000 1.5000 -1.0000 -1.5000 -1.5000 0.5000
+-1.5000 -1.5000 0.5000 -1.5000 1.5000 -1.0000 1.5000 -1.5000 -1.0000
+-1.5000 -1.5000 -1.0000 -1.5000 1.5000 -1.0000 1.5000 1.5000 0.5000
+-1.5000 1.5000 2.0000 -1.5000 1.5000 2.0000 1.5000 1.5000 0.5000 1.5000
+1.5000 2.0000 1.5000 -1.5000 2.0000 -1.5000 -1.5000 0.5000 -1.5000 -1.5000
+0.5000 1.5000 -1.5000 2.0000 1.5000 1.5000 2.0000 1.5000 -1.5000 0.5000
+1.5000 -1.5000 0.5000 1.5000 1.5000 0.5000 -1.5000 -1.5000 2.0000 -1.5000
+-1.5000 2.0000 -1.5000 1.5000 0.5000 -1.5000 1.5000 2.0000 -1.5000 1.5000
+2.0000 -1.5000 -1.5000 2.0000 1.5000 -1.5000 2.0000 1.5000 1.5000
+&lt;/data></b> Allowed values: real (required)
+
+Example:
+<b>&lt;data ... name="points_driver" type="int" size="51">
+10 4 2 3 4 5 4 6 7 8 9 4 10 11 12 13 4 14 15 16 17 4 18 19 20 21 4 22 23
+24 25 4 26 27 28 29 4 30 31 32 33 4 34 35 36 37 4 38 39 40 41
+&lt;/data></b> Allowed values: integer (required)
+
+Example:
+<b>&lt;data name="colors" type="float" size="3">
+1.000 0.000 0.000 1.000 1.000 1.000
+&lt;/data></b> Allowed values: real (required)
+
+Example:
+<b>&lt;data name="colors_driver" type="int" size="2">
+1 26 &lt;/data></b> Allowed values: integer (required)
+</pre>
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

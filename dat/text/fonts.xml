@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE gml SYSTEM "http://www.gamgi.org/dtd/gamgi.dtd">
+<gml>
+  <gamgi>
+    <light shininess="0.001"/>
+  </gamgi>
+  <window x="27" y="30" width="700" height="500">
+    <layer/>
+    <layer scale="2.489">
+      <light ambient_r="0.500" ambient_g="0.500" ambient_b="0.500"
+      diffuse_r="1.000" diffuse_g="1.000" diffuse_b="1.000" specular_r="1.000"
+      specular_g="1.000" specular_b="1.000" direction_x="0.7758"
+      direction_y="-0.0000" direction_z="0.6310"/>
+      <light ambient_r="0.300" ambient_g="0.300" ambient_b="0.300"
+      specular_r="0.300" specular_g="0.300" specular_b="0.300"
+      direction_x="0.0000" direction_y="0.0000" direction_z="-1.0000"/>
+      <light ambient_r="0.500" ambient_g="0.500" ambient_b="0.500"
+      diffuse_r="0.400" diffuse_g="0.400" diffuse_b="0.400" specular_r="0.300"
+      specular_g="0.300" specular_b="0.300" position_x="-2.8037"
+      position_y="1.0662" position_z="10.0000" direction_x="0.0000"
+      direction_y="0.0000" direction_z="-1.0000" angle="10.55"/>
+      <text contents="gamgi.org" style="solid" font="serif" x="-1.1911"
+      y="0.1463" z="1.7203" e1="34.88" e2="24.35" e3="339.22" red="1.000"
+      green="0.500" blue="0.000" scale="1.186"/>
+    </layer>
+    <layer>
+      <text contents="Are you experienced?" font="script" x="-3.8343"
+      y="-3.5398" z="1.5995" e1="48.88" e2="89.31" e3="291.84"/>
+    </layer>
+  </window>
+</gml>

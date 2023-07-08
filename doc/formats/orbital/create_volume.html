@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Formats: Orbital Create</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Orbital Create</h1>
+
+<div id="notebook">
+<ul>
+<li><a href="create_type.html">Type</a></li>
+<li><a href="create_scope.html">Scope</a></li>
+<li><span>Volume</span></li>
+<li><a href="create_position.html">Position</a></li>
+<li><a href="create_view.html">View</a></li>
+</ul>
+</div>
+
+<div class="contents">
+
+<h3>phase</h3>
+
+When <b>phase</b> is <b>yes</b> (the default), the orbital
+is represented with two colors, to distinguish places where the wave
+function is positive and negative. When <b>phase</b> is <b>no</b>,
+the whole orbital is represented with just one color.
+
+<pre>
+Example: <b>&lt;orbital ... phase="yes"/></b> (default)
+Allowed values: <b>yes</b>, <b>no</b> (optional)
+</pre>
+
+<h3>frame</h3>
+
+When <b>frame</b> is <b>yes</b> (the default), a cubic frame
+is shown around the orbital, with a edge length equal to twice the
+sampling radius. When <b>frame</b> is <b>no</b>, no frame is shown.
+
+<pre>
+Example: <b>&lt;orbital ... frame="yes"/></b> (default)
+Allowed values: <b>yes</b>, <b>no</b> (optional)
+</pre>
+
+<h3>octants</h3>
+
+Each orbital is divided in 8 octants, that can be made visible or not,
+according to a sequence of 8 bits. The 8 octants are ordered from
+-x-y-z to +x+y+z, where x moves faster and z moves slower, so the
+first 4 bits (counting from the left) are for the 4 octants with
+-z coordinate (below) and among these the first 2 bits are for
+the 2 octants with -y coordinate (below). To set which octants
+should be shown or hidden, set the corresponding bits to 1 or 0.
+By default all octants are shown.
+
+<pre>
+Example: <b>&lt;orbital ... octants="11111111"/></b> (default)
+Allowed values: all 8 bit sequences (optional)
+</pre>
+
+<h3>axes</h3>
+
+When <b>axes</b> is set to <b>radius</b>, axes are shown with the radius
+length (when <b>frame</b> is disabled) or the diameter length (when
+<b>frame</b> is enabled). When <b>axes</b> is set to <b>unit</b>, axes
+are shown with a unit length. When <b>axes</b> is set to <b>bohr</b>,
+axes are shown with the length of Bohr first radius. When <b>axes</b> is
+set to <b>none</b>, no axes are shown (the default). The options <b>bohr</b>
+and <b>unit</b> are useful only for small orbitals, otherwise the axes are
+barely visible.
+
+<p/>
+
+When <b>frame</b> is enabled (the default), axes are positioned along
+the frame edges, starting from the xyz lower corner. When <b>frame</b>
+is disabled, axes start from the orbital center. 
+
+<pre>
+Example: <b>&lt;orbital ... axes="none"/></b> (default)
+Allowed values: <b>radius</b>, <b>bohr</b>, <b>unit</b>, <b>none</b> (optional)
+</pre>
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

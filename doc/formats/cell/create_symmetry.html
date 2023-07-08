@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Formats: Cell Create</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Cell Create</h1>
+
+<div id="notebook">
+<ul>
+<li><span>Symmetry</span></li>
+<li><a href="create_volume.html">Volume</a></li>
+<li><a href="create_position.html">Position</a></li>
+<li><a href="create_origin.html">Origin</a></li>
+<li><a href="create_view.html">View</a></li>
+</ul>
+</div>
+
+<div class="contents">
+
+<h3>system</h3>
+
+<b>system</b> identifies the crystallographic system of the cell: <b>cubic</b>, 
+<b>tetragonal</b>, <b>orthorhombic</b>, <b>hexagonal</b>, <b>monoclinic</b> 
+or <b>triclinic</b>. Hexagonal, trigonal and rhombohedric cases are grouped
+in a single hexagonal system.
+
+<p/>
+
+Although <b>system</b> is an optional parameter, <b>system</b>, <b>lattice</b>
+and <b>group</b> parameters together must provide enough information to
+properly identify the Bravais lattice of the cell. Redundant information
+is fine, but conflicting information is always flagged as an error.
+
+<pre>
+Example: <b>&lt;cell ... system="cubic"/></b> (no default)
+Allowed values: <b>cubic</b>, <b>tetragonal</b>, <b>orthorhombic</b>, 
+<b>hexagonal</b>, <b>monoclinic</b>, <b>triclinic</b> (optional)
+</pre>
+
+<h3>lattice</h3>
+
+<b>lattice</b> identifies the type of lattice centering of the cell: 
+<b>P</b>, <b>I</b>, <b>F</b>, <b>C</b> or <b>R</b>. A, B and C centering 
+is always described in GAMGI by C-based lattices. Thus monoclinic 
+base-centered cells have always a unique axis b.
+
+<p/>
+
+The R lattices describe the seven space groups belonging to the hexagonal system
+that are described as R groups, when using the standard Hermann-Mauguin symbols:
+R3 (146), R-3 (148), R32 (155), R3m (160), R3c (161), R-3m (166), R-3c (167).
+
+<p/>
+
+Although <b>lattice</b> is an optional parameter, <b>system</b>, <b>lattice</b>
+and <b>group</b> parameters together must provide enough information to
+properly identify the Bravais lattice of the cell. Redundant information
+is fine, but conflicting information is always flagged as an error.
+
+<pre>
+Example: <b>&lt;cell ... lattice="P"/></b> (no default)
+Allowed values: <b>P</b>, <b>I</b>, <b>F</b>, <b>C</b>, <b>R</b> (optional)
+</pre>
+
+<h3>group</h3>
+
+<b>group</b> identifies the space group of the cell: from <b>1</b> to <b>230</b>.
+
+The four orthorhombic space groups 38-41, which are described
+as A groups when using the standard Hermann-Mauguin symbols, were converted
+to C groups by using a different axes setting, which results from the axes
+permutation abc->bca, as described in the International Tables for
+Crystallography. These four groups, Amm2, Aem2, Ama2 and Aea2, are thus
+described in GAMGI as Cm2m, Cm2e, Cc2m and Cc2e, respectively.
+
+<p/>
+
+Cells with an <b>hexagonal</b> system and a rombohedric <b>R</b> lattice
+(corresponding to the seven R space groups when using the standard Hermann-Mauguin 
+symbols), are always represented using the hexagonal axes and the obverse setting, 
+when the chosen volume is <b>conventional</b>, and the rombohedric axes, when the 
+chosen volume is <b>primitive</b>. Cells with an <b>hexagonal</b> system and a 
+primitive <b>P</b> lattice (corresponding to all the other space groups from 143 
+to 194 that are not R) are always represented using full hexagonal prismas, when 
+the chosen volume is <b>conventional</b>, and one-third of the hexagonal prismas, 
+when the chosen volume is <b>primitive</b>.
+
+<p/>
+
+Although <b>group</b> is an optional parameter, <b>system</b>, <b>lattice</b>
+and <b>group</b> parameters together must provide enough information to
+properly identify the Bravais lattice of the cell. Redundant information
+is fine, but conflicting information is always flagged as an error.
+
+<pre>
+Example: <b>&lt;cell ... group="1"/></b> (no default)
+Allowed values: <b>1</b> - <b>230</b> (optional)
+</pre>
+
+<h3>a, b, c, ab, ac, bc</h3>
+
+These lattice parameters define the cell geometry. For the cubic
+system, only one length is required (<b>a</b> or <b>b</b> or <b>c</b>).
+For the tetragonal system, two lengths are required (<b>a</b> 
+or <b>b</b> and <b>c</b>). For the orthorhombic system, three 
+lengths are required (<b>a</b> and <b>b</b> and <b>c</b>).
+
+<p/>
+
+For the hexagonal system, two lengths are required (<b>a</b> 
+or <b>b</b> and <b>c</b>). For the monoclinic system, three 
+lengths are required (<b>a</b> and <b>b</b> and <b>c</b>), 
+plus the angle around the axis b (<b>ac</b>).
+
+<p/>
+
+For the triclinic system, all six parameters are required. 
+Each angle must be smaller than the sum of the other two and 
+must be larger than the absolute difference of the other two,
+otherwise an error is produced. Redundant information is fine, 
+but conflicting information is always flagged as an error.
+
+<pre>
+Example: <b>&lt;cell ... a="1.0" b="2.0" c="3.0"
+ab="50.0" bc="60.0" ac="70.0"/></b> (no default)
+Allowed values: positive real (required)
+</pre>
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

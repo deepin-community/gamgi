@@ -1,0 +1,23 @@
+**************
+* Fullerenes *
+**************
+
+The files in this directory describe fullerenes, from C20 to C720.
+They were prepared for Gamgi, by Carlos Pereira:
+http://www.gamgi.org/
+
+****************
+* Bibliography *
+****************
+
+Structural data was obtained from:
+
+1) Mitsuho Yoshida, Fullerene Structure Library:
+http://www.cochem2.tutkie.tut.ac.jp/Fuller/fsl/fsl.html
+
+Structural information was obtained from:
+
+2) Marc de Graef and Michael E. McHenry,
+Structure of Materials, an Introduction to Crystallography,
+Diffraction, and Symmetry, Cambridge University Press, 2007
+http://som.web.cmu.edu/frames.html

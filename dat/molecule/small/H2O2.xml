@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE gml SYSTEM "http://www.gamgi.org/dtd/gamgi.dtd">
+<gml>
+  <molecule name="H2O2">
+    <atom id="1" element="O" x="-0.6554" y="-0.0523" z="0.0007"/>
+    <atom id="2" element="O" x="0.6635" y="0.0046" z="-0.0003"/>
+    <atom id="3" element="H" x="-1.0259" y="0.8658" z="-0.0006"/>
+    <atom id="4" element="H" x="1.0339" y="-0.9135" z="0.0006"/>
+    <bond parent1="1" parent2="2"/>
+    <bond parent1="1" parent2="3"/>
+    <bond parent1="2" parent2="4"/>
+  </molecule>
+</gml>

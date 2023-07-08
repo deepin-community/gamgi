@@ -1,0 +1,23 @@
+Structure 55
+Prototype: Fe3C
+StrukturBericht / Pearson: - / oP16
+
+Lattice parameter:
+Fe3C
+5.0787 6.7297 4.5144
+
+Radius:
+Fe 1.2410 (half-distance)
+C  0.7130 (half-distance)
+
+1. Building with space group (s055.xml):
+Group: 62
+
+Wyckoff positions:
+Fe 4c, x = 0.044, z = 0.837
+Fe 8d, x = 0.181, y = 0.063, z = 0.337
+C 4c, x = 0.881, z = 0.431.
+
+View:
+Fe,C: style solid, size 0.8, variancy 0.0, scale 1.0
+FeC: style solid, method length, size 0.5, color 0.5,0.5,0.5, scale 1.0

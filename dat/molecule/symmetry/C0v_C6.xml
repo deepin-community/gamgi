@@ -1,0 +1,10 @@
+<gml>
+<molecule name="C6.xml">
+<atom element="C" x="3.13915" y="0.57277" z="-0.84118"/>
+<atom element="C" x="1.52202" y="0.27770" z="-0.40785"/>
+<atom element="C" x="0.00000" y="0.00000" z="0.00000"/>
+<atom element="C" x="-1.52202" y="-0.27770" z="0.40785"/>
+<atom element="C" x="-3.13915" y="-0.57277" z="0.84118"/>
+<atom element="C" x="-6.3" y="-1.14" z="1.68"/>
+</molecule>
+</gml>

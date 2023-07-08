@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE gml SYSTEM "http://www.gamgi.org/dtd/gamgi.dtd">
+<gml>
+  <molecule name="H3PO4">
+    <atom id="1" element="P" x="0.0250" y="-0.0914" z="1.0885"/>
+    <atom id="2" element="O" x="-1.2732" y="-0.6076" z="0.4677"/>
+    <atom id="3" element="O" x="1.2303" y="-0.4678" z="0.2378"/>
+    <atom id="4" element="O" x="0.2223" y="-0.7346" z="2.4910"/>
+    <atom id="5" element="O" x="-0.0567" y="1.4171" z="1.2144"/>
+    <atom id="6" element="H" x="-1.8591" y="-0.4705" z="0.8112"/>
+    <atom id="7" element="H" x="1.4181" y="-1.0638" z="0.0545"/>
+    <atom id="8" element="H" x="-0.4031" y="-0.9236" z="2.8411"/>
+    <bond parent1="1" parent2="2"/>
+    <bond parent1="1" parent2="3"/>
+    <bond parent1="1" parent2="4"/>
+    <bond parent1="1" parent2="5" order="2.00"/>
+    <bond parent1="2" parent2="6"/>
+    <bond parent1="3" parent2="7"/>
+    <bond parent1="4" parent2="8"/>
+  </molecule>
+</gml>

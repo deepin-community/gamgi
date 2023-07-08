@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Formats: Light Config</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Light Config</h1>
+
+<div id="notebook">
+<ul>
+<li><span>Color</span></li>
+<li><a href="config_materials.html">Materials</a></li>
+</ul>
+</div>
+
+<div class="contents">
+
+<h3>ambient_r, ambient_g, ambient_b</h3>
+
+Define the red, green, blue contributions used by default for ambient light.
+These contributions can vary between black (0.0, 0.0, 0.0) and white (1.0, 1.0, 1.0).
+
+<pre>
+Example: <b>&lt;light ... ambient_r="0.5" ambient_g="0.5" ambient_b="0.5"/></b> (default)
+(defined in <b>GAMGI_MESA_LIGHT_AMBIENT_R</b>, <b>GAMGI_MESA_LIGHT_AMBIENT_G</b> 
+and <b>GAMGI_MESA_LIGHT_AMBIENT_B</b>)
+Allowed values: <b>0.0</b> - <b>1.0</b> (optional, coupled)
+</pre>
+
+<h3>diffuse_r, diffuse_g, diffuse_b</h3>
+
+Define the red, green, blue contributions used by default for diffuse light.
+These contributions can vary between black (0.0, 0.0, 0.0) and white (1.0, 1.0, 1.0).
+
+<pre>
+Example: <b>&lt;light ... diffuse_r="0.4" diffuse_g="0.4" diffuse_b="0.4"/></b> (default)
+(defined in <b>GAMGI_MESA_LIGHT_DIFFUSE_R</b>, <b>GAMGI_MESA_LIGHT_DIFFUSE_G</b> 
+and <b>GAMGI_MESA_LIGHT_DIFFUSE_B</b>)
+Allowed values: <b>0.0</b> - <b>1.0</b> (optional, coupled)
+</pre>
+
+<h3>specular_r, specular_g, specular_b</h3>
+
+Define the red, green, blue contributions used by default for specular light.
+These contributions can vary between black (0.0, 0.0, 0.0) and white (1.0, 1.0, 1.0).
+
+<pre>
+Example: <b>&lt;light ... specular_r="0.3" specular_g="0.3" specular_b="0.3"/></b> (default)
+(defined in <b>GAMGI_MESA_LIGHT_SPECULAR_R</b>, <b>GAMGI_MESA_LIGHT_SPECULAR_G</b> 
+and <b>GAMGI_MESA_LIGHT_SPECULAR_B</b>)
+Allowed values: <b>0.0</b> - <b>1.0</b> (optional, coupled)
+</pre>
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Formats: Atom Create</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Atom Create</h1>
+
+<div id="notebook">
+<ul>
+<li><a href="create_type.html">Type</a></li>
+<li><span>Property</span></li>
+<li><a href="create_analysis.html">Analysis</a></li>
+<li><a href="create_position.html">Position</a></li>
+<li><a href="create_view.html">View</a></li>
+</ul>
+</div>
+
+<div class="contents">
+
+<h3>mass</h3>
+
+Set the atom mass. When not indicated, GAMGI uses the default for
+the atom element: the mass average of the various isotopes weighted
+by their natural abundance, indicated in <a href="http://www.webelements.com/">
+http://www.webelements.com/</a>. To see the default, just select the Periodic
+Table from <b>Atom->Create</b>, <b>Atom->Modify</b> or <b>Atom->Config</b>,
+and then select the element. To change the default select <b>Atom->Config</b>
+and read <b>Help->Topics->Formats->Config->Atom</b>.
+
+<pre>
+Example: <b>&lt;atom mass="15.9994" element="O" ... /></b> (default O mass)
+Allowed values: positive real, element name (optional)
+</pre>
+
+<h3>radius</h3>
+
+Set the atom radius. When not indicated, GAMGI uses the default for
+the atom element: the half-distance between atoms in the most abundant
+natural form, indicated in <a href="http://www.webelements.com/">
+http://www.webelements.com/</a>. To see the default, just select the Periodic
+Table from <b>Atom->Create</b>, <b>Atom->Modify</b> or <b>Atom->Config</b>,
+and choose the element. To change the default select <b>Atom->Config</b>
+and read <b>Help->Topics->Formats->Config->Atom</b>.
+
+<pre>
+Example: <b>&lt;atom radius="0.6037" element="O"/></b> (default O radius)
+Allowed values: positive real, element name (optional)
+</pre>
+
+<h3>charge</h3>
+
+Set the atom charge. When not indicated GAMGI uses 0.0 as default.
+
+<pre>
+Example: <b>&lt;atom charge="0.0" element="O"/></b> (default 0.0)
+Allowed values: real (optional)
+</pre>
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

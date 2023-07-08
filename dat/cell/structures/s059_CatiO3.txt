@@ -1,0 +1,23 @@
+Structure 59
+Prototype: CatiO3
+StrukturBericht / Pearson: E2_1 / cP5
+
+Lattice parameter:
+CaTiO3 MgSiO3
+3.795  3.48
+
+Radius:
+Ca2+ 1.43 (charge +2, coordination 12)
+Ti4+ 0.6050 (charge +4, coordination 6)
+O2-  1.4 (charge -2, coordination 6)
+
+1. Building with space group (s059.xml):
+Group: 221
+
+Wyckoff positions:
+Ca 1a
+Ti 1b
+O  3c
+
+View:
+Ca,Ti,O: style solid, size 0.5, variancy 0.0, scale 1.0

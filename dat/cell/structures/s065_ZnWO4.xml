@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE gml SYSTEM "http://www.gamgi.org/dtd/gamgi.dtd">
+<gml>
+  <layer perspective="no" scale="1.536">
+    <light ambient_r="0.500" ambient_g="0.500" ambient_b="0.500"
+    diffuse_r="0.400" diffuse_g="0.400" diffuse_b="0.400" specular_r="0.300"
+    specular_g="0.300" specular_b="0.300" direction_x="0.0000"
+    direction_y="0.0000" direction_z="-1.0000"/>
+    <cell group="13" a="4.7200" b="5.7000" c="4.9500" ac="90.15" x="-2.8363"
+    y="-2.2450" z="-3.6578" e1="84.00" e2="90.00" e3="190.00" axes="yes">
+      <atom id="1" element="Zn" x="1.3564" y="-1.1872" z="-1.8837"
+      style="solid"/>
+      <atom id="2" element="Zn" x="-0.5982" y="1.2389" z="-1.2887"
+      style="solid"/>
+      <atom id="3" element="W" x="-1.3425" y="-0.9864" z="-3.7937"
+      style="solid"/>
+      <atom id="4" element="W" x="-0.5229" y="-1.4723" z="0.8292"
+      style="solid"/>
+      <atom id="5" element="W" x="1.2812" y="1.5241" z="-4.0016" style="solid"/>
+      <atom id="6" element="W" x="2.1008" y="1.0382" z="0.6212" style="solid"/>
+      <atom id="7" element="O" x="2.3390" y="-0.0439" z="-3.2897"
+      style="solid"/>
+      <atom id="8" element="O" x="2.7989" y="-2.2857" z="-0.9028"
+      style="solid"/>
+      <atom id="9" element="O" x="-2.0406" y="2.3375" z="-2.2696"
+      style="solid"/>
+      <atom id="10" element="O" x="-1.5807" y="0.0957" z="0.1173"
+      style="solid"/>
+      <atom id="11" element="O" x="-0.4909" y="-0.4116" z="-2.6331"
+      style="solid"/>
+      <atom id="12" element="O" x="-0.0969" y="-2.0236" z="-0.5554"
+      style="solid"/>
+      <atom id="13" element="O" x="0.8552" y="2.0754" z="-2.6170"
+      style="solid"/>
+      <atom id="14" element="O" x="1.2492" y="0.4634" z="-0.5393"
+      style="solid"/>
+      <bond parent1="1" parent2="7" style="solid" size="0.20" color="yes"
+      red="0.500" green="0.500" blue="0.500"/>
+      <bond parent1="1" parent2="8" style="solid" size="0.20" color="yes"
+      red="0.500" green="0.500" blue="0.500"/>
+      <bond parent1="1" parent2="11" style="solid" size="0.20" color="yes"
+      red="0.500" green="0.500" blue="0.500"/>
+      <bond parent1="1" parent2="12" style="solid" size="0.20" color="yes"
+      red="0.500" green="0.500" blue="0.500"/>
+      <bond parent1="1" parent2="14" style="solid" size="0.20" color="yes"
+      red="0.500" green="0.500" blue="0.500"/>
+      <bond parent1="2" parent2="9" style="solid" size="0.20" color="yes"
+      red="0.500" green="0.500" blue="0.500"/>
+      <bond parent1="2" parent2="10" style="solid" size="0.20" color="yes"
+      red="0.500" green="0.500" blue="0.500"/>
+      <bond parent1="2" parent2="11" style="solid" size="0.20" color="yes"
+      red="0.500" green="0.500" blue="0.500"/>
+      <bond parent1="2" parent2="13" style="solid" size="0.20" color="yes"
+      red="0.500" green="0.500" blue="0.500"/>
+      <bond parent1="2" parent2="14" style="solid" size="0.20" color="yes"
+      red="0.500" green="0.500" blue="0.500"/>
+      <bond parent1="3" parent2="11" style="solid" size="0.20" color="yes"
+      red="0.500" green="0.500" blue="0.500"/>
+      <bond parent1="4" parent2="12" style="solid" size="0.20" color="yes"
+      red="0.500" green="0.500" blue="0.500"/>
+      <bond parent1="4" parent2="10" style="solid" size="0.20" color="yes"
+      red="0.500" green="0.500" blue="0.500"/>
+      <bond parent1="5" parent2="13" style="solid" size="0.20" color="yes"
+      red="0.500" green="0.500" blue="0.500"/>
+      <bond parent1="5" parent2="7" style="solid" size="0.20" color="yes"
+      red="0.500" green="0.500" blue="0.500"/>
+      <bond parent1="6" parent2="14" style="solid" size="0.20" color="yes"
+      red="0.500" green="0.500" blue="0.500"/>
+    </cell>
+  </layer>
+</gml>

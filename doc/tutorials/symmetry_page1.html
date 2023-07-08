@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Tutorials: Point Symmetry analysis</title>
+<link rel="icon" type="image/png" href="../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Point Symmetry analysis</h1>
+
+<div id="notebook">
+<ul>
+<li><span>Page 1</span></li>
+<li><a href="symmetry_page2.html">Page 2</a></li>
+</ul>
+</div>
+
+<div class="contents">
+
+Point symmetry characterization is extremely important in describing atomic 
+structures, particularly in molecular spectroscopy and crystallography. 
+GAMGI supports both the (infinite) unrestricted chemical groups of symmetry, 
+and the 32 crystallographic groups with 2,3,4,6 rotations only.
+
+<p/>
+
+To exemplify the method, we create first a water molecule and measure its 
+symmetry (C2v), then we import a C30 fullerene molecule and measure its 
+chemical, unrestricted (Ih) and crystallographic, restricted (Th) point 
+symmetry.
+
+<h3>Water</h3>
+
+<ol>
+<li>
+Press <b>Atom->Create</b>, set <b>Element</b> to <b>O</b>, 
+set <b>X</b>, <b>Y</b>, <b>Z</b> to <b>0</b>, <b>0</b>, <b>0</b>, 
+and press <b>Ok</b>, to create the O atom.</li>
+
+<li>Set <b>Element</b> to <b>H</b>, set <b>X</b>, <b>Y</b>, <b>Z</b> to 
+<b>0.6</b>, <b>0.7749</b>, <b>0</b>, and press <b>Ok</b>, 
+to create the first H atom. To create the second, set <b>Element</b> to 
+<b>H</b>, and <b>X</b>, <b>Y</b>, <b>Z</b> to <b>0.6</b>, <b>-0.7749</b>, 
+<b>0</b>, before pressing <b>Ok</b>.</li>
+
+<li>
+Select <b>Molecule->Create</b>, write a name for the molecule, for 
+example <b>water</b>, and press <b>Ok</b>. The new molecule has no 
+contents yet, so the dialog <b>Molecule->Link</b> replaces automatically
+the previous one. Press the mouse over one of the atoms and press 
+<b>Ok</b>, to link it to the molecule. Repeat for the other two atoms.</li>
+
+<li>Select <b>Bond->Create</b> and click over the <b>O</b> and a 
+<b>H</b> atom to create a bond. Repeat with the other <b>H</b> atom.
+To see the object hierarchy, select for example <b>Molecule->Select</b>.
+</li>
+
+<li>To confirm that the water molecule has the proper geometry,
+select <b>Molecule->Measure</b>, and click on the molecule. The 
+report produced shows that there are two OH bond lengths with the 
+value 0.98 and one HOH bond angle with the value 104.5 degrees.
+</li>
+
+<li>Select again <b>Molecule->Measure</b>, but this time change the 
+<b>Method</b> to <b>Symmetry</b>, before clicking on the molecule.
+The report produced shows that the molecule belongs to the group 
+<b>C2v</b> and its symmetry elements are two mirror planes and one 
+C2 rotation axis. The error associated with each symmetry element is 
+reported, plus unit vectors normal to the planes, <b>0.0000, -1.0000, 0.0000</b>
+and <b>0.0000, 0.0000, 1.0000</b>, and paralell to the axis 
+<b>1.0000, 0.0000, 0.0000</b>. Try to understand the orientation of the
+planes and axis, considering that the x direction points to the right, 
+the y direction to the top and the z direction to the user.
+To get a detailed explanation of the information shown 
+on the report, press <b>Help->Current</b>.</li>
+</ol>
+
+</div>
+
+<div id="bottom">
+<a href="../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

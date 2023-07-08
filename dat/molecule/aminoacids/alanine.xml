@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE gml SYSTEM "http://www.gamgi.org/dtd/gamgi.dtd">
+<gml>
+  <molecule name="alanine">
+    <atom id="1" element="N" x="1.3682" y="-0.5502" z="-0.9533"/>
+    <atom id="2" element="C" x="0.0862" y="0.1272" z="-0.7817"/>
+    <atom id="3" element="C" x="0.2698" y="1.4765" z="-0.1289"/>
+    <atom id="4" element="O" x="1.3860" y="1.9050" z="0.1864"/>
+    <atom id="5" element="C" x="-0.8296" y="-0.8077" z="0.0273"/>
+    <atom id="6" element="H" x="2.2992" y="-0.1022" z="-0.6377"/>
+    <atom id="7" element="H" x="1.4428" y="-1.5293" z="-1.4034"/>
+    <atom id="8" element="H" x="-0.3566" y="0.3029" z="-1.7799"/>
+    <atom id="9" element="H" x="-1.8325" y="-0.3682" z="0.1825"/>
+    <atom id="10" element="H" x="-0.9839" y="-1.7770" z="-0.4842"/>
+    <atom id="11" element="H" x="-0.4151" y="-1.0325" z="1.0292"/>
+    <atom id="12" element="O" x="-0.9234" y="2.2338" z="0.0902"/>
+    <atom id="13" element="H" x="-1.7364" y="1.7014" z="-0.2515"/>
+    <bond parent1="1" parent2="2"/>
+    <bond parent1="1" parent2="6"/>
+    <bond parent1="1" parent2="7"/>
+    <bond parent1="2" parent2="3"/>
+    <bond parent1="2" parent2="5"/>
+    <bond parent1="2" parent2="8"/>
+    <bond parent1="3" parent2="4" order="2.00"/>
+    <bond parent1="3" parent2="12"/>
+    <bond parent1="5" parent2="9"/>
+    <bond parent1="5" parent2="10"/>
+    <bond parent1="5" parent2="11"/>
+    <bond parent1="12" parent2="13"/>
+  </molecule>
+</gml>

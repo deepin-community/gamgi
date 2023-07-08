@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE gml SYSTEM "http://www.gamgi.org/dtd/gamgi.dtd">
+<gml>
+  <molecule name="methane">
+    <atom id="1" element="C" x="-0.1561" y="0.5000" z="-0.0000"/>
+    <atom id="2" element="H" x="0.7722" y="-0.1086" z="0.0808"/>
+    <atom id="3" element="H" x="-1.0248" y="-0.1708" z="-0.1830"/>
+    <atom id="4" element="H" x="-0.3146" y="1.0626" z="0.9476"/>
+    <atom id="5" element="H" x="-0.0568" y="1.2177" z="-0.8454"/>
+    <bond parent1="1" parent2="2"/>
+    <bond parent1="1" parent2="3"/>
+    <bond parent1="1" parent2="4"/>
+    <bond parent1="1" parent2="5"/>
+  </molecule>
+</gml>

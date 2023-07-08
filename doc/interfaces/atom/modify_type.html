@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Interfaces: Atom Modify</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Atom Modify</h1>
+
+<div id="notebook">
+<ul>
+<li><span>Element</span></li>
+<li><a href="modify_property.html">Property</a></li>
+<li><a href="modify_analysis.html">Analysis</a></li>
+<li><a href="modify_position.html">Position</a></li>
+<li><a href="modify_view.html">View</a></li>
+<li><a href="modify_length.html">Length</a></li>
+<li><a href="modify_angle.html">Angle</a></li>
+</ul>
+</div>
+
+<div class="contents">
+
+Change here the element and label for a single atom or a list of atoms.
+
+<p/>
+
+To modify an atom, click over its graphic image, or write its identification 
+(name and number) on the <b>Atom</b> entry. To modify a list of atoms, press
+the button <b>List</b> (after creating the list of atoms with <b>Atom->Select</b>).
+Parameters for empty entries or <b>Local</b> choices remain unchanged.
+
+<p/>
+
+To change an atom name write the new name in the <b>Atom</b> entry,
+followed by the atom number (GAMGI needs the number to identify the atom).
+To change the name for a list of atoms, press <b>List</b> first
+and then write the new common name in the <b>Name</b> entry.
+
+<h3>Element</h3>
+
+Change here the element name, which can be <b>Si</b> but 
+not <b>si</b>, <b>S i</b> or <b>SI</b>. When a valid name is entered,
+the element number is automatically set and default values are 
+suggested for the atom name, label, mass, radius and color. Choosing
+a new element automatically changes these values to the new element.
+Selecting non-default values for these parameters should therefore 
+be done only after setting the element.
+
+<h3>Number</h3>
+
+Change here the element number, which can vary between
+0 (Du, a dummy atom) and 111 (Rg, currently the last element with
+a two-letter symbol). When a valid number is entered,
+the element name is automatically set and default values are 
+suggested for the atom name, label, mass, radius and color, 
+as described above.
+
+<h3>Label</h3>
+
+Change here the atom label, commonly used in Molecular
+Mechanics to distinguish atoms described by different inter-atomic
+potentials. For example, methyl and hydroxyl hydrogen atoms in methanol
+molecules might be described by "h3" and "ho" atom labels. Atom labels
+can have a maximum of 10 characters, accepted characters are the
+same as for atom names.
+
+<h3>Table</h3>
+
+Pressing <b>Table</b> pops up a second window, showing a Periodic
+Table of the Elements, with a button for each element. When an element
+button is clicked, default data is transported to the first window,
+exactly as if the user had written the element name in the <b>Name</b> 
+entry or the element number in the <b>Number</b> entry.
+
+<p/>
+
+Pressing <b>Table</b> again (or clicking <b>Cancel</b> in the second
+window, or using the Window Manager tools) closes the second window.
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

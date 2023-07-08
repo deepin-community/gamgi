@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Code: Architecture</title>
+<link rel="icon" type="image/png" href="../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../css/board.css"/>
+</head>
+
+<body>
+
+<div class="board">
+<div>Code Architecture</div><div>&nbsp;</div>
+</div>
+
+<div class="contents">
+
+GAMGI source code is in the <b>src</b> directory, distributed over the 
+sub-directories <b>engine</b>, <b>gtk</b>, <b>mesa</b>, <b>math</b>, 
+<b>chem</b>, <b>phys</b>, <b>io</b>, <b>expat</b> and <b>global</b>. 
+The code in the <b>gtk</b> directory (TODO) is in turn partially distributed 
+over sub-directories <b>text</b>, <b>atom</b>, <b>bond</b>, <b>light</b>, 
+<b>layer</b>, etc., one for each object class.
+
+<p/>
+
+Each directory has a makefile, listing all the local source files.
+These makefiles are then included in the global makefiles, in the 
+<b>src</b> directory.
+
+<p/>
+
+Each directory has a common header <b>.h</b> file, containing 
+all the relevant type definitions, enumerations, macros, plus library 
+headers that are relevant for that section of the code. This information
+should be included in the common header files only (library headers 
+which are needed only once, are included directly in that specific 
+source file, to reduce compilation time). The common header files
+are then included in the <b>.c</b> source files everytime that
+information is needed.
+  
+<p/>
+
+Every <b>.c</b> file has a corresponding <b>.h</b> file, containing:
+1) full declarations (including argument names) of all the functions 
+in the source file, including local (commented) functions; 2) a rationale
+describing the mains aspects of the control flow. Local functions are 
+classified as <b>static</b> and start with the prefix <b>static_</b>. 
+Global functions start with the name of the file containing them. 
+
+<p/>
+
+All files start with the prefix <b>gamgi_</b> and for each directory
+in the file path after the <b>src</b> directory a new prefix is added, 
+with the name of the directory. Thus a file (and the external functions
+inside) in the directory <b>src/engine</b> must have a prefix <b>gamgi_engine</b>.
+With this naming conventions it is easy to: 1) distinguish static and 
+external Gamgi functions; 2) distinguish Gamgi and library functions; 
+3) to identify where is the file that contains a given Gamgi external 
+function.
+  
+<p/>
+
+To understand GAMGI control flow, the first file to check
+is <b>/src/global/gamgi_global_main.c</b>, where GAMGI
+starts and ends. To understand GAMGI data flow, the first file
+to check is <b>/src/engine/gamgi_engine.h</b>, which
+contains the primary data types and definitions.
+
+<p/>
+
+GAMGI has one global variable, called <b>gamgi</b>, declared in 
+<b>gamgi_global.h</b>. This header file is then included everytime 
+<b>gamgi</b> is needed. This declaration is actually redundant, 
+as the <b>gamgi</b> address (TODO) can be acessed as the parent 
+object for all the windows objects, but it makes code slightly 
+simpler.
+  
+</div>
+
+<div id="bottom">
+<a href="../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+Structure 58
+Prototype: Al2O3
+StrukturBericht / Pearson: D5_1 / hR30
+
+Lattice parameter:
+Al2O3
+4.7617 12.9947
+
+Radius:
+Al3+ 0.5350, coordination 6
+O2-  1.3800  coordination 4
+
+1. Building with space group (s058.xml):
+Group: 167
+
+Wyckoff positions:
+Al 4c, z = 0.3521
+O 6e, x = 0.3065
+
+View:
+Al: style solid, size 1.0, variancy 0.2, scale 0.5
+O: style solid, size 1.0, variancy 0.2, scale 0.5
+AlO: style solid, method length, size 0.5, color 0.0,0.8,0.0 scale 0.5

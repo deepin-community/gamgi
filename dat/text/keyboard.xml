@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE gml SYSTEM "http://www.gamgi.org/dtd/gamgi.dtd">
+<gml>
+  <gamgi>
+    <light shininess="0.95"/>
+  </gamgi>
+  <window x="66" y="25" width="700" height="500" medium="no" bottom="no">
+    <layer scale="1.770">
+      <light ambient_r="0.500" ambient_g="0.500" ambient_b="0.500"
+      diffuse_r="1.000" diffuse_g="1.000" diffuse_b="1.000" specular_r="0.300"
+      specular_g="0.300" specular_b="0.300" direction_x="0.0000"
+      direction_y="0.0000" direction_z="-1.0000"/>
+      <text contents="~!@#$%^&amp;*(){}[]" style="solid" font="serif" x="-3.5450"
+      y="-2.1394" z="0.9137" e1="38.31" e2="313.58" e3="70.52" red="1.000"
+      green="0.500" blue="0.000"/>
+    </layer>
+  </window>
+</gml>

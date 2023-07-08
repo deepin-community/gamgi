@@ -1,0 +1,25 @@
+Structure 43
+Prototype: AuBe5
+StrukturBericht / Pearson: C15_b / cF24
+
+Lattice parameter:
+AuBe5  Ni5U    Cu5Gd
+6.085  6.780   7.06
+Cu5Tm  AgCu4Gd Ni0.66Zn0.17Zr0.17
+6.991  7.163   6.792
+
+Radius:
+Au 1.4420 (half-distance)
+Be 1.1130 (half-distance)
+
+1. Building with space group (s043.xml):
+Group: 216
+
+Wyckoff positions:
+Au 1a
+Be 1c
+Be 4e, x = 0.625 (5/8)
+
+View:
+Au,Be: style solid, size 1.0, variancy 1.0, scale 0.25
+FeC: style solid, method length, size 0.5, color 0.5,0.5,0.5, scale 0.5

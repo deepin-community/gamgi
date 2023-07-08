@@ -1,0 +1,25 @@
+<gml>
+<molecule name="Ferrocene">
+<atom element="Fe" x="0.0000" y="-0.0052" z="0.0019"/>
+<atom element="C" x="0.0000" y="1.2238" z="1.6570"/>
+<atom element="C" x="-1.1568" y="0.3796" z="1.6539"/>
+<atom element="C" x="-0.7178" y="-0.9883" z="1.6607"/>
+<atom element="C" x="1.1567" y="0.3797" z="1.6539"/>
+<atom element="C" x="0.7178" y="-0.9883" z="1.6607"/>
+<atom element="H" x="-0.0001" y="2.3028" z="1.6640"/>
+<atom element="H" x="-2.1840" y="0.7123" z="1.6472"/>
+<atom element="H" x="-1.3528" y="-1.8609" z="1.6644"/>
+<atom element="H" x="2.1840" y="0.7125" z="1.6472"/>
+<atom element="H" x="1.3529" y="-1.8608" z="1.6644"/>
+<atom element="C" x="0.0000" y="-1.2032" z="-1.6764"/>
+<atom element="C" x="1.1523" y="-0.3679" z="-1.6593"/>
+<atom element="C" x="0.7115" y="0.9841" z="-1.6495"/>
+<atom element="C" x="-0.7115" y="0.9841" z="-1.6495"/>
+<atom element="C" x="-1.1522" y="-0.3680" z="-1.6593"/>
+<atom element="H" x="0.0001" y="-2.2840" z="-1.6961"/>
+<atom element="H" x="2.1795" y="-0.7027" z="-1.6580"/>
+<atom element="H" x="1.3465" y="1.8585" z="-1.6426"/>
+<atom element="H" x="-1.3466" y="1.8584" z="-1.6426"/>
+<atom element="H" x="-2.1795" y="-0.7028" z="-1.6580"/>
+</molecule>
+</gml>

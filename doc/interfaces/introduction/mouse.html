@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Interfaces: Introduction Mouse</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/board.css"/>
+</head>
+
+<body>
+
+<div class="board">
+<div>Introduction Mouse</div><div>&nbsp;</div>
+</div>
+
+<div class="contents">
+
+A mouse is essential to select objects and to use GAMGI efficiently.
+
+<h3>Object selection</h3>
+
+Pressing, with the left button, one of the object labels on the top 
+menu area, pops up a menu with all the available tasks for that object, 
+which can subsequentially be selected with the mouse or with the keyboard.
+
+<p/>
+
+Pressing a label in the main menu (above the window drawing area), 
+with the middle button, means that the user is about to select an 
+object of that class. If this class has a visual representation 
+(atom, bond, molecule, cell, etc.), subsequently pressing the mouse 
+over the visual representation of an object of this class results 
+in the selection of the object.
+
+<p/>
+
+If the selected class has no visual representation (light, layer, window, 
+gamgi), or the visual representation is ambiguous, when it belongs to 
+more than one object of the selected class (possible in recursive objects 
+such as text, group, cluster, assembly), then a menu pops up, listing
+the possible objects, and allowing the selection of one, with the mouse 
+or the keyboard.
+
+<p/>
+
+A convenient short-cut to select the current layer, the current window
+and the current gamgi (everything), is to press twice over <b>Layer</b>, 
+<b>Window</b> and <b>Gamgi</b> respectively, on the main menu.
+
+<h3>Dragging and pressing</h3>
+
+Dragging the mouse over the window drawing area changes the selected 
+object when <b>Axes</b> is off and the layer referential when <b>Axes</b>
+is on: 1) pressing the left button rotates the object (referential) 
+around its geometric center along the three X,Y,Z axes: dragging 
+horizontally rotates along the vertical axis, dragging vertically 
+rotates along the horizontal axis, and dragging along a circular arc 
+far from the center rotates along the axis perpendicular to the screen; 
+2) pressing the center button moves the object (referential) in the 
+dragging direction; 3) pressing the right button up and down scales 
+the object (layer) up and down respectively.
+
+<p/>
+
+This functionality is available even for objects without visual 
+representation, as lights. Dragging and pressing the left button 
+when a directional or spot light is selected, changes the light 
+direction. Dragging and pressing the middle button for a positional 
+light, changes the light position. Dragging and pressing the right 
+button for a spot light, changes the light angle.
+
+<p/>
+
+When a task window for a given object class is open (as <b>Atom Create</b>,
+<b>Layer Modify</b> or <b>Bond Remove</b>), GAMGI attempts to use any mouse 
+pressing over the drawing area to recognize an object of the same class, 
+using the criteria described above to select an object (with 
+or without visual representation).
+
+<p/>
+
+When an object is found, its information is usually transported 
+to the task window (and in some cases automatically executed), 
+but this object does not replace the current object, which always
+needs to be explicitly selected: the two picking modes are independent.
+
+<p/>
+
+To select an atom, for example, when <b>Molecule Measure</b> is open, 
+just press the middle button over the <b>Atom</b> label on the main menu 
+and click the mouse over the atom visual representation. Clicking again 
+over the same atom, this time GAMGI is not expecting an object selection, 
+so the default picking mode is executed and the molecule owning the atom 
+is measured.
+
+<h3>Ruler handling</h3>
+
+Pressing on <b>Rotate</b>, <b>Move</b>, or <b>Scale</b> (below the 
+window drawing area) activates the positional ruler. This ruler is
+algebraic, centered around 0: for positive (counter-colockwise) changes, 
+click on the right side of the ruler and for larger changes, click 
+farther away from the ruler center. 
+
+<p/>
+
+Pressing again on <b>rotate</b>, <b>move</b>, or <b>scale</b> disables 
+the ruler and its position returns to zero. Everytime an action is 
+active, its label in the tool bar is highlighted, showing the default 
+color again when disabled.
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

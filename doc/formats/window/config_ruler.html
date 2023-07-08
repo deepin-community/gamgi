@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Formats: Window Config</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Window Config</h1>
+
+<div id="notebook">
+<ul>
+<li><span>Ruler</span></li>
+</ul>
+</div>
+
+<div class="contents">
+
+<h3>rotate_max</h3>
+
+Defines the range of angle values [<b>-rotate_max</b>, <b>+rotate_max</b>]
+accepted by the ruler (in the tools menu) to rotate objects. Clicking 
+on the ruler extreme left, the object is rotated by <b>-rotate_max</b>.
+Clicking on the ruler extreme right, the object is rotated by 
+<b>+rotate_max</b>. <b>rotate_max</b> must be positive.
+
+<pre>
+Example: <b>&lt;window rotate_max="30.0"/></b> (default)
+(defined in <b>GAMGI_GTK_ROTATE_MAX</b>)
+Allowed values: real > 0 (optional)
+</pre>
+
+<h3>rotate_step</h3>
+ 
+The rotation angle applied to the object when clicking on the 
+ruler (in the tools menu) increases from the extreme left to
+the extreme right (from <b>-rotate_max</b> to <b>+rotate_max</b>) 
+in a step by step way. The width of each step, starting from the 
+center to the extremes, is controlled by <b>rotate_step</b>.
+
+<p/>
+
+For example, when <b>rotate_step</b> is set to <b>rotate_max</b>, 
+only two angles are recognized: <b>-rotate_max</b> on the left 
+(negative) side and <b>+rotate_max</b> on the right (positive) 
+side of the ruler. When <b>rotate_step</b> is 0, the angle 
+changes continuously from one extreme to the other.
+
+<p/>
+
+<b>rotate_step</b> cannot exceed <b>rotate_max</b>,
+otherwise the extreme values would never be reached
+(the central value is always 0).
+  
+<pre>
+Example: <b>&lt;window rotate_step="0.0"/></b> (default)
+(defined in <b>GAMGI_GTK_ROTATE_STEP</b>)
+Allowed values: [0, rotate_max] (optional)
+</pre>
+
+<h3>move_max</h3>
+
+Defines the range of length values [<b>-move_max</b>, <b>+move_max</b>]
+accepted by the ruler (in the tools menu) to move objects. Clicking 
+on the ruler extreme left, the object is moved by <b>-move_max</b>. 
+Clicking on the ruler extreme right, the object is moved by 
+<b>+move_max</b>. <b>move_max</b> must be positive. 
+
+<pre>
+Example: <b>&lt;window move_max="10.0"/></b> (default)
+(defined in <b>GAMGI_GTK_MOVE_MAX</b>)
+Allowed values: real > 0 (optional)
+</pre>
+
+<h3>move_step</h3>
+
+The translation length applied to the object when clicking on 
+the ruler (in the tools menu) increases from the extreme left 
+to the extreme right (from <b>-move_max</b> to <b>+move_max</b>) 
+in a step by step way. The width of each step, starting from 
+the center to the extremes, is controlled by <b>move_step</b>.
+
+<p/>
+
+For example, when <b>move_step</b> is set to <b>move_max</b>, 
+only two lengths are recognized: <b>-move_max</b> on the left 
+(negative) side and <b>+move_max</b> on the right (positive) 
+side of the ruler. When <b>move_step</b> is 0, the length 
+changes continuously from one extreme to the other.
+
+<p/>
+
+<b>move_step</b> cannot exceed <b>move_max</b>,
+otherwise the extreme values would never be reached
+(the central value is always 0).
+
+<pre>
+Example: <b>&lt;window move_step="0.0"/></b> (default)
+(defined in <b>GAMGI_GTK_MOVE_STEP</b>)
+Allowed values: [0, move_max] (optional)
+</pre>
+
+<h3>scale_max</h3>
+  
+Defines the range of factor values [<b>1 / scale_max</b>, <b>scale_max</b>] 
+accepted by the ruler (in the tools menu) to scale objects. Clicking on 
+the ruler extreme left, the object is scaled by <b>1 / scale_max</b>. 
+Clicking on the ruler extreme right, the object is scaled by 
+<b>scale_max</b>. <b>scale_max</b> must be larger than 1.
+
+<pre>
+Example: <b>&lt;window rotate_max="2.0"/></b> (default)
+(defined in <b>GAMGI_GTK_SCALE_MAX</b>)
+Allowed values: real > 1 (optional)
+</pre>
+
+<h3>scale_step</h3>
+
+The scaling factor applied to the object when clicking on
+the ruler (in the tools menu) increases from the extreme left
+to the extreme right (from <b>1 / scale_max</b> to <b>scale_max</b>) 
+in a step by step way. The width of each step, starting from the 
+center to the extremes, is controlled by <b>scale_step</b>.
+
+<p/>
+
+For example, when <b>scale_step</b> is equal to <b>scale_max - 1</b>, 
+only two lengths are recognized: <b>1 / scale_max</b> on the left 
+side and <b>scale_max</b> on the right side of the ruler. When 
+<b>scale_step</b> is 0, the angle changes continuously 
+from one extreme to the other.
+
+<p/>
+
+<b>scale_step</b> cannot exceed <b>scale_max - 1</b>, otherwise 
+the extreme values would never be reached (the central value is 
+always 1).
+
+<pre>
+Example: <b>&lt;window rotate_step="0.0"/></b> (default)
+(defined in <b>GAMGI_GTK_SCALE_STEP</b>)
+Allowed values: [0, scale_max - 1] (optional)
+</pre>
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

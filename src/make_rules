@@ -1,0 +1,62 @@
+###########################################
+#
+# $GAMGI/src/make_rules
+#
+# Copyright (C) 2001, 2004 Carlos Pereira
+#
+# Distributed under the terms of the GNU
+# General Public License: $GAMGI/LICENSE
+#
+
+#================================ shell ====================================
+
+SHELL=/bin/sh
+
+#================================ compiler =================================
+
+CC ?= gcc
+
+CFLAGS ?= -O3 -Wall -ansi -g 
+override CFLAGS += -Wno-deprecated-declarations
+
+LDFLAGS ?=
+
+COMPILE = $(CC) $(CFLAGS)
+LINK = $(CC) $(LDFLAGS)
+
+#================================ executable ===============================
+
+EXE = gamgi
+
+#================================ shared libs ==============================
+
+LIBS = -lgtkglext-x11-1.0 -lgdkglext-x11-1.0 \
+	-lGLU -lGL -lgtk-x11-2.0 -lgdk-x11-2.0 -latk-1.0 -lgdk_pixbuf-2.0 \
+	-lpangocairo-1.0 -lpango-1.0 -lcairo -lgobject-2.0 -lgmodule-2.0 \
+	-lglib-2.0 -lXext -lX11 -lXi -lXmu -lfreetype -lexpat -lm -ldl
+
+#================================ full paths ===============================
+
+PATH_H = $(PATH_GAMGI_H) \
+	$(PATH_GTKGL_H) $(PATH_MESA_H) $(PATH_GTK_H) $(PATH_ATK_H) \
+	$(PATH_PIXBUFF_H) $(PATH_PANGO_H) $(PATH_CAIRO_H) $(PATH_GLIB_H) \
+	$(PATH_X_H) $(PATH_HARFBUZZ_H) $(PATH_FREETYPE_H) $(PATH_EXPAT_H)
+
+PATH_L = $(PATH_GTKGL_L) $(PATH_MESA_L) $(PATH_GTK_L) $(PATH_ATK_L) \
+	$(PATH_PIXBUFF_L) $(PATH_PANGO_L) $(PATH_CAIRO_L) $(PATH_GLIB_L) \
+	$(PATH_X_L) $(PATH_PIXBUFF_L) $(PATH_FREETYPE_L) $(PATH_EXPAT_L)
+
+#============================== compile all ================================
+
+$(EXE): $(GAMGI_o)
+	$(LINK) -o $@ $^ $(PATH_L) $(LIBS)
+
+%.o : %.c $(GAMGI_h)
+	$(COMPILE) -c $(PATH_H) $< -o $@
+
+#=============================== clean all =================================
+
+.PHONY: clean
+
+clean:
+	$(RM) $(EXE) $(GAMGI_o)

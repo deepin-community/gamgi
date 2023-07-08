@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Interfaces: Plane Select</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Plane Select</h1>
+
+<div id="notebook">
+<ul>
+<li><span>List</span></li>
+</ul>
+</div>
+
+<div class="contents">
+            
+<b>Plane->Select</b> selects an plane or a list of planes.
+
+<p/>
+
+To select an plane click the mouse over its visual representation:
+if GAMGI recognizes the plane it becomes the new selected
+object, otherwise the mouse action is ignored.
+
+<p/>
+
+ When an object is selected, a beep is emitted and the object
+identification is shown in the window status bar, first in a
+highlighted color (to emphasize that the current object has
+changed) and then in the default color (after a few seconds).
+
+<p/>
+
+Only planes in the working layer can be selected, even if
+planes are visible in other (transparent or translucid) layers.
+For each top window, only one selected object is maintained. This
+can be Gamgi (everything), Window (the current window), Layer (the 
+current layer), or a child object of the current layer. To see which
+object is currently selected see its identification in the window
+statusbar.
+
+<p/>
+
+<b>Plane->Select</b> shows a flat list of all planes currently
+existent in GAMGI, not necessarily in the same layer or window.
+For each plane, a hierarchical tree shows all its child objects.
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

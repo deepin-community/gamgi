@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Interfaces: Bond Config</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Bond Config</h1>
+
+<div id="notebook">
+<ul>
+<li><span>Length</span></li>
+<li><a href="config_view.html">View</a></li>
+</ul>
+</div>
+
+<div class="contents">
+
+Define here the length limits used when creating new bonds 
+with the <b>Length</b> criterium.
+
+<h3>Lower, Upper</h3>
+
+When explicit bond length ranges are not defined for a given element pair,
+GAMGI attempts to create default minimum and maximum bond length limits by
+summing the two atom radius and multiplying the sum by <b>Lower</b> and
+<b>Upper</b> factors. Both atom radius must be defined, otherwise the bond 
+is not created.
+
+<p/>
+
+Usually <b>Lower</b> is smaller and <b>Upper</b> is larger than 1.0.
+To increase the valid bond length range, decrease <b>Lower</b>, increase 
+<b>Upper</b> and press <b>Ok</b>. 
+
+<p/>
+
+The <b>Lower</b>, <b>Upper</b> parameters are common to all element pairs 
+and thus provide a method much less accurate (but much easier) to determine 
+bonds than with <b>Minimum</b>, <b>Maximum</b> parameters. 
+
+<h3>Element, Element, Min, Max</h3>
+
+Setting both <b>Element</b> entries to valid atomic elements,
+the current <b>Min</b> and <b>Max</b> distances to create bonds 
+for this element pair are automatically shown. To explicitly define 
+a new range for this element pair, set new values for <b>Min</b>, 
+<b>Max</b> and press <b>Ok</b>.
+
+<p/>
+
+Calling <b>Bond->Config</b> again and entering the same element pair,
+the new <b>Min</b>, <b>Max</b> values appear automatically.
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+Superconductor (Tc = 32K): Pb2(Sr,La)2Cu2O6
+Structure: 3201
+
+Space group: 53
+
+Lattice parameters:
+5.3119 5.4140 12.629
+
+Wyckoff positions:
+Pb 2g, z = 0.3603
+Sr,La 2h, z = 0.1384
+Cu 1a,
+Cu 1d,
+O 2f,
+O 2g, z = 0.1890
+O 2h, z = 0.3510
+
+Change group:
+53 -> 123
+
+Change parameters:
+5.3119 5.4140 -> 3.7561
+
+1. with Cell (s10a.xml):
+Bond: Color 0.5,0.5,0.5, Scale 0.4
+
+2. with Polytopes (s10b.xml):
+Cells: 2 x 2 x 2
+Neighbours: O
+Number: 6
+
+References:
+H. Shaked, P.M. Keane, J.C. Rodriguez, F.F. Owen, R.L. Hitterman,
+J.D. Jorgensen, Crystal structures of the High-Tc Superconducting
+Copper-Oxides, Physica C, Elsevier Science, Amsterdam, 1994
+(Errata: data -> O4 is missing; image -> O4 and Bi are swapped)
+
+F.J.M. Benschop, W.T. Fu, and W.J.A. Maaskant,
+Physica C 184, 311 (1991)

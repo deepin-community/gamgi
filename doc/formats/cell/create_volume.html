@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Formats: Cell Create</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Cell Create</h1>
+
+<div id="notebook">
+<ul>
+<li><a href="create_symmetry.html">Symmetry</a></li>
+<li><span>Volume</span></li>
+<li><a href="create_position.html">Position</a></li>
+<li><a href="create_origin.html">Origin</a></li>
+<li><a href="create_view.html">View</a></li>
+</ul>
+</div>
+
+<div class="contents">
+
+<h3>type</h3>
+
+Controls the representation of the cell lattice, which can be: 
+1) <b>conventional</b> (the lattice is constructed using <b>n1</b>, 
+<b>n2</b>, <b>n3</b> conventional cells; 2) <b>primitive</b> (the lattice 
+is constructed using <b>n1</b>, <b>n2</b>, <b>n3</b> primitive cells); 
+3) <b>wigner</b> (the lattice is constructed using <b>n1</b>, <b>n2</b>, 
+<b>n3</b> Wigner-Seitz cells); 4) <b>parallelepiped</b> (the lattice is filtered 
+by a generic parallelepiped volume, with length parameters <b>v1</b>, <b>v2</b>, 
+<b>v3</b> and angle parameters <b>v12</b>, <b>v13</b>, <b>v23</b>); 
+5) <b>sphere</b> (the lattice is filtered by a sphere with radius <b>v1</b>); 
+6) <b>projection</b> (the lattice is represented by its stereographic projection).
+  
+<pre>
+Example: <b>&lt;cell ... type="conventional"/></b> (default)
+Allowed values: <b>conventional</b>, <b>primitive</b>
+<b>wigner</b>, <b>parallelepiped</b>, <b>sphere</b>, 
+<b>projection</b> (optional)
+</pre>
+
+<h3>n1, n2, n3</h3>
+
+Control the number of lattice cells created along 
+the directions defined by the vectors <b>a</b>, <b>b</b>, <b>c</b>, 
+when <b>type</b> is <b>conventional</b>, <b>primitive</b>
+or <b>wigner</b>. Indicating some or all of these parameters when 
+the cell type does not require them is flagged as an error.
+
+<pre>
+Example: <b>&lt;cell ... n1="1" n2="2" n3="3"/></b> (default)
+Allowed values: positive integer (optional, coupled)
+</pre>
+
+<h3>v1, v2, v3, v12, v13, v23</h3>
+
+When <b>type</b> is <b>parallelepiped</b>, these six parameters are needed 
+to indicate the edge lengths and angles of the filtering parallelepiped.
+Each angle must be smaller than the sum of the other two and must be larger 
+than the absolute difference of the other two, otherwise an error is produced.
+
+<p/>
+
+When <b>type</b> is <b>sphere</b>, the <b>v1</b> parameter is needed to
+indicate the radius of the filtering sphere. Setting parameters that are 
+not required for a given cell type is flagged as an error.
+
+<pre>
+Example: <b>&lt;cell ... v1="5.0" v2="6.0" v3="7.0"
+v12="60.0" v13="70.0" v23="80.0"/></b> (no default)
+Allowed values: positive real (required)
+</pre>
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

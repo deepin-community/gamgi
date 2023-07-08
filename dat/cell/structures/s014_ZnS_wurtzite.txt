@@ -1,0 +1,27 @@
+Structure 14
+Prototype: ZnS (wurtzite)
+StrukturBericht / Pearson: B4 / hP4
+
+lattice parameters:
+ZnS        ZnO
+3.81 6.23  3.35 5.22
+BP         GaN
+3.562 5.90 3.190 5.189
+
+Radius:
+Zn: 0.600 (Shannon radius for charge +2 coordination 4)
+S:  1.840 (Shannon radius for charge -2 coordination 6: 4 not available)
+
+1. Building with space group (s014.xml):
+186
+
+Wyckoff positions:
+Zn 2b, z = 0.0
+S  2b, z = 0.375 (3/8)
+
+Change 0.33333 (1/3), 0.66666 (2/3), 0.125 (1/8)
+
+View:
+Zn: style solid, size 1.0, variancy 1.0, scale 0.3
+S: style solid, size 1.0, variancy 1.0, scale 0.3
+ZnS: style solid, method length, color 0.5,0.5,0.5 scale 0.5

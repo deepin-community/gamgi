@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Interfaces: Introduction Selection</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/board.css"/>
+</head>
+
+<body>
+
+<div class="board">
+<div>Introduction Selection</div><div>&nbsp;</div>
+</div>
+
+<div class="contents">
+
+Objects and (TODO) lists of objects can be selected using just the mouse and simple 
+graphic techniques, described here. For more complex selections, involving combinations
+of graphic and algorithmic techniques (TODO), for each object class, please consult 
+the corresponding <b>Object Select</b> section.
+
+<p/>
+
+When rotating,moving,scaling (and <b>Axes</b> is off), only the currently 
+selected object changes. When exporting to a file, only the currently 
+selected object is exported. Learning how to select objects in GAMGI is 
+thus crucial for users.
+
+<h3>Single</h3>
+
+To select an object, press the mouse middle button over the window main menu, on 
+the corresponding object class. This tells GAMGI which class of object the user is 
+about to select. Then press the mouse (any button) over the visual representation 
+of the object. If the selection succeeds, a beep is emitted and the object 
+identification is shown in the window status bar. If GAMGI finds no object, 
+or more than one, in the sampled area, the mouse action is ignored. If two objects 
+are one over the other, GAMGI chooses the object that is closer to the user. 
+How to change the size of the sampled area, around the clicked spot, is described 
+in <b>Gamgi Config</b>. 
+
+<p/>
+
+The visual representation of an object is defined in GAMGI by the object itself 
+and by the objects that it contains. If an atom owns a text, the text is part of the 
+atom visual representation, even if the text is very far from the atom. When selecting 
+the atom with the mouse, it has exactly the same effect to click over the atom or over 
+the text. Bonds are a special case, because they have two parents (the atoms), instead 
+of a single one. In this case, each half bond contributes to the visual representation 
+of the nearest atom. A bonded atom can be selected clicking over the atom or over its 
+nearest half bonds. A bond can be selected clicking anywhere over the whole bond, 
+including the objects it contains.
+
+<p/>
+
+Objects that have no visual representation in the drawing area, lights, layers and windows, 
+are selected as follows: after selecting the object class with the middle button, press the
+mouse anywhere over the drawing area: a menu pops up showing the identification of the 
+various objects available for that class. If one is selected, a beep is emitted and the 
+object identification is shown in the status area below.  
+
+<p/>
+
+<b>Text</b>, <b>Group</b>, <b>Cluster</b> and <b>Assembly</b> are recursive objects, 
+in the sense that they can own or be owned by other objects of the same class. Therefore 
+a combination of the two selection techniques described above is often required to 
+distinguish these objects. If a group contains a group, which in turn contains an atom, 
+clicking on the <b>Group</b> menu and then over the atom is ambigous: which group is 
+the user trying to select? everytime this ambiguity occurs, a menu pops up showing the 
+identification for the various candidate objects. If an option is selected, a beep 
+is emitted and the object identification is shown in the status area below.
+
+<p/>
+
+Clicking twice over the <b>Layer</b>, <b>Window</b>, or <b>Gamgi</b> menu, a beep is 
+emitted and the selected object becomes the current layer, the current window or 
+the current gamgi (everything), respectively. This short-cut is convenient to easily 
+select the current layer and to export to a XML file everything in the current layer, 
+in the current window or in the whole gamgi process.
+
+<p/>
+
+If users position the mouse pointer over the File or Help menus and then press 
+the middle button, nothing happens.
+
+<h3>Multiple</h3>
+
+To select a list of objects directly (TODO), without calling any <b>Object Select</b> 
+dialog, first tell GAMGI the class of the objects that are going to be selected.
+
+<p/>
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

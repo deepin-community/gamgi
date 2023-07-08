@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE gml SYSTEM "http://www.gamgi.org/dtd/gamgi.dtd">
+<gml>
+  <gamgi>
+    <window rotate_step="5.00"/>
+  </gamgi>
+  <layer perspective="no">
+    <light ambient_r="0.500" ambient_g="0.500" ambient_b="0.500"
+    diffuse_r="0.400" diffuse_g="0.400" diffuse_b="0.400" specular_r="0.300"
+    specular_g="0.300" specular_b="0.300" direction_x="0.0000"
+    direction_y="0.0000" direction_z="-1.0000"/>
+    <cell group="123" a="3.9630" c="3.6710" x="2.5701" y="1.5607" z="3.4878"
+    e1="105.00" e2="268.00" e3="255.00">
+      <atom element="Au" x="2.0131" y="0.3018" z="1.1640" mass="196.9660"
+      style="solid" variancy="1.00" size="1.00" scale="0.300"/>
+      <atom element="Au" x="0.5908" y="-0.2770" z="3.5081" mass="196.9660"
+      style="solid" variancy="1.00" size="1.00" scale="0.300"/>
+      <atom element="Au" x="-1.8219" y="0.1701" z="2.1546" mass="196.9660"
+      style="solid" variancy="1.00" size="1.00" scale="0.300"/>
+      <atom element="Au" x="-0.3996" y="0.7490" z="-0.1895" mass="196.9660"
+      style="solid" variancy="1.00" size="1.00" scale="0.300"/>
+      <atom element="Cu" x="2.5701" y="1.5607" z="3.4878" style="solid"
+      variancy="1.00" size="1.00" scale="0.300"/>
+      <atom element="Cu" x="-1.2648" y="1.4290" z="4.4784" style="solid"
+      variancy="1.00" size="1.00" scale="0.300"/>
+      <atom element="Cu" x="1.5797" y="2.5867" z="-0.2097" style="solid"
+      variancy="1.00" size="1.00" scale="0.300"/>
+      <atom element="Cu" x="-2.2552" y="2.4549" z="0.7809" style="solid"
+      variancy="1.00" size="1.00" scale="0.300"/>
+      <atom element="Cu" x="2.4464" y="-1.9830" z="2.5377" style="solid"
+      variancy="1.00" size="1.00" scale="0.300"/>
+      <atom element="Cu" x="-1.3885" y="-2.1147" z="3.5283" style="solid"
+      variancy="1.00" size="1.00" scale="0.300"/>
+      <atom element="Cu" x="1.4560" y="-0.9571" z="-1.1598" style="solid"
+      variancy="1.00" size="1.00" scale="0.300"/>
+      <atom element="Cu" x="-2.3789" y="-1.0888" z="-0.1692" style="solid"
+      variancy="1.00" size="1.00" scale="0.300"/>
+      <atom element="Cu" x="0.1575" y="2.0079" z="2.1343" style="solid"
+      variancy="1.00" size="1.00" scale="0.300"/>
+      <atom element="Cu" x="0.0337" y="-1.5359" z="1.1842" style="solid"
+      variancy="1.00" size="1.00" scale="0.300"/>
+    </cell>
+  </layer>
+</gml>

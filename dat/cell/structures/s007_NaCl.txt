@@ -1,0 +1,37 @@
+Structure 7
+Prototype: NaCl
+StrukturBericht / Pearson: B1 / cF8
+
+lattice parameter:
+NaCl   MgO    FeO
+5.640  4.213  4.307
+MgS    BaSe   CaTe
+5.200  6.600  6.356
+LiF    BrNa   TiN
+4.027  5.977  4.240
+
+Radius:
+Na 1.0200 (Shannon radius for charge +1 coordination 6)
+Cl 1.8100 (Shannon radius for charge -1 coordination 6)
+
+1. Building with space group (s007a.xml):
+Group:  225
+
+Wyckoff positions:
+Cl 1a
+Na 1b
+
+2. Building with non conventional cell (s007b.xml):
+Change 0.25, 0.25, 0.25
+
+3. Building with structural unit (s007a.xml):
+Bravais lattice: cF
+Cl: 0.0, 0.0, 0.0
+Na: 0.5, 0.0, 0.0
+
+3. Building with Wigner Seitz (s007c.xml):
+Cell type: Wigner-Seitz
+
+View:
+Cl: style solid, size 1.0, variancy 1.0, scale 0.4
+Na: style solid, size 1.0, variancy 1.0, scale 0.4

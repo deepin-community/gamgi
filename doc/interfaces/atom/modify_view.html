@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Interfaces: Atom Modify</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Atom Modify</h1>
+
+<div id="notebook">
+<ul>
+<li><a href="modify_element.html">Element</a></li>
+<li><a href="modify_property.html">Property</a></li>
+<li><a href="modify_analysis.html">Analysis</a></li>
+<li><a href="modify_position.html">Position</a></li>
+<li><span>View</span></li>
+<li><a href="modify_length.html">Length</a></li>
+<li><a href="modify_angle.html">Angle</a></li>
+</ul>
+</div>
+
+<div class="contents">
+
+Change here the visual representation for a single atom or a list of atoms.
+
+<p/>
+
+To modify a atom, click over its graphic image, or write its id on
+the <b>Atom</b> entry. To modify a list of atoms, press the button
+<b>List</b> (after creating the list of atoms with <b>Atom->Select</b>).
+Parameters for empty entries or <b>Local</b> choices remain unchanged.
+
+<p/>
+
+To change an atom name write the new name in the <b>Atom</b> entry,
+followed by the atom number (GAMGI needs the number to identify the atom).
+To change the name for a list of atoms, press <b>List</b> first
+and then write the new common name in the <b>Name</b> entry.
+
+<h3>Style</h3>
+
+The <b>Style</b> option menu is to select the atom visual representation.
+Currently supported styles are: 1) a sphere, for <b>Solid</b>; 2) a cross, for
+<b>Wired</b>. The sphere gives a hight visual quality, when coupled with lights
+and perhaps a perspective projection. A sphere uses considerable screen space
+though and is time consuming.
+
+<p/>
+
+The cross uses much less screen space and computing time. Moreover, when atoms
+are bonded, crosses are not represented at all, and atoms are identified just
+by the ends of the bond lines, decreasing even further computation needs.
+However, wired objects do not have a 3D representation, so diffuse and
+specular lights are not reflected, becoming poorly visible when using
+lights, unless the ambient component is important, about (0.5, 0.5, 0.5).
+
+<h3>Size</h3>
+
+In <b>Solid</b> mode, this parameter controls the size of the atom spheres.
+Combining atom <b>Size</b> and <b>Variancy</b> with bond <b>Size</b>, it is
+possible to obtain a wide range of styles to represent atomic structures.
+
+<p/>
+
+In <b>Solid</b> mode, the default is to represent atoms as constant
+spheres (<b>Variancy</b> = <b>0.0</b> and <b>Size</b> = <b>0.8</b>),
+slightly larger than the bonds (<b>Size</b> = <b>0.5</b>). An elegant
+style is to represent atoms as constant spheres with the same <b>Size</b>
+as bonds (<b>0.5</b>).
+
+<p/>
+
+To represent compact cristalline structures, atom <b>Size</b>
+and <b>Variancy</b> must be <b>1.0</b>, to be consistent with
+cell dimensions. This style can also be used to represent molecules,
+in order to emphasize the atomic radius and electronic distribution.
+To change the default <b>Size</b> select <b>Atom->Config</b>.
+
+<h3>Variancy</h3>
+
+The intrinsic size of an atom is given by:
+<pre>Size x (Variancy x Radius + (1 - Variancy) x Min)</pre>
+where <b>Radius</b> is the atom radius and <b>Min</b> is the minimum
+radius, by default the H covalent radius (currently 0.37). To change
+this default select <b>Atom->Config</b>.
+
+<p/>
+
+In <b>Wired</b> mode, <b>Variancy</b> is always <b>0.0</b> so
+all atom crosses have a constant size, given by <b>Size</b> x <b>Min</b>.
+
+<p/>
+
+In <b>Solid</b> mode, when <b>Variancy</b> is <b>0.0</b> the atom spheres
+have all the same size, when <b>Variancy</b> is <b>1.0</b> the atom spheres
+are scaled directly by the atom radius.
+
+<h3>R, G, B</h3>
+
+The <b>R</b>, <b>G</b>, <b>B</b> entries define the atom color,
+from black (0.0, 0.0, 0.0) to white (1.0, 1.0, 1.0).
+
+<h3>Scale</h3>
+
+Set the atom size, including its child objects. Atom objects are
+scaled around the atom center. The visual representation of an object
+is always scaled by its own scale factor multiplied by the scale factor
+of all its parent objects until layer, inclusive.
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

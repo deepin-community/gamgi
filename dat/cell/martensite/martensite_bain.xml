@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE gml SYSTEM "http://www.gamgi.org/dtd/gamgi.dtd">
+<gml>
+  <layer perspective="no">
+    <light ambient_r="0.600" ambient_g="0.600" ambient_b="0.600"
+    diffuse_r="0.400" diffuse_g="0.400" diffuse_b="0.400" specular_r="0.300"
+    specular_g="0.300" specular_b="0.300" direction_x="0.0000"
+    direction_y="0.0000" direction_z="-1.0000"/>
+    <cell group="225" a="3.5150" x="3.0634" y="-1.2261" z="-9.6307" e1="76.00"
+    e2="90.00" e3="75.00" n1="2" n2="1" n3="1" scale="1.400">
+      <plane reference="cell" h="0" k="0" l="2" order="0" x="3.0634"
+      y="-1.2261" z="-9.6307" center_x="-0.7867" center_y="-1.4169"
+      center_z="-8.8662" e1="76.00" e2="90.00" e3="75.00">
+        <data name="points" type="double" size="12">
+        7.0300 3.5150 0.0000 0.0000 3.5150 0.0000 0.0000 0.0000 0.0000 7.0300
+        -0.0000 -0.0000
+        </data>
+        <data name="points_driver" type="int" size="6">
+        1 4 0 1 2 3
+        </data>
+      </plane>
+      <atom id="1" element="C" x="3.0634" y="-1.2261" z="-9.6307"
+      style="solid" scale="0.500"/>
+      <atom id="2" name="C" element="U" x="-0.3283" y="-1.0177" z="-10.5053"
+      mass="238.0280" style="solid" scale="0.500"/>
+      <atom element="C" x="-3.7272" y="-0.7863" z="-11.3961" style="solid"
+      scale="0.500"/>
+      <atom id="3" element="C" x="2.1537" y="-2.0476" z="-6.3364"
+      style="solid" scale="0.500"/>
+      <atom id="4" name="C" element="U" x="-1.2415" y="-1.8277" z="-7.2190"
+      mass="238.0280" style="solid" scale="0.500"/>
+      <atom element="C" x="-4.6368" y="-1.6078" z="-8.1017" style="solid"
+      scale="0.500"/>
+      <atom id="5" element="C" x="3.0632" y="2.1845" z="-8.7803" style="solid"
+      scale="0.500"/>
+      <atom id="6" name="C" element="U" x="-0.3320" y="2.4044" z="-9.6629"
+      mass="238.0280" style="solid" scale="0.500"/>
+      <atom element="C" x="-3.7273" y="2.6243" z="-10.5456" style="solid"
+      scale="0.500"/>
+      <atom element="C" x="2.1536" y="1.3630" z="-5.4859" style="solid"
+      scale="0.500"/>
+      <atom id="7" name="C" element="U" x="-1.2416" y="1.5829" z="-6.3685"
+      mass="238.0280" style="solid" scale="0.500"/>
+      <atom element="C" x="-4.6370" y="1.8028" z="-7.2513" style="solid"
+      scale="0.500"/>
+      <atom element="C" x="2.6085" y="0.0685" z="-7.5583" style="solid"
+      scale="0.500"/>
+      <atom name="C" element="U" x="-0.7867" y="0.2883" z="-8.4409"
+      mass="238.0280" style="solid" scale="0.500"/>
+      <atom element="C" x="-4.1821" y="0.5083" z="-9.3237" style="solid"
+      scale="0.500"/>
+      <atom element="C" x="1.3649" y="0.5796" z="-9.6504" style="solid"
+      scale="0.500"/>
+      <atom element="C" x="-2.0265" y="0.8038" z="-10.5326" style="solid"
+      scale="0.500"/>
+      <atom element="C" x="0.4617" y="-0.2321" z="-6.3558" style="solid"
+      scale="0.500"/>
+      <atom element="C" x="-2.9393" y="-0.0125" z="-7.2352" style="solid"
+      scale="0.500"/>
+      <atom id="8" name="C" element="U" x="0.9119" y="-1.5261" z="-8.4385"
+      mass="238.0280" style="solid" scale="0.500"/>
+      <atom id="9" name="C" element="U" x="-2.4844" y="-1.3069" z="-9.3077"
+      mass="238.0280" style="solid" scale="0.500"/>
+      <atom id="10" name="C" element="U" x="0.9080" y="1.8819" z="-7.5657"
+      mass="238.0280" style="solid" scale="0.500"/>
+      <atom id="11" name="C" element="U" x="-2.4845" y="2.1037" z="-8.4570"
+      mass="238.0280" style="solid" scale="0.500"/>
+      <bond parent1="1" parent2="3" style="solid" color="yes" red="0.000"
+      green="1.000" blue="0.000" scale="0.200"/>
+      <bond parent1="1" parent2="2" style="solid" color="yes" red="1.000"
+      green="0.000" blue="0.000" scale="0.200"/>
+      <bond parent1="1" parent2="5" style="solid" color="yes" red="0.000"
+      green="0.000" blue="1.000" scale="0.200"/>
+      <bond parent1="2" parent2="6" style="solid" scale="0.200"/>
+      <bond parent1="2" parent2="8" style="solid" color="yes" red="1.000"
+      green="0.000" blue="0.000" scale="0.200"/>
+      <bond parent1="2" parent2="9" style="solid" scale="0.200"/>
+      <bond parent1="4" parent2="7" style="solid" scale="0.200"/>
+      <bond parent1="4" parent2="8" style="solid" color="yes" red="0.000"
+      green="1.000" blue="0.000" scale="0.200"/>
+      <bond parent1="4" parent2="9" style="solid" scale="0.200"/>
+      <bond parent1="6" parent2="10" style="solid" scale="0.200"/>
+      <bond parent1="6" parent2="11" style="solid" scale="0.200"/>
+      <bond parent1="7" parent2="10" style="solid" scale="0.200"/>
+      <bond parent1="7" parent2="11" style="solid" scale="0.200"/>
+      <bond parent1="8" parent2="10" style="solid" color="yes" red="0.000"
+      green="0.000" blue="1.000" scale="0.200"/>
+      <bond parent1="9" parent2="11" style="solid" scale="0.200"/>
+      <text contents="--&gt;" style="solid" x="-0.6660" y="3.9034" z="-9.2530"
+      e1="12.13" e2="276.78" e3="352.90" red="0.000" green="0.560"
+      blue="1.000" scale="0.700"/>
+      <text contents="--&gt;" style="solid" x="-0.0680" y="-3.2088"
+      z="-10.9559" e1="14.21" e2="267.01" e3="182.80" red="0.000"
+      green="0.560" blue="1.000" scale="0.700"/>
+      <text contents="--&gt;" style="solid" x="1.0204" y="-1.8541" z="-7.9306"
+      e1="50.41" e2="162.76" e3="178.76" red="0.000" green="0.560"
+      blue="1.000" scale="0.700"/>
+      <text contents="--&gt;" style="solid" x="-2.8372" y="-0.9977"
+      z="-8.9426" e1="20.25" e2="12.34" e3="175.15" red="0.000" green="0.560"
+      blue="1.000" scale="0.700"/>
+    </cell>
+    <text contents="Bain 1924" style="solid" x="4.9703" y="3.7159" z="-0.0004"
+    e1="0.02" e2="235.61" e3="124.32" scale="0.750"/>
+    <text contents="(001) cfc (001) bcc || [1-10] cfc [100] bcc" style="solid"
+    x="-10.6880" y="-4.9371" z="0.0000" scale="0.600"/>
+  </layer>
+</gml>

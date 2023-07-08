@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title> GAMGI - General Atomistic Modelling Graphic Interface </title>
+<meta name="description" content="this website is dedicated to promote
+the development and use of GAMGI - General Atomistic Modelling Graphic Interface,
+a package to construct, view and analyse atomic structures"/>
+<meta name="keywords" content="Atomistic Modelling Science
+Education Physics Chemistry Free Software GNU Linux"/>
+
+<link rel="icon" type="image/png" href="icon/gamgi16.png">
+<link rel="stylesheet" type="text/css" href="css/frontpage.css"/>
+</head>
+
+<body>
+
+<div id="header">
+
+<img class="left" src="images/gamgi.png" alt="GAMGI title" title="GAMGI title"/>
+
+<img class="right" src="images/header0.png" alt="DNA image" title="DNA image"/>
+
+</div>
+
+<div id="center">
+
+<h2 class="right">News</h2>
+
+<h3>25th February 2022</h3>
+<b>GAMGI 0.17.5</b> is out, changes can be seen
+<a href="changelogs/changelogs.html">here</a>.
+
+<h3>15th January 2014</h3>
+Renewed the <a href="http://oami.europa.eu/">EU</a>
+trademark <b>GAMGI</b> until <b>2024</b>.
+
+<h3>1st January 2014</h3>
+Updated source code and documentation license to 
+<a href="http://www.fsf.org/licenses/gpl.html">GPL v3</a>.
+
+<h3>26th December 2013</h3>
+Started using <a href="http://en.wikipedia.org/wiki/SHA-2">sha256sum</a>
+to checksum all distribution files.
+
+<h3>23rd December 2013</h3>
+Renewed the domain name registration for <b>gamgi.org</b> until <b>2020</b>.
+
+<h3>19th November 2013</h3>
+Signed an agreement with
+<a href="http://en.wikipedia.org/wiki/Open_Invention_Network">
+OIN</a> regarding patent protection.
+
+<h3>2nd September 2013</h3>
+Moved <a href="http://www.gamgi.org/">www.gamgi.org</a> and
+<a href="ftp://ftp.gamgi.org/">ftp.gamgi.org</a> to the IT
+center at the <a href="http://www.ist.utl.pt">IST</a> campus.
+
+<h3>8th April 2013</h3>
+Added new mirrors:
+<a href="http://gamgi.ist.utl.pt/"> http://gamgi.ist.utl.pt/</a>,
+<a href="http://atom.ist.utl.pt">http://atom.ist.utl.pt</a> and 
+<a href="ftp://atom.ist.utl.pt">ftp://atom.ist.utl.pt</a>.
+
+<p/>
+
+<h2>Mission</h2>
+
+<p/>
+
+<div>
+
+<div class="img_right">
+<img src="images/front02.png" alt="C nanotube image" title="C nanotube"/>
+</div>
+
+Our goal is to provide a <a href="project/legal_license.html">free</a>
+package to construct, view and analyse atomic structures, as powerful 
+and simple to use as possible.
+
+<p/>
+
+GAMGI aims to be useful for: 1) the scientific community working
+in atomistic modelling, who needs a graphic interface to build
+and analyse atomic structures; 2) the scientific community at large,
+who needs a graphic interface to study atomic structures and to prepare
+images for presentations; 3) teaching the atomic structure of matter
+in schools and universities, even inviting students to run GAMGI at home;
+4) science promotion, in exhibitions and science museums.
+
+</div>
+
+<p/>
+
+<h2>Achievements</h2>
+
+<p/>
+
+<div>
+
+<div class="img_left">
+<img src="images/front22.png" alt="Cu RCP glass image" title="Cu RCP glass"/>
+</div>
+
+GAMGI can determine any point group of symmetry, can build crystals for any space group of symmetry, can build Random Close Packing structures, Voronoi and coordination polyhedra for arbitrary structures. GAMGI comes with comprehensive atomic data, including ionic radius and isotopic data.
+
+GAMGI can handle an arbitrary number of independent windows, layers (with different referentials, projections, viewports and visibilities), lights (directional, positional and spot), 3D text fonts (extruded and stroked). Actions can be performed in a single object or in a list of objects previously selected. GAMGI comes with detailed but concise documentation, just one click away for each task.
+
+</div>
+
+<p class="clear"/>
+
+<h2>Shortcomings</h2>
+
+<p/>
+
+<div>
+
+<div class="img_right">
+<img src="images/front20.png" alt="ZnS blenda image" title="ZnS blenda"/>
+</div>
+
+Currently GAMGI cannot handle alpha helix or beta sheet protein
+secondary structures, cannot calculate struture factors or diffraction
+patterns, cannot calculate orbitals, cannot show data graphics, cannot
+handle .pdb, .jmol and .cif files, cannot export or import
+coordination or Voronoi polyhedra. Support to build molecular
+structures is sketchy.
+
+</div>
+
+<p class="clear"/>
+
+<h2>Requirements</h2>
+
+<p/>
+
+<div>
+
+<div class="img_left">
+<img src="images/front12.png" alt="Chlorophyll A image" title="Chlorophyll A"/>
+</div>
+
+GAMGI can be installed on any computer running Linux/Unix
+with the standard X Window System. GAMGI requires the following
+libraries: <a href="http://www.gtk.org">Gtk</a>,
+<a href="http://www.mesa3d.org/">Mesa</a>,
+<a href="http://www.k-3d.org/gtkglext/">Gtkglext</a>,
+<a href="http://expat.sourceforge.net/">Expat</a>
+and <a href="http://www.freetype.org/">Freetype</a>.
+
+GAMGI 0.14.8 or above requires GTK 2.18 to compile.
+
+To run properly, GAMGI requires a graphics environment
+with at least 16 bits per pixel, plus a 3-button mouse.
+
+</div>
+
+<p class="clear"/>
+
+</div>
+
+<div id="left">
+
+<h3>Project</h3>
+<ul>
+<li><a href="project/scientific_mission.html">Scientific</a></li>
+<li><a href="project/technical_mission.html">Technical</a></li>
+<li><a href="project/legal_license.html">Legal</a></li>
+<li><a href="http://www.gamgi.org/screenshots/screenshots.html">Screenshots</a></li>
+<li><a href="project/people_developers.html">People</a></li>
+<li><a href="project/history.html">History</a></li>
+<li><a href="project/projects_scientific.html">Projects</a></li>
+</ul>
+
+<h3>Information</h3>
+<ul>
+<li><a href="installation/installation.html">Installation</a></li>
+<li><a href="questions/questions.html">FAQs</a></li>
+<li><a href="manuals.html">Manuals</a></li>
+<li><a href="tutorials/tutorials.html">Tutorials</a></li>
+<li><a href="changelogs/changelogs.html">Changelogs</a></li>
+</ul>
+
+</div>
+
+<div id="right">
+
+<h3>Download</h3>
+<ul>
+<li><a href="http://www.gamgi.org/src/download.html">HTTP</a></li>
+<li><a href="ftp://ftp.gamgi.org/gamgi/src/">FTP</a></li>
+<li>CVS</li>
+</ul>
+
+<h3>Contacts</h3>
+<ul>
+<li><a href="http://www.gamgi.org/wiki">Wiki</a></li>
+<li><a href="contacts/lists.html">Lists</a></li>
+<li><a href="contacts/em.html">Email</a></li>
+<li><a href="project/links_scientific.html">Links</a></li>
+</ul>
+
+<p/>
+
+<a href="http://swpat.ffii.org/">
+<img src="images/patents.png" width="120" height="122"
+alt="No e-patents icon"
+title="Please support the cause against software patents!"/></a>
+
+</div>
+
+<div id="bottom">
+
+<div class="left">
+Optimized for <a href="http://www.w3.org/">standards</a>.
+<p/>
+Hosted by <a href="http://www.ist.utl.pt/">IST</a>.
+</div>
+
+<div class="right">
+Copyright &copy; 2006 - Gamgi Project.
+<p/>
+GAMGI is a <a href="http://oami.europa.eu/">EU</a> 
+Trademark of Carlos Pereira.
+</div>
+
+</div>
+
+</body>
+</html>

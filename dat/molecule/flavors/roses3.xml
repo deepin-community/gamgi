@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE gml SYSTEM "http://www.gamgi.org/dtd/gamgi.dtd">
+<gml>
+  <!-- Flavor: Roses -->
+  <molecule name="phenyl_ethol">
+    <atom id="1" element="C" x="-1.1776" y="-1.4066" z="1.1985"/>
+    <atom id="2" element="C" x="-2.3303" y="-0.6218" z="1.1253"/>
+    <atom id="3" element="C" x="-2.2887" y="0.6047" z="0.4599"/>
+    <atom id="4" element="C" x="-1.1010" y="1.0398" z="-0.1310"/>
+    <atom id="5" element="C" x="0.0613" y="0.2622" z="-0.0659"/>
+    <atom id="6" element="C" x="0.0080" y="-0.9646" z="0.6069"/>
+    <atom id="7" element="C" x="1.3439" y="0.7422" z="-0.7051"/>
+    <atom id="8" element="C" x="2.0695" y="1.7240" z="0.2102"/>
+    <atom id="9" element="O" x="3.2779" y="2.1542" z="-0.4182"/>
+    <atom id="10" element="H" x="-1.2036" y="-2.3740" z="1.7244"/>
+    <atom id="11" element="H" x="-3.2659" y="-0.9673" z="1.5919"/>
+    <atom id="12" element="H" x="-3.1943" y="1.2297" z="0.4015"/>
+    <atom id="13" element="H" x="-1.0805" y="2.0112" z="-0.6509"/>
+    <atom id="14" element="H" x="0.9103" y="-1.5926" z="0.6787"/>
+    <atom id="15" element="H" x="1.1136" y="1.2285" z="-1.6820"/>
+    <atom id="16" element="H" x="2.0088" y="-0.1236" z="-0.9330"/>
+    <atom id="17" element="H" x="2.3411" y="1.2506" z="1.1808"/>
+    <atom id="18" element="H" x="1.4529" y="2.6293" z="0.4105"/>
+    <atom id="19" element="H" x="3.6966" y="2.7640" z="0.1644"/>
+    <bond parent1="1" parent2="2" order="1.50"/>
+    <bond parent1="1" parent2="6" order="1.50"/>
+    <bond parent1="1" parent2="10"/>
+    <bond parent1="2" parent2="3" order="1.50"/>
+    <bond parent1="2" parent2="11"/>
+    <bond parent1="3" parent2="4" order="1.50"/>
+    <bond parent1="3" parent2="12"/>
+    <bond parent1="4" parent2="5" order="1.50"/>
+    <bond parent1="4" parent2="13"/>
+    <bond parent1="5" parent2="6" order="1.50"/>
+    <bond parent1="5" parent2="7"/>
+    <bond parent1="6" parent2="14"/>
+    <bond parent1="7" parent2="8"/>
+    <bond parent1="7" parent2="15"/>
+    <bond parent1="7" parent2="16"/>
+    <bond parent1="8" parent2="9"/>
+    <bond parent1="8" parent2="17"/>
+    <bond parent1="8" parent2="18"/>
+    <bond parent1="9" parent2="19"/>
+  </molecule>
+</gml>

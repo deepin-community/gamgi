@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Interfaces: Light Link</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Light Link</h1>
+
+<div id="notebook">
+<ul>
+<li><span>Object</span></li>
+<li><a href="link_shift.html">Shift</a></li>
+</ul>
+</div>
+
+<div class="contents">
+
+Link a light or a list of lights to other layers.
+
+<p/>
+
+Lights can be linked only to layers.
+
+<p/>
+
+Gamgi expects users to identify first the light or list of lights
+and then the layer to link. Clicking the mouse over the graphic area
+in the window creates a menu with all the lights in the current layer
+(local selection). When one is selected, its identification is transported
+to the <b>Light</b> entry. Pressing the <b>List</b> button, the current
+list of lights is selected instead.
+
+<p/>
+
+Gamgi is now expecting users to select a layer, clicking the mouse over
+the graphic area of any window to create a menu with all the layers in
+that window (global selection). When one is selected, its identification
+is transported to the <b>Layer</b> entry.
+
+<h3>Method</h3>
+
+Gamgi suppports only one method to link lights: <b>Object</b>.
+
+<p/>
+
+The <b>Object</b> method links a light or a list of lights to a single
+layer.
+
+<p/>
+
+When linking a light, the light is unlinked from its current layer
+and linked to the new layer. An error is issued when the layer already
+owned the light.
+
+<p/>
+
+After the linking operation, Gamgi always puts on top
+the window and layer containing the linked objects.
+
+<p/>
+
+When linking a list of lights, all lights in the list
+are unlinked and linked to the selected layer. 
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

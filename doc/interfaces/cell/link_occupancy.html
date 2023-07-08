@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Interfaces: Cell Link</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Cell Link</h1>
+
+<div id="notebook">
+<ul> 
+<li><a href="link_object.html">Object</a></li>
+<li><a href="link_shift.html">Shift</a></li>
+<li><a href="link_position.html">Position</a></li>
+<li><a href="link_change.html">Change</a></li>
+<li><span>Occupancy</span></li>
+<li><a href="link_packing.html">Packing</a></li>
+</ul>
+</div>
+
+<div class="contents">
+
+Define here which nodes will be considered in the link operation.
+
+<h3>Cutoff</h3>
+
+GAMGI supports two methods to define the boundary between 
+inside (linked) and outside (unlinked) cell regions: <b>Object</b>
+and <b>Node</b>.
+
+<p/>
+
+With the <b>Object</b> method, the link is considered
+as long as the object is inside the cell volume (even if the node
+is outside). This is the usual method to build crystals.
+
+<p/>
+
+With the <b>Node</b> method, the link is considered
+as long as the node is inside the cell volume (even if the object
+is outside). This method is useful for example to build liquids 
+and nanostructures.
+
+<p/>
+
+For all cell representations, a small tolerance (by default 1.0E-4)
+is added around the cell volume, to make sure that objects or nodes
+exactly in the borders are included.
+
+<h3>Nodes</h3>
+
+When the cell volume is <b>Primitive</b>, <b>Wigner</b>, <b>Rhombus</b> 
+or <b>Sphere</b>, the occupation rules are applied along the primitive vectors. 
+
+<p/>
+
+When the volume is <b>Conventional</b>, users can choose to apply the 
+occupation rules to <b>P</b> nodes (the vertices of the cells) or, when 
+they exist, to <b>I</b> nodes (in the center of the cells), to <b>A</b>, 
+<b>B</b>, <b>C</b> nodes (in the center of the faces normal to vectors 
+<b>a</b>, <b>b</b>, <b>c</b>, respectively), or to <b>R</b> nodes (the 
+nodes inside rombohedral cells, with an obverse orientation), by pressing 
+the buttons labeled <b>P</b>, <b>I</b>, <b>A</b>, <b>B</b>, <b>C</b>, <b>R</b>.
+
+<p/>
+
+When <b>Cell->Link</b> starts, all nodes are available, though not selected.
+When a Cell is selected, the available nodes are selected by default and
+nonexistent nodes are automatically disabled.
+
+<h3>Rules</h3>
+
+GAMGI uses a small language based in patterns of occupation to define
+which nodes should be linked (occupied). These pattern rules are formed
+by combining the characters <b>*</b> (meaning ocuppied nodes) and <b>_</b>
+(meaning empty nodes), plus the digits <b>0-9</b> (meaning node positions).
+These rules are applied separately to each of the selected node subsets.
+By default all nodes are accupied, so the initial pattern is <b>(*, *, *)</b>.
+
+<p/>
+
+The most common examples of occupation rules are simple to understand:
+<b>(*, *, *)</b> means apply to all nodes, <b>(1, 2, 3)</b> means apply 
+to node (1, 2, 3) only, <b>(*_, *_, *_)</b> means apply to alternated 
+nodes only, with the starting node (0, 0, 0) occupied, <b>(*, 2, *)</b> 
+means apply only to the nodes where the second coordinate is 2, 
+<b>(*5, *, *)</b> means apply to all nodes where the first coordinate 
+is 5 or smaller, <b>(*, *, _3*)</b> means apply to all nodes where 
+the third coordinate is 4 or larger.
+
+<p/>
+
+When digits are not included, the sequences of <b>*</b> and <b>_</b>
+characters are handled as patterns of occupation that are repeated
+until all nodes are scanned. Therefore, the pattern <b>(*_, *, *)</b>
+is equivalent to <b>(*_*_, *, *)</b> but different from <b>(*_*, *, *)</b>.
+
+<p/>
+
+Nodes are scanned and marked three times, first along the <b>a</b>
+direction, with the first pattern, then along the <b>b</b> direction,
+with the second pattern and finally along the <b>c</b> direction,
+with the third pattern.
+
+<p/>
+
+When the first pattern is applied, the nodes in the first plane 
+(along direction <b>a</b>) are marked with the pattern first 
+character, but when the second and third patterns are applied, 
+the nodes in the first planes (along directions <b>b</b>, <b>c</b>) 
+are preserved (to keep the information introduced with the previous 
+patterns) and the patterns are scanned not from the first character 
+but from the character that is equal to the character of the nodes
+in the first planes. Therefore, the pattern <b>(*_, *_, *_)</b> is 
+equivalent to <b>(*_, _*, _*)</b> (node (0, 0, 0) is occupied) but 
+different from <b>(_*, *_, *_)</b> (node (0, 0, 0) is empty).
+
+<p/>
+
+When digits are included, they are handled as node coordinates
+and fix limits to the range of application of the various patterns.
+They can appear in the beginning, meaning that nodes with a smaller
+coordinate are empty, in the middle, meaning that the previous
+pattern should be repeated only until that node inclusive, or 
+in the end, meaning that all nodes with a larger coordinate are 
+empty. 
+
+<p/>
+
+For example: <b>(*, *_5**_10, *)</b> means repeat sequence one
+occupied-one empty along the second direction until the second 
+coordinate becomes 5 inclusive, then repeat sequence two 
+occupied-one empty until the second coordinate becomes 10 inclusive, 
+all the remaing nodes are empty; <b>(*, *, _5*_10*)</b> means all 
+nodes are empty along the third direction until the third 
+coordinate is 5 inclusive, then apply the sequence one occupied-
+one empty until the third coordinate becomes 10 inclusive,
+all the remaining nodes are occupied. 
+
+<p/>
+
+When only digits appear, nodes with that coordinate are 
+occupied, all the others, before and after, are empty.
+We note that <b>(*, *, 8)</b> is equivalent to 
+<b>(*, *, 8_)</b> (nodes are empty except when the third 
+coordinate is 8) but <b>(8, *, *)</b> (nodes are empty except 
+when the first coordinate is 8) is different from 
+<b>(_8, *, *)</b> (all nodes are empty).
+
+<p/>
+
+When marking the nodes, the sequence <b>*</b> (or
+<b>**</b> or <b>***</b>, etc.), meaning these nodes
+seem to be occupied, can be overrun by patterns applied 
+in the other directions, which in turn can be overrun by 
+the sequence <b>_</b> (or <b>__</b> or <b>___</b>, etc.),
+meaning these nodes must be empty, or by starting/ending 
+digits, meaning nodes before/after must be empty, this way 
+establishing a hierarchy for the priority of the various 
+patterns. 
+
+<p/>
+
+For example, the sequence <b>(*, *_, *10_)</b>
+means, first, all nodes seem to be occupied in the first
+direction, second, alternated nodes in the second direction 
+are empty, (overriding the first sequence), third, nodes until
+10 stay as they are (because <b>*</b> has lower priority
+than the pattern applied in the second direction) and 
+nodes after 10 are definitely empty (overriding the
+second sequence).
+
+<p/>
+
+The rules explained so far are valid for nodes with positive 
+coordinates along Cell directions a, b, c. To obtain the occupancy
+patterns for nodes with negative coordinates, just reflect around
+zero (by a mirror operation) the results obtained for positive
+nodes. Therefore the rule <b>(1, 1, 1)</b> actually links the eight 
+nodes (-1,-1,-1), (-1,-1,+1), (-1,+1,-1), (-1,+1,+1), (+1,-1,-1), 
+(+1,-1,+1), (+1,+1,-1) and (+1,+1,+1).
+
+<p/>
+
+When the cell volume is a <b>Sphere</b>, by default the origin is 
+at the center, so nodes are marked in one octant and symmetrically 
+replicated to the other octants. For example, for a cubic lattice
+inside a sphere of radius 5, to occupy only a central
+cube around the center, a pattern as <b>(*2_, *2_, *2_)</b>
+can be used, and to occupy all the other nodes (leaving
+the cube in the center completely empty), the pattern 
+<b>(___***, ___***, ___***)</b> will work. In this
+second case, a pattern as <b>(_2*, _2*, _2*)</b>
+will not work, because the low priority <b>*</b>
+sequence is overrun by the high priority <b>_</b>
+sequence, when applied in the other directions.
+
+<p/>
+
+When the selected <b>Cutoff</b> mode is <b>Objects</b>, nodes
+outside the cell volume can contribute to the contents of 
+the cell volume. This happens for all centered lattices with 
+<b>Conventional</b> volumes, plus <b>Rhombus</b> and <b>Sphere</b> 
+cell volumes. Therefore, the occupancy patterns must be
+applied to the larger cell volumes that contain all the 
+contributing nodes (not just those that are visible inside
+the cell). Some of these additional nodes have negative coordinates,
+so they are replicated from the corresponding positive nodes.
+This occurs for <b>Conventional</b> centered cells, for
+<b>I</b>, <b>A</b>, <b>B</b>, <b>C</b> nodes, plus <b>Rhombus</b> 
+volumes.
+
+<p/>
+
+Changing the Cell origin, to take profit of the replication rule,
+extends enormously the power of occupancy patterns. For example, 
+a cubic primitive lattice with 8 x 6 x 4 conventional cells has 
+positive nodes only. Moving the Cell origin to the volume center, 
+to node (4, 3, 2), seven out of the eight octants have now nodes 
+with negative coordinates. Applying successively the rules 
+<b>(____*)</b>, <b>(___****)</b> and <b>(__***)</b>, the cell 
+volume remains empty everywhere except at the six lateral faces, 
+where all nodes are occupied.
+
+<p/>
+
+These techniques can be used to build arbitrarily complex, multi-layered,
+nanostructures.
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

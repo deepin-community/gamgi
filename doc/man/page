@@ -1,0 +1,140 @@
+.TH GAMGI 1 "November 30 2009" "0.14.3" "GAMGI Manual Page"
+
+.SH NAME
+gamgi \- general atomistic modelling graphic interface
+
+.SH SYNOPSIS
+.B gamgi
+.BI [ file_1.xml ]
+.I ...
+.BI [ file_n.xml ]
+
+.SH DESCRIPTION
+.B gamgi
+is a computer package to construct, view and analyse atomic structures.
+
+.SH OPTIONS
+\fIfile_n.xml\fP is a fullname such as:
+.PP
+.nf
+    \%../dat/molecule/flavors/garlic.xml
+    \%~/gamgi/dat/molecule/flavors/garlic.xml
+    \%http://www.gamgi.org/dat/molecule/flavors/garlic.xml
+    \%ftp://ftp.gamgi.org/gamgi/dat/molecule/flavors/garlic.xml
+.fi
+.PP
+Object and config data can be mixed, so \fIfile_1.xml\fP might be a preferences
+file, loaded before the other object files. To automate the procedure, 
+just add a line as this to \fI~/.bashrc\fP:
+.IP
+.B alias gamgi='gamgi ~/gamgi/my_defaults.xml'
+
+.SH ENVIRONMENT
+.TP
+.B GAMGI_HELP
+Set this variable to let GAMGI know where the Help documentation files are.
+For example, add a line as this to \fI~/.bashrc \fP:
+.IP
+.B GAMGI_HELP=~/gamgi/gamgi/doc; export GAMGI_HELP
+.TP
+.B GAMGI_TEXT
+Set this variable to let GAMGI know where are the .ttf DejaVu files, to render
+solid fonts. For example, add a line as this to \fI~/.bashrc\fP:
+.IP
+.B GAMGI_TEXT=~/gamgi/gamgi/src/io/fonts; export GAMGI_TEXT
+.TP
+.B BROWSER
+Set this variable to let GAMGI know which browser to launch, in case this is
+chosen to read Help. For example, add a line as this to \fI~/.bashrc\fP:
+.IP
+.B BROWSER=firefox; export BROWSER
+
+.SH HELP
+Read introductory information with \%Help->Start. Browse the documentation at
+\fI\%http://www.gamgi.org/\fP or its local copy at \fIgamgi/doc/\fP. Use the
+help mechanisms reunited under the Help button. Subscribe the mailling list
+<\&gamgi-users@gamgi.org\&>.
+.PP
+Contact the author at <\&jcgp07@gmail.com\&>.
+.PP
+Throughout all interfaces and formats, lengths are in angstrom, angles 
+in degrees and decimal numbers are represented with dots. Every parameter
+that can be defined in an interface can be also defined in a file
+and vice-versa.
+
+.SH INTERFACES
+Rotate, move, scale the selected object pressing the left, middle, right mouse
+button. Export the selected object choosing \%File->Export. The statusbar
+shows the selected object (left) and layer (right).
+.PP
+To select an object, choose \%Object->Select and press over the object. Or
+choose the object class on the menu above, with the middle button, before
+pressing on the object. Or press twice Layer, Window or GAMGI on the menu
+above. When the object has no visual representation, press the mouse over the
+graphic area, to pop up a menu.
+.PP
+To select a layer, choose \%Layer->Select and press the mouse over the graphic
+area, to pop up a menu. Or choose the layer class on the menu above, with the
+middle button, before pressing the mouse over the graphic area, to pop up a
+menu.
+.PP
+Solid objects usually require lights with diffuse and specular components to
+be properly represented in 3D space, otherwise they look flat. Wired objects
+do not have a 3D representation, so diffuse and specular lights are not
+reflected, becoming poorly visible when using lights, unless a significant
+ambient component is used. Often it is worth to draw solid and wired objects
+in different layers, with and without lights.
+.PP
+When a task dialog is open, to learn how it works, just select \%Help->Current
+and another dialog will pop up, explaining the meaning of all the parameters
+in the task dialog.
+.PP
+To see detailed explanations of GAMGI interfaces, consult the reference manual
+at \fI\%http://www.gamgi.org/interfaces/reference.html\fP,
+\fI\%doc/interfaces/reference.html\fP or 
+\%Help->Topic->Interfaces.
+
+.SH FORMATS
+GAMGI can import files in \fI.xyz\fP and \fI.xml\fP native format, selected
+automatically by the file extension. GAMGI can export files in
+.IR .ps ,
+.IR .ppm ,
+.IR .jp[e]g ,
+.IR .png ,
+.IR .tif[f] ,
+.I .x3d
+and native
+.I .xml
+formats, selected automatically by the file extension.
+.PP
+In GAMGI native XML format, a water molecule can be described as:
+.PP
+.nf
+<gml>
+  <molecule>
+    <atom element="O"  x="0.000" y="0.000" z="0.000" id="O1"/>
+    <atom element="H"  x="0.776" y="0.540" z="0.000" id="H1"/>
+    <atom element="H" x="-0.776" y="0.540" z="0.000" id="H2"/>
+
+    <bond parent1="O1" parent2="H1"/>
+    <bond parent1="O1" parent2="H2"/>
+  </molecule>
+</gml>
+.fi
+.PP
+To see detailed explanations of GAMGI formats, consult the reference manual at 
+\fI\%http://www.gamgi.org/formats/reference.html\fP,
+\fI\%doc/formats/reference.html\fP or 
+\%Help->Topic->Formats.
+
+.SH EXAMPLES
+Choose \%Help->Tutorials to get a list of fully described procedures, 
+exemplifying most aspects of the work with GAMGI.
+
+.SH "SEE ALSO"
+.I \%http://www.gamgi.org/
+
+.SH AUTHOR
+Written by \fBCarlos Pereira\fP <\&jcgp07@gmail.com\&>, helped by
+\fBSteffen Moeller\fP <\&moeller@debian.org\&> and \fBDaniel Leidert\fP
+<\&daniel.leidert@wgdd.de\&>, from the Debian project.

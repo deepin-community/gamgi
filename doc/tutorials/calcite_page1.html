@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Tutorials: Calcite crystalline structure</title>
+<link rel="icon" type="image/png" href="../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Calcite crystalline structure</h1>
+
+<div id="notebook">
+<ul>
+<li><span>Page 1</span></li>
+</ul>
+</div>
+
+<div class="contents">
+            
+Calcite (CaCO3) is the stable form of calcium carbonate and is one of the most
+widely available minerals, present in sedimentary (limestone) and metamorphic 
+(marble) rocks. Stalactites and stalagmites in caves are usually formed by calcite.
+
+<p/>
+
+First we create a cell with the calcite lattice parameters and space group, 
+then one atom of Ca, C and O, to model the atoms of the structure, and finally 
+link the cell with the atoms to build the crystal, using the Wyckoff positions 
+reported in the literature for calcite.
+
+<p/>
+
+A lateral view of the calcite structure, for a single conventional cell, 
+can be seen in the figure at
+<a href="http://www.gamgi.org/images/screenshot10_4b.png">
+http://www.gamgi.org/images/screenshot10_4b.png</a>.
+
+<h3>Calcite</h3>
+
+<ol>
+<li>
+Press <b>Cell->Create</b> and set <b>Group</b> to <b>167</b>, the R-3c
+space group for calcite. As the lattice is rombohedral, <b>System</b> 
+and <b>Lattice</b> are automatically set to <b>h</b> and <b>R</b>, 
+respectively.
+</li>
+
+<li>
+Set lattice parameters <b>a</b> and <b>c</b> to <b>4.9896</b> and
+<b>17.0610</b>, respectively, the reported values for calcite. Entries 
+<b>b</b>, <b>ab</b>, <b>ac</b> and <b>bc</b> are automatically disabled, 
+as these parameters are known for the hexagonal system.
+</li>
+
+<li>
+Press <b>Atom->Create</b> and set <b>Style</b> to <b>Solid</b>.
+Write <b>Ca</b> in the <b>Element</b> entry and press the mouse 
+over the screen (outside the cell), to create a Ca atom. Repeat 
+the task to create C and O atoms. These three atoms will act as 
+models to create the structure.
+</li>
+
+<li>
+Press <b>Cell->Link</b> and select the <b>Crystal</b> link method.
+Initially, the <b>Wyckoff</b> menu (in <b>Position</b> page) only 
+has the option, <b>1 Basis 1</b>, which is the usual crystallographic 
+base or motif. The first "1" indicates the number of objects that will 
+be linked to each crystallographic node, and the last "1" the point symmetry. 
+</li>
+
+<li>
+Press the mouse over the cell to identify it. The cell belongs to space 
+group 167, so the <b>Wyckoff</b> menu is automatically updated to include 
+options for all the Wyckoff positions available for this space group: 
+<b>12 f 1</b>, <b>6 e .2</b>, <b>6 d -1</b>, <b>4 c 3.</b>, <b>2 b -3.</b>
+and <b>2 a 32</b>.
+</li>
+
+<li>
+Press the mouse over the Ca atom, to identify the atom used as a model 
+to create the Ca atoms of the crystal. 
+</li>
+
+<li>
+According to literature, Ca atoms occupy Wyckoff positions b, so select
+these positions in the Wyckoff menu: <b>2 b -3.</b>. For these positions,
+all coordinates are known in advance, so <b>x</b>, <b>y</b> and <b>z</b> 
+entries are all automatically disabled.
+</li>
+
+<li>
+Press <b>Ok</b>. 2 atoms of Ca are added to each node of the 
+cell (and removed if they fall outside the cell volume).
+</li>
+
+<li>
+Repeat the link procedure, to add the C atoms. Press the mouse first 
+over the cell, and then over the C atom. Carbon atoms occupy positions a,
+so select these positions in the Wyckoff menu: <b>2 a 32</b>. For these 
+positions, all coordinates are known in advance, so <b>x</b>, <b>y</b> 
+and <b>z</b> entries are all automatically disabled.
+</li>
+
+<li>
+Press <b>Ok</b>. 2 atoms of C are added to each node of the 
+cell (and removed if they fall outside the cell volume).
+</li>
+
+<li>
+Repeat the link procedure, to add the O atoms. Press the mouse 
+first over the cell, and then over the O atom. Select positions e, 
+in the Wyckoff menu: <b>6 e .2</b>. For these positions, only the y,z 
+coordinates are fixed by symmetry. Enter <b>0.257</b> for <b>x</b> 
+and press <b>Ok</b>. 6 atoms of O are added to each node of the 
+cell (and removed if they fall outside the cell volume).
+</li>
+
+<li>
+Select <b>Light->Create</b> and press <b>Ok</b>, to add a light
+and give atoms a three dimensional look.
+</li>
+
+<li>
+The atomic structure is now created. To remove the Ca,C,O atoms used 
+as models during the building process, press <b>Atom->Remove</b> and 
+click the mouse over them.
+</li>
+
+<li>
+The conventional rombohedral cell thus created has 30 atoms inside.
+For Ca: 4 x 1/6 + 4 x 1/12 (corners) + 2 x 1/3 + 2 x 1/6 (edges) + 4 (inside)
+= 6 atoms. For C: 4 x 1/3 + 4 x 1/6 (edges) + 4 (inside) =  6 atoms.
+For O: 8 x 1/2 (faces) + 14 (inside) = 18. As expected, the CaCO3
+stoichiometry is obeyed.
+</li>
+
+<li>Rotate,move,scale the calcite cell with the mouse. Press 
+<b>Atom->Measure</b> to determine lengths and angles between atoms.
+</li>
+</ol>
+
+</div>
+
+<div id="bottom">
+<a href="../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

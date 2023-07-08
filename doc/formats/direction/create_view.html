@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Formats: Direction Create</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Direction Create</h1>
+
+<div id="notebook">
+<ul>
+<li><a href="create_type.html">Type</a></li>
+<li><a href="create_projection.html">Projection</a></li>
+<li><a href="create_scope.html">Scope</a></li>
+<li><a href="create_position.html">Position</a></li>
+<li><span>View</span></li>
+</ul>
+</div>
+
+<div class="contents">
+
+<h3>red, green, blue</h3>
+
+Set the direction color, between black (0.0, 0.0, 0.0) and white (1.0, 1.0, 1.0).
+
+<pre>
+Example: <b>&lt;direction ... red="0.0" green="1.0" blue="1.0"/></b> (default)
+(defined in <b>GAMGI_MESA_DIRECTION_R</b>, <b>GAMGI_MESA_DIRECTION_G</b>
+and <b>GAMGI_MESA_DIRECTION_B</b>)
+Allowed values: <b>0.0</b> - <b>1.0</b> (optional, coupled)
+</pre>
+
+<h3>scale</h3>
+
+Change the direction size, including its child objects. Direction objects are
+scaled around the direction center. The visual representation of an object
+is always scaled by its own scale factor multiplied by the scale factor
+of all its parent objects until layer, inclusive.
+
+<p/>
+
+An error is shown when direction <b>type</b> is <b>pole</b> or <b>trace</b>
+(stereographic projection) or when <b>autonomy</b> is <b>no</b> (direction 
+cannot scale independently of its parent).
+
+<pre>
+Example: <b>&lt;direction ... scale="1.0"/></b> (default)
+(defined in <b>GAMGI_MESA_SCALE</b>)
+Allowed values: positive real (optional)
+</pre>
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

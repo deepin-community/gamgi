@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Interfaces: Layer Create</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Layer Create</h1>
+
+<div id="notebook">
+<ul>
+<li><a href="create_projection.html">Projection</a></li>
+<li><a href="create_position.html">Position</a></li>
+<li><span>Visibility</span></li>
+<li><a href="create_view.html">View</a></li>
+</ul>
+</div>
+
+<div class="contents">
+
+Define here the layer visibility to the outside and to the inside.
+
+<h3>Visibility</h3>
+
+The <b>Out</b> and <b>In</b> parameters control the visibility 
+to the outside and to the inside of the various layers in a window. 
+
+<p/>
+
+The visibility <b>Out</b> parameters are used only by the current layer, 
+to control how to attempt to see the other layers: 1) <b>All</b> (try 
+to see completely the other layers); 2) <b>Partial</b> (try to see the 
+other layers in a blurred way, to distinguish them from the current 
+layer); 3) <b>None</b> (do not see the other layers).
+
+<p/>
+
+The visibility <b>In</b> parameters are used only by non current layers, 
+to control how the current layer is allowed to look inside them: 
+1) <b>All</b> (the layer can be seen clearly); 2) <b>Partial</b> (the 
+layer can be seen in a blurred way, to distinguish it from the current 
+layer); 3) <b>None</b> (the layer cannot be seen from the outside).
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

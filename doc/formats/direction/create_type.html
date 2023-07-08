@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Formats: Direction Create</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Direction Create</h1>
+
+<div id="notebook">
+<ul>
+<li><span>Type</span></li>
+<li><a href="create_projection.html">Projection</a></li>
+<li><a href="create_scope.html">Scope</a></li>
+<li><a href="create_position.html">Position</a></li>
+<li><a href="create_view.html">View</a></li>
+</ul>
+</div>
+
+<div class="contents">
+
+<h3>reference</h3>
+
+When <b>reference</b> is <b>cell</b>, the direction is crystallographic
+so direction indices are required and its parent must be a cell.
+When <b>reference</b> is <b>atoms</b>, the direction is described
+by two xyz coordinates so the direction becomes independent of the
+atoms used to define it.
+
+<pre>
+Example: <b>&lt;direction ... reference="cell"/></b> (default)
+Allowed values: <b>cell</b>, <b>atoms</b> (optional)
+</pre>
+
+<h3>u, v, w</h3>
+
+Set the indices <b>u, v, w</b> defining a crystallographic direction.
+The three indices cannot be all zero. An error is shown when these 
+indices are not indicated for a crystallographic direction or when 
+they are indicated for an atomic direction. 
+
+<pre>
+Example: <b>&lt;direction ... u="1" v="0" w="0"/></b> (no default)
+Allowed values: integer (required, coupled)
+</pre>
+
+<h3>vectors</h3>
+
+Set the type of cell vectors, <b>conventional</b> or <b>primitive</b>,
+used to determine the direction with <b>u</b>, <b>v</b>, <b>w</b> indices.
+When the lattice is primitive there is no difference between
+<b>conventional</b> or <b>primitive</b> cell vectors.
+An error is shown when <b>vectors</b> is set for an atomic direction.
+
+<pre>
+Example: <b>&lt;direction ... vectors="conventional"/></b> (default)
+(defined in <b>GAMGI_PHYS_DIRECTION_VECTORS</b>)
+Allowed values: <b>conventional</b>, <b>primitive</b> (optional)
+</pre>
+
+<h3>model</h3>
+
+An atomic direction is always represented as a <b>line</b>.
+A crystallographic direction can also be represented as a
+<b>pole</b> or a <b>trace</b> (for projected directions).
+
+<pre>
+Example: <b>&lt;direction ... model="line"/></b> (default)
+Allowed values: <b>line</b>, <b>pole</b>, <b>trace</b> (optional)
+</pre>
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

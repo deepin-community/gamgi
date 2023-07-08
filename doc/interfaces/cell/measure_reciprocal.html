@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Interfaces: Cell Measure</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Cell Measure</h1>
+
+<div id="notebook">
+<ul>
+<li><a href="measure_type.html">Type</a></li>
+<li><span>Reciprocal</span></li>
+<li><a href="measure_voronoi.html">Voronoi</a></li>
+<li><a href="measure_tolerance.html">Tolerance</a></li>
+<li><a href="measure_view.html">View</a></li>
+</ul>
+</div>
+
+<div class="contents">
+            
+Select here the parameters to build the reciprocal lattice of the Cell lattice.
+
+<p/>
+
+The reciprocal lattice for the selected cell is calculated and attributed
+to a new cell object, in a new layer. The primitive vectors for the old and
+new lattices, <b>a1,a2,a3</b> and <b>b1,b2,b3</b> respectively, are related
+by the equations:
+
+<pre><b>
+b1 = K (a2 x a3) / (a1 . a2 x a3)
+b2 = K (a3 x a1) / (a1 . a2 x a3)
+b3 = K (a1 x a2) / (a1 . a2 x a3)
+</b></pre>
+
+<p/>
+
+The new layer has the default layer properties (except no visibility to outside)
+and the new cell has the initial cell properties (except those related with the
+reciprocal lattice transformation). Space group information is discarded for the
+new cell.
+
+<p/>
+
+For all Bravais lattices, the reciprocal lattice transformation follows
+these rules: 1) the crystalographic system remains the same; 2) <b>P</b>,
+<b>C</b>, <b>R</b> lattices are transformed into <b>P</b>, <b>C</b>, <b>R</b>
+lattices, while <b>I</b>, <b>F</b> lattices are transformed into <b>F</b>,
+<b>I</b> lattices, respectively; 3) the reciprocal lattice of the reciprocal
+lattice is the initial lattice.
+
+<p/>
+
+When Cubic, Tetragonal, Orthorhombic or Hexagonal R lattices are
+transformed, the orientation of the conventional cell vectors is
+preserved.
+
+<p/>
+
+The reciprocal lattice of a Tetragonal I lattice is a Tetragonal F lattice,
+which is usually not represented, because it is equivalent to a Tetragonal
+I lattice, rotated 45 degrees and scaled by (1/sqrt(2), 1/sqrt(2), 0). GAMGI
+represents the reciprocal lattice of a Tetragonal I lattice as a new
+Tetragonal I lattice, rotated and scaled by those values, so orientation
+and lengths are fully preserved. In particular, the reciprocal of the
+reciprocal of a Tetragonal I lattice is represented as the initial cell
+rotated by 90 degrees around the origin, which still represents the same
+lattice, due to the rotation symmetry of the Tetragonal system.
+
+<p/>
+
+Hexagonal P lattices are rotated 30 degrees, so the reciprocal of the
+reciprocal of a Hexagonal P lattice is represented as the initial lattice
+rotated by 60 degrees around the origin, which still represents the same
+lattice, due to the rotation symmetry of the Hexagonal system.
+
+<p/>
+
+For Monoclinic P, C lattices, the first conventional vector (aligned along
+the x axis) becomes a vector on the plane xz, the second vector (aligned
+along the y axis) continues aligned along the y axis, and the third vector
+(a vector on the xz plane) becomes aligned along the z axis. For the
+reciprocal of the reciprocal lattice, the conventional vectors become
+exactly the same as for the initial lattice.
+
+<p/>
+
+For Triclinic P lattices, the first conventional vector (aligned along
+the x axis) becomes a generic vector pointing down, the second vector
+(aligned on the xy plane) becomes aligned on the yz plane, and the third
+vector (a generic vector pointing up) becomes aligned along the z axis.
+For the reciprocal of the reciprocal lattice, the conventional vectors
+become exactly the same as for the initial lattice.
+
+<h3>Lattice</h3>
+
+Select here if the reciprocal lattice of the primitive lattice related
+with the Cell lattice should also be constucted.
+
+<h3>Planes</h3>
+
+Select here if Plane objects (described by cross patterns, as in
+stereographic projections) should be added to the reciprocal lattice nodes.
+
+<h3>Constant</h3>
+
+The reciprocal lattice constant <b>K</b> is often set to <b>1.0</b> in crystallography,
+while in solid state physics the value commonly used is <b>2 PI</b>, the default used
+here (it is easier to change it to <b>1</b> than the other way).
+
+<h3>Bravais</h3>
+
+Users can also choose the so-called Bravais polar lattice, where the constant K is
+made equal to <b>V**2/3</b>, where V is the primitive cell volume, so direct and
+reciprocal lattices have exactly the same volume per node.
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

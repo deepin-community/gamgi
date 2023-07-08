@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Interfaces: Direction Modify</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Direction Modify</h1>
+
+<div id="notebook">
+<ul>
+<li><a href="modify_type.html">Type</a></li>
+<li><a href="modify_scope.html">Scope</a></li>
+<li><span>Projection</span></li>
+<li><a href="modify_view.html">View</a></li>
+</ul>
+</div>
+
+<div class="contents">
+
+Change here the stereographic projection for a direction or a list of directions.
+
+<p/>
+
+To modify a direction, click over its graphic image, or write its identification
+(name and number) on the <b>Direction</b> entry. To modify a list of directions,
+press the button <b>List</b> (after creating the list of directions with
+<b>Direction->Select</b>). Parameters for empty entries or <b>Local</b> choices
+remain unchanged.
+
+<p/>
+
+To change a direction name write the new name in the <b>Direction</b> entry,
+followed by the direction number (GAMGI needs the number to identify the direction).
+To change the name for a list of directions, press <b>List</b> first
+and then write the new common name in the <b>Name</b> entry.
+
+<h3>Net</h3>
+
+The projection net can be <b>Wulff</b> (Stereographic) or <b>Schmidt</b>
+(Equivalent). In the <b>Wulff</b> projection, the point to project (above)
+and the point of the sphere farther from the user (below) define a segment
+that intersects the circle at a point, giving the final representation.
+
+<p/>
+
+In the <b>Schmidt</b> projection, the point to project (above) is
+rotated around the point of the sphere closer to the user (above),
+keeping the same XY direction, until both points have the same Z
+coordinate, and then divided by square root of 2, to be inside the
+circle with radius R at coordinate Z, giving the final representation.
+
+<p/>
+
+Every family of crystallographic planes or directions can be described
+by the intersection of the plane or direction passing through the origin
+O with a sphere of radius R centered at O, defining a circumpherence or
+a point, respectively. These in turn can be projected on the circle
+parallel to the screen (constant Z coordinate) that divides the sphere
+in half, with radius R and origin O. In GAMGI, points in the half-sphere
+farther from the user are hidden, so only half-circumpherences and points
+above are visible.
+
+<h3>Model</h3>
+
+In both projections, a direction can always be represented by a <b>Pole</b>
+or a <b>Trace</b>. The intersection of the direction with the projection
+sphere is a point that projected gives the <b>Pole</b> representation.
+The intersection of the plane normal to the direction with the projection
+sphere is an arch that projected gives the <b>Trace</b> representation:
+a circumpherence arch in the <b>Wulff</b> projection and a 4th order
+conic arch in the <b>Schmidt</b> projection.
+
+<p/>
+
+A plane can always be described by its normal vector, and a direction
+by its plane perpendicular, so both representations are valid for
+crystallographic planes and directions.
+
+<p/>
+
+In a <b>Wulff</b> projection, angles between planes are given by
+the angles between the traces, so angles are preserved. This is not
+true for the <b>Schmidt</b> projection. The <b>Wulff</b> projection
+is mostly used in materials science.
+
+<p/>
+
+In a <b>Schmidt</b> projection, minor circles on the sphere are
+distorted when projected but the areas are preserved. This is not
+true for the <b>Wulff</b> projection. The <b>Schmidt</b> projection
+is mostly used in structural geology.
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

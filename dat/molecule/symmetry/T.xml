@@ -1,0 +1,16 @@
+<gml>
+<molecule name="T">
+<atom element="C" x="0.10" y="0.20" z="1.00"/>
+<atom element="C" x="-0.10" y="-0.20" z="1.00"/>
+<atom element="C" x="1.00" y="0.10" z="0.20"/>
+<atom element="C" x="1.00" y="-0.10" z="-0.20"/>
+<atom element="C" x="-1.00" y="-0.10" z="0.20"/>
+<atom element="C" x="-1.00" y="0.10" z="-0.20"/>
+<atom element="C" x="0.20" y="1.00" z="0.10"/>
+<atom element="C" x="-0.20" y="1.00" z="-0.10"/>
+<atom element="C" x="-0.20" y="-1.00" z="0.10"/>
+<atom element="C" x="0.20" y="-1.00" z="-0.10"/>
+<atom element="C" x="0.10" y="-0.20" z="-1.00"/>
+<atom element="C" x="-0.10" y="0.20" z="-1.00"/>
+</molecule>
+</gml>

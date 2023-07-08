@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Formats: Layer Config</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Layer Config</h1>
+
+<div id="notebook">
+<ul>
+<li><span>Projection</span></li>
+<li><a href="config_position.html">Position</a></li>
+<li><a href="config_history.html">History</a></li>
+</ul>
+</div>
+
+<div class="contents">
+
+<h3>perspective</h3>
+
+Controls which projection is applied by default when creating 
+a new layer. When <b>perspective</b> is set to <b>no</b>, an
+orthographic projection is applied.
+
+<pre>
+Example: <b>&lt;layer perspective="yes"/></b> (default)
+(defined in <b>GAMGI_MESA_LAYER_PERSPECTIVE</b>)
+Allowed values: <b>yes</b>, <b>no</b> (optional)
+</pre>
+
+<h3>near, far, top</h3>
+
+Set the projection volume dimensions that are applied by default, when creating 
+a new layer. <b>near</b> and <b>near</b> mark the minimum and maximum distance 
+from the observer for objects to be visible. <b>near</b> must be smaller than <b>far</b>.
+
+<pre>
+Example: <b>&lt;layer near="1.0" far="1000.0" top="0.5"/></b> (default)
+(defined in <b>GAMGI_MESA_LAYER_NEAR</b>, <b>GAMGI_MESA_LAYER_FAR</b> 
+and <b>GAMGI_MESA_LAYER_TOP</b>)
+Allowed values: positive real (optional)
+</pre>
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE gml SYSTEM "http://www.gamgi.org/dtd/gamgi.dtd">
+<gml>
+  <layer perspective="no">
+    <light ambient_r="0.500" ambient_g="0.500" ambient_b="0.500"
+    diffuse_r="0.400" diffuse_g="0.400" diffuse_b="0.400" specular_r="0.300"
+    specular_g="0.300" specular_b="0.300" direction_x="0.0000"
+    direction_y="0.0000" direction_z="-1.0000"/>
+    <cell group="221" a="4.1230" x="-1.4624" y="-1.9784" z="4.2210"
+    e1="110.00" e2="2.50" e3="12.00">
+      <atom element="Cl" x="-1.4624" y="-1.9784" z="4.2210" radius="1.8100"
+      style="solid" variancy="1.00" size="1.00" scale="0.400"/>
+      <atom element="Cl" x="-2.8778" y="-1.1822" z="0.4313" radius="1.8100"
+      style="solid" variancy="1.00" size="1.00" scale="0.400"/>
+      <atom element="Cl" x="-1.3454" y="2.0635" z="5.0265" radius="1.8100"
+      style="solid" variancy="1.00" size="1.00" scale="0.400"/>
+      <atom element="Cl" x="-2.7608" y="2.8597" z="1.2368" radius="1.8100"
+      style="solid" variancy="1.00" size="1.00" scale="0.400"/>
+      <atom element="Cl" x="2.4083" y="-1.8094" z="2.8109" radius="1.8100"
+      style="solid" variancy="1.00" size="1.00" scale="0.400"/>
+      <atom element="Cl" x="0.9929" y="-1.0132" z="-0.9788" radius="1.8100"
+      style="solid" variancy="1.00" size="1.00" scale="0.400"/>
+      <atom element="Cl" x="2.5253" y="2.2324" z="3.6164" radius="1.8100"
+      style="solid" variancy="1.00" size="1.00" scale="0.400"/>
+      <atom element="Cl" x="1.1098" y="3.0287" z="-0.1733" radius="1.8100"
+      style="solid" variancy="1.00" size="1.00" scale="0.400"/>
+      <atom element="Cs" x="-0.1763" y="0.5251" z="2.0238" mass="132.9050"
+      radius="1.7400" style="solid" variancy="1.00" size="1.00" scale="0.400"/>
+    </cell>
+  </layer>
+</gml>

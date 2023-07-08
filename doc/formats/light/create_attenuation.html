@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Formats: Light Create</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Light Create</h1>
+
+<div id="notebook">
+<ul>
+<li><a href="create_type.html">Type</a></li>
+<li><a href="create_color.html">Color</a></li>
+<li><span>Attenuation</span></li>
+</ul>
+</div>
+
+<div class="contents">
+
+<h3>constant, linear, quadratic</h3>
+
+Control the axial attenuation, defined only for positional
+and spot lights. The axial attenuation factor is defined as:
+
+<pre>
+Axial Attenuation Factor = 1/(<b>constant</b> + <b>linear</b>*distance + <b>quadratic</b>*distance*distance)
+
+Example: <b>&lt;light ... constant="1.0" linear="0.0" quadratic="0.0" radial="0.0"/></b> (default)
+(defined in <b>GAMGI_MESA_LIGHT_CONSTANT</b>, <b>GAMGI_MESA_LIGHT_LINEAR</b>,
+<b>GAMGI_MESA_LIGHT_QUADRATIC</b> and <b>GAMGI_MESA_LIGHT_RADIAL</b>)
+Allowed values: positive real (optional)
+</pre>
+
+<h3>radial</h3>
+
+Controls the radial attenuation, defined only for spot
+lights. The radial attenuation factor is defined as:
+
+<pre>
+Radial Attenuation Factor = [max (0, vertex . direction)]**<b>radial</b>
+
+Example: <b>&lt;light ... constant="1.0" linear="0.0" quadratic="0.0" radial="0.0"/></b> (default)
+(defined in <b>GAMGI_MESA_LIGHT_CONSTANT</b>, <b>GAMGI_MESA_LIGHT_LINEAR</b>,
+<b>GAMGI_MESA_LIGHT_QUADRATIC</b> and <b>GAMGI_MESA_LIGHT_RADIAL</b>)
+Allowed values: positive real (optional)
+</pre>
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

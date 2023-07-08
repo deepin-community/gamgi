@@ -1,0 +1,24 @@
+Structure 10
+Prototype: CsCl
+StrukturBericht / Pearson: B2 / cP2
+
+lattice parameter:
+CsCl   BrCs   AlCo   Ag Mg
+4.123  4.286  2.862  3.280
+CoTi   CuZn   FeTi   NiTi
+2.986  2.945  2.976  2.972
+
+Radius:
+Cs 1.0200 (Shannon radius for charge +1 coordination 8)
+Cl 1.8100 (Shannon radius for charge -1 coordination 8)
+
+1. Building with space group (s010.xml):
+Group:  221
+
+Wyckoff positions:
+Cl 1b
+Cs 1a
+
+View:
+Cl: style solid, size 1.0, variancy 1.0, scale 0.4
+Cs: style solid, size 1.0, variancy 1.0, scale 0.4

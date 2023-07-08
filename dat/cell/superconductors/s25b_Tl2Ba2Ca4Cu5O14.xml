@@ -1,0 +1,690 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE gml SYSTEM "http://www.gamgi.org/dtd/gamgi.dtd">
+<gml>
+  <layer perspective="no" scale="0.176">
+    <light ambient_r="0.500" ambient_g="0.500" ambient_b="0.500"
+    diffuse_r="0.400" diffuse_g="0.400" diffuse_b="0.400" specular_r="0.300"
+    specular_g="0.300" specular_b="0.300" direction_x="0.0000"
+    direction_y="0.0000" direction_z="-1.0000"/>
+    <cell group="139" a="3.8500" c="48.2000" x="-5.2219" y="-47.8842"
+    z="-15.9820" e1="80.00" e2="90.00" e3="195.00" n1="2" n2="2" n3="2">
+      <group name="Polytope" reference="polytope" x="-5.2219" y="-47.8842"
+      z="-15.9820" center_x="-0.5067" center_y="5.5664" center_z="-3.7929"
+      e1="80.00" e2="90.00" e3="195.00" faces="yes" red="1.000" green="0.000"
+      blue="0.000">
+        <atom element="Cu" x="-0.5067" y="5.1866" z="-3.8598" style="solid"/>
+        <atom element="O" x="-0.5067" y="7.0854" z="-3.5250" style="solid"/>
+        <atom element="O" x="-0.0084" y="4.8638" z="-2.0287" style="solid"/>
+        <atom element="O" x="-2.3661" y="5.1001" z="-3.3692" style="solid"/>
+        <atom element="O" x="-1.0049" y="5.5095" z="-5.6910" style="solid"/>
+        <atom element="O" x="1.3527" y="5.2732" z="-4.3505" style="solid"/>
+        <data name="points" type="double" size="15">
+        3.8500 3.8500 56.2976 5.7750 3.8500 54.3696 3.8500 1.9250 54.3696 1.9250
+        3.8500 54.3696 3.8500 5.7750 54.3696
+        </data>
+        <data name="points_driver" type="int" size="22">
+        5 4 1 2 3 4 3 2 0 3 3 1 0 2 3 0 1 4 3 3 0 4
+        </data>
+      </group>
+      <group name="Polytope" reference="polytope" x="-5.2219" y="-47.8842"
+      z="-15.9820" center_x="-0.5067" center_y="-7.3448" center_z="-6.0695"
+      e1="80.00" e2="90.00" e3="195.00" faces="yes" red="1.000" green="0.000"
+      blue="0.000">
+        <atom element="Cu" x="-0.5067" y="-6.9651" z="-6.0025" style="solid"/>
+        <atom element="O" x="-0.5067" y="-8.8638" z="-6.3373" style="solid"/>
+        <atom element="O" x="-2.3661" y="-7.0516" z="-5.5118" style="solid"/>
+        <atom element="O" x="-0.0084" y="-7.2880" z="-4.1713" style="solid"/>
+        <atom element="O" x="-1.0049" y="-6.6422" z="-7.8337" style="solid"/>
+        <atom element="O" x="1.3527" y="-6.8786" z="-6.4932" style="solid"/>
+        <data name="points" type="double" size="15">
+        3.8500 3.8500 40.1024 3.8500 1.9250 42.0304 5.7750 3.8500 42.0304 1.9250
+        3.8500 42.0304 3.8500 5.7750 42.0304
+        </data>
+        <data name="points_driver" type="int" size="22">
+        5 4 1 2 4 3 3 0 1 3 3 1 0 2 3 2 0 4 3 0 3 4
+        </data>
+      </group>
+      <group name="Polytope" reference="polytope" x="-5.2219" y="-47.8842"
+      z="-15.9820" center_x="-2.8643" center_y="16.6254" center_z="-3.2250"
+      e1="80.00" e2="90.00" e3="195.00" faces="yes" red="1.000" green="0.000"
+      blue="0.000">
+        <atom element="Cu" x="-2.8643" y="17.0051" z="-3.1581" style="solid"/>
+        <atom element="O" x="-2.8643" y="15.1064" z="-3.4929" style="solid"/>
+        <atom element="O" x="-2.3661" y="16.6823" z="-1.3269" style="solid"/>
+        <atom element="O" x="-1.0049" y="17.0917" z="-3.6487" style="solid"/>
+        <atom element="O" x="-3.3625" y="17.3280" z="-4.9892" style="solid"/>
+        <atom element="O" x="-4.7237" y="16.9186" z="-2.6674" style="solid"/>
+        <data name="points" type="double" size="15">
+        1.9250 1.9250 64.2024 3.8500 1.9250 66.1304 1.9250 3.8500 66.1304
+        -0.0000 1.9250 66.1304 1.9250 0.0000 66.1304
+        </data>
+        <data name="points_driver" type="int" size="22">
+        5 4 1 2 3 4 3 2 0 3 3 1 0 2 3 0 1 4 3 3 0 4
+        </data>
+      </group>
+      <group name="Polytope" reference="polytope" x="-5.2219" y="-47.8842"
+      z="-15.9820" center_x="-1.8678" center_y="15.9796" center_z="0.4373"
+      e1="80.00" e2="90.00" e3="195.00" faces="yes" red="1.000" green="0.000"
+      blue="0.000">
+        <atom element="Cu" x="-1.8678" y="16.3594" z="0.5042" style="solid"/>
+        <atom element="O" x="-1.8678" y="14.4607" z="0.1694" style="solid"/>
+        <atom element="O" x="-0.0084" y="16.4459" z="0.0136" style="solid"/>
+        <atom element="O" x="-2.3661" y="16.6823" z="-1.3269" style="solid"/>
+        <atom element="O" x="-3.7273" y="16.2729" z="0.9949" style="solid"/>
+        <atom element="O" x="-1.3696" y="16.0365" z="2.3354" style="solid"/>
+        <data name="points" type="double" size="15">
+        5.7750 1.9250 64.2024 5.7750 3.8500 66.1304 3.8500 1.9250 66.1304 5.7750
+        0.0000 66.1304 7.7000 1.9250 66.1304
+        </data>
+        <data name="points_driver" type="int" size="22">
+        5 4 1 2 3 4 3 2 0 3 3 1 0 2 3 0 1 4 3 3 0 4
+        </data>
+      </group>
+      <group name="Polytope" reference="polytope" x="-5.2219" y="-47.8842"
+      z="-15.9820" center_x="0.8545" center_y="16.7984" center_z="-4.2063"
+      e1="80.00" e2="90.00" e3="195.00" faces="yes" red="1.000" green="0.000"
+      blue="0.000">
+        <atom element="Cu" x="0.8545" y="17.1782" z="-4.1394" style="solid"/>
+        <atom element="O" x="0.8545" y="15.2795" z="-4.4742" style="solid"/>
+        <atom element="O" x="1.3527" y="16.8553" z="-2.3082" style="solid"/>
+        <atom element="O" x="0.3563" y="17.5011" z="-5.9705" style="solid"/>
+        <atom element="O" x="-1.0049" y="17.0917" z="-3.6487" style="solid"/>
+        <atom element="O" x="2.7139" y="17.2647" z="-4.6300" style="solid"/>
+        <data name="points" type="double" size="15">
+        1.9250 5.7750 64.2024 3.8500 5.7750 66.1304 -0.0000 5.7750 66.1304
+        1.9250 3.8500 66.1304 1.9250 7.7000 66.1304
+        </data>
+        <data name="points_driver" type="int" size="22">
+        5 4 1 4 2 3 3 2 0 3 3 0 1 3 3 1 0 4 3 0 2 4
+        </data>
+      </group>
+      <group name="Polytope" reference="polytope" x="-5.2219" y="-47.8842"
+      z="-15.9820" center_x="1.8510" center_y="16.1527" center_z="-0.5440"
+      e1="80.00" e2="90.00" e3="195.00" faces="yes" red="1.000" green="0.000"
+      blue="0.000">
+        <atom element="Cu" x="1.8510" y="16.5324" z="-0.4771" style="solid"/>
+        <atom element="O" x="1.8510" y="14.6337" z="-0.8119" style="solid"/>
+        <atom element="O" x="1.3527" y="16.8553" z="-2.3082" style="solid"/>
+        <atom element="O" x="2.3492" y="16.2095" z="1.3541" style="solid"/>
+        <atom element="O" x="3.7104" y="16.6189" z="-0.9677" style="solid"/>
+        <atom element="O" x="-0.0084" y="16.4459" z="0.0136" style="solid"/>
+        <data name="points" type="double" size="15">
+        5.7750 5.7750 64.2024 3.8500 5.7750 66.1304 7.7000 5.7750 66.1304 5.7750
+        7.7000 66.1304 5.7750 3.8500 66.1304
+        </data>
+        <data name="points_driver" type="int" size="22">
+        5 4 1 4 2 3 3 2 0 3 3 0 1 3 3 1 0 4 3 0 2 4
+        </data>
+      </group>
+      <group name="Polytope" reference="polytope" x="-5.2219" y="-47.8842"
+      z="-15.9820" center_x="1.8510" center_y="-18.4038" center_z="-6.6373"
+      e1="80.00" e2="90.00" e3="195.00" faces="yes" red="1.000" green="0.000"
+      blue="0.000">
+        <atom element="Cu" x="1.8510" y="-18.7836" z="-6.7042" style="solid"/>
+        <atom element="O" x="1.8510" y="-16.8849" z="-6.3694" style="solid"/>
+        <atom element="O" x="1.3527" y="-18.4607" z="-8.5354" style="solid"/>
+        <atom element="O" x="3.7104" y="-18.6971" z="-7.1949" style="solid"/>
+        <atom element="O" x="-0.0084" y="-18.8701" z="-6.2136" style="solid"/>
+        <atom element="O" x="2.3492" y="-19.1065" z="-4.8731" style="solid"/>
+        <data name="points" type="double" size="15">
+        5.7750 5.7750 32.1976 3.8500 5.7750 30.2696 5.7750 7.7000 30.2696 5.7750
+        3.8500 30.2696 7.7000 5.7750 30.2696
+        </data>
+        <data name="points_driver" type="int" size="22">
+        5 4 1 2 4 3 3 0 1 3 3 1 0 2 3 2 0 4 3 0 3 4
+        </data>
+      </group>
+      <group name="Polytope" reference="polytope" x="-5.2219" y="-47.8842"
+      z="-15.9820" center_x="-1.8678" center_y="-18.5769" center_z="-5.6560"
+      e1="80.00" e2="90.00" e3="195.00" faces="yes" red="1.000" green="0.000"
+      blue="0.000">
+        <atom element="Cu" x="-1.8678" y="-18.9566" z="-5.7229" style="solid"/>
+        <atom element="O" x="-1.8678" y="-17.0579" z="-5.3881" style="solid"/>
+        <atom element="O" x="-0.0084" y="-18.8701" z="-6.2136" style="solid"/>
+        <atom element="O" x="-1.3696" y="-19.2795" z="-3.8918" style="solid"/>
+        <atom element="O" x="-3.7273" y="-19.0431" z="-5.2323" style="solid"/>
+        <atom element="O" x="-2.3661" y="-18.6337" z="-7.5541" style="solid"/>
+        <data name="points" type="double" size="15">
+        5.7750 1.9250 32.1976 5.7750 3.8500 30.2696 7.7000 1.9250 30.2696 5.7750
+        0.0000 30.2696 3.8500 1.9250 30.2696
+        </data>
+        <data name="points_driver" type="int" size="22">
+        5 4 1 2 3 4 3 2 0 3 3 1 0 2 3 0 1 4 3 3 0 4
+        </data>
+      </group>
+      <group name="Polytope" reference="polytope" x="-5.2219" y="-47.8842"
+      z="-15.9820" center_x="-2.8643" center_y="-17.9311" center_z="-9.3183"
+      e1="80.00" e2="90.00" e3="195.00" faces="yes" red="1.000" green="0.000"
+      blue="0.000">
+        <atom element="Cu" x="-2.8643" y="-18.3109" z="-9.3852" style="solid"/>
+        <atom element="O" x="-2.8643" y="-16.4121" z="-9.0504" style="solid"/>
+        <atom element="O" x="-4.7237" y="-18.3974" z="-8.8946" style="solid"/>
+        <atom element="O" x="-3.3625" y="-17.9880" z="-11.2164" style="solid"/>
+        <atom element="O" x="-2.3661" y="-18.6337" z="-7.5541" style="solid"/>
+        <atom element="O" x="-1.0049" y="-18.2243" z="-9.8759" style="solid"/>
+        <data name="points" type="double" size="15">
+        1.9250 1.9250 32.1976 1.9250 0.0000 30.2696 -0.0000 1.9250 30.2696
+        3.8500 1.9250 30.2696 1.9250 3.8500 30.2696
+        </data>
+        <data name="points_driver" type="int" size="22">
+        5 4 1 2 4 3 3 0 1 3 3 1 0 2 3 2 0 4 3 0 3 4
+        </data>
+      </group>
+      <group name="Polytope" reference="polytope" x="-5.2219" y="-47.8842"
+      z="-15.9820" center_x="0.8545" center_y="-17.7581" center_z="-10.2996"
+      e1="80.00" e2="90.00" e3="195.00" faces="yes" red="1.000" green="0.000"
+      blue="0.000">
+        <atom element="Cu" x="0.8545" y="-18.1378" z="-10.3666" style="solid"/>
+        <atom element="O" x="0.8545" y="-16.2391" z="-10.0318" style="solid"/>
+        <atom element="O" x="2.7139" y="-18.0513" z="-10.8572" style="solid"/>
+        <atom element="O" x="-1.0049" y="-18.2243" z="-9.8759" style="solid"/>
+        <atom element="O" x="0.3563" y="-17.8149" z="-12.1977" style="solid"/>
+        <atom element="O" x="1.3527" y="-18.4607" z="-8.5354" style="solid"/>
+        <data name="points" type="double" size="15">
+        1.9250 5.7750 32.1976 1.9250 7.7000 30.2696 1.9250 3.8500 30.2696
+        -0.0000 5.7750 30.2696 3.8500 5.7750 30.2696
+        </data>
+        <data name="points_driver" type="int" size="22">
+        5 4 1 4 2 3 3 2 0 3 3 0 1 3 3 1 0 4 3 0 2 4
+        </data>
+      </group>
+      <plane name="Plane" reference="atoms" x="-5.2219" y="-47.8842"
+      z="-15.9820" center_x="0.8545" center_y="-24.2137" center_z="-11.4379"
+      e1="80.00" e2="90.00" e3="195.00" red="1.000" green="0.000" blue="0.000">
+        <atom element="Cu" x="0.8545" y="-24.2137" z="-11.4379" style="solid"/>
+        <atom element="O" x="0.3563" y="-23.8908" z="-13.2691" style="solid"/>
+        <atom element="O" x="-1.0049" y="-24.3002" z="-10.9472" style="solid"/>
+        <atom element="O" x="2.7139" y="-24.1272" z="-11.9286" style="solid"/>
+        <atom element="O" x="1.3527" y="-24.5366" z="-9.6067" style="solid"/>
+        <data name="points" type="double" size="12">
+        -0.0000 5.7750 24.1000 1.9250 3.8500 24.1000 3.8500 5.7750 24.1000
+        1.9250 7.7000 24.1000
+        </data>
+        <data name="points_driver" type="int" size="6">
+        1 4 0 1 2 3
+        </data>
+      </plane>
+      <plane name="Plane" reference="atoms" x="-5.2219" y="-47.8842"
+      z="-15.9820" center_x="-2.8643" center_y="-24.3867" center_z="-10.4566"
+      e1="80.00" e2="90.00" e3="195.00" red="1.000" green="0.000" blue="0.000">
+        <atom element="Cu" x="-2.8643" y="-24.3867" z="-10.4566" style="solid"/>
+        <atom element="O" x="-2.3661" y="-24.7096" z="-8.6254" style="solid"/>
+        <atom element="O" x="-3.3625" y="-24.0638" z="-12.2877" style="solid"/>
+        <atom element="O" x="-4.7237" y="-24.4732" z="-9.9659" style="solid"/>
+        <atom element="O" x="-1.0049" y="-24.3002" z="-10.9472" style="solid"/>
+        <data name="points" type="double" size="12">
+        -0.0000 1.9250 24.1000 1.9250 -0.0000 24.1000 3.8500 1.9250 24.1000
+        1.9250 3.8500 24.1000
+        </data>
+        <data name="points_driver" type="int" size="6">
+        1 4 0 1 2 3
+        </data>
+      </plane>
+      <plane name="Plane" reference="atoms" x="-5.2219" y="-47.8842"
+      z="-15.9820" center_x="-2.8643" center_y="-21.3488" center_z="-9.9209"
+      e1="80.00" e2="90.00" e3="195.00" red="1.000" green="0.000" blue="0.000">
+        <atom element="Cu" x="-2.8643" y="-21.3488" z="-9.9209" style="solid"/>
+        <atom element="O" x="-3.3625" y="-21.0259" z="-11.7521" style="solid"/>
+        <atom element="O" x="-4.7237" y="-21.4353" z="-9.4303" style="solid"/>
+        <atom element="O" x="-2.3661" y="-21.6717" z="-8.0897" style="solid"/>
+        <atom element="O" x="-1.0049" y="-21.2623" z="-10.4116" style="solid"/>
+        <data name="points" type="double" size="12">
+        -0.0000 1.9250 27.1848 1.9250 -0.0000 27.1848 3.8500 1.9250 27.1848
+        1.9250 3.8500 27.1848
+        </data>
+        <data name="points_driver" type="int" size="6">
+        1 4 0 1 2 3
+        </data>
+      </plane>
+      <plane name="Plane" reference="atoms" x="-5.2219" y="-47.8842"
+      z="-15.9820" center_x="0.8545" center_y="-21.1758" center_z="-10.9022"
+      e1="80.00" e2="90.00" e3="195.00" red="1.000" green="0.000" blue="0.000">
+        <atom element="Cu" x="0.8545" y="-21.1758" z="-10.9022" style="solid"/>
+        <atom element="O" x="0.3563" y="-20.8529" z="-12.7334" style="solid"/>
+        <atom element="O" x="1.3527" y="-21.4986" z="-9.0711" style="solid"/>
+        <atom element="O" x="2.7139" y="-21.0892" z="-11.3929" style="solid"/>
+        <atom element="O" x="-1.0049" y="-21.2623" z="-10.4116" style="solid"/>
+        <data name="points" type="double" size="12">
+        -0.0000 5.7750 27.1848 1.9250 3.8500 27.1848 3.8500 5.7750 27.1848
+        1.9250 7.7000 27.1848
+        </data>
+        <data name="points_driver" type="int" size="6">
+        1 4 0 1 2 3
+        </data>
+      </plane>
+      <plane name="Plane" reference="atoms" x="-5.2219" y="-47.8842"
+      z="-15.9820" center_x="-1.8678" center_y="-21.9946" center_z="-6.2586"
+      e1="80.00" e2="90.00" e3="195.00" red="1.000" green="0.000" blue="0.000">
+        <atom element="Cu" x="-1.8678" y="-21.9946" z="-6.2586" style="solid"/>
+        <atom element="O" x="-2.3661" y="-21.6717" z="-8.0897" style="solid"/>
+        <atom element="O" x="-3.7273" y="-22.0811" z="-5.7679" style="solid"/>
+        <atom element="O" x="-1.3696" y="-22.3174" z="-4.4274" style="solid"/>
+        <atom element="O" x="-0.0084" y="-21.9080" z="-6.7492" style="solid"/>
+        <data name="points" type="double" size="12">
+        3.8500 1.9250 27.1848 5.7750 0.0000 27.1848 7.7000 1.9250 27.1848 5.7750
+        3.8500 27.1848
+        </data>
+        <data name="points_driver" type="int" size="6">
+        1 4 0 1 2 3
+        </data>
+      </plane>
+      <plane name="Plane" reference="atoms" x="-5.2219" y="-47.8842"
+      z="-15.9820" center_x="-1.8678" center_y="-25.0325" center_z="-6.7943"
+      e1="80.00" e2="90.00" e3="195.00" red="1.000" green="0.000" blue="0.000">
+        <atom element="Cu" x="-1.8678" y="-25.0325" z="-6.7943" style="solid"/>
+        <atom element="O" x="-3.7273" y="-25.1190" z="-6.3036" style="solid"/>
+        <atom element="O" x="-0.0084" y="-24.9460" z="-7.2849" style="solid"/>
+        <atom element="O" x="-1.3696" y="-25.3554" z="-4.9631" style="solid"/>
+        <atom element="O" x="-2.3661" y="-24.7096" z="-8.6254" style="solid"/>
+        <data name="points" type="double" size="12">
+        5.7750 3.8500 24.1000 7.7000 1.9250 24.1000 5.7750 -0.0000 24.1000
+        3.8500 1.9250 24.1000
+        </data>
+        <data name="points_driver" type="int" size="6">
+        1 4 0 1 2 3
+        </data>
+      </plane>
+      <plane name="Plane" reference="atoms" x="-5.2219" y="-47.8842"
+      z="-15.9820" center_x="1.8510" center_y="-21.8215" center_z="-7.2399"
+      e1="80.00" e2="90.00" e3="195.00" red="1.000" green="0.000" blue="0.000">
+        <atom element="Cu" x="1.8510" y="-21.8215" z="-7.2399" style="solid"/>
+        <atom element="O" x="3.7104" y="-21.7350" z="-7.7306" style="solid"/>
+        <atom element="O" x="1.3527" y="-21.4986" z="-9.0711" style="solid"/>
+        <atom element="O" x="2.3492" y="-22.1444" z="-5.4087" style="solid"/>
+        <atom element="O" x="-0.0084" y="-21.9080" z="-6.7492" style="solid"/>
+        <data name="points" type="double" size="12">
+        3.8500 5.7750 27.1848 5.7750 3.8500 27.1848 7.7000 5.7750 27.1848 5.7750
+        7.7000 27.1848
+        </data>
+        <data name="points_driver" type="int" size="6">
+        1 4 0 1 2 3
+        </data>
+      </plane>
+      <plane name="Plane" reference="atoms" x="-5.2219" y="-47.8842"
+      z="-15.9820" center_x="1.8510" center_y="-24.8595" center_z="-7.7756"
+      e1="80.00" e2="90.00" e3="195.00" red="1.000" green="0.000" blue="0.000">
+        <atom element="Cu" x="1.8510" y="-24.8595" z="-7.7756" style="solid"/>
+        <atom element="O" x="1.3527" y="-24.5366" z="-9.6067" style="solid"/>
+        <atom element="O" x="-0.0084" y="-24.9460" z="-7.2849" style="solid"/>
+        <atom element="O" x="3.7104" y="-24.7729" z="-8.2662" style="solid"/>
+        <atom element="O" x="2.3492" y="-25.1823" z="-5.9444" style="solid"/>
+        <data name="points" type="double" size="12">
+        7.7000 5.7750 24.1000 5.7750 7.7000 24.1000 3.8500 5.7750 24.1000 5.7750
+        3.8500 24.1000
+        </data>
+        <data name="points_driver" type="int" size="6">
+        1 4 0 1 2 3
+        </data>
+      </plane>
+      <plane name="Plane" reference="atoms" x="-5.2219" y="-47.8842"
+      z="-15.9820" center_x="-0.5067" center_y="-3.9272" center_z="-5.4668"
+      e1="80.00" e2="90.00" e3="195.00" red="1.000" green="0.000" blue="0.000">
+        <atom element="Cu" x="-0.5067" y="-3.9272" z="-5.4668" style="solid"/>
+        <atom element="O" x="-1.0049" y="-3.6043" z="-7.2980" style="solid"/>
+        <atom element="O" x="-0.0084" y="-4.2500" z="-3.6357" style="solid"/>
+        <atom element="O" x="1.3527" y="-3.8406" z="-5.9575" style="solid"/>
+        <atom element="O" x="-2.3661" y="-4.0137" z="-4.9762" style="solid"/>
+        <data name="points" type="double" size="12">
+        1.9250 3.8500 45.1152 3.8500 1.9250 45.1152 5.7750 3.8500 45.1152 3.8500
+        5.7750 45.1152
+        </data>
+        <data name="points_driver" type="int" size="6">
+        1 4 0 1 2 3
+        </data>
+      </plane>
+      <plane name="Plane" reference="atoms" x="-5.2219" y="-47.8842"
+      z="-15.9820" center_x="-0.5067" center_y="2.1487" center_z="-4.3955"
+      e1="80.00" e2="90.00" e3="195.00" red="1.000" green="0.000" blue="0.000">
+        <atom element="Cu" x="-0.5067" y="2.1487" z="-4.3955" style="solid"/>
+        <atom element="O" x="-0.0084" y="1.8258" z="-2.5643" style="solid"/>
+        <atom element="O" x="-2.3661" y="2.0622" z="-3.9048" style="solid"/>
+        <atom element="O" x="-1.0049" y="2.4716" z="-6.2266" style="solid"/>
+        <atom element="O" x="1.3527" y="2.2352" z="-4.8861" style="solid"/>
+        <data name="points" type="double" size="12">
+        5.7750 3.8500 51.2848 3.8500 1.9250 51.2848 1.9250 3.8500 51.2848 3.8500
+        5.7750 51.2848
+        </data>
+        <data name="points_driver" type="int" size="6">
+        1 4 0 1 2 3
+        </data>
+      </plane>
+      <plane name="Plane" reference="atoms" x="-5.2219" y="-47.8842"
+      z="-15.9820" center_x="-0.5067" center_y="-0.8892" center_z="-4.9312"
+      e1="80.00" e2="90.00" e3="195.00" red="1.000" green="0.000" blue="0.000">
+        <atom element="Cu" x="-0.5067" y="-0.8892" z="-4.9312" style="solid"/>
+        <atom element="O" x="-0.0084" y="-1.2121" z="-3.1000" style="solid"/>
+        <atom element="O" x="-2.3661" y="-0.9757" z="-4.4405" style="solid"/>
+        <atom element="O" x="-1.0049" y="-0.5663" z="-6.7623" style="solid"/>
+        <atom element="O" x="1.3527" y="-0.8027" z="-5.4218" style="solid"/>
+        <data name="points" type="double" size="12">
+        5.7750 3.8500 48.2000 3.8500 1.9250 48.2000 1.9250 3.8500 48.2000 3.8500
+        5.7750 48.2000
+        </data>
+        <data name="points_driver" type="int" size="6">
+        1 4 0 1 2 3
+        </data>
+      </plane>
+      <plane name="Plane" reference="atoms" x="-5.2219" y="-47.8842"
+      z="-15.9820" center_x="-2.8643" center_y="20.0431" center_z="-2.6224"
+      e1="80.00" e2="90.00" e3="195.00" red="1.000" green="0.000" blue="0.000">
+        <atom element="Cu" x="-2.8643" y="20.0431" z="-2.6224" style="solid"/>
+        <atom element="O" x="-2.3661" y="19.7202" z="-0.7912" style="solid"/>
+        <atom element="O" x="-4.7237" y="19.9566" z="-2.1317" style="solid"/>
+        <atom element="O" x="-3.3625" y="20.3660" z="-4.4536" style="solid"/>
+        <atom element="O" x="-1.0049" y="20.1296" z="-3.1131" style="solid"/>
+        <data name="points" type="double" size="12">
+        3.8500 1.9250 69.2152 1.9250 0.0000 69.2152 -0.0000 1.9250 69.2152
+        1.9250 3.8500 69.2152
+        </data>
+        <data name="points_driver" type="int" size="6">
+        1 4 0 1 2 3
+        </data>
+      </plane>
+      <plane name="Plane" reference="atoms" x="-5.2219" y="-47.8842"
+      z="-15.9820" center_x="-2.8643" center_y="23.0810" center_z="-2.0867"
+      e1="80.00" e2="90.00" e3="195.00" red="1.000" green="0.000" blue="0.000">
+        <atom element="Cu" x="-2.8643" y="23.0810" z="-2.0867" style="solid"/>
+        <atom element="O" x="-2.3661" y="22.7581" z="-0.2556" style="solid"/>
+        <atom element="O" x="-3.3625" y="23.4039" z="-3.9179" style="solid"/>
+        <atom element="O" x="-4.7237" y="22.9945" z="-1.5961" style="solid"/>
+        <atom element="O" x="-1.0049" y="23.1675" z="-2.5774" style="solid"/>
+        <data name="points" type="double" size="12">
+        3.8500 1.9250 72.3000 1.9250 3.8500 72.3000 -0.0000 1.9250 72.3000
+        1.9250 0.0000 72.3000
+        </data>
+        <data name="points_driver" type="int" size="6">
+        1 4 0 1 2 3
+        </data>
+      </plane>
+      <plane name="Plane" reference="atoms" x="-5.2219" y="-47.8842"
+      z="-15.9820" center_x="0.8545" center_y="20.2161" center_z="-3.6037"
+      e1="80.00" e2="90.00" e3="195.00" red="1.000" green="0.000" blue="0.000">
+        <atom element="Cu" x="0.8545" y="20.2161" z="-3.6037" style="solid"/>
+        <atom element="O" x="-1.0049" y="20.1296" z="-3.1131" style="solid"/>
+        <atom element="O" x="1.3527" y="19.8932" z="-1.7726" style="solid"/>
+        <atom element="O" x="0.3563" y="20.5390" z="-5.4349" style="solid"/>
+        <atom element="O" x="2.7139" y="20.3026" z="-4.0944" style="solid"/>
+        <data name="points" type="double" size="12">
+        1.9250 7.7000 69.2152 -0.0000 5.7750 69.2152 1.9250 3.8500 69.2152
+        3.8500 5.7750 69.2152
+        </data>
+        <data name="points_driver" type="int" size="6">
+        1 4 0 1 2 3
+        </data>
+      </plane>
+      <plane name="Plane" reference="atoms" x="-5.2219" y="-47.8842"
+      z="-15.9820" center_x="0.8545" center_y="23.2540" center_z="-3.0681"
+      e1="80.00" e2="90.00" e3="195.00" red="1.000" green="0.000" blue="0.000">
+        <atom element="Cu" x="0.8545" y="23.2540" z="-3.0681" style="solid"/>
+        <atom element="O" x="-1.0049" y="23.1675" z="-2.5774" style="solid"/>
+        <atom element="O" x="0.3563" y="23.5769" z="-4.8992" style="solid"/>
+        <atom element="O" x="1.3527" y="22.9312" z="-1.2369" style="solid"/>
+        <atom element="O" x="2.7139" y="23.3406" z="-3.5587" style="solid"/>
+        <data name="points" type="double" size="12">
+        1.9250 7.7000 72.3000 3.8500 5.7750 72.3000 1.9250 3.8500 72.3000
+        -0.0000 5.7750 72.3000
+        </data>
+        <data name="points_driver" type="int" size="6">
+        1 4 0 1 2 3
+        </data>
+      </plane>
+      <plane name="Plane" reference="atoms" x="-5.2219" y="-47.8842"
+      z="-15.9820" center_x="-1.8678" center_y="19.3973" center_z="1.0399"
+      e1="80.00" e2="90.00" e3="195.00" red="1.000" green="0.000" blue="0.000">
+        <atom element="Cu" x="-1.8678" y="19.3973" z="1.0399" style="solid"/>
+        <atom element="O" x="-3.7273" y="19.3108" z="1.5306" style="solid"/>
+        <atom element="O" x="-1.3696" y="19.0744" z="2.8711" style="solid"/>
+        <atom element="O" x="-0.0084" y="19.4838" z="0.5493" style="solid"/>
+        <atom element="O" x="-2.3661" y="19.7202" z="-0.7912" style="solid"/>
+        <data name="points" type="double" size="12">
+        5.7750 0.0000 69.2152 7.7000 1.9250 69.2152 5.7750 3.8500 69.2152 3.8500
+        1.9250 69.2152
+        </data>
+        <data name="points_driver" type="int" size="6">
+        1 4 0 1 2 3
+        </data>
+      </plane>
+      <plane name="Plane" reference="atoms" x="-5.2219" y="-47.8842"
+      z="-15.9820" center_x="1.8510" center_y="19.5703" center_z="0.0586"
+      e1="80.00" e2="90.00" e3="195.00" red="1.000" green="0.000" blue="0.000">
+        <atom element="Cu" x="1.8510" y="19.5703" z="0.0586" style="solid"/>
+        <atom element="O" x="-0.0084" y="19.4838" z="0.5493" style="solid"/>
+        <atom element="O" x="2.3492" y="19.2475" z="1.8898" style="solid"/>
+        <atom element="O" x="3.7104" y="19.6569" z="-0.4321" style="solid"/>
+        <atom element="O" x="1.3527" y="19.8932" z="-1.7726" style="solid"/>
+        <data name="points" type="double" size="12">
+        5.7750 3.8500 69.2152 7.7000 5.7750 69.2152 5.7750 7.7000 69.2152 3.8500
+        5.7750 69.2152
+        </data>
+        <data name="points_driver" type="int" size="6">
+        1 4 0 1 2 3
+        </data>
+      </plane>
+      <plane name="Plane" reference="atoms" x="-5.2219" y="-47.8842"
+      z="-15.9820" center_x="1.8510" center_y="22.6083" center_z="0.5943"
+      e1="80.00" e2="90.00" e3="195.00" red="1.000" green="0.000" blue="0.000">
+        <atom element="Cu" x="1.8510" y="22.6083" z="0.5943" style="solid"/>
+        <atom element="O" x="2.3492" y="22.2854" z="2.4254" style="solid"/>
+        <atom element="O" x="1.3527" y="22.9312" z="-1.2369" style="solid"/>
+        <atom element="O" x="3.7104" y="22.6948" z="0.1036" style="solid"/>
+        <atom element="O" x="-0.0084" y="22.5218" z="1.0849" style="solid"/>
+        <data name="points" type="double" size="12">
+        7.7000 5.7750 72.3000 5.7750 3.8500 72.3000 3.8500 5.7750 72.3000 5.7750
+        7.7000 72.3000
+        </data>
+        <data name="points_driver" type="int" size="6">
+        1 4 0 1 2 3
+        </data>
+      </plane>
+      <plane name="Plane" reference="atoms" x="-5.2219" y="-47.8842"
+      z="-15.9820" center_x="-1.8678" center_y="22.4352" center_z="1.5756"
+      e1="80.00" e2="90.00" e3="195.00" red="1.000" green="0.000" blue="0.000">
+        <atom element="Cu" x="-1.8678" y="22.4352" z="1.5756" style="solid"/>
+        <atom element="O" x="-0.0084" y="22.5218" z="1.0849" style="solid"/>
+        <atom element="O" x="-3.7273" y="22.3487" z="2.0662" style="solid"/>
+        <atom element="O" x="-2.3661" y="22.7581" z="-0.2556" style="solid"/>
+        <atom element="O" x="-1.3696" y="22.1124" z="3.4067" style="solid"/>
+        <data name="points" type="double" size="12">
+        5.7750 3.8500 72.3000 7.7000 1.9250 72.3000 5.7750 0.0000 72.3000 3.8500
+        1.9250 72.3000
+        </data>
+        <data name="points_driver" type="int" size="6">
+        1 4 0 1 2 3
+        </data>
+      </plane>
+      <atom element="Cu" x="-0.5067" y="-0.8892" z="-4.9312" style="solid"/>
+      <atom element="Cu" x="-2.8643" y="-24.3867" z="-10.4566" style="solid"/>
+      <atom element="Cu" x="-1.8678" y="-25.0325" z="-6.7943" style="solid"/>
+      <atom element="Cu" x="0.8545" y="-24.2137" z="-11.4379" style="solid"/>
+      <atom element="Cu" x="1.8510" y="-24.8595" z="-7.7756" style="solid"/>
+      <atom element="Cu" x="-2.8643" y="23.0810" z="-2.0867" style="solid"/>
+      <atom element="Cu" x="-1.8678" y="22.4352" z="1.5756" style="solid"/>
+      <atom element="Cu" x="0.8545" y="23.2540" z="-3.0681" style="solid"/>
+      <atom element="Cu" x="1.8510" y="22.6083" z="0.5943" style="solid"/>
+      <atom element="Cu" x="-0.5067" y="2.1487" z="-4.3955" style="solid"/>
+      <atom element="Cu" x="-0.5067" y="-3.9272" z="-5.4668" style="solid"/>
+      <atom element="Cu" x="-2.8643" y="-21.3488" z="-9.9209" style="solid"/>
+      <atom element="Cu" x="-1.8678" y="-21.9946" z="-6.2586" style="solid"/>
+      <atom element="Cu" x="0.8545" y="-21.1758" z="-10.9022" style="solid"/>
+      <atom element="Cu" x="1.8510" y="-21.8215" z="-7.2399" style="solid"/>
+      <atom element="Cu" x="-2.8643" y="20.0431" z="-2.6224" style="solid"/>
+      <atom element="Cu" x="-1.8678" y="19.3973" z="1.0399" style="solid"/>
+      <atom element="Cu" x="0.8545" y="20.2161" z="-3.6037" style="solid"/>
+      <atom element="Cu" x="1.8510" y="19.5703" z="0.0586" style="solid"/>
+      <atom element="Cu" x="-0.5067" y="5.1866" z="-3.8598" style="solid"/>
+      <atom element="Cu" x="-0.5067" y="-6.9651" z="-6.0025" style="solid"/>
+      <atom element="Cu" x="-2.8643" y="-18.3109" z="-9.3852" style="solid"/>
+      <atom element="Cu" x="-1.8678" y="-18.9566" z="-5.7229" style="solid"/>
+      <atom element="Cu" x="0.8545" y="-18.1378" z="-10.3666" style="solid"/>
+      <atom element="Cu" x="1.8510" y="-18.7836" z="-6.7042" style="solid"/>
+      <atom element="Cu" x="-2.8643" y="17.0051" z="-3.1581" style="solid"/>
+      <atom element="Cu" x="-1.8678" y="16.3594" z="0.5042" style="solid"/>
+      <atom element="Cu" x="0.8545" y="17.1782" z="-4.1394" style="solid"/>
+      <atom element="Cu" x="1.8510" y="16.5324" z="-0.4771" style="solid"/>
+      <atom element="Ca" x="-0.5067" y="-26.1421" z="-9.3839" style="solid"/>
+      <atom element="Ca" x="-0.5067" y="-23.1041" z="-8.8482" style="solid"/>
+      <atom element="Ca" x="-0.5067" y="21.3257" z="-1.0141" style="solid"/>
+      <atom element="Ca" x="-0.5067" y="24.3636" z="-0.4784" style="solid"/>
+      <atom element="Ca" x="-2.8643" y="-2.1718" z="-6.5395" style="solid"/>
+      <atom element="Ca" x="-1.8678" y="-2.8176" z="-2.8772" style="solid"/>
+      <atom element="Ca" x="0.8545" y="-1.9988" z="-7.5208" style="solid"/>
+      <atom element="Ca" x="1.8510" y="-2.6446" z="-3.8585" style="solid"/>
+      <atom element="Ca" x="-2.8643" y="0.8661" z="-6.0038" style="solid"/>
+      <atom element="Ca" x="-1.8678" y="0.2203" z="-2.3415" style="solid"/>
+      <atom element="Ca" x="0.8545" y="1.0391" z="-6.9851" style="solid"/>
+      <atom element="Ca" x="1.8510" y="0.3934" z="-3.3228" style="solid"/>
+      <atom element="Ca" x="-0.5067" y="-20.0662" z="-8.3126" style="solid"/>
+      <atom element="Ca" x="-0.5067" y="18.2877" z="-1.5497" style="solid"/>
+      <atom element="Ca" x="-2.8643" y="-5.2098" z="-7.0752" style="solid"/>
+      <atom element="Ca" x="-1.8678" y="-5.8555" z="-3.4128" style="solid"/>
+      <atom element="Ca" x="0.8545" y="-5.0367" z="-8.0565" style="solid"/>
+      <atom element="Ca" x="1.8510" y="-5.6825" z="-4.3942" style="solid"/>
+      <atom element="Ca" x="-2.8643" y="3.9040" z="-5.4682" style="solid"/>
+      <atom element="Ca" x="-1.8678" y="3.2583" z="-1.8058" style="solid"/>
+      <atom element="Ca" x="0.8545" y="4.0771" z="-6.4495" style="solid"/>
+      <atom element="Ca" x="1.8510" y="3.4313" z="-2.7871" style="solid"/>
+      <atom element="Ba" x="-0.5067" y="-16.6485" z="-7.7099" style="solid"/>
+      <atom element="Ba" x="-0.5067" y="14.8701" z="-2.1524" style="solid"/>
+      <atom element="Ba" x="-2.8643" y="-8.6274" z="-7.6778" style="solid"/>
+      <atom element="Ba" x="-1.8678" y="-9.2732" z="-4.0155" style="solid"/>
+      <atom element="Ba" x="0.8545" y="-8.4544" z="-8.6591" style="solid"/>
+      <atom element="Ba" x="1.8510" y="-9.1002" z="-4.9968" style="solid"/>
+      <atom element="Ba" x="-2.8643" y="7.3217" z="-4.8655" style="solid"/>
+      <atom element="Ba" x="-1.8678" y="6.6760" z="-1.2032" style="solid"/>
+      <atom element="Ba" x="0.8545" y="7.4948" z="-5.8468" style="solid"/>
+      <atom element="Ba" x="1.8510" y="6.8490" z="-2.1845" style="solid"/>
+      <atom element="O" x="-2.3661" y="-0.9757" z="-4.4405" style="solid"/>
+      <atom element="O" x="1.3527" y="-0.8027" z="-5.4218" style="solid"/>
+      <atom element="O" x="-1.0049" y="-0.5663" z="-6.7623" style="solid"/>
+      <atom element="O" x="-0.0084" y="-1.2121" z="-3.1000" style="solid"/>
+      <atom element="O" x="-4.7237" y="-24.4732" z="-9.9659" style="solid"/>
+      <atom element="O" x="-3.7273" y="-25.1190" z="-6.3036" style="solid"/>
+      <atom element="O" x="-1.0049" y="-24.3002" z="-10.9472" style="solid"/>
+      <atom element="O" x="-3.3625" y="-24.0638" z="-12.2877" style="solid"/>
+      <atom element="O" x="-0.0084" y="-24.9460" z="-7.2849" style="solid"/>
+      <atom element="O" x="-2.3661" y="-24.7096" z="-8.6254" style="solid"/>
+      <atom element="O" x="-1.3696" y="-25.3554" z="-4.9631" style="solid"/>
+      <atom element="O" x="2.7139" y="-24.1272" z="-11.9286" style="solid"/>
+      <atom element="O" x="0.3563" y="-23.8908" z="-13.2691" style="solid"/>
+      <atom element="O" x="3.7104" y="-24.7729" z="-8.2662" style="solid"/>
+      <atom element="O" x="1.3527" y="-24.5366" z="-9.6067" style="solid"/>
+      <atom element="O" x="2.3492" y="-25.1823" z="-5.9444" style="solid"/>
+      <atom element="O" x="-4.7237" y="22.9945" z="-1.5961" style="solid"/>
+      <atom element="O" x="-3.7273" y="22.3487" z="2.0662" style="solid"/>
+      <atom element="O" x="-1.0049" y="23.1675" z="-2.5774" style="solid"/>
+      <atom element="O" x="-3.3625" y="23.4039" z="-3.9179" style="solid"/>
+      <atom element="O" x="-0.0084" y="22.5218" z="1.0849" style="solid"/>
+      <atom element="O" x="-2.3661" y="22.7581" z="-0.2556" style="solid"/>
+      <atom element="O" x="-1.3696" y="22.1124" z="3.4067" style="solid"/>
+      <atom element="O" x="2.7139" y="23.3406" z="-3.5587" style="solid"/>
+      <atom element="O" x="0.3563" y="23.5769" z="-4.8992" style="solid"/>
+      <atom element="O" x="3.7104" y="22.6948" z="0.1036" style="solid"/>
+      <atom element="O" x="1.3527" y="22.9312" z="-1.2369" style="solid"/>
+      <atom element="O" x="2.3492" y="22.2854" z="2.4254" style="solid"/>
+      <atom element="O" x="-4.7237" y="-21.4353" z="-9.4303" style="solid"/>
+      <atom element="O" x="-3.3625" y="-21.0259" z="-11.7521" style="solid"/>
+      <atom element="O" x="-3.7273" y="-22.0811" z="-5.7679" style="solid"/>
+      <atom element="O" x="-2.3661" y="-21.6717" z="-8.0897" style="solid"/>
+      <atom element="O" x="-2.3661" y="-4.0137" z="-4.9762" style="solid"/>
+      <atom element="O" x="-1.3696" y="-22.3174" z="-4.4274" style="solid"/>
+      <atom element="O" x="-1.0049" y="-21.2623" z="-10.4116" style="solid"/>
+      <atom element="O" x="0.3563" y="-20.8529" z="-12.7334" style="solid"/>
+      <atom element="O" x="-1.0049" y="-3.6043" z="-7.2980" style="solid"/>
+      <atom element="O" x="-0.0084" y="-21.9080" z="-6.7492" style="solid"/>
+      <atom element="O" x="1.3527" y="-21.4986" z="-9.0711" style="solid"/>
+      <atom element="O" x="1.3527" y="-3.8406" z="-5.9575" style="solid"/>
+      <atom element="O" x="-0.0084" y="-4.2500" z="-3.6357" style="solid"/>
+      <atom element="O" x="2.3492" y="-22.1444" z="-5.4087" style="solid"/>
+      <atom element="O" x="2.7139" y="-21.0892" z="-11.3929" style="solid"/>
+      <atom element="O" x="3.7104" y="-21.7350" z="-7.7306" style="solid"/>
+      <atom element="O" x="-4.7237" y="19.9566" z="-2.1317" style="solid"/>
+      <atom element="O" x="-3.7273" y="19.3108" z="1.5306" style="solid"/>
+      <atom element="O" x="-3.3625" y="20.3660" z="-4.4536" style="solid"/>
+      <atom element="O" x="-2.3661" y="2.0622" z="-3.9048" style="solid"/>
+      <atom element="O" x="-1.0049" y="2.4716" z="-6.2266" style="solid"/>
+      <atom element="O" x="-1.0049" y="20.1296" z="-3.1131" style="solid"/>
+      <atom element="O" x="-2.3661" y="19.7202" z="-0.7912" style="solid"/>
+      <atom element="O" x="-0.0084" y="1.8258" z="-2.5643" style="solid"/>
+      <atom element="O" x="-0.0084" y="19.4838" z="0.5493" style="solid"/>
+      <atom element="O" x="-1.3696" y="19.0744" z="2.8711" style="solid"/>
+      <atom element="O" x="0.3563" y="20.5390" z="-5.4349" style="solid"/>
+      <atom element="O" x="1.3527" y="2.2352" z="-4.8861" style="solid"/>
+      <atom element="O" x="2.7139" y="20.3026" z="-4.0944" style="solid"/>
+      <atom element="O" x="1.3527" y="19.8932" z="-1.7726" style="solid"/>
+      <atom element="O" x="3.7104" y="19.6569" z="-0.4321" style="solid"/>
+      <atom element="O" x="2.3492" y="19.2475" z="1.8898" style="solid"/>
+      <atom element="O" x="-4.7237" y="-18.3974" z="-8.8946" style="solid"/>
+      <atom element="O" x="-3.7273" y="-19.0431" z="-5.2323" style="solid"/>
+      <atom element="O" x="-2.3661" y="-7.0516" z="-5.5118" style="solid"/>
+      <atom element="O" x="-1.0049" y="-18.2243" z="-9.8759" style="solid"/>
+      <atom element="O" x="-1.0049" y="-6.6422" z="-7.8337" style="solid"/>
+      <atom element="O" x="-0.0084" y="-18.8701" z="-6.2136" style="solid"/>
+      <atom element="O" x="-1.0049" y="5.5095" z="-5.6910" style="solid"/>
+      <atom element="O" x="1.3527" y="-6.8786" z="-6.4932" style="solid"/>
+      <atom element="O" x="-0.0084" y="-7.2880" z="-4.1713" style="solid"/>
+      <atom element="O" x="-0.0084" y="4.8638" z="-2.0287" style="solid"/>
+      <atom element="O" x="2.7139" y="-18.0513" z="-10.8572" style="solid"/>
+      <atom element="O" x="3.7104" y="-18.6971" z="-7.1949" style="solid"/>
+      <atom element="O" x="-3.3625" y="-17.9880" z="-11.2164" style="solid"/>
+      <atom element="O" x="-2.3661" y="-18.6337" z="-7.5541" style="solid"/>
+      <atom element="O" x="-1.3696" y="-19.2795" z="-3.8918" style="solid"/>
+      <atom element="O" x="0.3563" y="-17.8149" z="-12.1977" style="solid"/>
+      <atom element="O" x="1.3527" y="-18.4607" z="-8.5354" style="solid"/>
+      <atom element="O" x="2.3492" y="-19.1065" z="-4.8731" style="solid"/>
+      <atom element="O" x="-4.7237" y="16.9186" z="-2.6674" style="solid"/>
+      <atom element="O" x="-3.7273" y="16.2729" z="0.9949" style="solid"/>
+      <atom element="O" x="-3.3625" y="17.3280" z="-4.9892" style="solid"/>
+      <atom element="O" x="-2.3661" y="5.1001" z="-3.3692" style="solid"/>
+      <atom element="O" x="-1.0049" y="17.0917" z="-3.6487" style="solid"/>
+      <atom element="O" x="-2.3661" y="16.6823" z="-1.3269" style="solid"/>
+      <atom element="O" x="-0.0084" y="16.4459" z="0.0136" style="solid"/>
+      <atom element="O" x="-1.3696" y="16.0365" z="2.3354" style="solid"/>
+      <atom element="O" x="0.3563" y="17.5011" z="-5.9705" style="solid"/>
+      <atom element="O" x="1.3527" y="5.2732" z="-4.3505" style="solid"/>
+      <atom element="O" x="2.7139" y="17.2647" z="-4.6300" style="solid"/>
+      <atom element="O" x="1.3527" y="16.8553" z="-2.3082" style="solid"/>
+      <atom element="O" x="3.7104" y="16.6189" z="-0.9677" style="solid"/>
+      <atom element="O" x="2.3492" y="16.2095" z="1.3541" style="solid"/>
+      <atom element="O" x="-0.5067" y="7.0854" z="-3.5250" style="solid"/>
+      <atom element="O" x="-0.5067" y="-8.8638" z="-6.3373" style="solid"/>
+      <atom element="O" x="-2.8643" y="-16.4121" z="-9.0504" style="solid"/>
+      <atom element="O" x="-1.8678" y="-17.0579" z="-5.3881" style="solid"/>
+      <atom element="O" x="0.8545" y="-16.2391" z="-10.0318" style="solid"/>
+      <atom element="O" x="1.8510" y="-16.8849" z="-6.3694" style="solid"/>
+      <atom element="O" x="-2.8643" y="15.1064" z="-3.4929" style="solid"/>
+      <atom element="O" x="-1.8678" y="14.4607" z="0.1694" style="solid"/>
+      <atom element="O" x="0.8545" y="15.2795" z="-4.4742" style="solid"/>
+      <atom element="O" x="1.8510" y="14.6337" z="-0.8119" style="solid"/>
+      <atom element="Tl" x="-0.5067" y="9.7910" z="-3.0479" mass="204.3830"
+      style="solid"/>
+      <atom element="Tl" x="-0.5067" y="-11.5695" z="-6.8144" mass="204.3830"
+      style="solid"/>
+      <atom element="Tl" x="-2.8643" y="-13.7065" z="-8.5734" mass="204.3830"
+      style="solid"/>
+      <atom element="Tl" x="-1.8678" y="-14.3523" z="-4.9110" mass="204.3830"
+      style="solid"/>
+      <atom element="Tl" x="0.8545" y="-13.5335" z="-9.5547" mass="204.3830"
+      style="solid"/>
+      <atom element="Tl" x="1.8510" y="-14.1792" z="-5.8924" mass="204.3830"
+      style="solid"/>
+      <atom element="Tl" x="-2.8643" y="12.4008" z="-3.9700" mass="204.3830"
+      style="solid"/>
+      <atom element="Tl" x="-1.8678" y="11.7550" z="-0.3076" mass="204.3830"
+      style="solid"/>
+      <atom element="Tl" x="0.8545" y="12.5738" z="-4.9513" mass="204.3830"
+      style="solid"/>
+      <atom element="Tl" x="1.8510" y="11.9280" z="-1.2889" mass="204.3830"
+      style="solid"/>
+      <atom element="O" x="-0.5067" y="-13.9429" z="-7.2329" style="solid"/>
+      <atom element="O" x="-0.5067" y="12.1644" z="-2.6294" style="solid"/>
+      <atom element="O" x="-2.8643" y="-11.3331" z="-8.1549" style="solid"/>
+      <atom element="O" x="-1.8678" y="-11.9789" z="-4.4926" style="solid"/>
+      <atom element="O" x="0.8545" y="-11.1601" z="-9.1362" style="solid"/>
+      <atom element="O" x="1.8510" y="-11.8058" z="-5.4739" style="solid"/>
+      <atom element="O" x="-2.8643" y="10.0274" z="-4.3884" style="solid"/>
+      <atom element="O" x="-1.8678" y="9.3816" z="-0.7261" style="solid"/>
+      <atom element="O" x="0.8545" y="10.2004" z="-5.3698" style="solid"/>
+      <atom element="O" x="1.8510" y="9.5546" z="-1.7074" style="solid"/>
+    </cell>
+  </layer>
+</gml>

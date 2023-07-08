@@ -1,0 +1,25 @@
+Structure 103
+Prototype: Ice-Ic
+StrukturBericht / Pearson: - / cF24
+
+lattice parameters:
+Ice-Ic
+6.35
+ 
+Radius:
+O: 0.6037 (half-distance)
+H: 0.3706 (half-distance)
+
+1. Building with space group (s103.xml):
+Group: 227
+
+Wyckoff positions:
+O 2a
+H 4c
+
+Change: -0.125, -0.125, -0.125
+
+View:
+O: style solid, size 1.0, variancy 1.0, scale 0.7
+H: style solid, size 1.0, variancy 1.0, scale 0.7
+OH: style solid, method length, color 0.5,0.5,0.5 scale 0.5

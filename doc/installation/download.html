@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Installation: Download</title>
+<link rel="icon" type="image/png" href="../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../css/board.css"/>
+</head>
+
+<body>
+
+<div class="board">
+<div>Installation Download</div><div>&nbsp;</div>
+</div>
+
+<div class="contents">
+
+The first time, create a directory <b>$GAMGI</b> to store everything related 
+with GAMGI, typically <b>~/gamgi</b> (in user space), or <b>/usr/local/gamgi</b> 
+or <b>/opt/gamgi</b> (in root space). Because GAMGI is in heavy development 
+and new versions are coming up all the time, we strongly suggest to create 
+this directory in user space, making it easier to install new versions and 
+reducing concerns with security. In any case, GAMGI should be downloaded, 
+compiled and installed by a user, not by root. From now on, everytime we 
+mention <b>$GAMGI</b>, this should be replaced by the apropriate directory.
+
+<h3>Create the $GAMGI directory</h3>
+
+<pre>
+<b>mkdir $GAMGI</b>
+</pre>
+
+<h3>Download to $GAMGI the file</h3>
+<pre>
+<b>gamgi-all-version.tar.gz</b> (source code, documentation, data)
+</pre>
+
+<h3>Unpack the file</h3>
+<pre>
+<b>cd $GAMGI
+gunzip gamgi-all-version.tar.gz
+tar -xvf gamgi-all-version.tar</b>
+</pre>
+
+</div>
+
+<div id="bottom">
+<a href="../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

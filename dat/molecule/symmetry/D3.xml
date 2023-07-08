@@ -1,0 +1,10 @@
+<gml>
+<molecule name="D3">
+<atom element="He" x="0.09950" y="0.99504" z="1.1"/>
+<atom element="He" x="-0.09950" y="0.99504" z="0.9"/>
+<atom element="He" x="0.81198" y="-0.58369" z="1.1"/>
+<atom element="He" x="0.91148" y="-0.41135" z="0.9"/>
+<atom element="He" x="-0.91148" y="-0.41135" z="1.1"/>
+<atom element="He" x="-0.81198" y="-0.58369" z="0.9"/>
+</molecule>
+</gml>

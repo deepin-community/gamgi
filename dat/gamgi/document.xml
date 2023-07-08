@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!DOCTYPE gml SYSTEM "http://www.gamgi.org/dtd/gamgi.dtd"
+[
+<!ENTITY outside1 SYSTEM "document1.xml"> 
+<!ENTITY outside2 SYSTEM "document2.xml"> 
+<!ENTITY inside0 "<atom element='O' x='0.0' y='0.0' z='0.0'/>"> 
+<!ENTITY inside1 "<layer>&inside0;</layer>"> 
+]>
+<gml>
+  <gamgi>
+  <atom style="solid"/>
+  <bond style="solid"/>
+  </gamgi>
+  <bond parent1="C1" parent2="C3"></bond>
+  <bond parent1="C2" parent2="C4"></bond>
+  <window> &inside1; </window>
+  &outside1;
+  <gamgi>
+  <atom style=""/>
+  <bond style=""/>
+  </gamgi>
+</gml>

@@ -1,0 +1,14 @@
+<gml>
+<molecule name="D4d">
+<atom element="C" x="0" y="0" z="0.0"/>
+<atom element="C" x="0" y="0" z="1.9"/>
+<atom element="H" x="0.00000" y="1.00000" z="1"/>
+<atom element="H" x="0.70711" y="0.70711" z="0.9"/>
+<atom element="H" x="1.00000" y="0.00000" z="1"/>
+<atom element="H" x="0.70711" y="-0.70711" z="0.9"/>
+<atom element="H" x="0.00000" y="-1.00000" z="1"/>
+<atom element="H" x="-0.70711" y="-0.70711" z="0.9"/>
+<atom element="H" x="-1.00000" y="0.00000" z="1"/>
+<atom element="H" x="-0.70711" y="0.70711" z="0.9"/>
+</molecule>
+</gml>

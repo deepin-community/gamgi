@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Interfaces: Atom Config</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Atom Config</h1>
+
+<div id="notebook">
+<ul>
+<li><a href="config_type.html">Type</a></li>
+<li><a href="config_analysis.html">Analysis</a></li>
+<li><span>View</span></li>
+<li><a href="config_global.html">Global</a></li>
+</ul>
+</div>
+
+<div class="contents">
+
+Set here default visual data that does not depend of the atomic element.
+
+<h3>Style</h3>
+
+The <b>Style</b> menu is to select the default atom visual representation.
+Currently supported styles are: 1) a sphere, for <b>Solid</b>; 2) a cross, for
+<b>Wired</b>. The sphere gives a hight visual quality, when coupled with lights
+and perhaps a perspective projection. A sphere uses considerable screen space
+though and is time consuming.
+
+<p/>
+
+The cross uses much less screen space and computing time. Moreover, when atoms
+are bonded, crosses are not represented at all, and atoms are identified just
+by the ends of the bond lines, decreasing even further computation needs.
+However, wired objects do not have a 3D representation, so diffuse and
+specular lights are not reflected, becoming poorly visible when using
+lights, unless the ambient component is important, about (0.5, 0.5, 0.5).
+
+<h3>Size</h3>
+
+The <b>Size</b> menu is to select the default atom size.
+The intrinsic size of an atom is given by:
+<pre>Size x (Variancy x Radius + (1 - Variancy) x Min)</pre>
+where <b>Radius</b> is the atom radius and <b>Min</b> is the minimum
+radius.
+
+<p/>
+
+In <b>Wired</b> mode, all atom crosses have a constant size, given by 
+<b>Size</b> x <b>Min</b>, as <b>Variancy</b> is <b>0.0</b>.
+
+<p/>
+
+In <b>Solid</b> mode, <b>Size</b> selects the default size of the atom spheres.
+Combining default atom <b>Size</b> and <b>Variancy</b> with default bond <b>Size</b>,
+it is possible to obtain a wide range of styles to represent atomic structures.
+
+In <b>Solid</b> mode, the default is to represent atoms as constant
+spheres (<b>Variancy</b> = <b>0.0</b> and <b>Size</b> = <b>0.8</b>),
+slightly larger than the bonds (<b>Size</b> = <b>0.5</b>). An elegant
+style is to represent atoms as constant spheres with the same <b>Size</b>
+as bonds (<b>0.5</b>).
+
+To represent compact cristalline structures, atom <b>Size</b>
+and <b>Variancy</b> must be <b>1.0</b>, to be consistent with
+cell dimensions. This style can also be used to represent molecules,
+in order to emphasize the atomic radius and electronic distribution.
+
+<h3>Variancy</h3>
+
+Choose here the default value for <b>Variancy</b>.
+In <b>Wired</b> mode, <b>Variancy</b> is always <b>0.0</b>.
+
+<p/>
+
+In <b>Solid</b> mode, by default <b>Variancy</b> is <b>0.0</b> so the atom 
+spheres have all the same size. When <b>Variancy</b> is <b>1.0</b> the atom 
+spheres are scaled directly by the atom radius.
+
+<h3>Min</h3>
+
+<b>Min</b> fixes the minimum size for crosses and spheres, as defined by
+the equation above for <b>Size</b>. By default this is the H covalent radius.
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

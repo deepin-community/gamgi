@@ -1,0 +1,22 @@
+SiO2 - Quartz (beta)
+
+Lattice parameters:
+4.9965 5.4546
+
+Radius:
+Si 1.1760 (half-distance)
+O: 0.6037 (half-distance)
+
+Space group: 180
+
+Wyckoff positions:
+Si 6g, x = 0.5
+O 12k, x = 0.4147, y = 0.2078, z = 0.1666
+
+Cells: 3 x 3 x 3
+Cutoff: Nodes
+Polytopes: Neighbours 4
+
+References
+1) Y le Page and G Donnay (1976) Acta Crystallographica, B, 32, 2456.
+2) http://www.uwgb.edu/dutchs/Petrology/Silica%20Poly.HTM

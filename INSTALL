@@ -1,0 +1,68 @@
+- COMPILATION -
+
+1) GAMGI requires the following libraries (latest releases suggested):
+GtkGLext 1.0, Mesa, Gtk 2.0, Atk-1.0, Pango-1.0, Cairo, Glib-2.0, 
+Expat, Freetype 2.0. Both library (.so) and header (.h) files 
+must be installed, before compiling GAMGI. Modern Linux distributions
+come with all these files, often already installed. Installing
+GtkGLext 1.0 forces the installation of all the other libraries 
+(except Expat).
+
+2) When the files are not in standard locations, edit src/make_local 
+to add your local paths. Some of the most common PC and Mac configurations 
+are commented below.
+
+3) To change compile options edit the file "make_rules" (not needed).
+
+4) Type "make" to create and "make clean"
+to remove object files and executable.
+
+- INSTALLATION -
+
+5) We suggest creating a root directory "gamgi" the first time and 
+then unarchive the tarball inside, this way automatically creating 
+a sub-directory "gamgi_version" for each new version. For example,
+/opt/gamgi/ or /usr/local/gamgi/ or /home/carlos/gamgi.
+
+We suggest creating two links, one inside the "gamgi" directory:
+ln -s gamgi_version gamgi
+
+and another inside the "/usr/local/bin" directory, for example:
+ln -s ~/gamgi/gamgi/src/gamgi gamgi
+
+With the second link GAMGI can be seen everywhere, and when 
+installing a new version, we need only to change the first link.
+
+6) Set the environment variable "GAMGI_HELP", to let Gamgi know 
+where are the local documentation files. For example, add a line 
+as this to file ~/.bashrc (or ~/.profile, in some systems):
+
+GAMGI_HELP=~/gamgi/gamgi/doc; export GAMGI_HELP
+
+7) Set the environment variable "GAMGI_TEXT", to indicate where 
+are the DeJaVu TrueType fonts used by GAMGI. For example, if these
+fonts are in /usr/share/fonts/truetype/ttf-dejavu, the usual place
+for most Linux distributions, just add this line to file ~/.bashrc
+(or ~/.profile, in some systems):
+
+GAMGI_TEXT=/usr/share/fonts/truetype/ttf-dejavu; export GAMGI_TEXT
+
+If these fonts are not available, just download them from
+dejavu.sourceforge.net, www.gamgi.org or ftp.gamgi.org.
+
+8) Set the environment variable "BROWSER", to let GAMGI know 
+which browser to launch, in case "Help Remote" is solicited. 
+For example, add a line as this to file ~/.bashrc (or ~/.profile,
+in some systems):
+
+BROWSER=firefox; export BROWSER
+
+- HELP -
+
+9) Compiling and installing GAMGI is trivial, 
+_as_long_as_ all libraries can be seen at compile 
+time, link time and run time. If problems arise, 
+please see doc/installation/. To contact the author 
+send a message to <jcgp07@gmail.com>.
+
+10) To install a man page and an icon, see DISTROS.

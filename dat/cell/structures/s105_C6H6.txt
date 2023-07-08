@@ -1,0 +1,29 @@
+Structure 105
+Prototype: C6H6
+StrukturBericht / Pearson: - / oP48
+
+lattice parameters:
+C6H6
+7.44 9.55 6.92
+ 
+Radius:
+C: 0.7130 (half-distance)
+H: 0.3706 (half-distance)
+
+1. Building with space group (s105.xml):
+Group: 61
+
+Cells: 2 x 2 x 2
+
+Wyckoff positions:
+C 8c, x = -0.0569, y =  0.1387, z = -0.0054
+C 8c, x = -0.1335, y =  0.046,  z =  0.1264
+C 8c, x = -0.0774, y = -0.0925, z =  0.1295
+H 8c, x = -0.0976, y =  0.2477, z = -0.0177
+H 8c, x = -0.2409, y =  0.0794, z =  0.2218
+H 8c, x = -0.1371, y = -0.1631, z =  0.2312
+
+View:
+C: style solid, size 1.0, variancy 1.0, scale 0.3
+H: style solid, size 1.0, variancy 1.0, scale 0.3
+CH: style solid, method length, color 0.5,0.5,0.5 scale 0.4

@@ -1,0 +1,38 @@
+Superconductor (Tc = 70K): Pb2Sr2YCu3O8
+Structure: 3212
+
+Space group: 65
+
+Lattice parameters:
+5.390 5.430 15.730
+
+Wyckoff positions:
+Sr 2h, z = 0.2207
+Cu 2g, z = 0.1062
+Pb 2g, z = 0.3883
+Y 1c
+Cu 1d
+O 2g, z = 0.2514
+O 2h, z = 0.3849
+O 4i, z = 0.0918
+
+Change:
+Group 65 -> Group 123
+5.390 5.430 -> 5.410
+
+1. with Cell (s17a.xml):
+Bond: Color 0.5,0.5,0.5, Scale 0.5
+
+2. with Polytopes (s17b.xml):
+Cell Change XYZ: -0.5, -0.5, -0.5
+Cells: 2 x 2 x 2
+Neighbours: O
+Number: 5
+
+References:
+H. Shaked, P.M. Keane, J.C. Rodriguez, F.F. Owen, R.L. Hitterman,
+J.D. Jorgensen, Crystal structures of the High-Tc Superconducting
+Copper-Oxides, Physica C, Elsevier Science, Amsterdam, 1994
+
+R.J. Caca, M. Marezio, J.J. Krajewski, W.F. Peck Jr, A. Santoro,
+and F. Beech, Physica C 157, 272 (1989)

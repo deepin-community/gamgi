@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE gml SYSTEM "http://www.gamgi.org/dtd/gamgi.dtd">
+<gml>
+  <molecule name="HCl">
+    <atom id="1" element="H" x="-0.8908" y="0.0962" z="0.9942"/>
+    <atom id="2" element="Cl" x="0.3841" y="0.0942" z="1.0058"/>
+    <bond parent1="1" parent2="2"/>
+  </molecule>
+</gml>

@@ -1,0 +1,34 @@
+Superconductor (Tc = 58 K): (La,Sr,Ca)3Cu2O6
+Structure: 0212
+
+Space group: 139
+
+Lattice parameters:
+3.8208 19.5993
+
+Wyckoff positions:
+La,Sr 2e, z = 0.1766
+Ca 1a
+Cu 2e, z = 0.5866
+O 4g, z = 0.0821
+O 2e, z = 0.7036
+
+1. with Cell (s11a.xml):
+Cell Change XYZ: 0.0, 0.0, -0.5866
+Bond: Color 0.5,0.5,0.5, Scale 0.4
+
+2. with Polytopes (s11b.xml):
+Cell Change XYZ: 0.0, 0.0, 0.5
+Cells: 2 x 2 x 2
+Neighbours: O
+Number: 5
+
+References:
+H. Shaked, P.M. Keane, J.C. Rodriguez, F.F. Owen, R.L. Hitterman,
+J.D. Jorgensen, Crystal structures of the High-Tc Superconducting
+Copper-Oxides, Physica C, Elsevier Science, Amsterdam, 1994
+(Errata: data -> O4 is missing; image -> O4 and Bi are swapped)
+
+R.J. Cava, A. Santoro, J.J. Krajewski, R.M. Fleming,
+J.V. Wasczak, W.F. Peck Jr., and P. Marsh,
+Physica C 172, 138 (1990)

@@ -1,0 +1,29 @@
+Structure 4
+Prototype: AuCu
+StrukturBericht / Pearson: L1_0 / tP4
+
+lattice parameter:
+AuCu         AgTi
+3.963 3.671  4.104 4.077
+AlTi         CoPt
+3.984 4.065  3.806 3.684
+CrPd         FePd
+3.879 3.802  3.852 3.723
+MnNi         PtZn
+3.690 3.490  4.026 3.474
+
+Radius:
+Au 1.4420 (half-distance)
+Cu 1.2780 (half-distance)
+
+1. Building with group space (s004.xml):
+Group: 123
+
+Wyckoff positions:
+Au 2e
+Cu 1a
+Cu 1c
+
+View:
+Au: style solid, size 1.0, variancy 1.0, scale 0.3
+Cu: style solid, size 1.0, variancy 1.0, scale 0.3

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Interfaces: Bond Create</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Bond Create</h1>
+
+<div id="notebook">
+<ul>
+<li><span>Type</span></li>
+<li><a href="create_length.html">Length</a></li>
+<li><a href="create_property.html">Property</a></li>
+<li><a href="create_view.html">View</a></li>
+</ul>
+</div>
+
+<div class="contents">
+
+Set here the method used to create new bonds.
+
+<h3>Atoms</h3>
+
+Selecting this method, the <b>Atom</b> entries become active, 
+to enter the name and number of two atoms. If GAMGI identifies the 
+atoms, a bond is created between them, after pressing <b>Ok</b>.
+
+<p/>
+
+An easy technique to select an atom is to click the mouse over its 
+visual representation: if GAMGI recognises the atom (it must be in 
+the current layer), its identification is transported to the first 
+empty <b>Atom</b> entry. If both entries were occupied before, the 
+mouse action is ignored. If both entries are occupied after, GAMGI 
+tries to create the bond.
+
+<p/>
+
+The writing and clicking techniques can be combined. For example, the 
+user can write an atom identification in the second <b>Atom</b> entry
+and then click on the visual representation of the other atom: GAMGI 
+writes its identification in the first <b>Atom</b> entry, previously 
+empty, and attempts to create the bond.
+
+<p/>
+
+The only information that matters is the information writen in the 
+dialog when the <b>Ok</b> button is pressed. For example, if a user 
+clicks on an atom to get its identification (in the first <b>Atom</b>       
+entry), then writes another atom in the second <b>Atom</b> entry and 
+finally deletes the first atom identification before pressing <b>Ok</b>, 
+an error is shown, as the first atom is not found.
+
+<h3>Length</h3>
+
+This method is based only on the distance between atoms and the 
+elements of the atoms, thus <b>Element</b> and <b>Length</b> entries 
+become active and <b>Atom</b> entries become inactive. If both 
+<b>Element</b> and <b>Length</b> entries are left empty, GAMGI 
+attempts to create bonds for all atoms, using the following procedures.
+
+<p/>
+
+For each atom pair, GAMGI checks whether specific minimum and maximum 
+bond length limits have been configured. If the atoms distance is in 
+the configured interval, a new bond is created. To configure bond length 
+limits for specific element pairs, select <b>Bond->Config</b>.
+
+<p/>
+
+If no bond length interval has been configured for this element pair, 
+GAMGI attempts to calculate automatic minimum and maximum limits, summing 
+the two atom radius and multiplying by lower and upper factors (currently
+0.80 and 1.10 by default). If the atoms distance is in the calculated 
+interval, a new bond is created. To configure these lower and upper 
+factors, valid for all element pairs, select <b>Bond->Config</b>.
+
+<p/>
+
+If no radius is defined for at least one of the elements, then no bond 
+is created. To configure the atom radius, for specific elements, select 
+<b>Atom->Config</b>.
+
+<p/>
+
+When both <b>Element</b> entries are occupied, GAMGI tries to identify 
+its contents as valid element names, which can be, for example,
+"<b>Si</b>", "<b> Si</b>", "<b>Si </b>" but not "<b>si</b>",
+"<b>S i</b>" or "<b>14</b>". When both elements are recognized, minimum 
+and maximum bond length limits for this element pair - calculated according 
+to the rules described above - are automatically writen in the <b>Length</b> 
+entries, otherwise these entries are set empty.
+
+<p/>
+
+After pressing <b>Ok</b>, if both elements are recognized, GAMGI attempts 
+to create bonds only between atoms of these elements, using the bond length 
+limits writen in the <b>Length</b> entries (if the elements are invalid, 
+an error is shown). If the <b>Length</b> entries are empty, GAMGI uses the 
+default minimum and maximum limits for this element pair, calculated as 
+described above.
+
+<p/>
+
+If the <b>Element</b> entries are empty when the user presses the <b>Ok</b> 
+button, but the <b>Length</b> entries are not, GAMGI attempts to create 
+bonds between all atoms, independently of its elements, using the bond 
+length limits writen in the <b>Length</b> entries. The values writen in 
+the <b>Length</b> entries must be valid lengths, and the minimum value 
+cannot excede the maximum, otherwise an error is shown.
+
+<p/>
+
+In all cases, when pressing <b>Ok</b>, the <b>Element</b> entries must 
+be both empty or valid and the <b>Length</b> entries must be both empty 
+or valid, otherwise an error dialog is shown.
+
+<h3>Delaunay</h3>
+
+In this method, a Voronoi polyhedron is determined for each atom, 
+and bonds are created between atoms whose polyhedrons share a common 
+face, forming a Delaunay connection.
+
+<p/>
+
+The <b>Delaunay</b> method is based on topological considerations only, 
+so <b>Element</b>, <b>Length</b> and <b>Atom</b> entries are disabled.
+
+<p/>
+
+Bonds that already exist are never created again: in <b>Length</b> 
+and <b>Delaunay</b> methods, these cases are silently ignored, while 
+in the <b>Direct</b> method an error is shown.
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

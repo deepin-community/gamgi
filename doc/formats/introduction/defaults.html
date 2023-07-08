@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Formats: Introduction Defaults</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/board.css"/>
+</head>
+
+<body>
+
+<div class="board">
+<div>Introduction Defaults</div><div>&nbsp;</div>
+</div>
+
+<div class="contents">
+
+The properties of the objects defined in GAMGI are governed by many different 
+parameters, which must have default values, otherwise users would have to 
+set all of them.
+
+<p/>
+  
+The default values applied when importing objects from GML files are 
+the same as when creating them directly in GAMGI. In order to create files 
+simple to handle, parameters which contain the default values are not exported 
+To guarantee that a given configuration, after being exported and imported again, 
+is still the same, the defaults must be identical when both operations take place.
+
+<p/>
+
+The default values, the configuration data, can be modified by users, 
+in two ways: directly in GAMGI, selecting the <b>Config</b> task for the
+required class of object, or importing a XML file with the new configuration
+data, also entered as XML elements: <b>&lt;atom/></b>, <b>&lt;bond/></b>, 
+etc. GAMGI distinguishes object data and configuration data because 
+configuration data is inside <b>&lt;gamgi&gt;&lt;/gamgi&gt;</b> blocks 
+(the rationale is, configuration data is valid for the whole GAMGI). 
+
+<p/>
+
+When importing files containing <b>&lt;gamgi&gt;&lt;/gamgi&gt;</b> 
+blocks, the new configuration parameters become immediately effective. 
+Therefore, if a given parameter is changed several times during an 
+import operation, different defaults will be applied on each section, 
+which may be useful to avoid many parameter repetitions in files.
+
+<p/>
+
+When exporting configuration data, GAMGI applies the same criterium used
+with object data, exporting only non-default data. To ensure that the
+objects defaults are identical when exporting and then importing object
+data, GAMGI always exports the non-default configuration data before 
+exporting the requested object data. This way, the next time the file 
+is imported, the non-default configuration data will be already in place 
+when the object data is imported.
+
+<p/>
+
+To reset configuration parameters to the values that were in place
+when the importing operation started (not necessarily the initial
+GAMGI defaults), these parameters should be entered with empty
+attributes, as in <b>attribute=""</b>.
+
+<h3>Good:</h3>
+
+<pre><b>
+&lt;gml>
+  &lt;gamgi>
+    &lt;atom element="H" mass="2.0"/></b> change default<b>
+  &lt;/gamgi>
+  &lt;atom element="H" /></b> atom mass is 2.0<b>
+  &lt;gamgi>
+    &lt;atom element="H" mass="3.0"/></b> change default<b>
+  &lt;/gamgi>
+  &lt;atom element="H" /></b> atom mass is 3.0<b>
+  &lt;gamgi>
+    &lt;atom element="H" mass=""/></b> reset default<b>
+  &lt;/gamgi>
+  &lt;atom element="H" /></b> atom mass is 1.00794, 
+  if the GAMGI default was not changed<b>
+&lt;/gml></b>
+</pre>
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

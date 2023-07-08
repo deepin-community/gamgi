@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Formats: Direction Create</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Direction Create</h1>
+
+<div id="notebook">
+<ul>
+<li><a href="create_type.html">Type</a></li>
+<li><span>Projection</span></li>
+<li><a href="create_scope.html">Scope</a></li>
+<li><a href="create_position.html">Position</a></li>
+<li><a href="create_view.html">View</a></li>
+</ul>
+</div>
+
+<div class="contents">
+
+<h3>net</h3>
+
+Set the projection net used to represent a crystallographic direction.
+
+<p/>
+
+In the <b>wulff</b> projection, the point to project (above)
+and the point of the sphere farther from the user (below) define a segment
+that intersects the circle at a point, giving the final representation.
+
+<p/>
+
+In the <b>schmidt</b> projection, the point to project (above) is
+rotated around the point of the sphere closer to the user (above),
+keeping the same XY direction, until both points have the same Z
+coordinate, and then divided by square root of 2, to be inside the
+circle with radius R at coordinate Z, giving the final representation.
+
+<pre>
+Example: <b>&lt;direction ... net="wulff"/></b> (default)
+Allowed values: <b>wulff</b>, <b>schmidt</b> (optional)
+</pre>
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Interfaces: Group Modify</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Group Modify</h1>
+
+<div id="notebook">
+<ul>
+<li><a href="modify_type.html">Type</a></li>
+<li><span>Scope</span></li>
+<li><a href="modify_tolerance.html">Tolerance</a></li>
+<li><a href="modify_view.html">View</a></li>
+</ul>
+</div>
+
+<div class="contents">
+            
+Change here the polytope representation and atomic structure for a single group or a list of groups.
+
+<p/>
+
+To modify a group, click over its graphic image, or write its identification
+(name and number) on the <b>Group</b> entry. To modify a list of groups,
+press the button <b>List</b> (after creating the list of groups with
+<b>Group->Select</b>).  Parameters for empty entries or <b>Local</b>
+choices remain unchanged.
+
+<p/>
+
+To change a group name write the new name in the <b>Group</b> entry,
+followed by the group number (GAMGI needs the number to identify the group).
+To change the name for a list of groups, press <b>List</b> first
+and then write the new common name in the <b>Name</b> entry.
+
+<h3>Structure</h3>
+
+It is often useful to recreate in a group the atomic
+structure existing in the parent object. For each coordination
+polyhedron, this includes all the atoms defining the polyhedron
+vertices, plus the central atom.
+
+<p/>
+
+When <b>Structure</b> is set to <b>Copy</b>, atoms
+are copied to the groups just created.
+
+When <b>Structure</b> is set to <b>Link</b>, atoms
+are linked to the groups just created.
+
+When <b>Structure</b> is set to <b>None</b>, atoms
+are ignored.
+
+<h3>Filter</h3>
+
+After collecting a list of atoms close enough to the group,
+a filtering condition may be applied. This can be very useful
+to avoid atom superposition, resulting for example from atoms
+copied before to different groups.
+
+<p/>
+
+When <b>Filter</b> is set to <b>Class</b>,
+atoms belonging to another groups are ignored.
+
+When <b>Filter</b> is set to <b>Child</b>, atoms not
+belonging directly to the group parent are ignored.
+
+When <b>Filter</b> is set to <b>Identical</b>, atoms
+closer than a given distance (currently <b>1.0E-2</b>,
+as defined in <b>GAMGI_MATH_TOLERANCE_STRUCTURE</b>) to
+a previous atom are ignored.
+
+When <b>Filter</b> is set to <b>None</b>, no filtering
+condition is applied.
+
+<h3>Visible</h3>
+
+When the mix product of four vertices (defining a face and a new vertex),
+is larger than <b>Visible</b> the face is visible from the vertex and
+must be replaced. Increasing <b>Visible</b> may reduce face reconstruction,
+but may result in numerical inaccuracies. The whole calculation is very
+sensitive to this parameter, so it should be handled carefully. Currently
+the maximum allowed value is <b>1.0E-5</b>.
+
+<p/>
+
+For complex systems, where different faces have almost the same orientation,
+forming curved surfaces, setting <b>Visible</b> to <b>0</b> might eliminate
+numerical errors.
+
+<h3>Coplanar</h3>
+
+The initial triangle faces are merged when the mix product
+of four vertices (belonging to both faces) is smaller than
+<b>Coplanar</b>. Increasing <b>Coplanar</b> promotes face merging,
+but may result in numerical inaccuracies. Currently the maximum
+allowed value is <b>1.0E-1</b>.
+
+<p/>
+
+Setting <b>Coplanar</b> to <b>0</b> disables face merging,
+so all faces will be triangles.
+
+<h3>Neighbours</h3>
+
+Set here the neighbour atoms that should be considered around each central atom.
+The sampling universe is always the object currently selected. When the
+central atom does not belong to the current object, an error is shown.
+
+<p/>
+
+<b>Element</b> defines the atomic element of the neighbours that should 
+be considered. When <b>Element</b> is empty (the default), all atomic 
+elements will be considered.
+
+<p/>
+
+Users can set the number of closest neighbours that should be considered
+using <b>Number</b>, or the radius of the sphere around the central
+atom that should be sampled, using <b>Radius</b>. When these are empty 
+(the default), all atoms in the sampling universe will be considered.
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

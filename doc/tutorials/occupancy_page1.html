@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Tutorials: Occupancy rules</title>
+<link rel="icon" type="image/png" href="../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Occupancy rules</h1>
+
+<div id="notebook">
+<ul>
+<li><span>Page 1</span></li>
+<li><a href="occupancy_page2.html">Page 2</a></li>
+</ul>
+</div>
+
+<div class="contents">
+            
+The <a href="../interfaces/cell/link_occupancy.html">occupancy rules</a> 
+implemented in GAMGI, determining which nodes in crystallographic cells 
+should be occupied, is a powerful tool to build non crystalline structures, 
+for example to generate starting configurations to simulate liquid mixtures. 
+
+<p/>
+
+This tutorial shows how to use occupancy rules to create usefull
+structures in a spherical cell volume and in a conventional cell 
+volume. We create first a spherical volume and second a conventional
+volume, for a cubic cell, plus Si, C template atoms, and link them 
+together using several different occupancy rules, to exemplify the method.
+
+<p/>
+
+Structures as those created in this tutorial can be seen in the 
+figure at <a href="http://www.gamgi.org/images/screenshot08_4b.png">
+http://www.gamgi.org/images/screenshot08_4b.png</a>.
+
+<h3>Spherical volume</h3>
+
+<ol>
+<li>
+Press <b>Cell->Create</b> and set <b>System</b> to <b>c</b>, <b>Lattice</b>
+to <b>P</b> and the lattice parameter <b>a</b> to <b>1</b>.
+
+In the <b>Type</b> page, choose <b>Sphere</b>, with radius
+<b>Length</b> equal to <b>5</b>. Press <b>Ok</b> to create the cell.</li>
+
+<li>To improve visibility, press <b>Layer->Modify</b>, change 
+<b>Projection</b> to <b>Orthographic</b> and press <b>Ok</b>.</li>
+
+<li>Press <b>Atom->Create</b>, write <b>Si</b> in the <b>Element</b> 
+entry and press the mouse over the screen (outside the cell), to create 
+a Si template atom. Repeat the task to create a <b>C</b> template atom.</li>
+
+<li>Press <b>Cell->Link</b>, then press over the cell, then press
+over the Si atom, and select the method <b>Crystal</b>.
+Go to the <b>Occupancy</b> page, set the <b>Rules</b> to 
+(<b>*2</b>, <b>*2</b>, <b>*2</b>) and press <b>Ok</b>.
+A cube with 3x3x3 nodes in the center of the sphere
+is now occupied with Si atoms.</li>
+
+<li>Repeat the <b>Cell->Link</b> task, this time linking the cell 
+with the C atom, using as pattern rule (<b>___*****</b>, <b>___*****</b>, 
+<b>___*****</b>), and press <b>Ok</b>. All nodes around the 3x3x3 central
+nodes are now occupied with C atoms.</li>
+</ol>
+
+</div>
+
+<div id="bottom">
+<a href="../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

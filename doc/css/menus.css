@@ -1,0 +1,90 @@
+/***********************
+ * CSS drop-down menus *
+ ***********************/
+
+div.menus
+  {
+  clear: both;
+  font-size: 11px;
+  width: 65em;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 1em;
+  padding-bottom: 5.4em;
+  }
+
+div.menus ul { margin: 0; }
+
+/*****************************************************
+ * swap first and second ul rows, so top menus are   *
+ * written last, with higher priority, resulting     *
+ * in drop-down menus appearing over the menus below *
+ *****************************************************/
+
+div.menus>ul
+  {
+  position: relative;
+  float: left;
+  clear: both;
+  background-color: #9cf;
+  height: 2.2em;
+  top: -2.2em;
+  }
+
+div.menus>ul:first-child { top: 2.2em; }
+
+div.menus li
+  {
+  float: left;
+  text-align: center;
+  position: relative;
+  list-style-type: none;
+  width: 6em;
+  background-color: #9cf;
+  border: 1px solid #9cf;
+  line-height: 2.0em;
+  }
+
+div.menus li:hover
+  {
+  background-color: #069;
+  border: 1px solid #fff;
+  }
+
+div.menus a
+  {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  }
+
+div.menus ul li ul
+  {
+  margin: 0;
+  position: absolute;
+  width: 7.5em;
+  left: -1px;
+  }
+
+div.menus ul li ul li
+  {
+  width: 100%;
+  background-color: #fff;
+  border-color: #fff;
+  }
+
+/******************************
+ * colors for drop-down menus *
+ ******************************/
+
+div.menus ul li ul li a { color: #000; }
+
+div.menus ul li ul li:hover a { color: #fff; }
+
+/*****************************
+ * show,hide drop-down menus *
+ *****************************/
+
+div.menus ul li ul { display: none; }
+
+div.menus ul li:hover ul, div.menus ul li ul:hover { display: block; }

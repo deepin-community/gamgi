@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE gml SYSTEM "http://www.gamgi.org/dtd/gamgi.dtd">
+<gml>
+  <layer perspective="no" axes="yes">
+    <cell system="c" lattice="F" a="1.0000" x="-0.5531" y="-2.5114" z="0.9236"
+    e1="15.82" e2="23.29" e3="338.21" n1="5" n2="5" n3="2" borders="faces"
+    scale="1.73"/>
+    <atom element="O" x="-7.6324" y="3.7089" z="-80.1000"/>
+  </layer>
+</gml>

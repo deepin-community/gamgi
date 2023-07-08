@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Interfaces: Bond Modify</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Bond Modify</h1>
+
+<div id="notebook">
+<ul>
+<li><span>Property</span></li>
+<li><a href="modify_view.html">View</a></li>
+</ul>
+</div>
+
+<div class="contents">
+
+Change here the order and covalency for a single bond or a list of bonds.
+
+<p/>
+
+To modify a bond, click over its graphic image, or write its id on
+the <b>Bond</b> entry. To modify a list of bonds, press the button
+<b>List</b> (after creating the list of bonds with <b>Bond->Select</b>).
+Parameters for empty entries or <b>Local</b> choices remain unchanged.
+
+<p/>
+
+To change a bond name write the new name in the <b>Bond</b> entry,
+followed by the bond number (GAMGI needs the number to identify the bond).
+To change the name for a list of bonds, press <b>List</b> first
+and then write the new common name in the <b>Name</b> entry.
+
+<h3>Covalency</h3>
+
+Change the bond <b>Covalency</b>, which is a measure of its percentage 
+ionic/covalent character. 
+
+<h3>Order</h3>
+
+Change the bond <b>Order</b>, which represents its chemical order. 
+Although any positive number is allowed, the usual values are <b>1.0</b> 
+(single bond, the default), <b>2.0</b> (double bond), <b>3.0</b> (triple 
+bond) and <b>1.5</b> (aromatic or delocalised bond). 
+
+<p/>
+
+Single, double and triple bonds are rendered in <b>Wired</b> mode,
+as single, double and triple rasterized lines. In <b>Solid</b> mode,
+single bonds are represented by a cylinder (the sigma bond), double 
+bonds have two additional curved volumes on each side (the pi bond), 
+ and triple bonds have two more curved volumes on each side (the
+second pi bond). 
+
+<p/>
+
+Currently, the orientation of the curved volumes in solid secondary 
+bonds is arbitrary. Currently, aromatic bonds are handled as normal 
+bonds, according to its bond order, so bonds with order equal to 1.5 
+are handled as double bonds.
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

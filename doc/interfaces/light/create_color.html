@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Interfaces: Light Create</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Light Create</h1>
+
+<div id="notebook">
+<ul>
+<li><a href="create_geometry.html">Geometry</a></li>
+<li><span>Color</span></li>
+<li><a href="create_attenuation.html">Attenuation</a></li>
+</ul>
+</div>
+
+<div class="contents">
+
+Define here the color components of the new light.
+
+<h3>Ambient</h3>
+
+These <b>r</b>, <b>g</b>, <b>b</b> entries set the ambient color
+of the new light. This can vary between black (0.0, 0.0, 0.0) and 
+white (1.0, 1.0, 1.0). 
+
+<p/>
+
+This component emulates light scattered so many times, that it does
+not depend of the radiation direction, or the materials surface.
+
+Wired objects cannot reflect diffuse or specular light, so they need 
+some ambient light to be visible.
+
+<h3>Diffuse</h3>
+
+These <b>r</b>, <b>g</b>, <b>b</b> entries set the diffuse color
+of the new light. This can vary between black (0.0, 0.0, 0.0) and 
+white (1.0, 1.0, 1.0). 
+
+<p/>
+
+This component emulates light equally reflected in all
+directions (as the light reflected by a hammered glass).
+
+Solid objects need some diffuse light to show its tridimensional 
+shape.
+
+<h3>Specular</h3>
+
+These <b>r</b>, <b>g</b>, <b>b</b> entries set the specular color
+of the new light. This can vary between black (0.0, 0.0, 0.0) and 
+white (1.0, 1.0, 1.0). 
+
+<p/>
+
+This component emulates light reflected mainly along
+specific directions (as the light reflected by a metal).
+
+Solid objects need some specular light to show brightness effects.
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

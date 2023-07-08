@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE gml SYSTEM "http://www.gamgi.org/dtd/gamgi.dtd">
+<gml>
+  <layer perspective="no">
+    <light ambient_r="0.600" ambient_g="0.600" ambient_b="0.600"
+    diffuse_r="0.400" diffuse_g="0.400" diffuse_b="0.400" specular_r="0.300"
+    specular_g="0.300" specular_b="0.300" direction_x="0.0000"
+    direction_y="0.0000" direction_z="-1.0000"/>
+    <cell group="225" a="3.5150" x="3.8753" y="-1.7876" z="0.6805" e1="76.00"
+    e2="90.00" e3="75.00" n1="2" n2="1" n3="1" scale="1.400">
+      <plane reference="cell" h="1" k="1" l="1" x="3.8753" y="-1.7876"
+      z="0.6805" center_x="2.4403" center_y="-0.8512" center_z="1.7678"
+      e1="76.00" e2="90.00" e3="75.00">
+        <data name="points" type="double" size="9">
+        3.5150 0.0000 0.0000 0.0000 3.5150 0.0000 0.0000 0.0000 3.5150
+        </data>
+        <data name="points_driver" type="int" size="5">
+        1 3 0 1 2
+        </data>
+      </plane>
+      <plane reference="cell" h="1" k="1" l="1" order="3" x="3.8753"
+      y="-1.7876" z="0.6805" center_x="-2.3899" center_y="0.3054"
+      center_z="1.9725" e1="76.00" e2="90.00" e3="75.00">
+        <data name="points" type="double" size="9">
+        3.5150 3.5150 3.5150 7.0300 -0.0000 3.5150 7.0300 3.5150 -0.0000
+        </data>
+        <data name="points_driver" type="int" size="5">
+        1 3 0 1 2
+        </data>
+      </plane>
+      <plane name="Plane" reference="atoms" x="3.8753" y="-1.7876" z="0.6805"
+      center_x="0.0234" center_y="-0.2730" center_z="1.8731" e1="76.00"
+      e2="90.00" e3="75.00">
+        <data name="points" type="double" size="12">
+        3.5152 0.0003 3.5148 1.7580 1.7670 3.5152 3.5182 3.5184 0.0030 5.2725
+        1.7576 -0.0003
+        </data>
+        <data name="points_driver" type="int" size="6">
+        1 4 0 1 2 3
+        </data>
+      </plane>
+      <atom id="1" element="C" x="3.8753" y="-1.7876" z="0.6805" style="solid"
+      scale="0.500"/>
+      <atom id="2" name="C" element="U" x="0.4836" y="-1.5793" z="-0.1941"
+      mass="238.0280" style="solid" scale="0.500"/>
+      <atom element="C" x="-2.8699" y="-1.3203" z="-1.0575" style="solid"
+      scale="0.500"/>
+      <atom id="3" element="C" x="2.9846" y="-2.5823" z="4.0067" style="solid"
+      scale="0.500"/>
+      <atom id="4" name="C" element="U" x="-0.4296" y="-2.3893" z="3.0923"
+      mass="238.0280" style="solid" scale="0.500"/>
+      <atom element="C" x="-3.8249" y="-2.1694" z="2.2095" style="solid"
+      scale="0.500"/>
+      <atom id="5" element="C" x="3.8751" y="1.6230" z="1.5310" style="solid"
+      scale="0.500"/>
+      <atom id="6" name="C" element="U" x="0.4799" y="1.8429" z="0.6483"
+      mass="238.0280" style="solid" scale="0.500"/>
+      <atom element="C" x="-2.9154" y="2.0627" z="-0.2343" style="solid"
+      scale="0.500"/>
+      <atom element="C" x="2.9775" y="0.8095" z="4.7893" style="solid"
+      scale="0.500"/>
+      <atom id="7" name="C" element="U" x="-0.4297" y="1.0213" z="3.9427"
+      mass="238.0280" style="solid" scale="0.500"/>
+      <atom element="C" x="-3.8251" y="1.2412" z="3.0599" style="solid"
+      scale="0.500"/>
+      <atom element="C" x="3.4204" y="-0.4931" z="2.7529" style="solid"
+      scale="0.500"/>
+      <atom name="C" element="U" x="0.0252" y="-0.2733" z="1.8702"
+      mass="238.0280" style="solid" scale="0.500"/>
+      <atom element="C" x="-3.3702" y="-0.0533" z="0.9875" style="solid"
+      scale="0.500"/>
+      <atom element="C" x="2.1768" y="0.0181" z="0.6607" style="solid"
+      scale="0.500"/>
+      <atom element="C" x="-1.2146" y="0.2422" z="-0.2214" style="solid"
+      scale="0.500"/>
+      <atom element="C" x="1.2736" y="-0.7936" z="3.9554" style="solid"
+      scale="0.500"/>
+      <atom element="C" x="-2.1274" y="-0.5740" z="3.0759" style="solid"
+      scale="0.500"/>
+      <atom id="8" name="C" element="U" x="1.7238" y="-2.0877" z="1.8727"
+      mass="238.0280" style="solid" scale="0.500"/>
+      <atom id="9" name="C" element="U" x="-1.6725" y="-1.8685" z="1.0035"
+      mass="238.0280" style="solid" scale="0.500"/>
+      <atom id="10" name="C" element="U" x="1.7199" y="1.3203" z="2.7455"
+      mass="238.0280" style="solid" scale="0.500"/>
+      <atom id="11" name="C" element="U" x="-1.6726" y="1.5422" z="1.8542"
+      mass="238.0280" style="solid" scale="0.500"/>
+      <bond parent1="1" parent2="2" style="solid" color="yes" red="1.000"
+      green="0.000" blue="0.000" scale="0.200"/>
+      <bond parent1="1" parent2="3" style="solid" color="yes" red="0.000"
+      green="1.000" blue="0.000" scale="0.200"/>
+      <bond parent1="1" parent2="5" style="solid" color="yes" red="0.000"
+      green="0.000" blue="1.000" scale="0.200"/>
+      <bond parent1="2" parent2="6" style="solid" scale="0.200"/>
+      <bond parent1="2" parent2="8" style="solid" color="yes" red="1.000"
+      green="0.000" blue="0.000" scale="0.200"/>
+      <bond parent1="2" parent2="9" style="solid" scale="0.200"/>
+      <bond parent1="4" parent2="7" style="solid" scale="0.200"/>
+      <bond parent1="4" parent2="8" style="solid" color="yes" red="0.000"
+      green="1.000" blue="0.000" scale="0.200"/>
+      <bond parent1="4" parent2="9" style="solid" scale="0.200"/>
+      <bond parent1="6" parent2="10" style="solid" scale="0.200"/>
+      <bond parent1="6" parent2="11" style="solid" scale="0.200"/>
+      <bond parent1="7" parent2="10" style="solid" scale="0.200"/>
+      <bond parent1="7" parent2="11" style="solid" scale="0.200"/>
+      <bond parent1="8" parent2="10" style="solid" color="yes" red="0.000"
+      green="0.000" blue="1.000" scale="0.200"/>
+      <bond parent1="9" parent2="11" style="solid" scale="0.200"/>
+      <text contents="--&gt;" style="solid" x="-2.3486" y="1.0359" z="1.9987"
+      e1="28.88" e2="142.00" e3="94.54" red="0.000" green="0.560" blue="1.000"
+      scale="0.750"/>
+      <text contents="--&gt;" style="solid" x="2.5164" y="-1.2561" z="2.4951"
+      e1="15.59" e2="158.81" e3="263.71" red="0.000" green="0.560"
+      blue="1.000" scale="0.750"/>
+    </cell>
+    <text contents="Nishiyama - Wassermann 1934" style="solid" x="-4.2112"
+    y="3.7345" z="-0.0307" e1="0.23" e2="42.36" e3="317.46" scale="0.750"/>
+    <text contents="(111) cfc (011) bcc || [11-2] cfc [01-1] bcc"
+    style="solid" x="-10.5199" y="-4.5598" z="0.0000" scale="0.600"/>
+  </layer>
+</gml>

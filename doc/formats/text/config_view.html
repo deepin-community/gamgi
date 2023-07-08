@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Formats: Text Config</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Text Config</h1>
+
+<div id="notebook">
+<ul>
+<li><span>View</span></li>
+</ul>
+</div>
+
+<div class="contents">
+
+<h3>style</h3>
+
+Sets the style applied by default when creating a new text object. 
+GAMGI supports both <b>wired</b> (stroked) and <b>solid</b> (extruded) 
+3D fonts. Stroked fonts are faster and more suited for analysis.
+Extruded fonts are made from TrueType faces and are designed for
+presentations. 
+
+<pre>
+Example: <b>&lt;text style="wired"/></b> (default)
+(defined in <b> GAMGI_MESA_TEXT_DRAW</b>)
+Allowed values: <b>wired</b>, <b>solid</b> (optional)
+</pre>
+
+<h3>wired</h3>
+
+Controls which stroked font is applied by default when creating 
+a new wired text object. Currently there are 14 stroked fonts 
+available in GAMGI, including scripting and mathematical fonts.
+
+These fonts permit text objects to be rotated,moved,scaled on 3D
+space, exactly as a molecule, and are relatively light, allowing
+text changes to occur in real time.
+
+<pre>
+Example: <b>&lt;text ... wired="roman"/></b> (default)
+(defined in <b>GAMGI_IO_TEXT_WIRED</b>)
+Allowed values: <b>roman</b>, <b>roman_mono</b>, <b>sans</b>, <b>sans_bold</b>,
+<b>serif</b>, <b>serif_bold</b>, <b>script</b>, <b>script_bold</b>, <b>gothic_english</b>,
+<b>gothic_german</b>, <b>gothic_italian</b>, <b>sans_symbol</b>, <b>serif_symbol</b>,
+<b>serif_symbol_bold</b> (optional)
+</pre>
+
+<h3>solid</h3>
+
+Controls which extruded font is applied by default when creating 
+a new solid text object. Currently there are 10 extruded fonts 
+available in GAMGI, permitting text messages to be manipulated 
+and illuminated, exactly as any other solid 3D object.
+
+<pre>
+Example: <b>&lt;text ... solid="sans"/></b> (default)
+(defined in <b>GAMGI_IO_TEXT_SOLID</b>)
+Allowed values: <b>sans</b>, <b>sans_bold</b>, <b>sans_italic</b>, <b>sans_bold_italic</b>,
+<b>serif</b>, <b>serif_bold</b>, <b>mono</b>, <b>mono_bold</b>, <b>mono_italic</b>,
+<b>mono_bold_italic</b> (optional)
+</pre>
+
+<h3>red, green, blue</h3>
+
+Sets the color applied by default, when creating a new text object.
+
+<pre>
+Example: <b>&lt;text red="0.0" green="1.0" blue="0.0"/></b> (default)
+defined in <b>GAMGI_MESA_TEXT_R</b>, <b>GAMGI_MESA_TEXT_G</b>, <b>GAMGI_MESA_TEXT_B</b>)
+Allowed values: <b>0.0</b> - <b>1.0</b> (optional, coupled)
+</pre>
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

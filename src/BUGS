@@ -1,0 +1,22 @@
+- Menus in the top menu bar cannot 
+  be open using only the keyboard.
+  Importance: low.
+
+- Scaling a Group,Molecule,Cluster,Cell 
+  containing Atoms bonded to a different 
+  Group,Molecule,Cluster,Cell produces
+  visually awkward images for those Bonds.
+  Importance: medium.
+
+- Exporting a molecule after rotating it 
+  produces wrong bonds, when the molecule 
+  was bonded to another non-rotated molecule, 
+  because the rendering flags were corrupted.
+  Importance: high (solution: use a task id).
+
+- Help Current should know when a second level 
+  dialog is active, to supply better help docs.
+  Importance: low.
+
+- Add frame, axes to orbital X3D objects.
+  Importance: medium.

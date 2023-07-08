@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE gml SYSTEM "http://www.gamgi.org/dtd/gamgi.dtd">
+<gml>
+  <layer perspective="no">
+    <light ambient_r="0.500" ambient_g="0.500" ambient_b="0.500"
+    diffuse_r="0.400" diffuse_g="0.400" diffuse_b="0.400" specular_r="0.300"
+    specular_g="0.300" specular_b="0.300" direction_x="0.0000"
+    direction_y="0.0000" direction_z="-1.0000"/>
+    <cell group="194" a="5.2750" c="4.2340" x="-0.8055" y="-2.5992" z="3.4084"
+    e1="61.26" e2="89.74" e3="297.15" model="primitive">
+      <atom name="Ni" element="Sn" x="-2.1851" y="-0.3616" z="1.5414"
+      style="solid" variancy="1.00" size="1.00" scale="0.300"/>
+      <atom name="Ni" element="Sn" x="0.8647" y="1.4078" z="2.6926"
+      style="solid" variancy="1.00" size="1.00" scale="0.300"/>
+      <atom name="Sn" element="Ni" x="0.0274" y="-1.0597" z="2.7960"
+      style="solid" variancy="1.00" size="1.00" scale="0.300"/>
+      <atom name="Sn" element="Ni" x="2.3770" y="-0.4915" z="1.7409"
+      style="solid" variancy="1.00" size="1.00" scale="0.300"/>
+      <atom name="Sn" element="Ni" x="0.1645" y="0.2065" z="0.4864"
+      style="solid" variancy="1.00" size="1.00" scale="0.300"/>
+      <atom name="Sn" element="Ni" x="-1.4849" y="0.8397" z="3.7476"
+      style="solid" variancy="1.00" size="1.00" scale="0.300"/>
+      <atom name="Sn" element="Ni" x="-3.6974" y="1.5378" z="2.4931"
+      style="solid" variancy="1.00" size="1.00" scale="0.300"/>
+      <atom name="Sn" element="Ni" x="-1.3478" y="2.1060" z="1.4380"
+      style="solid" variancy="1.00" size="1.00" scale="0.300"/>
+    </cell>
+  </layer>
+</gml>

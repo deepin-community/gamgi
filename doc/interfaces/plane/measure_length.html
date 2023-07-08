@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Interfaces: Plane Measure</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Plane Measure</h1>
+
+<div id="notebook">
+<ul>
+<li><span>Length</span></li>
+<li><a href="measure_area.html">Area</a></li>
+<li><a href="measure_angle.html">Angle</a></li>
+</ul>
+</div>
+
+<div class="contents">
+            
+Measure <b>Length</b> properties involving planes.
+
+<h3>Quantity</h3>
+
+The supported <b>Length</b> properties are listed below. Planes
+and other objects selected may belong to different structural systems
+(cells, molecules, etc.), bonded or not. Only objects in the current
+layer can be chosen.
+
+<p/>
+
+An easy technique to select the objects is to click the mouse
+sucessively over their visual representations, in the sequence
+shown in the dialog. After the last needed object is selected,
+GAMGI automatically starts the calculation.
+
+<p/><b>Plane Separation</b><p/>
+
+The distance between adjacent crystallographic planes.
+The plane parent must be a cell object.
+
+<p/>
+
+The reported length is always the distance calculated from the 
+equation <b>d(hkl) = K/G(hkl)</b>, where <b>G</b> is the reciprocal 
+lattice vector for planes <b>(hkl)</b> and <b>K</b> is the reciprocal 
+lattice constant (the vector <b>G</b> is also proportional to <b>K</b>, 
+so the result is independent of the reciprocal lattice constant).
+
+<p/><b>Plane Atom Distance</b><p/>
+
+The distance from a plane to an atom.
+
+<h3>Value</h3>
+
+After selecting a quantity, enter the name of the objects and
+press <b>Ok</b>. If all objects are recognized, GAMGI does the
+calculation and shows the result in the <b>Value</b> entry.
+
+<p/>
+
+When a calculation ends, GAMGI keeps the objects identification.
+To start a new calculation, just click the mouse over a new object:
+GAMGI automatically cleans the previous data and inserts the new
+object identification. When a new quantity or page is chosen,
+previous data is automatically removed.
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

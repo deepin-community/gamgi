@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE gml SYSTEM "http://www.gamgi.org/dtd/gamgi.dtd">
+<gml>
+  <layer perspective="no">
+    <light ambient_r="0.500" ambient_g="0.500" ambient_b="0.500"
+    diffuse_r="0.400" diffuse_g="0.400" diffuse_b="0.400" specular_r="0.300"
+    specular_g="0.300" specular_b="0.300" direction_x="0.0000"
+    direction_y="0.0000" direction_z="-1.0000"/>
+    <cell group="225" a="5.6400" x="-0.0065" y="-2.9217" z="-1.5101"
+    e1="122.06" e2="4.25" e3="8.00">
+      <atom element="Cl" x="1.3086" y="1.9665" z="-6.8067" radius="1.8100"
+      style="solid" variancy="1.00" size="1.00" scale="0.400"/>
+      <atom element="Cl" x="-1.0754" y="-1.0110" z="-5.6424" radius="1.8100"
+      style="solid" variancy="1.00" size="1.00" scale="0.400"/>
+      <atom element="Cl" x="0.4324" y="1.5080" z="-2.9432" radius="1.8100"
+      style="solid" variancy="1.00" size="1.00" scale="0.400"/>
+      <atom element="Cl" x="2.8152" y="-1.1152" z="-4.7725" radius="1.8100"
+      style="solid" variancy="1.00" size="1.00" scale="0.400"/>
+      <atom element="Na" x="0.4318" y="-1.2923" z="-3.2756" radius="1.0200"
+      style="solid" variancy="1.00" size="1.00" scale="0.400"/>
+      <atom element="Na" x="2.8158" y="1.6852" z="-4.4400" radius="1.0200"
+      style="solid" variancy="1.00" size="1.00" scale="0.400"/>
+      <atom element="Na" x="1.3079" y="-0.8338" z="-7.1392" radius="1.0200"
+      style="solid" variancy="1.00" size="1.00" scale="0.400"/>
+      <atom element="Na" x="-1.0748" y="1.7894" z="-5.3099" radius="1.0200"
+      style="solid" variancy="1.00" size="1.00" scale="0.400"/>
+    </cell>
+  </layer>
+</gml>

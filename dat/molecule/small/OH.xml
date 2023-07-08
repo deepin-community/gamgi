@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE gml SYSTEM "http://www.gamgi.org/dtd/gamgi.dtd">
+<gml>
+  <molecule name="OH-">
+    <atom id="1" element="O" x="0.0065" y="0.0000" z="0.0000" charge="-0.8110"/>
+    <atom id="2" element="H" x="0.9935" y="0.0000" z="0.0000" charge="-0.1890"/>
+    <bond parent1="1" parent2="2"/>
+  </molecule>
+</gml>

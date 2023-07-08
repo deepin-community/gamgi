@@ -1,0 +1,36 @@
+Superconductor (Tc = 123 K): s19_TlBa2Ca2Cu3O9+x
+Structure: 1223
+
+Space group: 123
+
+Lattice parameters:
+3.8429 15.8710
+
+Wyckoff positions:
+Tl 1a
+Ba 2h, z = 0.1760
+Ca 2h, z = 0.3970
+Cu 1b,
+Cu 2g, z = 0.3020
+O 2e
+O 4i, z = 0.3040
+O 2g, z = 0.1320
+O 1c
+
+1. with Cell (s19a.xml):
+Cell Change XYZ: 0.0, 0.0, 0.5
+Bond: Color 0.5,0.5,0.5, Scale 0.4
+
+2. with Polytopes (s19b.xml):
+Cell Change XYZ: 0.5, 0.5, 0.0
+Cells: 2 x 2 x 2
+Neighbours: O
+Number: 5, 4
+
+References:
+H. Shaked, P.M. Keane, J.C. Rodriguez, F.F. Owen, R.L. Hitterman,
+J.D. Jorgensen, Crystal structures of the High-Tc Superconducting
+Copper-Oxides, Physica C, Elsevier Science, Amsterdam, 1994
+
+S.S.P. Parkin, V.Y. Lee, A.I. Nazzal, R. Savoy, R. Beyers,
+and S.J. LaPlaca, Phys. Rev. Lett. 61, 750 (1988)

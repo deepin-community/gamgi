@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Interfaces: Molecule Link</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Molecule Link</h1>
+
+<div id="notebook">
+<ul>
+<li><a href="link_object.html">Object</a></li>
+<li><span>Shift</span></li>
+</ul>
+</div>
+
+<div class="contents">
+
+Set here the translation applied to the child object or list of objects.
+
+<p/>
+
+When linking a molecule to another object, the translation is always
+applied to the child object: the molecule itself when linking above,
+the other object (group, plane, direction, atom, orbital, text) when
+linking below.
+
+<p/>
+
+The final child position is given by this translation vector added
+to the child or parent origin, as defined by the <b>Reference</b> option.
+By default this is the child origin and the translation vector is
+<b>0.0</b>, <b>0.0</b>, <b>0.0</b>, so no translation is applied.
+
+<p/>
+
+When a list of molecules is linked above, <b>Reference</b> is set by default
+to <b>Child</b>, so molecules preserve their positions and are not superposed.
+
+<p/>
+
+When a list of molecules is linked below, each molecule will be linked to a new,
+automatically created, child object, and <b>Reference</b> is set by default
+to <b>Parent</b>, so childs remain near their parent molecules and are not superposed.
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

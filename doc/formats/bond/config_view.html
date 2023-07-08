@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Formats: Bond Config</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Bond Config</h1>
+
+<div id="notebook">
+<ul>
+<li><a href="config_length.html">Length</a></li>
+<li><span>View</span></li>
+</ul>
+</div>
+
+<div class="contents">
+
+<h3>style</h3>
+
+Controls which <b>style</b> is applied by default when creating a new bond:
+cylinders in <b>solid</b> mode, simple lines in <b>wired</b> mode.
+
+<pre>
+Example: <b>&lt;bond style="wired"/></b> (default)
+(defined in <b>GAMGI_MESA_BOND_DRAW</b>)
+Allowed values: <b>wired</b>, <b>solid</b> (optional)
+</pre>
+
+<h3>size</h3>
+
+In <b>solid</b> mode, controls the size of the bond cylinders 
+applied by default. Combining bond <b>size</b> with atom 
+<b>variancy</b> and <b>size</b>, it is possible to obtain 
+a wide range of styles to represent atomic structures.
+
+The default is to represent atoms slightly larger than bonds:
+
+<pre>
+<b>&lt;atom variancy="0.0" size="0.8"/>&lt;bond size="0.5"/></b>
+</pre>
+
+An elegant style is to represent bonds with the same size as atoms:
+
+<pre>
+<b>&lt;atom variancy="0.0" size="0.5"/>&lt;bond size="0.5"/></b>
+</pre>
+
+To guarantee that bond cylinders are closed by atom spheres,
+bond <b>size</b> should not be larger than atom <b>size</b>.
+  
+<pre>
+Example: <b>&lt;bond size="0.5"/></b> (default)
+(defined in <b>GAMGI_CHEM_BOND_SIZE</b>)
+Allowed values: positive real (optional)
+</pre>
+
+<h3>color</h3>
+
+Controls whether bonds have their own independent color, 
+by default, or inherit the colors of the parent atoms.
+
+<pre>
+Example: <b>&lt;bond color="no"/></b> (default)
+Allowed values: <b>yes</b>, <b>no</b> (optional)
+</pre>
+
+<h3>red, green, blue</h3>
+
+Set the bond color used by default, when bonds 
+are rendered with their own independent color.
+
+<pre>
+Example: <b>&lt;bond red="0.0" green="0.8" blue="0.0"/></b> (default)
+(defined in <b>GAMGI_MESA_BOND_R</b>, <b>GAMGI_MESA_BOND_G</b>, <b>GAMGI_MESA_BOND_B</b>)
+Allowed values: <b>0.0</b> - <b>1.0</b> (optional, coupled)
+</pre>
+  
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

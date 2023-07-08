@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Formats: Light Create</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Light Create</h1>
+
+<div id="notebook">
+<ul>
+<li><span>Type</span></li>
+<li><a href="create_color.html">Color</a></li>
+<li><a href="create_attenuation.html">Attenuation</a></li>
+</ul>
+</div>
+
+<div class="contents">
+
+<h3>direction_x, direction_y, direction_z</h3>
+
+Required for directional and spot lights, indicate the direction vector pointing 
+from the light source to the light target. The length of the vector is 
+unimportant, as it does not carry further information. If both direction 
+and position parameters are missing when creating a light, an error is shown.
+
+<pre>
+Example: <b>&lt;light ... direction_x="0.0" direction_y="0.0" direction_z="-1.0"/></b> (default)
+(Defined in <b>GAMGI_MESA_LIGHT_DIRECTION_X</b>, <b>GAMGI_MESA_LIGHT_DIRECTION_Y</b>
+and <b>GAMGI_MESA_LIGHT_DIRECTION_Z</b>)
+Allowed values: real (required, coupled)
+</pre>
+
+<h3>position_x, position_y, position_z</h3>
+
+Required for positional and spot lights, indicate the position coordinates from 
+where the light is emitting. If both direction and position parameters are 
+missing when creating a light, an error is shown.
+
+<pre>
+Example: <b>&lt;light ... position_x="0.0" position_y="0.0" position_z="10.0"/></b> (default)
+(Defined in <b>GAMGI_MESA_LIGHT_POSITION_X</b>, <b>GAMGI_MESA_LIGHT_POSITION_Y</b>
+and <b>GAMGI_MESA_LIGHT_POSITION_Z</b>)
+Allowed values: real (required, coupled)
+</pre>
+
+<h3>angle</h3>
+
+Required for spot lights, indicates the angle from the spot 
+direction to the outer surface of the conic beam.
+
+<pre>
+Example: <b>&lt;light ... angle="90.0"/></b> (default)
+(Defined in <b>GAMGI_MESA_LIGHT_ANGLE</b>)
+Allowed values: <b>0.0</b> &lt; real &lt;= <b>90.0</b> (optional)
+</pre>
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

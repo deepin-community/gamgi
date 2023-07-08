@@ -1,0 +1,5 @@
+<?xml encoding="UTF-8"?>
+<light direction_x="0.0" direction_y="0.0" direction_z="-1.0"
+diffuse_r="1.0" diffuse_g="1.0" diffuse_b="1.0"/>
+<bond  parent1="C1"  parent2="C2"/>
+<bond  parent1="C3"  parent2="C4"/>

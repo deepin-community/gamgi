@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Tutorials: Occupancy rules</title>
+<link rel="icon" type="image/png" href="../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Occupancy rules</h1>
+
+<div id="notebook">
+<ul>
+<li><a href="occupancy_page1.html">Page 1</a></li>
+<li><span>Page 2</span></li>
+</ul>
+</div>
+
+<div class="contents">
+            
+<h3>Conventional volume</h3>
+
+<ol>
+<li>
+Press <b>Cell->Remove</b> and press over the cell to remove it.
+
+Press <b>Cell->Create</b> and set <b>System</b> to <b>c</b>, <b>Lattice</b>
+to <b>P</b> and the lattice parameter <b>a</b> to <b>1</b>.
+
+In the <b>Type</b> page, set the number of conventional cells 
+to <b>5</b>, <b>5</b>, <b>5</b>, and press <b>Ok</b> to create
+the cell. Press <b>Save</b> and then <b>Ok</b>, to save the empty
+cell.</li>
+
+<li>Repeat the <b>Cell->Link</b> task, linking the cell volume 
+with the Si atom, with the pattern (<b>*2_</b>, <b>*</b>, <b>*</b>).
+The left side of the cell is occupied with Si atoms. Repeat the
+<b>Cell->Link</b> task, this time linking with a C atom, with
+the pattern (<b>_2*</b>, <b>*</b>, <b>*</b>). The right side
+of the cell is occupied with C atoms.</li>
+
+<li>Press <b>Save</b> and move <b>Backward</b> once, to recover the
+empty cell, then press <b>Ok</b>. 
+
+To create 8 alternating octant cubes, four with Si and four with 
+C atoms, repeat the <b>Cell->Link</b> task 4 times with a Si atom, 
+with the rules
+
+(<b>*2_</b>, <b>*2_</b>, <b>*2_</b>), (<b>_2*</b>, <b>_2*</b>, <b>*2_</b>), 
+(<b>_2*</b>, <b>*2_</b>, <b>_2*</b>), (<b>*2_</b>, <b>_2*</b>, <b>_2*</b>)
+
+and another 4 times with a C atom, with the rules
+
+(<b>*2_</b>, <b>*2_</b>, <b>_2*</b>), (<b>_2*</b>, <b>_2*</b>, <b>_2*</b>), 
+(<b>_2*</b>, <b>*2_</b>, <b>*2_</b>), (<b>*2_</b>, <b>_2*</b>, <b>*2_</b>).</li>
+
+<li>Press <b>Save</b> and move <b>Backward</b> once, to recover the
+empty cell, then press <b>Ok</b>. 
+
+Repeat the <b>Cell->Link</b> task, linking the cell volume
+with the Si atom, with the pattern (<b>*_</b>, <b>*_</b>, <b>*_</b>).
+Alternating nodes, half of the total, are now occupied with Si atoms. 
+
+Repeat the <b>Cell->Link</b> task, this time linking with a C atom, 
+with the pattern (<b>_*</b>, <b>_*</b>, <b>_*</b>). The other half
+of the alternating nodes is now occupied with C atoms.</li>
+
+<li>Press <b>Save</b> and move <b>Backward</b> once, to recover the
+empty cell, then press <b>Ok</b>.
+
+Press <b>Cell->Modify</b> and change, in the <b>Type</b> page, 
+the number of cells to <b>6</b>, <b>6</b>, <b>6</b>, in the 
+<b>Origin</b> page, the <b>Axes</b> to <b>Yes</b>, and press <b>Ok</b>. 
+The first (red), second (green) third (blue) axes are now 
+visible at the corner of the increased cell volume.
+
+Press <b>Cell->Modify</b> again and change, in the <b>Origin</b> 
+page, the origin node coordinates to <b>3</b>, <b>3</b>, <b>3</b>, 
+then press <b>Ok</b>. The node origin is now at the center of the
+cell volume, although the physical origin remains the same.</li>
+
+<li>Repeat the <b>Cell->Link</b> task, linking the cell volume with 
+the Si atom, with the pattern (<b>*1</b>, <b>*1</b>, <b>*1</b>). 
+A cube with 3x3x3 nodes in the center of the cell is now occupied 
+with Si atoms.
+
+Repeat the <b>Cell->Link</b> task, this time linking with a C atom, 
+with the pattern (<b>__****</b>, <b>__****</b>, <b>__****</b>). All nodes 
+around the 3x3x3 central nodes are now occupied with C atoms.</li>
+
+</ol>
+
+</div>
+
+<div id="bottom">
+<a href="../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

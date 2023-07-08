@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Interfaces: Gamgi Config</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Gamgi Config</h1>
+
+<div id="notebook">
+<ul>
+<li><span>Usability</span></li>
+<li><a href="config_precision.html">Precision</a></li>
+<li><a href="config_color.html">Color</a></li>
+</ul>
+</div>
+
+<div class="contents">
+
+Define here the way users interact with the graphic interface.
+
+<h3>Buttons</h3>
+
+GAMGI expects to work with a 3-button mouse, where button 
+<b>1</b> handles operations such as rotating and menu selection, 
+button <b>2</b> handles operations such as moving and object 
+selection, and button <b>3</b> handles operations such as scaling. 
+
+<p/>
+
+By default, these logical buttons point to the physical buttons 
+left (<b>1</b>), middle (<b>2</b>) and right (<b>3</b>), 
+respectively, but this can be changed, pointing logical buttons 
+to different physical buttons. Two logical buttons cannot
+point to the same physical button.
+
+<p/>
+
+This is particularly usefull for left-hand users and when 
+handling a 2-button mouse, to link the most important tasks 
+to the two buttons available.
+
+<h3>Tolerance</h3>
+
+When selecting objects with the mouse, the sampled area is
+defined by the pixel where the user clicked the mouse, plus a
+<b>tolerance</b> given by the number of neighbour shells that
+should be considered. Thus a tolerance of <b>0</b> means that
+only the chosen pixel should be considered, while a tolerance
+of <b>1</b> means that the 8 pixels around should also be taken
+into account.
+
+<p/>
+
+Small tolerances demand precision when pointing to the object,
+but large tolerances make it too easy to select more than one
+object, in which case GAMGI considers the object selection 
+unsucessfull.
+
+<h3>Sound</h3>
+
+To disable/enable the internal computer sound. This sound
+is used for example to signal that an object has been recognized.
+However, it might be irritating for other users in the same room.
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

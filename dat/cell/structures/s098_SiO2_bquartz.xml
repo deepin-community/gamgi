@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE gml SYSTEM "http://www.gamgi.org/dtd/gamgi.dtd">
+<gml>
+  <layer perspective="no" scale="0.951">
+    <light ambient_r="0.500" ambient_g="0.500" ambient_b="0.500"
+    diffuse_r="0.400" diffuse_g="0.400" diffuse_b="0.400" specular_r="0.300"
+    specular_g="0.300" specular_b="0.300" direction_x="0.0000"
+    direction_y="0.0000" direction_z="-1.0000"/>
+    <cell group="180" a="4.9965" c="5.4546" x="-0.4260" y="-4.9419"
+    z="-4.1305" e1="0.00" e2="25.00" e3="0.00" model="primitive" n1="2" n2="2"
+    n3="1" axes="yes">
+      <atom id="1" element="Si" x="1.8381" y="-3.8860" z="-4.1305"
+      style="solid" size="0.20"/>
+      <atom id="2" element="Si" x="6.3663" y="-1.7741" z="-4.1304"
+      style="solid" size="0.20"/>
+      <atom id="3" element="Si" x="-2.2550" y="-1.0203" z="-4.1306"
+      style="solid" size="0.20"/>
+      <atom id="4" element="Si" x="2.2732" y="1.0916" z="-4.1305"
+      style="solid" size="0.20"/>
+      <atom id="5" element="Si" x="-0.2085" y="-2.4531" z="-2.3124"
+      style="solid" size="0.20"/>
+      <atom id="6" element="Si" x="4.3198" y="-0.3413" z="-2.3123"
+      style="solid" size="0.20"/>
+      <atom id="7" element="Si" x="-6.3480" y="1.8453" z="-4.1307"
+      style="solid" size="0.20"/>
+      <atom id="8" element="Si" x="-1.8198" y="3.9572" z="-4.1306"
+      style="solid" size="0.20"/>
+      <atom id="9" element="Si" x="-4.3015" y="0.4125" z="-2.3124"
+      style="solid" size="0.20"/>
+      <atom id="10" element="Si" x="0.2267" y="2.5244" z="-2.3124"
+      style="solid" size="0.20"/>
+      <atom id="11" element="Si" x="1.8380" y="-3.8860" z="1.3241"
+      style="solid" size="0.20"/>
+      <atom id="12" element="Si" x="-2.4726" y="-3.5090" z="-0.4942"
+      style="solid" size="0.20"/>
+      <atom id="13" element="Si" x="6.3663" y="-1.7741" z="1.3241"
+      style="solid" size="0.20"/>
+      <atom id="14" element="Si" x="2.0557" y="-1.3972" z="-0.4941"
+      style="solid" size="0.20"/>
+      <atom id="15" element="Si" x="6.5839" y="0.7147" z="-0.4941"
+      style="solid" size="0.20"/>
+      <atom id="16" element="Si" x="-2.2551" y="-1.0203" z="1.3241"
+      style="solid" size="0.20"/>
+      <atom id="17" element="Si" x="-6.5657" y="-0.6434" z="-0.4942"
+      style="solid" size="0.20"/>
+      <atom id="18" element="Si" x="2.2732" y="1.0916" z="1.3240"
+      style="solid" size="0.20"/>
+      <atom id="19" element="Si" x="-2.0374" y="1.4685" z="-0.4942"
+      style="solid" size="0.20"/>
+      <atom id="20" element="Si" x="2.4908" y="3.5803" z="-0.4942"
+      style="solid" size="0.20"/>
+      <atom id="21" element="Si" x="-6.3481" y="1.8453" z="1.3240"
+      style="solid" size="0.20"/>
+      <atom id="22" element="Si" x="-1.8198" y="3.9572" z="1.3240"
+      style="solid" size="0.20"/>
+      <atom id="23" element="O" x="0.6012" y="-3.4706" z="-3.2217"
+      style="solid" size="0.20"/>
+      <atom id="24" element="O" x="-1.1866" y="-3.3165" z="-1.4036"
+      style="solid" size="0.20"/>
+      <atom id="25" element="O" x="5.1295" y="-1.3588" z="-3.2217"
+      style="solid" size="0.20"/>
+      <atom id="26" element="O" x="3.3417" y="-1.2046" z="-1.4036"
+      style="solid" size="0.20"/>
+      <atom id="27" element="O" x="-3.4918" y="-0.6050" z="-3.2218"
+      style="solid" size="0.20"/>
+      <atom id="28" element="O" x="-5.2796" y="-0.4509" z="-1.4036"
+      style="solid" size="0.20"/>
+      <atom id="29" element="O" x="1.0364" y="1.5069" z="-3.2218"
+      style="solid" size="0.20"/>
+      <atom id="30" element="O" x="0.7696" y="-1.5897" z="-1.4036"
+      style="solid" size="0.20"/>
+      <atom id="31" element="O" x="-1.0182" y="-1.4357" z="-3.2218"
+      style="solid" size="0.20"/>
+      <atom id="32" element="O" x="-0.7514" y="1.6610" z="-1.4037"
+      style="solid" size="0.20"/>
+      <atom id="33" element="O" x="5.2978" y="0.5222" z="-1.4035"
+      style="solid" size="0.20"/>
+      <atom id="34" element="O" x="3.5101" y="0.6762" z="-3.2218"
+      style="solid" size="0.20"/>
+      <atom id="35" element="O" x="-3.3235" y="1.2759" z="-1.4037"
+      style="solid" size="0.20"/>
+      <atom id="36" element="O" x="-5.1113" y="1.4300" z="-3.2219"
+      style="solid" size="0.20"/>
+      <atom id="37" element="O" x="1.2048" y="3.3878" z="-1.4036"
+      style="solid" size="0.20"/>
+      <atom id="38" element="O" x="-0.5830" y="3.5418" z="-3.2219"
+      style="solid" size="0.20"/>
+      <atom id="39" element="O" x="2.3143" y="-2.6759" z="0.4147"
+      style="solid" size="0.20"/>
+      <atom id="40" element="O" x="6.8425" y="-0.5641" z="0.4146"
+      style="solid" size="0.20"/>
+      <atom id="41" element="O" x="-2.7313" y="-2.2303" z="0.4146"
+      style="solid" size="0.20"/>
+      <atom id="42" element="O" x="-1.7787" y="0.1897" z="0.4146"
+      style="solid" size="0.20"/>
+      <atom id="43" element="O" x="1.7969" y="-0.1184" z="0.4146"
+      style="solid" size="0.20"/>
+      <atom id="44" element="O" x="2.7495" y="2.3015" z="0.4146" style="solid"
+      size="0.20"/>
+      <atom id="45" element="O" x="-6.8244" y="0.6353" z="0.4145"
+      style="solid" size="0.20"/>
+      <atom id="46" element="O" x="-2.2961" y="2.7472" z="0.4146"
+      style="solid" size="0.20"/>
+      <bond parent1="1" parent2="23" style="solid" size="0.20"/>
+      <bond parent1="2" parent2="25" style="solid" size="0.20"/>
+      <bond parent1="3" parent2="27" style="solid" size="0.20"/>
+      <bond parent1="3" parent2="31" style="solid" size="0.20"/>
+      <bond parent1="4" parent2="29" style="solid" size="0.20"/>
+      <bond parent1="4" parent2="34" style="solid" size="0.20"/>
+      <bond parent1="5" parent2="23" style="solid" size="0.20"/>
+      <bond parent1="5" parent2="24" style="solid" size="0.20"/>
+      <bond parent1="5" parent2="30" style="solid" size="0.20"/>
+      <bond parent1="5" parent2="31" style="solid" size="0.20"/>
+      <bond parent1="6" parent2="25" style="solid" size="0.20"/>
+      <bond parent1="6" parent2="26" style="solid" size="0.20"/>
+      <bond parent1="6" parent2="33" style="solid" size="0.20"/>
+      <bond parent1="6" parent2="34" style="solid" size="0.20"/>
+      <bond parent1="7" parent2="36" style="solid" size="0.20"/>
+      <bond parent1="8" parent2="38" style="solid" size="0.20"/>
+      <bond parent1="9" parent2="27" style="solid" size="0.20"/>
+      <bond parent1="9" parent2="28" style="solid" size="0.20"/>
+      <bond parent1="9" parent2="35" style="solid" size="0.20"/>
+      <bond parent1="9" parent2="36" style="solid" size="0.20"/>
+      <bond parent1="10" parent2="29" style="solid" size="0.20"/>
+      <bond parent1="10" parent2="32" style="solid" size="0.20"/>
+      <bond parent1="10" parent2="37" style="solid" size="0.20"/>
+      <bond parent1="10" parent2="38" style="solid" size="0.20"/>
+      <bond parent1="11" parent2="39" style="solid" size="0.20"/>
+      <bond parent1="12" parent2="24" style="solid" size="0.20"/>
+      <bond parent1="12" parent2="41" style="solid" size="0.20"/>
+      <bond parent1="13" parent2="40" style="solid" size="0.20"/>
+      <bond parent1="14" parent2="26" style="solid" size="0.20"/>
+      <bond parent1="14" parent2="30" style="solid" size="0.20"/>
+      <bond parent1="14" parent2="39" style="solid" size="0.20"/>
+      <bond parent1="14" parent2="43" style="solid" size="0.20"/>
+      <bond parent1="15" parent2="33" style="solid" size="0.20"/>
+      <bond parent1="15" parent2="40" style="solid" size="0.20"/>
+      <bond parent1="16" parent2="41" style="solid" size="0.20"/>
+      <bond parent1="16" parent2="42" style="solid" size="0.20"/>
+      <bond parent1="17" parent2="28" style="solid" size="0.20"/>
+      <bond parent1="17" parent2="45" style="solid" size="0.20"/>
+      <bond parent1="18" parent2="43" style="solid" size="0.20"/>
+      <bond parent1="18" parent2="44" style="solid" size="0.20"/>
+      <bond parent1="19" parent2="32" style="solid" size="0.20"/>
+      <bond parent1="19" parent2="35" style="solid" size="0.20"/>
+      <bond parent1="19" parent2="42" style="solid" size="0.20"/>
+      <bond parent1="19" parent2="46" style="solid" size="0.20"/>
+      <bond parent1="20" parent2="37" style="solid" size="0.20"/>
+      <bond parent1="20" parent2="44" style="solid" size="0.20"/>
+      <bond parent1="21" parent2="45" style="solid" size="0.20"/>
+      <bond parent1="22" parent2="46" style="solid" size="0.20"/>
+    </cell>
+  </layer>
+</gml>

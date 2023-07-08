@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Interfaces: Atom Modify</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Atom Modify</h1>
+
+<div id="notebook">
+<ul>
+<li><a href="modify_element.html">Element</a></li>
+<li><a href="modify_property.html">Property</a></li>
+<li><a href="modify_analysis.html">Analysis</a></li>
+<li><a href="modify_position.html">Position</a></li>
+<li><a href="modify_view.html">View</a></li>
+<li><span>Length</span></li>
+<li><a href="modify_angle.html">Angle</a></li>
+</ul>
+</div>
+
+<div class="contents">
+            
+Change here <b>Length</b> properties between a single atom and other objects.
+
+<h3>Property</h3>
+
+The supported <b>Length</b> properties, the same as for <b>Atom->Measure</b>,
+are listed below. Atoms and other objects may belong to different parents 
+and may be bonded or not. Only objects in the current layer can be chosen.
+
+<p/>
+
+An easy technique to select the objects is to click the mouse
+sucessively over their visual representations, in the sequence
+shown in the dialog. 
+
+<p/><b>2-Atom Distance</b><p/>
+
+The distance between Atom1 and Atom2.
+
+<p/><b>Atom 2-Atom Distance</b><p/>
+
+The distance between Atom1 and the direction defined by Atom2-Atom3.
+
+<p/><b>Atom 3-Atom Distance</b><p/>
+
+The distance between Atom1 and the plane defined by Atom2-Atom3-Atom4.
+
+<p/><b>Atom Direction Distance</b><p/>
+
+The distance between an Atom and a Direction.
+
+<p/><b>Atom Plane Distance</b><p/>
+  
+The distance between an Atom and a Plane.
+
+<h3>Value</h3>
+
+After selecting the property and the objects, set <b>Value</b> 
+to the desired length and press <b>Ok</b> to activate the change.
+An error is shown when some of the objects are not recognized,
+or when the changing direction cannot be determined.
+
+<p/>
+
+For all properties, of all the objects selected by users only 
+the first atom is actually translated. Atoms bonded to the first 
+atom are also translated, as long as they are not bonded by cyclic
+structures to any of the other selected objects (without this 
+restriction, all atoms in a ring would be translated!).
+
+<p/>
+
+For all properties, the direction between the first atom and the
+other objects is always preserved. <b>Value</b> can take negative
+values, in which case the first atom and the other modified atoms
+are reflected to the other side of the reference objects.
+
+<p/>
+
+When a calculation ends, GAMGI keeps the objects identification.
+To start a new calculation, just click the mouse over a new object:
+GAMGI automatically cleans the previous data and inserts the new
+object identification. When a new property or page is chosen,
+previous data is automatically removed.
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

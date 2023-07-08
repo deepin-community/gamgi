@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Interfaces: Introduction Objects</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/board.css"/>
+</head>
+
+<body>
+
+<div class="board">
+<div>Introduction Objects</div><div>&nbsp;</div>
+</div>
+
+<div class="contents">
+
+GAMGI supports the following objects: Text, Orbital, Bond, Atom, Direction, Plane, 
+Group, Molecule, Cluster, Cell, Arrow, Shape, Graph, Assembly, Light, Layer and Window.
+
+<p/>
+
+Layer, Assembly, Cluster, Molecule and Group objects are containers: their purpose 
+is to contain other objects. Light objects are modifiers: their purpose is to modify 
+how other objects look. Assembly, Cluster, Group and Text are recursive objects: they 
+can own other objects of the same class.
+
+<h3>Text</h3>
+
+GAMGI supports both wired (stroked) and solid (extruded) 3D fonts.
+
+Stroked fonts are needed to show information (as measurements and object identification) 
+on the screen, which needs to be three-dimensional because it will be linked to molecules 
+and other three-dimensional objects. Stroked fonts are relatively simple, so characters can 
+be drawn fast. Measurements and object identification must work in both manual and automatic 
+modes. In the automatic mode, measurements of distances and angles must be recalculated and 
+the results updated in the text objects in real time, while the user manipulates the objects.
+
+<p/>
+
+Extruded fonts are designed to provide the highest possible visual quality to text objects.
+These fonts work well with lights and can be very complex, so they are much slower than
+the stroked fonts. Links for free libraries providing this kind of font support include
+<a href="http://www.freetype.org/">Freetype</a>,
+<a href="http://gltt.sourceforge.net/">GLTT</a>,
+<a href="http://oglft.sourceforge.net/">OGLFT</a>
+and <a href="http://linas.org/gle/">GLE</a>.
+
+<p/>
+
+Text objects can own other text objects only, so they are recursive objects. This gives 
+the user maximum flexibility to manipulate different text fragments separately and 
+compose them to obtain the final result. Text objects can be owned by any other GAMGI 
+object except lights and windows.
+
+<h3>Orbital</h3>
+
+Only the low-level engine infra-structure of orbital objects is implemented so far. 
+The goal is to describe: 1) simple hydrogen-like orbitals, s, p, d, f, etc., and its 
+hybridisations, sp, sp2, sp3, etc.; 2) complex representations of the electronic clouds 
+surrounding the nucleus, commonly provided by combinations of Gaussian, Slater and 
+plane wave analytic functions; 3) combinations of numerical functions usually described 
+by spline line coefficients; 4) pseudo-potentials electronic descriptions.
+
+<p/>
+
+The main difficulty with orbitals is to collect the data from files with completely 
+different formats, provided by Gaussian, ADF, DSolid, Plana, etc. and build a common way 
+to handle all this information. This problem must be correlated with the way GAMGI handles 
+input/output data.
+
+<p/>
+
+Orbitals can own text objects, so for example the name of the orbital can be attached to it.
+
+<h3>Bond</h3>
+
+GAMGI handles bonds between atoms as objects owned by these atoms. Each atom can 
+have an unlimited number of bonds. Each bond must have two parent atoms. Bonds 
+can own orbitals and texts.
+
+<h3>Atom</h3>
+
+Atoms are the most important objects in GAMGI. They can own orbitals, texts and 
+are the only objects that can own bonds.
+
+<h3>Direction</h3>
+
+Direction objects were designed primarily to handle crystallographic directions but 
+they should provide useful functionality even in the absence of 3D or 2D cells. 
+The low-level engine infra-structure required to handle direction objects is fully 
+implemented but everything else is not done yet.
+
+<p/>
+
+Direction objects must handle 3- and 4- (for hexagonal lattices) crystallographic 
+indices notations, and all the related crystallographic relations provided by 
+direct- and reciprocal-lattice representations.
+
+<p/>
+
+Users should be able to choose directions of atoms in cells, clusters or molecules, 
+automatically producing direction objects reproducing those directions, including 
+the atoms and its child, bonds, orbitals and texts, and then handle these new direction 
+objects as totally independent viewing and building tools.
+
+<p/>
+
+Direction objects can own atoms, orbitals and texts.
+
+<h3>Plane</h3>
+
+Plane objects were designed primarily to handle crystallographic planes but they 
+should provide useful functionality even in the absence of 3D periodic objects (cells). 
+Plane objects can own directions, atoms, orbitals and texts. The low-level engine 
+infra-structure required to handle plane objects is fully implemented but everything 
+else is not done yet.
+
+<p/>
+
+Plane objects must handle Miller and Miller-Bravais indices and all the related 
+crystallographic relations provided by direct- and reciprocal-lattice representations.
+
+<p/>
+
+Users should be able to choose planes of atoms in cells, clusters or molecules, 
+automatically producing plane objects reproducing those planes, including the atoms 
+and its child, bonds, orbitals and texts, and then handle these new plane objects 
+as totally independent viewing and building tools.
+
+<h3>Group</h3>
+
+Group is an object container designed to handle a fragment of a molecule, a residue 
+of a protein, a mero of a polymer chain, or other chemical species. Group objects can 
+own an unlimited number of other chemical species as groups, atoms, and related objects 
+as texts, orbitals, directions and planes. A group is therefore a recursive object, 
+with unlimited nested levels, and its properties should reflect the child chemical features. 
+For example, an amino-acid has amino NH2 and carboxylic acid COOH groups, 
+the later in turn contains an hydroxyl group OH.
+
+<p/>
+
+Currently Group objects can be created only from XML files. Mechanisms to measure length, 
+angle and torsion measurements in groups of atoms are already in place and tested. 
+Algorithms and tools to modify length, angle and torsion values, in both open and 
+cyclic structures have been implemented and fully tested. Everything else is not done yet.
+
+<h3>Molecule</h3>
+
+Molecule objects are essentially containers, objects whose primary purpose is
+to own other objects, as atoms and bonds. Molecules can own groups, planes, 
+directions, atoms, orbitals and texts. Currently Group objects can be created
+only from XML files. Mechanisms to measure the point symmetry in molecules
+are already in place and tested. Everything else is not done yet.
+
+<h3>Cluster</h3>
+
+Cluster is an object container, designed to contain an unlimited number of chemical 
+species as child objects, including other clusters, molecules, groups, atoms and 
+related objects as texts, orbitals, directions and planes. A cluster is therefore a 
+recursive object, with unlimited nested levels, and its properties should reflect the 
+child chemical features.
+
+<p/>
+
+Currently Cluster objects can be created only from XML files. Mechanisms to
+determine the Voronoi tesselation of a cluster are already in place and tested. 
+Everything else is not done yet.
+
+<h3>Cell</h3>
+
+All the GAMGI functionality related with atomic structures with periodic boundary 
+conditions is handled by cell objects. Crystalline structures can be created indicating 
+either a crystalline lattice and a motif or a space group and an (TODO) asymmetric unit.
+
+<p/>
+
+The 14 Bravais lattices can be represented by Conventional, Primitive and Wigner-Seitz 
+cells, plus Rhombus and Sphere volumes. Users can choose the number of cells, the 
+volume size, the cell positioning, the type of cell borders, solid or wired cell 
+representations, and the cell color.
+
+<p/>
+
+Any Cluster, Molecule, Group, Atom or even Orbital, Text object can be used as a 
+valid motif to construct a periodic structure. GAMGI provides powerful yet simple 
+pattern rules to indicate which lattice nodes should be filled, this way allowing 
+users to create complex mixed structures that can be used to study liquids and other 
+non-periodic systems. In particular, these pattern rules can be used to build 2D and 
+1D periodic and non-periodic structures.
+
+<h3>Arrow</h3>
+
+Arrow objects include different types of 2D and 3D arrows, which are not text objects 
+but are very useful to prepare images containing atomic structures, graphs, text, etc., 
+for presentations at seminars or school teaching, or for producing printed images for 
+articles or books.
+
+<p/>
+
+Arrow objects can own text objects (only). This is useful for example to add an equilibrium 
+constant over a double arrow symbolising a chemical equilibrium.
+
+<p/>
+
+The low-level engine infra-structure required to handle arrow objects is fully implemented 
+but everything else is not done yet.
+
+<h3>Shape</h3>
+
+Shape objects describe backgrounds, boxes, circles, ellipses, diamonds, etc. designed 
+to make an image for a presentation more clear and pretty. The aim is therefore to fill 
+the gap between text and arrow objects. Shape objects can own text objects only. This is 
+useful, for example to include a message in a box.
+
+<p/>
+
+Nice functionality to have in GAMGI shape objects includes: 1) several styles should be 
+provided for shape objects, including solid, contour, partially transparent, etc.; 2) 
+mechanisms should be provided to allow users to choose and apply OpenGL textures, in 
+2D and 3D shape objects; 3) mechanisms should be provided to allow users to make textures, 
+namely profile gradients, as in the GIMP.
+
+<p/>
+
+The low-level engine infra-structure required to handle shape objects is fully implemented 
+but everything else is not done yet.
+
+<h3>Graph</h3>
+
+Graph objects will be used to describe all sort of graphic information usually related with 
+atomic structures, including for example radial distribution functions and electron density 
+maps. In particular, graphs will be used to represent the copious amount of data often 
+provided by ab-initio and molecular mechanics calculations. Graphs can own text objects 
+only, which will be used for captions, titles, labels, etc.
+
+<p/>
+
+The low-level engine infra-structure required to handle Graph objects is fully implemented 
+but everything else is not done yet.
+
+<h3>Assembly</h3>
+
+Assembly is an object container, designed to be fully flexible. An assembly can own any 
+GAMGI objects, including other assembly objects, except lights, layers and windows. An 
+assembly object is therefore a recursive object, with unlimited nested levels. For 
+example, an assembly can be used to associate a graph with a molecule and a cell, to 
+manipulate all of them at once.
+
+<p/>
+
+Currently Assembly objects can be created only from XML files. 
+The graphic interfaces to properly link Assembly objects are not done yet.
+
+<h3>Light</h3>
+
+Everything related with lightning in GAMGI is handled by light objects. GAMGI lights 
+implement all the functionality provided by the OpenGL specification. This includes 
+directional, positional and spot lights, ambient, diffuse and specular light components, 
+plus axial and radial light attenuations.
+
+<p/>
+
+The maximum number of lights that each layer can own is fixed by the graphics library 
+used with GAMGI. In Mesa this number is currently 8, the minimum required by the OpenGL 
+specification. However, as the number of layers that each window can own is unlimited, 
+the same is true for the total number of lights per image. Lights are the only objects 
+in GAMGI that cannot own other objects.
+
+<h3>Layer</h3>
+
+GAMGI supports multiple, unlimited, layers for each window, allowing users to move and 
+copy objects between different layers and see multiple layers simultaneously, if they wish. 
+A layer can own all kinds of GAMGI objects, except bonds, windows and layers. In particular, 
+layers are the only GAMGI objects that can own lights.
+
+<p/>
+
+Most of the layer functionality is already in place, including perspective and orthographic 
+projections, full control over projection and model view (like a photographic camera) 
+parameters, inside and outside visibility, background color, plus undo and save history 
+mechanisms to keep and recover the whole contents of each layer, for as many levels as 
+previously defined.
+
+<p/>
+
+Perspective projection is better to simulate realistic views but the orthographic projection 
+(mostly used in architecture) is usually preferred for most work related with building 
+and viewing structures, because these are not distorted by perspective. The projection 
+parameters, that control the matrix transformations related with the projection of the 
+3D space on the screen, are fully controlled by the users.
+
+<h3>Window</h3>
+
+GAMGI supports multiple, unlimited, windows, and (TODO) users can easily move and copy 
+objects between them. Each window in turn supports multiple, unlimited, layers,
+and (TODO) users can easily move and copy objects between them. Windows can own layer 
+objects only, each one describing a completely independent graphic environment.
+
+<p/>
+
+Window objects are truely independent: if GAMGI starts with window A and then 
+window B is created, these windows have exactly the same priority, so removing
+window A will leave GAMGI running normally with window B.
+
+<p/>
+
+The low-level engine infra-structure required to move and copy objects between 
+windows is fully implemented but the high-level interfaces are not done yet.
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,9 @@
+<gml>
+<molecule name="SNO3">
+<atom element="S" x=".00000" y=".00000" z="-.79700"/>
+<atom element="O" x="1.43596" y=".00000" z="-.97567"/>
+<atom element="O" x="-.71798" y="-1.24357" z="-.97567"/>
+<atom element="N" x=".00000" y=".00000" z=".87288"/>
+<atom element="O" x="-.71788" y="1.24357" z="-.97577"/>
+</molecule>
+</gml>

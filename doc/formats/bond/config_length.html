@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Formats: Bond Config</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Bond Config</h1>
+
+<div id="notebook">
+<ul>
+<li><span>Length</span></li>
+<li><a href="config_view.html">View</a></li>
+</ul>
+</div>
+
+<div class="contents">
+
+<h3>min, max, element1, element2</h3>
+
+One of the methods available to automatically create
+new bonds is to calculate the distance between the two atoms
+and to check whether it fits inside the bond length range
+previously defined for that atom pair. Users can set explicit
+values for the default minimum and maximum length limits, for
+each element pair, using the <b>min</b>, <b>max</b> parameters, 
+coupled with the <b>element1</b>, <b>element2</b> parameters,
+to define the elements.
+
+<p/>
+
+Explicitly defined bond length ranges become immediately active 
+and constitute the first priority when using the bond length criterium 
+to create new bonds. These parameters can thus be changed several times 
+in the same file, to handle blocks of data with different bonding characteristics.
+
+<p/>
+
+As <b>min</b>, <b>max</b> parameters are specific for a given 
+element pair, the attributes <b>element1</b>, <b>element2</b> 
+must be included. When <b>element1</b>, <b>element2</b> are present, 
+but <b>min</b>, <b>max</b> are not, an error is also shown, 
+because the only purpose of <b>element1</b>, <b>element2</b>
+parameters is to set <b>min</b>, <b>max</b> values.
+  
+<pre>
+Example: <b>&lt;bond min="1.4720" max="2.0240" element1="Si" element2="O"/></b> (default)
+(calculated from default Si, O radius and <b>lower</b>, <b>upper</b> parameters)
+Allowed values: positive reals, element names (optional)
+</pre>
+
+<h3>lower, upper</h3>
+
+When explicit bond length ranges are not defined for a given element pair, 
+GAMGI attempts to create default minimum and maximum bond length limits by 
+summing the two atom radius and multiplying the sum by <b>lower</b> and
+<b>upper</b> factors. These <b>lower</b>, <b>upper</b> parameters are common 
+to all atom pairs and provide thus a method much less accurate (but
+much more easy) to determine bonds than <b>min</b>, <b>max</b>.
+When at least one of the atom radius is undefined, no bond is created
+using the length criterium.
+
+<pre>
+Example: <b>&lt;bond lower="0.80" upper="1.10"/></b> (default)
+(defined in <b>GAMGI_CHEM_BOND_LOWER</b> and <b>GAMGI_CHEM_BOND_UPPER</b>)
+
+Allowed values: positive reals, <b>lower</b> <b>upper</b> (optional)
+</pre>
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

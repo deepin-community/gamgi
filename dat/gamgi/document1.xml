@@ -1,0 +1,8 @@
+<?xml encoding="UTF-8"?>
+<molecule>
+  <atom element="C" x="0.0" y="0.0" z="0.0" id = "C1"/>
+  <atom element="C" x="1.0" y="0.0" z="0.0" id = "C2"/>
+  <atom element="C" x="0.0" y="1.0" z="0.0" id = "C3"/>
+  <atom element="C" x="1.0" y="1.0" z="0.0" id = "C4"/>
+</molecule>
+&outside2;

@@ -1,0 +1,46 @@
+- ENVIRONMENT VARIABLES -
+
+GAMGI requires two environment variables, GAMGI_HELP and GAMGI_TEXT.
+GAMGI_HELP should point to the directory doc/, where the Help
+documentation files are. GAMGI_TEXT should indicate where are the ten 
+Bitstream Vera Truetype fonts, that are also distributed by GAMGI:
+
+VeraBI.ttf  VeraMoBd.ttf  VeraMoIt.ttf  VeraSeBd.ttf  Vera.ttf
+VeraBd.ttf  VeraIt.ttf  VeraMoBI.ttf  VeraMono.ttf  VeraSe.ttf
+
+If your distribution does not come with these files, just set GAMGI_TEXT 
+to the directory src/io/fonts/. If your distribution already has 
+these files, remove src/io/fonts/ and point GAMGI_TEXT to the 
+system directory containing them. For example, in Debian:
+/usr/share/fonts/truetype/ttf-bitstream-vera/
+
+The best solution is probably to launch gamgi from a wrapper script, 
+as in the following working example, that reads files from the 
+command line and automatically sets GAMGI_HELP and GAMGI_TEXT:
+
+#!/bin/sh
+GAMGI_HELP=/usr/local/gamgi/doc
+export GAMGI_HELP
+GAMGI_TEXT=/usr/share/fonts/truetype/ttf-bitstream-vera
+export GAMGI_TEXT
+exec /usr/local/bin/gamgi "$@"
+
+To check that these variables are properly set, select
+File->Import and choose dat/text/keyboard.xml,
+then select Help->Current.
+
+- DATA FILES -
+The wrapper script above can be used to read any 
+data files from the command line (see the man page).
+
+- MAN PAGES -
+The GAMGI man page is at doc/man/, with instructions.
+
+- ICONS -
+The GAMGI icons are at doc/icon/.
+Currently only rasterized transparent png images are available, 
+with 316x316, 128x128, 48x48, 32x32, 22x22, 16x16 pixels. Read
+doc/icon/icon.html to see the images and an explanation.
+
+If GAMGI is part of your distribution, we would be delighted
+to know about it, just send us a note, to <jcgp07@gmail.com>.

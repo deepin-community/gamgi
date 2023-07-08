@@ -1,0 +1,25 @@
+Structure 65
+Prototype: ZnWO4
+StrukturBericht / Pearson: - / mP12
+
+Lattice parameters:
+ZnWO4
+4.72 5.7 4.95 90.15 (beta = AC)
+
+Radius:
+Zn: (half-distance)
+W: (half-distance)
+O: (half-distance)
+
+1. Building with space group (s065.xml):
+Group: 13
+
+Wyckoff positions:
+Zn 2f, y = 0.674
+W 2e, y = 0.2662
+O 4g, x = 0.22, y = 0.11, z = 0.95
+O 4g, x = 0.26, y = 0.38, z = 0.39
+
+View:
+Zn,W,O: style solid, size 0.8, variancy 0.0, scale 1.0
+ZnO,WO: style solid, method length, size 0.2, scale 1.0

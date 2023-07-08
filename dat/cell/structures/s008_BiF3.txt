@@ -1,0 +1,31 @@
+Structure 8
+Prototype: BiF3
+StrukturBericht / Pearson: D0_3 /cF16
+
+lattice parameter:
+BiF3   BiLi3  Cd3Pr
+5.865  6.722  7.200
+CeMg3  Cu3Sb  Fe3Si
+7.438  6.010  5.662
+Mg3Pr  AlFe3  Mn3Si
+7.430  5.780  5.722
+
+Radius:
+Bi 1.1700 (Shannon radius for charge +3 coordination 8)
+F 1.3100 (Shannon radius for charge -1 coordination 4)
+
+1. Building with space group (s008a.xml):
+Group: 225
+
+Wyckoff positions:
+Bi 1a
+F  1b
+F  2c
+
+2. Building with bcc-type cell (s008b.xml):
+Change: 0.25 0.25 0.25
+
+View:
+Bi: style solid, size 1.0, variancy 1.0, scale 0.2
+F: style solid, size 1.0, variancy 1.0, scale 0.2
+BiF: style solid, method length, color 0.5,0.5,0.5 scale 0.6

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Formats: Gamgi Config</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Gamgi Config</h1>
+
+<div id="notebook">
+<ul> 
+<li><a href="config_usability.html">Usability</a></li>
+<li><span>Precision</span></li>
+<li><a href="config_color.html">Color</a></li>
+</ul>
+</div>
+
+<div class="contents">
+
+<h3>length, angle, mass, charge</h3>
+
+Set the number of decimal figures used to show the various data types. 
+This is not related with the precision used internally to handle data, 
+which is always the maximum possible (double precision).
+
+<pre>
+Example: <b>&lt;gamgi length="4" angle="2" mass="4" charge="4"/></b> (default)
+(defined in <b>GAMGI_MATH_DECIMAL_LENGTH</b>, <b>GAMGI_MATH_DECIMAL_ANGLE</b>,
+<b>GAMGI_MATH_DECIMAL_MASS</b> and <b>GAMGI_MATH_DECIMAL_CHARGE</b>)
+Allowed values: <b>0</b> - <b>5</b> (defined in <b>GAMGI_MATH_DECIMAL_MAX</b>) (optional)
+</pre>
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

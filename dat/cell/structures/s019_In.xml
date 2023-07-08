@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE gml SYSTEM "http://www.gamgi.org/dtd/gamgi.dtd">
+<gml>
+  <layer perspective="no" scale="0.962">
+    <light ambient_r="0.500" ambient_g="0.500" ambient_b="0.500"
+    diffuse_r="0.400" diffuse_g="0.400" diffuse_b="0.400" specular_r="0.300"
+    specular_g="0.300" specular_b="0.300" direction_x="0.0000"
+    direction_y="0.0000" direction_z="-1.0000"/>
+    <cell group="139" a="4.5980" c="4.9470" x="-0.9059" y="-3.0514" z="4.7750"
+    e1="78.32" e2="89.99" e3="286.70">
+      <atom element="In" x="-0.9059" y="-3.0514" z="4.7750" style="solid"
+      variancy="1.00" size="1.00" scale="0.400"/>
+      <atom element="In" x="3.4983" y="-2.7850" z="3.4815" style="solid"
+      variancy="1.00" size="1.00" scale="0.400"/>
+      <atom element="In" x="-2.2266" y="-2.1596" z="0.4620" style="solid"
+      variancy="1.00" size="1.00" scale="0.400"/>
+      <atom element="In" x="2.1776" y="-1.8932" z="-0.8316" style="solid"
+      variancy="1.00" size="1.00" scale="0.400"/>
+      <atom element="In" x="-0.9048" y="1.7932" z="5.7764" style="solid"
+      variancy="1.00" size="1.00" scale="0.400"/>
+      <atom element="In" x="3.4994" y="2.0596" z="4.4828" style="solid"
+      variancy="1.00" size="1.00" scale="0.400"/>
+      <atom element="In" x="-2.2255" y="2.6850" z="1.4634" style="solid"
+      variancy="1.00" size="1.00" scale="0.400"/>
+      <atom element="In" x="2.1787" y="2.9514" z="0.1698" style="solid"
+      variancy="1.00" size="1.00" scale="0.400"/>
+      <atom element="In" x="0.6364" y="-0.0500" z="2.4724" style="solid"
+      variancy="1.00" size="1.00" scale="0.400"/>
+    </cell>
+  </layer>
+</gml>

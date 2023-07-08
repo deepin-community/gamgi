@@ -1,0 +1,33 @@
+Superconductor (Tc = 98K): HgBa2CuO4+x
+Structure: 1201
+
+Space group: 123
+
+Lattice parameters:
+3.875 9.5132
+
+Wyckoff positions:
+Ba 2g, z = 0.2980
+Hg 1c
+Cu 1d
+O 2e
+O 2h, z = 0.2078
+O 1a
+
+1. with Cell (s04a.xml):
+Cell Change XYZ: 0.5, 0.5, 0.5
+Bond: Color 0.5,0.5,0.5, Scale 0.4
+
+2. with Polytopes (s04b.xml):
+Cells: 2 x 2 x 2
+Neighbours: O
+Number: 6
+
+References:
+H. Shaked, P.M. Keane, J.C. Rodriguez, F.F. Owen, R.L. Hitterman,
+J.D. Jorgensen, Crystal structures of the High-Tc Superconducting
+Copper-Oxides, Physica C, Elsevier Science, Amsterdam, 1994
+
+J.L. Wagner, P.G. Radaelli, D.G. Hinks, J.D. Jorgensen,
+J.F. Mitchell, B. Dabrowski, and G.S. Knapp, M.A. Beno
+Physica C 210, 311 (1993)

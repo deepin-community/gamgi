@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Interfaces: Introduction Starting</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/board.css"/>
+</head>
+
+<body>
+
+<div class="board">
+<div>Introduction Starting</div><div>&nbsp;</div>
+</div>
+
+<div class="contents">
+
+To launch GAMGI, just type <b>gamgi</b> on a shell window and press <b>Return</b>. 
+
+<p/>
+
+GAMGI can also be launched with an unlimited number of command line parameters, 
+each one naming a GAMGI XML file, for example, <b>gamgi file1.xml file2.xml</b>. 
+These files are automatically imported, in the order they were typed 
+(<b>file1.xml</b> first, then <b>file2.xml</b>, etc.), exactly as if the files 
+had been imported in the same sequence, one by one, after launching GAMGI,
+using <b>File Import</b>.
+
+<p/>
+
+This is particularly useful to configure GAMGI automatically, immediately after 
+it starts, by reading configuration information from a file. For example, adding 
+the line <b>alias gamgi='gamgi $HOME/gamgi/defaults.xml'</b> to the file 
+<b>$HOME/.bashrc</b>, prompts GAMGI to read <b>$HOME/gamgi/defaults.xml</b> 
+everytime it starts, providing a simple, flexible way to initialize GAMGI with the 
+user preferences indicated in <b>defaults.xml</b>. Launching GAMGI by typing 
+<b>gamgi data.xml</b> will result in: 1) GAMGI starts; 2) GAMGI imports 
+<b>$HOME/gamgi/defaults.xml</b>; 3) GAMGI imports <b>data.xml</b>.
+
+<p/>
+
+GAMGI supports HTTP 1.0/1.1 and anonymous FTP (PASV) protocols (the most recent), 
+so file.xml can be a local file, as <b>/home/user/local_file.xml</b> or 
+<b>../directory/local_file.xml</b>, or a remote file, such as 
+<b>http://website/remote_file.xml</b> or <b>ftp://ftp_server/pub/remote_file.xml</b>.
+
+<p/>
+
+When an error is found in a file, GAMGI shows a message describing the 
+problem and ignores the file. The downstream files (not red yet), are
+also ignored.
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

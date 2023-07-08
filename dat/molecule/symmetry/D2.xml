@@ -1,0 +1,8 @@
+<gml>
+<molecule name="D2">
+<atom element="H" x="1" y="0.1" z="0.2"/>
+<atom element="H" x="1" y="-0.1" z="-0.2"/>
+<atom element="H" x="-1" y="0.1" z="-0.2"/>
+<atom element="H" x="-1" y="-0.1" z="0.2"/>
+</molecule>
+</gml>

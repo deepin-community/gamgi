@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE gml SYSTEM "http://www.gamgi.org/dtd/gamgi.dtd">
+<gml>
+  <gamgi>
+    <atom style="solid" size="1.00" variancy="1.00"/>
+  </gamgi>
+  <window x="72" y="18" width="700" height="500" medium="no" bottom="no">
+    <layer perspective="no" scale="0.292">
+      <light ambient_r="0.500" ambient_g="0.500" ambient_b="0.500"
+      diffuse_r="0.400" diffuse_g="0.400" diffuse_b="0.400" specular_r="0.300"
+      specular_g="0.300" specular_b="0.300" direction_x="0.0000"
+      direction_y="0.0000" direction_z="-1.0000"/>
+      <cell group="218" a="8.9100" x="-26.2860" y="5.6802" z="2.1319"
+      e1="31.41" e2="343.88" e3="18.88" axes="yes" scale="0.900">
+        <atom element="Cl" x="-26.2860" y="5.6802" z="2.1319" size="0.80"
+        scale="0.900"/>
+        <atom element="Cl" x="-18.5731" y="6.4519" z="-2.2617" size="0.80"
+        scale="0.900"/>
+        <atom element="Cl" x="-20.2105" y="9.8128" z="4.4884" size="0.80"
+        scale="0.900"/>
+        <atom element="Cl" x="-26.3089" y="14.4627" z="3.6342" size="0.80"
+        scale="0.900"/>
+        <atom element="Cl" x="-18.5960" y="15.2344" z="-0.7594" size="0.80"
+        scale="0.900"/>
+        <atom element="Cl" x="-21.8252" y="4.3910" z="9.7363" size="0.80"
+        scale="0.900"/>
+        <atom element="Cl" x="-14.1123" y="5.1628" z="5.3427" size="0.80"
+        scale="0.900"/>
+        <atom element="Cl" x="-21.8481" y="13.1735" z="11.2386" size="0.80"
+        scale="0.900"/>
+        <atom element="Cl" x="-14.1352" y="13.9452" z="6.8450" size="0.80"
+        scale="0.900"/>
+        <atom element="Cl" x="-26.2857" y="5.6802" z="2.1319" radius="1.8100"
+        size="0.80" scale="0.900"/>
+        <atom element="Cl" x="-18.5731" y="6.4519" z="-2.2617" radius="1.8100"
+        size="0.80" scale="0.900"/>
+        <atom element="Cl" x="-20.2103" y="9.8128" z="4.4884" radius="1.8100"
+        size="0.80" scale="0.900"/>
+        <atom element="Cl" x="-26.3082" y="14.4627" z="3.6342" radius="1.8100"
+        size="0.80" scale="0.900"/>
+        <atom element="Cl" x="-18.5956" y="15.2344" z="-0.7594"
+        radius="1.8100" size="0.80" scale="0.900"/>
+        <atom element="Cl" x="-21.8251" y="4.3910" z="9.7363" radius="1.8100"
+        size="0.80" scale="0.900"/>
+        <atom element="Cl" x="-14.1115" y="5.1628" z="5.3427" radius="1.8100"
+        size="0.80" scale="0.900"/>
+        <atom element="Cl" x="-21.8476" y="13.1735" z="11.2386"
+        radius="1.8100" size="0.80" scale="0.900"/>
+        <atom element="Cl" x="-14.1350" y="13.9452" z="6.8450" radius="1.8100"
+        size="0.80" scale="0.900"/>
+      </cell>
+      <cell group="218" a="8.9100" x="-13.1412" y="2.0388" z="2.1356"
+      e1="31.49" e2="344.09" e3="18.47" axes="yes" scale="0.900">
+        <atom element="Cl" x="-13.1412" y="2.0388" z="2.1356" radius="1.8100"
+        size="0.80" scale="0.900"/>
+        <atom element="Cl" x="-5.4371" y="2.7778" z="-2.2788" radius="1.8100"
+        size="0.80" scale="0.900"/>
+        <atom element="Cl" x="-7.0502" y="6.1640" z="4.4645" radius="1.8100"
+        size="0.80" scale="0.900"/>
+        <atom element="Cl" x="-13.1388" y="10.8260" z="3.6101" radius="1.8100"
+        size="0.80" scale="0.900"/>
+        <atom element="Cl" x="-5.4351" y="11.5649" z="-0.8044" radius="1.8100"
+        size="0.80" scale="0.900"/>
+        <atom element="Cl" x="-8.6654" y="0.7630" z="9.7334" radius="1.8100"
+        size="0.80" scale="0.900"/>
+        <atom element="Cl" x="-0.9612" y="1.5019" z="5.3190" radius="1.8100"
+        size="0.80" scale="0.900"/>
+        <atom element="Cl" x="-8.6633" y="9.5501" z="11.2078" radius="1.8100"
+        size="0.80" scale="0.900"/>
+        <atom element="Cl" x="-0.9592" y="10.2891" z="6.7934" radius="1.8100"
+        size="0.80" scale="0.900"/>
+        <atom element="Al" x="-11.2141" y="6.6172" z="1.7692" radius="0.3900"
+        size="0.80" scale="0.900"/>
+        <atom element="Al" x="-10.9023" y="3.5977" z="6.3031" radius="0.3900"
+        size="0.80" scale="0.900"/>
+        <atom element="Al" x="-8.1702" y="2.0893" z="1.8279" radius="0.3900"
+        size="0.80" scale="0.900"/>
+        <atom element="Al" x="-7.3621" y="6.9867" z="-0.4380" radius="0.3900"
+        size="0.80" scale="0.900"/>
+        <atom element="Al" x="-3.1986" y="4.3366" z="1.8887" radius="0.3900"
+        size="0.80" scale="0.900"/>
+        <atom element="Al" x="-10.9011" y="7.9913" z="7.0403" radius="0.3900"
+        size="0.80" scale="0.900"/>
+        <atom element="Al" x="-8.1682" y="10.8765" z="3.3022" radius="0.3900"
+        size="0.80" scale="0.900"/>
+        <atom element="Al" x="-3.1976" y="8.7303" z="2.6259" radius="0.3900"
+        size="0.80" scale="0.900"/>
+        <atom element="Al" x="-6.7383" y="5.3413" z="9.3671" radius="0.3900"
+        size="0.80" scale="0.900"/>
+        <atom element="Al" x="-5.9322" y="1.4514" z="5.6267" radius="0.3900"
+        size="0.80" scale="0.900"/>
+        <atom element="Al" x="-2.8862" y="5.7108" z="7.1598" radius="0.3900"
+        size="0.80" scale="0.900"/>
+        <atom element="Al" x="-5.9302" y="10.2386" z="7.1012" radius="0.3900"
+        size="0.80" scale="0.900"/>
+      </cell>
+      <cell group="218" a="8.9100" x="0.6110" y="-1.2027" z="2.1107"
+      e1="31.49" e2="344.09" e3="18.47" axes="yes" scale="0.900">
+        <atom element="Cl" x="0.6110" y="-1.2027" z="2.1107" radius="1.8100"
+        size="0.80" scale="0.900"/>
+        <atom element="Cl" x="8.3151" y="-0.4637" z="-2.3037" radius="1.8100"
+        size="0.80" scale="0.900"/>
+        <atom element="Cl" x="6.7020" y="2.9225" z="4.4396" radius="1.8100"
+        size="0.80" scale="0.900"/>
+        <atom element="Cl" x="0.6130" y="7.5845" z="3.5852" radius="1.8100"
+        size="0.80" scale="0.900"/>
+        <atom element="Cl" x="8.3171" y="8.3234" z="-0.8293" radius="1.8100"
+        size="0.80" scale="0.900"/>
+        <atom element="Cl" x="5.0868" y="-2.4785" z="9.7085" radius="1.8100"
+        size="0.80" scale="0.900"/>
+        <atom element="Cl" x="12.7910" y="-1.7396" z="5.2941" radius="1.8100"
+        size="0.80" scale="0.900"/>
+        <atom element="Cl" x="5.0889" y="6.3086" z="11.1829" radius="1.8100"
+        size="0.80" scale="0.900"/>
+        <atom element="Cl" x="12.7930" y="7.0476" z="6.7685" radius="1.8100"
+        size="0.80" scale="0.900"/>
+        <atom element="Al" x="2.5380" y="3.3757" z="1.7443" radius="0.3900"
+        size="0.80" scale="0.900"/>
+        <atom element="Al" x="2.8494" y="0.3562" z="6.2782" radius="0.3900"
+        size="0.80" scale="0.900"/>
+        <atom element="Al" x="5.5820" y="-1.1522" z="1.8030" radius="0.3900"
+        size="0.80" scale="0.900"/>
+        <atom element="Al" x="6.3901" y="3.7452" z="-0.4629" radius="0.3900"
+        size="0.80" scale="0.900"/>
+        <atom element="Al" x="10.5536" y="1.0951" z="1.8638" radius="0.3900"
+        size="0.80" scale="0.900"/>
+        <atom element="Al" x="2.8504" y="4.7498" z="7.0155" radius="0.3900"
+        size="0.80" scale="0.900"/>
+        <atom element="Al" x="5.5840" y="7.6350" z="3.2773" radius="0.3900"
+        size="0.80" scale="0.900"/>
+        <atom element="Al" x="10.5546" y="5.4888" z="2.6010" radius="0.3900"
+        size="0.80" scale="0.900"/>
+        <atom element="Al" x="7.0139" y="2.0998" z="9.3422" radius="0.3900"
+        size="0.80" scale="0.900"/>
+        <atom element="Al" x="7.8200" y="-1.7901" z="5.6018" radius="0.3900"
+        size="0.80" scale="0.900"/>
+        <atom element="Al" x="10.8660" y="2.4693" z="7.1349" radius="0.3900"
+        size="0.80" scale="0.900"/>
+        <atom element="Al" x="7.8220" y="6.9971" z="7.0763" radius="0.3900"
+        size="0.80" scale="0.900"/>
+        <atom element="Si" x="4.7749" y="-1.6559" z="4.8060" radius="0.2600"
+        size="0.80" scale="0.900"/>
+        <atom element="Si" x="4.4635" y="1.3636" z="0.2721" radius="0.2600"
+        size="0.80" scale="0.900"/>
+        <atom element="Si" x="1.7309" y="2.8719" z="4.7474" radius="0.2600"
+        size="0.80" scale="0.900"/>
+        <atom element="Si" x="8.6270" y="-1.2864" z="2.5988" radius="0.2600"
+        size="0.80" scale="0.900"/>
+        <atom element="Si" x="9.4351" y="3.6109" z="0.3329" radius="0.2600"
+        size="0.80" scale="0.900"/>
+        <atom element="Si" x="4.7770" y="7.1313" z="6.2805" radius="0.2600"
+        size="0.80" scale="0.900"/>
+        <atom element="Si" x="4.4646" y="5.7572" z="1.0093" radius="0.2600"
+        size="0.80" scale="0.900"/>
+        <atom element="Si" x="8.6290" y="7.5008" z="4.0732" radius="0.2600"
+        size="0.80" scale="0.900"/>
+        <atom element="Si" x="8.9394" y="0.0878" z="7.8700" radius="0.2600"
+        size="0.80" scale="0.900"/>
+        <atom element="Si" x="3.9689" y="2.2340" z="8.5463" radius="0.2600"
+        size="0.80" scale="0.900"/>
+        <atom element="Si" x="11.6731" y="2.9730" z="4.1318" radius="0.2600"
+        size="0.80" scale="0.900"/>
+        <atom element="Si" x="8.9404" y="4.4813" z="8.6072" radius="0.2600"
+        size="0.80" scale="0.900"/>
+      </cell>
+      <cell group="218" a="8.9100" x="14.5049" y="-4.7151" z="2.0855"
+      e1="31.49" e2="344.09" e3="18.47" axes="yes" scale="0.900">
+        <atom element="Cl" x="14.5049" y="-4.7151" z="2.0855" radius="1.8100"
+        size="0.80" scale="0.900"/>
+        <atom element="Cl" x="22.2091" y="-3.9761" z="-2.3289" radius="1.8100"
+        size="0.80" scale="0.900"/>
+        <atom element="Cl" x="20.5960" y="-0.5900" z="4.4144" radius="1.8100"
+        size="0.80" scale="0.900"/>
+        <atom element="Cl" x="14.5069" y="4.0721" z="3.5600" radius="1.8100"
+        size="0.80" scale="0.900"/>
+        <atom element="Cl" x="22.2111" y="4.8110" z="-0.8545" radius="1.8100"
+        size="0.80" scale="0.900"/>
+        <atom element="Cl" x="18.9808" y="-5.9910" z="9.6833" radius="1.8100"
+        size="0.80" scale="0.900"/>
+        <atom element="Cl" x="26.6849" y="-5.2521" z="5.2689" radius="1.8100"
+        size="0.80" scale="0.900"/>
+        <atom element="Cl" x="18.9828" y="2.7961" z="11.1577" radius="1.8100"
+        size="0.80" scale="0.900"/>
+        <atom element="Cl" x="26.6870" y="3.5351" z="6.7433" radius="1.8100"
+        size="0.80" scale="0.900"/>
+        <atom element="Al" x="16.4319" y="-0.1368" z="1.7191" radius="0.3900"
+        size="0.80" scale="0.900"/>
+        <atom element="Al" x="16.7433" y="-3.1562" z="6.2530" radius="0.3900"
+        size="0.80" scale="0.900"/>
+        <atom element="Al" x="19.4759" y="-4.6646" z="1.7778" radius="0.3900"
+        size="0.80" scale="0.900"/>
+        <atom element="Al" x="20.2841" y="0.2327" z="-0.4881" radius="0.3900"
+        size="0.80" scale="0.900"/>
+        <atom element="Al" x="24.4476" y="-2.4173" z="1.8386" radius="0.3900"
+        size="0.80" scale="0.900"/>
+        <atom element="Al" x="16.7443" y="1.2373" z="6.9902" radius="0.3900"
+        size="0.80" scale="0.900"/>
+        <atom element="Al" x="19.4780" y="4.1225" z="3.2521" radius="0.3900"
+        size="0.80" scale="0.900"/>
+        <atom element="Al" x="24.4486" y="1.9763" z="2.5758" radius="0.3900"
+        size="0.80" scale="0.900"/>
+        <atom element="Al" x="20.9079" y="-1.4127" z="9.3170" radius="0.3900"
+        size="0.80" scale="0.900"/>
+        <atom element="Al" x="21.7139" y="-5.3026" z="5.5766" radius="0.3900"
+        size="0.80" scale="0.900"/>
+        <atom element="Al" x="24.7600" y="-1.0432" z="7.1097" radius="0.3900"
+        size="0.80" scale="0.900"/>
+        <atom element="Al" x="21.7159" y="3.4846" z="7.0511" radius="0.3900"
+        size="0.80" scale="0.900"/>
+        <atom element="Si" x="18.6689" y="-5.1683" z="4.7808" radius="0.2600"
+        size="0.80" scale="0.900"/>
+        <atom element="Si" x="18.3575" y="-2.1489" z="0.2469" radius="0.2600"
+        size="0.80" scale="0.900"/>
+        <atom element="Si" x="15.6249" y="-0.6406" z="4.7222" radius="0.2600"
+        size="0.80" scale="0.900"/>
+        <atom element="Si" x="22.5210" y="-4.7989" z="2.5736" radius="0.2600"
+        size="0.80" scale="0.900"/>
+        <atom element="Si" x="23.3290" y="0.0985" z="0.3077" radius="0.2600"
+        size="0.80" scale="0.900"/>
+        <atom element="Si" x="18.6709" y="3.6189" z="6.2553" radius="0.2600"
+        size="0.80" scale="0.900"/>
+        <atom element="Si" x="18.3585" y="2.2447" z="0.9841" radius="0.2600"
+        size="0.80" scale="0.900"/>
+        <atom element="Si" x="22.5230" y="3.9883" z="4.0480" radius="0.2600"
+        size="0.80" scale="0.900"/>
+        <atom element="Si" x="22.8334" y="-3.4247" z="7.8447" radius="0.2600"
+        size="0.80" scale="0.900"/>
+        <atom element="Si" x="17.8629" y="-1.2785" z="8.5211" radius="0.2600"
+        size="0.80" scale="0.900"/>
+        <atom element="Si" x="25.5670" y="-0.5395" z="4.1066" radius="0.2600"
+        size="0.80" scale="0.900"/>
+        <atom element="Si" x="22.8344" y="0.9688" z="8.5820" radius="0.2600"
+        size="0.80" scale="0.900"/>
+        <atom element="Na" x="16.6368" y="-3.2713" z="2.9007" radius="1.0200"
+        size="0.80" scale="0.900"/>
+        <atom element="Na" x="21.1605" y="-1.7751" z="2.0542" radius="1.0200"
+        size="0.80" scale="0.900"/>
+        <atom element="Na" x="18.4647" y="1.0417" z="4.1154" radius="1.0200"
+        size="0.80" scale="0.900"/>
+        <atom element="Na" x="21.6458" y="2.9206" z="0.9896" radius="1.0200"
+        size="0.80" scale="0.900"/>
+        <atom element="Na" x="20.0307" y="-2.4804" z="6.2586" radius="1.0200"
+        size="0.80" scale="0.900"/>
+        <atom element="Na" x="24.5538" y="-3.6203" z="4.9698" radius="1.0200"
+        size="0.80" scale="0.900"/>
+        <atom element="Na" x="19.5474" y="1.6110" z="8.7976" radius="1.0200"
+        size="0.80" scale="0.900"/>
+        <atom element="Na" x="22.7278" y="0.8538" z="5.2295" radius="1.0200"
+        size="0.80" scale="0.900"/>
+      </cell>
+      <atom element="Cl" x="10.7374" y="12.5403" z="0.0379" radius="1.8100"
+      size="0.80" scale="0.900"/>
+      <atom element="Al" x="14.0470" y="12.5984" z="0.0311" radius="0.3900"
+      size="0.80" scale="0.900"/>
+      <atom element="Si" x="16.6759" y="12.5039" z="0.0243" radius="0.2600"
+      size="0.80" scale="0.900"/>
+      <atom element="Na" x="19.6749" y="12.7495" z="0.0180" radius="1.0200"
+      size="0.80" scale="0.900"/>
+      <atom element="O" x="22.9120" y="12.4381" z="0.0118" size="0.80"
+      scale="0.900"/>
+      <text contents="Cl" x="10.3883" y="14.9427" z="0.0392" e1="0.10"
+      e2="353.20" e3="6.86"/>
+      <text contents="Si" x="16.2415" y="14.8685" z="0.0256" e1="0.10"
+      e2="353.20" e3="6.86"/>
+      <text contents="O" x="22.5806" y="14.7632" z="0.0129" e1="0.10"
+      e2="353.20" e3="6.86"/>
+      <text contents="Al" x="13.4525" y="14.9155" z="0.0322" e1="0.10"
+      e2="353.20" e3="6.86"/>
+      <text contents="Na" x="18.9976" y="14.8844" z="0.0196" e1="0.10"
+      e2="353.20" e3="6.86"/>
+    </layer>
+    <layer perspective="no" scale="0.423">
+      <light ambient_r="0.500" ambient_g="0.500" ambient_b="0.500"
+      diffuse_r="0.400" diffuse_g="0.400" diffuse_b="0.400" specular_r="0.300"
+      specular_g="0.300" specular_b="0.300" direction_x="0.0000"
+      direction_y="0.0000" direction_z="-1.0000"/>
+      <cell group="218" a="8.9100" x="-18.4237" y="-9.7680" z="2.1160"
+      e1="31.39" e2="344.01" e3="18.50" axes="yes" scale="0.898">
+        <atom element="Cl" x="-18.4236" y="-9.7680" z="2.1160" radius="1.8100"
+        size="0.80" scale="0.900"/>
+        <atom element="Cl" x="-10.7106" y="-9.0371" z="-2.2850"
+        radius="1.8100" size="0.80" scale="0.900"/>
+        <atom element="Cl" x="-12.3329" y="-5.6480" z="4.4547" size="0.80"
+        scale="0.900"/>
+        <atom element="Cl" x="-18.4156" y="-0.9805" z="3.5886" radius="1.8100"
+        size="0.80" scale="0.900"/>
+        <atom element="Cl" x="-10.7026" y="-0.2497" z="-0.8125"
+        radius="1.8100" size="0.80" scale="0.900"/>
+        <atom element="Cl" x="-13.9616" y="-11.0464" z="9.7219"
+        radius="1.8100" size="0.80" scale="0.900"/>
+        <atom element="Cl" x="-6.2497" y="-10.3156" z="5.3209" radius="1.8100"
+        size="0.80" scale="0.900"/>
+        <atom element="Cl" x="-13.9546" y="-2.2590" z="11.1945"
+        radius="1.8100" size="0.80" scale="0.900"/>
+        <atom element="Cl" x="-6.2421" y="-1.5281" z="6.7935" radius="1.8100"
+        size="0.80" scale="0.900"/>
+        <atom element="Al" x="-16.4916" y="-5.1916" z="1.7520" radius="0.3900"
+        size="0.80" scale="0.900"/>
+        <atom element="Al" x="-16.1906" y="-8.2103" z="6.2871" radius="0.3900"
+        size="0.80" scale="0.900"/>
+        <atom element="Al" x="-13.4516" y="-9.7222" z="1.8170" radius="0.3900"
+        size="0.80" scale="0.900"/>
+        <atom element="Al" x="-12.6346" y="-4.8261" z="-0.4485"
+        radius="0.3900" size="0.80" scale="0.900"/>
+        <atom element="Al" x="-8.4776" y="-7.4795" z="1.8861" radius="0.3900"
+        size="0.80" scale="0.900"/>
+        <atom element="Al" x="-16.1866" y="-3.8166" z="7.0234" radius="0.3900"
+        size="0.80" scale="0.900"/>
+        <atom element="Al" x="-13.4436" y="-0.9347" z="3.2895" radius="0.3900"
+        size="0.80" scale="0.900"/>
+        <atom element="Al" x="-8.4746" y="-3.0857" z="2.6224" radius="0.3900"
+        size="0.80" scale="0.900"/>
+        <atom element="Al" x="-12.0296" y="-6.4700" z="9.3580" radius="0.3900"
+        size="0.80" scale="0.900"/>
+        <atom element="Al" x="-11.2206" y="-10.3614" z="5.6199"
+        radius="0.3900" size="0.80" scale="0.900"/>
+        <atom element="Al" x="-8.1736" y="-6.1045" z="7.1574" radius="0.3900"
+        size="0.80" scale="0.900"/>
+        <atom element="Al" x="-11.2136" y="-1.5739" z="7.0925" radius="0.3900"
+        size="0.80" scale="0.900"/>
+        <atom element="Si" x="-14.2646" y="-10.2245" z="4.8187"
+        radius="0.2600" size="0.80" scale="0.900"/>
+        <atom element="Si" x="-14.5646" y="-7.2057" z="0.2836" radius="0.2600"
+        size="0.80" scale="0.900"/>
+        <atom element="Si" x="-17.3036" y="-5.6939" z="4.7538" radius="0.2600"
+        size="0.80" scale="0.900"/>
+        <atom element="Si" x="-10.4076" y="-9.8591" z="2.6182" radius="0.2600"
+        size="0.80" scale="0.900"/>
+        <atom element="Si" x="-9.5916" y="-4.9630" z="0.3527" radius="0.2600"
+        size="0.80" scale="0.900"/>
+        <atom element="Si" x="-14.2566" y="-1.4370" z="6.2913" radius="0.2600"
+        size="0.80" scale="0.900"/>
+        <atom element="Si" x="-14.5616" y="-2.8120" z="1.0199" radius="0.2600"
+        size="0.80" scale="0.900"/>
+        <atom element="Si" x="-10.4006" y="-1.0716" z="4.0908" radius="0.2600"
+        size="0.80" scale="0.900"/>
+        <atom element="Si" x="-10.1036" y="-8.4841" z="7.8896" radius="0.2600"
+        size="0.80" scale="0.900"/>
+        <atom element="Si" x="-15.0736" y="-6.3331" z="8.5567" radius="0.2600"
+        size="0.80" scale="0.900"/>
+        <atom element="Si" x="-7.3606" y="-5.6022" z="4.1557" radius="0.2600"
+        size="0.80" scale="0.900"/>
+        <atom element="Si" x="-10.0996" y="-4.0904" z="8.6259" radius="0.2600"
+        size="0.80" scale="0.900"/>
+        <atom element="Na" x="-16.2916" y="-8.3260" z="2.9346" radius="1.0200"
+        size="0.80" scale="0.900"/>
+        <atom element="Na" x="-11.7646" y="-6.8342" z="2.0958" radius="1.0200"
+        size="0.80" scale="0.900"/>
+        <atom element="Na" x="-14.4616" y="-4.0144" z="4.1516" radius="1.0200"
+        size="0.80" scale="0.900"/>
+        <atom element="Na" x="-11.2736" y="-2.1391" z="1.0310" radius="1.0200"
+        size="0.80" scale="0.900"/>
+        <atom element="Na" x="-12.9026" y="-7.5375" z="6.2983" radius="1.0200"
+        size="0.80" scale="0.900"/>
+        <atom element="Na" x="-8.3786" y="-8.6819" z="5.0177" radius="1.0200"
+        size="0.80" scale="0.900"/>
+        <atom element="Na" x="-13.3866" y="-3.4451" z="8.8356" radius="1.0200"
+        size="0.80" scale="0.900"/>
+        <atom element="Na" x="-10.2006" y="-4.2061" z="5.2733" radius="1.0200"
+        size="0.80" scale="0.900"/>
+        <atom element="O" x="-15.3026" y="-9.0346" z="5.0013" radius="1.3500"
+        size="0.80" scale="0.900"/>
+        <atom element="O" x="-14.4266" y="-8.3009" z="1.4272" radius="1.3500"
+        size="0.80" scale="0.900"/>
+        <atom element="O" x="-16.7096" y="-5.9946" z="3.3107" radius="1.3500"
+        size="0.80" scale="0.900"/>
+        <atom element="O" x="-13.2556" y="-6.3050" z="0.2931" radius="1.3500"
+        size="0.80" scale="0.900"/>
+        <atom element="O" x="-11.7816" y="-9.2323" z="2.1198" radius="1.3500"
+        size="0.80" scale="0.900"/>
+        <atom element="O" x="-9.6096" y="-6.3210" z="1.1786" radius="1.3500"
+        size="0.80" scale="0.900"/>
+        <atom element="O" x="-15.3356" y="-3.8661" z="1.9231" radius="1.3500"
+        size="0.80" scale="0.900"/>
+        <atom element="O" x="-14.0888" y="-1.7186" z="4.7360" size="0.80"
+        scale="0.900"/>
+        <atom element="O" x="-16.3946" y="-4.5916" z="5.4491" radius="1.3500"
+        size="0.80" scale="0.900"/>
+        <atom element="O" x="-9.8976" y="-2.1081" z="2.9955" radius="1.3500"
+        size="0.80" scale="0.900"/>
+        <atom element="O" x="-13.4959" y="-2.0620" z="1.9299" size="0.80"
+        scale="0.900"/>
+        <atom element="O" x="-11.0786" y="-4.4066" z="0.2746" radius="1.3500"
+        size="0.80" scale="0.900"/>
+        <atom element="O" x="-11.4116" y="-7.6273" z="8.1746" radius="1.3500"
+        size="0.80" scale="0.900"/>
+        <atom element="O" x="-12.8906" y="-9.7968" z="5.4938" radius="1.3500"
+        size="0.80" scale="0.900"/>
+        <atom element="O" x="-15.0576" y="-7.3477" z="7.3333" radius="1.3500"
+        size="0.80" scale="0.900"/>
+        <atom element="O" x="-9.3686" y="-8.6764" z="2.8332" radius="1.3500"
+        size="0.80" scale="0.900"/>
+        <atom element="O" x="-10.2436" y="-9.1464" z="6.4514" radius="1.3500"
+        size="0.80" scale="0.900"/>
+        <atom element="O" x="-7.9566" y="-6.3560" z="5.4221" radius="1.3500"
+        size="0.80" scale="0.900"/>
+        <atom element="O" x="-14.7616" y="-2.7731" z="6.9889" radius="1.3500"
+        size="0.80" scale="0.900"/>
+        <atom element="O" x="-11.1646" y="-3.0829" z="8.0104" radius="1.3500"
+        size="0.80" scale="0.900"/>
+        <atom element="O" x="-13.5856" y="-5.8350" z="8.8116" radius="1.3500"
+        size="0.80" scale="0.900"/>
+        <atom element="O" x="-9.3276" y="-4.7938" z="7.4281" radius="1.3500"
+        size="0.80" scale="0.900"/>
+        <atom element="O" x="-10.5696" y="-1.8445" z="5.4693" radius="1.3500"
+        size="0.80" scale="0.900"/>
+        <atom element="O" x="-8.2686" y="-4.3319" z="3.8580" radius="1.3500"
+        size="0.80" scale="0.900"/>
+      </cell>
+      <text contents="Sodalite" style="solid" x="1.6174" y="-6.8595"
+      z="0.6199" e1="31.00" e2="344.00" e3="18.50" red="0.000" green="1.000"
+      blue="0.800" scale="3.500"/>
+    </layer>
+  </window>
+</gml>

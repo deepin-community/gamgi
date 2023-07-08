@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE gml SYSTEM "http://www.gamgi.org/dtd/gamgi.dtd">
+<gml>
+  <layer perspective="no" red="0.200" green="0.200" blue="0.200" scale="0.130">
+    <orbital name="3dxy" n="3" l="2" m="-2" axes="radius" x="-45.4420"
+    y="16.6476" z="0.0000" e1="75.00" e2="90.00" e3="150.00" base_r="1.000"
+    base_g="0.250" base_b="0.250" phase_r="0.250" phase_g="0.250"
+    phase_b="1.000">
+      <text contents="3dxy" x="-49.0051" y="2.3919" z="-0.0000" scale="4.500"/>
+    </orbital>
+    <orbital name="3dyz" n="3" l="2" m="-1" axes="radius" x="45.2736"
+    y="18.7988" z="0.0000" e1="75.31" e2="89.91" e3="150.03" base_r="1.000"
+    base_g="0.250" base_b="0.250" phase_r="0.250" phase_g="0.250"
+    phase_b="1.000">
+      <text contents="3dyz" x="40.7421" y="3.5368" z="-0.0000" scale="4.500"/>
+    </orbital>
+    <orbital name="3dz2" n="3" l="2" m="0" axes="radius" x="26.6105"
+    y="-17.6060" z="0.0000" e1="75.29" e2="90.13" e3="149.95" base_r="1.000"
+    base_g="0.250" base_b="0.250" phase_r="0.250" phase_g="0.250"
+    phase_b="1.000">
+      <text contents="3dz2" x="16.6579" y="-32.6579" z="-0.0000" scale="4.500"/>
+    </orbital>
+    <orbital name="3dxz" n="3" l="2" m="1" axes="radius" x="-0.0436"
+    y="18.3897" z="0.0000" e1="75.00" e2="90.00" e3="150.00" base_r="1.000"
+    base_g="0.250" base_b="0.250" phase_r="0.250" phase_g="0.250"
+    phase_b="1.000">
+      <text contents="3dxz" x="-0.8699" y="2.0795" z="-0.0000" scale="4.500"/>
+    </orbital>
+    <orbital name="3dx2_y2" n="3" l="2" m="2" axes="radius" x="-17.5920"
+    y="-18.9610" z="0.0000" e1="75.00" e2="90.00" e3="150.00" base_r="1.000"
+    base_g="0.250" base_b="0.250" phase_r="0.250" phase_g="0.250"
+    phase_b="1.000">
+      <text contents="3dx2-y2" x="-23.4387" y="-33.3421" z="-0.0000"
+      scale="4.500"/>
+    </orbital>
+  </layer>
+</gml>

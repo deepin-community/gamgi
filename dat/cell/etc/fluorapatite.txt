@@ -1,0 +1,28 @@
+Fluorapatite: Ca10(PO4)6F2
+
+Space group:
+176
+
+lattice parameters:
+Ca10(PO4)6F2  Ca10(PO4)6(OH)2
+9.3642 6.8811 9.4166 6.8745
+
+Wyckoff:
+Ca 4f, z = 0.001
+Ca 6h, x = 0.246 y = 0.993
+P  6h, x = 0.400 y = 0.369
+O 6h, x = 0.329 y = 0.484
+O 6h, x = 0.589 y = 0.466
+O 12i, x = 0.348 y = 0.259 z = 0.073
+F 2a
+
+Source:
+1) Posner A.S., A. Perloff, and A.F. Diorio, Acta Cryst. 11, 308 (1958)
+(Wyckoff positions)
+
+2) Anthony J.W., Bideaux R.A., Bladh K.W., and Nichols M.C.,
+Handbook of Mineralogy, http://www.handbookofmineralogy.org/
+(hydroxylapatite lattice parameters)
+
+3) Chinthaka Silva G.W., Longzhou Ma, Hemmers O., Lindle D., Micron 39, 269 (2088)
+(fluorapatite lattice parameters)

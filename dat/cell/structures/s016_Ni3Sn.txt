@@ -1,0 +1,31 @@
+Structure 16
+Prototype: Ni3Sn
+StrukturBericht / Pearson: D0_19 / hP8
+
+lattice parameters:
+Ni3Sn       Fe3Ga
+5.275 4.234 5.20 4.26
+InTi3       Al3Sm
+5.89 4.76   6.380 4.597
+
+
+Radius:
+Ni: 1.2460 (half-distance)
+Sn: 1.4050 (half-distance)
+
+1. Building with space group (s016a.xml):
+194
+
+Wyckoff positions:
+Ni 6h, x = 0.83333 (5/6)
+Sn 2c
+
+Change: 0.66666 (1/3) 0.33333 (2/3) 0.25 (1/4)
+
+2. Building with primitive cell (s16b.xml):
+Cell: primitive
+
+View:
+Ni: style solid, size 1.0, variancy 1.0, scale 0.3
+Sn: style solid, size 1.0, variancy 1.0, scale 0.3
+NiSn: style solid, method length, color 0.5,0.5,0.5 scale 0.5

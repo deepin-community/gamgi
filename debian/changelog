@@ -1,5 +1,376 @@
-template-repository (1.0-1) unstable; urgency=medium
+gamgi (0.17.5-1) unstable; urgency=medium
 
-  * Initial release
+  * Team upload.
+  * New upstream version
+  * Standards-Version: 4.6.1 (routine-update)
+  * lintian-overrides (see lintian bug #1017966)
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Andreas Tille <tille@debian.org>  Fri, 04 Nov 2022 22:04:39 +0100
+
+gamgi (0.17.3-3) unstable; urgency=medium
+
+  * Team upload
+  * Fix build with gcc-10
+    Closes: #957251
+  * Standards-Version: 4.5.1 (routine-update)
+  * debhelper-compat 13 (routine-update)
+  * Secure URI in copyright format (routine-update)
+  * Rules-Requires-Root: no (routine-update)
+  * Use versioned copyright format URI.
+  * Do not Build-Depends libpangox-1.0-dev
+    Closes: #947666
+
+ -- Andreas Tille <tille@debian.org>  Fri, 04 Dec 2020 22:04:44 +0100
+
+gamgi (0.17.3-2) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Daniel Leidert ]
+  * Remove a trailing whitespace.
+  * Fix Vcs-* fields in debian/control after migrating package to Git.
+
+  [ Andreas Tille ]
+  * Standards-Version: 4.3.0
+  * d/rules: Drop redundant --parallel since it is default for DH 11
+  * Depends: sensible-utils
+  * Depends: fonts-dejavu (instead of transitional ttf-dejavu)
+    Closes: #903048
+  * Drop redundant debian/README.source
+
+ -- Andreas Tille <tille@debian.org>  Tue, 05 Feb 2019 12:37:40 +0100
+
+gamgi (0.17.3-1) unstable; urgency=medium
+
+  * New upstream release.
+  * debian/compat: Raised to level 11.
+  * debian/control (Build-Depends): Increased debhelper version.
+    (Standards-Version): Bumped to 4.1.3.
+    (Vcs-Browser): Use secure URI.
+  * debian/copyright: Minor updates.
+  * debian/gamgi.desktop: Added keywords.
+  * debian/rules: Enable full hardening and cross build abilities.
+  * debian/patches/debian_setup.patch: Updated.
+    - Also try to prevent a possible FTCBFS issue.
+  * debian/patches/fix_privacy-breach-generic.patch: New.
+    - Link to the image with the contact address to silence lintian.
+  * debian/patches/series: Updated.
+
+ -- Daniel Leidert <dleidert@debian.org>  Sun, 14 Jan 2018 05:12:22 +0100
+
+gamgi (0.17.1-1) unstable; urgency=medium
+
+  * New upstream release.
+  * debian/copyright: Updated.
+  * debian/rules: Install upstream HTML changelogs.
+  * debian/watch: Fixed to check for the libgtkglext-version.
+  * debian/patches/debian_setup.patch: Refreshed.
+
+ -- Daniel Leidert <dleidert@debian.org>  Mon, 22 Sep 2014 17:10:18 +0200
+
+gamgi (0.17-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Daniel Leidert <dleidert@debian.org>  Sat, 28 Dec 2013 12:29:46 +0100
+
+gamgi (0.16.8-1) unstable; urgency=low
+
+  * New upstream release.
+  * debian/control (Standards-Version): Bumped to 3.9.5.
+
+ -- Daniel Leidert <dleidert@debian.org>  Sat, 21 Dec 2013 22:55:55 +0100
+
+gamgi (0.16.7-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Daniel Leidert <dleidert@debian.org>  Wed, 04 Sep 2013 10:21:15 +0200
+
+gamgi (0.16.6-1) unstable; urgency=low
+
+  * New upstream release.
+  * debian/control (Vcs-Browser, Vcs-Svn): Fixed vcs-field-not-canonical.
+
+ -- Daniel Leidert <dleidert@debian.org>  Mon, 24 Jun 2013 22:32:23 +0200
+
+gamgi (0.16.5-1) unstable; urgency=low
+
+  * New upstream release.
+  * debian/control (Build-Depends): Added libpangox-1.0-dev.
+
+ -- Daniel Leidert <dleidert@debian.org>  Sat, 25 May 2013 13:35:05 +0200
+
+gamgi (0.16.4-1) unstable; urgency=low
+
+  * New upstream release.
+  * debian/control (Standards-Version): Bumped to 3.9.4.
+    (DM-Upload-Allowed): Dropped.
+
+ -- Daniel Leidert <dleidert@debian.org>  Tue, 07 May 2013 00:58:01 +0200
+
+gamgi (0.16.3-1) unstable; urgency=low
+
+  * New upstream release.
+  * debian/control (Uploaders): Added myself.
+
+ -- Michael Banck <mbanck@debian.org>  Sun, 24 Feb 2013 16:40:22 +0100
+
+gamgi (0.15.8-1) unstable; urgency=low
+
+  * New upstream release.
+  * debian/copyright: Fixed missing-license-paragraph-in-dep5-copyright.
+  * debian/rules: Make use of dpkg-buildflags and consider CFLAGS and LDFLAGS.
+
+ -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Fri, 08 Jun 2012 19:08:31 +0200
+
+gamgi (0.15.7-1) unstable; urgency=low
+
+  * New upstream release.
+  * debian/control: Used wrap-and-sort.
+    (Standards-Version): Bumped to 3.9.3.
+
+ -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Wed, 18 Apr 2012 23:46:39 +0200
+
+gamgi (0.15.6-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Mon, 20 Feb 2012 20:41:14 +0100
+
+gamgi (0.15.5-1) unstable; urgency=low
+
+  * New upstream release.
+  * debian/copyright: Updated. Fixed some lintian warnings.
+  * debian/patches/debian_setup.patch: Adjusted.
+
+ -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Wed, 26 Oct 2011 22:46:47 +0200
+
+gamgi (0.15.3-1) unstable; urgency=low
+
+  * New upstream release.
+  * debian/patches/debian_setup.patch: Adjusted.
+
+ -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Tue, 31 May 2011 21:37:20 +0200
+
+gamgi (0.15.2-1) unstable; urgency=low
+
+  * New upstream release.
+  * debian/control (Standards-Version): Bumped to 3.9.2.
+  * debian/patches/debian_setup.patch: Adjusted.
+
+ -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Thu, 28 Apr 2011 00:33:55 +0200
+
+gamgi (0.15.1-2) unstable; urgency=low
+
+  * debian/rules (override_dh_clean): Call dh_clean (closes: #622955).
+  * debian/patches/debian_setup.patch: Added.
+    - src/make_local, src/make_rules: Rely on pkg-config as much as possible
+      (closes: #621946).
+  * debian/patches/series: Adjusted.
+
+ -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Mon, 18 Apr 2011 22:15:33 +0200
+
+gamgi (0.15.1-1) unstable; urgency=low
+
+  * New upstream release.
+  * debian/control: Added suggestion on Perl for scripts in gamgi-data.
+    (Description): Minor addition to gamgi-data.
+  * debian/rules: Added override_dh_perl target to generate correct dependency
+    for gamgi-data.
+
+ -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Sun, 20 Feb 2011 13:11:55 +0100
+
+gamgi (0.15-4) unstable; urgency=low
+
+  * debian/rules (override_dh_auto_configure): Fixed the "cannot stat
+    `override_dh_auto_configure': No such file or directory" error
+    (closes: #613607).
+
+ -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Wed, 16 Feb 2011 21:06:53 +0100
+
+gamgi (0.15-3) unstable; urgency=low
+
+  * debian/compat: Increased compatibility level to 7.
+  * debian/control (Build-Depends): Removed cdbs and dpatch and increased dh
+    version.
+  * debian/copyright: Updated contents and format (DEP-5).
+  * debian/gamgi.docs: Added BUGS.
+  * debian/gamgi.install: Install the icons from the source.
+  * debian/gamgi.xpm: Added icon converted from upstream icons.
+  * debian/icons.tar.gz.uu,
+    debian/repackage-source.sh: Removed (obsolete).
+  * debian/rules: Rewritten for dh 7. Install the application icons from the
+    source package (LP: #715655).
+  * debian/source/format: Added for format 3.0 (quilt).
+  * debian/patches/disable_gtk_deprecated.dpatch: Removed.
+
+ -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Sun, 13 Feb 2011 23:18:53 +0100
+
+gamgi (0.15-2) unstable; urgency=low
+
+  * debian/control (Vcs-Browser, Vcs-Svn): Adjusted for unstable branch.
+    (Description): Improved description.
+
+ -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Mon, 07 Feb 2011 08:26:38 +0100
+
+gamgi (0.15-1) experimental; urgency=low
+
+  * New upstream release.
+
+ -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Sun, 09 Jan 2011 14:06:22 +0100
+
+gamgi (0.14.11-1) experimental; urgency=low
+
+  * New upstream release.
+  * debian/control (Vcs-Browser, Vcs-Svn): Adjusted for experimental location.
+  * debian/rules (configure/gamgi, clean): Restore src/make_local.
+  * debian/patches/00list: Don't apply disable_gtk_deprecated.dpatch, because
+    these lines have been disabled by upstream.
+
+ -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Fri, 26 Nov 2010 17:11:18 +0100
+
+gamgi (0.14.10-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Tue, 28 Sep 2010 22:35:26 +0200
+
+gamgi (0.14.9-1) unstable; urgency=low
+
+  * New upstream release.
+  * debian/control (Standards-Version): Bumped to 3.9.1.
+
+ -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Thu, 02 Sep 2010 01:06:33 +0200
+
+gamgi (0.14.8-1) unstable; urgency=low
+
+  * New upstream release.
+  * debian/control (Standards-Version): Bumped to 3.9.0.
+
+ -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Sat, 24 Jul 2010 00:51:26 +0200
+
+gamgi (0.14.7-1) unstable; urgency=low
+
+  * New upstream release.
+  * debian/control (Uploaders): Removed Morton because of his inactivity for a
+    long time. Thanks for your work.
+  * debian/watch: Improved to not catch experimental releases.
+  * debian/patches/disable_gtk_deprecated.dpatch: Added.
+    - make_rules: Fix FTBFS.
+
+ -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Mon, 05 Apr 2010 19:38:33 +0200
+
+gamgi (0.14.6-1) unstable; urgency=low
+
+  * New upstream release.
+  * debian/control (Standards-Version): Bumped to 3.8.4.
+
+ -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Mon, 15 Feb 2010 01:35:21 +0100
+
+gamgi (0.14.5-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Thu, 21 Jan 2010 22:52:40 +0100
+
+gamgi (0.14.4-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Sun, 03 Jan 2010 02:54:15 +0100
+
+gamgi (0.14.3-1) unstable; urgency=low
+
+  * New upstream release.
+  * debian/control (Build-Depends): Dropped quilt.
+  * debian/copyright: Updated and adjusted.
+  * debian/rules: Dropped patchsys-quilt.mk.
+  * debian/patches: Dropped.
+
+ -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Mon, 30 Nov 2009 21:50:33 +0100
+
+gamgi (0.14.2-1) unstable; urgency=low
+
+  * New upstream release.
+  * debian/patches/FTBFS_deprecated_gtksignalfunc: Dropped (applied upstream).
+  * debian/patches/series: Adjusted.
+
+ -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Sun, 01 Nov 2009 22:51:20 +0100
+
+gamgi (0.14.1-1) unstable; urgency=low
+
+  * New upstream release.
+  * debian/patches/FTBFS_deprecated_gtksignalfunc: Added to fix FTBFS.
+  * debian/patches/series: Adjusted.
+
+ -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Sun, 25 Oct 2009 21:29:49 +0100
+
+gamgi (0.14-1) unstable; urgency=low
+
+  * New upstream release.
+  * debian/control (Standards-Version): Bumped to 3.8.3.
+
+ -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Fri, 25 Sep 2009 02:01:21 +0200
+
+gamgi (0.13.15-1) unstable; urgency=low
+
+  * New upstream release.
+  * debian/rules: Set DEB_QUILT_TOPDIR. Improved upstream build files makes
+    DEB_MAKE_EXTRA_ARGS obsolete. Permissions fix dropped - fixed upstream.
+
+ -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Thu, 20 Aug 2009 00:40:54 +0200
+
+gamgi (0.13.14-1) unstable; urgency=low
+
+  * New upstream release.
+  * debian/control (Uploaders): Added myself.
+    (Build-Depends): Explicitly added libexpat1-dev. Added quilt.
+    (Standards-Version): Bumped to 3.8.2 (added debian/README.Debian).
+    (Vcs-Svn): Fixed vcs-field-uses-not-recommended-uri-format.
+    (Depends): Fixed debhelper-but-no-misc-depends for -data and -doc.
+    Replaced ttf-bitstream-vera with ttf-dejavu.
+    (Description): s/Gamgi/GAMGI.
+  * debian/gamgi-doc.doc-base (Section): Fixed accordingly to policy.
+  * debian/gamgi.sh: Improved accordingly to policy section 9.9 (closes:
+    #522860). Adjusted GAMGI_TEXT for ttf-dejavu.
+  * debian/rules: Re-enabled quilt. Override COMPILE which hardcodes CFLAGS.
+    Drop useless linkages setting LINK and LDFLAGS.
+    (binary-install/gamgi-data): Fix data file permissions.
+  * debian/README.source: Added to comply to policy.
+  * debian/patches/528142_ttf_dejavu.patch: Added.
+    - src/io/gamgi_io.h (GAMGI_IO_*): Use ttf-dejavu instead of
+      ttf-bitstream-vera, which has been removed from Debian (closes:
+      #528142).
+  * debian/patches/series: Adjusted.
+
+ -- Daniel Leidert (dale) <daniel.leidert@wgdd.de>  Fri, 17 Jul 2009 19:28:13 +0200
+
+gamgi (0.13.10-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Morten Kjeldgaard <mok0@ubuntu.com>  Mon, 19 Jan 2009 13:30:24 +0100
+
+gamgi (0.13.9-1) unstable; urgency=low
+
+  * New upstream release. Thanks to quick response by upstream author, it is
+    no longer necessary to repackage tarball, and longer necessary to patch
+    sources.
+
+ -- Morten Kjeldgaard <mok0@ubuntu.com>  Fri, 14 Nov 2008 12:00:13 +0100
+
+gamgi (0.13.8+dfsg-0ubuntu1) intrepid; urgency=low
+
+  * First packaged (LP: #201401). Repackage source tarball to get rid of
+    a non-free data file in the pristine .orig.tar.gz. See new file
+    debian/README.Debian-source for further details.
+  * The gamgi binary needs a few environmental variables to point to data
+    files etc. Therefore, in this package, the gamgi binary is gamgi.real,
+    and a wrapper script is supplied, setting up the environmental variables
+    before calling the binary.
+  * Created icons and desktop file
+  * In debian/rules: fix hyphen error in manpage.
+  * Add patch 01_gamgi_io_socket.c.patch to fix Intrepid compile error.
+
+ -- Morten Kjeldgaard <mok0@ubuntu.com>  Sun, 24 Aug 2008 16:25:09 +0200

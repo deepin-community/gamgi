@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Interfaces: Plane Modify</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Plane Modify</h1>
+
+<div id="notebook">
+<ul>
+<li><a href="modify_type.html">Type</a></li>
+<li><a href="modify_scope.html">Scope</a></li>
+<li><a href="modify_projection.html">Projection</a></li>
+<li><span>Position</span></li>
+<li><a href="modify_view.html">View</a></li>
+</ul>
+</div>
+
+<div class="contents">
+
+Change here the position and orientation for a single plane or a list of planes.
+
+<p/>
+
+To modify a plane, click over its graphic image, or write its identification
+(name and number) on the <b>Plane</b> entry. To modify a list of planes, press
+the button <b>List</b> (after creating the list of planes with <b>Plane->Select</b>).
+Parameters for empty entries or <b>Local</b> choices remain unchanged.
+
+<p/>
+
+To change a plane name write the new name in the <b>Plane</b> entry,
+followed by the plane number (GAMGI needs the number to identify the plane).
+To change the name for a list of planes, press <b>List</b> first
+and then write the new common name in the <b>Name</b> entry.
+
+<h3>Translation</h3>
+
+The position of a plane object can be changed using the <b>X</b>, <b>Y</b>,
+<b>Z</b> entries. The change can be <b>Absolute</b> or <b>Relative</b>
+(to the current position).
+
+<p/>
+
+To go back to the initial position, set <b>X</b>, <b>Y</b>, <b>Z</b>,
+to <b>0</b>, <b>0</b>, <b>0</b>, in <b>Absolute</b> mode.
+
+<h3>Rotation</h3>
+
+The orientation of a plane object, defined by the Euler angles theta,
+phi, psi, can be changed using the <b>E1</b>, <b>E2</b>, <b>E3</b> entries.
+The change can be <b>Absolute</b> or <b>Relative</b> (to the current
+orientation). Euler angles are not addictive, so the plane is
+rotated back with the old angles and forward with the new ones.
+
+<p/>
+
+To go back to the initial orientation, set <b>E1</b>, <b>E2</b>,
+<b>E3</b>, to <b>0</b>, <b>0</b>, <b>0</b>, in <b>Absolute</b> mode.
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

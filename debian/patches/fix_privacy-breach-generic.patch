@@ -1,0 +1,23 @@
+Author: Daniel Leidert <dleidert@debian.org>
+Description: Fix privacy-breach-generic warning
+ Link to the image with the authors E-Mail address instead of showing it
+ to fix the privacy-breach-generic lintian warning.
+Forwarded: no
+
+--- a/doc/contacts/em.html
++++ b/doc/contacts/em.html
+@@ -20,10 +20,11 @@
+ 
+ If you have any questions regarding GAMGI, we will be 
+ delighted to hear from you! Just contact us using the 
+-email address below, prefereably with <b>GAMGI</b> in the subject:
++email address shown by the link below, prefereably with
++<b>GAMGI</b> in the subject:
+ 
+-<img src="http://www.gamgi.org/images/em.png"
+-alt="Contact Email" title="Contact Email"/>
++<a href="http://www.gamgi.org/images/em.png" title="Contact Email">
++Contact Email</a>
+ 
+ <p class="clear"/>
+ 

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Formats: Direction Create</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Direction Create</h1>
+
+<div id="notebook">
+<ul>
+<li><a href="create_type.html">Type</a></li>
+<li><a href="create_projection.html">Projection</a></li>
+<li><span>Scope</span></li>
+<li><a href="create_position.html">Position</a></li>
+<li><a href="create_view.html">View</a></li>
+</ul>
+</div>
+
+<div class="contents">
+
+<h3>o1, o2, o3</h3>
+
+A direction can be defined indicating explicitly the coordinates of a node
+where the direction passes. For each direction family, there is a direction
+passing through the origin node and as nodes are equivalent, it follows
+that for any node, there is a direction of any family passing through there.
+
+<p/>
+
+When the lattice is primitive or vectors are primitive, coordinates
+<b>o1</b>, <b>o2</b>, <b>o3</b> are enough to identify any cell node.
+By default, a crystallographic direction passes through the origin,
+with node coordinates equal to <b>0</b>, <b>0</b>, <b>0</b>, respectively.
+
+<pre>
+Example: <b>&lt;direction ... o1="0" o2="0" o3="0"/></b> (default)
+Allowed values: integer (optional, coupled)
+</pre>
+
+<h3>o4</h3>
+
+When the lattice is centered and vectors are conventional, the coordinates 
+<b>o1</b>, <b>o2</b>, <b>o3</b> indicate the node in the lower-left
+corner of the cell where the direction passes. A fourth coordinate <b>o4</b>
+is needed to point the centered node where the direction passes. By default, 
+<b>o4</b> is <b>000</b>, so no change is introduced.
+When the cell lattice is primitive <b>P</b> or the vectors defining the
+node are primitive, that is the only possible value for <b>o4</b>.
+For I, C, F, R centered lattices, <b>o4</b> can also take the values:
+
+<pre>
+<b>I</b>: <b>111</b>
+<b>C</b>: <b>110</b>
+<b>F</b>: <b>110</b>, <b>101</b>, <b>011</b>
+<b>R</b>: <b>211</b>, <b>122</b>
+</pre>
+
+corresponding to the numerators of the inner node coordinates,
+(1/2 1/2 1/2) for <b>I</b> lattices, (1/2 1/2 0) for <b>C</b>
+lattices, (0 1/2 1/2) (1/2 0 1/2) (1/2 1/2 0) for <b>F</b>
+lattices and (1/3 2/3 2/3) (2/3 1/3 1/3) for <b>R</b> lattices.
+
+<pre>
+Example: <b>&lt;direction ... o4="000"/></b> (default)
+Allowed values: <b>000</b>, <b>111</b>, <b>110</b> <b>101</b>, <b>011</b>, <b>211</b>, <b>122</b> (optional)
+</pre>
+
+<h3>data</h3>
+
+The geometric data defining a line direction must be entered in order to make
+the direction completely independent from its reference objects. This is
+accomplished with attributes <b>begin_x</b>, <b>begin_y</b>, <b>begin_z</b>,
+and <b>end_x</b>, <b>end_y</b>, <b>end_z</b>, defining the coordinates
+of the two end points.
+
+<pre>
+Example: <b>&lt;direction ... begin_x="0.0" begin_y="0.0" begin_z="0.0"
+end_x="1.0" end_y="1.0" end_z="1.0"/></b>
+Allowed values: real (optional, coupled)
+</pre>
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Interfaces: Group Remove</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Group Remove</h1>
+
+<div id="notebook">
+<ul>
+<li><span>Object</span></li>
+</ul>
+</div>
+
+<div class="contents">
+
+Indicate how to remove a group (or list of groups, previously         
+selected with Group->Select, when <b>Global</b> is pressed).
+
+<h3>Scope</h3>
+
+When the <b>Scope</b> is <b>All</b>, the group and all 
+its contents is removed. This is the default.
+
+<p/>
+
+When the <b>Scope</b> is <b>Container</b>, the group is removed but
+its contents (child groups, planes, directions, atoms, bonds, orbitals, 
+texts) is saved, linked to the group parent. 
+
+<p/>
+
+When the <b>Scope</b> is <b>Contents</b>, the group is preserved but 
+all its contents (groups, planes, directions, atoms, bonds, orbitals, 
+texts) is removed. 
+
+<p/>
+
+When the <b>Scope</b> is <b>group</b>, <b>plane</b>, <b>direction</b>, 
+<b>atom</b>, <b>bond</b>, <b>orbital</b> or <b>text</b>, these objects 
+are removed from the group.
+
+<p/>
+
+When the removed group was part of the current object,
+the current layer becomes the new current object.
+
+<p/>
+
+Clicking the mouse over a group in the current layer, its identification
+is transported to the dialog and <b>Ok</b> is automatically pressed.
+To recover the previous state press <b>Undo</b>.
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

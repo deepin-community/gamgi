@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Interfaces: Layer Config</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Layer Config</h1>
+
+<div id="notebook">
+<ul>
+<li><a href="config_projection.html">Projection</a></li>
+<li><span>Position</span></li>
+<li><a href="config_history.html">History</a></li>
+</ul>
+</div>
+
+<div class="contents">
+
+Define here the region of space to where the user 
+is looking by default when creating a new layer.
+
+<p/>
+
+Initially, the user is at (0, 0, +z), looking down to 
+(0, 0, 0), and the up direction is (0, 1, 0), so the x axis 
+points to the right, the y axis points to the top, and the z 
+axis points to the user.
+
+<h3>Eye</h3>
+
+Set the user position, that is applied by default, when creating 
+a new layer. Any position in 3D space is valid.
+
+<h3>Center</h3>
+
+Set the position to where the user is looking, that is applied by 
+default, when creating a new layer. The distance from <b>Eye</b>
+to <b>Center</b> must be within the limits of visibility (from
+<b>Near</b> to <b>Far</b>).
+
+<h3>Up</h3>
+
+Set the direction pointing up, to the top of the screen,
+that is applied by default, when creating a new layer. This
+direction is converted internally to a unit vector normal to 
+the direction <b>Eye</b> -> <b>Center</b>, so any non-zero
+vector that is not parallel to that direction is valid.
+
+<p/>
+
+The user position and orientation can be defined by a (X,Y,Z)
+layer referential, pointing from the middle of the screen to: the
+right (X), the top (Y), the user (Z). <b>Eye</b> is the origin,
+<b>Eye</b> &lt;- <b>Center</b> defines the Z axis, and <b>Up</b>
+the Y axis, permiting to get the X axis by the cross product
+of the other two axes. Initially, the axes are orientated along
+(1,0,0) for X, (0,1,0) for Y and (0,0,1) for Z, but this is no
+longer the case when the layer referential is rotated.
+
+<p/>
+
+Each layer has its own position parameters, so in a window with
+multiple visible layers, the image rendered in the graphic area 
+is the superposition of the various, totally independent, layer 
+views.
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

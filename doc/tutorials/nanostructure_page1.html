@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Tutorials: Multilayer nanostructure</title>
+<link rel="icon" type="image/png" href="../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Multilayer nanostructure</h1>
+
+<div id="notebook">
+<ul>
+<li><span>Page 1</span></li>
+</ul>
+</div>
+
+<div class="contents">
+            
+The <a href="../interfaces/cell/link_occupancy.html">occupancy rules</a>
+implemented in GAMGI, determining which nodes in crystallographic cells 
+should be occupied, is a powerful tool to build an unlimited range 
+of non crystalline structures, to simulate liquid mixtures, for example. 
+Coupled with changes in the cell origin node, they can be used to build 
+arbitrary multi-layer 3D nanostructures.
+
+<p/>
+
+This tutorial shows how to create a G letter, with a contour three-atom thick, 
+over a substrate formed also by three atomic layers of a different element.
+
+<p/>
+
+First we create a cell with the proper dimensions, a Si atom to describe
+the substrate and a Cu atom to describe the adatoms, then link sucessively
+the substrate atom and the adatom with the cell to create the proper structure.
+
+<p/>
+
+The final structure, with an orthographic layer and a directional light,
+can be seen in the figure at
+<a href="http://www.gamgi.org/images/screenshot12_4b.png">
+http://www.gamgi.org/images/screenshot12_4b.png</a>.
+
+<h3>Nanostructure</h3>
+
+<ol>
+<li>
+Press <b>Cell->Create</b> and set <b>System</b> to <b>c</b>, <b>Lattice</b>
+to <b>P</b> and the lattice parameter <b>a</b> to <b>1</b>.
+
+In the <b>Type</b> page, set the number of cells along
+a, b, c directions to <b>38</b>, <b>26</b> and <b>5</b>, respectively.
+This provides the grid of nodes that is needed to link the atoms.
+
+In the <b>View</b> page, set <b>Borders</b> to <b>Edges</b> 
+and disable <b>Nodes</b>, to reduce visual cluttering to a minimum.
+Press <b>Ok</b> to create the cell.</li>
+
+<li>
+Press <b>Atom->Create</b> and set <b>Style</b> to <b>Solid</b>,
+<b>Size</b> to <b>1.0</b> and <b>Variancy</b> to <b>1.0</b>,
+to guarantee that the atom spheres are built with the atom radius.
+
+Write <b>Si</b> in the <b>Element</b> entry, set <b>Radius</b>
+to <b>0.5</b> and press the mouse over the screen (outside the 
+cell), to create a Si template atom. Repeat the task to create 
+a Cu template atom with the same radius.</li>
+
+<li>Select <b>Light->Create</b> and press <b>Ok</b>, to give a 
+tridimensional aspect to the atoms. If computer rendering becomes 
+too slow, select <b>Atom->Config</b>, change <b>Slices</b> to <b>4</b>
+and in the end change back to <b>16</b>.</li>
+
+<li>Press <b>Cell->Modify</b> and then press over the cell,
+to get its data.
+
+Go to the <b>Origin</b> page, set the <b>Node</b> coordinates 
+to <b>0</b>, <b>0</b>, <b>1</b> and press <b>Ok</b>, to change
+the cell origin.
+
+Press <b>Cell->Link</b>, then press over the cell, then press
+over the Si atom, and select the method <b>Crystal</b>.
+Go to the <b>Occupancy</b> page, set the rules over the <b>a</b>, 
+<b>b</b>, <b>c</b> directions to <b>*</b>, <b>*</b>, <b>*1</b>, 
+respectively, and press <b>Ok</b>. The Si three-layer substrate
+is in place.</li>
+
+<li>Repeat the <b>Cell->Modify</b> task, to change the cell 
+origin to the coordinates <b>7</b>, <b>19</b>, <b>4</b>, and 
+press <b>Ok</b>.
+
+Repeat the <b>Cell->Link</b> task, to link the cell with
+the Cu atom, using as pattern rule <b>*1</b>, <b>*13</b>, 
+<b>*1</b>, and press <b>Ok</b>. The left segment of the G letter 
+is in place.</li>
+
+<li>Repeat the <b>Cell->Modify</b> task, to change the cell       
+origin to the coordinates <b>19</b>, <b>11</b>, <b>4</b>, and  
+press <b>Ok</b>.
+
+Repeat the <b>Cell->Link</b> task, to link the cell with
+the Cu atom, using as pattern rule <b>*1</b>, <b>*5</b>,
+<b>*1</b>, and press <b>Ok</b>. The bottom right segment of the 
+G letter is in place.</li>
+
+<li>Repeat the <b>Cell->Modify</b> task, to change the cell
+origin to the coordinates <b>19</b>, <b>27</b>, <b>4</b>, and
+press <b>Ok</b>.
+
+Repeat the <b>Cell->Link</b> task, to link the cell with
+the Cu atom, using as pattern rule <b>*1</b>, <b>*5</b>,
+<b>*1</b>, and press <b>Ok</b>. The top right segment of the 
+G letter is in place.</li>
+
+<li>Repeat the <b>Cell->Modify</b> task, to change the cell
+origin to the coordinates <b>13</b>, <b>7</b>, <b>4</b>, and
+press <b>Ok</b>.
+
+Repeat the <b>Cell->Link</b> task, to link the cell with
+the Cu atom, using as pattern rule <b>*4</b>, <b>*1</b>,
+<b>*1</b>, and press <b>Ok</b>. The bottom segment of the   
+G letter is in place.</li>
+
+<li>Repeat the <b>Cell->Modify</b> task, to change the cell
+origin to the coordinates <b>13</b>, <b>31</b>, <b>4</b>, and
+press <b>Ok</b>.
+
+Repeat the <b>Cell->Link</b> task, to link the cell with
+the Cu atom, using as pattern rule <b>*4</b>, <b>*1</b>,
+<b>*1</b>, and press <b>Ok</b>. The top segment of the   
+G letter is in place.</li>
+
+<li>Repeat the <b>Cell->Modify</b> task, to change the cell
+origin to the coordinates <b>16</b>, <b>15</b>, <b>4</b>, and
+press <b>Ok</b>.
+
+Repeat the <b>Cell->Link</b> task, to link the cell with the Cu atom, 
+using as pattern rule <b>*1</b>, <b>*1</b>, <b>*1</b>, and press 
+<b>Ok</b>. The inner segment of the  G letter is in place. The whole 
+structure, containing 3159 Si atoms and 630 Cu atoms, is terminated.
+</li>
+</ol>
+
+</div>
+
+<div id="bottom">
+<a href="../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

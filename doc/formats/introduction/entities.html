@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Formats: Introduction Entities</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/board.css"/>
+</head>
+
+<body>
+
+<div class="board">
+<div>Introduction Entities</div><div>&nbsp;</div>
+</div>
+
+<div class="contents">
+
+XML Entities are a mechanism to reuse data defined elsewhere, 
+in the same or in different files. Internal entities define blocks 
+of data which can then be included in the same file. External entities 
+declare local or remote files, which can then be included in the same
+or in other files. For example:
+
+<pre><b>
+&lt;?xml version="1.0"?>
+&lt;!DOCTYPE gml
+[
+&lt;!ENTITY internal "&lt;atom element='H' x='0.0' y='0.0' z='0.0'/>">
+&lt;!ENTITY local SYSTEM "/opt/gamgi/gamgi/dat/atom/hydrogen.xml">
+&lt;!ENTITY remote SYSTEM "http://www.gamgi.org/dat/atom/hydrogen.xml">
+]>
+&lt;gml>
+  &amp;internal; 
+  &amp;local;
+  &amp;remote; </b> three atoms coming from different sources<b>
+&lt;/gml>
+</b></pre>
+
+Internal and external entities must start and end at the same level 
+of hierarchy, otherwise an error is flagged, even if the whole contents 
+is correct. The same is true for the <b>"</b> and <b>'</b> symbols, 
+used to distinguish the two levels of strings in the entity declarations, 
+which must be nested correctly.
+
+<p/>
+
+Internal and external identities can be called recursively, 
+without limit for the number of nested levels, so data block A 
+can call data block B which in turn can call data block C, and 
+file A can include file B which in turn can include file C.
+  
+<p/>
+
+Internal entities must be defined before they are used, so block C 
+must be defined before block B and block B must be defined before 
+block A. External entities must be declared in the main file, so 
+files B and C must be declared in file A. File A must have a header, 
+with a version attribute, while file B and file C may have a header 
+but cannot have a version attribute.
+
+<h3>Good:</h3>
+
+<pre><b>
+&lt;?xml version="1.0"?>
+&lt;!DOCTYPE gml 
+[
+&lt;!ENTITY atom "&lt;atom element='H' x='0.0' y='0.0' z='0.0'/>">
+&lt;!ENTITY layer "&lt;layer> &amp;atom; &lt;/layer>">
+&lt;!ENTITY window "&lt;window> &amp;layer; &lt;/window>">
+]>
+&lt;gml>
+  &amp;window; </b>a window containing a layer containing an atom<b>
+&lt;/gml></b>
+
+main file:<b>
+&lt;?xml version="1.0"?>
+&lt;!DOCTYPE gml 
+[
+&lt;!ENTITY layer "/opt/gamgi/gamgi/dat/layer/layer.xml">
+&lt;!ENTITY atom "/opt/gamgi/gamgi/dat/atom/hydrogen.xml">
+]>
+&lt;gml>
+  &amp;layer; </b>a layer containing an atom<b>
+&lt;/gml></b>
+
+/opt/gamgi/gamgi/dat/layer/layer.xml file:<b>
+&lt;?xml encoding="UTF-8"?>
+&lt;layer>
+  &amp;atom;
+&lt;/layer></b>
+
+/opt/gamgi/gamgi/dat/atom/hydrogen.xml file:<b>
+&lt;?xml encoding="UTF-8"?>
+&lt;atom element='H' x='0.0' y='0.0' z='0.0'/></b>
+</pre>
+  
+<h3>Bad:</h3>
+
+<pre><b>
+&lt;?xml version="1.0"?>
+&lt;!DOCTYPE gml
+[
+&lt;!ENTITY layer "&lt;layer name="base'/>'></b> the symbols <b>"</b> and <b>'</b> are not correctly nested<b>
+]>
+&lt;gml>
+  &amp;layer;
+&lt;/gml>
+
+&lt;?xml version="1.0"?>
+&lt;!DOCTYPE gml 
+[
+&lt;!ENTITY atom "element='H' x='0.0' y='0.0' z='0.0'/>">
+]>
+&lt;gml>
+  &lt;atom
+    &amp;atom; </b>when this entity starts and ends the hierarchy is different<b>
+&lt;/gml>
+
+&lt;?xml version="1.0"?>
+&lt;!DOCTYPE gml
+[
+&lt;!ENTITY window "&lt;window> &amp;layer; &lt;/window>"> </b>layer is not defined yet<b>
+&lt;!ENTITY layer "&lt;layer> &lt;/layer>">
+]>
+&lt;gml>
+  &amp;window;
+&lt;/gml>
+</b></pre>
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

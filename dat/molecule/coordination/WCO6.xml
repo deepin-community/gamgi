@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE gml SYSTEM "http://www.gamgi.org/dtd/gamgi.dtd">
+<gml>
+  <molecule name="W(CO)6">
+    <atom id="1" element="W" x="-0.3460" y="-0.0952" z="0.5920" style="solid"/>
+    <atom id="2" element="C" x="-1.8412" y="0.7731" z="-0.4760"/>
+    <atom id="3" element="C" x="-0.4066" y="-1.6763" z="-0.6610"/>
+    <atom id="4" element="C" x="1.0177" y="0.8067" z="-0.6151"/>
+    <atom id="5" element="C" x="1.1503" y="-0.9495" z="1.6566"/>
+    <atom id="6" element="O" x="-2.6648" y="1.2693" z="-1.0695"/>
+    <atom id="7" element="O" x="-0.4414" y="-2.5959" z="-1.3632"/>
+    <atom id="8" element="O" x="1.7923" y="1.2907" z="-1.2957"/>
+    <atom id="9" element="O" x="1.9893" y="-1.4567" z="2.2616"/>
+    <atom id="10" element="C" x="-1.7326" y="-0.9788" z="1.7625"/>
+    <atom id="11" element="C" x="-0.3232" y="1.5121" z="1.8356"/>
+    <atom id="12" element="O" x="-2.5178" y="-1.5038" z="2.4318"/>
+    <atom id="13" element="O" x="-0.3126" y="2.3979" z="2.5515"/>
+    <bond parent1="1" parent2="2"/>
+    <bond parent1="1" parent2="3"/>
+    <bond parent1="1" parent2="4"/>
+    <bond parent1="1" parent2="5"/>
+    <bond parent1="1" parent2="10"/>
+    <bond parent1="1" parent2="11"/>
+    <bond parent1="2" parent2="6"/>
+    <bond parent1="3" parent2="7"/>
+    <bond parent1="4" parent2="8"/>
+    <bond parent1="5" parent2="9"/>
+    <bond parent1="10" parent2="12"/>
+    <bond parent1="11" parent2="13"/>
+  </molecule>
+</gml>

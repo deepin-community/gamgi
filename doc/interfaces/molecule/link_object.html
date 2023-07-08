@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Interfaces: Molecule Link</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Molecule Link</h1>
+
+<div id="notebook">
+<ul>
+<li><span>Object</span></li>
+<li><a href="link_shift.html">Shift</a></li>
+</ul>
+</div>
+
+<div class="contents">
+
+Link a molecule or a list of molecules to other objects.
+
+<h3>Hierarchy</h3>
+
+Molecules can be linked to objects above or below, in the Gamgi hierarchy. 
+Pressing the button <b>Below</b> (the default), the class menu shows
+the classes of objects that can be owned by molecules. Pressing the button
+<b>Above</b>, the same menu shows the classes of objects that can own
+molecules.
+
+<p/>
+
+Gamgi expects users to identify first the molecule or list of molecules
+and then the object to link. When the <b>Molecule</b> entry is active 
+and empty, clicking the mouse over a molecule, on the current layer
+(local selection), its identification is transported to the <b>Molecule</b> 
+entry. Pressing the <b>List</b> button, the current list of molecules
+is selected instead.
+
+<p/>
+
+Gamgi is now expecting users to click on a object of the class 
+currently selected in the class menu. This object can be in 
+a different layer or window (global selection). 
+
+<p/>
+
+To select a visible object, just press the mouse over the object,
+in its window. To select objects without visual representation, such
+as layers and lights, press the mouse over the graphic area in the window,
+to create a menu with all the objects of that class in the window,
+which can then be selected.
+
+<h3>Method</h3>
+
+Gamgi suppports only one method to link molecules: <b>Object</b>.
+
+<p/>
+
+The <b>Object</b> method links a molecule or a list of molecules to a single
+object, <b>Above</b> or <b>Below</b>.
+
+<p/>
+
+When the <b>Hierarchy</b> is <b>Above</b>, the molecule is unlinked from 
+its current parent and linked to the new object. When the molecule is
+moved to a different layer, its bonds are automatically removed.
+When the <b>Hierarchy</b> is <b>Below</b>, the child object is
+unlinked from its current parent and linked to the molecule. An error
+is issued when the parent already owned the child object.
+
+<p/>
+
+After the linking operation, Gamgi always puts on top
+the window and layer containing the linked objects.
+
+<p/>
+
+When linking a list of molecules <b>Above</b>, all molecules in the list
+are unlinked and linked to the parent object. When linking a list
+of molecules <b>Below</b>, the child object is replicated as many times
+as necessary to link each molecule in the list to a different replica.
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE gml SYSTEM "http://www.gamgi.org/dtd/gamgi.dtd">
+<gml>
+  <layer perspective="no" scale="0.667">
+    <light ambient_r="0.500" ambient_g="0.500" ambient_b="0.500"
+    diffuse_r="0.400" diffuse_g="0.400" diffuse_b="0.400" specular_r="0.300"
+    specular_g="0.300" specular_b="0.300" direction_x="0.0000"
+    direction_y="0.0000" direction_z="-1.0000"/>
+    <cell group="166" a="3.7600" c="10.5470" x="-0.1314" y="3.8144" z="9.4618"
+    e1="107.48" e2="270.12" e3="304.41" n1="2" n2="2" n3="1">
+      <atom element="As" x="-0.1314" y="3.8144" z="9.4618" style="solid"
+      variancy="1.00" size="1.00" scale="0.362"/>
+      <atom element="As" x="-3.2346" y="4.4463" z="7.4350" style="solid"
+      variancy="1.00" size="1.00" scale="0.362"/>
+      <atom element="As" x="-6.3378" y="5.0782" z="5.4081" style="solid"
+      variancy="1.00" size="1.00" scale="0.362"/>
+      <atom element="As" x="3.2589" y="4.3094" z="7.9131" style="solid"
+      variancy="1.00" size="1.00" scale="0.362"/>
+      <atom element="As" x="0.1557" y="4.9413" z="5.8861" style="solid"
+      variancy="1.00" size="1.00" scale="0.362"/>
+      <atom element="As" x="-2.9475" y="5.5731" z="3.8593" style="solid"
+      variancy="1.00" size="1.00" scale="0.362"/>
+      <atom element="As" x="6.6492" y="4.8043" z="6.3643" style="solid"
+      variancy="1.00" size="1.00" scale="0.362"/>
+      <atom element="As" x="3.5460" y="5.4362" z="4.3374" style="solid"
+      variancy="1.00" size="1.00" scale="0.362"/>
+      <atom element="As" x="0.4428" y="6.0681" z="2.3105" style="solid"
+      variancy="1.00" size="1.00" scale="0.362"/>
+      <atom id="1" element="As" x="-0.1102" y="-6.2453" z="6.2932"
+      style="solid" variancy="1.00" size="1.00" scale="0.362"/>
+      <atom id="2" element="As" x="-0.1199" y="-1.6762" z="7.7324"
+      style="solid" variancy="1.00" size="1.00" scale="0.362"/>
+      <atom id="3" element="As" x="-3.2135" y="-5.6134" z="4.2663"
+      style="solid" variancy="1.00" size="1.00" scale="0.362"/>
+      <atom id="4" element="As" x="-3.2231" y="-1.0443" z="5.7055"
+      style="solid" variancy="1.00" size="1.00" scale="0.362"/>
+      <atom id="5" element="As" x="-6.3167" y="-4.9816" z="2.2395"
+      style="solid" variancy="1.00" size="1.00" scale="0.362"/>
+      <atom element="As" x="-6.3263" y="-0.4124" z="3.6787" style="solid"
+      variancy="1.00" size="1.00" scale="0.362"/>
+      <atom id="6" element="As" x="3.2800" y="-5.7504" z="4.7445"
+      style="solid" variancy="1.00" size="1.00" scale="0.362"/>
+      <atom id="7" element="As" x="3.2704" y="-1.1813" z="6.1837"
+      style="solid" variancy="1.00" size="1.00" scale="0.362"/>
+      <atom id="8" element="As" x="0.1768" y="-5.1185" z="2.7175"
+      style="solid" variancy="1.00" size="1.00" scale="0.362"/>
+      <atom id="9" element="As" x="0.1672" y="-0.5494" z="4.1567"
+      style="solid" variancy="1.00" size="1.00" scale="0.362"/>
+      <atom id="10" element="As" x="-2.9264" y="-4.4866" z="0.6906"
+      style="solid" variancy="1.00" size="1.00" scale="0.362"/>
+      <atom id="11" element="As" x="-2.9360" y="0.0825" z="2.1298"
+      style="solid" variancy="1.00" size="1.00" scale="0.362"/>
+      <atom element="As" x="6.6703" y="-5.2555" z="3.1957" style="solid"
+      variancy="1.00" size="1.00" scale="0.362"/>
+      <atom id="12" element="As" x="6.6607" y="-0.6863" z="4.6349"
+      style="solid" variancy="1.00" size="1.00" scale="0.362"/>
+      <atom id="13" element="As" x="3.5671" y="-4.6236" z="1.1688"
+      style="solid" variancy="1.00" size="1.00" scale="0.362"/>
+      <atom id="14" element="As" x="3.5575" y="-0.0544" z="2.6080"
+      style="solid" variancy="1.00" size="1.00" scale="0.362"/>
+      <atom id="15" element="As" x="0.4639" y="-3.9917" z="-0.8581"
+      style="solid" variancy="1.00" size="1.00" scale="0.362"/>
+      <atom id="16" element="As" x="0.4543" y="0.5775" z="0.5811"
+      style="solid" variancy="1.00" size="1.00" scale="0.362"/>
+      <atom id="17" element="As" x="-1.0631" y="1.0474" z="6.5381"
+      style="solid" variancy="1.00" size="1.00" scale="0.362"/>
+      <atom id="18" element="As" x="-4.1663" y="1.6793" z="4.5113"
+      style="solid" variancy="1.00" size="1.00" scale="0.362"/>
+      <atom id="19" element="As" x="2.3272" y="1.5423" z="4.9893"
+      style="solid" variancy="1.00" size="1.00" scale="0.362"/>
+      <atom id="20" element="As" x="-0.7760" y="2.1742" z="2.9624"
+      style="solid" variancy="1.00" size="1.00" scale="0.362"/>
+      <atom id="21" element="As" x="1.1085" y="-2.3515" z="5.6413"
+      style="solid" variancy="1.00" size="1.00" scale="0.362"/>
+      <atom id="22" element="As" x="1.0989" y="2.2176" z="7.0805"
+      style="solid" variancy="1.00" size="1.00" scale="0.362"/>
+      <atom id="23" element="As" x="-1.9947" y="-1.7196" z="3.6143"
+      style="solid" variancy="1.00" size="1.00" scale="0.362"/>
+      <atom id="24" element="As" x="-2.0043" y="2.8495" z="5.0535"
+      style="solid" variancy="1.00" size="1.00" scale="0.362"/>
+      <atom id="25" element="As" x="4.4987" y="-1.8566" z="4.0925"
+      style="solid" variancy="1.00" size="1.00" scale="0.362"/>
+      <atom id="26" element="As" x="4.4892" y="2.7126" z="5.5317"
+      style="solid" variancy="1.00" size="1.00" scale="0.362"/>
+      <atom id="27" element="As" x="1.3955" y="-1.2247" z="2.0656"
+      style="solid" variancy="1.00" size="1.00" scale="0.362"/>
+      <atom id="28" element="As" x="1.3860" y="3.3445" z="3.5048"
+      style="solid" variancy="1.00" size="1.00" scale="0.362"/>
+      <atom id="29" element="As" x="-1.0515" y="-4.4432" z="4.8087"
+      style="solid" variancy="1.00" size="1.00" scale="0.362"/>
+      <atom id="30" element="As" x="-4.1547" y="-3.8113" z="2.7817"
+      style="solid" variancy="1.00" size="1.00" scale="0.362"/>
+      <atom id="31" element="As" x="2.3388" y="-3.9483" z="3.2599"
+      style="solid" variancy="1.00" size="1.00" scale="0.362"/>
+      <atom id="32" element="As" x="-0.7644" y="-3.3164" z="1.2330"
+      style="solid" variancy="1.00" size="1.00" scale="0.362"/>
+      <bond parent1="1" parent2="29" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.800"/>
+      <bond parent1="2" parent2="21" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.800"/>
+      <bond parent1="3" parent2="29" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.800"/>
+      <bond parent1="3" parent2="30" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.800"/>
+      <bond parent1="4" parent2="23" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.800"/>
+      <bond parent1="5" parent2="30" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.800"/>
+      <bond parent1="6" parent2="31" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.800"/>
+      <bond parent1="7" parent2="21" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.800"/>
+      <bond parent1="7" parent2="25" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.800"/>
+      <bond parent1="8" parent2="29" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.800"/>
+      <bond parent1="8" parent2="31" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.800"/>
+      <bond parent1="8" parent2="32" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.800"/>
+      <bond parent1="9" parent2="21" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.800"/>
+      <bond parent1="9" parent2="23" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.800"/>
+      <bond parent1="9" parent2="27" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.800"/>
+      <bond parent1="10" parent2="30" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.800"/>
+      <bond parent1="10" parent2="32" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.800"/>
+      <bond parent1="11" parent2="23" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.800"/>
+      <bond parent1="12" parent2="25" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.800"/>
+      <bond parent1="13" parent2="31" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.800"/>
+      <bond parent1="14" parent2="25" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.800"/>
+      <bond parent1="14" parent2="27" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.800"/>
+      <bond parent1="15" parent2="32" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.800"/>
+      <bond parent1="16" parent2="27" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.800"/>
+      <bond parent1="17" parent2="22" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.800"/>
+      <bond parent1="17" parent2="24" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.800"/>
+      <bond parent1="18" parent2="24" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.800"/>
+      <bond parent1="19" parent2="22" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.800"/>
+      <bond parent1="19" parent2="26" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.800"/>
+      <bond parent1="19" parent2="28" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.800"/>
+      <bond parent1="20" parent2="24" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.800"/>
+      <bond parent1="20" parent2="28" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.800"/>
+    </cell>
+  </layer>
+</gml>

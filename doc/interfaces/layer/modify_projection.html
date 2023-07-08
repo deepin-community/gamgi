@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Interfaces: Layer Modify</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Layer Modify</h1>
+
+<div id="notebook">
+<ul>
+<li><span>Projection</span></li>
+<li><a href="modify_position.html">Position</a></li>
+<li><a href="modify_visibility.html">Visibility</a></li>
+<li><a href="modify_view.html">View</a></li>
+</ul>
+</div>
+
+<div class="contents">
+
+Change here the projection parameters for a single layer or a list of layers.
+
+<p/>
+
+To modify a layer, click over the graphic area to open a menu and choose a layer,
+or write its identification (name and number) on the <b>Layer</b> entry. To modify
+a list of layers, press the button <b>List</b> (after creating the list of layers
+with <b>Layer->Select</b>). Parameters for empty entries or <b>Local</b> choices
+remain unchanged.
+
+<p/>
+
+To change a layer name write the new name in the <b>Layer</b> entry,
+followed by the layer number (GAMGI needs the number to identify the layer).
+To change the name for a list of layers, press <b>List</b> first
+and then write the new common name in the <b>Name</b> entry.
+
+<h3>Perspective, Orthographic</h3>
+
+Change the type of projection of the layer.
+
+GAMGI projects the 3D space on the 2D screen using <b>Perspective</b> 
+or <b>Orthographic</b> projections. The <b>Perspective</b> projection 
+is better to simulate realistic views and gives users a depth feedback,
+but the <b>Orthographic</b> projection preserves object dimensions, 
+as these are not distorted by perspective. 
+
+<h3>Near, Far, Top</h3>
+
+Change the dimensions of the space volume that is visible to the observer, 
+after being projected into the window graphic area.
+
+This volume has six faces, and the front and back faces are always perpendicular 
+to the viewing direction. <b>Near</b> and <b>Far</b> parameters set
+the distance from the view point to these front and back faces, respectively,
+corresponding to the minimum and maximum distances that the observer can see. 
+<b>Near</b> must be smaller than <b>Far</b>.
+
+<p/>
+
+In a <b>Orthographic</b> projection, the projection volume is a rectangular 
+parallelepiped, so the 4 lateral faces are paralell and perpendicular to 
+each other. In a <b>Perspective</b> projection, the projection volume is 
+a truncated quandrangular pyramid, with the apex at the view point. 
+
+<p/>
+
+<b>Top</b> defines the half-height of the front face of the projection 
+volume. The width is automatically determined from the ratio height / width
+of the window graphic area, so everytime users resize this window, the
+projection volume changes accordingly. Increasing <b>Top</b> increases
+the visible volume and decreases the size of the objects.
+
+<p/>
+
+Each layer has its own projection parameters, so in a window with
+multiple visible layers, the image rendered in the graphic area
+is the superposition of the various, totally independent, layer
+views.
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

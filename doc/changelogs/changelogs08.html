@@ -1,0 +1,1481 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Changelogs: GAMGI 0.08</title>
+<link rel="icon" type="image/png" href="../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../css/board.css"/>
+</head>
+
+<body>
+
+<div class="board">
+<div>GAMGI 0.09</div><div>11th December 2002</div>
+</div>
+
+<div class="contents">
+  
+Enough is enough, here it is, GAMGI 0.09! Improvements from
+previous version are mainly in the usability front. Time
+to start completely new code!
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Configuration data modified in &lt;gamgi>&lt;gamgi/> blocks
+can now be reset further down in other &lt;gamgi>&lt;gamgi/> blocks.
+This is quite usefull when users want to temporarily change
+default parameters, and then return to the previous values
+(without having to specifically set them).</li>
+<li>Clarified a long standing visual bug in the wired bond drawing
+code. Finding a solution is easy, finding the best solution
+is more difficult.</li>
+<li>Added minimum width and height parameters in window configuration
+(default width and height parameters were already there).</li>
+<li>Added a correction factor to make layer transitions from
+perspective to orthographic projections and vice-versa as
+smooth as possible, which means objects should have
+approximately the same size in both projections.</li>
+<li>Copied the most recent manual and format documentation,
+plus faqs and changelogs, to $GAMGI/doc. In particular, the
+full Users Manual is now linked directly to Help->Current
+and Help->Tutorial in GAMGI, though it is in HTML and GAMGI
+currently handles it as raw text only, so it takes a bit to
+find the actual info among the HTML garbage ;-).</li>
+<li>Cleaned gamgi_global_main.c and added gamgi_global_main.h
+for consistency and documentation purposes.</li>
+<li>Updated the screenshots formats, so they can now
+be handled by most browsers and operating systems.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Write the Technical Description, in www.gamgi.org.
+with sections Libraries, Style and Architecture.</li>
+<li>Write the Cell Link section of the GAMGI users manual,
+in www.gamgi.org.</li>
+<li>Write the Attributes section of the GML users manual,
+in www.gamgi.org.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.08.30</div><div>8th December 2002</div>
+</div>
+
+<div class="contents">
+
+Variable rendering attributes are implemented.
+A problem solved and a bug removed. More documentation
+available from http://www.gamgi.org/.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Solved a problem with the positional code
+(involving the Euler angles) in gtk_cell_modify.</li>
+<li>Added Fasttrack web page to http://www.gamgi.org/</li>
+<li>Added FAQs web pages to http://www.gamgi.org/</li>
+<li>Added Coders Bibliography web page to http://www.gamgi.org/</li>
+<li>I decided to change the entire website to XHTML 1.0 in the next
+couple of months, to take profit of Cascading Style Sheets (CSS)
+and to make it easier to parse these HTML files using XML tools.</li>
+<li>Added Formats web pages to http://www.gamgi.org/. These pages
+are a first draft of the documentation that we aim to write, describing
+the XML native format used in GAMGI to handle both object and 
+configuration data.</li>
+<li>Found and removed a bug in the bond_scan code, 
+introduced in the previous version.</li>
+<li>Added variable width and slices to render atoms
+and bonds, this way allowing users to change on the fly the
+rendering quality (and speed) when handling atoms and bonds.
+Before, this could be done only at compile time.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Improve Help availability.</li>
+<li>Write the Technical Description, in www.gamgi.org.
+with sections Libraries, Style and Architecture.</li>
+<li>Write the Cell Link section of the GAMGI users manual,
+in www.gamgi.org.</li>
+<li>Write the Attributes section of the GML users manual,
+in www.gamgi.org.</li>
+<li>Clean code, add more comments, in preparation for GAMGI 0.09.</li>
+<li>Improve layer usage consistency.</li>
+<li>Add defaults to &lt;gamgi>&lt;gamgi/> blocks.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.08.29</div><div>15th November 2002</div>
+</div>
+
+<div class="contents">
+
+Variable atom spheres and bond cylinders are implemented,
+so the only thing that needs to be done before stamping
+the oficial GAMGI 0.09 version is to improve documentation.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>A consistency problem related with rotation and translation
+in cell_create and cell_modify was removed.</li>
+<li>engine_remove_soft functions were removed and replaced by
+engine_link_list functions, allowing much more flexibility
+but with the same goal: allow users to link objects to the
+parent of the current parent (typically before this is removed).</li>
+<li>changed functions names: engine_copy -> engine_copy_out,
+engine_copy_hard -> engine_copy, engine_remove ->remove_out
+and engine_remove_hard -> engine_remove.</li>
+<li>added functions mesa_rotate_out and mesa_translate_out
+and solved the consistency problem mentioned above.</li>
+<li>Variable atom and bond size is now working and can
+be modified importing apropriate XML GAMGI files. This
+is fundamental to show compact cristalline structures.</li>
+<li>Moved About from the Help to the Gamgi menu.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Improve Help availability.</li>
+<li>Write the Technical Description, in www.gamgi.org.
+with sections Mission and Libraries.</li>
+<li>Prepare FAQs, screenshots, etc.</li>
+<li>Write FAQs for: Users and Coders, Introduction and Troubleshooting.</li>
+<li>Clean code, add more comments, in preparation for GAMGI 0.09.</li>
+<li>Improve layer usage consistency.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.08.28</div><div>10th November 2002</div>
+</div>
+
+<div class="contents">
+
+Cell Link for Conventional Hexagonal Cells is
+now working fine, so Cell Link is basically done.
+GAMGI 0.09 is now very close.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Cell Link for Conventional Hexagonal Cells is
+now working fine.</li>
+<li>The Extended Cutoff mode in Cell Link should
+be working fine now for all cells: in this
+mode, outside nodes and filtering are both turned off.</li>
+<li>We now work with negative object coordinates
+in primitive axes (except Wigner-Seitz cells,
+where coordinates must be positive), to
+avoid round-off error problems.</li>
+<li>Conventional volumes for Hexagonal lattices are
+working fine again for all FACES and BORDER
+options (this was broken in the previous release,
+in order to change the cell origin).</li>
+<li>A bug was found and corrected in gtk_atom_create.c
+and gtk_atom_modify.c. The element testing in
+gtk_atom_create.c, gtk_atom_modify.c,
+and gtk_bond_create.c is now much cleaner.</li>
+<li>An elegant, user-friendly, solution for the question
+of variable sphere radius in atoms was devised. We will
+take this as a general configuration option, so users can
+decide which method to use and can change it anytime they want,
+either through the control panel (not implemented yet) or
+importing XML GAMGI files (implemented). The only disadvantage
+of this solution is that users will not be allowed to choose
+this in a atom-by-atom or layer-by-layer basis, the change
+is global, for all atoms of the same style. Different styles
+(solid versus wired) have independent choices. Anyway, if one
+day we decide to do this on a atom-by-atom basis, it will be
+easy to change.</li>
+<li>Improvements in the Shell tool.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Implement variable sphere radius.</li>
+<li>Write the Technical Description, in www.gamgi.org,
+with sections Mission and Libraries.</li>
+<li>Prepare FAQs, screenshots, etc.</li>
+<li>Write FAQs for: Users and Coders, Introduction and Troubleshooting.</li>
+<li>Clean code, add more comments, in preparation for GAMGI 0.09.</li>
+<li>Add ftp support to download remote files. </li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.08.27</div><div>28th October 2002</div>
+</div>
+
+<div class="contents">
+
+GAMGI is running fine on Mac OS X. Cell Link
+is now working fine for Rhombus, Sphere, and
+Conventional Centered Cells. Work in Cell Link
+for Conventional Hexagonal Cells is evolving well
+and should be solved for next version.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Back to GAMGI! The problem in Cell Link
+regarding how to generate the contributions
+of the nodes that are outside the cell has
+been solved, by creating a second, auxiliary,
+cell, that surrounds the real one. This problem
+occurred in all Centered Lattices in Conventional
+Volumes, in Rhombus and Spheres volumes.</li>
+<li>An algorithm to handle Cell Link
+for Conventional Hexagonal Cells has been
+partly implemented.</li>
+<li>The origin of Conventional Hexagonal Cells
+was moved from the center to the lower corner,
+because that is the right choice: 1) the origin
+is the same as in other volumes; 2) the pattern
+rules algorithm works in a logical and simple
+way with this choice. As a result, the code to
+remove loops and lines is temporarly broken.
+It will be working again in the next version.</li>
+<li>large file names should be handled in a safe
+way now. Limits for names in XML documents were increased.</li>
+<li>GAMGI is now running on Mac OS X too,
+with the X Window System (XFree86),
+thanks to the Fink project!</li>
+<li>The socket programming code to
+fetch a http server is also running
+fine on the Mac OS X version.</li>
+<li>swaped the order of the app and lib headers,
+so the app headers appear first. This is because
+the app headers already contain the global
+lib headers, which might be needed to the other
+local lib headers (the socket code was not
+compiling in Mac OS X because of this).</li>
+<li>removed a minor ANSI incorrection
+in the help tutorial code.</li>
+</ul>
+	   
+<h3>What is next:</h3>
+
+<ul>
+<li>Work out link functionality for Hexagonal Conventional cell.</li>
+<li>Use variable sphere radius.</li>
+<li>Write the Technical Description, in www.gamgi.org.
+with sections Mission and Libraries.</li>
+<li>Prepare FAQs, screenshots, etc.</li>
+<li>Write FAQs for: Users and Coders, Introduction and Troubleshooting.</li>
+<li>Add ftp support to download remote files.</li>
+<li>Clean code, in preparation for GAMGI 0.09.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.08.26</div><div>17th July 2002</div>
+</div>
+
+<div class="contents">
+
+Help Current, Help Topic, Help Search,
+Help Tutorial and Help Remote functionality
+is implemented and working fine.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Help Current, Help Topic, Help Search,
+Help Tutorial and Help Remote functionality
+is implemented and working fine. This first
+version works with .txt files. Futurely we
+will change to .xml help files, to allow for
+more powerfull text formating and presentation.
+This shouldn't be much of a change, as GAMGI
+data and config files are already .xml files.</li>
+<li>Help About has been added.</li>
+<li>An Algorithm to add link functionality for
+Hexagonal lattices with Conventional cell volumes
+has been partly worked out.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Build container cell to link nodes correctly in PACKED mode.</li>
+<li>Work out link functionality for Hexagonal Conventional cell.</li>
+<li>Use variable sphere radius.</li>
+<li>Write the Technical Description, in www.gamgi.org.
+with sections Mission and Libraries.</li>
+<li>Prepare FAQs, screenshots, etc.</li>
+<li>Write FAQs for: Users and Coders, Introduction and Troubleshooting.</li>
+<li>Add ftp support to download remote files.</li>
+<li>Clean code, in preparation for GAMGI 0.09.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.08.25</div><div>9th July 2002</div>
+</div>
+
+<div class="contents">
+
+Laboratory, conventional and primitive axes can now be
+indicated for all the 5 cell volumes allowed in GAMGI.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Cells are now centered using only the nodes.
+This is faster and should always work well, but
+the main reason is stability: this guarantees
+that the cell center doesn't change when atoms
+and other child objects are added to assymetrical
+positions.</li>
+<li>Laboratory (plus Conventional and Primitive)
+referentials are now supported in Cell Link,
+to set the position of the linked object.</li>
+<li>gamgi_phys_cell_link was much improved,
+and already supports all the 5 cell volumes.
+In particular, automatic conversion between
+coordinates in different referentials is
+working now, for all possible cases.</li>
+<li>The PACKED mode needs improvements,
+because nodes outside can also contribute
+to the cell contents, for all 5 volume
+representations. The problem is solved
+conceptually but this has not been implemented yet.</li>
+<li>Cleaned gamgi_gtk_dialog and added support for beep configuration.</li>
+<li>Added support for mouse configuration.</li>
+<li>Added support for undo/save number of levels configuration.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Write the Technical Description, in www.gamgi.org,
+with sections Mission and Libraries.</li>
+<li>Prepare FAQs, screenshots, etc.</li>
+<li>Write code to read from files to GtkText widgets in Help dialogs.</li>
+<li>Write FAQs for: Users and Coders, Introduction and Troubleshooting.</li>
+<li>Add ftp support to download remote files.</li>
+<li>Clean code, in preparation for GAMGI 0.09.   </li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.08.24</div><div>23th June 2002</div>
+</div>
+
+<div class="contents">
+  
+This is the first version where structural cells
+can be easily made from atoms. From here to version
+0.09 is mostly cleaning code and writing documentation.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Parent objects in GML files, indicated with
+id references must now be in the scope determined
+by the child container. The algorithm seems to be
+consistent in all cases, and makes object hierarchy
+flexible enough, without allowing the type of file
+anarchy that was previously possible, where objects
+could point to parents anywhere, even in different
+files, a potentially hazardous and silly situation.</li>
+<li>Element names are now searched using a hash table.
+The table has 127 positions, thus some are empty, but
+in compensation it is guaranteed that each hash list
+has no more than 2 element names. This speeds up element
+name search for large amounts of data (large files).</li>
+<li>atoms can now be linked to cells in any position,
+by indicating its coordinates relatively to either
+the conventional or primitive vectors. This works for
+all cell volumes supported by GAMGI. This is a first
+step to general origin and orientation functionality,
+which will be done later, when container objects are
+better handled. Adding objects in the laboratory
+referential will be done later as well.</li>
+<li>Atoms whose coordinates fall outside of the chosen
+cell volume are filtered out, if users whish so. This
+is working for all cell volumes supported by GAMGI
+except Wigner-Seitz cells. ;-)</li>
+<li>A bug was found and corrected in engine_cell_copy:
+conventional and primitive vectors were not copied,
+thus the undo mechanism was compromised.</li>
+<li>A bug was found and corrected in phys_cell_link:
+The node start and end indexes were not correct for
+F lattices.</li>
+<li>A bug was found and corrected in math_matrix_inverse:
+The determinant was multiplying instead of dividing ;-)</li>
+<li>Implement algorithm to import bonds automatically,
+in GML files, using Element and Voronoi methods, providing
+all the functionality currently available from the GUI: postponed.
+We should find a better, integrated, solution for non-static,
+algorithmic information, as this, probably by using the log files,
+where commands, rather than data, are stored.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Write the Technical Description, in www.gamgi.org,
+with sections Mission and Libraries.</li>
+<li>Prepare FAQs, screenshots, etc.</li>
+<li>Write code to read from files to GtkText widgets in Help dialogs.</li>
+<li>Write FAQs for: Users and Coders, Introduction and Troubleshooting.</li>
+<li>Add ftp support to download remote files.</li>
+<li>Clean code, in preparation for GAMGI 0.09.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.08.23</div><div>6th June 2002</div>
+</div>
+
+<div class="contents">
+
+GAMGI is now running on Mac hardware. The rules
+and (the code) to import bonds are now more solid
+and elegant.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>GAMGI is now running on Mac hardware:
+Linux Yellow Dog 2.2 on G4 Titanium 550.</li>
+<li>Very serious bugs corrected: 4 dangling pointers
+(causing GAMGI to crash on the Mac) found and corrected.</li>
+<li>A minor warning on the socket code was also corrected.</li>
+<li>A 1-line check was added to prevent GAMGI from
+crashing on KDE, where WINDOWID is not defined.</li>
+<li>The warning about WINDOWID absence was also removed.</li>
+<li>gdk_window_set_decorations was reintroduced to
+handle WM decorations in Escape and Page_Up/Page_Down
+actions (and then removed again, see below).</li>
+<li>gamgi_engine_find_parent is buggy, a better
+algorithm is in the way: corrected.</li>
+<li>minor sound details on selection corrected.</li>
+<li>Expat: the way objects point to parents has
+changed when the parent is not explicitly indicated,
+allowing a simpler, more solid hierarchy. Among
+other advantages, this makes possible to use a
+single find routine to check common parents under
+a given scope in both import and export XML operations.
+In particular this makes completly impossible,
+by design, to create bonds between atoms that
+are not in the same layer or even window, for
+example, which was not tested before and therefore
+made possible.</li>
+<li>Expat: The algorithm to import bonds is now simpler,
+more elegant, and definitely much more solid, because
+bonds between atoms out of scope are not tolerated anymore.
+Speed should be just slightly slower, nothing really dramatic.
+These changes in the inner core of our XML import code are
+not systematically tested yet, so a few corrections might
+be needed and added in the next few days, when more
+systematic checking will take place.</li>
+<li>Regarding window manager environments, the situation
+on Yellow Dog 2.2 (should be the same on Red Hat 7.2)
+is the following:
+<ul>
+<li>No environment implements a BROWSER variable
+anymore. This might be quite reasonable, but in
+practise it means that users must now set this variable
+to their prefered browser, if they wish to use Help->Remote
+in GAMGI.</li>
+<li>Enlightenment: fullscreen mode works, even without
+set_decorations, WINDOWID is defined, and console
+button works.</li>
+<li>Window Maker: fullscreen mode works only after
+hiding, set_decorations and show again. Without
+set_decorations everyting is hidden except the window bar.
+WINDOWID is defined and console button works.</li>
+<li>twm: fullscreen mode does not work, even after
+hiding, set_decorations and show again (the window bar
+is not hidden). Without set_decorations everyting is
+hidden except the window bar. WINDOWID is defined and
+console button works.</li>
+<li>Gnome (Sawfish): fullscreen mode does not work, even after
+hiding, set_decorations and show again (the window bar is not
+hidden). Without set_decorations everyting is hidden except
+the window bar. WINDOWID is defined but console button does
+not work.</li>
+<li>KDE (kwm): fullscreen mode does not work, even after
+hiding, set_decorations and show again (the task
+bar is not hidden). Without set_decorations everyting
+is hidden except the window bar and the task bar.
+WINDOWID is not defined so console button does
+not work and is now hidden by GAMGI without warning.</li>
+<li>Enlightement is currently the WM that best
+works with GAMGI, and the only tested so far
+where all the GAMGI functionality is available.</li>
+</ul>
+</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Add automatic bonding in GML input files.</li>
+<li>Implement code to set the coordinates of
+objects in cells relatively to nodes, for
+various types of referentials, namely conventional
+and primitive vectors.</li>
+<li>Write the Technical Description, in www.gamgi.org,
+with sections Mission and Libraries.</li>
+<li>Prepare FAQs, screenshots, etc.</li>
+<li>Write code to read from files to GtkText widgets in Help dialogs.</li>
+<li>Write FAQs for: Users and Coders, Introduction and Troubleshooting.</li>
+<li>Add ftp support to download remote files.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.08.22</div><div>24th May 2002</div>
+</div>
+
+<div class="contents">
+
+This the first version that exports bonds
+(and then imports correctly the exported file).
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Bonds are now exported to native XML files
+in a solid and fast way. GAMGI is able to import
+the previously exported bonds, closing the cycle.</li>
+<li>Code cleaning: this is the first version that compiles with
+-Wall -ansi -pedantic options without warnings due to GAMGI code.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Handle bond importing in a better way.</li>
+<li>Add automatic bonding in GML input files.</li>
+<li>Implement code to set the coordinates of
+objects in cells relatively to nodes, for
+various types of referentials, namely conventional
+and primitive vectors.</li>
+<li>Write the Technical Description, in www.gamgi.org,
+with sections Mission and Libraries.</li>
+<li>Prepare FAQs, screenshots, etc.</li>
+<li>Write code to read from files to GtkText widgets in Help dialogs.</li>
+<li>Write FAQs for: Users and Coders, Introduction and Troubleshooting.</li>
+<li>Add ftp support to download remote files.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.08.21</div><div>18th May 2002</div>
+</div>
+
+<div class="contents">
+
+GAMGI now works also with 16 color bits. The
+work to link objects to cell nodes using
+occupancy rules is completed.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Object selection now works with 16 color bits per pixel
+(plus 24 and 32 as before), making it easier to use GAMGI
+on partly supported graphic cards and older hardware.</li>
+<li>Cleaned the code handling rotate, move and scale operations.</li>
+<li>Implemented Light modification with the mouse.</li>
+<li>Added A, B, C and I nodes to the Cell Linking functionality.
+This completes the work related with nodes occupancy rules.</li>
+<li>Improved the HTML online version of the users manual.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Add automatic bonding in GML input files.</li>
+<li>Handle bond importing and exporting in a clever way.</li>
+<li>Implement code to set the coordinates of
+objects in cells relatively to nodes, for
+various types of referentials, namely conventional
+and primitive vectors.</li>
+<li>Write the Technical Description, in www.gamgi.org,
+with sections Mission and Libraries.</li>
+<li>Prepare FAQs, screenshots, etc.</li>
+<li>Write code to read from files to GtkText widgets in Help dialogs.</li>
+<li>Write FAQs for: Users and Coders, Introduction and Troubleshooting.</li>
+<li>Add ftp support to download remote files.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.08.20</div><div>1st May 2002</div>
+</div>
+
+<div class="contents">
+
+Picking local objects is completed and name search
+in XML files should be much faster now, for large data
+files, thanks to an optimized hash table.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Name search in XML input files now uses a
+a hash table, where the size and the multiplier
+can be independently controled and optimized.
+This is much faster for large input files and
+marginally slower for small input files (where
+speed is not an issue anyway).</li>
+<li>Objects without visual representation
+(layers, lights, windows, the whole gamgi),
+and all the recursive objects (texts, groups,
+clusters and assemblies), can now be selected
+and changed in a consistent and simple way
+with the mouse, as done before for non-recursive
+objects with a visual representation (atoms, bonds,
+molecules, cells, etc.).</li>
+<li>Corrected a minor error when exporting layer modelview data.</li>
+<li>The name of http://files is properly
+checked when launched from the command line.</li>
+<li>Closes the default window when more windows
+are launched from files imported from the command line.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Write the Technical Description, in www.gamgi.org,
+with sections Mission and Libraries.</li>
+<li>Prepare FAQs, screenshots, etc.</li>
+<li>Write code to read from files to GtkText widgets in Help dialogs.</li>
+<li>Write FAQs for: Users and Coders, Introduction and Troubleshooting.</li>
+<li>Add automatic bonding in GML input files.</li>
+<li>Handle bond importing and exporting in a clever way.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.08.19</div><div>24th April 2002</div>
+</div>
+
+<div class="contents">
+
+GAMGI can now read XML data and config files from any HTTP web server.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>GAMGI can now load XML files
+from any HTTP server in the world, which will be usefull
+to create online resource databases. For example,
+gamgi local_file.xml http://hostname/remote_file.xml,
+launches GAMGI, then loads local_file.xml and then
+loads remote_file.xml from hostname HHTP server.</li>
+<li>The sections Group Measure and Group Modify
+of the User Manual are written.</li>
+<li>The sections Cell Modify, Light Modify and Layer Modify
+of the User Manual are written, although information about
+inconsistent parameters when changing cells and lights is
+still missing.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Add ftp support to download remote files.</li>
+<li>Write the Technical Description, in www.gamgi.org,
+with sections Mission and Libraries.</li>
+<li>Prepare FAQs, screenshots, etc.</li>
+<li>Handle pattern rules for Conventional cell volumes.</li>
+<li>Write code to read from files to GtkText widgets in Help dialogs.</li>
+<li>Write FAQs for: Users and Coders, Introduction and Troubleshooting.</li>
+<li>Add automatic bonding in GML input files.</li>
+<li>Handle bond importing and exporting in a clever way.</li>
+<li>Keep cleaning gamgi_chem and gamgi_mesa.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.08.18</div><div>7th April 2002</div>
+</div>
+
+<div class="contents">
+
+No code changes, a draft of the Users Manual is available,
+covering more than 50% of current GAMGI functionality.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>The Users Manual draft covers the general interface,
+interactivity, and functionality, plus how to create,
+modify and remove bonds and atoms, how to create and remove
+cells, lights and layers, plus similar information for
+objects that are not fully operational as groups,
+molecules, clusters and assemblies (about 58 pg in
+the postscript version).</li>
+<li>The Scientific, Legal, Contributors sections
+in the Description part in www.gamgi.org are available.</li>
+<li>The Mailing Lists and Links sections
+in the Contacts part in www.gamgi.org are available.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Write the sections Group Measure, Group Modify,
+Cell Modify, Light Modify, Layer Modify of the
+Users Manual draft.</li>
+<li>Write the Technical Description, in www.gamgi.org,
+with sections Mission and Libraries.</li>
+<li>Prepare FAQs, screenshots, etc.</li>
+<li>Handle pattern rules for Conventional cell volumes.</li>
+<li>Write code to read from files to GtkText widgets in Help dialogs.</li>
+<li>Write FAQs for: Users and Coders, Introduction and Troubleshooting.</li>
+<li>Add automatic bonding in GML input files.</li>
+<li>Handle bond importing and exporting in a clever way.</li>
+<li>Keep cleaning gamgi_chem and gamgi_mesa.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.08.17</div><div>11th February 2002</div>
+</div>
+
+<div class="contents">
+
+The pattern rules governing node occupancy
+seem to be working fine now for Primitive,
+Wigner-Seitz, Rhombus and Sphere cell volumes.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Added code to link atoms to cells, basically
+to test the pattern rules and the visual scale.</li>
+<li>The pattern rules governing node occupancy
+were cleaned, simplified, some bugs were removed,
+and were reasonably tested. They seem to be working
+fine now for Primitive, Wigner-Seitz, Rhombus and
+Sphere cell volumes.</li>
+<li>The gamgi directory tree is now
+divided in src, data and docs.</li>
+<li>Started adding data in GAMGI XML format: fancy
+molecules, cells, lights, atom and bond config, etc.</li>
+<li>Minor corrections on gamgi_expat_* files.</li>
+<li>Started writing FAQs for Users Introduction
+and Troubleshooting.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Handle pattern rules for Conventional cell volumes.</li>
+<li>Write code to read from files to GtkText widgets in Help dialogs.</li>
+<li>Write FAQs for: Users and Coders, Introduction and Troubleshooting.</li>
+<li>Add automatic bonding in GML input files.</li>
+<li>Handle bond importing and exporting in a clever way.</li>
+<li>Keep cleaning gamgi_chem and gamgi_mesa.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.08.16</div><div>29th January 2002</div>
+</div>
+
+<div class="contents">
+
+The basic infra-structure to import and export
+data and config XML files is done.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Completed the design and implementation of the
+XML import config algorithms, for all objects.</li>
+<li>Added import config parameters for atoms and bonds. Default masses,
+radius, colors, different ways of dealing with default bond limits,
+default drawing style, etc., can now be changed directly throughout
+GAMGI importing config XML files.</li>
+<li>Fine tuned syncronisation between import and export files.</li>
+<li>Added Help Search and Help Tutorial interfaces and basic working.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Write code to read from files to GtkText widgets in Help dialogs.</li>
+<li>Keep developing gtk_cell_link.</li>
+<li>Add automatic bonding in GML input files.</li>
+<li>Handle bond importing and exporting in a clever way.</li>
+<li>Keep cleaning gamgi_chem and gamgi_mesa.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.08.15</div><div>23th January 2002</div>
+</div>
+
+<div class="contents">
+
+Work to export and import XML files
+with data and config info continues. A free program that
+determines all point symmetry groups is working fine here.
+This is the first GAMGI release to pass the 80,000 LOC barrier.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Layer, Light and Cell objects can now be properly
+exported (but not Bonds yet, though).</li>
+<li>A Import Cell parameter bug corrected.</li>
+<li>Infrastructure to export configuration added.</li>
+<li>Many small changes on gamgi_global* functions, to
+allow import config to work correctly, even in a
+multithreading environment.</li>
+<li>Configurable bond range data added.</li>
+<li>Minor work on gamgi.org site.</li>
+<li>Last but not the least, a free program called Symmetry,
+developed by Dr. Serguei Patchkovskii, is able to determine
+all point symmetry groups, using brute force, and is running
+fine here, passing the tests supplied for all groups (about 2,000
+lines of C code)! Serguei specifically allowed us to integrate
+Symmetry on GAMGI (actually another GPL program is already using
+Symmetry). Definitely great news!</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Add code to import configuration info from XML files,
+as done already for data info. This will increase considerably
+GAMGI usability.</li>
+<li>Add code to export configuration info from XML files,
+as done already for data info.</li>
+<li>Write code to read from files to GtkText widgets in Help dialogs.</li>
+<li>Keep developing gtk_cell_link.</li>
+<li>Add automatic bonding in GML input files.</li>
+<li>Keep cleaning gamgi_chem and gamgi_mesa.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.08.14</div><div>14th January 2002</div>
+</div>
+
+<div class="contents">
+
+Added code to export GAMGI data to XML files.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>GAMGI can now be called from the command line
+with unlimited XML input files as arguments.</li>
+<li>Help Search added. It will look for keywords,
+such as GAMGI labels.</li>
+<li>More work on Help Topic and Help Current.</li>
+<li>Makefile cleanups.</li>
+<li>gamgi_expat_export* and gamgi_expat_export_data*
+already contain the infra-structure required
+to export all sorts of data info (except bonds) to XML files.</li>
+<li>Started writing on gamgi_expat_export_config.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Add code to import configuration info from XML files,
+as done already for data info.</li>
+<li>Add code to export configuration info from XML files,
+as done already for data info.</li>
+<li>Write code to read from files to GtkText widgets in Help dialogs.</li>
+<li>Keep developing gtk_cell_link.</li>
+<li>Add automatic bonding in GML input files.</li>
+<li>Keep cleaning gamgi_chem and gamgi_mesa. </li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.08.13</div><div>3th January 2002</div>
+</div>
+
+<div class="contents">
+
+Added picking for recursive objects, lots of
+cleaning, slashed 3 bugs, including the top-dog. :-)
+
+<h3>What is new:</h3>
+
+<ul>
+<li>picking recursive objects on the screen is now
+fully consistent and easy to use, picking always
+the child, then going up, and finally using a pop
+menu (as in layers and lights).</li>
+<li>Removing cluster, assembly and group objects
+is now working, even when recursion happens (local
+mode only).</li>
+<li>Lots of cleaning on gamgi_mesa* functions,
+particularly regarding *gtk-*_press functions.</li>
+<li>More engine_* and gtk_* cleaning.</li>
+<li>The long-time diffuse light bug was eventually
+tracked down to a Mesa bug. Workarounds are in place
+and soon this will be gone.</li>
+<li>A memory corruption bug was found and corrected:
+when removing recursive objects as text, group, cluster
+and assembly, some list addressing was done incorrectly.</li>
+<li>ModelView and Projection Matrixes, used to put atoms
+on the 3D space, were obtained in the wrong place, resulting
+in wrong positioning when the layer scale was different from
+the default value (1.0).</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Write code to read from files to GtkText widgets in Help dialogs.</li>
+<li>Add code to handle configuration information from XML files,
+as done already for data information.</li>
+<li>Write code to export data and configuration
+XML files that follow the GML rules.</li>
+<li>Keep developing gtk_cell_link.</li>
+<li>Add automatic bonding in GML input files.</li>
+<li>Keep cleaning gamgi_chem and gamgi_mesa.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.08.12</div><div>13th Dezembro 2002</div>
+</div>
+
+<div class="contents">
+
+Added functionality for creating, linking
+and removing containers (assembly, cluster, molecule, group).
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Added gtk_assembly_create*, gtk_assembly_link*, gtk_assembly_remove*</li>
+<li>Added gtk_cluster_create*, gtk_cluster_link*, gtk_cluster_remove*</li>
+<li>Added gtk_molecule_create*, gtk_molecule_link*, gtk_molecule_remove*</li>
+<li>Added gtk_group_create*, gtk_group_link*, gtk_group_remove*</li>
+<li>Implemented a first version of Help Remote
+(currently just pointing out to www.gamgi.org).</li>
+<li>Fixed a mem leak and cleaned the code for
+the combo box in gtk_bond_create/modify*.</li>
+<li>GtkCTrees are now added directly using container_add,
+instead of using viewport as before, so it can handle
+10,0000 objects correctly now.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Write code to read from files to GtkText widgets in Help dialogs.</li>
+<li>Add automatic bonding in GML input files.</li>
+<li>Write code to export data and configuration
+XML files that follow the GML rules.</li>
+<li>Keep developing gtk_cell_link.</li>
+<li>Add more documentation: comments, headers, etc.</li>
+<li>Clean gamgi_chem and gamgi_mesa code.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.08.11</div><div>&nbsp;</div>
+</div>
+
+<div class="contents">
+
+The infrastructure to allocate configuration data has been created,
+so configuration data can now be changed at run time, instead of
+compile time, as before.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>gamgi_global_start*, and gamgi_global_end*
+functions added, to add and remove default configuration data.</li>
+<li>gamgi_chem_atom_start* functions added, to initialise
+configuration atomic data used by GAMGI, as masses, radius and colors.</li>
+<li>Configuration data is now taken from gamgi->object_class
+structures, instead of directly from #define statements as before.</li>
+<li>Demo1 and Demo2 removed.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Write code to read from files to GtkText widgets in Help dialogs.</li>
+<li>Implement a first version of Help Remote.</li>
+<li>Add automatic bonding in GML input files.</li>
+<li>Write code to export data and configuration
+XML files that follow the GML rules.</li>
+<li>Keep developing gtk_cell_link.</li>
+<li>Add more documentation: comments, headers, etc.</li>
+<li>Clean gamgi_chem and gamgi_mesa code.  </li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.08.10</div><div>&nbsp;</div>
+</div>
+
+<div class="contents">
+
+Replaced GtkTree by GtkCTree widgets everwhere in GAMGI.
+Common mechanism for Current Help and Topic Help in place.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>GtkTree widgets used in Select dialogs
+were all ported to GtkCTree.</li>
+<li>Atom colors are float again, before they were unsigned short.</li>
+<li>math_convert functions were removed,
+after general cleaning.</li>
+<li>gamgi_gtk_time_show function activated
+again in gamgi_gtk_window_create.</li>
+<li>Common Help handling for Help Current and
+Help Topic is now in place.</li>
+<li>gamgi_expat_data* and gamgi_mesa_start* cleaning
+(when possible, set defaults before reading gml files).</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Write code to read from files to GtkText widgets in Help dialogs.</li>
+<li>Implement a first version of Help Remote.</li>
+<li>Add automatic bonding in GML input files.</li>
+<li>Write code to export data and configuration
+XML files that follow the GML rules.</li>
+<li>Keep developing gtk_cell_link.</li>
+<li>Add more documentation: comments, headers, etc.</li>
+<li>Clean gamgi_chem and gamgi_mesa code. </li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.08.9</div><div>&nbsp;</div>
+</div>
+
+<div class="contents">
+
+It's Help season down here.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>The Help Topic dialog is implemented,
+first using GtkTree and later using GtkCTree (better).</li>
+<li>The Help Current dialog is just started.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Develop Help Current, and the actual
+infra-structure to build Help dialogs, with GtkText.</li>
+<li>Implement a first version of Help Remote.</li>
+<li>Port GtkTrees to GtkCTrees in Object Select dialogs.</li>
+<li>Add automatic bonding in GML input files.</li>
+<li>Write code to export data and configuration
+XML files that follow the GML rules.</li>
+<li>Keep developing gtk_cell_link.</li>
+<li>Add more documentation: comments, headers, etc.</li>
+<li>Clean gamgi_chem and gamgi_mesa code.</li>
+</ul>
+ 
+</div>
+
+<div class="board">
+<div>GAMGI 0.08.8</div><div>&nbsp;</div>
+</div>
+
+<div class="contents">
+
+All object parameters handled in GUI mode can now
+be handled in standalone (XML) mode. Trees in Select
+dialogs are correct again.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>I decided to improve/develop the mechanisms
+involving GtkTree and GtkText widgets in GTK 1.2,
+instead of waiting for GTK 2.0.</li>
+<li>All object parameters that could be defined so
+far in GUI mode, can now be defined also in standalone
+mode, importing XML files.</li>
+<li>New tests, empty and resources, were added to handle
+layers in windows and exceeded number of lights.</li>
+<li>New gamgi_mesa_start_* functions were added to allow
+clean definition of default parameters, particularly
+for new window and layer objects, defined from XML files
+and also from the GUI.</li>
+<li>window_create*, gamgi_bottom_* and gamgi_reset*
+functions slightly changed to accomodate the new way
+to enter windows, layers and the mesa_start functions
+above.</li>
+<li>The action enumeration was extended to include
+all select dialogs, plus import and export file dialogs.</li>
+<li>The object trees in the select dialogs are working
+again (the old way to calculate each top tree was
+incorrect since the history mechanism was added, 11 months ago).</li>
+<li>gamgi_engine_dlist_bond_* functions were
+changed to list objects in the right order
+(go from last object to first one, to compensate
+the stack effect).</li>
+<li>New gamgi_engine_dlist_bond_* functions were added to
+handle the top tree in bond select dialogs.</li>
+<li>The archive file to download, containing the GAMGI
+source code, is now better organised, including
+not just source code and related files.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Add automatic bonding in GML input files.</li>
+<li>Write code to export data and configuration
+XML files that follow the GML rules.</li>
+<li>Keep developing gtk_cell_link.</li>
+<li>Add more documentation: comments, headers, etc.</li>
+<li>Clean gamgi_chem and gamgi_mesa code.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.08.7</div><div>&nbsp;</div>
+</div>
+
+<div class="contents">
+
+Code to read external files (even recursively) and
+globally address every kind of GAMGI object is now
+implemented in the code importing XML files.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Recursive XML External General Entities
+are implemented and tested.</li>
+<li>Global linking using id/idref addressing
+was extended to all objects (not only bonds).</li>
+<li>Error messages were considerably improved,
+always reporting the line number and file name
+of the file where the offending object starts.</li>
+<li>The DTDs defining GML were divided in three
+files: gamgi.dtd, the main one, that essentially
+calls gamgi_data.dtd, that describes data information,
+and gamgi_config.dtd, that describes config information.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Add automatic bonding in GML input files.</li>
+<li>Write code to export data and configuration
+XML files that follow the GML rules.</li>
+<li>Keep developing gtk_cell_link.</li>
+<li>Add more documentation: comments, headers, etc.</li>
+<li>Clean gamgi_chem and gamgi_mesa code.</li>
+</ul>
+
+</div>
+  
+<div class="board">
+<div>GAMGI 0.08.6</div><div>&nbsp;</div>
+</div>
+
+<div class="contents">
+
+Almost all the infra structure required to read
+GAMGI native XML files is now in place.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>A solid method to handle global
+tests involving incompatible and
+missing parameters is in place.</li>
+<li>Global bonds are implemented,
+using global id and idref identifiers.</li>
+<li>real and integer io_token functions
+were replaced by float/double and int/long
+functions. This makes GAMGI more robust
+and avoids subtle but potentially serious
+memory corruption.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Implement XML external general entities.</li>
+<li>Update the DTD defining GML: gamgi.dtd.</li>
+<li>Write code to export data and configuration
+XML files that follow the GML rules.</li>
+<li>Keep developing gtk_cell_link.</li>
+<li>Add more documentation: comments, headers, etc.</li>
+<li>Clean gamgi_chem and gamgi_mesa code. </li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.08.5</div><div>&nbsp;</div>
+</div>
+
+<div class="contents">
+
+Lots of progress in the XML front.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>data and configuration information can
+now be freely mixed in input/output files
+with GML (GAMGI Markup Language) format.</li>
+<li>The overall architecture and lay-out for
+the gml parser is now (mostly) settled down.</li>
+<li>Code to import and check data is mostly
+in place, except bonds.</li>
+<li>XML internal general entities are working.</li>
+<li>Tests and Errors for most cases are in place,
+including file open and read errors, XML parsing
+errors, unknown elements and attributes, wrong
+attribute values, wrong root element, wrong DTD,
+wrong public identifier and wrong child object.</li>
+<li>The gamgi object is again created and removed
+dynamically, when GAMGI starts and ends (as in
+GAMGI 0.0.1), instead of statically, as before.</li>
+<li>The last references to system disappeared
+from GAMGI code, replaced by gamgi. This avoids
+confusion with the system standard function and
+reinforces the concept of the whole program
+as a singleton, global, object, called gamgi.</li>
+<li>Improvements on gamgi_io_token.c.</li>
+<li>Descontinued some type definitions, to
+simplify things.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Complete code to import data and configuration
+XML files that follow the GML rules.</li>
+<li>Implement XML external general entities.</li>
+<li>Update the DTD defining GML: gamgi.dtd.</li>
+<li>Write code to export data and configuration
+XML files that follow the GML rules.</li>
+<li>Keep developing gtk_cell_link.</li>
+<li>Add more documentation: comments, headers, etc.</li>
+<li>Clean gamgi_mesa code.  </li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.08.4</div><div>&nbsp;</div>
+</div>
+
+<div class="contents">
+
+XML configuration files are mostly implemented and tested.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>GAMGI data and config files specifications,
+gamgi_data.dtd and gamgi_config.dtd, were improved.
+A default gamgi_config.xml configuration file was
+written.</li>
+<li>GAMGI can now read almost all the information that
+should be required in the XML-based configuration files,
+thanks to the expat library.</li>
+<li>The global information, in the gamgi structure,
+is now in a separate header, gamgi_global.h, in the
+global directory, together with gamgi_global_main.c.</li>
+<li>New functions added to gamgi_io_token.c.</li>
+<li>makefiles were considerably simplified.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Start working on gamgi_expat_import_data.</li>
+<li>Keep developing gtk_cell_link.</li>
+<li>Add more documentation: comments, headers, etc.</li>
+<li>Clean gamgi_mesa code. </li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.08.3</div><div>&nbsp;</div>
+</div>
+
+<div class="contents">
+
+The cell rules algorithm was extended to
+rhombus and sphere modes. XML DTDs for
+GAMGI data and configuration files were
+specified.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>The algorithm to fill cell nodes
+according to rules is now working for rhombus
+sphere modes. Thus all volume modes are now supported.</li>
+<li>XML document data type specifications (DTDs) for
+GAMGI data and config files have been developed:
+gamgi_data.dtd and gamgi_config.dtd.</li>
+<li>This is the first GAMGI version with gamgi_expat*
+functions integrated in the GAMGI code.</li>
+<li>makefiles were cleaned.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Write code to read XML config
+files and apply to GAMGI defaults.</li>
+<li>Develop gtk_cell_link.</li>
+<li>Add more documentation: comments, headers, etc.</li>
+<li>Clean gamgi_mesa code. </li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.08.2</div><div>&nbsp;</div>
+</div>
+
+<div class="contents">
+
+The algorithm to fill cell nodes according to rules is done.
+Work on the XML stuff has started. A small leap...
+
+<h3>What is new:</h3>
+
+<ul>
+<li>The <a href="http://sourceforge.net/projects/expat/">EXPAT</a>
+library was choosen to parse GAMGI XML files. Needless to say, this
+is a long term decision. EXPAT is a non-validating
+SAX-type parser, that powers Mozilla and Perl, among other high-profile
+projects. EXPAT was written in C, by James Clark, the main force
+pushing the XML technical comitee. EXPAT is widely considered as the
+fastest XML parser available so far and is distributed with a MIT
+license.  It is simple, fast, free and written in pure C. Exactly
+what the doctor said.</li>
+<li>Started working on a DTD for GAMGI.</li>
+<li>The algorithm to add or remove objects to cell
+nodes according to flexible filling rules is
+now implemented and apparently working well.
+A working gtk_cell_link is now just a matter of time.
+It is not done for Rhombus and Sphere volumes though.</li>
+<li>More code cleaning.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Add more documentation: comments, headers, etc.</li>
+<li>Clean gamgi_mesa code.</li>
+<li>Develop gtk_cell_link.</li>
+<li>Work on the XML stuff.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.08.1</div><div>&nbsp;</div>
+</div>
+
+<div class="contents">
+
+Data improvements. Bugs removed. Started gtk_cell_link.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>All enumerations and definitions now
+have a second prefix indicating the source
+directory where they are declared.</li>
+<li>Handling press_key_event signals was corrected, so now
+they work well with the command entry in the tools section.</li>
+<li>i) dialog box actions, ii) pick selections and
+iii) rotate, move, scale tool operations are now
+3 totally independent operations and work well
+together.</li>
+<li>gtk_cell_link was started.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Add documentation.</li>
+<li>Finish cleaning code.</li>
+<li>Continue writting gtk_cell_link.</li>
+<li>Start working on XML support.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI old</div><div>&nbsp;</div>
+</div>
+
+<div class="contents">
+
+Changelogs for older releases can be found here.
+
+<p/>
+
+<ul>
+<li><a href="changelogs07.html">GAMGI 0.07.18 - GAMGI 0.08</a></li>
+</ul>
+
+</div>
+
+<div id="bottom">
+<a href="../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

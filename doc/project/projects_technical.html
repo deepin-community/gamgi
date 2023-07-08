@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI project: Projects</title>
+<link rel="icon" type="image/png" href="../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Projects</h1>
+
+<div id="notebook">
+<ul>
+<li><a href="projects_scientific.html">Scientific</a></li>
+<li><span>Technical</span></li>
+<li><a href="projects_legal.html">Legal</a></li>
+</ul>
+</div>
+
+<div class="contents">
+
+These are medium and long-term projects, regarding
+technical topics, that we aim to implement futurely.
+
+<h3>Implementation of gamgi_engine_malloc and gamgi_engine_free</h3>
+For the sake of code control, independence and maintenance,
+GAMGI uses only pure AINSI C code for everything, except the
+graphics code, which uses only standard OpenGL calls (no Mesa 
+specific calls) and the user interface code that uses Glib/GDK/GTK
+calls. In particular, GAMGI uses only AINSI C in its inner engine,
+which means malloc and free.
+
+<p/>
+
+To improve memory management efficiency, avoiding to allocate
+many times small amounts of memory, which may waste time doing 
+these slow memory operations and produce unused chunks of memory,
+it would be important to allocate memory for several objects of
+each kind at once, keep them in a stack, when the stack is empty
+create more objects, usually the double, when the objects are freed,
+put them back in the stack, etc...
+
+<p/>
+
+<h3>Definition and implementation of a GAMGI scripting language</h3>
+Every single command handled by dialog windows and mouse actions
+should be emulated using only a command line scripting language.
+
+<p/>
+
+This is important, because it will allow us to describe entire
+working sessions in log files, so loading those files we will be able
+to recreate all the work done before, and changing the log files will 
+allow us to automatically create different working sessions.
+
+<h3>Implementation of GAMGI multi-tasking infrastructure</h3>
+In the future GAMGI must allow users to do more
+than one operation at a time. This is important
+when an operation takes too long to complete, 
+and in animation, for example.
+
+<p/>
+
+The solution is probably to use threads instead of multi-processes 
+or other multitasking techniques, but that must be carefully analysed first.
+
+<h3>Documentation available in Latex format</h3>
+Producing good documentation explaining not just how things
+work but also why they work that way should always rank high 
+in the list of priorities of any self-respecting computer package. 
+
+For a project run by volunteers, as GAMGI, this is even more critical, 
+because commercial books are generally not available and programmers 
+tend to prefer writing code than documentation. We believe
+that lack of documentation is a serious bug in a program and 
+major efforts should be done to avoid it. 
+
+<p/>
+
+GAMGI documentation is currently available only in XHTML
+format. We should have at least Latex and PS versions,
+created from a single master, using some of the free
+format converters currently available, in various stages 
+of development. Moreover, the documentation development and
+format translation could be controlled by makefiles, 
+exactly as code.
+
+<h3>GAMGI internationalization</h3>
+GAMGI is currently an english-only program. Although GAMGI is
+primarily a scientific tool, it can also be used to great advantage
+to teach and attract interest for such matters as chemistry, physics, 
+materials science, geology, etc. However, many of the potential students
+have only a marginal knowledge of the english language and it would
+be a shame it they couldn't use GAMGI due to their poor english 
+proficiency.
+
+<p/>
+
+There are two ways to handle this problem:
+<ol>
+<li>To prepare and maintain different GAMGI versions, 
+one for each language.</li>
+<li>To prepare and maintain a single GAMGI version, 
+with menu-driven options to allow the user to choose on-the-fly 
+which language to apply.</li>
+</ol>
+
+<p/>
+
+The first option is much easier, because different languages require 
+different space and even orientation (for example in arabic) to give
+the same information, and it is therefore tremendously difficult to prepare 
+dialog windows that fit all languages at once. For western-languages we
+could probably go with the second, more elegant solution, but for Chinese,
+Japanese, Arabic, etc. we feel that the first solution might be the most
+sensible.
+
+<p/>
+
+To support non-western languages, such as Chinese, Japanese and Arabic,
+GAMGI must understand Unicode, the international standard to represent
+characters for any kind of live or dead language. Unicode functionality 
+has been implemented by PANGO, a free GPL library, which will be used in
+GAMGI to represent all characters that are not described by the
+good old 7-bit ASCII standard.
+
+</div>
+
+<div id="bottom">
+<a href="../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

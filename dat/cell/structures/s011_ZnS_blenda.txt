@@ -1,0 +1,27 @@
+Structure 11
+Prototype: ZnS
+StrukturBericht / Pearson: B3 / cF8
+
+lattice parameters:
+ZnS   AlP   BeSe  SeZn
+5.406 5.451 5.070 5.667
+TeZn  GaP   AsGa  GaSb
+6.103 5.448 5.653 6.095
+InP   CdTe  AlAs
+5.869 6.481 5.662
+
+Radius:
+Zn: 0.600 (Shannon radius for charge +2 coordination 4)
+S:  1.840 (Shannon radius for charge -2 coordination 6: 4 not available)
+
+1. Building with space group (s011.xml):
+Group: 216
+
+Wyckoff positions:
+Zn 1c
+S  1a
+
+View:
+S: style solid, size 1.0, variancy 1.0, scale 0.3
+Zn: style solid, size 1.0, variancy 1.0, scale 0.3
+ZnS: style solid, method length, color 0.5,0.5,0.5 scale 0.5

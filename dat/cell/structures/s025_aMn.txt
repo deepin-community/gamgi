@@ -1,0 +1,25 @@
+Structure 25
+Prototype: alpha-Mn
+StrukturBericht / Pearson: A12 / cI58
+
+lattice parameters:
+Mn
+8.894
+
+Radius:
+Mn: 1.3655 (half-distance)
+
+1. Building with space group (s025.xml):
+217
+
+Wyckoff positions:
+1a
+4c, x = 0.317
+12g, x = 0.356, z = 0.42
+12g, x = 0.089, z = 0.278
+
+Cells 1 x 1 x 1
+
+View:
+Mn: style solid, size 1.0, variancy 1.0, scale 0.3
+MnMn: style solid, method length default, color 0.5,0.5,0.5 scale 0.3

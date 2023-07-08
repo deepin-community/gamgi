@@ -1,0 +1,8 @@
+<gml>
+<molecule name="Td">
+<atom element="H" x="0.0000" y="0.0000" z="1.000000"/>
+<atom element="H" x="-0.9428" y="0.0000" z="-0.333333"/>
+<atom element="H" x="0.4714" y="0.8165" z="-0.333333"/>
+<atom element="H" x="0.4714" y="-0.8165" z="-0.333333"/>
+</molecule>
+</gml>

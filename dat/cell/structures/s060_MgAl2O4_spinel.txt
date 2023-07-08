@@ -1,0 +1,42 @@
+Structure 60
+Prototype: MgAl2O4
+StrukturBericht / Pearson: H1_1 / cF56
+
+Lattice parameter:
+MgAl2O4  ZnAl2O4
+8.08     8.12
+Fe3O4    (Zn,Mn,Fe)(Fe,Mn)2O4
+8.4      8.42
+FeCr2O4
+8.36
+
+Radius:
+Mg 1.5895 (half-distance)
+Al 1.4315 (half-distance)
+O  0.6037 (half-distance)
+
+1. Building with space group (s060a.xml):
+Group: 227
+
+Wyckoff positions:
+Mg 2a
+Al 4d
+O 8e, x = 0.25
+
+Planes: (222), Start to End
+
+2. Building with conventional cell (s060b.xml):
+
+Change -0.25, -0.25, -0.25
+Planes: (008), Start to End
+
+3. Building with polytopes (s060c.xml):
+
+Change -0.25, -0.25, -0.25
+Mg tetrahedra, 8 (all)
+Al octahedra, 7 (inside)
+
+View:
+Mg,Al,O: style solid, size 0.5, variancy 0.0, scale 1.0
+Mg tetrahedra: color 0.54, 1.0, 0.0 (Mg color) 
+Al octahedra: color  0.75, 0.65, 0.65 (Al color)

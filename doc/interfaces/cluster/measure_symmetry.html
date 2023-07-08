@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Interfaces: Cluster Measure</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Cluster Measure</h1>
+
+<div id="notebook">
+<ul>
+<li><a href="measure_type.html">Type</a></li>
+<li><span>Symmetry</span></li>
+<li><a href="measure_voronoi.html">Voronoi</a></li>
+<li><a href="measure_tolerance.html">Tolerance</a></li>
+<li><a href="measure_view.html">View</a></li>
+</ul>
+</div>
+
+<div class="contents">
+            
+Select here the parameters to measure the point symmetry.
+
+<h3>Periodicity</h3>
+
+When the <b>No</b> option is chosen (the default), all elements
+of symmetry are taken into account, and the chemical
+point group is determined. When the <b>Yes</b> option
+is chosen, all elements of symmetry related with rotations
+of order different from 6, 4, 3, 2 are ignored. The reported
+crystallographic point group is thus the maximum point symmetry
+that could be achieved in the center of this aggregate, if it
+was in a periodic crystal.
+
+<p/>
+
+For example, a C5v chemical group becomes a Cs crystallographic
+point group because after discarding the C5 axis, only one
+of the five mirror planes can be considered as a true element
+of symmetry in a periodic system. A chemical Ih becomes a Th
+crystallographic group, because after discarding the C5 axes,
+the remaining planes and axes form five different sets of cubic
+Th symmetry, although only one can be considered at a time.
+
+<p/>
+
+Everytime the chemical group is found, the crystallographic
+group can also be determined. Usually this crystallographic group
+is not unique. For example, a D12h chemical group can be either
+a D4h or a D6h crystallographic group. GAMGI shows the
+various crystallographic groups that cover all the possible
+operations of symmetry, in sequence, with their symmetry
+operations and symmetry elements. In particular, chemical C0v
+becomes C4v or C6v, chemical D0h becomes D4h or D6h and chemical
+Kh becomes D4h or D6h or Oh crystallographic groups respectively.
+
+<h3>Tolerance</h3>
+
+The elements of symmetry of a cluster depend entirely of the
+tolerance applied to the operations of symmetry. GAMGI uses
+the same tolerance for all operations: the maximum distance
+that is tolerated between initial and transformed coordinates.
+
+<p/>
+
+GAMGI tries to find all the symmetry elements independently,
+and in general each of these elements requires a different
+tolerance. Thus, for a given tolerance, some elements
+may be recognized and others may go missing, resulting in
+an inconsistent set of symmetry elements. When this happens,
+the group is reported <b>Undefined</b>. The solution is to
+increase the tolerance (so valid elements might be found)
+or to decrease it (so fake elements might be discarded).
+
+<p/>
+
+When the transformed coordinates for a given symmetry element
+are closer than the <b>Initial</b> tolerance, GAMGI attempts
+to optimize the symmetry element, to get transformed coordinates
+closer than the <b>Final</b> tolerance. When the transformed
+coordinates do not pass the <b>Initial</b> tolerance or when
+the optimization fails, the attempted element is discarded.
+When the transformed coordinates pass the <b>Final</b> tolerance,
+the element is accepted.
+
+<p/>
+
+During optimization, GAMGI will never attempt to change the atoms,
+only the symmetry elements. To disable optimization, just set
+<b>Initial</b> equal to <b>Final</b> tolerance.
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

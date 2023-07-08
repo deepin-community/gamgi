@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Interfaces: Cell Create</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/board.css"/>
+</head>
+
+<body>
+
+<div class="board">
+<div>Align Translation</div><div>&nbsp;</div>
+</div>
+
+<div class="contents">
+
+A position in cell space is given by the coordinates of the
+three cell vectors. To convert to absolute space, the cell
+rotation, translation and zero node translation must be applied.
+
+A position in reference space is given by the coordinates of the 
+three reference vectors. To convert to absolute space, the reference
+rotation, translation and zero node translation must be applied.
+
+<p/>
+
+The alignement consists in translating the cell so the
+cell and the reference entered positions become the same.
+
+<h3>Cell</h3>
+
+The entries <b>x</b>, <b>y</b>, <b>z</b> indicate the coordinates
+of the three cell vectors for a given position. These coordinates 
+can be given in terms of <b>Conventional</b> or <b>Primitive</b> 
+vectors, using the <b>Vectors</b> menu.
+
+<h3>Reference</h3>
+
+The reference can be the current layer (the default) or another 
+cell. To select a cell as reference, press <b>Cell</b> and click 
+on its visual representation (or write its identification directly 
+on the enabled entry).
+
+The entries <b>x</b>, <b>y</b>, <b>z</b> indicate the coordinates of 
+the three reference vectors for a given position. When the reference 
+is a cell, these are the cell vectors. When the reference is the layer, 
+these vectors are the layer orthonormed axes.
+
+The reference coordinates can be given in terms of <b>Conventional</b>
+or <b>Primitive</b> vectors, using the <b>Vectors</b> menu.
+When the reference is the layer, only the option <b>Conventional</b>
+is available.
+
+<p/>
+
+Pressing <b>Ok</b> on the second level dialog, the <b>Align</b>
+information is saved but the actual translation is calculated only 
+after pressing <b>Ok</b> on the first level dialog, to ensure
+that changing later some cell parameters will not produce
+wrong results.
+
+<p/>
+
+To disable the <b>Align</b> information, open again the 
+second level dialog, which now shows the previously 
+entered data, and press <b>Cancel</b>.
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

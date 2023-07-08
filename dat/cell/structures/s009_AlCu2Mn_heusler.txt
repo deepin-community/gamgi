@@ -1,0 +1,38 @@
+Structure 9
+Prototype: AlCu2Mn (Heusler)
+StrukturBericht / Pearson: L2_1 / cF16
+
+lattice parameters:
+AlCu2Mn Cu2MnSb Cu2FeSn
+5.949   6.097   5.930
+AlCu2Hf AlNi2Ti GaMnNi2
+6.172   5.850      -
+Co2MnSn AlCo2Nb AlCo2Ta
+5.989   5.946   5.927
+
+Radius:
+Cu 1.2780 (half-distance)
+Al 1.4315 (half-distance)
+Mn 1.3655 (half-distance)
+
+1. Building with space group (s009a.xml):
+225
+
+Wyckoff positions:
+Cu 2c
+Al 1a
+Mn 1b
+
+2. Building with bcc-type cell (s9b.xml):
+Change: 0.25 0.25 0.25
+
+View:
+Cu: style solid, size 1.0, variancy 1.0, scale 0.2
+Al: style solid, size 1.0, variancy 1.0, scale 0.2
+Mn: style solid, size 1.0, variancy 1.0, scale 0.2
+CuMn: style solid, method length, color 0.5,0.5,0.5 scale 0.4
+
+Information:
+http://en.wikipedia.org/wiki/Heusler_alloy
+AlCu2Mn: TCurie = 357oC
+GaMnNi2: ferromagnetic shape memory alloys

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Formats: Introduction Language</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/board.css"/>
+</head>
+
+<body>
+
+<div class="board">
+<div>Introduction Language</div><div>&nbsp;</div>
+</div>
+
+<div class="contents">
+
+The native format to import and export both object and configuration data 
+in GAMGI is XML. The actual rules, including valid parameter names, ranges 
+of values and hierarchies, forms the so called GAMGI Markup Language, GML.
+
+<p/>
+
+GML supports elements (the GAMGI objects), written as <b>&lt;element>&lt;/element></b>, 
+organised in hierarchical order, so elements can contain other elements, and attributes 
+(their properties), written as <b>atribute="value"</b>. Empty elements, that contain no 
+other elements, can be written as <b>&lt;element/></b>.
+
+<p/>
+
+Attributes can appear only once for each element, but elements can appear as many times 
+as needed, except the root element, that contains all the other elements and has no 
+attributes. Usually the root element takes the name of the language, so in GAMGI it is 
+called <b>&lt;gml></b>.
+
+<h3>Good:</h3>
+
+<pre><b>
+&lt;gml>
+&lt;/gml></b> this is a perfectly fine GML file, though not very usefull<b>
+
+&lt;gml/></b> this is the simplest file that GAMGI accepts
+</pre>
+
+<h3>Bad:</h3>
+
+<pre><b>
+&lt;gamgi>
+&lt;/gamgi></b> the root element must be called gml<b>
+
+&lt;gml>
+  &lt;gml/></b> the root element must appear only once<b>
+&lt;/gml>
+</b></pre>  
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

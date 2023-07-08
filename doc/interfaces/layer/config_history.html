@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Interfaces: Layer Config</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Layer Config</h1>
+
+<div id="notebook">
+<ul>
+<li><a href="config_projection.html">Projection</a></li>
+<li><a href="config_position.html">Position</a></li>
+<li><span>History</span></li>
+</ul>
+</div>
+
+<div class="contents">
+
+Define here the maximum number of old states that can be saved for each layer.
+
+<h3>Undo, Save</h3>
+
+Set the maximum number of old states that can be saved in memory,
+using the <b>Undo</b> and <b>Save</b> mechanisms. Everytime this 
+number is exceeded, the oldest state is discarded forever.
+
+<p/>
+
+For each layer, GAMGI maintains a list of old states saved automatically
+when a discontinuous action takes place, that can be recovered with the 
+<b>Undo</b> mechanism.
+
+<p/>
+
+A discontinuous action occurs when a user presses <b>Ok</b>, clicks 
+over the ruler to rotate, move, scale an object, or in general when 
+a clear boundary can be defined between what existed before and after.
+
+<p/>
+
+Continuous actions occur when objects are moved, rotated, scaled,
+directly with the mouse, as parameters are changing almost continuously.
+If continuous actions were saved with <b>Undo</b>, in a few seconds all
+<b>Undo</b> levels would be filled up with almost equal states and old
+<b>Undo</b> states would be removed forever, turning the <b>Undo</b>
+mechanism much less useful. Moreover, continuous actions would be slow,
+because GAMGI would be saving things all the time.
+
+<p/>
+
+The <b>Save</b> mechanism works exactly as the <b>Undo</b> mechanism,
+except that it is fully controlled by the user, who decides when a layer
+should be saved, while the <b>Undo</b> mechanism works without any user
+intervention. With the <b>Save</b> mechanism, users can save any layer
+exactly when they wish (in particular after any discontinuous action),
+and control when old states are discarded, after exceeding the
+number of <b>Save</b> levels.
+
+<p/>
+
+The maximum number of <b>Undo</b> and <b>Save</b> levels does not affect 
+performance but the memory required to keep old states, for each layer, 
+for each window, can be significant, particularly for <b>Undo</b>, 
+where old states are saved automatically. Therefore the maximum 
+number of levels should be kept to relatively low values.
+
+<p/>
+
+Although <b>Save</b> and <b>Undo</b> work exactly in the same way and
+complement each other, they use totally independent resources.
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

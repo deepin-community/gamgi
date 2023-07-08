@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Interfaces: Cell Create</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/board.css"/>
+</head>
+
+<body>
+
+<div class="board">
+<div>Align Rotation</div><div>&nbsp;</div>
+</div>
+
+<div class="contents">
+
+The cell orientation is given by two vectors, normal to each other,
+defining an axes set. The reference orientation is given by two 
+vectors, normal to each other, defining an axes set.
+
+<p/>
+
+This alignment consists in rotating the cell, so the first cell 
+vector is aligned with the first reference vector, and the second 
+cell vector is aligned with the second reference vector.
+
+<h3>Cell</h3>
+
+The first line defines a vector normal to the plane indicated
+by entries <b>h</b>, <b>k</b>, <b>l</b>. The second line defines
+a vector parallel to the direction indicated by entries <b>u</b>, 
+<b>v</b>, <b>w</b>. The two vectors must be normal to each other,
+otherwise an error is shown. The two vectors are perpendicular
+when the Weiss law is obeyed: hu + kv + lw = 0.
+
+The <b>h</b>, <b>k</b>, <b>l</b> and <b>u</b>, <b>v</b>, <b>w</b>
+cell coordinates can be given in terms of <b>Conventional</b>
+or <b>Primitive</b> vectors, using the <b>Vectors</b> menu.
+
+<h3>Reference</h3>
+
+The reference can be the current layer (the default) or another 
+cell. To select a cell as reference, press <b>Cell</b> and click 
+on its visual representation (or write its identification directly 
+on the enabled entry).
+
+When the reference is a cell, the orientation is defined
+by a plane and a direction, or vice-versa. When the reference 
+is the layer, two directions must be entered, based on the layer 
+orthonormed axes.
+
+<p/>
+
+The first line defines a vector normal to the plane indicated
+by entries <b>h</b>, <b>k</b>, <b>l</b>, or parallel to the 
+direction indicated by entries <b>u</b>, <b>v</b>, <b>w</b>.
+
+The second line defines a vector normal to the plane indicated
+by entries <b>h</b>, <b>k</b>, <b>l</b>, or parallel to the 
+direction indicated by entries <b>u</b>, <b>v</b>, <b>w</b>.
+
+The <b>h</b>, <b>k</b>, <b>l</b> and <b>u</b>, <b>v</b>, <b>w</b> 
+reference coordinates can be given in terms of <b>Conventional</b> 
+or <b>Primitive</b> vectors, using the <b>Vectors</b> menu.
+When the reference is the layer, only the option <b>Conventional</b>
+is available.
+
+<p/>
+
+The two vectors must be normal to each other, otherwise an error
+is shown. When the reference is a cell, the Weiss law must be
+obeyed: hu + kv + lw = 0.
+
+When the reference is the layer, the layer axes are equivalent 
+to the axes of a cubic primitive lattice, where planes are 
+perpendicular to directions with the same indices, so one of 
+the two directions can be seen as representing a plane with 
+the same indices, thus the Weiss law must again be valid: 
+u1u2 + v1v2 + w1w2 = 0.
+
+<p/>
+
+Pressing <b>Ok</b> on the second level dialog, the <b>Align</b>
+information is saved but the actual rotation is calculated only 
+after pressing <b>Ok</b> on the first level dialog, to ensure
+that changing later some cell parameters will not produce
+wrong results.
+
+<p/>
+
+To disable the <b>Align</b> information, open again the 
+second level dialog, which now shows the previously 
+entered data, and press <b>Cancel</b>.
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

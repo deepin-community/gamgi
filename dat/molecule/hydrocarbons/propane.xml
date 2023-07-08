@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE gml SYSTEM "http://www.gamgi.org/dtd/gamgi.dtd">
+<gml>
+  <molecule name="propane">
+    <atom id="1" element="C" x="-0.9989" y="0.0340" z="0.8532"/>
+    <atom id="2" element="C" x="0.1651" y="0.9316" z="0.3925"/>
+    <atom id="3" element="C" x="1.1629" y="0.0974" z="-0.4324"/>
+    <atom id="4" element="H" x="-0.6181" y="-0.7629" z="1.4556"/>
+    <atom id="5" element="H" x="-1.6919" y="0.6146" z="1.4268"/>
+    <atom id="6" element="H" x="-1.4970" y="-0.3714" z="-0.0019"/>
+    <atom id="7" element="H" x="-0.2162" y="1.7294" z="-0.2096"/>
+    <atom id="8" element="H" x="0.6634" y="1.3380" z="1.2486"/>
+    <atom id="9" element="H" x="1.9712" y="0.7211" z="-0.7518"/>
+    <atom id="10" element="H" x="1.5442" y="-0.7003" z="0.1697"/>
+    <atom id="11" element="H" x="0.6652" y="-0.3083" z="-1.2890"/>
+    <bond parent1="1" parent2="2"/>
+    <bond parent1="1" parent2="4"/>
+    <bond parent1="1" parent2="5"/>
+    <bond parent1="1" parent2="6"/>
+    <bond parent1="2" parent2="3"/>
+    <bond parent1="2" parent2="7"/>
+    <bond parent1="2" parent2="8"/>
+    <bond parent1="3" parent2="9"/>
+    <bond parent1="3" parent2="10"/>
+    <bond parent1="3" parent2="11"/>
+  </molecule>
+</gml>

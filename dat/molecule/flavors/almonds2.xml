@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE gml SYSTEM "http://www.gamgi.org/dtd/gamgi.dtd">
+<gml>
+  <molecule name="prussic_acid">
+    <atom id="1" element="C" x="-0.0531" y="-0.0014" z="0.0007"/>
+    <atom id="2" element="N" x="1.0818" y="-0.0023" z="-0.2160"/>
+    <atom id="3" element="H" x="-1.1038" y="-0.0004" z="0.2013"/>
+    <bond parent1="1" parent2="3"/>
+    <bond parent1="1" parent2="2" order="3.00"/>
+  </molecule>
+</gml>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE gml SYSTEM "http://www.gamgi.org/dtd/gamgi.dtd">
+<gml>
+  <layer perspective="no" scale="0.955">
+    <light ambient_r="0.500" ambient_g="0.500" ambient_b="0.500"
+    diffuse_r="0.400" diffuse_g="0.400" diffuse_b="0.400" specular_r="0.300"
+    specular_g="0.300" specular_b="0.300" direction_x="0.0000"
+    direction_y="0.0000" direction_z="-1.0000"/>
+    <cell group="139" a="3.8360" c="8.5790" x="-2.5940" y="-4.4290" z="4.9747"
+    e1="80.59" e2="90.00" e3="256.21" axes="yes">
+      <atom element="Al" x="-2.5940" y="-0.1972" z="5.6760" style="solid"/>
+      <atom element="Al" x="1.1314" y="-0.3467" z="6.5781" style="solid"/>
+      <atom element="Al" x="-1.6796" y="0.4119" z="2.0007" style="solid"/>
+      <atom element="Al" x="2.0458" y="0.2624" z="2.9028" style="solid"/>
+      <atom element="Al" x="-0.2741" y="-4.1992" z="3.5881" style="solid"/>
+      <atom element="Al" x="-0.2741" y="4.2644" z="4.9907" style="solid"/>
+      <atom element="Al" x="-0.7313" y="1.8439" z="6.4777" style="solid"/>
+      <atom element="Al" x="-2.1368" y="2.2232" z="4.1890" style="solid"/>
+      <atom element="Al" x="1.5886" y="2.0737" z="5.0911" style="solid"/>
+      <atom element="Al" x="0.1831" y="2.4530" z="2.8024" style="solid"/>
+      <atom element="Al" x="-0.7313" y="-2.3879" z="5.7764" style="solid"/>
+      <atom element="Al" x="-2.1368" y="-2.0086" z="3.4877" style="solid"/>
+      <atom element="Al" x="1.5886" y="-2.1581" z="4.3898" style="solid"/>
+      <atom element="Al" x="0.1831" y="-1.7788" z="2.1011" style="solid"/>
+      <atom element="Ti" x="-2.5940" y="-4.4290" z="4.9747" style="solid"/>
+      <atom element="Ti" x="1.1314" y="-4.5785" z="5.8768" style="solid"/>
+      <atom element="Ti" x="-1.6796" y="-3.8199" z="1.2994" style="solid"/>
+      <atom element="Ti" x="2.0458" y="-3.9694" z="2.2015" style="solid"/>
+      <atom element="Ti" x="-2.5940" y="4.0346" z="6.3774" style="solid"/>
+      <atom element="Ti" x="1.1314" y="3.8851" z="7.2794" style="solid"/>
+      <atom element="Ti" x="-1.6796" y="4.6437" z="2.7021" style="solid"/>
+      <atom element="Ti" x="2.0458" y="4.4942" z="3.6041" style="solid"/>
+      <atom element="Ti" x="-0.2741" y="0.0326" z="4.2894" style="solid"/>
+    </cell>
+  </layer>
+</gml>

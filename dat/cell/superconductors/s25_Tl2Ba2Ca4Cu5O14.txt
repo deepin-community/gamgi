@@ -1,0 +1,38 @@
+Superconductor (Tc = 105 K): Tl2Ba2Ca4Cu5O14
+Structure: 2245
+
+Space group: 139
+
+Lattice parameters:
+3.85 48.2
+
+Wyckoff positions:
+Ca 8m, x = 0.5 z = 0.0320
+Ca 8m, x = 0.5 z = 0.0960
+Tl 2e, z = 0.2250
+Ba 8m, x = 0.5 z = 0.1680
+Cu 1a
+Cu 2e, z = 0.0640
+Cu 2e, z = 0.1280
+O 2c
+O 4g, z = 0.0640
+O 4g, z = 0.1280
+O 2e, z = 0.1680
+O 8m, x = 0.5 z = 0.2250
+
+1. with Cell (s25a.xml):
+Bond: Color 0.5,0.5,0.5, Scale 0.4
+
+2. with Polytopes (s25b.xml):
+Cells: 2 x 2 x 2
+Neighbours: O
+Number: 5, 4
+
+References:
+H. Shaked, P.M. Keane, J.C. Rodriguez, F.F. Owen, R.L. Hitterman,
+J.D. Jorgensen, Crystal structures of the High-Tc Superconducting
+Copper-Oxides, Physica C, Elsevier Science, Amsterdam, 1994
+(Errata: Tl and O5 are swapped)
+
+S. Nakajima, M. Kikuchi, Y. Syono, T. Oku, D. Shindo, K. Hiraga,
+N. Kobayashi, H. Iwasaki, and Y. Muto, Physica C 158, 471 (1989)

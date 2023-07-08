@@ -1,0 +1,9 @@
+Document: gamgi
+Title: The gamgi Manual
+Author: Carlos Pereira
+Abstract: construct, view and analyse atomic structures
+Section: Science/Chemistry
+
+Format: HTML
+Index: /usr/share/doc/gamgi-doc/doc/index.shtml
+Files: /usr/share/doc/gamgi-doc/doc/*

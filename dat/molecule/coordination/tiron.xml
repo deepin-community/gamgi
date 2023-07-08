@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE gml SYSTEM "http://www.gamgi.org/dtd/gamgi.dtd">
+<gml>
+  <molecule name="tiron" scale="1.040">
+    <atom id="1" element="S" x="3.2520" y="0.3433" z="-0.8146"/>
+    <atom id="2" element="O" x="3.3896" y="1.0574" z="-2.0510"/>
+    <atom id="3" element="O" x="4.0779" y="-0.7912" z="-0.5873"/>
+    <atom id="4" element="O" x="3.6795" y="1.3147" z="0.2941"/>
+    <atom id="5" name="H" element="Na" x="2.5157" y="3.3452" z="0.0807"/>
+    <atom id="6" element="S" x="-2.0395" y="1.7531" z="-1.9737"/>
+    <atom id="7" element="O" x="-3.0354" y="0.7347" z="-1.8019"/>
+    <atom id="8" element="O" x="-1.4941" y="1.9615" z="-3.2698"/>
+    <atom id="9" element="O" x="-2.2762" y="2.9674" z="-1.0658"/>
+    <atom id="10" name="H" element="Na" x="-2.9327" y="2.2581" z="1.0763"/>
+    <atom id="11" element="H" x="-1.5129" y="-2.3153" z="1.6947"/>
+    <atom id="12" element="C" x="1.4506" y="0.0988" z="-0.5501"/>
+    <atom id="13" element="C" x="0.5394" y="0.8907" z="-1.2493"/>
+    <atom id="14" element="C" x="-0.8325" y="0.7148" z="-1.0573"/>
+    <atom id="15" element="C" x="-1.2485" y="-0.2674" z="-0.1541"/>
+    <atom id="16" element="C" x="-0.3526" y="-1.0716" z="0.5567"/>
+    <atom id="17" element="C" x="1.0218" y="-0.8802" z="0.3504"/>
+    <atom id="18" element="O" x="1.9162" y="-1.6496" z="1.0296"/>
+    <atom id="19" element="O" x="-0.7845" y="-2.0218" z="1.4311"/>
+    <atom id="20" element="H" x="0.9115" y="1.6566" z="-1.9475"/>
+    <atom id="21" element="H" x="-2.3301" y="-0.4142" z="0.0048"/>
+    <atom id="22" element="H" x="1.3942" y="-2.2240" z="1.6149"/>
+    <bond parent1="1" parent2="2" order="2.00"/>
+    <bond parent1="1" parent2="3" order="2.00"/>
+    <bond parent1="1" parent2="4"/>
+    <bond parent1="1" parent2="12"/>
+    <bond name="OH" parent1="4" parent2="5"/>
+    <bond parent1="6" parent2="7" order="2.00"/>
+    <bond parent1="6" parent2="8" order="2.00"/>
+    <bond parent1="6" parent2="9"/>
+    <bond parent1="6" parent2="14"/>
+    <bond name="OH" parent1="9" parent2="10"/>
+    <bond parent1="11" parent2="19"/>
+    <bond parent1="12" parent2="13" order="1.50"/>
+    <bond parent1="12" parent2="17" order="1.50"/>
+    <bond parent1="13" parent2="14" order="1.50"/>
+    <bond parent1="13" parent2="20"/>
+    <bond parent1="14" parent2="15" order="1.50"/>
+    <bond parent1="15" parent2="16" order="1.50"/>
+    <bond parent1="15" parent2="21"/>
+    <bond parent1="16" parent2="17" order="1.50"/>
+    <bond parent1="16" parent2="19"/>
+    <bond parent1="17" parent2="18"/>
+    <bond parent1="18" parent2="22"/>
+  </molecule>
+</gml>

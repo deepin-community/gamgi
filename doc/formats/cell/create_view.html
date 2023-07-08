@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Formats: Cell Create</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Cell Create</h1>
+
+<div id="notebook">
+<ul>
+<li><a href="create_symmetry.html">Symmetry</a></li>
+<li><a href="create_volume.html">Volume</a></li>
+<li><a href="create_position.html">Position</a></li>
+<li><a href="create_origin.html">Origin</a></li>
+<li><span>View</span></li>
+</ul>
+</div>
+
+<div class="contents">
+
+<h3>faces</h3>
+
+Controls the visual representation of the lattice faces. In <b>wired</b> 
+mode, the lattice faces are represented by wired lines connecting the 
+vertices.  In <b>solid</b> mode, the lattice faces are represented by 
+solid polygons, that users can see from the outside or from the inside.
+
+<p/>
+
+When the selected <b>type</b> is <b>rhombus</b> or <b>sphere</b>, 
+the cell must be represented in <b>wired</b> mode, otherwise the 
+actual lattice would be hidden by the filtering volume. When
+<b>type</b> is <b>projection</b>, faces cannot be represented.
+
+The cell object must always have a visual representation, so
+at least one of the lattice components, <b>faces</b>, <b>nodes</b>
+and <b>borders</b> must be visible.
+
+<pre>
+Example: <b>&lt;cell ... faces="no"/></b> (default)
+Allowed values: <b>yes</b>, <b>no</b> (optional)
+</pre>
+
+<h3>nodes</h3>
+
+Controls whether the lattice nodes are visible or not. When 
+<b>type</b> is <b>projection</b>, nodes cannot be represented.
+
+The cell object must always have a visual representation, so
+at least one of the lattice components, <b>faces</b>, <b>nodes</b>
+and <b>borders</b> must be visible.
+
+<pre>
+Example: <b>&lt;cell ... nodes="yes"/></b> (default)
+Allowed values: <b>yes</b>, <b>no</b> (optional)
+</pre>
+
+<h3>borders</h3>
+
+Controls the visual representation of the cell borders. When <b>borders</b>
+is <b>none</b>, no borders are represented in any cell representation. 
+When <b>borders</b> is <b>edges</b>, only the outer line contours are shown. 
+The boundaries between cells are hidden, as long as they are in the same 
+plane, independently of the lattice parameters. When <b>borders</b> is 
+<b>faces</b>, all lines are shown, except those inside the volume 
+representation, making it easier to see the cell contents. Selecting 
+the option <b>all</b>, all border lines become visible, including those 
+inside the cell. 
+
+<p/>
+
+The <b>faces</b> and <b>all</b> options are disabled when <b>type</b> is
+set to <b>rhombus</b> or <b>sphere</b> filtering modes. The <b>all</b> option 
+is disabled when <b>faces</b> is set to <b>yes</b>, because in solid mode the 
+inner borders cannot be seen from the outside and make it very difficult to 
+analyze something from the inside. When <b>type</b> is <b>projection</b>, the 
+borders option is always <b>edges</b>, meaning the projection circumpherence.
+  
+The cell object must always have a visual representation, so
+at least one of the lattice components, <b>faces</b>, <b>nodes</b>
+and <b>borders</b> must be visible.
+
+<pre>
+Example: <b>&lt;cell ... borders="all"/></b> (default)
+Allowed values: <b>all</b>, <b>faces</b>, <b>edges</b>, <b>none</b> (optional)
+</pre>
+
+<h3>red, green, blue</h3>
+
+Set the cell color, between black (0.0, 0.0, 0.0) and white (1.0, 1.0, 1.0). 
+When the cell is shown in wired mode, this color is used to render the cell 
+lattice framework. When the cell is shown in solid mode, faces are rendered 
+using this color, and wired boundaries are rendered using the current layer 
+background color.
+
+<pre>
+Example: <b>&lt;cell ... red="1.0" green="1.0" blue="1.0"/></b> (default)
+(defined in <b>GAMGI_MESA_CELL_R</b>, <b>GAMGI_MESA_CELL_G</b>
+and <b>GAMGI_MESA_CELL_B</b>)
+Allowed values: <b>0.0</b> - <b>1.0</b> (optional, coupled)
+</pre>
+
+<h3>scale</h3>
+
+Change the cell size, including its child objects. Cell objects are
+scaled around the cell center. The visual representation of an object
+is always scaled by its own scale factor multiplied by the scale factor
+of all its parent objects until layer, inclusive.
+
+<pre>
+Example: <b>&lt;cell ... scale="1.0"/></b> (default)
+(defined in <b>GAMGI_MESA_SCALE</b>)
+Allowed values: positive real (optional)
+</pre>
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

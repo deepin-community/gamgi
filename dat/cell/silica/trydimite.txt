@@ -1,0 +1,21 @@
+SiO2 - Trydimite (beta)
+
+Lattice parameters:
+5.03 8.22
+
+Radius:
+Si 1.1760 (half-distance)
+O: 0.6037 (half-distance)
+
+Space group: 194
+
+Wyckoff positions:
+Si 4f, z = 0.44
+O 2c
+O 6g
+
+Cells: 2 x 2 x 2
+Cutoff: Nodes
+Polytopes: Neighbours 4
+
+Source: inst.eecs.berkeley.edu/~ee230/sp04/hw/hw2.pdf

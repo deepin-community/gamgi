@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE gml SYSTEM "http://www.gamgi.org/dtd/gamgi.dtd">
+<gml>
+  <molecule name="pentane">
+    <atom id="1" element="C" x="-2.3008" y="0.1370" z="-0.3422"/>
+    <atom id="2" element="C" x="-0.9387" y="0.4520" z="0.3051"/>
+    <atom id="3" element="C" x="0.1907" y="0.1313" z="-0.6917"/>
+    <atom id="4" element="C" x="1.5518" y="0.4467" z="-0.0453"/>
+    <atom id="5" element="H" x="-2.3399" y="-0.8996" z="-0.6034"/>
+    <atom id="6" element="H" x="-3.0855" y="0.3604" z="0.3511"/>
+    <atom id="7" element="H" x="-2.4235" y="0.7317" z="-1.2223"/>
+    <atom id="8" element="H" x="-0.8997" y="1.4894" z="0.5657"/>
+    <atom id="9" element="H" x="-0.8156" y="-0.1419" z="1.1863"/>
+    <atom id="10" element="H" x="0.1516" y="-0.9053" z="-0.9530"/>
+    <atom id="11" element="H" x="0.0685" y="0.7256" z="-1.5726"/>
+    <atom id="12" element="H" x="1.6773" y="-0.1585" z="0.8526"/>
+    <atom id="13" element="H" x="1.5923" y="1.5035" z="0.2209"/>
+    <atom id="14" element="C" x="2.6807" y="0.1264" z="-1.0414"/>
+    <atom id="15" element="H" x="2.5562" y="0.7313" z="-1.9384"/>
+    <atom id="16" element="H" x="2.6410" y="-0.9299" z="-1.3073"/>
+    <atom id="17" element="H" x="3.6440" y="0.3488" z="-0.5831"/>
+    <bond parent1="1" parent2="2"/>
+    <bond parent1="1" parent2="5"/>
+    <bond parent1="1" parent2="6"/>
+    <bond parent1="1" parent2="7"/>
+    <bond parent1="2" parent2="3"/>
+    <bond parent1="2" parent2="8"/>
+    <bond parent1="2" parent2="9"/>
+    <bond parent1="3" parent2="4"/>
+    <bond parent1="3" parent2="10"/>
+    <bond parent1="3" parent2="11"/>
+    <bond parent1="4" parent2="12"/>
+    <bond parent1="4" parent2="13"/>
+    <bond parent1="4" parent2="14"/>
+    <bond parent1="14" parent2="15"/>
+    <bond parent1="14" parent2="16"/>
+    <bond parent1="14" parent2="17"/>
+  </molecule>
+</gml>

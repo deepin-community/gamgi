@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Interfaces: Orbital Create</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Orbital Create</h1>
+
+<div id="notebook">
+<ul>
+<li><a href="create_type.html">Type</a></li>
+<li><a href="create_scope.html">Scope</a></li>
+<li><span>Volume</span></li>
+<li><a href="create_position.html">Position</a></li>
+<li><a href="create_view.html">View</a></li>
+</ul>
+</div>
+
+<div class="contents">
+
+Set here how the volume representation of an orbital.
+
+<h3>Phase</h3>
+
+When <b>Phase</b> is switched on (the default), the orbital is
+represented with two colors, to distinguish places where the wave
+function is positive and negative. When <b>Phase</b> is switched off,
+the whole orbital is represented with just one color.
+
+<h3>Frame</h3>
+
+When <b>Frame</b> is switched on (the default), a cubic frame
+is shown around the orbital, with a edge length equal to twice
+the sampling <b>Radius</b> defined in the <b>Scope</b> page.
+When <b>Frame</b> is switched off, no frame is shown.
+
+<h3>Octants</h3>
+
+Often it is useful to show only parts of the orbital.
+In GAMGI each orbital is divided in 8 octants, four above
+the xy plane, marked as positive, and four below, marked
+as negative. The four octants, above and below, are numbered
+increasing in a counter-clockwise pattern, as usual in trigonometry.
+To set which orbital octants should be represented,
+switch on / off each of the eight octant buttons.
+By default all octants are shown.
+
+<h3>Axes</h3>
+
+When <b>Axes</b> is set to <b>Radius</b>, axes are shown
+with the radius length (when <b>Frame</b> is disabled) or
+the diameter length (when <b>Frame</b> is enabled). When
+<b>Axes</b> is set to <b>Bohr</b>, axes are shown with
+the length of Bohr first radius. When <b>Axes</b> is set
+to <b>Unit</b>, axes are shown with a unit length. When
+<b>Axes</b> is set to <b>None</b>, no axes are shown
+(the default). 
+
+<p/>
+
+When <b>Frame</b> is enabled (the default), axes are positioned
+along the frame edges, starting from the xyz lower corner. When
+<b>Frame</b> is disabled, axes start from the orbital center.
+
+<p/>
+
+The options <b>Bohr</b> and <b>Unit</b> are useful only for
+small orbitals, otherwise the axes are barely visible.
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

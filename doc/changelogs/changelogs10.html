@@ -1,0 +1,1050 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Changelogs: GAMGI 0.10</title>
+<link rel="icon" type="image/png" href="../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../css/board.css"/>
+</head>
+
+<body>
+
+<div class="board">
+<div>GAMGI 0.11</div><div>8th June 2005</div>
+</div>
+
+<div class="contents">
+
+Completed the conversion from chemical to crystallographic 
+point groups of symmetry, thus ending the 0.10 series.
+Major achievements in this series: implemented the 230 space groups 
+of symmetry, 3D extruded Truetype fonts, reciprocal lattice, 
+stereographic projection, radical Voronoi tesselation, conversion 
+from chemical to crystallographic point symmetry.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Cleaned the m,C2 sort functions in gamgi_chem_symmetry.c.</li>
+<li>When the point group is Undefined, in Periodic (restricted) mode,
+the elements with impossible rotation orders (not 6, 4, 3, 2) are 
+now discarded. All other elements are shown (even if they are 
+notoriously incompatible with periodicity, as for example too many
+mirror planes).</li>
+<li>Updated Molecule->Measure and Molecule->Measure->Symmetry
+Help documentation, regarding chemical and crystallographic point 
+groups.</li>
+<li>Converted chemical Ih,I to crystallographic Th,T point groups:
+there are 5 sets of axes/planes to choose from when converting 
+icosahedral to cubic groups.</li>
+<li>Cleaned the code to convert chemical to 
+crystallographic point groups, except I,Ih groups.</li>
+<li>Removed an error when converting Dnd chemical to
+crystallographic point groups: C2h exists when n is 
+odd and D2 exists when n is even.</li>
+<li>Converted Dnd chemical groups to Crystallographic 
+Dnd, C6v, C4v, C3v, D6, D4, D3, S6, S4, Ci, Cs and Ci.</li>
+<li>Redesigned the chemical to crystallographic conversion 
+code. It is much simpler, solid and easier to maintain, now.</li>
+<li>Added Reduced International notation to identify point 
+groups when applying crystallographic restrictions.</li>
+<li>Added code to sort m, C2 elements oriented along the main 
+direction.</li>
+<li>Added T, Th, Oh building routines (to convert I, Ih, Kh 
+chemical groups).</li>
+<li>Chemical or Crystallographic point symmetry can now be selected 
+in the Molecule->Measure dialog.</li>
+<li>More cleaning in the code converting chemical to crystallographic
+point groups.</li>
+<li>Converted chemical Dnh and Cnh to crystallographic (Dnh, C2v) and 
+(Cnh, Cs) point groups, respectively. Tested against structures with 
+higher rotation orders, written automatically, such as D30h and C30h. 
+Added the XML files and the building utility to dat/.</li>
+<li>We need to guarantee that, when they exist, the first plane is the 
+horizontal plane and the first C2 axis is the vertical C2 axis,
+so the conversion between chemical and crystallographic point
+symmetry produces proper geometry for all symmetry elements.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Add Plane->Modify and Direction->Modify functionality.</li>
+<li>Replace set/get_data functions by structures
+defined in gtk/gamgi_object.h headers.</li>
+<li>Add Object->Copy dialogs with basic copy functionality.</li>
+<li>Add Contents and Container options in Object->Remove dialogs.</li>
+<li>Improve Move and Rotate interactive usability.</li>
+<li>Implement dynamic text objects, to measure distances,
+angles, etc. on real time.</li>
+<li>Implement global selection, including global picking
+algorithms and selection dialogs that include all the
+selection methods.</li>
+<li>Implement multiple object picking, including a
+dynamic frame with moving ants and dragging anchors,
+to select multiple objects and images from the screen.</li>
+<li>Review the entire GAMGI code, file by file.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.10.12</div><div>22th May 2005</div>
+</div>
+
+<div class="contents">
+
+Implemented the so-called Radical Voronoi Tesselation,
+where different polyhedra have different weights (given
+by the atomic radius) and added anisotropy tensor results.
+Improved the way area/node is handled in non-Miller planes.
+Improved the point group symmetry code, and started converting
+unrestricted (chemical) to restricted (crystallographic)
+point group information in non-periodic structures.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Wrote utilities to automatically create molecule files 
+with arbitrarily high orders, for Cn, Dn, Cnv, Sn groups.</li>
+<li>Tested for chemical and crystalographic groups, 
+for S10, S12, S14, S16, S18, S20, S22, S24, S30.</li>
+<li>Conversion from chemical Cnv and Sn to crystallographic
+Cnv, Sn, Cn and Ci point groups is done.</li>
+<li>Tested symmetry operations for C12, C24 and D12, D24
+groups. Added C12.xml, C24.xml and D12.xml, D24.xml examples 
+to dat/molecule/symmetry.</li>
+<li>When 6 and 4 axes are both present in the chemical group, 
+the crystallographic group can have as main order 4 or 6. 
+Done for Cn and Dn groups.</li>
+<li>Conversion from chemical Cnv and Dn to
+crystallographic Cnv, Dn, Cs and C2 point groups is done.</li>
+<li>Conversion from chemical to crystallographic Cn 
+point group is done.</li>
+<li>Conversion from chemical Coov, Dooh and Kh to 
+crystallographic C4v/C6v and D4h/D6h point groups is 
+done: elegant and solid.</li>
+<li>Improved the point symmetry code, in order to implement
+restricted (crystallographic) point group symmetry.</li>
+<li>Simplified primitive reciprocal lattice colors: (0.5, 0.5, 0.5).
+It's simple, reliable, and almost always a good choice.</li>
+<li>When creating (Cell->Measure) the reciprocal of a centered 
+lattice, with a conventional volume, users can now choose to 
+represent also the reciprocal of the corresponding primitive 
+lattice.</li>
+<li>Added screenshots to www.gamgi.org, showing stereographic 
+projections and reciprocal lattices.</li>
+<li>Updated cell_create.html, cell_modify.html and plane_measure.html 
+documentation.</li>
+<li>Cleaned the tutorial code: the names of the tutorial functions
+are now independent of their order, so this can be changed, and 
+new tutorials added in any ranking position, without conflicts.</li>
+<li>Added a new tutorial showing how to build a crystalline cell of 
+Orthorhombic Polyethylene, using space group and Wyckoff positions 
+data.</li>
+<li>Updated the tutorial on Directional,Positional,Spot Lights.</li>
+<li>Voronoi tesselation: added a variancy parameter in the
+Cluster->Measure dialog to control the partition weight scaling.</li>
+<li>Voronoi tesselation: the radical tesselation, with different 
+weigths for different polyhedra (defined by the atomic radius)
+seems to be working fine.</li>
+<li>Cleaned Voronoi code and added atomic radius, 
+in preparation for Radical Tesselation.</li>
+<li>For planes with indices higher than Miller, the
+area/node now gives an error message. For planes with Miller
+indices or below, the area/node for Miller planes is shown.</li>
+<li>Cleaned Voronoi code: lists of face vertices can be 
+made cyclic now. Simplified static_face_orientate. Removed 
+redundant static_angle.</li>
+<li>Voronoi tesselation: the system tensor anisotropy and the 
+polyhedron scalar anisotropy are now calculated. Cleaned code.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Add Plane->Modify and Direction->Modify functionality.</li>
+<li>Replace set/get_data functions by structures
+defined in gtk/gamgi_object.h headers.</li>
+<li>Add Object->Copy dialogs with basic copy functionality.</li>
+<li>Add Contents and Container options in Object->Remove dialogs.</li>
+<li>Improve Move and Rotate interactive usability.</li>
+<li>Implement dynamic text objects, to measure distances,
+angles, etc. on real time.</li>
+<li>Implement global selection, including global picking
+algorithms and selection dialogs that include all the
+selection methods.</li>
+<li>Implement multiple object picking, including a
+dynamic frame with moving ants and dragging anchors,
+to select multiple objects and images from the screen.</li>
+<li>Review the entire GAMGI code, file by file.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.10.11</div><div>6th April 2005</div>
+</div>
+
+<div class="contents">
+
+Improved the Voronoi Tesselation code, the Reciprocal Lattice code,
+the Stereographic Projection code, simplified the
+paths to get documentation, data and source files.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Redesigned the reciprocal lattice code, to handle simultaneously 
+the primitive lattice in centered lattices, and completed the special 
+cases: hR and tI.</li>
+<li>Cleaned gamgi_mesa.h.</li>
+<li>Increased slightly the point size used to draw cell
+nodes, so these are still visible when another cell is
+present.</li>
+<li>Found and removed a bug in Cell->Measure: the Gtk error 
+dialog did not show up when an error was found. Some code
+automatically removed the task AND the message dialog
+without checking for errors.</li>
+<li>When transforming a direct into a reciprocal lattice, 
+when the direct lattice is centered, the corresponding 
+primitive lattice can now be also transformed.</li>
+<li>Updated documentation and data in http://www.gamgi.org/
+and ftp://ftp.gamgi.org/gamgi/.</li>
+<li>Improved name handling for planes and directions in
+gamgi_expat_export_object.c.</li>
+<li>Corrected a little bug in gamgi_expat_export_object.c:
+plane->pole and plane->trace were compared to FALSE, not TRUE.</li>
+<li>Improved name and error handling for Planes and Directions
+in gamgi_expat_import_object.c.</li>
+<li>Stereographic Projection: added new pole symbols (masks) for
+planes and directions, so when they are in the same spot, planes
+and directions can still be seen (and measured), even if they 
+use the same color.</li>
+<li>Voronoi tesselation: face angles are now measured.</li>
+<li>Removed a bug in Direction->Measure and Plane->Measure:
+in some cases (Plane-Direction and Direction-Plane angles)
+X flushing/synchronization was not done properly: now
+an expose event is triggered immediately after scanning 
+for an object in the back buffer.</li>
+<li>Changed the Stereographic Projection, so now only the
+planes and directions that are above can be seen.</li>
+<li>Improved website documentation about Gamgi installation.</li>
+<li>Improved error detection in Atom->Measure, Direction->Measure, 
+Plane->measure dialogs.</li>
+<li>Sections of the GAMGI website which are not related with 
+documentation (like screenshot images), are not included anymore 
+in the doc/ tree, resulting in much smaller documentation tarballs.</li>
+<li>The paths to documentation files are much shorter and simpler 
+now. This is valid for local files, that come with the distribution, 
+and files available from http://www.gamgi.org/ and ftp://ftp.gamgi.org/.
+</li>
+<li>Rotate,Move,Scale now also works when the selected object is Window, 
+updating all layers in the window, both in Axes and Objects mode. </li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Add Plane->Modify and Direction->Modify functionality.</li>
+<li>Replace set/get_data functions by structures
+defined in gtk/gamgi_object.h headers.</li>
+<li>Add Object->Copy dialogs with basic copy functionality.</li>
+<li>Add Contents and Container options in Object->Remove dialogs.</li>
+<li>Improve Move and Rotate interactive usability.</li>
+<li>Implement dynamic text objects, to measure distances,
+angles, etc. on real time.</li>
+<li>Implement global selection, including global picking
+algorithms and selection dialogs that include all the
+selection methods.</li>
+<li>Implement multiple object picking, including a
+dynamic frame with moving ants and dragging anchors,
+to select multiple objects and images from the screen.</li>
+<li>Review the entire GAMGI code, file by file.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.10.10</div><div>8th March 2005</div>
+</div>
+
+<div class="contents">
+
+Created new dialogs Atom->Measure, Plane->Measure, Direction->Measure.
+Several new properties involving angles, lengths, areas can now
+be measured. Crystallographic planes,directions can now be 
+imported,exported to XML files.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Distances between an atom and a 2-atom direction, 
+and an atom and a 3-atom plane can now be measured.</li>
+<li>Distances between an atom and a crystallographic direction, 
+and an atom and a crystallographic plane can now be measured.</li>
+<li>Distances between nodes in crystallographic directions, 
+linear and planar node densities can now be measured.</li>
+<li>Angles between crystallographic planes, directions 
+and planes with directions can now be measured.</li>
+<li>Implemented the Atom->Measure dialog with the new GUI rules 
+and removed the Group->Measure dialog, replaced by Atom->Measure.</li>
+<li>Improved and cleaned gamgi_gtk_plane_measure.c and
+gamgi_gtk_direction_measure.c, so now the dialogs Plane->Measure 
+and Direction->Measure are much more user-friendly.</li>
+<li>Implemented the new Plane->Measure dialog.</li>
+<li>Designed and implemented the Direction->Measure dialog.</li>
+<li>Improved the whole GUI strategy to handle measuring properties.</li>
+<li>Plane, Direction objects can now be imported from XML files.</li>
+<li>Updated documentation for Cell->Measure and Plane->Measure.</li>
+<li>Plane, Direction objects can now be exported to XML files.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Add Plane->Modify and Direction->Modify functionality.</li>
+<li>Replace set/get_data functions by structures
+defined in gtk/gamgi_object.h headers.</li>
+<li>Add Object->Copy dialogs with basic copy functionality.</li>
+<li>Add Contents and Container options in Object->Remove dialogs.</li>
+<li>Improve Move and Rotate interactive usability.</li>
+<li>Implement dynamic text objects, to measure distances,
+angles, etc. on real time.</li>
+<li>Implement global selection, including global picking
+algorithms and selection dialogs that include all the
+selection methods.</li>
+<li>Implement multiple object picking, including a
+dynamic frame with moving ants and dragging anchors,
+to select multiple objects and images from the screen.</li>
+<li>Review the entire GAMGI code, file by file.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.10.9</div><div>6th February 2005</div>
+</div>
+
+<div class="contents">
+
+Added Wigner-Seitz cells for hR rhombohedral lattices. Improved
+stereographic projection for planes and directions. Improved 
+reciprocal lattice functionality.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Filtered inner faces for hR high and low Wigner-Seitz cells.</li>
+<li>The high c/a Wigner-Seitz cell for the hR lattice is working.</li>
+<li>Found and removed a bug in gamgi_expat_import_object.c:
+Wigner-Seitz cells for monoclinic and triclinic lattices (not
+implemented yet) were not flagged down as an error.</li>
+<li>The low c/a Wigner-Seitz cell for the hR lattice is working.</li>
+<li>Calculated the coordinates for both Wigner-Seitz hR cells, 
+with low and high c/a.</li>
+<li>Cleaned the plane,direction code, including gamgi_engine_start.c,
+gamgi_engine_copy_out.c, gamgi_phys_projection.c and 
+gamgi_math_plane_measure.c.</li>
+<li>Improved the interface handling the reciprocal lattice constant.</li>
+<li>The reciprocal lattice constant can be chosen now.
+The new default is the so-called Bravais polar lattice 
+constant, where the volume per node is equal for direct 
+and reciprocal lattices.</li>
+<li>Improved Stereographic Projection: i) when a pole
+points to the half-sphere below, the inverted direction 
+is now used; ii) only the trace in the half-sphere above 
+is now represented; </li>
+<li>Corrected Layer->Create and Light->Select HTML Help pages.</li>
+<li>When calculating the area per node, multiple planes are taken 
+into account: distance between adjacent planes is 1/2 or 1/3.</li>
+<li>Added dialog Plane->Measure. Currently only measures
+the distance between adjacent planes, and the area per 
+node.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Add XML input/output functionality for plane/direction
+objects.</li>
+<li>Add Plane->Modify and Direction->Modify functionality.</li>
+<li>Replace set/get_data functions by structures
+defined in gtk/gamgi_object.h headers.</li>
+<li>Add Object->Copy dialogs with basic copy functionality.</li>
+<li>Add Contents and Container options in Object->Remove dialogs.</li>
+<li>Improve Move and Rotate interactive usability.</li>
+<li>Implement dynamic text objects, to measure distances,
+angles, etc. on real time.</li>
+<li>Implement global selection, including global picking
+algorithms and selection dialogs that include all the
+selection methods.</li>
+<li>Implement multiple object picking, including a
+dynamic frame with moving ants and dragging anchors,
+to select multiple objects and images from the screen.</li>
+<li>Review the entire GAMGI code, file by file.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.10.8</div><div>11th January 2005</div>
+</div>
+
+<div class="contents">
+
+Removed a couple of serious bugs, in Space groups, Reciprocal Lattice
+and Voronoi Tesselation. Plane->Select, Plane->Remove, Direction->Select,
+Direction->Remove dialogs are implemented and working. Plane->Create
+and Direction->Create have more features, are more robust and
+user-friendly.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Found and removed a fresh bug in Planes,Directions: 
+origin was not initialized, sometimes producing erratic values.</li>
+<li>Disabled Scale,Move,Rotate for Planes,Directions, when they 
+are the selected objects. Initialized Plane and Direction origin
+to Cell origin. All this needs to be improved in the future.</li>
+<li>Implemented Plane->Remove and Direction->Remove dialogs,
+so single Planes and Directions can now be easily removed.</li>
+<li>Improved Plane->Select and Direction->Select dialogs, which
+now recognize and select planes and directions, respectively.</li>
+<li>Improved Plane->Create and Direction->Create dialogs, which
+now support both conventional and primitive vectors. Moreover,
+both dialogs are now initialized and reset.</li>
+<li>Cleaned gamgi_gtk_cell_measure.c. In particular, current layer 
+parameters are now copied to the new layer, when determining the
+reciprocal lattice, instead of using the default layer parameters 
+as before.</li>
+<li>Found and removed a bug in the reciprocal lattice code:
+parameters for R cells were still determined with the pre-GAMGI 
+0.10.5 convention of using primitive rather than conventional 
+hexagonal parameters to define R cells.</li>
+<li>In stereographic projection, added code to get directions 
+normal to planes, using reciprocal lattice vectors. Added code
+to handle plane and direction indices based in conventional and
+primitive vectors.</li>
+<li>Found and removed a bug in the reciprocal lattice code, 
+related with the cell center: center was calculated too late.</li>
+<li>Corrected edge faces and edge lengths, for topologies not
+well formed, in the Voronoi code. Cleaned the statistics part.
+</li>
+<li>Found and removed a bug in the Voronoi code: when the 
+topology is not well formed (aka C60), an infinite loop 
+could appear.</li>
+<li>Updated documentation about Euler angles, Text objects, 
+the Freetype library and the GAMGI_TEXT environment variable.
+</li>
+<li>Found a removed a bug in the Cell Link code: the 
+inside_triangles routine was receiving always the first 
+coordinates.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Replace set/get_data functions by structures
+defined in gtk/gamgi_object.h headers.</li>
+<li>Add Object->Copy dialogs with basic copy functionality.</li>
+<li>Add Contents and Container options in Object->Remove dialogs.</li>
+<li>Improve Move and Rotate interactive usability.</li>
+<li>Implement dynamic text objects, to measure distances,
+angles, etc. on real time.</li>
+<li>Implement global selection, including global picking
+algorithms and selection dialogs that include all the
+selection methods.</li>
+<li>Implement multiple object picking, including a
+dynamic frame with moving ants and dragging anchors,
+to select multiple objects and images from the screen.</li>
+<li>Review the entire GAMGI code, file by file.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.10.7</div><div>29th December 2004</div>
+</div>
+
+<div class="contents">
+
+Started working on crystallographic plane and direction objects: 
+stereographic projection is working, including Wulff (mostly used 
+in Materials Science) and Schmidt (mostly used in Geological Sciences) 
+projections. A bug was fixed in the Euler angles code.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Updated the pathnames in the gtk/*/* files.</li>
+<li>Wrote gamgi_gtk_plane_create.c: the Plane>Create 
+dialog is working, for both Wulff and Schmidt projections,
+for all planes, colors, poles and traces.</li>
+<li>Found and removed a rather old bug in the function 
+gamgi_math_euler_from_axis: sometimes the Euler 
+angles were wrong: 90 instead of 270. Cleaned
+the Euler angles code.</li>
+<li>Andre made new rpms for GAMGI 0.10.6 and Suse9.x.
+Cleaned the HTTP and FTP download sections, at www.gamgi.org.
+</li>
+<li>Wulff and Schmidt stereographic projections
+are now rotating fine, in interactive mode (with
+the mouse or the ruler).</li>
+<li>Updated gamgi_mesa_draw and gamgi_mesa_scan,
+to work with planes and directions.</li>
+<li>Updated gamgi_engine_create, gamgi_engine_start,
+gamgi_engine_copy_out, gamgi_engine_remove, to work
+with planes and directions.</li>
+<li>Adapted and cleaned gamgi_expat_import_object
+and gamgi_expat_export_object, in preparation for
+the stereographic projection cell representation.</li>
+<li>Adapted and cleaned gamgi_gtk_cell_create 
+and gamgi_gtk_cell_modify, in preparation for 
+the stereographic projection cell representation.</li>
+<li>We have now a simple and flexible model to handle 
+everything that is needed with stereographic projections:
+we will add a new tupe of cell representation, a projection,
+specifically to contain and handle planes and directions.
+Multiple cells and relations between them will be handled
+by Assembies (including epitaxial relations).</li>
+<li>Pole and trace representations seem to be working fine, for
+both Wulff and Schmidt projections, for all types of lattices,
+for all possible rotations.</li>
+<li>Started working on Plane and Direction objects.</li>
+<li>The mathematical constructions needed to handle 
+Stereographic (Wullf) and Schmith projections are worked out.
+</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Replace set/get_data functions by structures
+defined in gtk/gamgi_object.h headers.</li>
+<li>Add Object->Copy dialogs with basic copy functionality.</li>
+<li>Add Contents and Container options in Object->Remove dialogs.</li>
+<li>Improve Move and Rotate interactive usability.</li>
+<li>Implement dynamic text objects, to measure distances,
+angles, etc. on real time.</li>
+<li>Implement global selection, including global picking
+algorithms and selection dialogs that include all the
+selection methods.</li>
+<li>Implement multiple object picking, including a
+dynamic frame with moving ants and dragging anchors,
+to select multiple objects and images from the screen.</li>
+<li>Review the entire GAMGI code, file by file.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.10.6</div><div>7th December 2004</div>
+</div>
+
+<div class="contents">
+
+This is a cleaning release: reviewed the Voronoi code
+and removed a serious bug, improved the way Light shininess 
+is handled, added an environment variable so solid fonts
+can now be easily found, clarified that code exporting 
+to raster .ps files is fine and usable.
+  
+<h3>What is new:</h3>
+
+<ul>
+<li>Found and removed a bug in the Voronoi code: the number
+of faces per edge was not properly calculated. Edges are 
+now are linked for each polyhedron AND for each face.</li>
+<li>Added code to find equivalent vertices and edges, when
+using periodic boundary conditions, in the Voronoi code.</li>
+<li>Cleaned the Voronoi code. Searching for redundant vertices
+now requires looking only into 8 rather than 27 cells.</li>
+<li>Added a new environment variable, GAMGI_TEXT, 
+to indicate the path to Vera truetype fonts.</li>
+<li>Cleaned the postscript exporting code.</li>
+<li>Clarified why the postscript code was not working properly:
+in Gimp we need to use a resolution of 72dpi (the default is
+100). In practise this means that exporting to .ps files is
+working fine. We tested this issue also on Windows, on 3 
+programs, and all of them worked fine with our .ps files.</li>
+<li>Cleaned again the text font code. Now when a text object
+is modified, the font glyphs must be available (even if they 
+were previously compiled), otherwise an error is triggered.</li>
+<li>Special XML characters must be translated to predefined 
+entities when exporting, otherwise they cannot be reimported.
+Fixed.</li>
+<li>Improved the way we handled Light shininess: Shininess is 
+disabled for 0.0, is minimum close to 0.0 and is maximum for 1.0.
+</li>
+<li>Only wired text objects need line width control. Fixed.</li>
+<li>Added a new screenshot about crystallographic space groups.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Replace set/get_data functions by structures
+defined in gtk/gamgi_object.h headers.</li>
+<li>Add Object->Copy dialogs with basic copy functionality.</li>
+<li>Add Contents and Container options in Object->Remove dialogs.</li>
+<li>Improve Move and Rotate interactive usability.</li>
+<li>Implement dynamic text objects, to measure distances,
+angles, etc. on real time.</li>
+<li>Implement global selection, including global picking
+algorithms and selection dialogs that include all the
+selection methods.</li>
+<li>Implement multiple object picking, including a
+dynamic frame with moving ants and dragging anchors,
+to select multiple objects and images from the screen.</li>
+<li>Review the entire GAMGI code, file by file.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.10.5</div><div>10th November 2004</div>
+</div>
+
+<div class="contents">
+
+Updated/added documentation for Text and Light formats, 
+and Text and Cell dialogs. Improved solid fonts code.
+Rhombohedral cells now are defined with conventional
+(hexagonal) cell parameters.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Added a new screenshot, showing how the Cell->Link dialog
+is used to create a crystal using space group information.</li>
+<li>Updated help documentation for Cell->Create, Cell->Modify
+and Cell->Link.</li>
+<li>Found two bugs in the code handling solid fonts, resulting 
+in segmentation faults when font files are modified or removed
+AFTER removing the font files. Removed one, by checking first if 
+glyphs must be compiled. Removed the other by checking if the
+glyphs are available, when calculating the text center.</li>
+<li>When solid Truetype fonts are not found, the error message
+produced now shows the name of the file that is missing, 
+both in Gtk Text->Create, Text->Modify dialogs and from 
+XML files.</li>
+<li>Rhombohedral cells are now defined using a,c hexagonal cell
+parameters rather than a,bc rhombohedral parameters as before.
+This affects only the lattices for the 7 R space groups. Essentially 
+crystallographers tend to define cells belonging to these groups
+using hexagonal, not rhombohedral, parameters. Moreover, this case
+was an exception, from now on parameters are always for the 
+conventional cell, which is simpler for users and coders alike.</li>
+<li>Added a screenshot to gamgi.org with stroked and extruded 
+fonts, illuminated with directional and spot lights.</li>
+<li>Updated format documentation for &lt;light>&lt;/light>
+(Create) and &lt;gamgi>&lt;light>&lt;/light>&lt;/gamgi> 
+(Config) blocks in XML files.</li>
+<li>Updated format documentation for &lt;text>&lt;/text> 
+(Create) and &lt;gamgi>&lt;text>&lt;/text>&lt;/gamgi> 
+(Config) blocks in XML files.</li>
+<li>Updated documentation for Text->Create and Text->Modify 
+dialogs.</li>
+<li>Scaled up very slightly the wired fonts, so wired and
+solid and fonts now look essentially the same size.</li>
+<li>Changed the expected names for the 10 Vera Truetype files, 
+back to the original names in Suse 9.0, hopefully this wil help
+finding these files in other Linux distributions.</li>
+<li>Added documentation for Cell->Measure, for the reciprocal 
+lattice transformation.</li>
+<li>Added the relevant original Allen Barnett's comments to the 
+extruded fonts code, plus metrics information taken from the
+Freetype documentation.</li>
+<li>Cleaned the code in gamgi_mesa_text.c; defined the scaling
+procedure for solid fonts, so wired and scaled fonts look the
+same size; calculated the center for solid text objects.</li> 
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Replace set/get_data functions by structures
+defined in gtk/gamgi_object.h headers.</li>
+<li>Add Object->Copy dialogs with basic copy functionality.</li>
+<li>Add Contents and Container options in Object->Remove dialogs.</li>
+<li>Improve Move and Rotate interactive usability.</li>
+<li>Implement dynamic text objects, to measure distances,
+angles, etc. on real time.</li>
+<li>Implement global selection, including global picking
+algorithms and selection dialogs that include all the
+selection methods.</li>
+<li>Implement multiple object picking, including a
+dynamic frame with moving ants and dragging anchors,
+to select multiple objects and images from the screen.</li>
+<li>Review the entire GAMGI code, file by file.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.10.4</div><div>11th November 2004</div>
+</div>
+
+<div class="contents">
+
+Text and Light properties can now be configured, both from GUI 
+dialogs and XML files. Solid (extruded) Truetype fonts can now 
+be created/modified from GUI dialogs and imported/exported to 
+XML files.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>When objects and lights have null overlapping color components, 
+the light cannot iluminate the object and the object becomes
+invisible. This more testing, and perhaps an option for Light
+Materials functionality.</li>
+<li>Found and removed a bug in the code initialising
+text objects: font was started, so a core dump would be
+produced when a parsing error was found as the font engine
+would try wrongly to decrease the glyph count.</li>
+<li>Cleaned all the text font engine code and improved the
+text font API, to acommodate all the GUI and XML code needs.
+The dialogs Text->Create and Tex->Modify and the XML 
+import/export files are now be handling wired and solid 
+fonts just fine (famous last words!).</li>
+<li>Solid fonts are now working fine. The code to center
+the text objects, for both wired and solid fonts has
+been redesigned and is working. Removed gamgi_mesa_center_out.</li>
+<li>Wired fonts are working again, in all cases, with
+the new font engine. Cleaned the text code. Solid fonts
+are working, but still need some work.</li>
+<li>Changed completely the text font engine. Before,
+when a glyph was required, the whole font was compiled.
+Now only the glyphs actually needed are compiled. This
+is important mainly because the new solid fonts require
+much more resources.</li>
+<li>Refined the GUI handling Systems,Lattices,Groups
+in Cell->Create and Cell->Modify: the toggle buttons
+handling the Systems,Lattices,Groups Lists can 
+now be used to create AND remove the dialogs. Previous
+methods to close these dialogs (Cancel button and WM 
+decorations) remain available, of course.</li>
+<li>Removed a bug in the the Cluster Voronoi code: the
+statictics for global edge lengths were calculated 
+using redundant edges, not just the real ones.</li>
+<li>Updated the website Links and Contributors pages, to 
+include all the contributions for the extruded fonts code.</li>
+<li>Cleaned and integrated further the text code:
+Removed files gamgi_gtk_text and gamgi_mesa_extruded
+and added the code to gamgi_gtk_text_config,
+gamgi_gtk_text_modify and gamgi_mesa_text.</li>
+<li>Wired (tested) and Solid (not integrated yet) fonts 
+can now be imported and exported to GAMGI XML files.</li>
+<li>Found a bug in the XML export code: the XML space 
+offset is not correct for text configuration data: Fixed. 
+We were sending garbage, instead of the right argument, 
+to a function. Surprising that this was not found before...</li>
+<li>
+Light and Text configuration parameters can now be exported to 
+XML files. Corrected a minor bug in the XML layer export code: 
+the decimal precision was wrong for some position components.
+</li>
+<li>Modified Text->Create and Text->Modify dialogs so they 
+are now ready to work with both Wired and Solid fonts.</li>
+<li>Default Text Style, Color, and Solid and Wired fonts,
+can now be configured, selecting Text->Config or importing
+config data from XML files.</li>
+<li>Materials Light Shininess and default Light components 
+can now be configured, selecting Light->Config or importing
+config data from XML files.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Replace set/get_data functions by structures
+defined in gtk/gamgi_object.h headers.</li>
+<li>Add Object->Copy dialogs with basic copy functionality.</li>
+<li>Add Contents and Container options in Object->Remove dialogs.</li>
+<li>Improve Move and Rotate interactive usability.</li>
+<li>Implement dynamic text objects, to measure distances,
+angles, etc. on real time.</li>
+<li>Implement global selection, including global picking
+algorithms and selection dialogs that include all the
+selection methods.</li>
+<li>Implement multiple object picking, including a
+dynamic frame with moving ants and dragging anchors,
+to select multiple objects and images from the screen.</li>
+<li>Review the entire GAMGI code, file by file.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.10.3</div><div>16th October 2004</div>
+</div>
+
+<div class="contents">
+
+Solid extruded fonts are now working on GAMGI, thanks to
+Allen Barnett and Linas Vepstas, of OGLFT and GLE libraries,
+respectively, which code we used, and the team developing 
+the FreeType library, which is now required. A screenshot 
+is available <a href="../../images/extruded.png">here</a>.
+The interface with the user is not built yet, so this is
+just a working release, not for final users.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Removed the global variables introduced earlier in the 
+extruded fonts code.</li>
+<li>After sorting out a few glitches, the extruded fonts are 
+now running great on GAMGI!. Wait for the screenshots...</li>
+<li>GAMGI compiles with the solid font code: the FreeType library 
+is now required to compile and run GAMGI.</li>
+<li>Cleaned the solid fonts code a bit more. There
+is a bug with lights and Scalef probably due to
+unormalized normal vectors, which was already in
+the original code.</li>
+<li>The solid fonts code has now less than 800 lines
+and the extrusion code is fully understood.</li>
+<li>Cleaned and merged the OGLFT and GLE C codes 
+into a single file, with just 844 lines.</li>
+<li>Introduced C-based dynamic arrays, a new type of data object 
+inspired in C++ &lt;vector>, that should help to reduce the number 
+of reallocs directly hard-coded in GAMGI, making the code more 
+elegant and simpler to maintain.</li>
+<li>Removed the last C++ header in the OGLFT code,
+&lt;vector>, and converted the last C++ bits to C.
+The whole code is now ansi C and works fine.</li>
+<li>Removed C++ standard libraries, &lt;map> and &lt;list>, 
+in the OGLFT code, and replaced by GAMGI lists.</li>
+<li>Simplified the GLE code to 122 lines only, and removed
+all the macros.</li>
+<li>Reduced all the code to render solid fonts to 3 files
+(.c and .cpp and .h), plus a bunch of macros.</li>
+<li>The GLE code to render solid fonts is now down to 420 lines
+in .c files and 633 lines in .h files, and the GLE and OGLFT codes
+are working fine together, producing exactly the same output
+as the pristine GLE and OGLFT libraries combined. From now on, 
+it should be just a matter of time until we have solid fonts 
+in GAMGI, linking against the FreeType library! Of course this 
+is only possible due to the hard work of Linas Vepstas (GLE), 
+Allen Barnett (OGLFT), and all the people working on the FreeType 
+library, many, many thanks to all!</li>
+<li>The whole OGLFT code to render solid fonts is now down to less 
+than 800 lines, including header and demo code. Started working 
+on the GLE library.</li>
+<li>Stripped down solid.cpp to 766 and solid.h to 82 lines only.
+Essentially we have now to replace the STL functionality by our own
+to have pure C code. Moreover, the code doesn't look too difficult 
+to understand.</li>
+<li>We have a working example showing a message with a solid font,
+stripped down from the OGLFT C++ library, with two files, solid.cpp 
+(1048 lines) and solid.h (320 lines) only.</li>
+<li>We have a working model for 3D solid (extruded) fonts, 
+which requires three libraries: Freetype, OGLFT and GLE. 
+Our goal is to adapt the OGLFT and GLE code to GAMGI, to
+decrease the number of dependencies, keeping just Freetype,
+which is a larger lib and is one of the dependencies of 
+Gtk2.0, so we will need it anyway if we move to Gtk2.0.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Replace set/get_data functions by structures
+defined in gtk/gamgi_object.h headers.</li>
+<li>Add Object->Copy dialogs with basic copy functionality.</li>
+<li>Add Contents and Container options in Object->Remove dialogs.</li>
+<li>Improve Move and Rotate interactive usability.</li>
+<li>Implement dynamic text objects, to measure distances,
+angles, etc. on real time.</li>
+<li>Implement global selection, including global picking
+algorithms and selection dialogs that include all the
+selection methods.</li>
+<li>Implement multiple object picking, including a
+dynamic frame with moving ants and dragging anchors,
+to select multiple objects and images from the screen.</li>
+<li>Review the entire GAMGI code, file by file.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.10.2</div><div>16th September 2004</div>
+</div>
+
+<div class="contents">
+
+Reciprocal lattices can now be determined for all
+14 Bravais lattices. A bug was removed in the code
+converting primitive to conventional axes in Rombohedral
+lattices.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Cleaned the reciprocal lattice code.</li>
+<li>Tested the OpenGL Light and Materials properties.
+Apparently we are following the best solution on this.</li>
+<li>The orientation of reciprocal Triclinic and Monoclinic
+lattices is not correct: a change in orientation occurs
+in the transformation that we are not taking into account.
+Solved: get the rotation matrix that takes the conventional
+vectors in the standard orientation to the final orientation.
+</li>
+<li>Decreased the minimum and maximum number of slices
+used to draw atomic spheres to 4 and 64, respectively.</li>
+<li>The reciprocal lattice stuff seems to be finished,
+apparently is working correctly in all cases, even the
+tricky ones involving multiple rotations around different
+centers.</li>
+<li>Reciprocal lattice for Tetragonal I is tricky because
+we do not work with the F reciprocal lattice but with the
+equivalent I lattice, so we need to scale and rotate 45 degrees. 
+Reciprocal lattice for Hexagonal P is tricky because a rotation 
+of 30 degrees occurs during the transformation.</li>
+<li>Found and removed a bug in gamgi_phys_cell_create: the
+hexagonal height in rombohedric cells was wrong. As a result
+of this, the reciprocal lattice now works fine for this case.</li>
+<li>Reciprocal lattices seem to be working fine, except for
+Hexagonal P, Hexagonal R and Tetragonal I.</li>
+<li>Using Freetype, OGLFT and GLE, we have demos with solid fonts
+rotating fine. The problem now is how to adapt this to GAMGI.</li>
+<li>Thanks to Andre, we have new packages available, for Gamgi 0.10.1:
+rpms for Suse 9.1, and for the first time, deb packages as well, for 
+Woody 3.0 r1.</li>
+<li>Renewed gamgi.org, which is now valid until 2010.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Replace set/get_data functions by structures
+defined in gtk/gamgi_object.h headers.</li>
+<li>Add Object->Copy dialogs with basic copy functionality.</li>
+<li>Add Contents and Container options in Object->Remove dialogs.</li>
+<li>Improve Move and Rotate interactive usability.</li>
+<li>Implement dynamic text objects, to measure distances,
+angles, etc. on real time.</li>
+<li>Implement global selection, including global picking
+algorithms and selection dialogs that include all the
+selection methods.</li>
+<li>Implement multiple object picking, including a
+dynamic frame with moving ants and dragging anchors,
+to select multiple objects and images from the screen.</li>
+<li>Review the entire GAMGI code, file by file.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.10.1</div><div>3rd September 2004</div>
+</div>
+
+<div class="contents">
+
+The 230 crystallographic groups are now fully working. The
+structures linked to Wigner-Seitz cells are greatly improved.
+Distributed the gtk code by several sub-directories.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>The methodology to convert direct to reciprocal Bravais
+lattices seems to be clarified, hopefully this will be working
+soon.</li>
+<li>The algorithm to link Wigner-Seitz cells to atoms
+showing all the relevant atoms and the proper symmetry
+is working fine.</li>
+<li>Cleaned the gamgi_phys_cell_link.c code that handles
+the container cell, including static_cell and the if
+statement to call it.</li>
+<li>Refined the cell link interface: users are not allowed
+anymore to add nodes to conventional volumes or to remove nodes
+from the other volumes.</li>
+<li>Removed a bug in gamgi_phys_space.c code that prevented
+cell link to work correctly when only a motif was entered.</li>
+<li>The code to handle space group information is completed and seems
+to be working well, though it is not properly tested yet. It should be
+able to build crystals for all 230 space groups, for all Wyckoff sites,
+for all types of cell volumes. Moreover, users can combine space group
+information with node selection and occupancy rules.</li>
+<li>Merged and updated gamgi_phys_space.c, gamgi_phys_cell_link.c
+and gamgi_gtk_cell_link.c (found and removed a typo bug in
+gamgi_phys_cell_link.c affecting the size of the outside cell
+when the volume is a sphere).</li>
+<li>Updated the HTTP and FTP website sections.</li>
+<li>Prepared the dialog and layer infra-structure to determine
+and show reciprocal lattices for cell objects.</li>
+<li>Completed and added the 230 arrays describing Wyckoff site symmetry.</li>
+<li>Writing the Wyckoff site symmetry in arrays (one for each
+group, as for positions and drivers): more than half is done.</li>
+<li>More cleaning on gamgi_gtk_cell_link.c, which is now ready
+to handle all the space group information.</li>
+<li>The Cell->Link dialog is automatically creating and removing
+menuitems for all Wyckoff positions, for all the 230 space groups.</li>
+<li>Redesigned the Cell->Link dialog: added Wyckoff positions
+and removed Directions.</li>
+<li>When importing files from the command line, the code
+printing the current layer and object in the statusbar was
+not correct: removed the bug, removed the variables windows_top
+and layer_top, and cleaned the code.</li>
+<li>Created sub-directories in src/gtk, for each object classe, to
+avoid hundreds of files in a single directory. Changed the makefiles
+accordingly (it is still possible to compile Gamgi from any of
+the directories containing source code).</li>
+<li>The standalone code to generate Wyckoff positions for
+all the sites of the 230 space groups seems to be working
+fine. When repeated positions are found, it also tries to
+find a Wyckoff site with lower multiplicity (and higher
+symmetry) that generates the same positions.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Replace set/get_data functions by structures
+defined in gtk/gamgi_object.h headers.</li>
+<li>Add Object->Copy dialogs with basic copy functionality.</li>
+<li>Add Contents and Container options in Object->Remove dialogs.</li>
+<li>Improve Move and Rotate interactive usability.</li>
+<li>Implement dynamic text objects, to measure distances,
+angles, etc. on real time.</li>
+<li>Implement global selection, including global picking
+algorithms and selection dialogs that include all the
+selection methods.</li>
+<li>Implement multiple object picking, including a
+dynamic frame with moving ants and dragging anchors,
+to select multiple objects and images from the screen.</li>
+<li>Review the entire GAMGI code, file by file.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI old</div><div>&nbsp;</div>
+</div>
+
+<div class="contents">
+
+Changelogs for older releases can be found here.
+
+<p/>
+
+<ul>
+<li><a href="changelogs09.html">GAMGI 0.09.1 - GAMGI 0.10</a></li>
+<li><a href="changelogs08.html">GAMGI 0.08.1 - GAMGI 0.09</a></li>
+<li><a href="changelogs07.html">GAMGI 0.07.18 - GAMGI 0.08</a></li>
+</ul>
+
+</div>
+
+<div id="bottom">
+<a href="../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

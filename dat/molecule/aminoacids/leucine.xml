@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE gml SYSTEM "http://www.gamgi.org/dtd/gamgi.dtd">
+<gml>
+  <molecule name="leucine">
+    <atom id="1" element="N" x="1.1205" y="1.6436" z="0.8026"/>
+    <atom id="2" element="C" x="1.0220" y="0.2170" z="0.3843"/>
+    <atom id="3" element="C" x="2.2306" y="-0.2281" z="-0.4810"/>
+    <atom id="4" element="O" x="2.3450" y="0.4656" z="-1.6513"/>
+    <atom id="5" element="C" x="-0.3459" y="-0.0453" z="-0.3093"/>
+    <atom id="6" element="C" x="-1.6271" y="0.0706" z="0.5611"/>
+    <atom id="7" element="C" x="-2.8789" y="0.0154" z="-0.3299"/>
+    <atom id="8" element="C" x="-1.7254" y="-1.0407" z="1.6213"/>
+    <atom id="9" element="H" x="0.7818" y="1.9202" z="1.7317"/>
+    <atom id="10" element="H" x="1.4130" y="2.3446" z="0.1106"/>
+    <atom id="11" element="H" x="1.0758" y="-0.4093" z="1.2942"/>
+    <atom id="12" element="H" x="3.1073" y="0.1151" z="-2.1121"/>
+    <atom id="13" element="H" x="-0.4299" y="0.6394" z="-1.1773"/>
+    <atom id="14" element="H" x="-0.3323" y="-1.0551" z="-0.7651"/>
+    <atom id="15" element="H" x="-1.6211" y="1.0516" z="1.0766"/>
+    <atom id="16" element="H" x="-3.8081" y="0.1299" z="0.2599"/>
+    <atom id="17" element="H" x="-2.8812" y="0.8250" z="-1.0822"/>
+    <atom id="18" element="H" x="-2.9583" y="-0.9417" z="-0.8799"/>
+    <atom id="19" element="H" x="-2.6511" y="-0.9581" z="2.2205"/>
+    <atom id="20" element="H" x="-1.7181" y="-2.0501" z="1.1689"/>
+    <atom id="21" element="H" x="-0.8851" y="-1.0011" z="2.3383"/>
+    <atom id="22" element="O" x="3.0072" y="-1.1227" z="-0.1595"/>
+    <bond parent1="1" parent2="2"/>
+    <bond parent1="1" parent2="9"/>
+    <bond parent1="1" parent2="10"/>
+    <bond parent1="2" parent2="3"/>
+    <bond parent1="2" parent2="5"/>
+    <bond parent1="2" parent2="11"/>
+    <bond parent1="3" parent2="4"/>
+    <bond parent1="3" parent2="22" order="2.00"/>
+    <bond parent1="4" parent2="12"/>
+    <bond parent1="5" parent2="6"/>
+    <bond parent1="5" parent2="13"/>
+    <bond parent1="5" parent2="14"/>
+    <bond parent1="6" parent2="7"/>
+    <bond parent1="6" parent2="8"/>
+    <bond parent1="6" parent2="15"/>
+    <bond parent1="7" parent2="16"/>
+    <bond parent1="7" parent2="17"/>
+    <bond parent1="7" parent2="18"/>
+    <bond parent1="8" parent2="19"/>
+    <bond parent1="8" parent2="20"/>
+    <bond parent1="8" parent2="21"/>
+  </molecule>
+</gml>

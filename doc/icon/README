@@ -1,0 +1,19 @@
+To launch GAMGI from panel:
+
+On GNOME:
+1) Right click on panel and choose: Add to Panel,
+then choose on new dialog: Custom Application Launcher
+2) Fill properties:
+Type: Application
+Name: GAMGI
+Command: gamgi
+Comment: Build, View and Analyse Atomic Structures
+3) Press on icon and choose gamgi32.png
+
+On KDE:
+1) Right click on panel and choose: Add Application to Panel, Add Non-KDE application
+2) Fill properties:
+Button title: GAMGI
+Description: Build, View and Analyse Atomic Structures
+Executable: gamgi
+3) Press on icon and choose gamgi32.png

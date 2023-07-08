@@ -1,0 +1,16 @@
+<gml>
+<molecule name="D6d">
+<atom element="He" x="0.00000" y="1.00000" z="1.0"/>
+<atom element="He" x="0.50000" y="0.86603" z="1.1"/>
+<atom element="He" x="0.86603" y="0.50000" z="1.0"/>
+<atom element="He" x="1.00000" y="0.00000" z="1.1"/>
+<atom element="He" x="0.86603" y="-0.50000" z="1.0"/>
+<atom element="He" x="0.50000" y="-0.86603" z="1.1"/>
+<atom element="He" x="0.00000" y="-1.00000" z="1.0"/>
+<atom element="He" x="-0.50000" y="-0.86603" z="1.1"/>
+<atom element="He" x="-0.86603" y="-0.50000" z="1.0"/>
+<atom element="He" x="-1.00000" y="0.00000" z="1.1"/>
+<atom element="He" x="-0.86603" y="0.50000" z="1.0"/>
+<atom element="He" x="-0.50000" y="0.86603" z="1.1"/>
+</molecule>
+</gml>

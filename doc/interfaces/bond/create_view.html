@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Interfaces: Bond Create </title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Bond Create</h1>
+
+<div id="notebook">
+<ul>
+<li><a href="create_type.html">Type</a></li>
+<li><a href="create_length.html">Length</a></li>
+<li><a href="create_property.html">Property</a></li>
+<li><span>View</span></li>
+</ul>
+</div>
+
+<div class="contents">
+
+Set here the bond visual representation.
+
+<h3>Style</h3>
+
+The <b>Style</b> option menu controls the bond visual representation: 
+with cylinders in <b>Solid</b> mode, with simple lines in <b>Wired</b> 
+mode. By default, the <b>Wired</b> mode is used. To change the default 
+select <b>Bond->Config</b>.
+
+<p/>
+
+The cylinder gives a high visual quality, when coupled with lights and 
+perhaps a perspective projection. A cylinder uses considerable screen 
+space though and is time consuming. 
+
+<p/>
+
+Wired objects do not have a 3D representation, so diffuse and 
+specular lights are not reflected, becoming poorly invisible when using 
+lights, unless the ambient component is important.
+
+<h3>Size</h3>
+
+In <b>Solid</b> mode, this parameter controls the size of the bond
+cylinders. Combining bond <b>Size</b> with atom <b>Variancy</b>
+and <b>Size</b>, it is possible to obtain a wide range of styles
+to represent atomic structures.
+
+<p/>
+
+The default is to represent atoms with a <b>Size</b> (<b>0.8</b>) 
+slightly larger than bonds (<b>0.5</b>). To change the default select 
+<b>Bond->Config</b>. An elegant style is to represent bonds with the 
+same <b>Size</b> as atoms (<b>0.5</b>).
+
+To guarantee that bond cylinders are closed by atom spheres,
+bond <b>Size</b> should not be larger than atom <b>Size</b>.
+
+<h3>Color</h3>
+
+The <b>Color</b> button controls whether the bond is represented with 
+its own, independent color, or inherits the colors of the parent atoms.
+By default colors are inherited. To change the default select 
+<b>Bond->Config</b>.
+
+<h3>R, G, B</h3>
+
+Set the bond color, from black (0.0, 0.0, 0.0) to white (1.0, 1.0, 1.0),
+when the bond is rendered with its own, independent, color.
+
+<h3>Scale</h3>
+
+Set the bond size, including its child objects. Bond objects are
+scaled around the bond line. The visual representation of an object
+is always scaled by its own scale factor multiplied by the scale factor
+of all its parent objects until layer, inclusive.
+
+<p/>
+
+Line widths in GAMGI are not affected by <b>Scale</b> attributes, so
+bonds represented in <b>Wired</b> mode remain unchanged by <b>Scale</b>
+(but not its child!).
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

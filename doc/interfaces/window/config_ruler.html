@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Interfaces: Window Config</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Window Config</h1>
+
+<div id="notebook">
+<ul>
+<li><span>Ruler</span></li>
+</ul>
+</div>
+
+<div class="contents">
+
+Define here the maximum and step parameters 
+controlling the ruler (in the tools menu).
+
+<h3>Rotate</h3>
+
+<b>Max</b> sets the range of angle values accepted by the ruler, 
+to rotate objects. Clicking on the ruler extreme left, the 
+object is rotated by <b>-Max</b>. Clicking on the ruler 
+extreme right, the object is rotated by <b>Max</b>. 
+<b>Max</b> must be positive.
+
+<p/>
+
+The rotation angle applied to the object, when clicking on the
+ruler, increases from the extreme left to the extreme right 
+(from <b>-Max</b> to <b>+Max</b>), in a step by step way. 
+The width of each step, starting from the center to the extremes, 
+is defined by <b>Step</b>.
+
+<p/>
+
+For example, when <b>Step</b> is set to <b>Max</b>,
+only two angles are recognized: <b>-Max</b> on the left
+(negative) side and <b>+Max</b> on the right (positive)
+side of the ruler. When <b>Step</b> is 0, the angle
+changes continuously from one extreme to the other.
+
+<p/>
+
+<b>Step</b> cannot exceed <b>Max</b>, otherwise the extreme 
+values would never be reached (the central value is always 0).
+
+<h3>Move</h3>
+
+<b>Max</b> sets the range of length values accepted by the ruler,
+to move objects. Clicking on the ruler extreme left, the
+object is moved by <b>-Max</b>. Clicking on the ruler
+extreme right, the object is moved by <b>Max</b>.
+<b>Max</b> must be positive.
+
+<p/>
+
+The translation length applied to the object, when clicking on 
+the ruler, increases from the extreme left to the extreme right
+(from <b>-Max</b> to <b>+Max</b>), in a step by step way.
+The width of each step, starting from the center to the extremes,
+is defined by <b>Step</b>.
+
+<p/>
+
+For example, when <b>Step</b> is set to <b>Max</b>,
+only two lengths are recognized: <b>-Max</b> on the left
+(negative) side and <b>+Max</b> on the right (positive)
+side of the ruler. When <b>Step</b> is 0, the length
+changes continuously from one extreme to the other.
+
+<p/>
+
+<b>Step</b> cannot exceed <b>Max</b>, otherwise the extreme
+values would never be reached (the central value is always 0).
+
+<h3>Scale</h3>
+
+<b>Max</b> sets the range of factor values accepted by the ruler,
+to scale objects. Clicking on the ruler extreme left, the object 
+is scaled by <b>1 / Max</b>. Clicking on the ruler extreme right, 
+the object is scaled by <b>Max</b>. <b>Max</b> must be larger than 1.
+
+<p/>
+
+For example, when <b>Step</b> is set to <b>Max - 1</b>,
+only two factors are recognized: <b>1 / Max</b> on the left
+side and <b>Max</b> on the right side of the ruler. When
+<b>Step</b> is 0, the factor changes continuously
+from one extreme to the other.
+
+<p/>
+
+<b>Step</b> cannot exceed <b>Max - 1</b>, otherwise the extreme 
+values would never be reached (the central value is always 1).
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

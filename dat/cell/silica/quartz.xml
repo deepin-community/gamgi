@@ -1,0 +1,2001 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE gml SYSTEM "http://www.gamgi.org/dtd/gamgi.dtd">
+<gml>
+  <layer perspective="no" scale="0.600">
+    <cell group="180" a="4.9965" c="5.4546" x="-2.5263" y="-6.0377"
+    z="-6.3368" e1="0.00" e2="360.00" e3="0.00" model="primitive" n1="3"
+    n2="3" n3="3" axes="yes">
+      <group name="Polytope" reference="polytope" x="-2.5263" y="-6.0377"
+      z="-6.3368" center_x="-0.9643" center_y="-3.7818" center_z="-4.7461"
+      e1="0.00" e2="360.00" e3="0.00" faces="yes" red="1.000" green="1.000"
+      blue="0.000">
+        <atom id="1" element="Si" x="-0.0280" y="-6.0377" z="-6.3368"/>
+        <atom id="2" element="O" x="-1.5809" y="-2.6097" z="-5.4281"/>
+        <atom id="3" element="O" x="-0.0258" y="-3.5050" z="-3.6099"/>
+        <atom id="4" element="Si" x="-1.2772" y="-3.8741" z="-4.5186"/>
+        <atom id="5" element="O" x="-0.9734" y="-5.1385" z="-5.4281"/>
+        <bond parent1="1" parent2="5"/>
+        <bond parent1="2" parent2="4"/>
+        <bond parent1="3" parent2="4"/>
+        <bond parent1="4" parent2="5"/>
+        <data name="points" type="double" size="12">
+        0.9453 3.4279 0.9087 2.5005 2.5326 2.7269 1.2491 2.1635 1.8182 1.5529
+        0.8992 0.9087
+        </data>
+        <data name="points_driver" type="int" size="17">
+        4 3 1 2 3 3 2 0 3 3 0 1 3 3 1 0 2
+        </data>
+      </group>
+      <group name="Polytope" reference="polytope" x="-2.5263" y="-6.0377"
+      z="-6.3368" center_x="4.0322" center_y="-3.7818" center_z="-4.7461"
+      e1="0.00" e2="360.00" e3="0.00" faces="yes" red="1.000" green="1.000"
+      blue="0.000">
+        <atom id="6" element="Si" x="4.9685" y="-6.0377" z="-6.3368"/>
+        <atom id="7" element="O" x="3.4156" y="-2.6097" z="-5.4281"/>
+        <atom id="8" element="O" x="4.9707" y="-3.5050" z="-3.6099"/>
+        <atom id="9" element="Si" x="3.7193" y="-3.8741" z="-4.5186"/>
+        <atom id="10" element="O" x="4.0231" y="-5.1385" z="-5.4281"/>
+        <bond parent1="6" parent2="10"/>
+        <bond parent1="7" parent2="9"/>
+        <bond parent1="8" parent2="9"/>
+        <bond parent1="9" parent2="10"/>
+        <data name="points" type="double" size="12">
+        5.9418 3.4279 0.9087 7.4970 2.5326 2.7269 6.2456 2.1635 1.8182 6.5494
+        0.8992 0.9087
+        </data>
+        <data name="points_driver" type="int" size="17">
+        4 3 1 2 3 3 2 0 3 3 0 1 3 3 1 0 2
+        </data>
+      </group>
+      <group name="Polytope" reference="polytope" x="-2.5263" y="-6.0377"
+      z="-6.3368" center_x="9.0287" center_y="-3.7818" center_z="-4.7461"
+      faces="yes" red="1.000" green="1.000" blue="0.000">
+        <atom id="11" element="Si" x="9.9650" y="-6.0377" z="-6.3368"/>
+        <atom id="12" element="O" x="8.4121" y="-2.6097" z="-5.4281"/>
+        <atom id="13" element="O" x="9.9672" y="-3.5050" z="-3.6099"/>
+        <atom id="14" element="Si" x="8.7158" y="-3.8741" z="-4.5186"/>
+        <atom id="15" element="O" x="9.0196" y="-5.1385" z="-5.4281"/>
+        <bond parent1="11" parent2="15"/>
+        <bond parent1="12" parent2="14"/>
+        <bond parent1="13" parent2="14"/>
+        <bond parent1="14" parent2="15"/>
+        <data name="points" type="double" size="12">
+        10.9383 3.4279 0.9087 12.4935 2.5326 2.7269 11.2421 2.1635 1.8182
+        11.5459 0.8992 0.9087
+        </data>
+        <data name="points_driver" type="int" size="17">
+        4 3 1 2 3 3 2 0 3 3 0 1 3 3 1 0 2
+        </data>
+      </group>
+      <group name="Polytope" reference="polytope" x="-2.5263" y="-6.0377"
+      z="-6.3368" center_x="-1.2772" center_y="-3.8741" center_z="-4.5190"
+      e1="0.00" e2="360.00" e3="0.00" faces="yes" red="1.000" green="1.000"
+      blue="0.000">
+        <atom id="16" element="Si" x="-1.2772" y="-3.8741" z="-4.5186"/>
+        <atom id="17" element="O" x="-0.0258" y="-3.5050" z="-3.6099"/>
+        <atom id="18" element="O" x="-0.9734" y="-5.1385" z="-5.4281"/>
+        <atom id="19" element="O" x="-2.5285" y="-4.2432" z="-3.6099"/>
+        <atom id="20" element="O" x="-1.5809" y="-2.6097" z="-5.4281"/>
+        <bond parent1="16" parent2="17"/>
+        <bond parent1="16" parent2="18"/>
+        <bond parent1="16" parent2="19"/>
+        <bond parent1="16" parent2="20"/>
+        <data name="points" type="double" size="12">
+        2.5005 2.5326 2.7269 1.5529 0.8992 0.9087 -0.0022 1.7944 2.7269 0.9453
+        3.4279 0.9087
+        </data>
+        <data name="points_driver" type="int" size="17">
+        4 3 1 2 3 3 2 0 3 3 0 1 3 3 1 0 2
+        </data>
+      </group>
+      <group name="Polytope" reference="polytope" x="-2.5263" y="-6.0377"
+      z="-6.3368" center_x="3.7193" center_y="-3.8741" center_z="-4.5190"
+      e1="0.00" e2="360.00" e3="0.00" faces="yes" red="1.000" green="1.000"
+      blue="0.000">
+        <atom id="21" element="Si" x="3.7193" y="-3.8741" z="-4.5186"/>
+        <atom id="22" element="O" x="4.9707" y="-3.5050" z="-3.6099"/>
+        <atom id="23" element="O" x="4.0231" y="-5.1385" z="-5.4281"/>
+        <atom id="24" element="O" x="2.4680" y="-4.2432" z="-3.6099"/>
+        <atom id="25" element="O" x="3.4156" y="-2.6097" z="-5.4281"/>
+        <bond parent1="21" parent2="22"/>
+        <bond parent1="21" parent2="23"/>
+        <bond parent1="21" parent2="24"/>
+        <bond parent1="21" parent2="25"/>
+        <data name="points" type="double" size="12">
+        7.4970 2.5326 2.7269 6.5494 0.8992 0.9087 4.9943 1.7944 2.7269 5.9418
+        3.4279 0.9087
+        </data>
+        <data name="points_driver" type="int" size="17">
+        4 3 1 2 3 3 2 0 3 3 0 1 3 3 1 0 2
+        </data>
+      </group>
+      <group name="Polytope" reference="polytope" x="-2.5263" y="-6.0377"
+      z="-6.3368" center_x="8.7158" center_y="-3.8741" center_z="-4.5190"
+      e1="0.00" e2="360.00" e3="0.00" faces="yes" red="1.000" green="1.000"
+      blue="0.000">
+        <atom id="26" element="Si" x="8.7158" y="-3.8741" z="-4.5186"/>
+        <atom id="27" element="O" x="7.4645" y="-4.2432" z="-3.6099"/>
+        <atom id="28" element="O" x="8.4121" y="-2.6097" z="-5.4281"/>
+        <atom id="29" element="O" x="9.9672" y="-3.5050" z="-3.6099"/>
+        <atom id="30" element="O" x="9.0196" y="-5.1385" z="-5.4281"/>
+        <bond parent1="26" parent2="27"/>
+        <bond parent1="26" parent2="28"/>
+        <bond parent1="26" parent2="29"/>
+        <bond parent1="26" parent2="30"/>
+        <data name="points" type="double" size="12">
+        9.9908 1.7944 2.7269 10.9383 3.4279 0.9087 12.4935 2.5326 2.7269 11.5459
+        0.8992 0.9087
+        </data>
+        <data name="points_driver" type="int" size="17">
+        4 3 1 2 3 3 2 0 3 3 0 1 3 3 1 0 2
+        </data>
+      </group>
+      <group name="Polytope" reference="polytope" x="-2.5263" y="-6.0377"
+      z="-6.3368" center_x="-3.7754" center_y="0.4530" center_z="-4.5190"
+      e1="0.00" e2="360.00" e3="0.00" faces="yes" red="1.000" green="1.000"
+      blue="0.000">
+        <atom id="31" element="Si" x="-3.7754" y="0.4530" z="-4.5186"/>
+        <atom id="32" element="O" x="-5.0268" y="0.0839" z="-3.6099"/>
+        <atom id="33" element="O" x="-2.5240" y="0.8221" z="-3.6099"/>
+        <atom id="34" element="O" x="-3.4716" y="-0.8114" z="-5.4281"/>
+        <atom id="35" element="O" x="-4.0792" y="1.7174" z="-5.4281"/>
+        <bond parent1="31" parent2="32"/>
+        <bond parent1="31" parent2="33"/>
+        <bond parent1="31" parent2="34"/>
+        <bond parent1="31" parent2="35"/>
+        <data name="points" type="double" size="12">
+        -2.5005 6.1215 2.7269 0.0022 6.8597 2.7269 -0.9453 5.2263 0.9087 -1.5529
+        7.7550 0.9087
+        </data>
+        <data name="points_driver" type="int" size="17">
+        4 3 1 2 3 3 2 0 3 3 0 1 3 3 1 0 2
+        </data>
+      </group>
+      <group name="Polytope" reference="polytope" x="-2.5263" y="-6.0377"
+      z="-6.3368" center_x="1.2211" center_y="0.4530" center_z="-4.5190"
+      e1="0.00" e2="360.00" e3="0.00" faces="yes" red="0.000" green="1.000"
+      blue="0.000">
+        <atom id="36" element="Si" x="1.2211" y="0.4530" z="-4.5186"/>
+        <atom id="37" element="O" x="2.4725" y="0.8221" z="-3.6099"/>
+        <atom id="38" element="O" x="1.5249" y="-0.8114" z="-5.4281"/>
+        <atom id="39" element="O" x="-0.0303" y="0.0839" z="-3.6099"/>
+        <atom id="40" element="O" x="0.9173" y="1.7174" z="-5.4281"/>
+        <bond parent1="36" parent2="37"/>
+        <bond parent1="36" parent2="38"/>
+        <bond parent1="36" parent2="39"/>
+        <bond parent1="36" parent2="40"/>
+        <data name="points" type="double" size="12">
+        4.9987 6.8597 2.7269 4.0512 5.2263 0.9087 2.4960 6.1215 2.7269 3.4436
+        7.7550 0.9087
+        </data>
+        <data name="points_driver" type="int" size="17">
+        4 3 1 2 3 3 2 0 3 3 0 1 3 3 1 0 2
+        </data>
+      </group>
+      <group name="Polytope" reference="polytope" x="-2.5263" y="-6.0377"
+      z="-6.3368" center_x="6.2176" center_y="0.4530" center_z="-4.5190"
+      faces="yes" red="1.000" green="0.000" blue="0.000">
+        <atom id="41" element="Si" x="6.2176" y="0.4530" z="-4.5186"/>
+        <atom id="42" element="O" x="7.4690" y="0.8221" z="-3.6099"/>
+        <atom id="43" element="O" x="6.5214" y="-0.8114" z="-5.4281"/>
+        <atom id="44" element="O" x="4.9662" y="0.0839" z="-3.6099"/>
+        <atom id="45" element="O" x="5.9138" y="1.7174" z="-5.4281"/>
+        <bond parent1="41" parent2="42"/>
+        <bond parent1="41" parent2="43"/>
+        <bond parent1="41" parent2="44"/>
+        <bond parent1="41" parent2="45"/>
+        <data name="points" type="double" size="12">
+        9.9952 6.8597 2.7269 9.0477 5.2263 0.9087 7.4925 6.1215 2.7269 8.4401
+        7.7550 0.9087
+        </data>
+        <data name="points_driver" type="int" size="17">
+        4 3 1 2 3 3 2 0 3 3 0 1 3 3 1 0 2
+        </data>
+      </group>
+      <group name="Polytope" reference="polytope" x="-2.5263" y="-6.0377"
+      z="-6.3368" center_x="-6.2737" center_y="4.7801" center_z="-4.5190"
+      e1="0.00" e2="360.00" e3="0.00" faces="yes" red="1.000" green="1.000"
+      blue="0.000">
+        <atom id="46" element="Si" x="-6.2737" y="4.7801" z="-4.5186"/>
+        <atom id="47" element="O" x="-7.5250" y="4.4110" z="-3.6099"/>
+        <atom id="48" element="O" x="-5.0223" y="5.1492" z="-3.6099"/>
+        <atom id="49" element="O" x="-5.9699" y="3.5157" z="-5.4281"/>
+        <atom id="50" element="O" x="-6.5774" y="6.0444" z="-5.4281"/>
+        <bond parent1="46" parent2="47"/>
+        <bond parent1="46" parent2="48"/>
+        <bond parent1="46" parent2="49"/>
+        <bond parent1="46" parent2="50"/>
+        <data name="points" type="double" size="12">
+        -4.9987 10.4486 2.7269 -2.4960 11.1868 2.7269 -3.4436 9.5534 0.9087
+        -4.0512 12.0821 0.9087
+        </data>
+        <data name="points_driver" type="int" size="17">
+        4 3 1 2 3 3 2 0 3 3 0 1 3 3 1 0 2
+        </data>
+      </group>
+      <group name="Polytope" reference="polytope" x="-2.5263" y="-6.0377"
+      z="-6.3368" center_x="-1.2772" center_y="4.7801" center_z="-4.5190"
+      e1="0.00" e2="360.00" e3="0.00" faces="yes" red="1.000" green="1.000"
+      blue="0.000">
+        <atom id="51" element="Si" x="-1.2772" y="4.7801" z="-4.5186"/>
+        <atom id="52" element="O" x="-0.0258" y="5.1492" z="-3.6099"/>
+        <atom id="53" element="O" x="-0.9734" y="3.5157" z="-5.4281"/>
+        <atom id="54" element="O" x="-2.5285" y="4.4110" z="-3.6099"/>
+        <atom id="55" element="O" x="-1.5809" y="6.0444" z="-5.4281"/>
+        <bond parent1="51" parent2="52"/>
+        <bond parent1="51" parent2="53"/>
+        <bond parent1="51" parent2="54"/>
+        <bond parent1="51" parent2="55"/>
+        <data name="points" type="double" size="12">
+        2.5005 11.1868 2.7269 1.5529 9.5534 0.9087 -0.0022 10.4486 2.7269 0.9453
+        12.0821 0.9087
+        </data>
+        <data name="points_driver" type="int" size="17">
+        4 3 1 2 3 3 2 0 3 3 0 1 3 3 1 0 2
+        </data>
+      </group>
+      <group name="Polytope" reference="polytope" x="-2.5263" y="-6.0377"
+      z="-6.3368" center_x="-6.5865" center_y="4.6878" center_z="-4.7461"
+      e1="0.00" e2="360.00" e3="0.00" faces="yes" red="1.000" green="1.000"
+      blue="0.000">
+        <atom id="56" element="Si" x="-7.5228" y="6.9436" z="-6.3368"/>
+        <atom id="57" element="O" x="-5.9699" y="3.5157" z="-5.4281"/>
+        <atom id="58" element="O" x="-7.5250" y="4.4110" z="-3.6099"/>
+        <atom id="59" element="Si" x="-6.2737" y="4.7801" z="-4.5186"/>
+        <atom id="60" element="O" x="-6.5774" y="6.0444" z="-5.4281"/>
+        <bond parent1="56" parent2="60"/>
+        <bond parent1="57" parent2="59"/>
+        <bond parent1="58" parent2="59"/>
+        <bond parent1="59" parent2="60"/>
+        <data name="points" type="double" size="12">
+        -3.4436 9.5534 0.9087 -4.9987 10.4486 2.7269 -3.7474 10.8177 1.8182
+        -4.0512 12.0821 0.9087
+        </data>
+        <data name="points_driver" type="int" size="17">
+        4 3 1 2 3 3 2 0 3 3 0 1 3 3 1 0 2
+        </data>
+      </group>
+      <group name="Polytope" reference="polytope" x="-2.5263" y="-6.0377"
+      z="-6.3368" center_x="-1.5900" center_y="4.6878" center_z="-4.7461"
+      e1="0.00" e2="360.00" e3="0.00" faces="yes" red="1.000" green="1.000"
+      blue="0.000">
+        <atom id="61" element="Si" x="-2.5263" y="6.9436" z="-6.3368"/>
+        <atom id="62" element="O" x="-0.9734" y="3.5157" z="-5.4281"/>
+        <atom id="63" element="O" x="-2.5285" y="4.4110" z="-3.6099"/>
+        <atom id="64" element="Si" x="-1.2772" y="4.7801" z="-4.5186"/>
+        <atom id="65" element="O" x="-1.5809" y="6.0444" z="-5.4281"/>
+        <bond parent1="61" parent2="65"/>
+        <bond parent1="62" parent2="64"/>
+        <bond parent1="63" parent2="64"/>
+        <bond parent1="64" parent2="65"/>
+        <data name="points" type="double" size="12">
+        1.5529 9.5534 0.9087 -0.0022 10.4486 2.7269 1.2491 10.8177 1.8182 0.9453
+        12.0821 0.9087
+        </data>
+        <data name="points_driver" type="int" size="17">
+        4 3 1 2 3 3 2 0 3 3 0 1 3 3 1 0 2
+        </data>
+      </group>
+      <group name="Polytope" reference="polytope" x="-2.5263" y="-6.0377"
+      z="-6.3368" center_x="3.7193" center_y="4.7801" center_z="-4.5190"
+      e1="0.00" e2="360.00" e3="0.00" faces="yes" red="1.000" green="1.000"
+      blue="0.000">
+        <atom id="66" element="Si" x="3.7193" y="4.7801" z="-4.5186"/>
+        <atom id="67" element="O" x="2.4680" y="4.4110" z="-3.6099"/>
+        <atom id="68" element="O" x="4.9707" y="5.1492" z="-3.6099"/>
+        <atom id="69" element="O" x="4.0231" y="3.5157" z="-5.4281"/>
+        <atom id="70" element="O" x="3.4156" y="6.0444" z="-5.4281"/>
+        <bond parent1="66" parent2="67"/>
+        <bond parent1="66" parent2="68"/>
+        <bond parent1="66" parent2="69"/>
+        <bond parent1="66" parent2="70"/>
+        <data name="points" type="double" size="12">
+        4.9943 10.4486 2.7269 7.4970 11.1868 2.7269 6.5494 9.5534 0.9087 5.9418
+        12.0821 0.9087
+        </data>
+        <data name="points_driver" type="int" size="17">
+        4 3 1 2 3 3 2 0 3 3 0 1 3 3 1 0 2
+        </data>
+      </group>
+      <group name="Polytope" reference="polytope" x="-2.5263" y="-6.0377"
+      z="-6.3368" center_x="3.4065" center_y="4.6878" center_z="-4.7461"
+      e1="0.00" e2="360.00" e3="0.00" faces="yes" red="1.000" green="1.000"
+      blue="0.000">
+        <atom id="71" element="Si" x="2.4702" y="6.9436" z="-6.3368"/>
+        <atom id="72" element="O" x="4.0231" y="3.5157" z="-5.4281"/>
+        <atom id="73" element="O" x="2.4680" y="4.4110" z="-3.6099"/>
+        <atom id="74" element="Si" x="3.7193" y="4.7801" z="-4.5186"/>
+        <atom id="75" element="O" x="3.4156" y="6.0444" z="-5.4281"/>
+        <bond parent1="71" parent2="75"/>
+        <bond parent1="72" parent2="74"/>
+        <bond parent1="73" parent2="74"/>
+        <bond parent1="74" parent2="75"/>
+        <data name="points" type="double" size="12">
+        6.5494 9.5534 0.9087 4.9943 10.4486 2.7269 6.2456 10.8177 1.8182 5.9418
+        12.0821 0.9087
+        </data>
+        <data name="points_driver" type="int" size="17">
+        4 3 1 2 3 3 2 0 3 3 0 1 3 3 1 0 2
+        </data>
+      </group>
+      <group name="Polytope" reference="polytope" x="-2.5263" y="-6.0377"
+      z="-6.3368" center_x="-2.5263" center_y="-1.7106" center_z="-0.8826"
+      e1="0.00" e2="360.00" e3="0.00" faces="yes" red="0.000" green="1.000"
+      blue="0.000">
+        <atom id="76" element="Si" x="-2.5263" y="-1.7106" z="-0.8822"/>
+        <atom id="77" element="O" x="-1.5809" y="-2.6097" z="0.0265"/>
+        <atom id="78" element="O" x="-3.4694" y="-2.6058" z="-1.7917"/>
+        <atom id="79" element="O" x="-3.4716" y="-0.8114" z="0.0265"/>
+        <atom id="80" element="O" x="-1.5832" y="-0.8153" z="-1.7917"/>
+        <bond parent1="76" parent2="77"/>
+        <bond parent1="76" parent2="78"/>
+        <bond parent1="76" parent2="79"/>
+        <bond parent1="76" parent2="80"/>
+        <data name="points" type="double" size="12">
+        0.9453 3.4279 6.3633 -0.9431 3.4318 4.5451 -0.9453 5.2263 6.3633 0.9431
+        5.2224 4.5451
+        </data>
+        <data name="points_driver" type="int" size="17">
+        4 3 1 2 3 3 2 0 3 3 0 1 3 3 1 0 2
+        </data>
+      </group>
+      <group name="Polytope" reference="polytope" x="-2.5263" y="-6.0377"
+      z="-6.3368" center_x="1.2211" center_y="-3.8741" center_z="-2.7008"
+      e1="0.00" e2="360.00" e3="0.00" faces="yes" red="1.000" green="1.000"
+      blue="0.000">
+        <atom id="81" element="Si" x="1.2211" y="-3.8741" z="-2.7004"/>
+        <atom id="82" element="O" x="1.5271" y="-2.6058" z="-1.7917"/>
+        <atom id="83" element="O" x="2.4680" y="-4.2432" z="-3.6099"/>
+        <atom id="84" element="O" x="0.9151" y="-5.1424" z="-1.7917"/>
+        <atom id="85" element="O" x="-0.0258" y="-3.5050" z="-3.6099"/>
+        <bond parent1="81" parent2="82"/>
+        <bond parent1="81" parent2="83"/>
+        <bond parent1="81" parent2="84"/>
+        <bond parent1="81" parent2="85"/>
+        <data name="points" type="double" size="12">
+        4.0534 3.4318 4.5451 4.9943 1.7944 2.7269 3.4413 0.8953 4.5451 2.5005
+        2.5326 2.7269
+        </data>
+        <data name="points_driver" type="int" size="17">
+        4 3 1 2 3 3 2 0 3 3 0 1 3 3 1 0 2
+        </data>
+      </group>
+      <group name="Polytope" reference="polytope" x="-2.5263" y="-6.0377"
+      z="-6.3368" center_x="6.2176" center_y="-3.8741" center_z="-2.7008"
+      e1="0.00" e2="360.00" e3="0.00" faces="yes" red="1.000" green="1.000"
+      blue="0.000">
+        <atom id="86" element="Si" x="6.2176" y="-3.8741" z="-2.7004"/>
+        <atom id="87" element="O" x="5.9116" y="-5.1424" z="-1.7917"/>
+        <atom id="88" element="O" x="4.9707" y="-3.5050" z="-3.6099"/>
+        <atom id="89" element="O" x="6.5236" y="-2.6058" z="-1.7917"/>
+        <atom id="90" element="O" x="7.4645" y="-4.2432" z="-3.6099"/>
+        <bond parent1="86" parent2="87"/>
+        <bond parent1="86" parent2="88"/>
+        <bond parent1="86" parent2="89"/>
+        <bond parent1="86" parent2="90"/>
+        <data name="points" type="double" size="12">
+        8.4378 0.8953 4.5451 7.4970 2.5326 2.7269 9.0499 3.4318 4.5451 9.9908
+        1.7944 2.7269
+        </data>
+        <data name="points_driver" type="int" size="17">
+        4 3 1 2 3 3 2 0 3 3 0 1 3 3 1 0 2
+        </data>
+      </group>
+      <group name="Polytope" reference="polytope" x="-2.5263" y="-6.0377"
+      z="-6.3368" center_x="-1.2772" center_y="0.4530" center_z="-2.7008"
+      e1="0.00" e2="360.00" e3="0.00" faces="yes" red="0.000" green="1.000"
+      blue="0.000">
+        <atom id="91" element="Si" x="-1.2772" y="0.4530" z="-2.7004"/>
+        <atom id="92" element="O" x="-0.9711" y="1.7212" z="-1.7917"/>
+        <atom id="93" element="O" x="-1.5832" y="-0.8153" z="-1.7917"/>
+        <atom id="94" element="O" x="-2.5240" y="0.8221" z="-3.6099"/>
+        <atom id="95" element="O" x="-0.0303" y="0.0839" z="-3.6099"/>
+        <bond parent1="91" parent2="92"/>
+        <bond parent1="91" parent2="93"/>
+        <bond parent1="91" parent2="94"/>
+        <bond parent1="91" parent2="95"/>
+        <data name="points" type="double" size="12">
+        1.5552 7.7589 4.5451 0.9431 5.2224 4.5451 0.0022 6.8597 2.7269 2.4960
+        6.1215 2.7269
+        </data>
+        <data name="points_driver" type="int" size="17">
+        4 3 1 2 3 3 2 0 3 3 0 1 3 3 1 0 2
+        </data>
+      </group>
+      <group name="Polytope" reference="polytope" x="-2.5263" y="-6.0377"
+      z="-6.3368" center_x="3.7193" center_y="0.4530" center_z="-2.7008"
+      e1="0.00" e2="360.00" e3="0.00" faces="yes" red="1.000" green="0.000"
+      blue="0.000">
+        <atom id="96" element="Si" x="3.7193" y="0.4530" z="-2.7004"/>
+        <atom id="97" element="O" x="4.0254" y="1.7212" z="-1.7917"/>
+        <atom id="98" element="O" x="3.4133" y="-0.8153" z="-1.7917"/>
+        <atom id="99" element="O" x="2.4725" y="0.8221" z="-3.6099"/>
+        <atom id="100" element="O" x="4.9662" y="0.0839" z="-3.6099"/>
+        <bond parent1="96" parent2="97"/>
+        <bond parent1="96" parent2="98"/>
+        <bond parent1="96" parent2="99"/>
+        <bond parent1="96" parent2="100"/>
+        <data name="points" type="double" size="12">
+        6.5517 7.7589 4.5451 5.9396 5.2224 4.5451 4.9987 6.8597 2.7269 7.4925
+        6.1215 2.7269
+        </data>
+        <data name="points_driver" type="int" size="17">
+        4 3 1 2 3 3 2 0 3 3 0 1 3 3 1 0 2
+        </data>
+      </group>
+      <group name="Polytope" reference="polytope" x="-2.5263" y="-6.0377"
+      z="-6.3368" center_x="-3.7754" center_y="4.7801" center_z="-2.7008"
+      faces="yes" red="1.000" green="1.000" blue="0.000">
+        <atom id="101" element="Si" x="-3.7754" y="4.7801" z="-2.7004"/>
+        <atom id="102" element="O" x="-4.0814" y="3.5118" z="-1.7917"/>
+        <atom id="103" element="O" x="-3.4694" y="6.0483" z="-1.7917"/>
+        <atom id="104" element="O" x="-2.5285" y="4.4110" z="-3.6099"/>
+        <atom id="105" element="O" x="-5.0223" y="5.1492" z="-3.6099"/>
+        <bond parent1="101" parent2="102"/>
+        <bond parent1="101" parent2="103"/>
+        <bond parent1="101" parent2="104"/>
+        <bond parent1="101" parent2="105"/>
+        <data name="points" type="double" size="12">
+        -1.5552 9.5495 4.5451 -0.9431 12.0860 4.5451 -0.0022 10.4486 2.7269
+        -2.4960 11.1868 2.7269
+        </data>
+        <data name="points_driver" type="int" size="17">
+        4 3 1 2 3 3 2 0 3 3 0 1 3 3 1 0 2
+        </data>
+      </group>
+      <group name="Polytope" reference="polytope" x="-2.5263" y="-6.0377"
+      z="-6.3368" center_x="1.2211" center_y="4.7801" center_z="-2.7008"
+      e1="0.00" e2="360.00" e3="0.00" faces="yes" red="1.000" green="1.000"
+      blue="0.000">
+        <atom id="106" element="Si" x="1.2211" y="4.7801" z="-2.7004"/>
+        <atom id="107" element="O" x="0.9151" y="3.5118" z="-1.7917"/>
+        <atom id="108" element="O" x="1.5271" y="6.0483" z="-1.7917"/>
+        <atom id="109" element="O" x="2.4680" y="4.4110" z="-3.6099"/>
+        <atom id="110" element="O" x="-0.0258" y="5.1492" z="-3.6099"/>
+        <bond parent1="106" parent2="107"/>
+        <bond parent1="106" parent2="108"/>
+        <bond parent1="106" parent2="109"/>
+        <bond parent1="106" parent2="110"/>
+        <data name="points" type="double" size="12">
+        3.4413 9.5495 4.5451 4.0534 12.0860 4.5451 4.9943 10.4486 2.7269 2.5005
+        11.1868 2.7269
+        </data>
+        <data name="points_driver" type="int" size="17">
+        4 3 1 2 3 3 2 0 3 3 0 1 3 3 1 0 2
+        </data>
+      </group>
+      <group name="Polytope" reference="polytope" x="-2.5263" y="-6.0377"
+      z="-6.3368" center_x="-1.2772" center_y="-3.8741" center_z="0.9356"
+      e1="0.00" e2="360.00" e3="0.00" faces="yes" red="0.000" green="1.000"
+      blue="0.000">
+        <atom id="111" element="Si" x="-1.2772" y="-3.8741" z="0.9360"/>
+        <atom id="112" element="O" x="-0.0258" y="-3.5050" z="1.8447"/>
+        <atom id="113" element="O" x="-0.9734" y="-5.1385" z="0.0265"/>
+        <atom id="114" element="O" x="-2.5285" y="-4.2432" z="1.8447"/>
+        <atom id="115" element="O" x="-1.5809" y="-2.6097" z="0.0265"/>
+        <bond parent1="111" parent2="112"/>
+        <bond parent1="111" parent2="113"/>
+        <bond parent1="111" parent2="114"/>
+        <bond parent1="111" parent2="115"/>
+        <data name="points" type="double" size="12">
+        2.5005 2.5326 8.1815 1.5529 0.8992 6.3633 -0.0022 1.7944 8.1815 0.9453
+        3.4279 6.3633
+        </data>
+        <data name="points_driver" type="int" size="17">
+        4 3 1 2 3 3 2 0 3 3 0 1 3 3 1 0 2
+        </data>
+      </group>
+      <group name="Polytope" reference="polytope" x="-2.5263" y="-6.0377"
+      z="-6.3368" center_x="3.7193" center_y="-3.8741" center_z="0.9356"
+      e1="0.00" e2="360.00" e3="0.00" faces="yes" red="1.000" green="1.000"
+      blue="0.000">
+        <atom id="116" element="Si" x="3.7193" y="-3.8741" z="0.9360"/>
+        <atom id="117" element="O" x="4.9707" y="-3.5050" z="1.8447"/>
+        <atom id="118" element="O" x="4.0231" y="-5.1385" z="0.0265"/>
+        <atom id="119" element="O" x="2.4680" y="-4.2432" z="1.8447"/>
+        <atom id="120" element="O" x="3.4156" y="-2.6097" z="0.0265"/>
+        <bond parent1="116" parent2="117"/>
+        <bond parent1="116" parent2="118"/>
+        <bond parent1="116" parent2="119"/>
+        <bond parent1="116" parent2="120"/>
+        <data name="points" type="double" size="12">
+        7.4970 2.5326 8.1815 6.5494 0.8992 6.3633 4.9943 1.7944 8.1815 5.9418
+        3.4279 6.3633
+        </data>
+        <data name="points_driver" type="int" size="17">
+        4 3 1 2 3 3 2 0 3 3 0 1 3 3 1 0 2
+        </data>
+      </group>
+      <group name="Polytope" reference="polytope" x="-2.5263" y="-6.0377"
+      z="-6.3368" center_x="8.7158" center_y="-3.8741" center_z="0.9356"
+      e1="0.00" e2="360.00" e3="0.00" faces="yes" red="1.000" green="1.000"
+      blue="0.000">
+        <atom id="121" element="Si" x="8.7158" y="-3.8741" z="0.9360"/>
+        <atom id="122" element="O" x="7.4645" y="-4.2432" z="1.8447"/>
+        <atom id="123" element="O" x="8.4121" y="-2.6097" z="0.0265"/>
+        <atom id="124" element="O" x="9.9672" y="-3.5050" z="1.8447"/>
+        <atom id="125" element="O" x="9.0196" y="-5.1385" z="0.0265"/>
+        <bond parent1="121" parent2="122"/>
+        <bond parent1="121" parent2="123"/>
+        <bond parent1="121" parent2="124"/>
+        <bond parent1="121" parent2="125"/>
+        <data name="points" type="double" size="12">
+        9.9908 1.7944 8.1815 10.9383 3.4279 6.3633 12.4935 2.5326 8.1815 11.5459
+        0.8992 6.3633
+        </data>
+        <data name="points_driver" type="int" size="17">
+        4 3 1 2 3 3 2 0 3 3 0 1 3 3 1 0 2
+        </data>
+      </group>
+      <group name="Polytope" reference="polytope" x="-2.5263" y="-6.0377"
+      z="-6.3368" center_x="-3.7754" center_y="0.4530" center_z="0.9356"
+      e1="0.00" e2="360.00" e3="0.00" faces="yes" red="1.000" green="1.000"
+      blue="0.000">
+        <atom id="126" element="Si" x="-3.7754" y="0.4530" z="0.9360"/>
+        <atom id="127" element="O" x="-2.5240" y="0.8221" z="1.8447"/>
+        <atom id="128" element="O" x="-3.4716" y="-0.8114" z="0.0265"/>
+        <atom id="129" element="O" x="-5.0268" y="0.0839" z="1.8447"/>
+        <atom id="130" element="O" x="-4.0792" y="1.7174" z="0.0265"/>
+        <bond parent1="126" parent2="127"/>
+        <bond parent1="126" parent2="128"/>
+        <bond parent1="126" parent2="129"/>
+        <bond parent1="126" parent2="130"/>
+        <data name="points" type="double" size="12">
+        0.0022 6.8597 8.1815 -0.9453 5.2263 6.3633 -2.5005 6.1215 8.1815 -1.5529
+        7.7550 6.3633
+        </data>
+        <data name="points_driver" type="int" size="17">
+        4 3 1 2 3 3 2 0 3 3 0 1 3 3 1 0 2
+        </data>
+      </group>
+      <group name="Polytope" reference="polytope" x="-2.5263" y="-6.0377"
+      z="-6.3368" center_x="2.4702" center_y="-1.7106" center_z="-0.8826"
+      faces="yes" red="1.000" green="1.000" blue="0.000">
+        <atom id="131" element="Si" x="2.4702" y="-1.7106" z="-0.8822"/>
+        <atom id="132" element="O" x="1.5249" y="-0.8114" z="0.0265"/>
+        <atom id="133" element="O" x="3.4133" y="-0.8153" z="-1.7917"/>
+        <atom id="134" element="O" x="3.4156" y="-2.6097" z="0.0265"/>
+        <atom id="135" element="O" x="1.5271" y="-2.6058" z="-1.7917"/>
+        <bond parent1="131" parent2="132"/>
+        <bond parent1="131" parent2="133"/>
+        <bond parent1="131" parent2="134"/>
+        <bond parent1="131" parent2="135"/>
+        <data name="points" type="double" size="12">
+        4.0512 5.2263 6.3633 5.9396 5.2224 4.5451 5.9418 3.4279 6.3633 4.0534
+        3.4318 4.5451
+        </data>
+        <data name="points_driver" type="int" size="17">
+        4 3 1 2 3 3 2 0 3 3 0 1 3 3 1 0 2
+        </data>
+      </group>
+      <group name="Polytope" reference="polytope" x="-2.5263" y="-6.0377"
+      z="-6.3368" center_x="7.4667" center_y="-1.7106" center_z="-0.8826"
+      e1="0.00" e2="360.00" e3="0.00" faces="yes" red="1.000" green="1.000"
+      blue="0.000">
+        <atom id="136" element="Si" x="7.4667" y="-1.7106" z="-0.8822"/>
+        <atom id="137" element="O" x="6.5214" y="-0.8114" z="0.0265"/>
+        <atom id="138" element="O" x="8.4121" y="-2.6097" z="0.0265"/>
+        <atom id="139" element="O" x="6.5236" y="-2.6058" z="-1.7917"/>
+        <atom id="140" element="O" x="8.4098" y="-0.8153" z="-1.7917"/>
+        <bond parent1="136" parent2="137"/>
+        <bond parent1="136" parent2="138"/>
+        <bond parent1="136" parent2="139"/>
+        <bond parent1="136" parent2="140"/>
+        <data name="points" type="double" size="12">
+        9.0477 5.2263 6.3633 10.9383 3.4279 6.3633 9.0499 3.4318 4.5451 10.9361
+        5.2224 4.5451
+        </data>
+        <data name="points_driver" type="int" size="17">
+        4 3 1 2 3 3 2 0 3 3 0 1 3 3 1 0 2
+        </data>
+      </group>
+      <group name="Polytope" reference="polytope" x="-2.5263" y="-6.0377"
+      z="-6.3368" center_x="-5.0245" center_y="2.6165" center_z="-0.8826"
+      e1="0.00" e2="360.00" e3="0.00" faces="yes" red="1.000" green="1.000"
+      blue="0.000">
+        <atom id="141" element="Si" x="-5.0245" y="2.6165" z="-0.8822"/>
+        <atom id="142" element="O" x="-4.0792" y="1.7174" z="0.0265"/>
+        <atom id="143" element="O" x="-5.9699" y="3.5157" z="0.0265"/>
+        <atom id="144" element="O" x="-4.0814" y="3.5118" z="-1.7917"/>
+        <atom id="145" element="O" x="-5.9676" y="1.7212" z="-1.7917"/>
+        <bond parent1="141" parent2="142"/>
+        <bond parent1="141" parent2="143"/>
+        <bond parent1="141" parent2="144"/>
+        <bond parent1="141" parent2="145"/>
+        <data name="points" type="double" size="12">
+        -1.5529 7.7550 6.3633 -3.4436 9.5534 6.3633 -1.5552 9.5495 4.5451
+        -3.4413 7.7589 4.5451
+        </data>
+        <data name="points_driver" type="int" size="17">
+        4 3 1 2 3 3 2 0 3 3 0 1 3 3 1 0 2
+        </data>
+      </group>
+      <group name="Polytope" reference="polytope" x="-2.5263" y="-6.0377"
+      z="-6.3368" center_x="-0.0280" center_y="2.6165" center_z="-0.8826"
+      e1="0.00" e2="360.00" e3="0.00" faces="yes" red="1.000" green="1.000"
+      blue="0.000">
+        <atom id="146" element="Si" x="-0.0280" y="2.6165" z="-0.8822"/>
+        <atom id="147" element="O" x="-0.9734" y="3.5157" z="0.0265"/>
+        <atom id="148" element="O" x="0.9151" y="3.5118" z="-1.7917"/>
+        <atom id="149" element="O" x="0.9173" y="1.7174" z="0.0265"/>
+        <atom id="150" element="O" x="-0.9711" y="1.7212" z="-1.7917"/>
+        <bond parent1="146" parent2="147"/>
+        <bond parent1="146" parent2="148"/>
+        <bond parent1="146" parent2="149"/>
+        <bond parent1="146" parent2="150"/>
+        <data name="points" type="double" size="12">
+        1.5529 9.5534 6.3633 3.4413 9.5495 4.5451 3.4436 7.7550 6.3633 1.5552
+        7.7589 4.5451
+        </data>
+        <data name="points_driver" type="int" size="17">
+        4 3 1 2 3 3 2 0 3 3 0 1 3 3 1 0 2
+        </data>
+      </group>
+      <group name="Polytope" reference="polytope" x="-2.5263" y="-6.0377"
+      z="-6.3368" center_x="1.2211" center_y="0.4530" center_z="0.9356"
+      e1="0.00" e2="360.00" e3="0.00" faces="yes" red="1.000" green="1.000"
+      blue="0.000">
+        <atom id="151" element="Si" x="1.2211" y="0.4530" z="0.9360"/>
+        <atom id="152" element="O" x="2.4725" y="0.8221" z="1.8447"/>
+        <atom id="153" element="O" x="-0.0303" y="0.0839" z="1.8447"/>
+        <atom id="154" element="O" x="0.9173" y="1.7174" z="0.0265"/>
+        <atom id="155" element="O" x="1.5249" y="-0.8114" z="0.0265"/>
+        <bond parent1="151" parent2="152"/>
+        <bond parent1="151" parent2="153"/>
+        <bond parent1="151" parent2="154"/>
+        <bond parent1="151" parent2="155"/>
+        <data name="points" type="double" size="12">
+        4.9987 6.8597 8.1815 2.4960 6.1215 8.1815 3.4436 7.7550 6.3633 4.0512
+        5.2263 6.3633
+        </data>
+        <data name="points_driver" type="int" size="17">
+        4 3 1 2 3 3 2 0 3 3 0 1 3 3 1 0 2
+        </data>
+      </group>
+      <group name="Polytope" reference="polytope" x="-2.5263" y="-6.0377"
+      z="-6.3368" center_x="6.2176" center_y="0.4530" center_z="0.9356"
+      e1="0.00" e2="360.00" e3="0.00" faces="yes" red="1.000" green="0.000"
+      blue="0.000">
+        <atom id="156" element="Si" x="6.2176" y="0.4530" z="0.9360"/>
+        <atom id="157" element="O" x="7.4690" y="0.8221" z="1.8447"/>
+        <atom id="158" element="O" x="4.9662" y="0.0839" z="1.8447"/>
+        <atom id="159" element="O" x="5.9138" y="1.7174" z="0.0265"/>
+        <atom id="160" element="O" x="6.5214" y="-0.8114" z="0.0265"/>
+        <bond parent1="156" parent2="157"/>
+        <bond parent1="156" parent2="158"/>
+        <bond parent1="156" parent2="159"/>
+        <bond parent1="156" parent2="160"/>
+        <data name="points" type="double" size="12">
+        9.9952 6.8597 8.1815 7.4925 6.1215 8.1815 8.4401 7.7550 6.3633 9.0477
+        5.2263 6.3633
+        </data>
+        <data name="points_driver" type="int" size="17">
+        4 3 1 2 3 3 2 0 3 3 0 1 3 3 1 0 2
+        </data>
+      </group>
+      <group name="Polytope" reference="polytope" x="-2.5263" y="-6.0377"
+      z="-6.3368" center_x="-6.2737" center_y="4.7801" center_z="0.9356"
+      e1="0.00" e2="360.00" e3="0.00" faces="yes" red="1.000" green="1.000"
+      blue="0.000">
+        <atom id="161" element="Si" x="-6.2737" y="4.7801" z="0.9360"/>
+        <atom id="162" element="O" x="-7.5250" y="4.4110" z="1.8447"/>
+        <atom id="163" element="O" x="-5.0223" y="5.1492" z="1.8447"/>
+        <atom id="164" element="O" x="-5.9699" y="3.5157" z="0.0265"/>
+        <atom id="165" element="O" x="-6.5774" y="6.0444" z="0.0265"/>
+        <bond parent1="161" parent2="162"/>
+        <bond parent1="161" parent2="163"/>
+        <bond parent1="161" parent2="164"/>
+        <bond parent1="161" parent2="165"/>
+        <data name="points" type="double" size="12">
+        -4.9987 10.4486 8.1815 -2.4960 11.1868 8.1815 -3.4436 9.5534 6.3633
+        -4.0512 12.0821 6.3633
+        </data>
+        <data name="points_driver" type="int" size="17">
+        4 3 1 2 3 3 2 0 3 3 0 1 3 3 1 0 2
+        </data>
+      </group>
+      <group name="Polytope" reference="polytope" x="-2.5263" y="-6.0377"
+      z="-6.3368" center_x="-1.2772" center_y="4.7801" center_z="0.9356"
+      e1="0.00" e2="360.00" e3="0.00" faces="yes" red="1.000" green="1.000"
+      blue="0.000">
+        <atom id="166" element="Si" x="-1.2772" y="4.7801" z="0.9360"/>
+        <atom id="167" element="O" x="-2.5285" y="4.4110" z="1.8447"/>
+        <atom id="168" element="O" x="-0.0258" y="5.1492" z="1.8447"/>
+        <atom id="169" element="O" x="-0.9734" y="3.5157" z="0.0265"/>
+        <atom id="170" element="O" x="-1.5809" y="6.0444" z="0.0265"/>
+        <bond parent1="166" parent2="167"/>
+        <bond parent1="166" parent2="168"/>
+        <bond parent1="166" parent2="169"/>
+        <bond parent1="166" parent2="170"/>
+        <data name="points" type="double" size="12">
+        -0.0022 10.4486 8.1815 2.5005 11.1868 8.1815 1.5529 9.5534 6.3633 0.9453
+        12.0821 6.3633
+        </data>
+        <data name="points_driver" type="int" size="17">
+        4 3 1 2 3 3 2 0 3 3 0 1 3 3 1 0 2
+        </data>
+      </group>
+      <group name="Polytope" reference="polytope" x="-2.5263" y="-6.0377"
+      z="-6.3368" center_x="3.7193" center_y="4.7801" center_z="0.9356"
+      faces="yes" red="1.000" green="1.000" blue="0.000">
+        <atom id="171" element="Si" x="3.7193" y="4.7801" z="0.9360"/>
+        <atom id="172" element="O" x="2.4680" y="4.4110" z="1.8447"/>
+        <atom id="173" element="O" x="3.4156" y="6.0444" z="0.0265"/>
+        <atom id="174" element="O" x="4.9707" y="5.1492" z="1.8447"/>
+        <atom id="175" element="O" x="4.0231" y="3.5157" z="0.0265"/>
+        <bond parent1="171" parent2="172"/>
+        <bond parent1="171" parent2="173"/>
+        <bond parent1="171" parent2="174"/>
+        <bond parent1="171" parent2="175"/>
+        <data name="points" type="double" size="12">
+        4.9943 10.4486 8.1815 5.9418 12.0821 6.3633 7.4970 11.1868 8.1815 6.5494
+        9.5534 6.3633
+        </data>
+        <data name="points_driver" type="int" size="17">
+        4 3 1 2 3 3 2 0 3 3 0 1 3 3 1 0 2
+        </data>
+      </group>
+      <group name="Polytope" reference="polytope" x="-2.5263" y="-6.0377"
+      z="-6.3368" center_x="4.9685" center_y="2.6165" center_z="-0.8826"
+      e1="0.00" e2="360.00" e3="0.00" faces="yes" red="1.000" green="0.000"
+      blue="0.000">
+        <atom id="176" element="Si" x="4.9685" y="2.6165" z="-0.8822"/>
+        <atom id="177" element="O" x="4.0231" y="3.5157" z="0.0265"/>
+        <atom id="178" element="O" x="5.9116" y="3.5118" z="-1.7917"/>
+        <atom id="179" element="O" x="5.9138" y="1.7174" z="0.0265"/>
+        <atom id="180" element="O" x="4.0254" y="1.7212" z="-1.7917"/>
+        <bond parent1="176" parent2="177"/>
+        <bond parent1="176" parent2="178"/>
+        <bond parent1="176" parent2="179"/>
+        <bond parent1="176" parent2="180"/>
+        <data name="points" type="double" size="12">
+        6.5494 9.5534 6.3633 8.4378 9.5495 4.5451 8.4401 7.7550 6.3633 6.5517
+        7.7589 4.5451
+        </data>
+        <data name="points_driver" type="int" size="17">
+        4 3 1 2 3 3 2 0 3 3 0 1 3 3 1 0 2
+        </data>
+      </group>
+      <group name="Polytope" reference="polytope" x="-2.5263" y="-6.0377"
+      z="-6.3368" center_x="-2.5263" center_y="-1.7106" center_z="4.5720"
+      faces="yes" red="1.000" green="1.000" blue="0.000">
+        <atom id="181" element="Si" x="-2.5263" y="-1.7106" z="4.5724"/>
+        <atom id="182" element="O" x="-3.4716" y="-0.8114" z="5.4811"/>
+        <atom id="183" element="O" x="-1.5809" y="-2.6097" z="5.4811"/>
+        <atom id="184" element="O" x="-3.4694" y="-2.6058" z="3.6629"/>
+        <atom id="185" element="O" x="-1.5832" y="-0.8153" z="3.6629"/>
+        <bond parent1="181" parent2="182"/>
+        <bond parent1="181" parent2="183"/>
+        <bond parent1="181" parent2="184"/>
+        <bond parent1="181" parent2="185"/>
+        <data name="points" type="double" size="12">
+        -0.9453 5.2263 11.8179 0.9453 3.4279 11.8179 -0.9431 3.4318 9.9997
+        0.9431 5.2224 9.9997
+        </data>
+        <data name="points_driver" type="int" size="17">
+        4 3 1 2 3 3 2 0 3 3 0 1 3 3 1 0 2
+        </data>
+      </group>
+      <group name="Polytope" reference="polytope" x="-2.5263" y="-6.0377"
+      z="-6.3368" center_x="1.2211" center_y="-3.8741" center_z="2.7538"
+      e1="0.00" e2="360.00" e3="0.00" faces="yes" red="0.000" green="1.000"
+      blue="0.000">
+        <atom id="186" element="Si" x="1.2211" y="-3.8741" z="2.7542"/>
+        <atom id="187" element="O" x="1.5271" y="-2.6058" z="3.6629"/>
+        <atom id="188" element="O" x="2.4680" y="-4.2432" z="1.8447"/>
+        <atom id="189" element="O" x="0.9151" y="-5.1424" z="3.6629"/>
+        <atom id="190" element="O" x="-0.0258" y="-3.5050" z="1.8447"/>
+        <bond parent1="186" parent2="187"/>
+        <bond parent1="186" parent2="188"/>
+        <bond parent1="186" parent2="189"/>
+        <bond parent1="186" parent2="190"/>
+        <data name="points" type="double" size="12">
+        4.0534 3.4318 9.9997 4.9943 1.7944 8.1815 3.4413 0.8953 9.9997 2.5005
+        2.5326 8.1815
+        </data>
+        <data name="points_driver" type="int" size="17">
+        4 3 1 2 3 3 2 0 3 3 0 1 3 3 1 0 2
+        </data>
+      </group>
+      <group name="Polytope" reference="polytope" x="-2.5263" y="-6.0377"
+      z="-6.3368" center_x="6.2176" center_y="-3.8741" center_z="2.7538"
+      e1="0.00" e2="360.00" e3="0.00" faces="yes" red="1.000" green="1.000"
+      blue="0.000">
+        <atom id="191" element="Si" x="6.2176" y="-3.8741" z="2.7542"/>
+        <atom id="192" element="O" x="5.9116" y="-5.1424" z="3.6629"/>
+        <atom id="193" element="O" x="6.5236" y="-2.6058" z="3.6629"/>
+        <atom id="194" element="O" x="7.4645" y="-4.2432" z="1.8447"/>
+        <atom id="195" element="O" x="4.9707" y="-3.5050" z="1.8447"/>
+        <bond parent1="191" parent2="192"/>
+        <bond parent1="191" parent2="193"/>
+        <bond parent1="191" parent2="194"/>
+        <bond parent1="191" parent2="195"/>
+        <data name="points" type="double" size="12">
+        8.4378 0.8953 9.9997 9.0499 3.4318 9.9997 9.9908 1.7944 8.1815 7.4970
+        2.5326 8.1815
+        </data>
+        <data name="points_driver" type="int" size="17">
+        4 3 1 2 3 3 2 0 3 3 0 1 3 3 1 0 2
+        </data>
+      </group>
+      <group name="Polytope" reference="polytope" x="-2.5263" y="-6.0377"
+      z="-6.3368" center_x="-1.2772" center_y="0.4530" center_z="2.7538"
+      e1="0.00" e2="360.00" e3="0.00" faces="yes" red="1.000" green="1.000"
+      blue="0.000">
+        <atom id="196" element="Si" x="-1.2772" y="0.4530" z="2.7542"/>
+        <atom id="197" element="O" x="-0.9711" y="1.7212" z="3.6629"/>
+        <atom id="198" element="O" x="-1.5832" y="-0.8153" z="3.6629"/>
+        <atom id="199" element="O" x="-2.5240" y="0.8221" z="1.8447"/>
+        <atom id="200" element="O" x="-0.0303" y="0.0839" z="1.8447"/>
+        <bond parent1="196" parent2="197"/>
+        <bond parent1="196" parent2="198"/>
+        <bond parent1="196" parent2="199"/>
+        <bond parent1="196" parent2="200"/>
+        <data name="points" type="double" size="12">
+        1.5552 7.7589 9.9997 0.9431 5.2224 9.9997 0.0022 6.8597 8.1815 2.4960
+        6.1215 8.1815
+        </data>
+        <data name="points_driver" type="int" size="17">
+        4 3 1 2 3 3 2 0 3 3 0 1 3 3 1 0 2
+        </data>
+      </group>
+      <group name="Polytope" reference="polytope" x="-2.5263" y="-6.0377"
+      z="-6.3368" center_x="2.4702" center_y="-1.7106" center_z="4.5720"
+      e1="0.00" e2="360.00" e3="0.00" faces="yes" red="0.000" green="1.000"
+      blue="0.000">
+        <atom id="201" element="Si" x="2.4702" y="-1.7106" z="4.5724"/>
+        <atom id="202" element="O" x="1.5249" y="-0.8114" z="5.4811"/>
+        <atom id="203" element="O" x="3.4156" y="-2.6097" z="5.4811"/>
+        <atom id="204" element="O" x="1.5271" y="-2.6058" z="3.6629"/>
+        <atom id="205" element="O" x="3.4133" y="-0.8153" z="3.6629"/>
+        <bond parent1="201" parent2="202"/>
+        <bond parent1="201" parent2="203"/>
+        <bond parent1="201" parent2="204"/>
+        <bond parent1="201" parent2="205"/>
+        <data name="points" type="double" size="12">
+        4.0512 5.2263 11.8179 5.9418 3.4279 11.8179 4.0534 3.4318 9.9997 5.9396
+        5.2224 9.9997
+        </data>
+        <data name="points_driver" type="int" size="17">
+        4 3 1 2 3 3 2 0 3 3 0 1 3 3 1 0 2
+        </data>
+      </group>
+      <group name="Polytope" reference="polytope" x="-2.5263" y="-6.0377"
+      z="-6.3368" center_x="7.4667" center_y="-1.7106" center_z="4.5720"
+      e1="0.00" e2="360.00" e3="0.00" faces="yes" red="1.000" green="1.000"
+      blue="0.000">
+        <atom id="206" element="Si" x="7.4667" y="-1.7106" z="4.5724"/>
+        <atom id="207" element="O" x="6.5214" y="-0.8114" z="5.4811"/>
+        <atom id="208" element="O" x="8.4121" y="-2.6097" z="5.4811"/>
+        <atom id="209" element="O" x="6.5236" y="-2.6058" z="3.6629"/>
+        <atom id="210" element="O" x="8.4098" y="-0.8153" z="3.6629"/>
+        <bond parent1="206" parent2="207"/>
+        <bond parent1="206" parent2="208"/>
+        <bond parent1="206" parent2="209"/>
+        <bond parent1="206" parent2="210"/>
+        <data name="points" type="double" size="12">
+        9.0477 5.2263 11.8179 10.9383 3.4279 11.8179 9.0499 3.4318 9.9997
+        10.9361 5.2224 9.9997
+        </data>
+        <data name="points_driver" type="int" size="17">
+        4 3 1 2 3 3 2 0 3 3 0 1 3 3 1 0 2
+        </data>
+      </group>
+      <group name="Polytope" reference="polytope" x="-2.5263" y="-6.0377"
+      z="-6.3368" center_x="-5.0245" center_y="2.6165" center_z="4.5720"
+      e1="0.00" e2="360.00" e3="0.00" faces="yes" red="1.000" green="1.000"
+      blue="0.000">
+        <atom id="211" element="Si" x="-5.0245" y="2.6165" z="4.5724"/>
+        <atom id="212" element="O" x="-4.0792" y="1.7174" z="5.4811"/>
+        <atom id="213" element="O" x="-5.9676" y="1.7212" z="3.6629"/>
+        <atom id="214" element="O" x="-5.9699" y="3.5157" z="5.4811"/>
+        <atom id="215" element="O" x="-4.0814" y="3.5118" z="3.6629"/>
+        <bond parent1="211" parent2="212"/>
+        <bond parent1="211" parent2="213"/>
+        <bond parent1="211" parent2="214"/>
+        <bond parent1="211" parent2="215"/>
+        <data name="points" type="double" size="12">
+        -1.5529 7.7550 11.8179 -3.4413 7.7589 9.9997 -3.4436 9.5534 11.8179
+        -1.5552 9.5495 9.9997
+        </data>
+        <data name="points_driver" type="int" size="17">
+        4 3 1 2 3 3 2 0 3 3 0 1 3 3 1 0 2
+        </data>
+      </group>
+      <group name="Polytope" reference="polytope" x="-2.5263" y="-6.0377"
+      z="-6.3368" center_x="-0.0280" center_y="2.6165" center_z="4.5720"
+      e1="0.00" e2="360.00" e3="0.00" faces="yes" red="1.000" green="1.000"
+      blue="0.000">
+        <atom id="216" element="Si" x="-0.0280" y="2.6165" z="4.5724"/>
+        <atom id="217" element="O" x="0.9173" y="1.7174" z="5.4811"/>
+        <atom id="218" element="O" x="-0.9711" y="1.7212" z="3.6629"/>
+        <atom id="219" element="O" x="-0.9734" y="3.5157" z="5.4811"/>
+        <atom id="220" element="O" x="0.9151" y="3.5118" z="3.6629"/>
+        <bond parent1="216" parent2="217"/>
+        <bond parent1="216" parent2="218"/>
+        <bond parent1="216" parent2="219"/>
+        <bond parent1="216" parent2="220"/>
+        <data name="points" type="double" size="12">
+        3.4436 7.7550 11.8179 1.5552 7.7589 9.9997 1.5529 9.5534 11.8179 3.4413
+        9.5495 9.9997
+        </data>
+        <data name="points_driver" type="int" size="17">
+        4 3 1 2 3 3 2 0 3 3 0 1 3 3 1 0 2
+        </data>
+      </group>
+      <group name="Polytope" reference="polytope" x="-2.5263" y="-6.0377"
+      z="-6.3368" center_x="3.7193" center_y="0.4530" center_z="2.7538"
+      faces="yes" red="1.000" green="0.000" blue="0.000">
+        <atom id="221" element="Si" x="3.7193" y="0.4530" z="2.7542"/>
+        <atom id="222" element="O" x="4.0254" y="1.7212" z="3.6629"/>
+        <atom id="223" element="O" x="4.9662" y="0.0839" z="1.8447"/>
+        <atom id="224" element="O" x="3.4133" y="-0.8153" z="3.6629"/>
+        <atom id="225" element="O" x="2.4725" y="0.8221" z="1.8447"/>
+        <bond parent1="221" parent2="222"/>
+        <bond parent1="221" parent2="223"/>
+        <bond parent1="221" parent2="224"/>
+        <bond parent1="221" parent2="225"/>
+        <data name="points" type="double" size="12">
+        6.5517 7.7589 9.9997 7.4925 6.1215 8.1815 5.9396 5.2224 9.9997 4.9987
+        6.8597 8.1815
+        </data>
+        <data name="points_driver" type="int" size="17">
+        4 3 1 2 3 3 2 0 3 3 0 1 3 3 1 0 2
+        </data>
+      </group>
+      <group name="Polytope" reference="polytope" x="-2.5263" y="-6.0377"
+      z="-6.3368" center_x="-3.7754" center_y="4.7801" center_z="2.7538"
+      e1="0.00" e2="360.00" e3="0.00" faces="yes" red="1.000" green="1.000"
+      blue="0.000">
+        <atom id="226" element="Si" x="-3.7754" y="4.7801" z="2.7542"/>
+        <atom id="227" element="O" x="-4.0814" y="3.5118" z="3.6629"/>
+        <atom id="228" element="O" x="-3.4694" y="6.0483" z="3.6629"/>
+        <atom id="229" element="O" x="-2.5285" y="4.4110" z="1.8447"/>
+        <atom id="230" element="O" x="-5.0223" y="5.1492" z="1.8447"/>
+        <bond parent1="226" parent2="227"/>
+        <bond parent1="226" parent2="228"/>
+        <bond parent1="226" parent2="229"/>
+        <bond parent1="226" parent2="230"/>
+        <data name="points" type="double" size="12">
+        -1.5552 9.5495 9.9997 -0.9431 12.0860 9.9997 -0.0022 10.4486 8.1815
+        -2.4960 11.1868 8.1815
+        </data>
+        <data name="points_driver" type="int" size="17">
+        4 3 1 2 3 3 2 0 3 3 0 1 3 3 1 0 2
+        </data>
+      </group>
+      <group name="Polytope" reference="polytope" x="-2.5263" y="-6.0377"
+      z="-6.3368" center_x="1.2211" center_y="4.7801" center_z="2.7538"
+      faces="yes" red="1.000" green="1.000" blue="0.000">
+        <atom id="231" element="Si" x="1.2211" y="4.7801" z="2.7542"/>
+        <atom id="232" element="O" x="0.9151" y="3.5118" z="3.6629"/>
+        <atom id="233" element="O" x="1.5271" y="6.0483" z="3.6629"/>
+        <atom id="234" element="O" x="2.4680" y="4.4110" z="1.8447"/>
+        <atom id="235" element="O" x="-0.0258" y="5.1492" z="1.8447"/>
+        <bond parent1="231" parent2="232"/>
+        <bond parent1="231" parent2="233"/>
+        <bond parent1="231" parent2="234"/>
+        <bond parent1="231" parent2="235"/>
+        <data name="points" type="double" size="12">
+        3.4413 9.5495 9.9997 4.0534 12.0860 9.9997 4.9943 10.4486 8.1815 2.5005
+        11.1868 8.1815
+        </data>
+        <data name="points_driver" type="int" size="17">
+        4 3 1 2 3 3 2 0 3 3 0 1 3 3 1 0 2
+        </data>
+      </group>
+      <group name="Polytope" reference="polytope" x="-2.5263" y="-6.0377"
+      z="-6.3368" center_x="-1.2772" center_y="-3.8741" center_z="6.3902"
+      e1="0.00" e2="360.00" e3="0.00" faces="yes" red="1.000" green="1.000"
+      blue="0.000">
+        <atom id="236" element="Si" x="-1.2772" y="-3.8741" z="6.3906"/>
+        <atom id="237" element="O" x="-2.5285" y="-4.2432" z="7.2993"/>
+        <atom id="238" element="O" x="-1.5809" y="-2.6097" z="5.4811"/>
+        <atom id="239" element="O" x="-0.0258" y="-3.5050" z="7.2993"/>
+        <atom id="240" element="O" x="-0.9734" y="-5.1385" z="5.4811"/>
+        <bond parent1="236" parent2="237"/>
+        <bond parent1="236" parent2="238"/>
+        <bond parent1="236" parent2="239"/>
+        <bond parent1="236" parent2="240"/>
+        <data name="points" type="double" size="12">
+        -0.0022 1.7944 13.6361 0.9453 3.4279 11.8179 2.5005 2.5326 13.6361
+        1.5529 0.8992 11.8179
+        </data>
+        <data name="points_driver" type="int" size="17">
+        4 3 1 2 3 3 2 0 3 3 0 1 3 3 1 0 2
+        </data>
+      </group>
+      <group name="Polytope" reference="polytope" x="-2.5263" y="-6.0377"
+      z="-6.3368" center_x="3.7193" center_y="-3.8741" center_z="6.3902"
+      e1="0.00" e2="360.00" e3="0.00" faces="yes" red="1.000" green="1.000"
+      blue="0.000">
+        <atom id="241" element="Si" x="3.7193" y="-3.8741" z="6.3906"/>
+        <atom id="242" element="O" x="4.9707" y="-3.5050" z="7.2993"/>
+        <atom id="243" element="O" x="2.4680" y="-4.2432" z="7.2993"/>
+        <atom id="244" element="O" x="3.4156" y="-2.6097" z="5.4811"/>
+        <atom id="245" element="O" x="4.0231" y="-5.1385" z="5.4811"/>
+        <bond parent1="241" parent2="242"/>
+        <bond parent1="241" parent2="243"/>
+        <bond parent1="241" parent2="244"/>
+        <bond parent1="241" parent2="245"/>
+        <data name="points" type="double" size="12">
+        7.4970 2.5326 13.6361 4.9943 1.7944 13.6361 5.9418 3.4279 11.8179 6.5494
+        0.8992 11.8179
+        </data>
+        <data name="points_driver" type="int" size="17">
+        4 3 1 2 3 3 2 0 3 3 0 1 3 3 1 0 2
+        </data>
+      </group>
+      <group name="Polytope" reference="polytope" x="-2.5263" y="-6.0377"
+      z="-6.3368" center_x="8.7158" center_y="-3.8741" center_z="6.3902"
+      e1="0.00" e2="360.00" e3="0.00" faces="yes" red="1.000" green="1.000"
+      blue="0.000">
+        <atom id="246" element="Si" x="8.7158" y="-3.8741" z="6.3906"/>
+        <atom id="247" element="O" x="9.9672" y="-3.5050" z="7.2993"/>
+        <atom id="248" element="O" x="7.4645" y="-4.2432" z="7.2993"/>
+        <atom id="249" element="O" x="8.4121" y="-2.6097" z="5.4811"/>
+        <atom id="250" element="O" x="9.0196" y="-5.1385" z="5.4811"/>
+        <bond parent1="246" parent2="247"/>
+        <bond parent1="246" parent2="248"/>
+        <bond parent1="246" parent2="249"/>
+        <bond parent1="246" parent2="250"/>
+        <data name="points" type="double" size="12">
+        12.4935 2.5326 13.6361 9.9908 1.7944 13.6361 10.9383 3.4279 11.8179
+        11.5459 0.8992 11.8179
+        </data>
+        <data name="points_driver" type="int" size="17">
+        4 3 1 2 3 3 2 0 3 3 0 1 3 3 1 0 2
+        </data>
+      </group>
+      <group name="Polytope" reference="polytope" x="-2.5263" y="-6.0377"
+      z="-6.3368" center_x="-3.7754" center_y="0.4530" center_z="6.3902"
+      faces="yes" red="1.000" green="1.000" blue="0.000">
+        <atom id="251" element="Si" x="-3.7754" y="0.4530" z="6.3906"/>
+        <atom id="252" element="O" x="-2.5240" y="0.8221" z="7.2993"/>
+        <atom id="253" element="O" x="-3.4716" y="-0.8114" z="5.4811"/>
+        <atom id="254" element="O" x="-5.0268" y="0.0839" z="7.2993"/>
+        <atom id="255" element="O" x="-4.0792" y="1.7174" z="5.4811"/>
+        <bond parent1="251" parent2="252"/>
+        <bond parent1="251" parent2="253"/>
+        <bond parent1="251" parent2="254"/>
+        <bond parent1="251" parent2="255"/>
+        <data name="points" type="double" size="12">
+        0.0022 6.8597 13.6361 -0.9453 5.2263 11.8179 -2.5005 6.1215 13.6361
+        -1.5529 7.7550 11.8179
+        </data>
+        <data name="points_driver" type="int" size="17">
+        4 3 1 2 3 3 2 0 3 3 0 1 3 3 1 0 2
+        </data>
+      </group>
+      <group name="Polytope" reference="polytope" x="-2.5263" y="-6.0377"
+      z="-6.3368" center_x="1.2211" center_y="0.4530" center_z="6.3902"
+      e1="0.00" e2="360.00" e3="0.00" faces="yes" red="0.000" green="1.000"
+      blue="0.000">
+        <atom id="256" element="Si" x="1.2211" y="0.4530" z="6.3906"/>
+        <atom id="257" element="O" x="-0.0303" y="0.0839" z="7.2993"/>
+        <atom id="258" element="O" x="0.9173" y="1.7174" z="5.4811"/>
+        <atom id="259" element="O" x="2.4725" y="0.8221" z="7.2993"/>
+        <atom id="260" element="O" x="1.5249" y="-0.8114" z="5.4811"/>
+        <bond parent1="256" parent2="257"/>
+        <bond parent1="256" parent2="258"/>
+        <bond parent1="256" parent2="259"/>
+        <bond parent1="256" parent2="260"/>
+        <data name="points" type="double" size="12">
+        2.4960 6.1215 13.6361 3.4436 7.7550 11.8179 4.9987 6.8597 13.6361 4.0512
+        5.2263 11.8179
+        </data>
+        <data name="points_driver" type="int" size="17">
+        4 3 1 2 3 3 2 0 3 3 0 1 3 3 1 0 2
+        </data>
+      </group>
+      <group name="Polytope" reference="polytope" x="-2.5263" y="-6.0377"
+      z="-6.3368" center_x="6.2176" center_y="0.4530" center_z="6.3902"
+      e1="0.00" e2="360.00" e3="0.00" faces="yes" red="1.000" green="0.000"
+      blue="0.000">
+        <atom id="261" element="Si" x="6.2176" y="0.4530" z="6.3906"/>
+        <atom id="262" element="O" x="7.4690" y="0.8221" z="7.2993"/>
+        <atom id="263" element="O" x="4.9662" y="0.0839" z="7.2993"/>
+        <atom id="264" element="O" x="5.9138" y="1.7174" z="5.4811"/>
+        <atom id="265" element="O" x="6.5214" y="-0.8114" z="5.4811"/>
+        <bond parent1="261" parent2="262"/>
+        <bond parent1="261" parent2="263"/>
+        <bond parent1="261" parent2="264"/>
+        <bond parent1="261" parent2="265"/>
+        <data name="points" type="double" size="12">
+        9.9952 6.8597 13.6361 7.4925 6.1215 13.6361 8.4401 7.7550 11.8179 9.0477
+        5.2263 11.8179
+        </data>
+        <data name="points_driver" type="int" size="17">
+        4 3 1 2 3 3 2 0 3 3 0 1 3 3 1 0 2
+        </data>
+      </group>
+      <group name="Polytope" reference="polytope" x="-2.5263" y="-6.0377"
+      z="-6.3368" center_x="-6.2737" center_y="4.7801" center_z="6.3902"
+      e1="0.00" e2="360.00" e3="0.00" faces="yes" red="1.000" green="1.000"
+      blue="0.000">
+        <atom id="266" element="Si" x="-6.2737" y="4.7801" z="6.3906"/>
+        <atom id="267" element="O" x="-7.5250" y="4.4110" z="7.2993"/>
+        <atom id="268" element="O" x="-5.0223" y="5.1492" z="7.2993"/>
+        <atom id="269" element="O" x="-5.9699" y="3.5157" z="5.4811"/>
+        <atom id="270" element="O" x="-6.5774" y="6.0444" z="5.4811"/>
+        <bond parent1="266" parent2="267"/>
+        <bond parent1="266" parent2="268"/>
+        <bond parent1="266" parent2="269"/>
+        <bond parent1="266" parent2="270"/>
+        <data name="points" type="double" size="12">
+        -4.9987 10.4486 13.6361 -2.4960 11.1868 13.6361 -3.4436 9.5534 11.8179
+        -4.0512 12.0821 11.8179
+        </data>
+        <data name="points_driver" type="int" size="17">
+        4 3 1 2 3 3 2 0 3 3 0 1 3 3 1 0 2
+        </data>
+      </group>
+      <group name="Polytope" reference="polytope" x="-2.5263" y="-6.0377"
+      z="-6.3368" center_x="-1.2772" center_y="4.7801" center_z="6.3902"
+      faces="yes" red="1.000" green="1.000" blue="0.000">
+        <atom id="271" element="Si" x="-1.2772" y="4.7801" z="6.3906"/>
+        <atom id="272" element="O" x="-2.5285" y="4.4110" z="7.2993"/>
+        <atom id="273" element="O" x="-1.5809" y="6.0444" z="5.4811"/>
+        <atom id="274" element="O" x="-0.0258" y="5.1492" z="7.2993"/>
+        <atom id="275" element="O" x="-0.9734" y="3.5157" z="5.4811"/>
+        <bond parent1="271" parent2="272"/>
+        <bond parent1="271" parent2="273"/>
+        <bond parent1="271" parent2="274"/>
+        <bond parent1="271" parent2="275"/>
+        <data name="points" type="double" size="12">
+        -0.0022 10.4486 13.6361 0.9453 12.0821 11.8179 2.5005 11.1868 13.6361
+        1.5529 9.5534 11.8179
+        </data>
+        <data name="points_driver" type="int" size="17">
+        4 3 1 2 3 3 2 0 3 3 0 1 3 3 1 0 2
+        </data>
+      </group>
+      <group name="Polytope" reference="polytope" x="-2.5263" y="-6.0377"
+      z="-6.3368" center_x="3.7193" center_y="4.7801" center_z="6.3902"
+      e1="0.00" e2="360.00" e3="0.00" faces="yes" red="1.000" green="1.000"
+      blue="0.000">
+        <atom id="276" element="Si" x="3.7193" y="4.7801" z="6.3906"/>
+        <atom id="277" element="O" x="2.4680" y="4.4110" z="7.2993"/>
+        <atom id="278" element="O" x="4.9707" y="5.1492" z="7.2993"/>
+        <atom id="279" element="O" x="4.0231" y="3.5157" z="5.4811"/>
+        <atom id="280" element="O" x="3.4156" y="6.0444" z="5.4811"/>
+        <bond parent1="276" parent2="277"/>
+        <bond parent1="276" parent2="278"/>
+        <bond parent1="276" parent2="279"/>
+        <bond parent1="276" parent2="280"/>
+        <data name="points" type="double" size="12">
+        4.9943 10.4486 13.6361 7.4970 11.1868 13.6361 6.5494 9.5534 11.8179
+        5.9418 12.0821 11.8179
+        </data>
+        <data name="points_driver" type="int" size="17">
+        4 3 1 2 3 3 2 0 3 3 0 1 3 3 1 0 2
+        </data>
+      </group>
+      <group name="Polytope" reference="polytope" x="-2.5263" y="-6.0377"
+      z="-6.3368" center_x="4.9685" center_y="2.6165" center_z="4.5720"
+      faces="yes" red="1.000" green="0.000" blue="0.000">
+        <atom id="281" element="Si" x="4.9685" y="2.6165" z="4.5724"/>
+        <atom id="282" element="O" x="4.0231" y="3.5157" z="5.4811"/>
+        <atom id="283" element="O" x="5.9116" y="3.5118" z="3.6629"/>
+        <atom id="284" element="O" x="5.9138" y="1.7174" z="5.4811"/>
+        <atom id="285" element="O" x="4.0254" y="1.7212" z="3.6629"/>
+        <bond parent1="281" parent2="282"/>
+        <bond parent1="281" parent2="283"/>
+        <bond parent1="281" parent2="284"/>
+        <bond parent1="281" parent2="285"/>
+        <data name="points" type="double" size="12">
+        6.5494 9.5534 11.8179 8.4378 9.5495 9.9997 8.4401 7.7550 11.8179 6.5517
+        7.7589 9.9997
+        </data>
+        <data name="points_driver" type="int" size="17">
+        4 3 1 2 3 3 2 0 3 3 0 1 3 3 1 0 2
+        </data>
+      </group>
+      <group name="Polytope" reference="polytope" x="-2.5263" y="-6.0377"
+      z="-6.3368" center_x="0.9094" center_y="-3.7818" center_z="8.4358"
+      e1="0.00" e2="360.00" e3="0.00" faces="yes" red="1.000" green="1.000"
+      blue="0.000">
+        <atom id="286" element="Si" x="-0.0280" y="-6.0377" z="10.0270"/>
+        <atom id="287" element="O" x="1.5271" y="-2.6058" z="9.1175"/>
+        <atom id="288" element="O" x="-0.0258" y="-3.5050" z="7.2993"/>
+        <atom id="289" element="Si" x="1.2211" y="-3.8741" z="8.2088"/>
+        <atom id="290" element="O" x="0.9151" y="-5.1424" z="9.1175"/>
+        <bond parent1="286" parent2="290"/>
+        <bond parent1="287" parent2="289"/>
+        <bond parent1="288" parent2="289"/>
+        <bond parent1="289" parent2="290"/>
+        <data name="points" type="double" size="12">
+        4.0534 3.4318 15.4543 2.5005 2.5326 13.6361 3.7474 2.1635 14.5456 3.4413
+        0.8953 15.4543
+        </data>
+        <data name="points_driver" type="int" size="17">
+        4 3 1 2 3 3 2 0 3 3 0 1 3 3 1 0 2
+        </data>
+      </group>
+      <group name="Polytope" reference="polytope" x="-2.5263" y="-6.0377"
+      z="-6.3368" center_x="5.9059" center_y="-3.7818" center_z="8.4358"
+      e1="0.00" e2="360.00" e3="0.00" faces="yes" red="1.000" green="1.000"
+      blue="0.000">
+        <atom id="291" element="Si" x="4.9685" y="-6.0377" z="10.0270"/>
+        <atom id="292" element="O" x="6.5236" y="-2.6058" z="9.1175"/>
+        <atom id="293" element="O" x="4.9707" y="-3.5050" z="7.2993"/>
+        <atom id="294" element="Si" x="6.2176" y="-3.8741" z="8.2088"/>
+        <atom id="295" element="O" x="5.9116" y="-5.1424" z="9.1175"/>
+        <bond parent1="291" parent2="295"/>
+        <bond parent1="292" parent2="294"/>
+        <bond parent1="293" parent2="294"/>
+        <bond parent1="294" parent2="295"/>
+        <data name="points" type="double" size="12">
+        9.0499 3.4318 15.4543 7.4970 2.5326 13.6361 8.7439 2.1635 14.5456 8.4378
+        0.8953 15.4543
+        </data>
+        <data name="points_driver" type="int" size="17">
+        4 3 1 2 3 3 2 0 3 3 0 1 3 3 1 0 2
+        </data>
+      </group>
+      <group name="Polytope" reference="polytope" x="-2.5263" y="-6.0377"
+      z="-6.3368" center_x="1.2211" center_y="-3.8741" center_z="8.2084"
+      e1="0.00" e2="360.00" e3="0.00" faces="yes" red="1.000" green="1.000"
+      blue="0.000">
+        <atom id="296" element="Si" x="1.2211" y="-3.8741" z="8.2088"/>
+        <atom id="297" element="O" x="0.9151" y="-5.1424" z="9.1175"/>
+        <atom id="298" element="O" x="-0.0258" y="-3.5050" z="7.2993"/>
+        <atom id="299" element="O" x="1.5271" y="-2.6058" z="9.1175"/>
+        <atom id="300" element="O" x="2.4680" y="-4.2432" z="7.2993"/>
+        <bond parent1="296" parent2="297"/>
+        <bond parent1="296" parent2="298"/>
+        <bond parent1="296" parent2="299"/>
+        <bond parent1="296" parent2="300"/>
+        <data name="points" type="double" size="12">
+        3.4413 0.8953 15.4543 2.5005 2.5326 13.6361 4.0534 3.4318 15.4543 4.9943
+        1.7944 13.6361
+        </data>
+        <data name="points_driver" type="int" size="17">
+        4 3 1 2 3 3 2 0 3 3 0 1 3 3 1 0 2
+        </data>
+      </group>
+      <group name="Polytope" reference="polytope" x="-2.5263" y="-6.0377"
+      z="-6.3368" center_x="6.2176" center_y="-3.8741" center_z="8.2084"
+      e1="0.00" e2="360.00" e3="0.00" faces="yes" red="1.000" green="1.000"
+      blue="0.000">
+        <atom id="301" element="Si" x="6.2176" y="-3.8741" z="8.2088"/>
+        <atom id="302" element="O" x="5.9116" y="-5.1424" z="9.1175"/>
+        <atom id="303" element="O" x="4.9707" y="-3.5050" z="7.2993"/>
+        <atom id="304" element="O" x="6.5236" y="-2.6058" z="9.1175"/>
+        <atom id="305" element="O" x="7.4645" y="-4.2432" z="7.2993"/>
+        <bond parent1="301" parent2="302"/>
+        <bond parent1="301" parent2="303"/>
+        <bond parent1="301" parent2="304"/>
+        <bond parent1="301" parent2="305"/>
+        <data name="points" type="double" size="12">
+        8.4378 0.8953 15.4543 7.4970 2.5326 13.6361 9.0499 3.4318 15.4543 9.9908
+        1.7944 13.6361
+        </data>
+        <data name="points_driver" type="int" size="17">
+        4 3 1 2 3 3 2 0 3 3 0 1 3 3 1 0 2
+        </data>
+      </group>
+      <group name="Polytope" reference="polytope" x="-2.5263" y="-6.0377"
+      z="-6.3368" center_x="-1.2772" center_y="0.4530" center_z="8.2084"
+      e1="0.00" e2="360.00" e3="0.00" faces="yes" red="0.000" green="1.000"
+      blue="0.000">
+        <atom id="306" element="Si" x="-1.2772" y="0.4530" z="8.2088"/>
+        <atom id="307" element="O" x="-1.5832" y="-0.8153" z="9.1175"/>
+        <atom id="308" element="O" x="-0.9711" y="1.7212" z="9.1175"/>
+        <atom id="309" element="O" x="-0.0303" y="0.0839" z="7.2993"/>
+        <atom id="310" element="O" x="-2.5240" y="0.8221" z="7.2993"/>
+        <bond parent1="306" parent2="307"/>
+        <bond parent1="306" parent2="308"/>
+        <bond parent1="306" parent2="309"/>
+        <bond parent1="306" parent2="310"/>
+        <data name="points" type="double" size="12">
+        0.9431 5.2224 15.4543 1.5552 7.7589 15.4543 2.4960 6.1215 13.6361 0.0022
+        6.8597 13.6361
+        </data>
+        <data name="points_driver" type="int" size="17">
+        4 3 1 2 3 3 2 0 3 3 0 1 3 3 1 0 2
+        </data>
+      </group>
+      <group name="Polytope" reference="polytope" x="-2.5263" y="-6.0377"
+      z="-6.3368" center_x="3.7193" center_y="0.4530" center_z="8.2084"
+      faces="yes" red="1.000" green="0.000" blue="0.000">
+        <atom id="311" element="Si" x="3.7193" y="0.4530" z="8.2088"/>
+        <atom id="312" element="O" x="4.0254" y="1.7212" z="9.1175"/>
+        <atom id="313" element="O" x="3.4133" y="-0.8153" z="9.1175"/>
+        <atom id="314" element="O" x="2.4725" y="0.8221" z="7.2993"/>
+        <atom id="315" element="O" x="4.9662" y="0.0839" z="7.2993"/>
+        <bond parent1="311" parent2="312"/>
+        <bond parent1="311" parent2="313"/>
+        <bond parent1="311" parent2="314"/>
+        <bond parent1="311" parent2="315"/>
+        <data name="points" type="double" size="12">
+        6.5517 7.7589 15.4543 5.9396 5.2224 15.4543 4.9987 6.8597 13.6361 7.4925
+        6.1215 13.6361
+        </data>
+        <data name="points_driver" type="int" size="17">
+        4 3 1 2 3 3 2 0 3 3 0 1 3 3 1 0 2
+        </data>
+      </group>
+      <group name="Polytope" reference="polytope" x="-2.5263" y="-6.0377"
+      z="-6.3368" center_x="-3.7754" center_y="4.7801" center_z="8.2084"
+      e1="0.00" e2="360.00" e3="0.00" faces="yes" red="1.000" green="1.000"
+      blue="0.000">
+        <atom id="316" element="Si" x="-3.7754" y="4.7801" z="8.2088"/>
+        <atom id="317" element="O" x="-3.4694" y="6.0483" z="9.1175"/>
+        <atom id="318" element="O" x="-2.5285" y="4.4110" z="7.2993"/>
+        <atom id="319" element="O" x="-4.0814" y="3.5118" z="9.1175"/>
+        <atom id="320" element="O" x="-5.0223" y="5.1492" z="7.2993"/>
+        <bond parent1="316" parent2="317"/>
+        <bond parent1="316" parent2="318"/>
+        <bond parent1="316" parent2="319"/>
+        <bond parent1="316" parent2="320"/>
+        <data name="points" type="double" size="12">
+        -0.9431 12.0860 15.4543 -0.0022 10.4486 13.6361 -1.5552 9.5495 15.4543
+        -2.4960 11.1868 13.6361
+        </data>
+        <data name="points_driver" type="int" size="17">
+        4 3 1 2 3 3 2 0 3 3 0 1 3 3 1 0 2
+        </data>
+      </group>
+      <group name="Polytope" reference="polytope" x="-2.5263" y="-6.0377"
+      z="-6.3368" center_x="1.2211" center_y="4.7801" center_z="8.2084"
+      e1="0.00" e2="360.00" e3="0.00" faces="yes" red="1.000" green="1.000"
+      blue="0.000">
+        <atom id="321" element="Si" x="1.2211" y="4.7801" z="8.2088"/>
+        <atom id="322" element="O" x="1.5271" y="6.0483" z="9.1175"/>
+        <atom id="323" element="O" x="2.4680" y="4.4110" z="7.2993"/>
+        <atom id="324" element="O" x="0.9151" y="3.5118" z="9.1175"/>
+        <atom id="325" element="O" x="-0.0258" y="5.1492" z="7.2993"/>
+        <bond parent1="321" parent2="322"/>
+        <bond parent1="321" parent2="323"/>
+        <bond parent1="321" parent2="324"/>
+        <bond parent1="321" parent2="325"/>
+        <data name="points" type="double" size="12">
+        4.0534 12.0860 15.4543 4.9943 10.4486 13.6361 3.4413 9.5495 15.4543
+        2.5005 11.1868 13.6361
+        </data>
+        <data name="points_driver" type="int" size="17">
+        4 3 1 2 3 3 2 0 3 3 0 1 3 3 1 0 2
+        </data>
+      </group>
+      <group name="Polytope" reference="polytope" x="-2.5263" y="-6.0377"
+      z="-6.3368" center_x="-3.4637" center_y="4.6878" center_z="8.4358"
+      e1="0.00" e2="360.00" e3="0.00" faces="yes" red="1.000" green="1.000"
+      blue="0.000">
+        <atom id="326" element="Si" x="-2.5263" y="6.9436" z="10.0270"/>
+        <atom id="327" element="O" x="-4.0814" y="3.5118" z="9.1175"/>
+        <atom id="328" element="O" x="-2.5285" y="4.4110" z="7.2993"/>
+        <atom id="329" element="Si" x="-3.7754" y="4.7801" z="8.2088"/>
+        <atom id="330" element="O" x="-3.4694" y="6.0483" z="9.1175"/>
+        <bond parent1="326" parent2="330"/>
+        <bond parent1="327" parent2="329"/>
+        <bond parent1="328" parent2="329"/>
+        <bond parent1="329" parent2="330"/>
+        <data name="points" type="double" size="12">
+        -1.5552 9.5495 15.4543 -0.0022 10.4486 13.6361 -1.2491 10.8177 14.5456
+        -0.9431 12.0860 15.4543
+        </data>
+        <data name="points_driver" type="int" size="17">
+        4 3 1 2 3 3 2 0 3 3 0 1 3 3 1 0 2
+        </data>
+      </group>
+      <group name="Polytope" reference="polytope" x="-2.5263" y="-6.0377"
+      z="-6.3368" center_x="1.5328" center_y="4.6878" center_z="8.4358"
+      faces="yes" red="1.000" green="1.000" blue="0.000">
+        <atom id="331" element="Si" x="2.4702" y="6.9436" z="10.0270"/>
+        <atom id="332" element="O" x="0.9151" y="3.5118" z="9.1175"/>
+        <atom id="333" element="O" x="2.4680" y="4.4110" z="7.2993"/>
+        <atom id="334" element="Si" x="1.2211" y="4.7801" z="8.2088"/>
+        <atom id="335" element="O" x="1.5271" y="6.0483" z="9.1175"/>
+        <bond parent1="331" parent2="335"/>
+        <bond parent1="332" parent2="334"/>
+        <bond parent1="333" parent2="334"/>
+        <bond parent1="334" parent2="335"/>
+        <data name="points" type="double" size="12">
+        3.4413 9.5495 15.4543 4.9943 10.4486 13.6361 3.7474 10.8177 14.5456
+        4.0534 12.0860 15.4543
+        </data>
+        <data name="points_driver" type="int" size="17">
+        4 3 1 2 3 3 2 0 3 3 0 1 3 3 1 0 2
+        </data>
+      </group>
+      <atom id="336" element="Si" x="-0.0280" y="-6.0377" z="-6.3368"/>
+      <atom id="337" element="Si" x="4.9685" y="-6.0377" z="-6.3368"/>
+      <atom id="338" element="Si" x="9.9650" y="-6.0377" z="-6.3368"/>
+      <atom id="339" element="Si" x="-2.5263" y="-1.7106" z="-6.3368"/>
+      <atom id="340" element="Si" x="2.4702" y="-1.7106" z="-6.3368"/>
+      <atom id="341" element="Si" x="-1.2772" y="-3.8741" z="-4.5186"/>
+      <atom id="342" element="Si" x="7.4667" y="-1.7106" z="-6.3368"/>
+      <atom id="343" element="Si" x="3.7193" y="-3.8741" z="-4.5186"/>
+      <atom id="344" element="Si" x="8.7158" y="-3.8741" z="-4.5186"/>
+      <atom id="345" element="Si" x="-5.0245" y="2.6165" z="-6.3368"/>
+      <atom id="346" element="Si" x="-0.0280" y="2.6165" z="-6.3368"/>
+      <atom id="347" element="Si" x="-3.7754" y="0.4530" z="-4.5186"/>
+      <atom id="348" element="Si" x="4.9685" y="2.6165" z="-6.3368"/>
+      <atom id="349" element="Si" x="1.2211" y="0.4530" z="-4.5186"/>
+      <atom id="350" element="Si" x="6.2176" y="0.4530" z="-4.5186"/>
+      <atom id="351" element="Si" x="-7.5228" y="6.9436" z="-6.3368"/>
+      <atom id="352" element="Si" x="-2.5263" y="6.9436" z="-6.3368"/>
+      <atom id="353" element="Si" x="-6.2737" y="4.7801" z="-4.5186"/>
+      <atom id="354" element="Si" x="2.4702" y="6.9436" z="-6.3368"/>
+      <atom id="355" element="Si" x="-1.2772" y="4.7801" z="-4.5186"/>
+      <atom id="356" element="Si" x="3.7193" y="4.7801" z="-4.5186"/>
+      <atom id="357" element="Si" x="-0.0280" y="-6.0377" z="-0.8822"/>
+      <atom id="358" element="Si" x="-3.7754" y="-3.8741" z="-2.7004"/>
+      <atom id="359" element="Si" x="4.9685" y="-6.0377" z="-0.8822"/>
+      <atom id="360" element="Si" x="1.2211" y="-3.8741" z="-2.7004"/>
+      <atom id="361" element="Si" x="9.9650" y="-6.0377" z="-0.8822"/>
+      <atom id="362" element="Si" x="6.2176" y="-3.8741" z="-2.7004"/>
+      <atom id="363" element="Si" x="11.2141" y="-3.8741" z="-2.7004"/>
+      <atom id="364" element="Si" x="-2.5263" y="-1.7106" z="-0.8822"/>
+      <atom id="365" element="Si" x="-6.2737" y="0.4530" z="-2.7004"/>
+      <atom id="366" element="Si" x="2.4702" y="-1.7106" z="-0.8822"/>
+      <atom id="367" element="Si" x="-1.2772" y="0.4530" z="-2.7004"/>
+      <atom id="368" element="Si" x="-1.2772" y="-3.8741" z="0.9360"/>
+      <atom id="369" element="Si" x="7.4667" y="-1.7106" z="-0.8822"/>
+      <atom id="370" element="Si" x="3.7193" y="0.4530" z="-2.7004"/>
+      <atom id="371" element="Si" x="3.7193" y="-3.8741" z="0.9360"/>
+      <atom id="372" element="Si" x="8.7158" y="0.4530" z="-2.7004"/>
+      <atom id="373" element="Si" x="8.7158" y="-3.8741" z="0.9360"/>
+      <atom id="374" element="Si" x="-5.0245" y="2.6165" z="-0.8822"/>
+      <atom id="375" element="Si" x="-8.7719" y="4.7801" z="-2.7004"/>
+      <atom id="376" element="Si" x="-0.0280" y="2.6165" z="-0.8822"/>
+      <atom id="377" element="Si" x="-3.7754" y="4.7801" z="-2.7004"/>
+      <atom id="378" element="Si" x="-3.7754" y="0.4530" z="0.9360"/>
+      <atom id="379" element="Si" x="4.9685" y="2.6165" z="-0.8822"/>
+      <atom id="380" element="Si" x="1.2211" y="4.7801" z="-2.7004"/>
+      <atom id="381" element="Si" x="1.2211" y="0.4530" z="0.9360"/>
+      <atom id="382" element="Si" x="6.2176" y="4.7801" z="-2.7004"/>
+      <atom id="383" element="Si" x="6.2176" y="0.4530" z="0.9360"/>
+      <atom id="384" element="Si" x="-7.5228" y="6.9436" z="-0.8822"/>
+      <atom id="385" element="Si" x="-2.5263" y="6.9436" z="-0.8822"/>
+      <atom id="386" element="Si" x="-6.2737" y="4.7801" z="0.9360"/>
+      <atom id="387" element="Si" x="2.4702" y="6.9436" z="-0.8822"/>
+      <atom id="388" element="Si" x="-1.2772" y="4.7801" z="0.9360"/>
+      <atom id="389" element="Si" x="3.7193" y="4.7801" z="0.9360"/>
+      <atom id="390" element="Si" x="-0.0280" y="-6.0377" z="4.5724"/>
+      <atom id="391" element="Si" x="-3.7754" y="-3.8741" z="2.7542"/>
+      <atom id="392" element="Si" x="4.9685" y="-6.0377" z="4.5724"/>
+      <atom id="393" element="Si" x="1.2211" y="-3.8741" z="2.7542"/>
+      <atom id="394" element="Si" x="9.9650" y="-6.0377" z="4.5724"/>
+      <atom id="395" element="Si" x="6.2176" y="-3.8741" z="2.7542"/>
+      <atom id="396" element="Si" x="11.2141" y="-3.8741" z="2.7542"/>
+      <atom id="397" element="Si" x="-2.5263" y="-1.7106" z="4.5724"/>
+      <atom id="398" element="Si" x="-6.2737" y="0.4530" z="2.7542"/>
+      <atom id="399" element="Si" x="2.4702" y="-1.7106" z="4.5724"/>
+      <atom id="400" element="Si" x="-1.2772" y="0.4530" z="2.7542"/>
+      <atom id="401" element="Si" x="-1.2772" y="-3.8741" z="6.3906"/>
+      <atom id="402" element="Si" x="7.4667" y="-1.7106" z="4.5724"/>
+      <atom id="403" element="Si" x="3.7193" y="0.4530" z="2.7542"/>
+      <atom id="404" element="Si" x="3.7193" y="-3.8741" z="6.3906"/>
+      <atom id="405" element="Si" x="8.7158" y="0.4530" z="2.7542"/>
+      <atom id="406" element="Si" x="8.7158" y="-3.8741" z="6.3906"/>
+      <atom id="407" element="Si" x="-5.0245" y="2.6165" z="4.5724"/>
+      <atom id="408" element="Si" x="-8.7719" y="4.7801" z="2.7542"/>
+      <atom id="409" element="Si" x="-0.0280" y="2.6165" z="4.5724"/>
+      <atom id="410" element="Si" x="-3.7754" y="4.7801" z="2.7542"/>
+      <atom id="411" element="Si" x="-3.7754" y="0.4530" z="6.3906"/>
+      <atom id="412" element="Si" x="4.9685" y="2.6165" z="4.5724"/>
+      <atom id="413" element="Si" x="1.2211" y="4.7801" z="2.7542"/>
+      <atom id="414" element="Si" x="1.2211" y="0.4530" z="6.3906"/>
+      <atom id="415" element="Si" x="6.2176" y="4.7801" z="2.7542"/>
+      <atom id="416" element="Si" x="6.2176" y="0.4530" z="6.3906"/>
+      <atom id="417" element="Si" x="-7.5228" y="6.9436" z="4.5724"/>
+      <atom id="418" element="Si" x="-2.5263" y="6.9436" z="4.5724"/>
+      <atom id="419" element="Si" x="-6.2737" y="4.7801" z="6.3906"/>
+      <atom id="420" element="Si" x="2.4702" y="6.9436" z="4.5724"/>
+      <atom id="421" element="Si" x="-1.2772" y="4.7801" z="6.3906"/>
+      <atom id="422" element="Si" x="3.7193" y="4.7801" z="6.3906"/>
+      <atom id="423" element="Si" x="-0.0280" y="-6.0377" z="10.0270"/>
+      <atom id="424" element="Si" x="-3.7754" y="-3.8741" z="8.2088"/>
+      <atom id="425" element="Si" x="4.9685" y="-6.0377" z="10.0270"/>
+      <atom id="426" element="Si" x="1.2211" y="-3.8741" z="8.2088"/>
+      <atom id="427" element="Si" x="9.9650" y="-6.0377" z="10.0270"/>
+      <atom id="428" element="Si" x="6.2176" y="-3.8741" z="8.2088"/>
+      <atom id="429" element="Si" x="11.2141" y="-3.8741" z="8.2088"/>
+      <atom id="430" element="Si" x="-2.5263" y="-1.7106" z="10.0270"/>
+      <atom id="431" element="Si" x="-6.2737" y="0.4530" z="8.2088"/>
+      <atom id="432" element="Si" x="2.4702" y="-1.7106" z="10.0270"/>
+      <atom id="433" element="Si" x="-1.2772" y="0.4530" z="8.2088"/>
+      <atom id="434" element="Si" x="7.4667" y="-1.7106" z="10.0270"/>
+      <atom id="435" element="Si" x="3.7193" y="0.4530" z="8.2088"/>
+      <atom id="436" element="Si" x="8.7158" y="0.4530" z="8.2088"/>
+      <atom id="437" element="Si" x="-5.0245" y="2.6165" z="10.0270"/>
+      <atom id="438" element="Si" x="-8.7719" y="4.7801" z="8.2088"/>
+      <atom id="439" element="Si" x="-0.0280" y="2.6165" z="10.0270"/>
+      <atom id="440" element="Si" x="-3.7754" y="4.7801" z="8.2088"/>
+      <atom id="441" element="Si" x="4.9685" y="2.6165" z="10.0270"/>
+      <atom id="442" element="Si" x="1.2211" y="4.7801" z="8.2088"/>
+      <atom id="443" element="Si" x="6.2176" y="4.7801" z="8.2088"/>
+      <atom id="444" element="Si" x="-7.5228" y="6.9436" z="10.0270"/>
+      <atom id="445" element="Si" x="-2.5263" y="6.9436" z="10.0270"/>
+      <atom id="446" element="Si" x="2.4702" y="6.9436" z="10.0270"/>
+      <atom id="447" element="O" x="-0.9734" y="-5.1385" z="-5.4281"/>
+      <atom id="448" element="O" x="-2.5285" y="-4.2432" z="-3.6099"/>
+      <atom id="449" element="O" x="4.0231" y="-5.1385" z="-5.4281"/>
+      <atom id="450" element="O" x="2.4680" y="-4.2432" z="-3.6099"/>
+      <atom id="451" element="O" x="9.0196" y="-5.1385" z="-5.4281"/>
+      <atom id="452" element="O" x="7.4645" y="-4.2432" z="-3.6099"/>
+      <atom id="453" element="O" x="-3.4716" y="-0.8114" z="-5.4281"/>
+      <atom id="454" element="O" x="-5.0268" y="0.0839" z="-3.6099"/>
+      <atom id="455" element="O" x="1.5249" y="-0.8114" z="-5.4281"/>
+      <atom id="456" element="O" x="-0.0258" y="-3.5050" z="-3.6099"/>
+      <atom id="457" element="O" x="-1.5809" y="-2.6097" z="-5.4281"/>
+      <atom id="458" element="O" x="-0.0303" y="0.0839" z="-3.6099"/>
+      <atom id="459" element="O" x="6.5214" y="-0.8114" z="-5.4281"/>
+      <atom id="460" element="O" x="4.9707" y="-3.5050" z="-3.6099"/>
+      <atom id="461" element="O" x="3.4156" y="-2.6097" z="-5.4281"/>
+      <atom id="462" element="O" x="4.9662" y="0.0839" z="-3.6099"/>
+      <atom id="463" element="O" x="9.9672" y="-3.5050" z="-3.6099"/>
+      <atom id="464" element="O" x="8.4121" y="-2.6097" z="-5.4281"/>
+      <atom id="465" element="O" x="-5.9699" y="3.5157" z="-5.4281"/>
+      <atom id="466" element="O" x="-7.5250" y="4.4110" z="-3.6099"/>
+      <atom id="467" element="O" x="-0.9734" y="3.5157" z="-5.4281"/>
+      <atom id="468" element="O" x="-2.5240" y="0.8221" z="-3.6099"/>
+      <atom id="469" element="O" x="-4.0792" y="1.7174" z="-5.4281"/>
+      <atom id="470" element="O" x="-2.5285" y="4.4110" z="-3.6099"/>
+      <atom id="471" element="O" x="4.0231" y="3.5157" z="-5.4281"/>
+      <atom id="472" element="O" x="2.4725" y="0.8221" z="-3.6099"/>
+      <atom id="473" element="O" x="0.9173" y="1.7174" z="-5.4281"/>
+      <atom id="474" element="O" x="2.4680" y="4.4110" z="-3.6099"/>
+      <atom id="475" element="O" x="7.4690" y="0.8221" z="-3.6099"/>
+      <atom id="476" element="O" x="5.9138" y="1.7174" z="-5.4281"/>
+      <atom id="477" element="O" x="-5.0223" y="5.1492" z="-3.6099"/>
+      <atom id="478" element="O" x="-6.5774" y="6.0444" z="-5.4281"/>
+      <atom id="479" element="O" x="-0.0258" y="5.1492" z="-3.6099"/>
+      <atom id="480" element="O" x="-1.5809" y="6.0444" z="-5.4281"/>
+      <atom id="481" element="O" x="4.9707" y="5.1492" z="-3.6099"/>
+      <atom id="482" element="O" x="3.4156" y="6.0444" z="-5.4281"/>
+      <atom id="483" element="O" x="-0.9734" y="-5.1385" z="0.0265"/>
+      <atom id="484" element="O" x="-2.5285" y="-4.2432" z="1.8447"/>
+      <atom id="485" element="O" x="4.0231" y="-5.1385" z="0.0265"/>
+      <atom id="486" element="O" x="0.9151" y="-5.1424" z="-1.7917"/>
+      <atom id="487" element="O" x="2.4680" y="-4.2432" z="1.8447"/>
+      <atom id="488" element="O" x="9.0196" y="-5.1385" z="0.0265"/>
+      <atom id="489" element="O" x="5.9116" y="-5.1424" z="-1.7917"/>
+      <atom id="490" element="O" x="7.4645" y="-4.2432" z="1.8447"/>
+      <atom id="491" element="O" x="10.9081" y="-5.1424" z="-1.7917"/>
+      <atom id="492" element="O" x="-3.4716" y="-0.8114" z="0.0265"/>
+      <atom id="493" element="O" x="-3.4694" y="-2.6058" z="-1.7917"/>
+      <atom id="494" element="O" x="-5.0268" y="0.0839" z="1.8447"/>
+      <atom id="495" element="O" x="1.5249" y="-0.8114" z="0.0265"/>
+      <atom id="496" element="O" x="-1.5832" y="-0.8153" z="-1.7917"/>
+      <atom id="497" element="O" x="-0.0258" y="-3.5050" z="1.8447"/>
+      <atom id="498" element="O" x="-1.5809" y="-2.6097" z="0.0265"/>
+      <atom id="499" element="O" x="1.5271" y="-2.6058" z="-1.7917"/>
+      <atom id="500" element="O" x="-0.0303" y="0.0839" z="1.8447"/>
+      <atom id="501" element="O" x="6.5214" y="-0.8114" z="0.0265"/>
+      <atom id="502" element="O" x="3.4133" y="-0.8153" z="-1.7917"/>
+      <atom id="503" element="O" x="4.9707" y="-3.5050" z="1.8447"/>
+      <atom id="504" element="O" x="3.4156" y="-2.6097" z="0.0265"/>
+      <atom id="505" element="O" x="6.5236" y="-2.6058" z="-1.7917"/>
+      <atom id="506" element="O" x="4.9662" y="0.0839" z="1.8447"/>
+      <atom id="507" element="O" x="8.4098" y="-0.8153" z="-1.7917"/>
+      <atom id="508" element="O" x="9.9672" y="-3.5050" z="1.8447"/>
+      <atom id="509" element="O" x="8.4121" y="-2.6097" z="0.0265"/>
+      <atom id="510" element="O" x="-5.9699" y="3.5157" z="0.0265"/>
+      <atom id="511" element="O" x="-5.9676" y="1.7212" z="-1.7917"/>
+      <atom id="512" element="O" x="-7.5250" y="4.4110" z="1.8447"/>
+      <atom id="513" element="O" x="-0.9734" y="3.5157" z="0.0265"/>
+      <atom id="514" element="O" x="-4.0814" y="3.5118" z="-1.7917"/>
+      <atom id="515" element="O" x="-2.5240" y="0.8221" z="1.8447"/>
+      <atom id="516" element="O" x="-4.0792" y="1.7174" z="0.0265"/>
+      <atom id="517" element="O" x="-0.9711" y="1.7212" z="-1.7917"/>
+      <atom id="518" element="O" x="-2.5285" y="4.4110" z="1.8447"/>
+      <atom id="519" element="O" x="4.0231" y="3.5157" z="0.0265"/>
+      <atom id="520" element="O" x="0.9151" y="3.5118" z="-1.7917"/>
+      <atom id="521" element="O" x="2.4725" y="0.8221" z="1.8447"/>
+      <atom id="522" element="O" x="0.9173" y="1.7174" z="0.0265"/>
+      <atom id="523" element="O" x="4.0254" y="1.7212" z="-1.7917"/>
+      <atom id="524" element="O" x="2.4680" y="4.4110" z="1.8447"/>
+      <atom id="525" element="O" x="5.9116" y="3.5118" z="-1.7917"/>
+      <atom id="526" element="O" x="7.4690" y="0.8221" z="1.8447"/>
+      <atom id="527" element="O" x="5.9138" y="1.7174" z="0.0265"/>
+      <atom id="528" element="O" x="-8.4659" y="6.0483" z="-1.7917"/>
+      <atom id="529" element="O" x="-5.0223" y="5.1492" z="1.8447"/>
+      <atom id="530" element="O" x="-6.5774" y="6.0444" z="0.0265"/>
+      <atom id="531" element="O" x="-3.4694" y="6.0483" z="-1.7917"/>
+      <atom id="532" element="O" x="-0.0258" y="5.1492" z="1.8447"/>
+      <atom id="533" element="O" x="-1.5809" y="6.0444" z="0.0265"/>
+      <atom id="534" element="O" x="1.5271" y="6.0483" z="-1.7917"/>
+      <atom id="535" element="O" x="4.9707" y="5.1492" z="1.8447"/>
+      <atom id="536" element="O" x="3.4156" y="6.0444" z="0.0265"/>
+      <atom id="537" element="O" x="-0.9734" y="-5.1385" z="5.4811"/>
+      <atom id="538" element="O" x="-2.5285" y="-4.2432" z="7.2993"/>
+      <atom id="539" element="O" x="4.0231" y="-5.1385" z="5.4811"/>
+      <atom id="540" element="O" x="0.9151" y="-5.1424" z="3.6629"/>
+      <atom id="541" element="O" x="2.4680" y="-4.2432" z="7.2993"/>
+      <atom id="542" element="O" x="9.0196" y="-5.1385" z="5.4811"/>
+      <atom id="543" element="O" x="5.9116" y="-5.1424" z="3.6629"/>
+      <atom id="544" element="O" x="7.4645" y="-4.2432" z="7.2993"/>
+      <atom id="545" element="O" x="10.9081" y="-5.1424" z="3.6629"/>
+      <atom id="546" element="O" x="-3.4716" y="-0.8114" z="5.4811"/>
+      <atom id="547" element="O" x="-3.4694" y="-2.6058" z="3.6629"/>
+      <atom id="548" element="O" x="-5.0268" y="0.0839" z="7.2993"/>
+      <atom id="549" element="O" x="1.5249" y="-0.8114" z="5.4811"/>
+      <atom id="550" element="O" x="-1.5832" y="-0.8153" z="3.6629"/>
+      <atom id="551" element="O" x="-0.0258" y="-3.5050" z="7.2993"/>
+      <atom id="552" element="O" x="-1.5809" y="-2.6097" z="5.4811"/>
+      <atom id="553" element="O" x="1.5271" y="-2.6058" z="3.6629"/>
+      <atom id="554" element="O" x="-0.0303" y="0.0839" z="7.2993"/>
+      <atom id="555" element="O" x="6.5214" y="-0.8114" z="5.4811"/>
+      <atom id="556" element="O" x="3.4133" y="-0.8153" z="3.6629"/>
+      <atom id="557" element="O" x="4.9707" y="-3.5050" z="7.2993"/>
+      <atom id="558" element="O" x="3.4156" y="-2.6097" z="5.4811"/>
+      <atom id="559" element="O" x="6.5236" y="-2.6058" z="3.6629"/>
+      <atom id="560" element="O" x="4.9662" y="0.0839" z="7.2993"/>
+      <atom id="561" element="O" x="8.4098" y="-0.8153" z="3.6629"/>
+      <atom id="562" element="O" x="9.9672" y="-3.5050" z="7.2993"/>
+      <atom id="563" element="O" x="8.4121" y="-2.6097" z="5.4811"/>
+      <atom id="564" element="O" x="-5.9699" y="3.5157" z="5.4811"/>
+      <atom id="565" element="O" x="-5.9676" y="1.7212" z="3.6629"/>
+      <atom id="566" element="O" x="-7.5250" y="4.4110" z="7.2993"/>
+      <atom id="567" element="O" x="-0.9734" y="3.5157" z="5.4811"/>
+      <atom id="568" element="O" x="-4.0814" y="3.5118" z="3.6629"/>
+      <atom id="569" element="O" x="-2.5240" y="0.8221" z="7.2993"/>
+      <atom id="570" element="O" x="-4.0792" y="1.7174" z="5.4811"/>
+      <atom id="571" element="O" x="-0.9711" y="1.7212" z="3.6629"/>
+      <atom id="572" element="O" x="-2.5285" y="4.4110" z="7.2993"/>
+      <atom id="573" element="O" x="4.0231" y="3.5157" z="5.4811"/>
+      <atom id="574" element="O" x="0.9151" y="3.5118" z="3.6629"/>
+      <atom id="575" element="O" x="2.4725" y="0.8221" z="7.2993"/>
+      <atom id="576" element="O" x="0.9173" y="1.7174" z="5.4811"/>
+      <atom id="577" element="O" x="4.0254" y="1.7212" z="3.6629"/>
+      <atom id="578" element="O" x="2.4680" y="4.4110" z="7.2993"/>
+      <atom id="579" element="O" x="5.9116" y="3.5118" z="3.6629"/>
+      <atom id="580" element="O" x="7.4690" y="0.8221" z="7.2993"/>
+      <atom id="581" element="O" x="5.9138" y="1.7174" z="5.4811"/>
+      <atom id="582" element="O" x="-8.4659" y="6.0483" z="3.6629"/>
+      <atom id="583" element="O" x="-5.0223" y="5.1492" z="7.2993"/>
+      <atom id="584" element="O" x="-6.5774" y="6.0444" z="5.4811"/>
+      <atom id="585" element="O" x="-3.4694" y="6.0483" z="3.6629"/>
+      <atom id="586" element="O" x="-0.0258" y="5.1492" z="7.2993"/>
+      <atom id="587" element="O" x="-1.5809" y="6.0444" z="5.4811"/>
+      <atom id="588" element="O" x="1.5271" y="6.0483" z="3.6629"/>
+      <atom id="589" element="O" x="4.9707" y="5.1492" z="7.2993"/>
+      <atom id="590" element="O" x="3.4156" y="6.0444" z="5.4811"/>
+      <atom id="591" element="O" x="0.9151" y="-5.1424" z="9.1175"/>
+      <atom id="592" element="O" x="5.9116" y="-5.1424" z="9.1175"/>
+      <atom id="593" element="O" x="10.9081" y="-5.1424" z="9.1175"/>
+      <atom id="594" element="O" x="-3.4694" y="-2.6058" z="9.1175"/>
+      <atom id="595" element="O" x="-1.5832" y="-0.8153" z="9.1175"/>
+      <atom id="596" element="O" x="1.5271" y="-2.6058" z="9.1175"/>
+      <atom id="597" element="O" x="3.4133" y="-0.8153" z="9.1175"/>
+      <atom id="598" element="O" x="6.5236" y="-2.6058" z="9.1175"/>
+      <atom id="599" element="O" x="8.4098" y="-0.8153" z="9.1175"/>
+      <atom id="600" element="O" x="-5.9676" y="1.7212" z="9.1175"/>
+      <atom id="601" element="O" x="-4.0814" y="3.5118" z="9.1175"/>
+      <atom id="602" element="O" x="-0.9711" y="1.7212" z="9.1175"/>
+      <atom id="603" element="O" x="0.9151" y="3.5118" z="9.1175"/>
+      <atom id="604" element="O" x="4.0254" y="1.7212" z="9.1175"/>
+      <atom id="605" element="O" x="5.9116" y="3.5118" z="9.1175"/>
+      <atom id="606" element="O" x="-8.4659" y="6.0483" z="9.1175"/>
+      <atom id="607" element="O" x="-3.4694" y="6.0483" z="9.1175"/>
+      <atom id="608" element="O" x="1.5271" y="6.0483" z="9.1175"/>
+      <bond parent1="336" parent2="447"/>
+      <bond parent1="337" parent2="449"/>
+      <bond parent1="338" parent2="451"/>
+      <bond parent1="339" parent2="453"/>
+      <bond parent1="339" parent2="457"/>
+      <bond parent1="340" parent2="455"/>
+      <bond parent1="340" parent2="461"/>
+      <bond parent1="341" parent2="447"/>
+      <bond parent1="341" parent2="448"/>
+      <bond parent1="341" parent2="456"/>
+      <bond parent1="341" parent2="457"/>
+      <bond parent1="342" parent2="459"/>
+      <bond parent1="342" parent2="464"/>
+      <bond parent1="343" parent2="449"/>
+      <bond parent1="343" parent2="450"/>
+      <bond parent1="343" parent2="460"/>
+      <bond parent1="343" parent2="461"/>
+      <bond parent1="344" parent2="451"/>
+      <bond parent1="344" parent2="452"/>
+      <bond parent1="344" parent2="463"/>
+      <bond parent1="344" parent2="464"/>
+      <bond parent1="345" parent2="465"/>
+      <bond parent1="345" parent2="469"/>
+      <bond parent1="346" parent2="467"/>
+      <bond parent1="346" parent2="473"/>
+      <bond parent1="347" parent2="453"/>
+      <bond parent1="347" parent2="454"/>
+      <bond parent1="347" parent2="468"/>
+      <bond parent1="347" parent2="469"/>
+      <bond parent1="348" parent2="471"/>
+      <bond parent1="348" parent2="476"/>
+      <bond parent1="349" parent2="455"/>
+      <bond parent1="349" parent2="458"/>
+      <bond parent1="349" parent2="472"/>
+      <bond parent1="349" parent2="473"/>
+      <bond parent1="350" parent2="459"/>
+      <bond parent1="350" parent2="462"/>
+      <bond parent1="350" parent2="475"/>
+      <bond parent1="350" parent2="476"/>
+      <bond parent1="351" parent2="478"/>
+      <bond parent1="352" parent2="480"/>
+      <bond parent1="353" parent2="465"/>
+      <bond parent1="353" parent2="466"/>
+      <bond parent1="353" parent2="477"/>
+      <bond parent1="353" parent2="478"/>
+      <bond parent1="354" parent2="482"/>
+      <bond parent1="355" parent2="467"/>
+      <bond parent1="355" parent2="470"/>
+      <bond parent1="355" parent2="479"/>
+      <bond parent1="355" parent2="480"/>
+      <bond parent1="356" parent2="471"/>
+      <bond parent1="356" parent2="474"/>
+      <bond parent1="356" parent2="481"/>
+      <bond parent1="356" parent2="482"/>
+      <bond parent1="357" parent2="483"/>
+      <bond parent1="357" parent2="486"/>
+      <bond parent1="358" parent2="448"/>
+      <bond parent1="358" parent2="493"/>
+      <bond parent1="359" parent2="485"/>
+      <bond parent1="359" parent2="489"/>
+      <bond parent1="360" parent2="450"/>
+      <bond parent1="360" parent2="456"/>
+      <bond parent1="360" parent2="486"/>
+      <bond parent1="360" parent2="499"/>
+      <bond parent1="361" parent2="488"/>
+      <bond parent1="361" parent2="491"/>
+      <bond parent1="362" parent2="452"/>
+      <bond parent1="362" parent2="460"/>
+      <bond parent1="362" parent2="489"/>
+      <bond parent1="362" parent2="505"/>
+      <bond parent1="363" parent2="463"/>
+      <bond parent1="363" parent2="491"/>
+      <bond parent1="364" parent2="492"/>
+      <bond parent1="364" parent2="493"/>
+      <bond parent1="364" parent2="496"/>
+      <bond parent1="364" parent2="498"/>
+      <bond parent1="365" parent2="454"/>
+      <bond parent1="365" parent2="511"/>
+      <bond parent1="366" parent2="495"/>
+      <bond parent1="366" parent2="499"/>
+      <bond parent1="366" parent2="502"/>
+      <bond parent1="366" parent2="504"/>
+      <bond parent1="367" parent2="458"/>
+      <bond parent1="367" parent2="468"/>
+      <bond parent1="367" parent2="496"/>
+      <bond parent1="367" parent2="517"/>
+      <bond parent1="368" parent2="483"/>
+      <bond parent1="368" parent2="484"/>
+      <bond parent1="368" parent2="497"/>
+      <bond parent1="368" parent2="498"/>
+      <bond parent1="369" parent2="501"/>
+      <bond parent1="369" parent2="505"/>
+      <bond parent1="369" parent2="507"/>
+      <bond parent1="369" parent2="509"/>
+      <bond parent1="370" parent2="462"/>
+      <bond parent1="370" parent2="472"/>
+      <bond parent1="370" parent2="502"/>
+      <bond parent1="370" parent2="523"/>
+      <bond parent1="371" parent2="485"/>
+      <bond parent1="371" parent2="487"/>
+      <bond parent1="371" parent2="503"/>
+      <bond parent1="371" parent2="504"/>
+      <bond parent1="372" parent2="475"/>
+      <bond parent1="372" parent2="507"/>
+      <bond parent1="373" parent2="488"/>
+      <bond parent1="373" parent2="490"/>
+      <bond parent1="373" parent2="508"/>
+      <bond parent1="373" parent2="509"/>
+      <bond parent1="374" parent2="510"/>
+      <bond parent1="374" parent2="511"/>
+      <bond parent1="374" parent2="514"/>
+      <bond parent1="374" parent2="516"/>
+      <bond parent1="375" parent2="466"/>
+      <bond parent1="375" parent2="528"/>
+      <bond parent1="376" parent2="513"/>
+      <bond parent1="376" parent2="517"/>
+      <bond parent1="376" parent2="520"/>
+      <bond parent1="376" parent2="522"/>
+      <bond parent1="377" parent2="470"/>
+      <bond parent1="377" parent2="477"/>
+      <bond parent1="377" parent2="514"/>
+      <bond parent1="377" parent2="531"/>
+      <bond parent1="378" parent2="492"/>
+      <bond parent1="378" parent2="494"/>
+      <bond parent1="378" parent2="515"/>
+      <bond parent1="378" parent2="516"/>
+      <bond parent1="379" parent2="519"/>
+      <bond parent1="379" parent2="523"/>
+      <bond parent1="379" parent2="525"/>
+      <bond parent1="379" parent2="527"/>
+      <bond parent1="380" parent2="474"/>
+      <bond parent1="380" parent2="479"/>
+      <bond parent1="380" parent2="520"/>
+      <bond parent1="380" parent2="534"/>
+      <bond parent1="381" parent2="495"/>
+      <bond parent1="381" parent2="500"/>
+      <bond parent1="381" parent2="521"/>
+      <bond parent1="381" parent2="522"/>
+      <bond parent1="382" parent2="481"/>
+      <bond parent1="382" parent2="525"/>
+      <bond parent1="383" parent2="501"/>
+      <bond parent1="383" parent2="506"/>
+      <bond parent1="383" parent2="526"/>
+      <bond parent1="383" parent2="527"/>
+      <bond parent1="384" parent2="528"/>
+      <bond parent1="384" parent2="530"/>
+      <bond parent1="385" parent2="531"/>
+      <bond parent1="385" parent2="533"/>
+      <bond parent1="386" parent2="510"/>
+      <bond parent1="386" parent2="512"/>
+      <bond parent1="386" parent2="529"/>
+      <bond parent1="386" parent2="530"/>
+      <bond parent1="387" parent2="534"/>
+      <bond parent1="387" parent2="536"/>
+      <bond parent1="388" parent2="513"/>
+      <bond parent1="388" parent2="518"/>
+      <bond parent1="388" parent2="532"/>
+      <bond parent1="388" parent2="533"/>
+      <bond parent1="389" parent2="519"/>
+      <bond parent1="389" parent2="524"/>
+      <bond parent1="389" parent2="535"/>
+      <bond parent1="389" parent2="536"/>
+      <bond parent1="390" parent2="537"/>
+      <bond parent1="390" parent2="540"/>
+      <bond parent1="391" parent2="484"/>
+      <bond parent1="391" parent2="547"/>
+      <bond parent1="392" parent2="539"/>
+      <bond parent1="392" parent2="543"/>
+      <bond parent1="393" parent2="487"/>
+      <bond parent1="393" parent2="497"/>
+      <bond parent1="393" parent2="540"/>
+      <bond parent1="393" parent2="553"/>
+      <bond parent1="394" parent2="542"/>
+      <bond parent1="394" parent2="545"/>
+      <bond parent1="395" parent2="490"/>
+      <bond parent1="395" parent2="503"/>
+      <bond parent1="395" parent2="543"/>
+      <bond parent1="395" parent2="559"/>
+      <bond parent1="396" parent2="508"/>
+      <bond parent1="396" parent2="545"/>
+      <bond parent1="397" parent2="546"/>
+      <bond parent1="397" parent2="547"/>
+      <bond parent1="397" parent2="550"/>
+      <bond parent1="397" parent2="552"/>
+      <bond parent1="398" parent2="494"/>
+      <bond parent1="398" parent2="565"/>
+      <bond parent1="399" parent2="549"/>
+      <bond parent1="399" parent2="553"/>
+      <bond parent1="399" parent2="556"/>
+      <bond parent1="399" parent2="558"/>
+      <bond parent1="400" parent2="500"/>
+      <bond parent1="400" parent2="515"/>
+      <bond parent1="400" parent2="550"/>
+      <bond parent1="400" parent2="571"/>
+      <bond parent1="401" parent2="537"/>
+      <bond parent1="401" parent2="538"/>
+      <bond parent1="401" parent2="551"/>
+      <bond parent1="401" parent2="552"/>
+      <bond parent1="402" parent2="555"/>
+      <bond parent1="402" parent2="559"/>
+      <bond parent1="402" parent2="561"/>
+      <bond parent1="402" parent2="563"/>
+      <bond parent1="403" parent2="506"/>
+      <bond parent1="403" parent2="521"/>
+      <bond parent1="403" parent2="556"/>
+      <bond parent1="403" parent2="577"/>
+      <bond parent1="404" parent2="539"/>
+      <bond parent1="404" parent2="541"/>
+      <bond parent1="404" parent2="557"/>
+      <bond parent1="404" parent2="558"/>
+      <bond parent1="405" parent2="526"/>
+      <bond parent1="405" parent2="561"/>
+      <bond parent1="406" parent2="542"/>
+      <bond parent1="406" parent2="544"/>
+      <bond parent1="406" parent2="562"/>
+      <bond parent1="406" parent2="563"/>
+      <bond parent1="407" parent2="564"/>
+      <bond parent1="407" parent2="565"/>
+      <bond parent1="407" parent2="568"/>
+      <bond parent1="407" parent2="570"/>
+      <bond parent1="408" parent2="512"/>
+      <bond parent1="408" parent2="582"/>
+      <bond parent1="409" parent2="567"/>
+      <bond parent1="409" parent2="571"/>
+      <bond parent1="409" parent2="574"/>
+      <bond parent1="409" parent2="576"/>
+      <bond parent1="410" parent2="518"/>
+      <bond parent1="410" parent2="529"/>
+      <bond parent1="410" parent2="568"/>
+      <bond parent1="410" parent2="585"/>
+      <bond parent1="411" parent2="546"/>
+      <bond parent1="411" parent2="548"/>
+      <bond parent1="411" parent2="569"/>
+      <bond parent1="411" parent2="570"/>
+      <bond parent1="412" parent2="573"/>
+      <bond parent1="412" parent2="577"/>
+      <bond parent1="412" parent2="579"/>
+      <bond parent1="412" parent2="581"/>
+      <bond parent1="413" parent2="524"/>
+      <bond parent1="413" parent2="532"/>
+      <bond parent1="413" parent2="574"/>
+      <bond parent1="413" parent2="588"/>
+      <bond parent1="414" parent2="549"/>
+      <bond parent1="414" parent2="554"/>
+      <bond parent1="414" parent2="575"/>
+      <bond parent1="414" parent2="576"/>
+      <bond parent1="415" parent2="535"/>
+      <bond parent1="415" parent2="579"/>
+      <bond parent1="416" parent2="555"/>
+      <bond parent1="416" parent2="560"/>
+      <bond parent1="416" parent2="580"/>
+      <bond parent1="416" parent2="581"/>
+      <bond parent1="417" parent2="582"/>
+      <bond parent1="417" parent2="584"/>
+      <bond parent1="418" parent2="585"/>
+      <bond parent1="418" parent2="587"/>
+      <bond parent1="419" parent2="564"/>
+      <bond parent1="419" parent2="566"/>
+      <bond parent1="419" parent2="583"/>
+      <bond parent1="419" parent2="584"/>
+      <bond parent1="420" parent2="588"/>
+      <bond parent1="420" parent2="590"/>
+      <bond parent1="421" parent2="567"/>
+      <bond parent1="421" parent2="572"/>
+      <bond parent1="421" parent2="586"/>
+      <bond parent1="421" parent2="587"/>
+      <bond parent1="422" parent2="573"/>
+      <bond parent1="422" parent2="578"/>
+      <bond parent1="422" parent2="589"/>
+      <bond parent1="422" parent2="590"/>
+      <bond parent1="423" parent2="591"/>
+      <bond parent1="424" parent2="538"/>
+      <bond parent1="424" parent2="594"/>
+      <bond parent1="425" parent2="592"/>
+      <bond parent1="426" parent2="541"/>
+      <bond parent1="426" parent2="551"/>
+      <bond parent1="426" parent2="591"/>
+      <bond parent1="426" parent2="596"/>
+      <bond parent1="427" parent2="593"/>
+      <bond parent1="428" parent2="544"/>
+      <bond parent1="428" parent2="557"/>
+      <bond parent1="428" parent2="592"/>
+      <bond parent1="428" parent2="598"/>
+      <bond parent1="429" parent2="562"/>
+      <bond parent1="429" parent2="593"/>
+      <bond parent1="430" parent2="594"/>
+      <bond parent1="430" parent2="595"/>
+      <bond parent1="431" parent2="548"/>
+      <bond parent1="431" parent2="600"/>
+      <bond parent1="432" parent2="596"/>
+      <bond parent1="432" parent2="597"/>
+      <bond parent1="433" parent2="554"/>
+      <bond parent1="433" parent2="569"/>
+      <bond parent1="433" parent2="595"/>
+      <bond parent1="433" parent2="602"/>
+      <bond parent1="434" parent2="598"/>
+      <bond parent1="434" parent2="599"/>
+      <bond parent1="435" parent2="560"/>
+      <bond parent1="435" parent2="575"/>
+      <bond parent1="435" parent2="597"/>
+      <bond parent1="435" parent2="604"/>
+      <bond parent1="436" parent2="580"/>
+      <bond parent1="436" parent2="599"/>
+      <bond parent1="437" parent2="600"/>
+      <bond parent1="437" parent2="601"/>
+      <bond parent1="438" parent2="566"/>
+      <bond parent1="438" parent2="606"/>
+      <bond parent1="439" parent2="602"/>
+      <bond parent1="439" parent2="603"/>
+      <bond parent1="440" parent2="572"/>
+      <bond parent1="440" parent2="583"/>
+      <bond parent1="440" parent2="601"/>
+      <bond parent1="440" parent2="607"/>
+      <bond parent1="441" parent2="604"/>
+      <bond parent1="441" parent2="605"/>
+      <bond parent1="442" parent2="578"/>
+      <bond parent1="442" parent2="586"/>
+      <bond parent1="442" parent2="603"/>
+      <bond parent1="442" parent2="608"/>
+      <bond parent1="443" parent2="589"/>
+      <bond parent1="443" parent2="605"/>
+      <bond parent1="444" parent2="606"/>
+      <bond parent1="445" parent2="607"/>
+      <bond parent1="446" parent2="608"/>
+    </cell>
+  </layer>
+</gml>

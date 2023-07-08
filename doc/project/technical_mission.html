@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI project: Technical</title>
+<link rel="icon" type="image/png" href="../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Technical</h1>
+
+<div id="notebook">
+<ul>
+<li><span>Mission</span></li>
+<li><a href="technical_requirements.html">Requirements</a></li>
+</ul>
+</div>
+
+<div class="contents">
+
+A really useful package must be easy to obtain, 
+to compile, to use and to change, giving users 
+and developers as much control as possible. This 
+means: 
+
+<p/>
+
+1) Designing an elegant and flexible architecture
+for the whole package, including hidden resources
+as the memory and graphic engines, and visible 
+mechanisms as the graphical user interface. This
+is particularly important in a package that
+aims to be used in scientific research, where
+the required functionality is quickly changing
+and the capacity to adapt to new demands
+is critical.
+
+<p/>
+
+2) Writing simple, well documented code. 
+We put great emphasis in the quality of 
+the code that we write, because:
+i) it is open source, so everyone can judge
+our work (thanks for the fish!); ii) writing
+beatiful code is an important incentive to
+continue the project; iii) simple, clean, code
+is easier to understand and maintain, thus
+atracting more developers to the project and 
+increasing its probabilities of long term sucess.
+
+<p/>
+
+3) Using standards and reducing code dependencies
+as much as possible. We use only ANSI C code in GAMGI,
+so gcc could be replaced by any other C compiler.
+We don't use Mesa-specific functions, so Mesa
+could be replaced by any other OpenGL implementation.
+We use Gtk only to write GUI-specific code, so Gtk could
+be replaced, without much pain, by any other X toolkit 
+library. We plan to use only the most common Python/Perl 
+functions in filters to convert file formats, this way 
+making it easier for non-Python/Perl mongers to understand 
+and change the scripts.
+
+<p/>
+
+4) Reducing as much as possible the number
+of libraries the package depends on, particularly
+those more difficult to install, less maintained
+and more susceptible to changes.
+
+This helps to reduce the wall between users and programs,
+encouraging them to compile and modify the source 
+code, instead of just using black-box executables.
+Writing a few hundred lines of code to avoid depending
+of a library is not reinventing the wheel, but to
+increase freedom for users and developers.
+
+<p/>
+
+5) Building the package in a way as simple and 
+transparent as possible. Using config, make,
+make install is simple, when it works, but makes
+it completely impossible to understand what is 
+actually occurring. The GAMGI makefiles are designed
+to be powerfull (permiting for example to compile
+several executables at the same time, in different
+directories, with different functionality) yet
+small and transparent to the user, making it simple
+to understand the logic and mechanisms used by
+gcc and make to build GAMGI.
+
+<p/>
+
+6) writing insightfull documentation for both
+users and developers, not just explaining how
+things work, but also why they work that way.
+
+The first and most important line of defense
+to have a user-friendly package is to design it
+well, but in complex, comprehensive pachages,
+that is usually not enough, we need good manuals,
+where information is clear and can be found quickly.
+
+Before being software developers, we are software
+users, so we really understand the frustration
+that most users feel when they use software today,
+as usually manuals either don't exist, are useless
+or are considered as non-essential products, that
+users are invited to get and pay separately.
+
+We are commited to provide good documentation
+not just for users that want only to know how
+to do their job, but also to developers, who
+need to understand how GAMGI works, before they
+can change or improve its functionality.
+
+<p/>
+
+Above all, we believe that for users and developers
+alike, the ultimate goal is technological control,
+and the key to achieve it is simplicity.    
+
+</div>
+
+<div id="bottom">
+<a href="../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

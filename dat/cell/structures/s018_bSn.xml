@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE gml SYSTEM "http://www.gamgi.org/dtd/gamgi.dtd">
+<gml>
+  <layer perspective="no" scale="1.384">
+    <light ambient_r="0.500" ambient_g="0.500" ambient_b="0.500"
+    diffuse_r="0.400" diffuse_g="0.400" diffuse_b="0.400" specular_r="0.300"
+    specular_g="0.300" specular_b="0.300" direction_x="0.0000"
+    direction_y="0.0000" direction_z="-1.0000"/>
+    <cell group="141" a="5.8197" c="3.1750" x="-2.7540" y="-0.9245"
+    z="-2.0021" e1="82.61" e2="90.02" e3="169.01">
+      <atom id="1" element="Sn" x="-2.7540" y="-0.9245" z="-2.0021"
+      style="solid" variancy="1.00" size="1.00" scale="0.200"/>
+      <atom id="2" element="Sn" x="-3.8628" y="-1.6596" z="3.6635"
+      style="solid" variancy="1.00" size="1.00" scale="0.200"/>
+      <atom id="3" element="Sn" x="-3.3086" y="-0.5049" z="0.9327"
+      style="solid" variancy="1.00" size="1.00" scale="0.200"/>
+      <atom id="4" element="Sn" x="2.9591" y="-1.0653" z="-0.9024"
+      style="solid" variancy="1.00" size="1.00" scale="0.200"/>
+      <atom id="5" element="Sn" x="1.8503" y="-1.8004" z="4.7633"
+      style="solid" variancy="1.00" size="1.00" scale="0.200"/>
+      <atom id="6" element="Sn" x="2.4045" y="-0.6457" z="2.0325"
+      style="solid" variancy="1.00" size="1.00" scale="0.200"/>
+      <atom id="7" element="Sn" x="-2.7550" y="2.2241" z="-1.5938"
+      style="solid" variancy="1.00" size="1.00" scale="0.200"/>
+      <atom id="8" element="Sn" x="-3.8638" y="1.4890" z="4.0718"
+      style="solid" variancy="1.00" size="1.00" scale="0.200"/>
+      <atom id="9" element="Sn" x="2.9581" y="2.0833" z="-0.4940"
+      style="solid" variancy="1.00" size="1.00" scale="0.200"/>
+      <atom id="10" element="Sn" x="1.8493" y="1.3482" z="5.1716"
+      style="solid" variancy="1.00" size="1.00" scale="0.200"/>
+      <atom id="11" element="Sn" x="-0.4523" y="0.2118" z="1.5847"
+      style="solid" variancy="1.00" size="1.00" scale="0.200"/>
+      <atom id="12" element="Sn" x="0.1018" y="1.3666" z="-1.1460"
+      style="solid" variancy="1.00" size="1.00" scale="0.200"/>
+      <atom id="13" element="Sn" x="-1.0070" y="0.6314" z="4.5196"
+      style="solid" variancy="1.00" size="1.00" scale="0.200"/>
+      <bond parent1="1" parent2="3" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.600"/>
+      <bond parent1="2" parent2="3" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.600"/>
+      <bond parent1="3" parent2="11" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.600"/>
+      <bond parent1="4" parent2="6" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.600"/>
+      <bond parent1="5" parent2="6" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.600"/>
+      <bond parent1="6" parent2="11" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.600"/>
+      <bond parent1="7" parent2="12" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.600"/>
+      <bond parent1="8" parent2="13" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.600"/>
+      <bond parent1="9" parent2="12" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.600"/>
+      <bond parent1="10" parent2="13" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.600"/>
+      <bond parent1="11" parent2="12" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.600"/>
+      <bond parent1="11" parent2="13" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.600"/>
+    </cell>
+  </layer>
+</gml>

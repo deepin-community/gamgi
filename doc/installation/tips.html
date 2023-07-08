@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Installation: Tips</title>
+<link rel="icon" type="image/png" href="../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../css/board.css"/>
+</head>
+
+<body>
+
+<div class="board">
+<div>Installation Tips</div><div>&nbsp;</div>
+</div>
+
+<div class="contents">
+
+Sometimes things do not run as expected. 
+Usually problems fall in one of the following categories:
+
+<h3>Compilation problems</h3>
+
+1) Check carefully PATH_GTKGL_H, PATH_MESA_H, 
+PATH_GTK_H, PATH_ATK_H, PATH_PANGO_H, PATH_CAIRO_H, 
+PATH_GLIB_H, PATH_X_H, PATH_FREETYPE_H, PATH_EXPAT_H, in the file:
+
+<pre><b>
+$GAMGI/gamgi_version/src/make_local
+</b></pre>
+
+to see if the paths to the header files are correct. These paths tell 
+the compiler where to search for files included with statements such 
+as <b>#include &lt;expat.h&gt;</b>. In statements as for example 
+<b>#include &lt;gtk/gtk.h&gt;</b>, the path should point to the 
+directory containing <b>gtk</b>, not to <b>gtk.h</b> itself. 
+The external headers in GAMGI that need to be found are:
+
+<pre><b>
+#include &lt;glib.h&gt;
+#include &lt;glibconfig.h&gt;
+#include &lt;gtk/gtk.h&gt;
+#include &lt;gdkconfig.h&gt;
+#include &lt;gtk/gtkgl.h&gt;
+#include &lt;gdkglext-config.h&gt;
+#include &lt;GL/gl.h&gt;
+#include &lt;GL/glu.h&gt;
+#include &lt;expat.h&gt;
+#include &lt;ft2build.h&gt;
+</b></pre>
+
+<p/>
+
+2) Check whether GAMGI compiles as root. Perhaps the missing library
+or its containing directory is giving reading permition only to root.
+
+<h3>Linking problems</h3>
+
+1) Check carefully PATH_GTKGL_L, PATH_MESA_L, 
+PATH_GTK_L, PATH_ATK_L, PATH_PANGO_L, PATH_CAIRO_L, 
+PATH_GLIB_L, PATH_X_L, PATH_FREETYPE_L, PATH_EXPAT_L, in the file:
+
+<pre><b>
+$GAMGI/gamgi_version/src/make_local
+</b></pre>
+
+to see if the paths to your library files are correct.
+These paths should point to the directory where are the 
+<b>.so</b> (dynamic) or <b>.a</b> (static) library files. 
+
+<p/>
+
+2) Add a soft link to the missing library in <b>/usr/local/lib</b>,
+one of the paths that are usually scanned when the system is looking 
+for a library. For example:
+
+<pre><b>
+ln -s /usr/local/lib/libGL.so /opt/gtk/lib/libGL.so
+</b></pre>
+
+<p/>
+
+3) Add this line to .bash_profile or equivalent:
+
+<pre><b>
+export LD_LIBRARY_PATH=/usr/lib64/gtk-2.0
+</b></pre>
+
+<p/>
+
+4) Check the order of the libraries in the linking command. 
+The linking command, in the file <b>$GAMGI/src/make_rules</b>,
+should be:
+
+<pre><b>
+LIBS = -lgtkglext-x11-1.0 -lgdkglext-x11-1.0 -lGLU -lGL -lgtk-x11-2.0 \
+	-lgdk-x11-2.0 -latk-1.0 -lgdk_pixbuf-2.0 -lpangocairo-1.0 -lpango-1.0 \
+	-lcairo -lgobject-2.0 -lgmodule-2.0 -lglib-2.0 -lXext -lX11 \
+	-lXi -lXmu -lfreetype -lexpat -lm -ldl
+</b></pre>
+
+The linker reads from end to start and lower-level libraries should
+be red first, so -lGLU should come before -lGL, etc. Usually this is 
+only a problem in compilations with static libraries, because dynamic 
+linkers can detect missing libraries, if they are upstream.
+
+<h3>Running problems</h3>
+  
+1) Check the paths of the libraries used to run the executable, typing:
+
+<pre><b>
+cd $GAMGI/gamgi_version/src
+ldd gamgi
+</b></pre>
+
+Perhaps GAMGI was compiled and linked against a different version
+of some missing library than the one used at run time.
+
+<p/>
+
+2) Add the library path to the file <b>/etc/ld.so.conf</b> and
+run the command <b>/sbin/ldconfig</b>. For example, as root:
+
+<pre>
+edit file: <b>/etc/ld.so.conf</b>
+insert line: <b>/home/carlos/gamgi/mesa/mesa/lib</b>
+run command: <b>/sbin/ldconfig</b> 
+</pre>
+
+<p/>
+
+3) Check whether GAMGI runs as root. Perhaps GAMGI or some missing library 
+(or its parent directory) are giving execution permition only to root.
+
+</div>
+
+<div id="bottom">
+<a href="../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE gml SYSTEM "http://www.gamgi.org/dtd/gamgi.dtd">
+<gml>
+  <molecule name="S8">
+    <atom id="1" element="S" x="-1.5698" y="0.6073" z="-2.3210"/>
+    <atom id="2" element="S" x="-1.6069" y="-0.9880" z="0.5725"/>
+    <atom id="3" element="S" x="-2.2540" y="0.7033" z="-0.3879"/>
+    <atom id="4" element="S" x="0.0250" y="-0.4854" z="1.7083"/>
+    <atom id="5" element="S" x="0.1185" y="1.7547" z="-2.4637"/>
+    <atom id="6" element="S" x="2.4004" y="0.6715" z="-0.3333"/>
+    <atom id="7" element="S" x="1.7527" y="0.5267" z="-2.2723"/>
+    <atom id="8" element="S" x="1.7302" y="-0.9787" z="0.6834"/>
+    <bond parent1="1" parent2="3"/>
+    <bond parent1="1" parent2="5"/>
+    <bond parent1="2" parent2="3"/>
+    <bond parent1="2" parent2="4"/>
+    <bond parent1="4" parent2="8"/>
+    <bond parent1="5" parent2="7"/>
+    <bond parent1="6" parent2="7"/>
+    <bond parent1="6" parent2="8"/>
+  </molecule>
+</gml>

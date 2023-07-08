@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE gml SYSTEM "http://www.gamgi.org/dtd/gamgi.dtd">
+<gml>
+  <molecule name="ethane">
+    <atom id="1" element="C" x="-0.5753" y="0.6459" z="0.4087"/>
+    <atom id="2" element="C" x="0.8882" y="0.3825" z="0.8106"/>
+    <atom id="3" element="H" x="-1.0086" y="-0.2552" z="0.0277"/>
+    <atom id="4" element="H" x="-1.1281" y="0.9729" z="1.2643"/>
+    <atom id="5" element="H" x="-0.6074" y="1.4032" z="-0.3465"/>
+    <atom id="6" element="H" x="0.9194" y="-0.3746" z="1.5658"/>
+    <atom id="7" element="H" x="1.4401" y="0.0557" z="-0.0450"/>
+    <atom id="8" element="H" x="1.3216" y="1.2836" z="1.1917"/>
+    <bond parent1="1" parent2="2"/>
+    <bond parent1="1" parent2="3"/>
+    <bond parent1="1" parent2="4"/>
+    <bond parent1="1" parent2="5"/>
+    <bond parent1="2" parent2="6"/>
+    <bond parent1="2" parent2="7"/>
+    <bond parent1="2" parent2="8"/>
+  </molecule>
+</gml>

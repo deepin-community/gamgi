@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Interfaces: Introduction Commands</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/board.css"/>
+</head>
+
+<body>
+
+<div class="board">
+<div>Introduction Commands</div><div>&nbsp;</div>
+</div>
+
+<div class="contents">
+
+Using a mouse to perform all tasks is slow, inaccurate and restrictive, in a word, inefficient. Typing commands on a keyboard is a much faster and flexible way to pass information to a program. Unfortunately it requires users to learn a new, specific, command line language. Specifying a command line language has another important advantage, however, for a large program as GAMGI: it permits recording in a log file all operations specified by a user during a session. This file can be used later on to repeat all the operations performed by the user in the previous session, even when the user ignores the language used to describe those actions.
+
+<p/>
+
+This scripting language was not designed yet (TODO), let alone implemented. We feel that after facing and handling the specific problems and challenges posed by the widely different objects supported by GAMGI we will be in a much better position to design an elegant and powerful language, simple to learn and simple to parse (or to use some already existing language that fills our needs).
+
+<p/>
+
+These procedure-based files are an alternative to object-based files to save a session, in cases where the information needed to describe the procedures is much shorter than the information needed to describe the objects themselves. For example, storing a one line command describing this action: "create a sphere of radius 10.0, containing all nodes of a cubic simple lattice of parameter 1.0" is much shorter than allocating the x,y,z coordinates of the tens of thousands of nodes that fall inside that sphere.
+
+<p/>
+
+As with other GAMGI native files, these log files should be XML-based (the format used to store the commands is independent of the language itself). Users can suppress or add new actions to this file, entirely off-line, just using a text editor. Users can even create new log files entirely from scratch and then use them to ask GAMGI to perform automatically a set of complex operations. Common, repetitive tasks, can be done automatically using log files.
+
+<p/>
+
+Even a novice who did not grasp yet the language can take advantage of this mechanism, just by saving log files of previous sessions and reading them directly with a text editor: if the language is user-friendly, the user should be able to understand enough to modify some of the instructions and actually grasp their logic, learning by example.
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

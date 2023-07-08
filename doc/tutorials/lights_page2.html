@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Tutorials: Directional and positional lights</title>
+<link rel="icon" type="image/png" href="../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Directional and positional lights</h1>
+
+<div id="notebook">
+<ul>
+<li><a href="lights_page1.html">Page 1</a></li>
+<li><span>Page 2</span></li>
+</ul>
+</div>
+
+<div class="contents">
+
+<h3>Shininess</h3>
+
+<ol>
+<li>Select <b>Light->Modify</b>, and press the mouse on the drawing area.
+A menu pops up, showing two menu items, for the two lights available. After
+choosing the first light, confirm its properties, in particular the new light
+direction, position, and angle, that were changed with the mouse.
+</li>
+
+<li>
+Set <b>Specular</b> to <b>(0.6, 0.6, 0.6)</b> and press <b>Ok</b>.
+A bright spot is now visible at the center of the atom, due to the
+reflected light.
+</li>
+
+<li>
+Select <b>Light->Config</b> and set <b>Shininess</b> (<b>Materials</b> page)
+to <b>0.0</b>. After pressing <b>Ok</b> the bright spot disappears.
+Repeat the operation, this time set <b>Shininess</b> to <b>0.5</b>.
+After pressing <b>Ok</b> the bright spot reappears, much brighter 
+now, as the material light reflectance was increased.
+</li>
+</ol>
+
+<h3>Maximum illumination</h3>
+
+<ol>
+<li>Select <b>Light->Modify</b>, and press the mouse on the drawing area. 
+A menu pops up, showing two menu items, for the two lights available. After 
+choosing the first light, set <b>angle</b> back to <b>90.0</b>, 
+color <b>Ambient</b> to <b>(0.6, 0.6, 0.6)</b>, <b>Specular</b> to 
+<b>(0.0, 0.0, 0.0)</b> and press <b>Ok</b>. The initial full color atom 
+circle returns.
+
+<p/>
+
+This happens because the absence of lights correspond in fact to 
+the existence of a light with <b>Ambient</b> component set to 
+<b>(1.0, 1.0, 1.0)</b>, and <b>Diffuse</b>, <b>Specular</b> components 
+set to <b>(0.0, 0.0, 0.0)</b>, the maximum luminosity that can be achieved. 
+As the light components of the two lights are added, the total ambient light 
+is now (1.0, 1.0, 1.0), so the maximum luminosity has been already reached 
+and additional diffuse light cannot increase further the luminosity.
+</li>
+</ol>
+
+<h3>Wired objects illumination</h3>
+
+<ol>
+<li>
+Select <b>Atom->Modify</b> and press the mouse over the atom. After confirming
+the atom properties, set <b>Style</b> to <b>Wired</b> and press <b>Ok</b>. 
+The atom is now shown as a cross.
+</li>
+
+<li>
+Press <b>Light->Modify</b> and press the mouse over the graphic area. A menu 
+pops up, showing two menu items, for the two lights available. After choosing 
+the first light, confirm its properties, set <b>Ambient</b> to 
+<b>(0.0, 0.0, 0.0)</b> and press <b>Ok</b>. Repeat for the second light,
+so the total ambient light is now (0.0, 0.0, 0.0). Because wired objects cannot 
+reflect diffuse or specular light, they require ambient light to be visible. 
+As the ambient light has been switched off, the wired cross becomes barely visible.
+</li>
+
+<li>Select <b>Light->Remove</b> and press the mouse over the graphic area.
+A menu pops up, showing two menu items, for the two lights available. Choose
+the first light, then the second, to remove them. The wired cross is visible
+again.
+</li>
+</ol>
+
+</div>
+
+<div id="bottom">
+<a href="../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

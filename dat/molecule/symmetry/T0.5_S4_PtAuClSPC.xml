@@ -1,0 +1,21 @@
+<gml>
+<molecule name="PtAu2Cl2S4P4C4">
+<atom element="Pt" x="-.03979" y=".07599" z="-.01435"/>
+<atom element="Au" x="2.24121" y="1.35234" z="-.55318"/>
+<atom element="Au" x="-2.31855" y="-1.21730" z=".44991"/>
+<atom element="Cl" x="4.26276" y="2.55706" z="-1.24115"/>
+<atom element="Cl" x="-4.41717" y="-2.38034" z=".91658"/>
+<atom element="S" x=".79400" y="-2.12116" z="-.15868"/>
+<atom element="S" x="-1.42328" y="1.98400" z=".24544"/>
+<atom element="S" x="-.23812" y=".21534" z="-2.35970"/>
+<atom element="S" x=".69770" y=".24921" z="2.22516"/>
+<atom element="P" x="2.77694" y="-1.83333" z="-.34150"/>
+<atom element="P" x="-.15802" y="3.50521" z="-.22363"/>
+<atom element="P" x="-.79575" y="-.60517" z="3.24991"/>
+<atom element="P" x="-1.87503" y="-.88648" z="-2.71572"/>
+<atom element="C" x="3.12602" y="-.39288" z="-1.39029"/>
+<atom element="C" x="1.46752" y="3.09756" z=".31039"/>
+<atom element="C" x="-1.57378" y="-1.85808" z="2.33582"/>
+<atom element="C" x="-3.06949" y="-.64815" z="-1.46727"/>
+</molecule>
+</gml>

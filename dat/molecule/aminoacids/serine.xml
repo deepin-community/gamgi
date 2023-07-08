@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE gml SYSTEM "http://www.gamgi.org/dtd/gamgi.dtd">
+<gml>
+  <molecule name="serine">
+    <atom id="1" element="N" x="-0.1679" y="-1.4389" z="0.1858"/>
+    <atom id="2" element="C" x="0.4689" y="-0.5009" z="-0.7333"/>
+    <atom id="3" element="C" x="1.6727" y="0.1498" z="-0.0957"/>
+    <atom id="4" element="O" x="2.0246" y="-0.1153" z="1.0543"/>
+    <atom id="5" element="C" x="-0.5490" y="0.5531" z="-1.2375"/>
+    <atom id="6" element="O" x="-0.9557" y="1.4681" z="-0.2145"/>
+    <atom id="7" element="H" x="0.2107" y="-1.6104" z="1.1823"/>
+    <atom id="8" element="H" x="-1.0467" y="-2.0037" z="-0.0900"/>
+    <atom id="9" element="H" x="0.8378" y="-1.0746" z="-1.6037"/>
+    <atom id="10" element="H" x="-0.1024" y="1.1354" z="-2.0675"/>
+    <atom id="11" element="H" x="-1.4423" y="0.0696" z="-1.6777"/>
+    <atom id="12" element="H" x="-1.4065" y="0.9580" z="0.4642"/>
+    <atom id="13" element="O" x="2.3799" y="1.0922" z="-0.9059"/>
+    <atom id="14" element="H" x="1.9231" y="1.1656" z="-1.8257"/>
+    <bond parent1="1" parent2="2"/>
+    <bond parent1="1" parent2="7"/>
+    <bond parent1="1" parent2="8"/>
+    <bond parent1="2" parent2="3"/>
+    <bond parent1="2" parent2="5"/>
+    <bond parent1="2" parent2="9"/>
+    <bond parent1="3" parent2="4" order="2.00"/>
+    <bond parent1="3" parent2="13"/>
+    <bond parent1="5" parent2="6"/>
+    <bond parent1="5" parent2="10"/>
+    <bond parent1="5" parent2="11"/>
+    <bond parent1="6" parent2="12"/>
+    <bond parent1="13" parent2="14"/>
+  </molecule>
+</gml>

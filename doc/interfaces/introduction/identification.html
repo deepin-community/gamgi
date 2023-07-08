@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Interfaces: Introduction Identification</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/board.css"/>
+</head>
+
+<body>
+
+<div class="board">
+<div>Introduction Identification</div><div>&nbsp;</div>
+</div>
+
+<div class="contents">
+
+Every object in GAMGI is identified by a name and a number.
+
+<h3>Name</h3>
+
+Names are used to allow users to identify the objects. Although GAMGI always 
+checks them for correctness and consistency, names are not used internally, 
+for identification purposes or others. Names are totally controlled by users: 
+if they wish, GAMGI can generate default names for new objects, but only users 
+can change names after that.
+
+<p/>
+
+Names can have a maximum of 20 characters and each character can be a letter 
+(<b>a-z</b> and <b>A-Z</b>), a number (<b>0-9</b>) or any of the following 
+characters: <b>( ) [ ] { } &lt; > _ . + -</b>.
+Some of these characters are particularly usefull to name coordination compounds
+and charged species, for example,
+
+<p/>
+
+Although names can start with any of these characters, it might be good 
+practise to start names with a letter, for compatibility with other programs.
+
+<h3>Number</h3>
+
+Numbers are used to allow GAMGI to identify the objects. Objects of different classes 
+may have the same number, but objects of the same class must have different numbers. 
+
+<p/>
+
+Numbers are totally controlled by GAMGI: they are generated, modified and removed by GAMGI, 
+without any user intervention. Although numbers can be quite useful for users, its meaning 
+is often unclear, due to the recycling mechanisms that GAMGI applies: i) numbers are 
+recycled when objects are removed and may reappear later attached to new objects; 
+ii) when recovering with undo/save techniques, new numbers will be attached to 
+the recovered objects.
+
+<p/>
+
+Any positive integer is a valid identification number. When recycled numbers are available, 
+GAMGI reapplies them in the order they are listed. Otherwise, GAMGI applys new numbers in
+increasing order.
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

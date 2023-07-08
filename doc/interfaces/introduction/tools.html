@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Interfaces: Introduction Tools</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/board.css"/>
+</head>
+
+<body>
+
+<div class="board">
+<div>Introduction Tools</div><div>&nbsp;</div>
+</div>
+
+<div class="contents">
+
+The Tools section - a menu and a ruler below the window 
+drawing area - offers extra mechanisms to improve GAMGI 
+functionality. Everytime an action is active, its label 
+in the tool bar is highlighted, showing the default color 
+again when disabled.
+
+<h3>Axes</h3>
+
+When rotating/moving, changes can be applied to the objects 
+or to the referential. In GAMGI, by default, rotation/translation 
+is applied to the objects (even when the selected object is a 
+layer, in which case all layer objects are rotated/translated). 
+
+<p/>
+
+To rotate/translate the referential instead, just press the 
+<b>Axes</b> button. To restore the initial mode, press <b>Axes</b>
+again. Changing the referential is equivalent to select
+<b>Layer->Modify</b> and change the layer parameters that 
+define the observer position and orientation: <b>Eye</b>, 
+<b>Center</b> and <b>Up</b>
+
+<p/>
+
+Changing the referential has usually the opposite effect
+of changing the object, a confusing effect, even for experienced
+users: moving an object to the right has the same visual effect 
+of moving the referential to the left. Moreover, changing the 
+referential is usually a much more sensitive task than to change 
+the objects: instead of changing an object some distance away, 
+the eye position is directly changing. Using this mode with the 
+ruler is thus probably more effective than dragging with the mouse, 
+particularly when dragging along arcs far from the center, to 
+rotate along the Z axis.
+
+<p/>
+
+The (X,Y,Z) referential mentioned here is a set of 3 vectors
+pointing from the middle of the screen to: the right (X),
+the top (Y), the user (z). By default, the referential is 
+positioned at (10, 0, 0) and the axes are orientated along 
+(1,0,0) for X, (0,1,0) for Y and (0,0,1) for Z, but this is 
+no longer the case when the layer referential is moved or rotated.
+
+<p/>
+ 
+GAMGI supports 3 methods to rotate, move and scale:
+
+<p/>
+ 
+1) Dragg the mouse over the drawing area. This is very intuitive and works 
+very well with small- or medium-sized objects. However, it is not very 
+precise, and is too slow for very large objects. Moreover, it is not possible 
+to move along the Z axis and rotations around the Z-axis are less precise 
+(though still intuitive).
+
+<p/>
+
+2) Specify directly the rotation angles and translation vectors, using the 
+<b>Object Create</b> and <b>Object Modify</b> dialogs. Although this is the 
+most precise method, rotation and translation values must be introduced 
+directly, which is usually very inconvenient unless the good values are 
+known in advance.
+
+<p/>
+
+3) After selecting the action in the tool bar: <b>Rotate</b>, <b>Move</b> 
+or <b>Scale</b>, press the mouse over the positional ruler below, 
+centered at 0, with larger negative changes at the far left and 
+larger positive changes at the far right. Rotations/translations 
+around/along the x,y,z axes are selected pressing the left,middle,right 
+mouse buttons, respectively (scaling works with any button).
+
+<p/>
+
+This method is more precise than the mouse dragging movements, 
+without the need to introduce specific values for rotation, 
+translation, scaling.
+
+<h3>Rotate</h3>
+
+To rotate, press <b>Rotate</b> and then click on the positive 
+(counter-colockwise) or negative side of the ruler, with the left 
+button (X rotation), the middle button (Y rotation) or the right 
+button (Z rotation). The rotation angle for the current mouse position, 
+over the ruler, is shown in real time in the window status bar.
+Currently rotations angles vary in the range [-30.0, +30.0].
+
+<p/>
+
+Rotating is always applied to the currently selected object 
+when <b>Axes</b> is off and to the current layer referential
+when it is on.
+
+<h3>Move</h3>
+
+To move, press <b>Move</b> and then click on the positive 
+or negative side of the ruler, with the left button (X translation), 
+the middle button (Y translation) or the right button (Z translation).
+The translation length for the current mouse position, over 
+the ruler, is shown in real time in the window status bar.
+Currently translation lengths vary in the range [-10.0, +10.0].
+
+<p/>
+
+Translating is always applied to the currently selected object
+when <b>Axes</b> is off and to the current layer referential
+when it is on.
+
+<h3>Scale</h3>
+
+To scale, press <b>Scale</b> and then click on the positive 
+or negative side of the ruler, with any button mouse.
+The scaling factor for the current mouse position, over 
+the ruler, is shown in real time in the window status bar.
+Currently scaling factors vary in the range [0.5, 2.0].
+
+<p/>
+
+Scaling is always applied to the currently selected object
+when <b>Axes</b> is off and to the current layer when it is on.
+
+<h3>Undo</h3>
+
+For each layer, GAMGI maintains a list of old configurations, 
+saved automatically, permiting users to undo any discontinuous 
+action inside a layer. To change the number of saved configurations 
+select <b>Layer->Config</b>.
+
+<p/>
+
+Pressing <b>Undo</b> shows a dialog allowing users to navigate back and 
+forward through a list of previously saved layers, plus the current one. 
+Pressing <b>Cancel</b> restores the original layer and closes the dialog, 
+pressing <b>Ok</b> turns the visible layer into the new current layer. 
+In this case, the old current layer becomes the last saved layer, thus 
+becoming the last to be removed and the first to appear when the user 
+presses <b>Undo</b> again and inspects the saved layers.
+
+<p/>
+
+Undo keeps automatically any discontinuous action occurring in a layer 
+but ignores completely continuous actions. A discontinuous action occurs
+when a user presses <b>Ok</b>, clicks over the ruler to rotate, 
+move, scale an object, or in general when a clear boundary 
+can be defined between what existed before and after.
+
+<p/>
+
+Continuous actions occur when objects are moved, rotated, scaled,
+directly with the mouse, as parameters are changing almost continuously.
+If continuous actions were saved with <b>Undo</b>, in a few seconds all 
+<b>Undo</b> levels would be filled up with almost equal layers and old 
+<b>Undo</b> layers would be removed forever, turning the <b>Undo</b> 
+mechanism much less useful. Moreover, continuous actions would be slow, 
+because GAMGI would be saving things all the time.
+
+<h3>Save</h3>
+
+The <b>Save</b> mechanism works exactly as the <b>Undo</b> mechanism, 
+except that it is fully controlled by the user, who decides when a layer 
+must be saved, while the <b>Undo</b> mechanism works without any user 
+intervention. With the <b>Save</b> mechanism, users can save any layer 
+exactly when they wish (in particular after any discontinuous action), 
+and control when old layers are discarded, after exceeding the number 
+of saved configurations.
+
+<p/>
+
+To save a layer, just press <b>Save</b> and then <b>Ok</b>, this way adding 
+the current layer to the list of saved configurations (this mechanism works 
+also with <b>Undo</b>, but it is not as useful as here, because <b>Undo</b> 
+layers are removed automatically, without user control, when the number of 
+<b>Undo</b> levels is exceeded).
+
+<p/>
+
+Although <b>Save</b> and <b>Undo</b> work exactly in the same way and 
+complement each other, they use totally independent resources, even the number 
+of <b>Undo</b> levels is independent of the number of <b>Save</b> levels. 
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Formats: Bond Create</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Bond Create</h1>
+
+<div id="notebook">
+<ul>
+<li><span>Type</span></li>
+<li><a href="create_property.html">Property</a></li>
+<li><a href="create_view.html">View</a></li>
+</ul>
+</div>
+
+<div class="contents">
+
+Currently bonds cannot be created automatically from inside a file, 
+using either the geometric <b>Length</b> or the topological <b>Delaunay</b> 
+methods. Each bond object contains thus a complete description of one bond only.
+
+<p/>
+
+To specify the atoms forming the bond, the bond parameters <b>parent1</b>, 
+<b>parent2</b> must point to the atom <b>id</b> attributes, which are
+different for each atom.
+
+<pre>
+Example: <b>&lt;bond ... parent1="C1" parent2="C2"/></b> (no default)
+Allowed values: alphanumeric expression representing a unique atom <b>id</b>
+with less than 20 characters (defined in <b>GAMGI_ENGINE_TOKEN</b>) (required)
+</pre>
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

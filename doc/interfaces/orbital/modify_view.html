@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Interfaces: Orbital Modify</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Orbital Modify</h1>
+
+<div id="notebook">
+<ul>
+<li><a href="modify_type.html">Type</a></li>
+<li><a href="modify_scope.html">Scope</a></li>
+<li><a href="modify_volume.html">Volume</a></li>
+<li><a href="modify_position.html">Position</a></li>
+<li><span>View</span></li>
+</ul>
+</div>
+
+<div class="contents">
+
+Change here the visual aspect for a single orbital or a list of orbitals.
+
+<p/>
+
+To modify an orbital, click over its graphic image, or write its id on
+the <b>Orbital</b> entry. To modify a list of orbitals, press the button
+<b>List</b> (after creating the list of orbitals with <b>Orbital->Select</b>).
+Parameters for empty entries or <b>Local</b> choices remain unchanged.
+
+<p/>
+
+To change an orbital name write the new name in the <b>Orbital</b> entry,
+followed by the orbital number (GAMGI needs the number to identify the orbital).
+To change the name for a list of orbitals, press <b>List</b> first
+and then write the new common name in the <b>Name</b> entry.
+
+<h3>Color</h3>
+
+Set here the R, G, B color components of the orbital,
+from black (0.0, 0.0, 0.0) to white (1.0, 1.0, 1.0),
+in the positions where the wavefunction is positive.
+
+<p/>
+
+When <b>Phase</b> is switched off (in the <b>Volume</b> page),
+the <b>Color</b> components are used to color the whole orbital.
+
+<h3>Phase</h3>
+
+Set here the R, G, B color components of the orbital,
+from black (0.0, 0.0, 0.0) to white (1.0, 1.0, 1.0),
+in the places where the wavefunction is negative.
+
+<p/>
+
+When <b>Phase</b> is switched off (in the <b>Volume</b> page),
+the <b>Phase</b> entries are disabled and the whole orbital
+is colored using only the <b>Color</b> components.
+
+<h3>Frame</h3>
+
+Set here the R, G, B color components of the orbital frame,
+from black (0.0, 0.0, 0.0) to white (1.0, 1.0, 1.0). 
+
+<p/>
+
+When <b>Frame</b> is switched off (in the <b>Volume</b> page),
+the <b>Frame</b> entries are disabled as the orbital frame
+is not shown.
+
+<h3>Scale</h3>
+
+Set the orbital size, including its child objects. Orbital objects are
+scaled around the orbital center. The visual representation of an object
+is always scaled by its own scale factor multiplied by the scale factor
+of all its parent objects until layer, inclusive.
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

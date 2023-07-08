@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Interfaces: Introduction Windows</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/board.css"/>
+</head>
+
+<body>
+
+<div class="board">
+<div>Introduction Windows</div><div>&nbsp;</div>
+</div>
+
+<div class="contents">
+
+There are four different types of windows in GAMGI: 
+1) top windows; task windows; exclusive windows and help windows. 
+
+<h3>Top</h3>
+
+Top windows are GAMGI main windows, when GAMGI starts a top window is created.
+Memory permiting, an unlimited number of these windows can be open simultaneously, 
+and objects can be freely moved from a window to another. These windows are 
+independent: if GAMGI starts with window A and then window B is created,
+these windows have exactly the same priority, so removing 
+window A will leave GAMGI running normally with window B.
+
+<h3>Task</h3>
+
+Task windows are all the dialogs related with tasks selected from 
+the main menu in top windows. Throughout GAMGI documentation task windows 
+are named first by the object, then by the task, and if necessary by the 
+specific topic, as in <b>Molecule Measure Symmetry</b>.
+
+<p/>
+
+Task windows include input dialogs, such as <b>Atom Create</b>, where users enter 
+information and output dialogs, as <b>Cluster Measure Voronoi</b> where analysis 
+data is reported. Task windows also include the <b>Help</b> input windows, such 
+as <b>Help Topic</b>, where users select the documentation they need.
+
+<p/>
+
+Task windows do not require exclusive attention, and after opening a task window 
+users can still use all the menus and facilities provided by the other windows.
+
+<p/>
+
+For the sake of simplicity, only one task can be active at a given time in GAMGI, 
+thus selecting <b>Light->Modify</b> after <b>Atom->Create</b> will close automatically 
+the <b>Atom Create</b> window before opening the <b>Light Modify</b> window.
+
+<p/>
+
+However, some tasks can open more than one window simultaneously, for example, selecting 
+<b>Atom->Create</b> opens a first window and then selecting <b>Table</b> opens a second 
+window. Selecting another task will automatically remove both windows. Removing the first 
+window automatically removes the second. Removing the second window leaves the first 
+unchanged.
+
+<p/>
+
+When multiple top windows are open simultaneously, the task is executed in the window 
+where the task was selected. Task windows are automatically removed when the corresponding 
+top window is removed.
+
+<h3>Exclusive</h3>
+
+Exclusive windows are windows that require exclusive attention, because some sensitive 
+operation is occurring, so users are not allowed to perform any other operation until 
+handling properly this issue, not even consulting the Help.
+
+<p/>
+
+There are three types of exclusive windows in GAMGI: message, confirmation and history. 
+Message windows usually show an error or warning message and only expect users to click 
+on a <b>Cancel</b> button to remove the window.
+
+<p/>
+
+Confirmation windows usually prompts a question, asking users to confirm some sensitive task, 
+as in <b>Gamgi Reset</b> and <b>Gamgi Exit</b>. Users can confirm the task, pressing the 
+<b>Ok</b> button, or cancel it, pressing the <b>Cancel</b> button (always the default option).
+
+<p/>
+
+History windows are used to handle <b>Undo</b> and <b>Save</b> tools, and must be 
+exclusive because GAMGI is in a fragile state when navigating through old configurations.
+
+<h3>Help</h3>
+
+Windows showing GAMGI documentation are help windows, including 
+<b>Help Start</b>. However, windows to select the documentation, 
+such as <b>Help Search</b>, are task windows.
+
+<p/>
+
+Help windows are independent from task windows: they can be open 
+simultaneously, without interference. For example, a user may be reading 
+<b>Help Bond Create</b> while <b>Atom Create</b> is open. However, GAMGI 
+knows which task is active, so selecting <b>Help Current</b> the current 
+help window is replaced by <b>Help Atom Create</b>. 
+
+<p/>
+
+Help windows do not require exclusive attention, and after opening a help 
+window users can still use all the menus and facilities provided by the other 
+windows.
+
+<p/>
+
+For the sake of simplicity, only one help window can be active at a given time 
+in GAMGI, thus selecting <b>Help->Current</b> when <b>Atom Create</b> is open,
+will close automatically any previous help window before opening
+<b>Help Atom Create</b>. 
+
+<p/>
+
+However, more than one window related with the <b>Help</b> system can be open 
+simultaneously. For example, selecting <b>Help->Topic</b> opens a task window 
+and then selecting a topic opens a help window. Selecting another help topic
+automatically removes the help window before showing the one. Removing the task 
+window does not remove the help window. 
+
+<p/>
+
+Help windows do not produce active actions (even tutorial help windows only tell 
+users what to do), so they are not attached to a particular top window. When several 
+top windows are open simultaneously and one is removed, help windows are not affected, 
+even if this was the top window used to call the help window.
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

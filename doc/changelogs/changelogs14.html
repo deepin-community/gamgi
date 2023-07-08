@@ -1,0 +1,942 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Changelogs: GAMGI 0.14</title>
+<link rel="icon" type="image/png" href="../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../css/board.css"/>
+</head>
+
+<body>
+
+<div class="board">
+<div>GAMGI 0.15</div><div>16th December 2010</div>
+</div>
+
+<div class="contents">
+
+Wrote Plane->Select, Direction->Select, Plane->Copy and Direction->Copy.
+Fixed bugs in Group->Modify, Group->Copy and elsewhere. All dialogs
+now support lists except the Modify dialogs for Group, Plane, Direction,
+as these objects must be rethinked anyway. 
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Found and removed a bug in Group->Modify: even auxiliary
+groups need a number, to avoid corruption when removed.</li>
+<li>Found and removed a bug in Group->Modify: central atom
+existence was not properly checked, resulting in possible crashes.</li>
+<li>Group->Link is now working fine with single objects and
+lists of objects.</li>
+<li>The new Plane->Link and Direction->Link dialogs are now
+working fine with single objects and lists of objects.</li>
+<li>Updated interface for Plane->Link and Direction->Link dialogs.</li>
+<li>Error handling improvements on Plane->Copy, Direction->Copy
+and Group->Copy.</li>
+<li>Implemented and tested dialog Group->Copy.</li>
+<li>Futurely Object->Copy dialogs should allow copies to
+other destinations, not just layers.</li>
+<li>Implemented and tested dialogs Plane->Copy and Direction->Copy.</li>
+<li>O1, O2, O3, O4 node coordinates can now be used to select
+lists of planes. Tested Plane->Select for all specific
+direction properties.</li>
+<li>O1, O2, O3, O4 node coordinates can now be used to select
+lists of directions. Tested Direction->Select for all specific
+direction properties.</li>
+<li>All relevant Plane and Direction properties are now available
+in Plane->Select adn Direction->Select, except O1, O2, O3, O4.</li>
+<li>Fixed two interface bugs in Plane->Create and Plane->Modify
+related with O4 node combo box: no default and no Local option.</li>
+<li>Added Autonomy Partial to Group objects and Style (Wired|Solid)
+to Plane, Direction objects, in Object->Select dialogs, although 
+these properties have not been implemented yet.</li>
+<li>Added all relevant properties properties to Group->Select,
+Plane->Select, Direction->Select dialogs (not working yet).</li>
+<li>Fixed a little bug in all Object->Select dialogs.</li>
+<li>Plane->Select and Direction->Select can now
+be used to select lists of Planes and Directions.</li>
+<li>Rewrote Group->Modify, to support lists of objects.
+It is working again, currently only for one object.</li>
+<li>Designed a simple data model to handle focus
+of single objects or lists of objects.</li>
+<li>Designed a simple way for users to set focus to
+arbitrary lists of objects (so they can be rotated,
+moved, scaled simultaneosuly).</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Rewrite the About dialog, in the notebook form, to
+include pages for Developers, Contributors, Supporters.</li>
+<li>Add a task id to operactions involving multiple scans to
+guarantee that there is no flag corruption when bonds are
+created between different molecules.</li>
+<li>Add a bond angle, which is useful to control double bonds
+in solid mode.</li>
+<li>Add plane area and direction length to Plane->Measure and
+Direction->Measure.</li>
+<li>Write tutorials about crystalographic and atomic Plane,Direction usage.</li>
+<li>Implement dynamic text objects, to measure distances,
+angles, etc. on real time.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.14.11</div><div>26th October 2010</div>
+</div>
+
+<div class="contents">
+
+Implemented Object->Link for lists of objects, for all classes of objects supported
+by GAMGI, except Plane and Direction. All GAMGI objects seem to be working fine now,
+with lists of objects, for all suitable tasks (Object->Copy, Object->Link, Object->Modify,
+Object->remove) except Planes and Directions (next release!). In general, the code
+to handle lists of objects is becoming simpler and more robust.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Found and removed a bug in the lists code: the color of
+object labels was not updated when new windows were created.</li>
+<li>Redesigned the code to update top menu label colors,
+to indicate which objects have lists currently active.</li>
+<li>Found and removed two interface bugs in Cell->Link related with node
+occupancy.</li>
+<li>Cell->Link is now working fine for all methods, Object, Crystal and
+Glass (renamed from Random), for one Cell or for a list of Cells.</li>
+<li>Simplified Object->Link code with gamgi_gtk_object_raise.</li>
+<li>Bond->Link is now working fine for all cases.</li>
+<li>Molecule->Link is now working fine for all cases.</li>
+<li>Text->Link, Group->Link, Cluster->Link,
+Assembly->Link are now working fine for all cases.</li>
+<li>Light->Link is now working fine for all cases.</li>
+<li>More improvements for Atom->Link and Layer->Link dialogs.</li>
+<li>Layer->Link is now working fine for all cases.</li>
+<li>Found and removed a bug in all Object->Copy dialogs
+affecting the mouse interaction with the dialog.</li>
+<li>Improved Atom->Link: static_apply and static_ok_global.</li>
+<li>Working on Object->Link dialogs. Window->Link is now
+working fine for all cases.</li>
+<li>Synced gamgi and gamgi_exp files: src/ and doc/.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Rewrite the About dialog, in the notebook form, to
+include pages for Developers, Contributors, Supporters.</li>
+<li>Add a task id to operactions involving multiple scans to
+guarantee that there is no flag corruption when bonds are
+created between different molecules.</li>
+<li>Add a bond angle, which is useful to control double bonds
+in solid mode.</li>
+<li>Add plane area and direction length to Plane->Measure and
+Direction->Measure.</li>
+<li>Write tutorials about crystalographic and atomic Plane,Direction usage.</li>
+<li>Implement dynamic text objects, to measure distances,
+angles, etc. on real time.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.14.10</div><div>20th September 2010</div>
+</div>
+
+<div class="contents">
+
+Added more criteria to create lists of objects in Object->Select
+dialogs. Added functionality to Object->Copy dialogs, for objects
+and lists of objects. Added functionality to Object->Link dialogs.
+Atom->Link is now working for lists of objects. Improved the Cell->Link
+interface, to support important new functionality. Removed three bugs,
+two graphic ones, the other in the lists of objects code.
+We are now counting down to GAMGI 0.15.</li>
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Replaced Shift by Change in Cell->Link, to keep Shift for Object
+mode in Object->Link dialogs, similar to Object->Copy dialogs.</li>
+<li>All Object->Copy dialogs are now working fine with the new
+features and visual.</li>
+<li>Redesigned the Layer/Local options in Object->Copy dialogs.</li>
+<li>Many small refinements in Object->Copy dialogs and Atom->Link.</li>
+<li>Layer->Copy is now working fine: a variable was not initialized.</li>
+<li>Atom->Link is now working fine for all possible cases.</li>
+<li>Improved code for Object->Modify and Object->Copy dialogs.</li>
+<li>Added functionality to Atom->Link: lists of objects can be
+linked above and below, linked objects can be shifted.</li>
+<li>After Atom->Link, started preparing the other Object->Link
+dialogs to support lists of objects. Updated the button selecting
+an object or an object list, for all Object->Link dialogs.</li>
+<li>Mouse handling in Object->Copy and Object->Select
+dialogs is working fine, with the new functionality.</li>
+<li>Replaced labels Atom, Bond, etc. in Object->Create dialogs
+by label Name as this is more consistent with Object->Modify
+dialogs.</li>
+<li>Implemented all the functionality for Object->Copy dialogs,
+including lists of objects (seems fine but needs more testing).</li>
+<li>Improved GTK code for dialogs: Atom->Copy, Light->Copy,
+Text->Copy, Cell->Copy, Cluster->Copy, Molecule->Copy, Assembly-Copy,
+Group->Copy.</li>
+<li>All working Object->Select dialogs support now selection by name
+and by parent.</li>
+<li>Atoms can now be selected by name and by parent using Atom->Select.</li>
+<li>Found and removed a typo bug in the code to set the color of
+object selection rectangles. With some positional lights, a white
+color in a selection rectangle might look black (mesa bug?).</li>
+<li>Found and removed a bug in Undo,Save code: when pressing
+Cancel, in some cases the image was not immediately updated.</li>
+<li>Found and removed a bug in the lists code: Gamgi->Reset tried
+to change a Gtk label after removing its own Gtk parent window.</li>
+<li>Atom->Copy is now working with new (name, location) functionality.</li>
+<li>Link->Atom is now working with both atoms and lists of atoms.</li>
+<li>The interface to translate and rotate Wyckoff positions,
+in Cell->Link, is now available through a simple netbook page,
+instead of second-level dialogs as before.</li>
+<li>Researching CIF file format: we plan to export GAMGI to this format.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Rewrite the About dialog, in the notebook form, to
+include pages for Developers, Contributors, Supporters.</li>
+<li>Add a task id to operactions involving multiple scans to
+guarantee that there is no flag corruption when bonds are
+created between different molecules.</li>
+<li>Add a bond angle, which is useful to control double bonds
+in solid mode.</li>
+<li>Add plane area and direction length to Plane->Measure and
+Direction->Measure.</li>
+<li>Write tutorials about crystalographic and atomic Plane,Direction usage.</li>
+<li>Implement dynamic text objects, to measure distances,
+angles, etc. on real time.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.14.9</div><div>24th August 2010</div>
+</div>
+
+<div class="contents">
+
+Lists of Cells, Lights, Layers (previously selected using the Object->Select
+dialogs) can now be easily modified using the Object->Modify dialogs. Lists of
+Atoms, Texts, Lights, Layers, Windows, Cells, Molecules, Clusters (previously
+selected using the Object->Select dialogs) can now be easily copied using the
+Object->Copy dialogs. Removed two bugs in the new lists code that crashed GAMGI
+is some situations.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Copy->Cluster is now working with clusters and lists of clusters.</li>
+<li>Copy->Molecule is now working with molecules and lists of molecules.</li>
+<li>Copy->Cell is now working with cells and lists of cells.</li>
+<li>Copy->Window is now working with windows and lists of windows.</li>
+<li>Copy->Layer is now working with layers and lists of layers.</li>
+<li>Copy->Light is now working with lights and lists of lights.</li>
+<li>Found and removed a crashing bug in the lists code, with more than
+one window: the gtk window is removed before the window child objects,
+so when removing these, the gtk window is not there anymore.</li>
+<li>Copy->Text is now working with texts and lists of texts.</li>
+<li>Copy->Atom is now working with atoms and lists of atoms.</li>
+<li>Improved the way current object and layer are handled, for objects
+and lists of objects, in dialogs Atom->Modify, Bond->Modify, Text->Modify,
+Cell->Modify, Light->Modify and Layer->Modify. Deprecated
+gamgi_gtk_statusbar_modify and gamgi_gtk_statusbar_layer, added
+gamgi_global_selection_layer.</li>
+<li>Lists of layers (previously created with Layer->Select)
+can now be easily modified with Layer->Modify.</li>
+<li>Found and removed a crashing bug introduced last release in Text->Modify:
+when handling lists with more than one text, with undefined style but defined
+font, the new font became corrupted.</li>
+<li>More improvements in the lists code, in Atom->Modify,
+Bond->Modify, Text->Modify, Cell->Modify, Light->Modify,
+Layer->Modify: common error handling, focus change in the end, etc.</li>
+<li>Added local enumerations to the lists code in Light->Modify,
+Text->Modify, Atom->Modify, Bond->Modify, Cell->Modify, Layer->Modify.c,
+making the code much easier to read and maintain.</li>
+<li>Light colors can now be modified in Absolute or Relative modes.</li>
+<li>Lists of lights (previously created with Light->Select)
+can now be easily modified with Light->Modify.</li>
+<li>Cleaned the lists code in Atom->Modify, Bond->Modify,
+Text->Modify, Cell->Modify and Light->Modify.</li>
+<li>Lists of cells (previously created with Cell->Select)
+can now be easily modified with Cell->Modify.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Rewrite the About dialog, in the notebook form, to
+include pages for Developers, Contributors, Supporters.</li>
+<li>Add a task id to operactions involving multiple scans to
+guarantee that there is no flag corruption when bonds are
+created between different molecules.</li>
+<li>Add a bond angle, which is useful to control double bonds
+in solid mode.</li>
+<li>Add plane area and direction length to Plane->Measure and
+Direction->Measure.</li>
+<li>Write tutorials about crystalographic and atomic Plane,Direction usage.</li>
+<li>Implement dynamic text objects, to measure distances,
+angles, etc. on real time.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.14.8</div><div>19th July 2010</div>
+</div>
+
+<div class="contents">
+
+The properties of arbitrary lists of atoms, bonds, texts (previously selected with Select dialogs) can now be easly specified with the Modify dialogs (pressing the List button). In the next releases, this will be extended to the other objects. Replaced deprecated macros GTK_WIDGET_VISIBLE, GTK_WIDGET_SENSITIVE by gtk_widget_get_visible, gtk_widget_is_sensitive calls. Replaced direct addressing widget->window, widget->allocation by gtk_widget_get_window and gtk_widget_get_allocation calls (GAMGI needs now GTK 2.18 to compile). Removed a buffer overflow that crashed GAMGI when building crystals of the space group 230.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Lists of texts (previously created with Text->Select) can now be
+easily modified (for any property recognized by Gamgi) with Text->Modify.</li>
+<li>Lists of bonds (previously created with Bond->Select)
+can now be easily modified with Bond->Modify.</li>
+<li>Lists of atoms can now be easily modified with Atom->Modify!
+For efficiency reasons, dialog data is first imported to a cache,
+from where atoms or lists of atoms are modified.</li>
+<li> GTK 3.0: replaced widget->window direct addressing
+by gtk_widget_get_window calls (since GTK 2.14).</li>
+<li>GTK 3.0: replaced deprecated macros GTK_WIDGET_VISIBLE by 
+gtk_widget_get_visible calls (since GTK 2.18).</li>
+<li>GTK 3.0: Replaced deprecated macros GTK_WIDGET_SENSITIVE by
+gtk_widget_is_sensitive calls (since GTK 2.18).</li>
+<li>GTK 3.0: replaced widget->allocation direct addressing
+by gtk_widget_get_allocation calls (since GTK 2.18).</li>
+<li>Removed a buffer overflow, found when building crystals with
+group 230: some wyckoff strings do not fit in a 20 char array.</li>
+<li>www. gamgi.org and ftp.gamgi.org hardware failure: replaced,
+reinstalled system disk, copied previous data.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Rewrite the About dialog, in the notebook form, to
+include pages for Developers, Contributors, Supporters.</li>
+<li>Add a task id to operactions involving multiple scans to
+guarantee that there is no flag corruption when bonds are
+created between different molecules.</li>
+<li>Add a bond angle, which is useful to control double bonds
+in solid mode.</li>
+<li>Add plane area and direction length to Plane->Measure and
+Direction->Measure.</li>
+<li>Write tutorials about crystalographic and atomic Plane,Direction usage.</li>
+<li>Implement dynamic text objects, to measure distances,
+angles, etc. on real time.</li>
+<li>Improve selection dialogs, including list selection methods.</li>
+<li>Implement multiple object picking, including a
+dynamic frame with moving ants and dragging anchors,
+to select multiple objects and images from the screen.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.14.7</div><div>4th April 2010</div>
+</div>
+
+<div class="contents">
+
+This is a bug-fix release. Fixed a GL context bug when multiple windows were open, that could produce no rendering. Fixed memory leaks in handling fonts. Fixed how messages were produced when DejaVu fonts were not found, that could crash GAMGI. Updated old documentation, and the Help system, that could crash GAMGI. Fixed the way mouse dragging is handled that could stop mouse dragging. Corrected ionic radius for S and Sb. Prepared a new, experimental, release that does not require the GTKGLExt library (for X Window System only).
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Found and removed a bug in gamgi_chem_property.c: the ionic
+radius for S and Sb were wrong. Checked all ionic radius.</li>
+<li>Improved www.gamgi.org front page.</li>
+<li>Truetype fonts are now checked in the same way in Text->Create, Text->Modify
+and importing from file, in a slightly more robust way than before. Error messages
+are handled in a much better way. Fixed a bug in Text->Modify resulting in text
+object names not being properly updated.</li>
+<li>Found and removed a memory leak in gamgi_mesa_text_font_increase:
+when an error occurs, remove font glyph array created before.</li>
+<li>Found and removed a memory leak in gamgi_gtk_text_create and
+gamgi_gtk_atom_modify: contents is allocated and must be freed.</li>
+<li>Found and removed a nasty bug, introduced some time ago in the
+code handling the mouse, in gamgi_mesa_area_notify.c, that in many
+cases could stop the mouse from dragging.</li>
+<li>Updated www.gamgi.org/interfaces/, some documentation was old.</li>
+<li>Found and removed a bug introduced when moving to DejaVu fonts:
+for some fonts the filename had more chars than those expected
+in the error string message, resulting in crashs when those fonts
+were not found.</li>
+<li>Updated documentation for installation: in some systems
+(Ubuntu 9.10 for example) the environment variables must be
+set in ~/.profile, instead of ~/.bashrc.</li>
+<li>Updated gamgi_gtk_help_current.c and gamgi_gtk_help_topic.c:
+code for atom copy files was too old, resulting in crashes
+when calling documentation for Atom->Copy.</li>
+<li>Updated and fixed typos on doc/tutorials: for example the method
+<b>Independent</b> in Cell->Link is now called <b>Crystal</b>.</li>
+<li>The new code that does not require GTKGLExt is working fine with GAMGI
+on Fedora 8 (Gtk 2.12.8), including creating and removing multiple contexts
+on the fly, and sharing pre-compiled OpenGL lists.</li>
+<li>Wrote a GTK/OpenGL program that seems to work without GTKGLExt!
+Tested so far on Fedora 8 (Gtk 2.12.8) and Ubuntu 9.10 (Gtk 2.18.3).
+It requires only glx.h (distributed with Mesa) and gdkx.h (distributed
+with GTK). We need to test this much more, namely with shared lists,
+removing and adding GLcontexts, etc., but if we managed to succeed,
+it could be really good news for users and maintainers!</li>
+<li>Added initialization tests for GTK, GTKGLExt and OpenGL.</li>
+<li>Rewrote gamgi_mesa_area_create: gamgi->glconfig and gamgi->glcontext
+are no longer needed.</li>
+<li>Added "et al." in Gamgi->About dialog.</li>
+<li>Found and fixed a nasty, old bug, introduced when moving from GtkGLArea
+to GtkGLExt: when a top window was removed, Open GL lists previously
+created no longer worked in new windows. Solution: instead of using
+the GL context of the window that was created in first place, just use
+the GL context of the window that is currently the first one.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Rewrite the About dialog, in the notebook form, to
+include pages for Developers, Contributors, Supporters.</li>
+<li>Add a task id to operactions involving multiple scans to
+guarantee that there is no flag corruption when bonds are
+created between different molecules.</li>
+<li>Add a bond angle, which is useful to control double bonds
+in solid mode.</li>
+<li>Add plane area and direction length to Plane->Measure and
+Direction->Measure.</li>
+<li>Write tutorials about crystalographic and atomic Plane,Direction usage.</li>
+<li>Implement dynamic text objects, to measure distances,
+angles, etc. on real time.</li>
+<li>Improve selection dialogs, including list selection methods.</li>
+<li>Implement multiple object picking, including a
+dynamic frame with moving ants and dragging anchors,
+to select multiple objects and images from the screen.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.14.6</div><div>9th February 2010</div>
+</div>
+
+<div class="contents">
+
+Improved Object->Select dialogs. All Object->Remove dialogs can now handle
+lists of objects with the same functionality as for single objects (this is
+the first application of the selection lists that we have been implementing
+since Gamgi 0.14). Cell->Link now supports shifts in translations and rotations
+for each node, in Crystal mode (this is very useful, to change the lattice origin
+and for people doing research on Defects in Crystals). Adapted the ruler code for
+Gtk 3.0. Fixed a few bugs in Cell->Modify, Cell->Link and in the Tools section.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Added error message for empty lists in all Object->Remove dialogs.</li>
+<li>Layer->Remove can now be used to remove lists of layers.</li>
+<li>In Object->Remove dialogs, in List mode, the selection lists
+are now automatically removed only when objects of that class are 
+actually removed (and not its child objects).</li>
+<li>Window->Remove can now be used to remove lists of windows.</li>
+<li>Implemented new dialogs Cluster->Select, Molecule->Select
+and Group->Select.</li>
+<li>Removed useless, old dialogs Orbital->Select, Graph->Select,
+Arrow->Select and Shape->Select.</li>
+<li>Cluster->Remove, Molecule->Remove, Group->Remove, Plane->Remove
+and Direction->Remove can now be used to remove lists of objects.</li>
+<li>Text>Remove can now be used to remove lists of texts.</li>
+<li>Implemented lists in Cell->Remove, Assembly->Remove and Light->Remove.</li>
+<li>Improved layout for Text->Select, Bond->Select, Atom->Select,
+Light->Select, Layer->Select, Window->Select, Assembly->Select and
+Cell->Select dialogs.</li>
+<li>Simplified the code to remove lists of objects.</li>
+<li>Improved the mechanism to remove lists of objects:
+no need to copy the list of objects before removing them.
+This works fine even for recursive objects.</li>
+<li>Text>Remove can now be used to remove lists of texts.</li>
+<li>Bond>Remove can now be used to remove lists of bonds.</li>
+<li>The very first application of the selection lists is now in place:
+Atom->Remove can now be used to remove an atom or a list of atoms.</li>
+<li>Implemented functions to copy lists of dlist and slist nodes.</li>
+<li>Found and removed a bug in Cell->Modify: the cell origin was not
+correctly reset to zero, resulting in wrong center coordinates for cell.</li>
+<li>Changed the way Wyckoff positions are handled: they should be in the
+range ]-1, +1[ when rotation shift is applied (not in [0, +1[ as before).</li>
+<li>Implemented Rotation Shift in Cell->Link (in Method Crystal).</li>
+<li>Found and removed a bug in Scale tool button (added when converting to
+Gtk 3.0): passed button instead of label, resulting in wrong behaviour.</li>
+<li>Gtk 3.0: replaced ruler->position direct access by
+calls to gtk_ruler_get_range and gtk_ruler_set_range.</li>
+<li>Implemented Translation Shift in Cell->Link (in Method Crystal).</li>
+<li>Improved significantly the layout for dialogs Translation Shift,
+Rotation Shift and Cell->Link, resulting from the new Shift functionality.
+</li>
+<li>Wrote most of the code to handle Translation and Rotation Shifts,
+when building Crystals in Cell->Link. This is important for researchers
+working in Defects in Crystals.</li>
+<li>Found and removed two little bugs in gamgi_io_file.c, afecting
+the error message produced when a file could not be exported.</li>
+<li>Found and removed two bugs in static_type, in gamgi_gtk_cell_modify.c,
+related with Projection (introduced when changing to GTK 2.0).</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Rewrite the About dialog, in the notebook form, to
+include pages for Developers, Contributors, Supporters.</li>
+<li>Add a task id to operactions involving multiple scans to
+guarantee that there is no flag corruption when bonds are
+created between different molecules.</li>
+<li>Add a bond angle, which is useful to control double bonds
+in solid mode.</li>
+<li>Add plane area and direction length to Plane->Measure and
+Direction->Measure.</li>
+<li>Write tutorials about crystalographic and atomic Plane,Direction usage.</li>
+<li>Implement dynamic text objects, to measure distances,
+angles, etc. on real time.</li>
+<li>Improve selection dialogs, including list selection methods.</li>
+<li>Implement multiple object picking, including a
+dynamic frame with moving ants and dragging anchors,
+to select multiple objects and images from the screen.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.14.5</div><div>20th January 2010</div>
+</div>
+
+<div class="contents">
+
+Implemented a simple and powerful method to select any class of visual objects inside an arbitrary rectangle on any window. Improved the behaviour of Object->Select dialogs. Implemented the new dialogs Window->Select and Assembly->Select.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Removed two visual bugs in Method comboboxes in all Objet->Select
+dialogs: submenus now have no titles and have all the same size.</li>
+<li>Selection inside a mouse defined rectangle is now working fine also
+in Text->Select (recursive), Bond->Select, Assembly->Select (recursive)
+and Cell->Select.</li>
+<li>The new Assembly->Select dialog is fully working.</li>
+<li>Changed atom Type by atom Label, in Atom->Create, Atom->Modify,
+Atom->Config and XML files (attribute "type" was replaced by "label").
+Changed Element by Type in notebook tags, and Name by Element in
+notebook pages. Updated documentation accordingly.</li>
+<li>The new Window->Select dialog is fully working.</li>
+<li>Completed the code to grab objects inside mouse defined rectangles.
+And it seems to be working fine! Needs much more testing though.
+We are much closer to version 0.15!</li>
+<li>We have a good method to add Atoms to Cells with translations
+and rotations relatively to their normal positions. This is important
+for people doing research in Defects in Crystals.</li>
+<li>Found and removed a bug in expat export code for window:
+either export both x,y or none. The same for width,height.</li>
+<li>Improved gamgi_mesa_grab.c, to select objects by region.</li>
+<li>gamgi->box[4,5] are useless: use window->begin_x, window->begin_y
+instead.</li>
+<li>Debugged the selection rectangle behaviour, everything is working fine
+now. All the Mesa/GTK code related with the user interaction is done.</li>
+<li>Added "button_release_event" signal to OpenGL area.</li>
+<li>Increased partially visible layer merging factor from 0.2 to 0.4</li>
+<li>Wrote and tested selection rectangle alpha blending for object
+selection by region. This completes the static part of this code.</li>
+<li>Wrote and tested 2D pixel accurate selection rectangle for object
+selection by region, including move and resize little squares.</li>
+<li>Objects can be picked only in Pick mode. Until now, this was
+confusing for users.</li>
+<li>Wrote the code to scan objects by color, with unlimited depths,
+to implement object selection by region.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Rewrite the About dialog, in the notebook form, to
+include pages for Developers, Contributors, Supporters.</li>
+<li>Add a task id to operactions involving multiple scans to
+guarantee that there is no flag corruption when bonds are
+created between different molecules.</li>
+<li>Add a bond angle, which is useful to control double bonds
+in solid mode.</li>
+<li>Add plane area and direction length to Plane->Measure and
+Direction->Measure.</li>
+<li>Write tutorials about crystalographic and atomic Plane,Direction usage.</li>
+<li>Implement dynamic text objects, to measure distances,
+angles, etc. on real time.</li>
+<li>Improve selection dialogs, including list selection methods.</li>
+<li>Implement multiple object picking, including a
+dynamic frame with moving ants and dragging anchors,
+to select multiple objects and images from the screen.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.14.4</div><div>29th December 2009</div>
+</div>
+
+<div class="contents">
+
+Implemented the new dialogs: Text->Select, Bond->Select, Cell->Select,
+Light->Select, Layer->Select. Improved Atom->Select. Updated some GTK
+code to work with GTK 3.0. Updated documentation, fixed bugs.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Synced with www.gamgi.org/: dat/, doc/formats/, doc/interfaces,
+doc/tutorials, doc/bibliography, doc/installation and doc/man.</li>
+<li>The new Light->Select dialog is fully working.</li>
+<li>Found and removed a bug in Cell->Align (in Cell->Modify): rotation and
+translation alignment are working again for all transformed Cells and current
+Layer.</li>
+<li>Found (Valgrind) and removed a bug in gamgi_gtk_window_create.c:
+window->mode was used before initialization.</li>
+<li>Synced documentation and Help system, regarding Bond->Create, Bond->Modify,
+Cell->Create, Cell->Modify and all the Object->Link dialogs.</li>
+<li>Improved labels in Object->Link dialogs: Method instead of Link.</li>
+<li>Improved make_rules, as suggested by Adriano Couto.</li>
+<li>Fixed a bug in gamgi_gtk_group_modify.c: the selection
+pointer recently added, was not initialized here.</li>
+<li>Simplified and reduced code for dialogs: Atom->Select, Bond->Select,
+Text->Select, Layer->Select, Cell->Select.</li>
+<li>Converted dialog Cell->Select to combo box submenus.</li>
+<li>Converted dialog Text->Select to combo box submenus.</li>
+<li>Converted dialog Bond->Select to combo box submenus.</li>
+<li>Converted dialog Atom->Select to combo box submenus.</li>
+<li>Tested new combo box submenus with Gtk 2.18.3: they work fine.</li>
+<li>Improved label consistency in Layer->Create, Layer->Modify,
+Bond->Create and Bond->Modify.</li>
+<li>Improved make_rules, as suggested by Jasper Lievisse Adriaanse
+from OpenBSD.</li>
+<li>Completed the new Layer->Select dialog, with combo box submenus.</li>
+<li>Improved the position and size of the top menus in main windows.</li>
+<li>The new Layer->Select dialog is working.</li>
+<li>The new Cell->Select dialog is now working fine for all methods.</li>
+<li>Added more methods to Text->Select and Bond->Select.</li>
+<li>Implemented and tested new Bond->Select dialog.</li>
+<li>Improved Text->Select and Atom->Select functionality.</li>
+<li>The new Text->Select dialog is now working fine, with improvements
+over Atom->Select: Method values can now be selected from combo boxes
+or combo box entries, not just entries.</li>
+<li>Daniel Leidert, from Debian, updated man/page, mainly bold
+and italic highlighting. Thanks Daniel!</li>
+<li>GTK 3.0: Removed all 181 instances in GAMGI of deprecated
+GTK_WIDGET_SET_FLAGS (button, GTK_CAN_DEFAULT)</li>
+<li>GTK 3.0: Replaced all 67 instances in GAMGI of deprecated
+GTK_BIN (widget)->child by gtk_bin_get_child (GTK_BIN (widget));</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Rewrite the About dialog, in the notebook form, to
+include pages for Developers, Contributors, Supporters.</li>
+<li>Add a task id to operactions involving multiple scans to
+guarantee that there is no flag corruption when bonds are
+created between different molecules.</li>
+<li>Add a bond angle, which is useful to control double bonds
+in solid mode.</li>
+<li>Add plane area and direction length to Plane->Measure and
+Direction->Measure.</li>
+<li>Write tutorials about crystalographic and atomic Plane,Direction usage.</li>
+<li>Implement dynamic text objects, to measure distances,
+angles, etc. on real time.</li>
+<li>Improve selection dialogs, including list selection methods.</li>
+<li>Implement multiple object picking, including a
+dynamic frame with moving ants and dragging anchors,
+to select multiple objects and images from the screen.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.14.3</div><div>30th November 2009</div>
+</div>
+
+<div class="contents">
+
+The new Atom->Select is now fully working for all methods, except
+selecting objects by region. The infrastructure to handle global
+lists of objects is in place. Replaced Vera by DeJaVu Truetype
+fonts.  Updated documentation, fixed bugs.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Updated Help->Current, Help->Topic and doc/interfaces
+for File->Import, File->Export, Atom->Select documentation.</li>
+<li>Updated technical links in www.gamgi.org.</li>
+<li>Wrote documentation for new dialogs: File->Import, File->Export,
+Atom->Select.</li>
+<li>New objects can now be added to List Current in Atom->Select.</li>
+<li>Found and removed a bug related with new gamgi_global_selection
+code: on exit, selection lists were removed too late.</li>
+<li>Found and removed a bug in new gamgi_gtk_atom_select.c:
+the list Before was not always removed.</li>
+<li>Removed directory io/fonts, as the 12 DejaVu fonts are too
+large to be distributed with GAMGI. They come with every Linux
+distribution and can be easily obtaned from dejavu-fonts.org or
+www.gamgi.org, ftp.gamgi.org.</li>
+<li>Updated the INSTALL file coming with GAMGI distribution,
+regarding Vera to DejaVu font changes.</li>
+<li>Updated documentation for Extruded fonts: 12 DejaVu fonts instead of 10
+Vera fonts, plus two new labels, "serif_italic" and "serif_bold_italic".</li>
+<li>Replaced default path for TrueType fonts, in GAMGI_IO_PATH_TRUETYPE,
+from "/usr/X11/lib/X11/fonts/truetype/" to "/usr/share/fonts/truetype/ttf-dejavu/".</li>
+<li>DejaVu Truetype fonts used to build 3D extruded fonts are no longer
+distributed with Gamgi, due to space reasons. Although these files come
+with most Linux distributions, they are also available from www.gamgi.org
+and ftp.gamgi.org, as a convinience.</li>
+<li>Replaced BitStream Vera by DejaVu TrueType fonts for 3D Solid 
+(extruded) fonts. DejaVu fonts are derived from Vera, so visual
+differences are minimal and the license is based on the previous one.</li>
+<li>Improved the model used to flag which atoms are selected: this
+works now also with lists of recursive objects, such as texts, groups,
+which would crash before when objects removed recursively appeared
+later in the selected list.</li>
+<li>Atom->Select, our prototype for Object->Select dialogs, is now
+robust, simple, elegant and definitely ready for general usage.
+Three methods for object selection have been implemented so far:
+1) property ranges (16 properties implemented for Atom objects),
+2) GTK list clicking and 3) OpenGL representation clicking.
+We expect to add futurely a very useful fourth method: selecting
+objects inside a rectangle indicated with the mouse in a OpenGL
+graphic area.</li>
+<li>More tests on Atom->Select: fixed a logical bug in static_press.</li>
+<li>Cleaned gamgi_gtk_atom_select.c, replaced signal "unmap" by 
+"destroy" to free Before list, actually removed node list Before.</li>
+<li>Implemented and tested the third selection method in Atom->Select:
+press Ctrl and click on the OpenGL visual representation of an atom
+with the mouse, if this atom is in the Current list it gets
+automatically selected on the GtkTreeView.</li>
+<li>All *_press global functions receive now the pointer to
+GdkEventButton that fully describes the button press.</li>
+<li>How to get Ctrl-Click events is now clear, thanks
+to Emmanuel Rodriguez from gtk-app-devel-list.</li>
+<li>Replaced scale limits 0.0, DBL_MAX by GAMGI_MESA_SCALE_LOWER,
+GAMGI_MESA_SCALE_UPPER in all Object->Create and Object->Modify
+dialogs, plus all Expat import object functions.</li>
+<li>All the selection-by-property functions in Atom->Select are now implemented.</li>
+<li>Simplified selection-by-property functions in Atom->Select.</li>
+<li>Atom->Select now has selection methods for Mass, Radius,
+Charge, Temperature and Occupancy.</li>
+<li>The GTK functions to select object rows from code are
+working! This is very important because we need this to
+select objects directly from the OpenGL graphic area.</li>
+<li>Wrote functions gamgi_engine_slist_invert and gamgi_engine_dlist_invert,
+to invert slist and dlist lists.</li>
+<li>Improved gamgi_gtk_atom_select.c code: the Pick code is much simpler
+and faster, the Undo list is removed everytime Atom->Select is unmaped,
+all lists of atoms are now properly ordered, in a elegant way.</li>
+<li>Object selection by mouse clicking directly on the Treeview is working.</li>
+<li>Added a (hidden) object column to treeviews listing objects,
+this is needed to speedup object selection from the treeview.</li>
+<li>Improved and tested Atom->Select: this is now ready for general usage.</li>
+<li>Added -lgdkglext-x11-1.0 to make_rules, as GAMGI failed to build with the 
+new linker binutils-gold, already used in some Unix systems. Many thanks to 
+Peter Fritzsche, from Debian, who found and fixed the problem.</li>
+<li>The new Atom->Select dialog is already working: list of atoms 
+can be selected, according to property criteria choosen by users.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Rewrite the About dialog, in the notebook form, to
+include pages for Developers, Contributors, Supporters.</li>
+<li>Add a task id to operactions involving multiple scans to
+guarantee that there is no flag corruption when bonds are
+created between different molecules.</li>
+<li>Add a bond angle, which is useful to control double bonds
+in solid mode.</li>
+<li>Add plane area and direction length to Plane->Measure and
+Direction->Measure.</li>
+<li>Write tutorials about crystalographic and atomic Plane,Direction usage.</li>
+<li>Implement dynamic text objects, to measure distances,
+angles, etc. on real time.</li>
+<li>Improve selection dialogs, including list selection methods.</li>
+<li>Implement multiple object picking, including a
+dynamic frame with moving ants and dragging anchors,
+to select multiple objects and images from the screen.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.14.2</div><div>31th October 2009</div>
+</div>
+
+<div class="contents">
+
+This is mainly a bug-fix release: replaced two deprecated castings
+preventing GAMGI from compiling in newer systems, simplified the visual
+layout for all the 161 notebook pages in task dialogs, fixed several
+glitches and bugs related with GTK interfaces, wrote the interface for 
+the new Atom->Select dialog. Compiles on Ubuntu 9.10 (x86) without warnings,
+at the -O3 -Wall -ansi -DGTK_DISABLE_DEPRECATED level.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Improved parsing and security in gamgi_gtk_file_chooser.</li>
+<li>Added some lateral padding into all GAMGI GtkTextView widgets:
+it looks better.</li>
+<li>GAMGI is now compiling without warnings on brand new Ubuntu 9.10
+(Gtk 2.18.3), with options: -O3 -Wall -ansi -DG*_DISABLE_DEPRECATED.</li>
+<li>Removed several warnings due to non used return values, in functions
+write, system, getcwd. GAMGI is now compiling without warnings (Gtk 2.16)
+on Ubuntu 9.04, with options: -g -O3 -Wall -ansi -DG_DISABLE_DEPRECATED
+-DGDK_DISABLE_DEPRECATED -DGDK_PIXBUF_DISABLE_DEPRECATED
+-DGTK_DISABLE_DEPRECATED.</li>
+<li>All Text dialogs in GAMGI have now the same contour width.</li>
+<li>Removed frames and cleaned Cell dialogs.</li>
+<li>Removed frames and cleaned Plane, Direction dialogs.</li>
+<li>Removed frames and cleaned all Measure dialogs.</li>
+<li>Replaced N by Zn in ZNS Blenda data files distributed with GAMGI.</li>
+<li>Removed frames and cleaned Assembly, Molecule, Cluster dialogs.</li>
+<li>Removed frames and cleaned Layer, Bond dialogs.</li>
+<li>Wrote the new GTK layout for Atom->Select dialog. This is another
+step in the way to implement real selection of objects in GAMGI.</li>
+<li>Removed frames and cleaned all Link, Copy, Remove dialogs.</li>
+<li>Removed Xterm and Console buttons from the Tools bar:
+this functionaliy can easily be called from outside GAMGI
+and is difficult to get right, because it deppends 
+of the WM and of personnal preferences.</li>
+<li>Removed frames and cleaned Window, Text, Light dialogs.</li>
+<li>Replaced deprecated GtkSignalFunc by G_CALLBACK() on gamgi_gtk_select.c.
+In new systems, with GTK 2.18.3, GAMGI fails to compile because of this.
+Thanks to Daniel Leidert (from Debian) and Pedro Isidoro, who directed
+my attention to this!</li>
+<li>Removed frames and cleaned Gamgi, Help, Atom dialogs.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Rewrite the About dialog, in the notebook form, to
+include pages for Developers, Contributors, Supporters.</li>
+<li>Add a task id to operactions involving multiple scans to
+guarantee that there is no flag corruption when bonds are
+created between different molecules.</li>
+<li>Add a bond angle, which is useful to control double bonds
+in solid mode.</li>
+<li>Add plane area and direction length to Plane->Measure and
+Direction->Measure.</li>
+<li>Write tutorials about crystalographic and atomic Plane,Direction usage.</li>
+<li>Implement dynamic text objects, to measure distances,
+angles, etc. on real time.</li>
+<li>Improve selection dialogs, including list selection methods.</li>
+<li>Implement multiple object picking, including a
+dynamic frame with moving ants and dragging anchors,
+to select multiple objects and images from the screen.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.14.1</div><div>22nd October 2009</div>
+</div>
+
+<div class="contents">
+
+Implemented and tested (Linux/Mac OS X) new GtkFileChooser dialogs,
+using only GTK 2.* low-level widgets, so we have the new technology
+without the constrainments imposed by the oficial GTK 2.* gtkFileChooser
+dialog. GAMGI is now compiling fine with flags -DG_DISABLE_DEPRECATED
+-DGDK_DISABLE_DEPRECATED -DGDK_PIXBUF_DISABLE_DEPRECATED -DGTK_DISABLE_DEPRECATED
+and should be ready for GTK 3.0. Added most of the low-level engine code
+to handle multiple object selection.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Completed the new File->Import and File->Export dialogs.</li>
+<li>Implemented all the security checks needed to handle
+files and folders coming from an hostile environment.</li>
+<li>All the functionality used in the new file chooser 
+is available and running fine on Mac OS X.</li>
+<li>Sorting Folders and Files in the new file chooser is now working fine.</li>
+<li>Filtering Folders and Files in the new file chooser is now working fine.</li>
+<li>All the technical issues related with the new file chooser dialogs
+to implement in Gamgi seem now to be solved (famous last words!).</li>
+<li>The basic infra-structure to handle the new File->Import
+and File->Export file choosers seems to be working fine.</li>
+<li>The low-level infra-structure to handle global selection
+of objects is now in place.</li>
+<li>Active modes such as Axes, Rotate, Move, Scale (tools menu)
+and Lists of objects (main menu) are now shown in green
+to distinguish from highlights, represented in red.</li>
+<li>Improved the way ruler data is shown in the statusbar:
+always present and shown in default color.</li>
+<li>New screenshots!</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Rewrite the About dialog, in the notebook form, to
+include pages for Developers, Contributors, Supporters.</li>
+<li>Add a task id to operactions involving multiple scans to
+guarantee that there is no flag corruption when bonds are
+created between different molecules.</li>
+<li>Add a bond angle, which is useful to control double bonds
+in solid mode.</li>
+<li>Add plane area and direction length to Plane->Measure and
+Direction->Measure.</li>
+<li>Write tutorials about crystalographic and atomic Plane,Direction usage.</li>
+<li>Implement dynamic text objects, to measure distances,
+angles, etc. on real time.</li>
+<li>Improve selection dialogs, including list selection methods.</li>
+<li>Implement multiple object picking, including a
+dynamic frame with moving ants and dragging anchors,
+to select multiple objects and images from the screen.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI old</div><div>&nbsp;</div>
+</div>
+
+<div class="contents">
+
+Changelogs for older releases can be found here.
+
+<p/>
+
+<ul>
+<li><a href="changelogs13.html">GAMGI 0.13.1 - GAMGI 0.14</a></li>
+<li><a href="changelogs12.html">GAMGI 0.12.1 - GAMGI 0.13</a></li>
+<li><a href="changelogs11.html">GAMGI 0.11.1 - GAMGI 0.12</a></li>
+<li><a href="changelogs10.html">GAMGI 0.10.1 - GAMGI 0.11</a></li>
+<li><a href="changelogs09.html">GAMGI 0.09.1 - GAMGI 0.10</a></li>
+<li><a href="changelogs08.html">GAMGI 0.08.1 - GAMGI 0.09</a></li>
+<li><a href="changelogs07.html">GAMGI 0.07.18 - GAMGI 0.08</a></li>
+</ul>
+
+</div>
+
+<div id="bottom">
+<a href="../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

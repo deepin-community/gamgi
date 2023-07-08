@@ -1,0 +1,19 @@
+Structure 19
+Prototype: In
+StrukturBericht / Pearson: A6 / tI2
+
+lattice parameters:
+In          Pa
+4.598 4.947 3.925 3.238
+
+Radius:
+In: 1.6255 (half-distance)
+
+1. Building with space group (s019.xml):
+139
+
+Wyckoff positions:
+In 1a
+
+View:
+In: style solid, size 1.0, variancy 1.0, scale 0.4

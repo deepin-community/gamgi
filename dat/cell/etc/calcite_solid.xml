@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE gml SYSTEM "http://www.gamgi.org/dtd/gamgi.dtd">
+<gml>
+  <window x="31" y="19" width="700" height="500" medium="no" bottom="no">
+    <layer scale="0.369">
+      <light ambient_r="0.500" ambient_g="0.500" ambient_b="0.500"
+      diffuse_r="0.400" diffuse_g="0.400" diffuse_b="0.400" specular_r="0.300"
+      specular_g="0.300" specular_b="0.300" direction_x="0.0000"
+      direction_y="0.0000" direction_z="-1.0000"/>
+      <cell name="Calcite" group="167" a="4.9896" c="17.0610" x="-2.1835"
+      y="-7.5745" z="0.8720" e1="79.84" e2="88.46" e3="284.73">
+        <atom element="Ca" x="-2.1835" y="-7.5745" z="0.8720" style="solid"
+        variancy="1.00" size="1.00"/>
+        <atom element="Ca" x="2.6464" y="-7.4805" z="-0.3768" style="solid"
+        variancy="1.00" size="1.00"/>
+        <atom element="Ca" x="-5.6769" y="-6.8551" z="-2.6172" style="solid"
+        variancy="1.00" size="1.00"/>
+        <atom element="Ca" x="-0.8471" y="-6.7610" z="-3.8660" style="solid"
+        variancy="1.00" size="1.00"/>
+        <atom element="Ca" x="-1.7322" y="9.2129" z="3.8815" style="solid"
+        variancy="1.00" size="1.00"/>
+        <atom element="Ca" x="0.2480" y="6.7175" z="1.3844" style="solid"
+        variancy="1.00" size="1.00"/>
+        <atom element="Ca" x="3.0977" y="9.3069" z="2.6327" style="solid"
+        variancy="1.00" size="1.00"/>
+        <atom element="Ca" x="-5.2256" y="9.9323" z="0.3923" style="solid"
+        variancy="1.00" size="1.00"/>
+        <atom element="Ca" x="-0.3957" y="10.0264" z="-0.8564" style="solid"
+        variancy="1.00" size="1.00"/>
+        <atom element="Ca" x="-2.8273" y="-4.2656" z="-1.3688" style="solid"
+        variancy="1.00" size="1.00"/>
+        <atom element="Ca" x="0.0224" y="-1.6762" z="-0.1204" style="solid"
+        variancy="1.00" size="1.00"/>
+        <atom element="Ca" x="-1.9578" y="0.8192" z="2.3768" style="solid"
+        variancy="1.00" size="1.00"/>
+        <atom element="Ca" x="2.8720" y="0.9132" z="1.1280" style="solid"
+        variancy="1.00" size="1.00"/>
+        <atom element="Ca" x="-5.4513" y="1.5386" z="-1.1124" style="solid"
+        variancy="1.00" size="1.00"/>
+        <atom element="Ca" x="-2.6016" y="4.1281" z="0.1360" style="solid"
+        variancy="1.00" size="1.00"/>
+        <atom element="Ca" x="-0.6214" y="1.6327" z="-2.3612" style="solid"
+        variancy="1.00" size="1.00"/>
+        <atom element="C" x="-2.0707" y="-3.3776" z="1.6244" style="solid"
+        variancy="1.00" size="1.00"/>
+        <atom element="C" x="2.7592" y="-3.2836" z="0.3756" style="solid"
+        variancy="1.00" size="1.00"/>
+        <atom element="C" x="-5.5641" y="-2.6582" z="-1.8648" style="solid"
+        variancy="1.00" size="1.00"/>
+        <atom element="C" x="-0.7342" y="-2.5642" z="-3.1136" style="solid"
+        variancy="1.00" size="1.00"/>
+        <atom element="C" x="-1.8450" y="5.0161" z="3.1291" style="solid"
+        variancy="1.00" size="1.00"/>
+        <atom element="C" x="2.9849" y="5.1101" z="1.8804" style="solid"
+        variancy="1.00" size="1.00"/>
+        <atom element="C" x="-5.3385" y="5.7355" z="-0.3600" style="solid"
+        variancy="1.00" size="1.00"/>
+        <atom element="C" x="-0.5086" y="5.8295" z="-1.6088" style="solid"
+        variancy="1.00" size="1.00"/>
+        <atom element="C" x="0.1352" y="2.5206" z="0.6320" style="solid"
+        variancy="1.00" size="1.00"/>
+        <atom element="C" x="-0.0904" y="-5.8731" z="-0.8728" style="solid"
+        variancy="1.00" size="1.00"/>
+        <atom element="C" x="-2.4888" y="8.3249" z="0.8883" style="solid"
+        variancy="1.00" size="1.00"/>
+        <atom element="C" x="-2.7144" y="-0.0688" z="-0.6164" style="solid"
+        variancy="1.00" size="1.00"/>
+        <atom element="O" x="-1.3317" y="-5.8972" z="-0.5519" style="solid"
+        variancy="1.00" size="1.00"/>
+        <atom element="O" x="0.8074" y="-6.0580" z="0.0239" style="solid"
+        variancy="1.00" size="1.00"/>
+        <atom element="O" x="0.2530" y="-5.6640" z="-2.0904" style="solid"
+        variancy="1.00" size="1.00"/>
+        <atom element="O" x="-2.8323" y="8.1159" z="2.1060" style="solid"
+        variancy="1.00" size="1.00"/>
+        <atom element="O" x="-3.3866" y="8.5098" z="-0.0084" style="solid"
+        variancy="1.00" size="1.00"/>
+        <atom element="O" x="-1.2475" y="8.3491" z="0.5674" style="solid"
+        variancy="1.00" size="1.00"/>
+        <atom element="O" x="-2.9685" y="-3.1928" z="0.7277" style="solid"
+        variancy="1.00" size="1.00"/>
+        <atom element="O" x="-3.9557" y="-0.0929" z="-0.2955" style="solid"
+        variancy="1.00" size="1.00"/>
+        <atom element="O" x="-0.8294" y="-3.3535" z="1.3034" style="solid"
+        variancy="1.00" size="1.00"/>
+        <atom element="O" x="1.8614" y="-3.0987" z="-0.5211" style="solid"
+        variancy="1.00" size="1.00"/>
+        <atom element="O" x="-1.0777" y="-2.7733" z="-1.8959" style="solid"
+        variancy="1.00" size="1.00"/>
+        <atom element="O" x="-1.8166" y="-0.2537" z="0.2803" style="solid"
+        variancy="1.00" size="1.00"/>
+        <atom element="O" x="-4.3228" y="-2.6341" z="-2.1857" style="solid"
+        variancy="1.00" size="1.00"/>
+        <atom element="O" x="-2.3710" y="0.1403" z="-1.8341" style="solid"
+        variancy="1.00" size="1.00"/>
+        <atom element="O" x="-0.2083" y="2.3116" z="1.8496" style="solid"
+        variancy="1.00" size="1.00"/>
+        <atom element="O" x="1.7436" y="5.0859" z="2.2013" style="solid"
+        variancy="1.00" size="1.00"/>
+        <atom element="O" x="-0.7626" y="2.7055" z="-0.2647" style="solid"
+        variancy="1.00" size="1.00"/>
+        <atom element="O" x="-1.7498" y="5.8053" z="-1.2879" style="solid"
+        variancy="1.00" size="1.00"/>
+        <atom element="O" x="-4.4406" y="5.5506" z="0.5367" style="solid"
+        variancy="1.00" size="1.00"/>
+        <atom element="O" x="-1.5015" y="5.2251" z="1.9115" style="solid"
+        variancy="1.00" size="1.00"/>
+        <atom element="O" x="1.3765" y="2.5448" z="0.3110" style="solid"
+        variancy="1.00" size="1.00"/>
+        <atom element="O" x="0.3893" y="5.6446" z="-0.7121" style="solid"
+        variancy="1.00" size="1.00"/>
+      </cell>
+      <atom element="Ca" x="-13.5617" y="1.6570" z="-0.1560" style="solid"
+      variancy="1.00" size="1.00"/>
+      <atom element="C" x="-11.8189" y="-1.4314" z="3.3523" style="solid"
+      variancy="1.00" size="1.00"/>
+      <atom element="O" x="-10.6649" y="-3.3753" z="5.5938" style="solid"
+      variancy="1.00" size="1.00"/>
+    </layer>
+    <layer perspective="no">
+      <text contents="CaCO" style="solid" x="-6.8940" y="3.9248" z="-890.1000"
+      red="0.000" green="1.000" blue="1.000"/>
+      <text contents="Ca" style="solid" font="serif" x="-4.3498" y="0.2557"
+      z="-890.1000" red="1.000" green="1.000" blue="0.000" scale="0.766"/>
+      <text contents="C" style="solid" font="serif" x="-4.0953" y="-0.8807"
+      z="-890.1000" red="1.000" green="1.000" blue="0.000" scale="0.800"/>
+      <text contents="O" style="solid" font="serif" x="-4.0959" y="-1.9602"
+      z="-890.1000" red="1.000" green="1.000" blue="0.000" scale="0.736"/>
+      <text contents="Space Group: 167" style="solid" x="-9.7461" y="2.4344"
+      z="-890.1000" red="1.000" green="1.000" blue="1.000" scale="0.455"/>
+      <text contents="a = 4.9896" style="solid" x="1.0466" y="3.4262"
+      z="-890.1000" red="0.000" green="1.000" blue="1.000" scale="0.557"/>
+      <text contents="c = 17.061" style="solid" x="1.1259" y="2.7625"
+      z="-890.1000" red="0.000" green="1.000" blue="1.000" scale="0.580"/>
+      <text contents="Ca in 2b: 0,0,0" style="solid" x="-8.3957" y="-2.9882"
+      z="-890.1000" red="1.000" green="1.000" blue="1.000" scale="0.450"/>
+      <text contents="C in 2a: 0,0,1/4" style="solid" x="-8.4003" y="-3.7465"
+      z="-890.1000" red="1.000" green="1.000" blue="1.000" scale="0.450"/>
+      <text contents="O in 6e: x,0,1/4 with x=0.257" style="solid"
+      x="-10.2260" y="-4.4952" z="-890.1000" red="1.000" green="1.000"
+      blue="1.000" scale="0.450"/>
+      <text contents="3" style="solid" x="-4.2201" y="3.6284" z="-890.1000"
+      red="0.000" green="1.000" blue="1.000" scale="0.878"/>
+    </layer>
+  </window>
+</gml>

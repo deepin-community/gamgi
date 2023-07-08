@@ -1,0 +1,26 @@
+Structure 106
+Prototype: C8O46
+StrukturBericht / Pearson: - / cP48
+
+lattice parameters:
+C8O46
+10.734
+ 
+Radius:
+C: 0.7130 (half-distance)
+O: 0.6037 (half-distance)
+
+1. Building with space group (s106.xml):
+Group: 223
+
+Wyckoff positions:
+C 2a
+C 6d
+O 6c
+O 16i, x = 0.18459
+O 24K, y = 0.30939, z = 0.11770
+
+View:
+C: style solid
+O: style solid
+OO: style solid, method length, color 1.0,1.0,1.0 scale 0.6

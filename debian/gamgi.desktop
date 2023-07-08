@@ -1,0 +1,11 @@
+# KDE Config File
+[Desktop Entry]
+Name=gamgi
+GenericName=Atom Structure Visualization
+Keywords=chemistry;atomic structures;atomic modelling;
+Comment=Construct, view and analyse atomic structures
+Type=Application
+Exec=/usr/bin/gamgi %f
+Icon=gamgi
+Terminal=false
+Categories=Education;Science;Chemistry;

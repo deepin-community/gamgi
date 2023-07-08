@@ -1,0 +1,8 @@
+<gml>
+  <light name="grey"
+   direction_x="0.0" direction_y ="0.0" direction_z="-1.0"
+   ambient_r="0.6" ambient_g="0.6" ambient_b="0.6"
+   diffuse_r="0.6" diffuse_g="0.6" diffuse_b="0.6"
+   specular_r="0.6" specular_g="0.6" specular_b="0.6">
+  </light>
+</gml>

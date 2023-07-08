@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Formats: Layer Create</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Layer Create</h1>
+
+<div id="notebook">
+<ul>
+<li><span>Projection</span></li>
+<li><a href="create_position.html">Position</a></li>
+<li><a href="create_visibility.html">Visibility</a></li>
+<li><a href="create_view.html">View</a></li>
+</ul>
+</div>
+
+<div class="contents">
+
+<h3>perspective</h3>
+
+Defines the type of projection (<b>perspective</b> or <b>orthographic</b>) 
+used to project the layer 3D space into the screen 2D viewport. When not 
+indicated, GAMGI uses the default. To change the default, select 
+<b>Layer->Config</b> and read <b>Help->Topics->Formats->Config->Layer</b>.
+
+<pre>
+Example: <b>&lt;layer ... perspective="yes"/></b> (default)
+(defined in <b>GAMGI_MESA_LAYER_PERSPECTIVE</b>)
+Allowed values: <b>yes</b>, <b>no</b> (optional)
+</pre>
+
+<h3>top, near, far</h3>
+
+Define the layer 3D viewing volume, before it is projected onto the 
+2D viewport. The <b>top</b> parameter measures the height from the 
+eye-center viewing direction (at the center of the viewport) to the 
+top and bottom limits of the 2D viewport, thus defining the lateral 
+borders of the 3D volume (the width is automatically determined from 
+the window dimensions, in order to preserve the ratio width/height, 
+otherwise the objects would be distorted).
+
+<p/>
+
+The <b>near</b> and <b>far</b> parameters define the minimum and
+maximum distances along the viewing direction at which objects must 
+lie in order to be visible. <b>near</b> must be smaller than <b>far</b>.
+
+<p/>
+
+When not indicated, GAMGI uses default values.
+To change the default, select <b>Layer->Config</b> and read 
+<b>Help->Topics->Formats->Config->Layer</b>.
+
+<pre>
+Example: <b>&lt;layer ... near="1.0" far="1000.0" top="0.5"/></b> (default)
+(defined in <b>GAMGI_MESA_LAYER_NEAR</b>, <b>GAMGI_MESA_LAYER_FAR</b> 
+and <b>GAMGI_MESA_LAYER_TOP</b>)
+Allowed values: positive real (optional)
+</pre>
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

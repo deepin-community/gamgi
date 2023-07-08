@@ -1,4 +1,61 @@
 #!/usr/bin/make -f
 
+include /usr/share/dpkg/architecture.mk
+
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+export DEB_CFLAGS_MAINT_APPEND = -fcommon
+
+export PKG_CONFIG = $(DEB_HOST_GNU_TYPE)-pkg-config
+
+CFLAGS  ?= $(shell dpkg-buildflags --get CFLAGS)
+CFLAGS  += -ansi
+CFLAGS  += $(shell dpkg-buildflags --get CPPFLAGS)
+LDFLAGS ?= $(shell dpkg-buildflags --get LDFLAGS)
+LDFLAGS += -Wl,--as-needed
+
 %:
 	dh $@
+
+override_dh_clean:
+	find . -name \*.o | xargs $(RM)
+	$(RM) src/global/gamgi.real src/gamgi.real gamgi.1
+	[ ! -f src/make_local.orig ] || cp -a src/make_local.orig src/make_local
+	dh_clean
+
+override_dh_auto_configure: src/make_local
+ifneq ($(DEB_BUILD_ARCH),amd64)
+	cp -a $< src/make_local.orig
+	sed -i 's/lib64/lib/g' $<
+endif
+	dh_auto_configure
+
+override_dh_auto_build:
+	dh_auto_build --sourcedirectory=$(CURDIR)/src -- \
+		CFLAGS="$(CFLAGS)" LDFLAGS="$(LDFLAGS)"
+	mv src/gamgi src/gamgi.real
+
+override_dh_installchangelogs:
+	dh_installchangelogs doc/changelogs/changelogs.html
+
+override_dh_installman: gamgi.1
+	dh_installman
+
+override_dh_install:
+	dh_install
+	install -D -m755 debian/gamgi.sh debian/gamgi/usr/bin/gamgi
+	install -D -m755 doc/icon/gamgi16.png usr/share/icons/hicolor/16x16/apps/gamgi.png
+	install -D -m755 doc/icon/gamgi22.png usr/share/icons/hicolor/22x22/apps/gamgi.png
+	install -D -m755 doc/icon/gamgi32.png usr/share/icons/hicolor/32x32/apps/gamgi.png
+	install -D -m755 doc/icon/gamgi48.png usr/share/icons/hicolor/48x48/apps/gamgi.png
+	$(RM) -r debian/gamgi-data/usr/share/gamgi/dat/util/python/ \
+	         debian/gamgi-doc/usr/share/doc/gamgi-doc/doc/LICENSE* \
+	         debian/gamgi-doc/usr/share/doc/gamgi-doc/doc/man
+
+override_dh_perl:
+	dh_perl -pgamgi-data usr/share/gamgi/dat/util/perl/
+
+override_dh_compress:
+	dh_compress -Xusr/share/doc/gamgi-doc/doc/
+
+gamgi.1: doc/man/page
+	sed -e 's/\"-/\"\\-/g' -e 's/->/\\->/g' < $< > $@

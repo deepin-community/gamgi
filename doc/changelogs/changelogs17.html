@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Changelogs: GAMGI 0.15</title>
+<link rel="icon" type="image/png" href="../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../css/board.css"/>
+</head>
+
+<body>
+
+<div class="board">
+<div>GAMGI new</div><div>&nbsp;</div>
+</div>
+
+<div class="contents">
+New developments in code, documentation and website are reported here.
+</div>
+
+<p/>
+
+<div class="board">
+<div>GAMGI 0.17.5</div><div>25th February 2022</div>
+</div>
+
+<div class="contents">
+
+This is mostly a cleaning release. Fixed all the strncpy, sprintf, calloc issues
+raised by gcc 10.2.1 (included with Debian 11) warnings. Cleaned parts of the
+x3d exporting code, involving texts and orbitals. Reviewed, updated the entire
+Help->Current and Help->Topic subsystems.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Replaced standard lib function strncpy by gamgi_io_token_cut in
+gamgi_gtk_file_chooser to avoid improperly terminated truncated strings.</li>
+<li>Replaced calloc by malloc (plus initialization) in gamgi_chem_symmetry.c,
+in all calls involving multiple objects, to avoid (false positive) gcc 10.2.1
+warnings.</li>
+<li>Eliminated a gcc 10.2.1 sprintf -Wformat-overflow= warning in gamgi_io_error.c.
+Although the code was safe, gcc was right that it could be improved.</li>
+<li>Eliminated a false positive gcc 10.2.1 sprintf -Wformat-overflow= warning in
+gamgi_expat_export_config.c.</li>
+<li>Eliminated a gcc 10.2.1 warning in gamgi_io_x3d_render due to a potential
+sprintf overflow. All gcc 10.2.1 warnings related with strncpy, sprintf and calloc
+calls are now fixed.</li>
+<li>In io/gamgi_io_x3d code, fixed a sintax issue in the NavigationInfo node,
+to avoid a warning with X3D viewer view3dscene.</li>
+<li>Started yet another round of cleaning X3D code in io/gamgi_io_x3d.c and
+io/gamgi_io_x3d_render.c. Exported text and orbital objects (solid and wired),
+are rendering well in X3D viewer view3dscene.</li>
+<li>Fixed the set of incompatibility tests in expat/gamgi_expat_import_object.c
+for cell objects, which stopped GAMGI from reading stereographic projection files.</li>
+<li>Fixed HTML files and Help->Current code for Text->Link, Orbital->Select, Atom->Config,
+Molecule->Create, Light->Config and Cell->Config help pages.</li>
+<li>Added a test in gamgi_gtk_help_dialog_import to control mistakes in the help page
+provided for example in gamgi_gtk_help_current, that could even crash GAMGI when using
+a external browser to serve help pages.</li>
+<li>Updated, synced information in Help pages for Group, Molecule, Cluster, Cell
+objects about Geometry measurements.</li>
+<li>Merged, updated Help->Current documentation for Cell->Measure.</li>
+<li>Fixed Help->Topic->Interfaces for Orbital->Select, Atom->Config, Molecule->Create,
+Cell->Measure, Light->Config, Cell->Config. Fixed Help->Topic->Formats for Light->Config.</li>
+<li>Added documentation for File, Gamgi keywords, available from Help->Topic->Interfaces
+and Help->Topic->Formats.</li>
+<li>Added Help->Current support for second level dialog reports for Cell->Measure Geometry
+and Voronoi methods (similar to Cluster->Measure, Molecule->Measure, Group->Measure).</li>
+<li>Improved the Atom->Config GTK dialog (Color and View page).</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Rewrite the About dialog, in the notebook form, to
+include pages for Developers, Contributors, Supporters.</li>
+<li>Add a task id to operactions involving multiple scans to
+guarantee that there is no flag corruption when bonds are
+created between different molecules.</li>
+<li>Add a bond angle, which is useful to control double bonds
+in solid mode.</li>
+<li>Write documentation about lists of objects.</li>
+<li>Write tutorials about crystalographic and atomic Plane,Direction usage.</li>
+<li>Implement dynamic text objects, to measure distances,
+angles, etc. on real time.</li>
+</ul>
+
+</div>
+
+<p/>
+
+<div class="board">
+<div>GAMGI 0.17.4</div><div>2nd August 2021</div>
+</div>
+
+<div class="contents">
+
+This is a maintenance release. Gamgi is compiling and working fine with
+the latest Debian testing release: bullseye 11 release candidate 2.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Gamgi is compiling and working fine with Debian 11 bullseye rc2,
+with gcc 10.2.1.</li>
+<li>Added extern to arrays in phys/gamgi_io_font_sun.c,
+to fix a multiple definition error with gcc 10.</li>
+<li>Added extern to arrays in io/gamgi_io_font_hershey.c,
+to fix a multiple definition error with gcc 10.</li>
+<li>Added extern to arrays in phys/gamgi_phys_symmetry.c,
+to fix a multiple definition error with gcc 10.</li>
+<li>Added extern to arrays in chem/gamgi_chem_property.c,
+to fix a multiple definition error with gcc 10.</li>
+<li>Added extern to gamgi_gamgi *gamgi in gamgi_global.h (declaration)
+and gamgi_gamgi *gamgi in gamgi_global_main (definition), to fix
+a multiple definition error with gcc 10.</li>
+<li>Fixed a initialization bug in chem/gamgi_chem_symmetry.c:
+initialized sum=0 in static_optimize.</li>
+<li>Rearranged the number tests in chem/gamgi_chem_graphene_cone.c
+to avoid a gcc indentation warning.</li>
+<li>Fixed a bug in engine/gamgi_engine_array.h:
+gamgi_engine_iarray_push was returning double * instead of int *.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Rewrite the About dialog, in the notebook form, to
+include pages for Developers, Contributors, Supporters.</li>
+<li>Add a task id to operactions involving multiple scans to
+guarantee that there is no flag corruption when bonds are
+created between different molecules.</li>
+<li>Add a bond angle, which is useful to control double bonds
+in solid mode.</li>
+<li>Write documentation about lists of objects.</li>
+<li>Write documentation about Orbitals.</li>
+<li>Write tutorials about crystalographic and atomic Plane,Direction usage.</li>
+<li>Implement dynamic text objects, to measure distances,
+angles, etc. on real time.</li>
+</ul>
+
+</div>
+
+<p/>
+
+<div class="board">
+<div>GAMGI 0.17.3</div><div>15th July 2017</div>
+</div>
+
+<div class="contents">
+
+Implemented the GTL Cell->Config dialog and the corresponding XML code,
+allowing users to set personnal default parameters for Cell objects,
+and more importantly, to set different thicknnesses for Cell axes,
+borders and nodes, which is very usefull particularly when using
+large screen resolutions.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Updated Help->Config files for Light and Atom objects.</li>
+<li>Synced gamgi-g and gamgi-x trees.</li>
+<li>Updated gamgi_expat_import_object: importing Cell object data
+to XML files with the new config rules should be working fine.</li>
+<li>Updated gamgi_expat_export_object: exporting Cell object data
+to XML files with the new config rules is now working fine.</li>
+<li>In Cell->Create and Cell->Modify, Origin vectors and Axes vectors
+are now updated automatically for default (Conventional or Primitive)
+options when Model changes.</li>
+<li>Replaced cell->borders = FALSE by cell->borders = GAMGI_PHYS_NONE,
+in engine, gtk, expat and mesa code.</li>
+<li>Updated gamgi_expat_export_config: exporting Cell
+config data to XML files is now working fine</li>
+<li>Updated gamgi_expat_import_config: importing Cell
+config data from XML files is now working fine</li>
+<li>Improved the Cell->Config dialog, to handle also
+default values for Model, Borders, Faces and Nodes.</li>
+<li>Redesigned Object->Config dialogs: Config data is now separated in
+default data (in the pages with the same names as in Object->Create dialogs)
+and global data (applying to all objects, old and new), in the Global (last)
+notebook page. Dialogs affected: Atom->Config, Cell->Config, Light->Config.</li>
+<li>Implemented Cell->Config dialog and infra-structure. The size of Cell
+border lines, node points, and vector axes can now be set globally for all
+cells in GAMGI, a feature badly needed. Default values for
+cell color and axes usage have been set also.</li>
+<li>Fixed a issue in gamgi_gtk_bond_create: the color set in static_init
+ignored previous config data.</li>
+<li>Fixed an issue in gamgi_mesa_draw_pick and gamgi_mesa_draw_grab: Cell rendering
+point width was set to line width instead of point width.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Rewrite the About dialog, in the notebook form, to
+include pages for Developers, Contributors, Supporters.</li>
+<li>Add a task id to operactions involving multiple scans to
+guarantee that there is no flag corruption when bonds are
+created between different molecules.</li>
+<li>Add a bond angle, which is useful to control double bonds
+in solid mode.</li>
+<li>Write documentation about lists of objects.</li>
+<li>Write documentation about Orbitals.</li>
+<li>Write tutorials about crystalographic and atomic Plane,Direction usage.</li>
+<li>Implement dynamic text objects, to measure distances,
+angles, etc. on real time.</li>
+</ul>
+
+</div>
+
+<p/>
+
+<div class="board">
+<div>GAMGI 0.17.2</div><div>12th May 2017</div>
+</div>
+
+<div class="contents">
+
+Merged the new graphene code to build nanotubes, nanocones, nanocages.
+Removed a serious bug resulting in top windows being closed too son in
+some window managers.  Cleaned code to prevent compilation warnings about
+non-initialized variables, added a new test to catch nans in GTK dialog
+input data.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Cleaned code in gamgi_gtk_*link.c and a few other files, to avoid warnings,
+mostly innocuous, about non-used and non-initialized variables.</li>
+<li>Updated make_local to compile out-of-the-box in Debian 8.7, the last stable
+version.</li>
+<li>Changed the delete_event callback in gamgi_gtk_window_create.c to prevent
+a bug resulting in top windows being closed too son in some window managers.
+Changed all other delete_event callbacks to return FALSE, when windows should
+be destroyed.</li>
+<li>Merged the new GTK code to build nanotubes, nanocones, nanocages,
+from Molecule->Create.</li>
+<li>Merged the graphene code to build nanotubes, nanocones,
+nanocages, created dor the Master thesis of Joao Coelho.</li>
+<li>Cleaned code in gamgi_io_x3d.c and gamgi_io_x3d_render.c.</li>
+<li>Added a new test case to gamgi_io_token_float_get_check and
+gamgi_io_token_double_get_check to find NANs.</li>
+<li>Updated gamgi_math_quaternion_from_axis and 
+gamgi_math_quaternion_to_axis, to handle the special case
+where the rotation angle is zero, to avoid a division by zero.</li>
+<li>Removed gamgi/dat/util/: old files, no longer needed.</li>
+<li>Synced documentation on http://gamgi.org and http://gamgi.ist.utl.pt
+with local doc/.</li>
+<li>Synced data files on http://gamgi.org and http://gamgi.ist.utl.pt
+with local dat/.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Rewrite the About dialog, in the notebook form, to
+include pages for Developers, Contributors, Supporters.</li>
+<li>Add a task id to operactions involving multiple scans to
+guarantee that there is no flag corruption when bonds are
+created between different molecules.</li>
+<li>Add a bond angle, which is useful to control double bonds
+in solid mode.</li>
+<li>Write documentation about lists of objects.</li>
+<li>Write documentation about Orbitals.</li>
+<li>Write tutorials about crystalographic and atomic Plane,Direction usage.</li>
+<li>Implement dynamic text objects, to measure distances,
+angles, etc. on real time.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.17.1</div><div>7th March 2014</div>
+</div>
+
+<div class="contents">
+
+Reviewed all Formats documentation, particularly for Cluster, Group,
+Plane, Direction objects. Replaced attribute type by reference in XML
+group elements. Reviewed the code bridging GTK and OpenGL. Changed
+license for GAMGI source code and GAMGI documentation for GPL v3.
+Renewed gamgi.org domain name until 2020 and GAMGI EU trademark until
+2024. Started using sha256sum to checksum distribution tarball files. 
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Fixed a bug just introduced: we cannot unref the GDK visual
+after removing a GL context. Just removed this code. Apparently
+GTK does this when the widget is destroyed.</li>
+<li>Improved gamgi_gtk_area.c, used in the X version of GAMGI,
+that replaces the GTKGLExt library by our own GLX-based code.
+Javier Cabezas ported this code to GTK 3 and is working fine!
+Back ported changes so the differences between the code for
+GTK 2 and GTK 3 are absolutely minimal.</li>
+<li>We cannot use r,g,b colors because of a,b,c cell axes.</li>
+<li>Improved Axes layout in Orbital->Create and Orbital->Modify dialogs.</li>
+<li>Changed label Model to Scope in Orbital->Create and
+Orbital->Modify and changed Help interface accordingly.</li>
+<li>Checked all Help Formats documentation pages.</li>
+<li>Updated Help documentation for Cluster Formats.</li>
+<li>cluster->paints arrays are no longer zero-terminated.</li>
+<li>Synced gamgi and gamgi_exp branches.</li>
+<li>In XML files, in group elements, replaced attribute type by reference.</li>
+<li>Updated Help documentation for Plane and Direction Formats.</li>
+<li>Updated Help documentation for Group Interfaces and Formats.</li>
+<li>Renewed the <a href="http://oami.europa.eu/">EU</a>
+trademark <b>GAMGI</b> until <b>2024</b>.</li>
+<li>Updated the source code and documentation license to 
+<a href="http://www.fsf.org/licenses/gpl.html">GPL v3</a>.
+<li>Started using <a href="http://en.wikipedia.org/wiki/SHA-2">sha256sum</a>
+to checksum all distribution files.</li>
+<li>Renewed the gamgi.org domain name registration until 2020.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Rewrite the About dialog, in the notebook form, to
+include pages for Developers, Contributors, Supporters.</li>
+<li>Add a task id to operactions involving multiple scans to
+guarantee that there is no flag corruption when bonds are
+created between different molecules.</li>
+<li>Add a bond angle, which is useful to control double bonds
+in solid mode.</li>
+<li>Write documentation about lists of objects.</li>
+<li>Write documentation about Orbitals.</li>
+<li>Write tutorials about crystalographic and atomic Plane,Direction usage.</li>
+<li>Implement dynamic text objects, to measure distances,
+angles, etc. on real time.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI old</div><div>&nbsp;</div>
+</div>
+
+<div class="contents">
+
+Changelogs for older releases can be found here.
+
+<p/>
+
+<ul>
+<li><a href="changelogs15.html">GAMGI 0.16.1 - GAMGI 0.17</a></li>
+<li><a href="changelogs15.html">GAMGI 0.15.1 - GAMGI 0.16</a></li>
+<li><a href="changelogs14.html">GAMGI 0.14.1 - GAMGI 0.15</a></li>
+<li><a href="changelogs13.html">GAMGI 0.13.1 - GAMGI 0.14</a></li>
+<li><a href="changelogs12.html">GAMGI 0.12.1 - GAMGI 0.13</a></li>
+<li><a href="changelogs11.html">GAMGI 0.11.1 - GAMGI 0.12</a></li>
+<li><a href="changelogs10.html">GAMGI 0.10.1 - GAMGI 0.11</a></li>
+<li><a href="changelogs09.html">GAMGI 0.09.1 - GAMGI 0.10</a></li>
+<li><a href="changelogs08.html">GAMGI 0.08.1 - GAMGI 0.09</a></li>
+<li><a href="changelogs07.html">GAMGI 0.07.18 - GAMGI 0.08</a></li>
+</ul>
+
+</div>
+
+<div id="bottom">
+<a href="../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

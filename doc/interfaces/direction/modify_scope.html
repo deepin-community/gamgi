@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Interfaces: Direction Modify</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Direction Modify</h1>
+
+<div id="notebook">
+<ul>
+<li><a href="modify_type.html">Type</a></li>
+<li><span>Line</span></li>
+<li><a href="modify_projection.html">Projection</a></li>
+<li><a href="modify_view.html">View</a></li>
+</ul>
+</div>
+
+<div class="contents">
+
+Set here the line representation and atomic structure for a single direction.
+
+<p/>
+
+To modify a direction, click over its graphic image, or write its identification
+(name and number) on the <b>Direction</b> entry. To modify a list of directions,
+press the button <b>List</b> (after creating the list of directions with
+<b>Direction->Select</b>). Parameters for empty entries or <b>Local</b> choices
+remain unchanged.
+
+<p/>
+
+To change a direction name write the new name in the <b>Direction</b> entry,
+followed by the direction number (GAMGI needs the number to identify the direction).
+To change the name for a list of directions, press <b>List</b> first
+and then write the new common name in the <b>Name</b> entry.
+
+<h3>Structure</h3>
+
+It is often useful to recreate in a direction the atomic
+structure existing in the parent object. A list is first
+created, with all the atoms closer to the direction than
+the distance defined by <b>Thickness</b>.
+
+<p/>
+
+When <b>Structure</b> is set to <b>Copy</b>, listed atoms
+are copied to the atomic or crystallographic directions just created.
+
+When <b>Structure</b> is set to <b>Link</b>, listed atoms
+are linked to the atomic or crystallographic directions just created.
+
+When <b>Structure</b> is set to <b>None</b>, only a line
+representation of the direction is created, without atoms.
+
+<h3>Filter</h3>
+
+After collecting a list of atoms close enough to the direction,
+a filtering condition may be applied. This can be very useful
+to avoid atom superposition, resulting for example from atoms
+copied before to different directions.
+
+<p/>
+
+When <b>Filter</b> is set to <b>Class</b>,
+atoms belonging to another directions are ignored.
+
+When <b>Filter</b> is set to <b>Child</b>, atoms not
+belonging directly to the direction parent are ignored.
+
+When <b>Filter</b> is set to <b>Identical</b>, atoms
+closer than a given distance (currently <b>1.0E-2</b>,
+as defined in <b>GAMGI_MATH_TOLERANCE_STRUCTURE</b>) to
+a previous atom are ignored.
+
+When <b>Filter</b> is set to <b>None</b>, no filtering
+condition is applied.
+
+<h3>Thickness</h3>
+
+The line representation of the direction is expanded as much as 
+possible, limited by the cell volume, in crystallographic directions, 
+and by the atoms within a <b>Thickness</b> range of the direction
+defined by the two atoms, in atomic directions.
+
+<h3>Node</h3>
+
+A direction can be defined indicating explicitly the coordinates of a node 
+where the direction passes. For each direction family, there is a direction
+passing through the origin node and as nodes are equivalent, it follows
+that for any node, there is a direction of any family passing through there.
+
+<p/>
+
+By default, only the direction passing through the origin is represented,
+with node coordinates <b>O1</b>, <b>O2</b>, <b>O3</b>, <b>O4</b>, equal
+to <b>0</b>, <b>0</b>, <b>0</b> and <b>000</b>, respectively.
+
+<h3>O1, O2, O3</h3>
+
+These entries provide the coordinates of the node in the lower-left
+corner of the cell where the direction passes, calculated with conventional
+or primitive cell vectors. When the lattice is primitive or vectors are
+primitive, this corner node becomes the place where the direction passes.
+
+<p/>
+
+The vectors used for the node coordinates, <b>Conventional</b>
+or <b>Primitive</b>, are those used to define the plane indices,
+in the <b>Type</b> page, of the first dialog.
+
+<h3>O4</h3>
+
+When the lattice is centered and vectors are conventional, a fourth
+coordinate <b>O4</b> is needed to point the centered node where the direction
+passes. By default, <b>O4</b> is <b>000</b>, so no change is introduced. 
+When the cell lattice is primitive <b>P</b> or the vectors defining the 
+node are primitive, that is the only possible value for <b>O4</b>. 
+For I, C, F, R centered lattices, <b>O4</b> can also take the values:
+
+<pre>
+<b>I</b>: <b>111</b>
+<b>C</b>: <b>110</b>
+<b>F</b>: <b>110</b>, <b>101</b>, <b>011</b>
+<b>R</b>: <b>211</b>, <b>122</b>
+</pre>
+
+corresponding to the numerators of the inner node coordinates,
+(1/2 1/2 1/2) for <b>I</b> lattices, (1/2 1/2 0) for <b>C</b>
+lattices, (0 1/2 1/2) (1/2 0 1/2) (1/2 1/2 0) for <b>F</b>
+lattices and (1/3 2/3 2/3) (2/3 1/3 1/3) for <b>R</b> lattices.
+
+<h3>Range</h3>
+
+A set of directions to create can also be defined automatically, with two 
+plane families belonging to the direction zone axis. Defining a range for 
+each plane family, the intersection of the two ranges of planes defines 
+an infinite volume, aligned along the direction orientation. All directions
+of the family that fall inside this volume should be created. For directions 
+[001], for example, the planes paralel, belonging to the direction axis, 
+can be for example (100) and (010), as determined by the Weiss equation: 
+hu + kv + lw = 0. For a cubic primitive lattice cP, a range (0 to 1) for 
+planes (100) and a range (0 to 2) for planes (010) results in a volume 
+containing 2x3 = 6 crystallographic directions [001]. To select a range 
+of directions, press <b>Range</b>, to open a second level dialog.
+
+<h3>Family</h3>
+
+For each plane family, enter the indices <b>h</b>, <b>k</b>, <b>l</b>.
+Each set of indices must obbey the Weiss zone equation, when combined 
+with the direction indices, otherwise an error is shown.
+
+<p/>
+
+Each plane of a family (h k l) intersects the lattice in n/h n/k n/l, where 
+n = 0 means the plane passing through the origin and n = 1 is the usual
+representation of the plane closest to the origin. The range of planes to consider
+is defined by the values entered near to the buttons <b>Start</b> and <b>End</b>, 
+describing the initial and final values of n. For example, setting <b>Start</b> 
+to <b>-1</b> and <b>End</b> to <b>1</b> defines a range with 3 planes, 
+intersecting the axes in: 1) -1/h -1/k -1/l; 2) 0; 3) 1/h 1/k 1/l.
+
+<p/>
+
+Pressing the <b>Start</b> button, the entry is disabled and GAMGI considers
+automatically all the planes from the beginning of the cell volume to the
+final plane specified. Pressing the <b>End</b> button, the entry is disabled
+and GAMGI considers automatically all the planes from the end of the cell volume
+to the first plane specified. When both buttons are pressed, GAMGI considers
+automatically all the planes from the beginning to the end of the cell volume,
+so all directions inside the cell volume will be created.
+
+<p/>
+
+After entering the plane ranges, pressing <b>Ok</b> saves the data,
+closes the second level dialog, and disables the node information in
+the first level dialog. Pressing <b>Cancel</b>, the current data in
+both dialogs is maintained and the second level dialog is closed.
+
+<p/>
+
+Pressing <b>Node</b> in the first level dialog, removes the second 
+level data, closes the second level dialog, enables and initializes 
+(if empty) the node data.
+
+<p/>
+
+The vectors used for the node coordinates, <b>Conventional</b>
+or <b>Primitive</b>, are those used to define the plane indices,
+in the <b>Type</b> page, of the first dialog.
+
+<p/>
+
+When adding information in the second level dialog, the direction indices
+and the cell must have been entered before, so GAMGI can check if the 
+information is correct. For the same reason, when <b>Cell</b>, <b>u</b>,
+<b>v</b>, <b>w</b>, or <b>Vectors</b> changed in the <b>Type</b> page, 
+all the information in the second level dialog is automatically discarded, 
+as it might be wrong.
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

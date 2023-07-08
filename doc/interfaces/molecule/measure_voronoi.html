@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Interfaces: Molecule Measure</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Molecule Measure</h1>
+
+<div id="notebook">
+<ul>
+<li><a href="measure_type.html">Type</a></li>
+<li><a href="measure_symmetry.html">Symmetry</a></li>
+<li><span>Voronoi</span></li>
+<li><a href="measure_tolerance.html">Tolerance</a></li>
+<li><a href="measure_view.html">View</a></li>
+</ul>
+</div>
+
+<div class="contents">
+            
+Select here the main parameters controlling the Voronoi tesselation.
+
+<h3>Boundaries</h3>
+
+GAMGI supports two methods to handle the tesselation
+in the boundaries, <b>Planar</b> and <b>Periodic</b>.
+
+<p/>
+
+The <b>Planar</b> method defines six outer planes, forming a closed space
+that includes all the seeds. Conceptually, this is equivalent to
+create six virtual seeds around each real seed, positioned in such
+a way that they define six planes at half-distance, common for all
+seeds, forming a closed background.
+
+<p/>
+
+The <b>Periodic</b> method applies periodic boundary conditions,
+using the extended image convention, which means to create 26 virtual
+systems around the central system (as 26 boxes around the central one,
+in a 3x3x3 arrangement). The minimum image convention, often used in
+Molecular Mechanics simulations, is not suitable in Voronoi tesselation,
+because it considers only the nearest neighbours, while Voronoi tesselation
+requires all the 26 nearest neighbours.
+
+<p/>
+
+The <b>Offset</b> parameter defines the border width between: 1)
+the seeds and the outer planes, in the <b>Planar</b> method; 2)
+the central system and the other 26 around, in the <b>Periodic</b>
+method.
+
+<p/>
+
+<b>Offset</b> cannot be 0 in the <b>Planar</b> method, because
+virtual seeds would coincide with real seeds, producing an error.
+<b>Offset</b> can be 0 in the <b>Periodic</b> method, if real and
+virtual seeds do not coincide, otherwise an error is flagged.
+An error is also produced when two real seeds coincide (current
+tolerance: 1.0E-4).
+
+<h3>Weights</h3>
+
+By default, GAMGI calculates the normal Voronoi partition,
+so all atoms are given the same weight, corresponding to
+<b>Variancy</b> equal to zero. However GAMGI can partition
+the space giving different weights to different atoms (Radical
+Tesselation), according to their radius. In general, if <b>d</b>
+is the distance between seed 0 and neighbour 1, the plane between
+them passes at a distance <b>d * fraction</b> from the seed, where
+<b>fraction</b> is given by:
+
+<pre><b>
+r0 = radius0 * variancy
+r1 = radius1 * variancy
+fraction = 1/2 [1 + (r0**2 - r1**2)/d**2]
+</b></pre>
+
+When <b>Variancy</b> is 0, <b>fraction</b> is 1/2 (normal Voronoi),
+whereas when <b>Variancy</b> is 1, unscaled atomic radius are
+used to determine <b>fraction</b>. <b>Variancy</b> can vary
+continuously from 0 to a given limit, <b>GAMGI_PHYS_VORONOI_VARIANCY</b>,
+currently 10.0.
+
+<p/>
+
+When <b>Variancy</b> is 0, the tesselation can always be obtained (as long
+as there are no atoms with essentially the same coordinates). When <b>Variancy</b> 
+increases, the tesselation becomes progressively more restrictive. The atoms must 
+be far enough from each other, particularly when the radius are quite different,
+otherwise the tesselation cannot be determined and and error is shown.
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

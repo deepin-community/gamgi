@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE gml SYSTEM "http://www.gamgi.org/dtd/gamgi.dtd">
+<gml>
+  <gamgi>
+    <atom variancy="1.00"/>
+  </gamgi>
+    <layer perspective="no" scale="1.07">
+      <light ambient_r="0.400" ambient_g="0.400" ambient_b="0.400"
+      diffuse_r="1.000" diffuse_g="1.000" diffuse_b="1.000"
+      direction_x="0.0000" direction_y="0.0000" direction_z="-1.0000"/>
+      <molecule name="q32" scale="0.68">
+        <atom id="1" element="O" x="-6.8566" y="3.4454" z="-1.7373"
+        style="solid" variancy="0.00"/>
+        <atom id="2" element="O" x="-7.6549" y="2.4327" z="0.6124"
+        style="solid" variancy="0.00"/>
+        <atom id="3" element="O" x="-5.0506" y="2.4280" z="-0.0512"
+        style="solid" variancy="0.00"/>
+        <atom id="4" element="Si" x="-8.0062" y="3.5591" z="-0.5413"
+        style="solid" variancy="0.00"/>
+        <atom id="5" element="Si" x="-5.2860" y="3.5518" z="-1.2422"
+        style="solid" variancy="0.00"/>
+        <atom id="6" element="Si" x="-6.1118" y="2.4752" z="1.2116"
+        style="solid" variancy="0.00"/>
+        <atom id="7" element="O" x="-7.8036" y="5.0642" z="0.1261"
+        style="solid" variancy="0.00"/>
+        <atom id="8" element="O" x="-9.5124" y="3.2547" z="-1.0590"
+        style="solid" variancy="0.00"/>
+        <atom id="9" element="O" x="-5.0812" y="5.0386" z="-0.5198"
+        style="solid" variancy="0.00"/>
+        <atom id="10" element="O" x="-4.3259" y="3.3401" z="-2.5310"
+        style="solid" variancy="0.00"/>
+        <atom id="11" element="O" x="-5.9517" y="3.9539" z="1.9508"
+        style="solid" variancy="0.00"/>
+        <atom id="12" element="O" x="-5.7357" y="1.2168" z="2.1602"
+        style="solid" variancy="0.00"/>
+        <atom id="13" element="H" x="-6.9466" y="5.4311" z="-0.2480"
+        style="solid" variancy="0.00"/>
+        <atom id="14" element="H" x="-9.8349" y="3.8806" z="-1.7486"
+        style="solid" variancy="0.00"/>
+        <atom id="15" element="H" x="-4.9953" y="4.8749" z="0.4646"
+        style="solid" variancy="0.00"/>
+        <atom id="16" element="H" x="-3.4468" y="3.7762" z="-2.4584"
+        style="solid" variancy="0.00"/>
+        <atom id="17" element="H" x="-6.7541" y="4.4932" z="1.6879"
+        style="solid" variancy="0.00"/>
+        <atom id="18" element="H" x="-6.2488" y="1.1635" z="2.9974"
+        style="solid" variancy="0.00"/>
+        <bond parent1="1" parent2="4" style="solid"/>
+        <bond parent1="1" parent2="5" style="solid"/>
+        <bond parent1="2" parent2="4" style="solid"/>
+        <bond parent1="2" parent2="6" style="solid"/>
+        <bond parent1="3" parent2="5" style="solid"/>
+        <bond parent1="3" parent2="6" style="solid"/>
+        <bond parent1="4" parent2="7" style="solid"/>
+        <bond parent1="4" parent2="8" style="solid"/>
+        <bond parent1="5" parent2="9" style="solid"/>
+        <bond parent1="5" parent2="10" style="solid"/>
+        <bond parent1="6" parent2="11" style="solid"/>
+        <bond parent1="6" parent2="12" style="solid"/>
+        <bond parent1="7" parent2="13" style="solid"/>
+        <bond parent1="8" parent2="14" style="solid"/>
+        <bond parent1="9" parent2="15" style="solid"/>
+        <bond parent1="10" parent2="16" style="solid"/>
+        <bond parent1="11" parent2="17" style="solid"/>
+        <bond parent1="12" parent2="18" style="solid"/>
+      </molecule>
+      <molecule name="q42" scale="0.65">
+        <atom id="19" element="O" x="8.4943" y="3.6851" z="-1.6979"
+        style="solid" variancy="0.00" size="0.50"/>
+        <atom id="20" element="O" x="7.3676" y="1.8871" z="0.0205"
+        style="solid" variancy="0.00" size="0.50"/>
+        <atom id="21" element="O" x="6.1018" y="4.9549" z="-2.0294"
+        style="solid" variancy="0.00" size="0.50"/>
+        <atom id="22" element="O" x="4.9715" y="3.1179" z="-0.3561"
+        style="solid" variancy="0.00" size="0.50"/>
+        <atom id="23" element="Si" x="8.6802" y="2.8245" z="-0.3112"
+        style="solid" variancy="0.00" size="0.50"/>
+        <atom id="24" element="Si" x="7.7258" y="5.1348" z="-1.8509"
+        style="solid" variancy="0.00" size="0.50"/>
+        <atom id="25" element="Si" x="5.9711" y="2.3918" z="0.7357"
+        style="solid" variancy="0.00" size="0.50"/>
+        <atom id="26" element="Si" x="5.0273" y="4.6955" z="-0.8105"
+        style="solid" variancy="0.00" size="0.50"/>
+        <atom id="27" element="O" x="8.7983" y="3.9210" z="0.9305"
+        style="solid" variancy="0.00" size="0.50"/>
+        <atom id="28" element="O" x="9.9914" y="1.8876" z="-0.5197"
+        style="solid" variancy="0.00" size="0.50"/>
+        <atom id="29" element="O" x="7.9728" y="5.9685" z="-0.4362"
+        style="solid" variancy="0.00" size="0.50"/>
+        <atom id="30" element="O" x="8.2903" y="5.8865" z="-3.1758"
+        style="solid" variancy="0.00" size="0.50"/>
+        <atom id="31" element="O" x="6.4076" y="3.5254" z="1.8658"
+        style="solid" variancy="0.00" size="0.50"/>
+        <atom id="32" element="O" x="5.2155" y="1.1090" z="1.3772"
+        style="solid" variancy="0.00" size="0.50"/>
+        <atom id="33" element="O" x="5.5786" y="5.5757" z="0.4882"
+        style="solid" variancy="0.00" size="0.50"/>
+        <atom id="34" element="O" x="3.5225" y="5.0792" z="-1.2891"
+        style="solid" variancy="0.00" size="0.50"/>
+        <atom id="35" element="H" x="8.6311" y="4.8504" z="0.5157"
+        style="solid" variancy="0.00" size="0.50"/>
+        <atom id="36" element="H" x="9.9675" y="1.0404" z="-0.0208"
+        style="solid" variancy="0.00" size="0.50"/>
+        <atom id="37" element="H" x="7.0525" y="6.0421" z="0.0184"
+        style="solid" variancy="0.00" size="0.50"/>
+        <atom id="38" element="H" x="9.1784" y="5.5674" z="-3.4550"
+        style="solid" variancy="0.00" size="0.50"/>
+        <atom id="39" element="H" x="7.4120" y="3.7164" z="1.7182"
+        style="solid" variancy="0.00" size="0.50"/>
+        <atom id="40" element="H" x="4.2751" y="1.0177" z="1.1051"
+        style="solid" variancy="0.00" size="0.50"/>
+        <atom id="41" element="H" x="5.8283" y="4.8956" z="1.2207"
+        style="solid" variancy="0.00" size="0.50"/>
+        <atom id="42" element="H" x="3.4109" y="6.0219" z="-1.5504"
+        style="solid" variancy="0.00" size="0.50"/>
+        <bond parent1="19" parent2="23" style="solid"/>
+        <bond parent1="19" parent2="24" style="solid"/>
+        <bond parent1="20" parent2="23" style="solid"/>
+        <bond parent1="20" parent2="25" style="solid"/>
+        <bond parent1="21" parent2="24" style="solid"/>
+        <bond parent1="21" parent2="26" style="solid"/>
+        <bond parent1="22" parent2="25" style="solid"/>
+        <bond parent1="22" parent2="26" style="solid"/>
+        <bond parent1="23" parent2="27" style="solid"/>
+        <bond parent1="23" parent2="28" style="solid"/>
+        <bond parent1="24" parent2="29" style="solid"/>
+        <bond parent1="24" parent2="30" style="solid"/>
+        <bond parent1="25" parent2="31" style="solid"/>
+        <bond parent1="25" parent2="32" style="solid"/>
+        <bond parent1="26" parent2="33" style="solid"/>
+        <bond parent1="26" parent2="34" style="solid"/>
+        <bond parent1="27" parent2="35" style="solid"/>
+        <bond parent1="28" parent2="36" style="solid"/>
+        <bond parent1="29" parent2="37" style="solid"/>
+        <bond parent1="30" parent2="38" style="solid"/>
+        <bond parent1="31" parent2="39" style="solid"/>
+        <bond parent1="32" parent2="40" style="solid"/>
+        <bond parent1="33" parent2="41" style="solid"/>
+        <bond parent1="34" parent2="42" style="solid"/>
+      </molecule>
+      <molecule name="q31q13" scale="0.63">
+        <atom id="43" element="O" x="-7.1032" y="-3.8394" z="-0.9528"
+        style="solid" variancy="0.00"/>
+        <atom id="44" element="O" x="-4.4459" y="-3.9847" z="-0.9939"
+        style="solid" variancy="0.00"/>
+        <atom id="45" element="Si" x="-5.7687" y="-4.0758" z="-0.0427"
+        style="solid" variancy="0.00"/>
+        <atom id="46" element="Si" x="-8.6343" y="-4.0970" z="-0.4114"
+        style="solid" variancy="0.00"/>
+        <atom id="47" element="Si" x="-2.9708" y="-3.9638" z="-0.2437"
+        style="solid" variancy="0.00"/>
+        <atom id="48" element="O" x="-5.9543" y="-5.5518" z="0.6669"
+        style="solid" variancy="0.00"/>
+        <atom id="49" element="O" x="-8.9836" y="-2.7013" z="0.4264"
+        style="solid" variancy="0.00"/>
+        <atom id="50" element="O" x="-8.6767" y="-5.4551" z="0.4868"
+        style="solid" variancy="0.00"/>
+        <atom id="51" element="O" x="-9.7516" y="-4.1464" z="-1.6017"
+        style="solid" variancy="0.00"/>
+        <atom id="52" element="O" x="-2.5169" y="-2.4687" z="0.1968"
+        style="solid" variancy="0.00"/>
+        <atom id="53" element="O" x="-3.2551" y="-4.9860" z="1.0444"
+        style="solid" variancy="0.00"/>
+        <atom id="54" element="O" x="-1.8046" y="-4.6226" z="-1.1754"
+        style="solid" variancy="0.00"/>
+        <atom id="55" element="H" x="-5.1134" y="-5.7625" z="1.1589"
+        style="solid" variancy="0.00"/>
+        <atom id="56" element="H" x="-9.9449" y="-2.4978" z="0.4883"
+        style="solid" variancy="0.00"/>
+        <atom id="57" element="H" x="-7.7461" y="-5.7349" z="0.7383"
+        style="solid" variancy="0.00"/>
+        <atom id="58" element="H" x="-9.9345" y="-5.0617" z="-1.9157"
+        style="solid" variancy="0.00"/>
+        <atom id="59" element="H" x="-3.2812" y="-1.8109" z="0.3199"
+        style="solid" variancy="0.00"/>
+        <atom id="60" element="H" x="-2.7407" y="-4.7174" z="1.8406"
+        style="solid" variancy="0.00"/>
+        <atom id="61" element="H" x="-1.3055" y="-3.9356" z="-1.6734"
+        style="solid" variancy="0.00"/>
+        <atom id="62" element="Si" x="-5.7986" y="-1.3381" z="1.3237"
+        style="solid" variancy="0.00"/>
+        <atom id="63" element="O" x="-5.6776" y="-2.9606" z="1.1540"
+        style="solid" variancy="0.00"/>
+        <atom id="64" element="O" x="-5.5604" y="-0.9191" z="2.8964"
+        style="solid" variancy="0.00"/>
+        <atom id="65" element="O" x="-7.2013" y="-0.7732" z="0.7418"
+        style="solid" variancy="0.00"/>
+        <atom id="66" element="O" x="-4.4698" y="-0.7056" z="0.5345"
+        style="solid" variancy="0.00"/>
+        <atom id="67" element="H" x="-6.4068" y="-0.6829" z="3.3384"
+        style="solid" variancy="0.00"/>
+        <atom id="68" element="H" x="-7.8981" y="-1.4909" z="0.5715"
+        style="solid" variancy="0.00"/>
+        <atom id="69" element="H" x="-4.0797" y="0.0448" z="1.0414"
+        style="solid" variancy="0.00"/>
+        <bond parent1="43" parent2="45" style="solid" color="yes"/>
+        <bond parent1="43" parent2="46" style="solid" color="yes"/>
+        <bond parent1="44" parent2="45" style="solid" color="yes"/>
+        <bond parent1="44" parent2="47" style="solid" color="yes"/>
+        <bond parent1="45" parent2="48" style="solid" color="yes"/>
+        <bond parent1="45" parent2="63" style="solid" color="yes"/>
+        <bond parent1="46" parent2="49" style="solid" color="yes"/>
+        <bond parent1="46" parent2="50" style="solid" color="yes"/>
+        <bond parent1="46" parent2="51" style="solid" color="yes"/>
+        <bond parent1="47" parent2="52" style="solid" color="yes"/>
+        <bond parent1="47" parent2="53" style="solid" color="yes"/>
+        <bond parent1="47" parent2="54" style="solid" color="yes"/>
+        <bond parent1="48" parent2="55" style="solid" color="yes"/>
+        <bond parent1="49" parent2="56" style="solid" color="yes"/>
+        <bond parent1="50" parent2="57" style="solid" color="yes"/>
+        <bond parent1="51" parent2="58" style="solid" color="yes"/>
+        <bond parent1="52" parent2="59" style="solid" color="yes"/>
+        <bond parent1="53" parent2="60" style="solid" color="yes"/>
+        <bond parent1="54" parent2="61" style="solid" color="yes"/>
+        <bond parent1="62" parent2="63" style="solid" color="yes"/>
+        <bond parent1="62" parent2="64" style="solid" color="yes"/>
+        <bond parent1="62" parent2="65" style="solid" color="yes"/>
+        <bond parent1="62" parent2="66" style="solid" color="yes"/>
+        <bond parent1="64" parent2="67" style="solid" color="yes"/>
+        <bond parent1="65" parent2="68" style="solid" color="yes"/>
+        <bond parent1="66" parent2="69" style="solid" color="yes"/>
+      </molecule>
+      <molecule name="q10" scale="0.71">
+        <atom id="70" element="Si" x="6.2400" y="-3.6816" z="0.0000"
+        style="solid" size="1.00"/>
+        <atom id="71" element="O" x="7.6345" y="-3.9063" z="-0.8424"
+        style="solid" size="1.00"/>
+        <atom id="72" element="O" x="4.8378" y="-4.1821" z="-0.6988"
+        style="solid" size="1.00"/>
+        <atom id="73" element="O" x="6.0885" y="-2.0534" z="0.1759"
+        style="solid" size="1.00"/>
+        <atom id="74" element="O" x="6.3992" y="-4.5846" z="1.3653"
+        style="solid" size="1.00"/>
+        <atom id="75" element="H" x="7.9430" y="-4.8418" z="-0.8161"
+        style="solid" size="1.00"/>
+        <atom id="76" element="H" x="4.5259" y="-3.5643" z="-1.4002"
+        style="solid" size="1.00"/>
+        <atom id="77" element="H" x="6.9478" y="-1.6156" z="0.3778"
+        style="solid" size="1.00"/>
+        <atom id="78" element="H" x="5.5432" y="-4.7048" z="1.8384"
+        style="solid" size="1.00"/>
+        <bond parent1="70" parent2="71" style="solid" color="yes"/>
+        <bond parent1="70" parent2="72" style="solid" color="yes"/>
+        <bond parent1="70" parent2="73" style="solid" color="yes"/>
+        <bond parent1="70" parent2="74" style="solid" color="yes"/>
+        <bond parent1="71" parent2="75" style="solid" color="yes"/>
+        <bond parent1="72" parent2="76" style="solid" color="yes"/>
+        <bond parent1="73" parent2="77" style="solid" color="yes"/>
+        <bond parent1="74" parent2="78" style="solid" color="yes"/>
+      </molecule>
+    </layer>
+    <layer perspective="no">
+      <molecule name="q21">
+        <atom id="79" element="O" x="0.4696" y="0.0151" z="-0.9706"/>
+        <atom id="80" element="Si" x="0.9707" y="-0.7352" z="0.4100"/>
+        <atom id="81" element="Si" x="-0.0679" y="1.5716" z="-0.8657"/>
+        <atom id="82" element="O" x="-0.2969" y="-0.8894" z="1.4346"/>
+        <atom id="83" element="O" x="2.1542" y="0.2974" z="0.9568"/>
+        <atom id="84" element="O" x="1.6815" y="-2.1813" z="0.1596"/>
+        <atom id="85" element="O" x="-1.3013" y="1.4474" z="0.2445"/>
+        <atom id="86" element="O" x="1.1512" y="2.5497" z="-0.3753"/>
+        <atom id="87" element="O" x="-0.7236" y="2.1185" z="-2.2548"/>
+        <atom id="88" element="H" x="-0.9122" y="-0.1168" z="1.2742"/>
+        <atom id="89" element="H" x="2.4449" y="0.1196" z="1.8801"/>
+        <atom id="90" element="H" x="1.0481" y="-2.8914" z="-0.0921"/>
+        <atom id="91" element="H" x="-1.6095" y="2.3163" z="0.5941"/>
+        <atom id="92" element="H" x="1.7626" y="2.0091" z="0.2057"/>
+        <atom id="93" element="H" x="-0.0610" y="2.4227" z="-2.9157"/>
+        <bond parent1="79" parent2="80"/>
+        <bond parent1="79" parent2="81"/>
+        <bond parent1="80" parent2="82"/>
+        <bond parent1="80" parent2="83"/>
+        <bond parent1="80" parent2="84"/>
+        <bond parent1="81" parent2="85"/>
+        <bond parent1="81" parent2="86"/>
+        <bond parent1="81" parent2="87"/>
+        <bond parent1="82" parent2="88"/>
+        <bond parent1="83" parent2="89"/>
+        <bond parent1="84" parent2="90"/>
+        <bond parent1="85" parent2="91"/>
+        <bond parent1="86" parent2="92"/>
+        <bond parent1="87" parent2="93"/>
+      </molecule>
+    </layer>
+</gml>

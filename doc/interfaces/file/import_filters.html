@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Interfaces: File Import</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>File Import</h1>
+
+<div id="notebook">
+<ul>
+<li><a href="import_location.html">Location</a></li>
+<li><span>Filters</span></li>
+</ul>
+</div>
+
+<div class="contents">
+
+Set here which folders and files should be hidden and shown.
+
+<p/>
+
+Each entry can contain multiple patterns, separated by white spaces or commas,
+each one describing a set of files or folders that should be hidden or shown.
+The character <b>*</b> is a wild card representing any number of any characters,
+and can be used anywhere in a pattern.
+
+<p/>
+
+For example, the sequence <b>*abc def*ghi*</b> contains two patterns, indicating
+all occurrences with either: 1) "abc" in the end; or 2) "def" in the beginning,
+followed by "ghi" anywhere.
+
+<p/>
+
+First, all occurrences indicated in <b>Hide</b> are removed. From the remaining
+occurrences, only those indicated in <b>Show</b> are shown. By default, all
+occurrences are shown, so an empty <b>Hide</b> means remove nothing, and
+an empty <b>Show</b> means show everything.
+
+<h3>Folders</h3>
+
+By default <b>Hide</b> is set to <b>.*</b>, to hide all dot folders.
+
+<h3>Files</h3>
+
+By default <b>Hide</b> is set to <b>.*</b>, to hide all dot files.
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

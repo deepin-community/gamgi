@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Formats: Cluster Create</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Cluster Create</h1>
+
+<div id="notebook">
+<ul>
+<li><span>Type</span></li>
+<li><a href="create_scope.html">Scope</a></li>
+<li><a href="create_position.html">Position</a></li>
+<li><a href="create_view.html">View</a></li>
+</ul>
+</div>
+
+<div class="contents">
+
+<h3>Reference</h3>
+
+Set the type of cluster to create, <b>container</b> or <b>polytope</b>.
+
+A <b>container</b> cluster is a recursive object that can contain
+arbitrary sets of child objects such as clusters, molecules, groups,
+planes, directions, atoms, bonds, texts.
+
+A <b>polytope</b> cluster describes the set of Voronoi polyhedra resulting
+from a Voronoi analysis of some initial <b>container</b> cluster, and the
+Voronoi conditions selected containing an arbitrary set of atoms.
+
+<pre>
+Example: <b>&lt;group ... reference="container"/></b> (default)
+Allowed values: <b>container</b>, <b>polytope</b> (optional)
+</pre>
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

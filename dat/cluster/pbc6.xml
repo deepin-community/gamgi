@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE gml SYSTEM "http://www.gamgi.org/dtd/gamgi.dtd">
+<gml>
+  <cluster>
+    <atom element="C" x="0.0000" y="0.7500" z="0.7500"/>
+    <atom element="C" x="1.0000" y="0.2500" z="0.2500"/>
+    <atom element="C" x="0.2500" y="0.0000" z="0.2500"/>
+    <atom element="C" x="0.7500" y="1.0000" z="0.7500"/>
+    <atom element="C" x="0.2500" y="0.7500" z="0.0000"/>
+    <atom element="C" x="0.7500" y="0.2500" z="1.0000"/>
+  </cluster>
+</gml>

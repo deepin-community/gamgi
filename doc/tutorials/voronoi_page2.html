@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Tutorials: Voronoi tesselation</title>
+<link rel="icon" type="image/png" href="../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Voronoi tesselation</h1>
+
+<div id="notebook">
+<ul>
+<li><a href="voronoi_page1.html">Page 1</a></li>
+<li><span>Page 2</span></li>
+</ul>
+</div>
+
+<div class="contents">
+
+Then we import a simple cubic structure and analyse the data
+produced by the tesselation, to ilustrate the various properties 
+reported, first with <b>Variancy</b> set to 0.0 and then with
+<b>Variancy</b> set to 1.0, in both cases with periodic boundary
+conditions. The two polyhedra obtained can be seen in the figure 
+at <a href="http://www.gamgi.org/images/voronoi2.png">
+http://www.gamgi.org/images/voronoi2.png</a>.
+
+<h3>Cubic structure</h3>
+
+<ol>
+<li>Select <b>Gamgi->Reset</b> and press <b>Ok</b>, to remove the various 
+layers and restart Gamgi. Press <b>File->Import</b> and import the file
+<b>dat/cluster/cs111.xml</b>, containing a cluster with eight atoms of 
+different elements, in a cubic arrangement.</li>
+
+<li>Select <b>Cluster->Measure</b>, set <b>Method</b> to <b>Voronoi</b>,
+<b>Boundaries</b> to <b>Periodic</b>, <b>Offset</b> to <b>1.5</b> and 
+click on the cluster. A cubic polyhedra is shown, in a new layer, formed 
+by eight octant cubes, one for each atom.</li>
+
+<li>Try to understand the topological data reported. For example,
+<b>Polyhedron Faces</b>, <b>Polyhedron Edges</b> and <b>Polyhedron 
+Vertices</b> are 6, 12 and 8, respectively, and <b>Face Vertices</b>
+is 4.
+
+<p/>
+
+<b>Edge Polyhedrons</b> can be 1 (edges on the edges of the total
+polyhedron), 2 (edges on the faces of the total polyhedron) or 4
+(edges inside the total polyhedron). <b>Edge Faces</b> can be 2
+(edges on the outside of the total polyhedron) or 4 (edges on the
+inside of the total polyhedron).
+
+<p/>
+
+<b>Vertex Polyhedrons</b> can be 1 (vertices on the corners
+of the total polyhedron), 2 (vertices on the edges of the
+total polyhedron), 4 (vertices on the faces of the total
+polyhedron) or 8 (the vertex inside the total polyhedron).
+
+<b>Vertex Faces</b> can be 3 (vertices on the corners
+of the total polyhedron), 5 (vertices on the edges of the
+total polyhedron), 8 (vertices on the faces of the total
+polyhedron) or 12 (the vertex inside the total polyhedron).
+
+<b>Vertex Edges</b> can be 3 (vertices on the corners
+of the total polyhedron), 4 (vertices on the edges of the
+total polyhedron), 5 (vertices on the faces of the total
+polyhedron) or 6 (the vertex inside the total polyhedron).</li>
+
+<li>Try to understand the geometrical data reported. The atoms are 
+separated by 2.0 and the <b>Offset</b> is 1.5 so their cubes have 
+a length of 2.0 / 2 + 1.5 / 2 = 1.75. Therefore <b>Edge Lengths</b> 
+is always 1.75 and <b>Edge Lengths</b> is always 90.0.
+
+<p/>
+
+<b>Face Areas</b> is 1.75 x 1.75 = 3.0625, <b>Face Lengths</b>
+(the perimeter) is 1.75 x 4 = 7.0 and <b>Face Angles</b> is 90.0.
+
+<b>Polyhedron Volumes</b> is 1.75 x 1.75 x 1.75 = 5.359375, <b>Polyhedron 
+Areas</b> is 1.75 x 1.75 x 6 = 18.375 and <b>Polyhedron Lengths</b> is 
+1.75 x 12 = 21.0.
+
+The <b>Total Volume</b> is 1.75 x 1.75 x 1.75 x 8 = 42.875.</li>
+
+<li>Move the cluster to the left side of the graphic area, and select
+again the first layer, containing the cubic atomic arrangement. Select
+<b>Cluster->Measure</b>, set <b>Method</b> to <b>Voronoi</b>, <b>Boundaries</b> 
+to <b>Periodic</b> but this time change <b>Variancy</b> to <b>1.0</b> 
+(<b>Voronoi</b> page), before clicking on the cluster. An error is produced
+because this weighted tesselation is more restrictive than the normal Voronoi
+tesselation and the small H atom is too close to the virtual large Na atom.</li>
+
+<li>Repeat the same task but this time increase <b>Offset</b> to 1.5 before 
+clicking on the cluster. Eight complex polyhedra are produced, with larger 
+ones for larger atoms, as Na, and smaller ones for smaller atoms, as H.
+Move the total cluster to the right side and select again the first
+layer, to see the two polyhedra together.</li>
+</ol>
+
+</div>
+
+<div id="bottom">
+<a href="../index.shtml">Home</a>
+</div>
+
+</body>
+</html>
