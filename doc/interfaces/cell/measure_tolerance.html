@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Interfaces: Cluster Measure</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Cluster Measure</h1>
+
+<div id="notebook">
+<ul>
+<li><a href="measure_type.html">Type</a></li>
+<li><a href="measure_symmetry.html">Symmetry</a></li>
+<li><a href="measure_voronoi.html">Voronoi</a></li>
+<li><span>Tolerance</span></li>
+<li><a href="measure_view.html">View</a></li>
+</ul>
+</div>
+
+<div class="contents">
+
+Select here the numerical tolerances used in the Voronoi
+tesselation. Changing significantly the default values
+may produce bad results.
+
+<h3>Tolerance</h3>
+
+When building the polyhedrons, if a plane cuts a vertex more 
+than the <b>Apex</b> tolerance, this vertex is removed.
+
+<p/>
+
+Faces that have an area smaller than the <b>Area</b> tolerance 
+are ignored and its topological surroundings are merged.
+
+<p/>
+
+Vertices that are closer than the <b>Vertex</b> tolerance are 
+considered the same and its topological surroundings are merged.
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE gml SYSTEM "http://www.gamgi.org/dtd/gamgi.dtd">
+<gml>
+  <layer perspective="no">
+    <light ambient_r="0.500" ambient_g="0.500" ambient_b="0.500"
+    diffuse_r="0.400" diffuse_g="0.400" diffuse_b="0.400" specular_r="0.300"
+    specular_g="0.300" specular_b="0.300" direction_x="0.0000"
+    direction_y="0.0000" direction_z="-1.0000"/>
+    <cell group="194" a="3.6000" c="5.0100" x="-0.1467" y="-2.3887" z="0.4499"
+    e1="85.03" e2="90.00" e3="125.44">
+      <atom element="Ni" x="1.0585" y="-1.2876" z="2.2454" style="solid"
+      variancy="1.00" size="1.00" scale="0.300"/>
+      <atom element="Ni" x="1.3998" y="-1.5981" z="5.8157" style="solid"
+      variancy="1.00" size="1.00" scale="0.300"/>
+      <atom element="Ni" x="1.0585" y="1.2080" z="2.4624" style="solid"
+      variancy="1.00" size="1.00" scale="0.300"/>
+      <atom element="Ni" x="1.3998" y="0.8975" z="6.0327" style="solid"
+      variancy="1.00" size="1.00" scale="0.300"/>
+      <atom element="Ni" x="-1.8745" y="-1.4685" z="4.3250" style="solid"
+      variancy="1.00" size="1.00" scale="0.300"/>
+      <atom element="Ni" x="-1.8745" y="1.0271" z="4.5420" style="solid"
+      variancy="1.00" size="1.00" scale="0.300"/>
+      <atom element="As" x="-0.1467" y="-2.3887" z="0.4499" style="solid"
+      variancy="1.00" size="1.00" scale="0.300"/>
+      <atom element="As" x="0.5359" y="-3.0097" z="7.5905" style="solid"
+      variancy="1.00" size="1.00" scale="0.300"/>
+      <atom element="As" x="-0.1467" y="2.6025" z="0.8839" style="solid"
+      variancy="1.00" size="1.00" scale="0.300"/>
+      <atom element="As" x="0.5359" y="1.9815" z="8.0245" style="solid"
+      variancy="1.00" size="1.00" scale="0.300"/>
+      <atom element="As" x="-1.0106" y="-0.0569" z="2.5502" style="solid"
+      variancy="1.00" size="1.00" scale="0.300"/>
+      <atom element="As" x="-3.0797" y="-2.5695" z="2.5295" style="solid"
+      variancy="1.00" size="1.00" scale="0.300"/>
+      <atom element="As" x="-0.6693" y="-0.3674" z="6.1205" style="solid"
+      variancy="1.00" size="1.00" scale="0.300"/>
+      <atom element="As" x="-2.7384" y="-2.8800" z="6.0998" style="solid"
+      variancy="1.00" size="1.00" scale="0.300"/>
+      <atom element="As" x="3.1276" y="-2.5183" z="1.9406" style="solid"
+      variancy="1.00" size="1.00" scale="0.300"/>
+      <atom element="As" x="3.4689" y="-2.8288" z="5.5109" style="solid"
+      variancy="1.00" size="1.00" scale="0.300"/>
+      <atom element="As" x="-3.0797" y="2.4216" z="2.9635" style="solid"
+      variancy="1.00" size="1.00" scale="0.300"/>
+      <atom element="As" x="-2.7384" y="2.1111" z="6.5338" style="solid"
+      variancy="1.00" size="1.00" scale="0.300"/>
+      <atom element="As" x="3.1276" y="2.4728" z="2.3746" style="solid"
+      variancy="1.00" size="1.00" scale="0.300"/>
+      <atom element="As" x="3.4689" y="2.1624" z="5.9449" style="solid"
+      variancy="1.00" size="1.00" scale="0.300"/>
+      <atom element="As" x="2.2637" y="-0.1865" z="4.0409" style="solid"
+      variancy="1.00" size="1.00" scale="0.300"/>
+      <atom element="As" x="0.1946" y="-2.6992" z="4.0202" style="solid"
+      variancy="1.00" size="1.00" scale="0.300"/>
+      <atom element="As" x="0.1946" y="2.2920" z="4.4542" style="solid"
+      variancy="1.00" size="1.00" scale="0.300"/>
+    </cell>
+  </layer>
+</gml>

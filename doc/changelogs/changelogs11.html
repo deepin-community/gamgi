@@ -1,0 +1,1353 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Changelogs: GAMGI 0.11</title>
+<link rel="icon" type="image/png" href="../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../css/board.css"/>
+</head>
+
+<body>
+
+<div class="board">
+<div>GAMGI 0.12</div><div>24th September 2006</div>
+</div>
+
+<div class="contents">
+
+Completed the code to build arbitrary ranges of crystallographic 
+directions belonging to the same family. Planes and directions 
+can now be created passing through a given node or between planes 
+with a given order. Improved the code to measure lengths between 
+planes, directions and atoms. Planes and directions with any order 
+or node can now be exported and imported to XML GAMGI format. 
+Removed some numerical bugs, mainly in the code to build directions. 
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Fixed some links and added images that were missing
+in the users documentation.</li>
+<li>Distances between atoms and atomic planes can now
+be calculated, for independent and independent planes.</li>
+<li>Found and removed a bug in gamgi_chem_symmetry.c:
+in static_try_m0, negative d[n] components could produce
+wrong results.</li>
+<li>Distances between atoms and planes (points) in
+reciprocal space are now calculated. Previously we calculated
+the distance to the plane passing through the origin.</li>
+<li>Distances between independent directions and atoms 
+are now properly calculated. Updated this calculation for
+projected directions.</li>
+<li>Simplified the code to obtain a rotated and translated 
+point, without using the object center.</li>
+<li>Distances between directions and atoms are now properly
+calculated, for directions not going through the cell origin
+(this was already done for planes).</li>
+<li>The direction node position is now imported, 
+as o1,o2,o3,o4 parameters.</li>
+<li>Added random pictures to www.gamgi.org front page.</li>
+<li>Directions now maintain the node coordinates in primitive
+or conventional vectors, the vectors defined for the indices.</li>
+<li>The direction node position is now exported, as o1,o2,o3,o4 
+parameters.</li>
+<li>The object name in planes and directions was always exported, 
+even when it was the default: fixed.</li>
+<li>A old, deprecated, visibility XML parameter (none) was still 
+exported instead of the new one (no): fixed.</li>
+<li>Improved the way crystallographic planes 
+and directions are tested throughout the code.</li>
+<li>Found and removed a bug, in the code to build directions
+in ranges: a variable was not properly initialized in static_segment, 
+in gamgi_phys_direction.c, resulting in crashes when points were 
+too close.</li>
+<li>When defining direction ranges, plane indices too small
+(multiple planes) are allowed, but plane indices too large
+(Lauer planes) are not (because the conversion makes no sense).</li>
+<li>Multiple indices are not allowed for directions, but they
+are allowed for planes (Laue reflections).</li>
+<li>Found and removed a bug, in the code to build directions in ranges: 
+some directions were not created due to numerical errors, when the plane 
+was tangent to the cell. The third point needed to define a plane 
+is now chosen in such a way that the section of the plane inside 
+the cell is maximized, eliminating the problem.</li>
+<li>Found and removed a bug in the procedure to create directions
+in cell volumes: the routine to create 3 orthogonal points was broken.
+</li>
+<li>The procedure to create ranges of crystallographic
+directions from two family planes in the direction zone
+is working fine.</li>
+<li>Crystallographic planes can now be created specifying either
+a range of orders or a specific node on the plane.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Add Plane->Modify and Direction->Modify functionality.</li>
+<li>Replace set/get_data functions by structures
+defined in gtk/gamgi_object.h headers.</li>
+<li>Add Object->Copy dialogs with basic copy functionality.</li>
+<li>Add Contents and Container options in Object->Remove dialogs.</li>
+<li>Implement dynamic text objects, to measure distances,
+angles, etc. on real time.</li>
+<li>Implement global selection, including global picking
+algorithms and selection dialogs that include all the
+selection methods.</li>
+<li>Implement multiple object picking, including a
+dynamic frame with moving ants and dragging anchors,
+to select multiple objects and images from the screen.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.11.17</div><div>30th July 2006</div>
+</div>
+
+<div class="contents">
+
+Atomic planes and directions can now be created in any
+atomic container object, and the planes and directions
+can be taken away, as independent objects, with all the 
+atoms and bonds inside. Wrote the second level and 
+improved the first level dialogs to support all the
+functionality to create planes and directions passing
+through an arbitrary node or to create an arbitrary
+range of planes and directions.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Completed the code controlling all the interactivity
+in the first and second level dialogs Plane->Create and 
+Direction->Create.</li>
+<li>Wrote the Plane->Node and Direction->Range second
+level dialogs, for Plane->Create and Direction->Create.
+Both first and second level dialogs look fine now.</li>
+<li>Updated the Plane->Create and Direction->Create
+dialogs, to receive node and range information.</li>
+<li>Added gamgi_math_function.c and gamgi_math_plane.c
+files.</li>
+<li>Solved the diophantine equations needed to get the
+node intersection between two planes belonging to the 
+same direction.</li>
+<li>Added code to generate a single direction passing
+through an arbitrary node o1,o2,o3, not necessarily 000.</li>
+<li>Determined relations between primitive and conventional 
+Miller indices for planes of all Bravais lattices.</li>
+<li>Added code to generate a single plane passing 
+through a given node, primitive or conventional.</li>
+<li>Improved direction code: rotation,translation is
+working fine for all all sorts of direction objects.</li>
+<li>Added code to create directions from 2 atoms 
+and to link atoms closer than thickness to directions.</li>
+<li>Improved the interface Plane->Create, cleaned code in
+gamgi_gtk_plane_create.c and gamgi_phys_plane.c, fixed 
+a recent dangling pointer.</li>
+<li>Atomic planes can now be created from any arbitrary
+parent object, with the parent atoms also copied.</li>
+<li>Prepared screenshots for the GAMGI 0.12 series.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Add Plane->Modify and Direction->Modify functionality.</li>
+<li>Replace set/get_data functions by structures
+defined in gtk/gamgi_object.h headers.</li>
+<li>Add Object->Copy dialogs with basic copy functionality.</li>
+<li>Add Contents and Container options in Object->Remove dialogs.</li>
+<li>Implement dynamic text objects, to measure distances,
+angles, etc. on real time.</li>
+<li>Implement global selection, including global picking
+algorithms and selection dialogs that include all the
+selection methods.</li>
+<li>Implement multiple object picking, including a
+dynamic frame with moving ants and dragging anchors,
+to select multiple objects and images from the screen.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.11.16</div><div>29th June 2006</div>
+</div>
+
+<div class="contents">
+
+Reorganized the crystallographic plane and direction code.
+Crystallographic planes and directions can now be automatic
+or independent objects. Crystallographic families of planes 
+can now be generated for a given range, including the whole 
+cell volume. Independent crystallographic planes can now 
+include automatically all the atoms within a given thickness.
+Redesigned the frontpage and improved the styling of www.gamgi.org.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Plane polygons are now illuminated from both sides,
+using glLightModeli (GL_LIGHT_MODEL_TWO_SIDE, GL_TRUE).</li>
+<li>Independent crystallographic planes can now include 
+automatically all the atoms within a given thickness.
+This is quite usefull for crystalline structure analysis.</li>
+<li>gamgi_gtk_direction_create.c is now importing the new
+direction data: 2 atom identifiers, automatic/independent,
+thickness, start and end order, scale. Thickness and direction
+order is not working yet though.</li>
+<li>Spam against the lists is increasing. All mail going from 
+non members to GAMGI lists is now automatically discarded. 
+Before it was kept for aproval.</li>
+<li>gamgi_gtk_plane_create.c is now importing the new
+plane data: 3 atom identifiers, automatic/independent, 
+thickness, start and end order, scale. Apart from atomic 
+planes and thickness everything else is now working.</li>
+<li>Cleaned the code to build directions, in 
+gamgi_phys_direction.c and gamgi_math_polygon.c.</li>
+<li>Fixed a little bug in direction rendering code: the line
+width was different in gamgi_mesa_draw.c and gamgi_mesa_scan.c.</li>
+<li>Independent directions now can be rotated, translated and scaled
+on their own. Automatic directions rotate, translate and scale
+the immediate parent above.</li>
+<li>The plane-atom distance for polygonal planes of any order 
+is now correctly measured.</li>
+<li>Independent planes now can be rotated, translated and scaled
+on their own. Automatic planes rotate, translate and scale
+the immediate parent above.</li>
+<li>Whole ranges of crystallographic planes belonging to the 
+same family can now be created automatically.</li>
+<li>A order parameter can now be used in XML files to
+indicate which plane in the family should be considered.</li>
+<li>Planes in direct space, intersecting the cell axes 
+in (n/h, n/k, n/l) can now be represented for any value of n.
+Before, only n = 1, the usual default, was possible.</li>
+<li>Code related with planes and directions is now 
+in gamgi_phys_plane.c and gamgi_phys_direction.c, respectively.
+Moved code to get plane and directions vectors to these files.
+Cleaned code in gamgi_phys_plane.c and gamgi_phys_direction.c</li>
+<li>Redesigned the www.gamgi.org front page.</li>
+<li>Fixed the links in the tutorials in www.gamgi.org.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Add Plane->Modify and Direction->Modify functionality.</li>
+<li>Replace set/get_data functions by structures
+defined in gtk/gamgi_object.h headers.</li>
+<li>Add Object->Copy dialogs with basic copy functionality.</li>
+<li>Add Contents and Container options in Object->Remove dialogs.</li>
+<li>Implement dynamic text objects, to measure distances,
+angles, etc. on real time.</li>
+<li>Implement global selection, including global picking
+algorithms and selection dialogs that include all the
+selection methods.</li>
+<li>Implement multiple object picking, including a
+dynamic frame with moving ants and dragging anchors,
+to select multiple objects and images from the screen.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.11.15</div><div>31th May 2006</div>
+</div>
+
+<div class="contents">
+
+The GAMGI Help system is working again, with files fetched locally,
+by HTTP or FTP, using GAMGI or a external browser, including the new
+notebook-style Help files that emulate the GAMGI task dialogs. Improved
+documentation. Two simple but crashing bugs were found and removed,
+afecting Molecule->Remove, Cell->Create and Cell->Modify.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Updated documentation in bond/create_lengtht.html</li>
+<li>Updated the titles for all html files in gamgi.org and distributed 
+with GAMGI.</li>
+<li>More improvements in the Help mechanism and data.</li>
+<li>Now Help automatically shows the documentation page covering the 
+notebook open page.</li>
+<li>Updated the Help->Start information.</li>
+<li>Found and removed a simple but crashing bug in gamgi_gtk_cell_create.c:
+and gamgi_gtk_cell_modify.c: "button_origin" instead of "button_translation".</li>
+<li>Found and removed a simple but crashing bug in gamgi_gtk_molecule_remove.c:
+"toggle_button_global" instead of "button_global".</li>
+<li>Updated code reading Help documentation, in gamgi_expat.h,
+gamgi_expat_import.c and gamgi_expat_import_help.c. Gamgi can 
+read now all board- and notebook-style documentation pages.</li>
+<li>Updated the INSTALL file distributed with Gamgi.</li>
+<li>Changed the GAMGI environment variable to GAMGI_HELP, 
+which now points directly to the doc/ directory.</li>
+<li>Help Search is working fine, with a browser.</li>
+<li>Help Tutorial is working again, with a browser.</li>
+<li>Help Current is working again, with a browser.</li>
+<li>Help Topic is working again, with a browser.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Add Plane->Modify and Direction->Modify functionality.</li>
+<li>Replace set/get_data functions by structures
+defined in gtk/gamgi_object.h headers.</li>
+<li>Add Object->Copy dialogs with basic copy functionality.</li>
+<li>Add Contents and Container options in Object->Remove dialogs.</li>
+<li>Implement dynamic text objects, to measure distances,
+angles, etc. on real time.</li>
+<li>Implement global selection, including global picking
+algorithms and selection dialogs that include all the
+selection methods.</li>
+<li>Implement multiple object picking, including a
+dynamic frame with moving ants and dragging anchors,
+to select multiple objects and images from the screen.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.11.14</div><div>11th May 2006</div>
+</div>
+
+<div class="contents">
+
+Wrote documentation for all the the working Config dialogs.
+Updated and wrote documentation for all the working Create dialogs
+(except Atom). Updated and wrote Tutorials. Improved the website.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Wrote documentation for second level cell symmetry dialogs:
+Systems, Lattices and Groups.</li>
+<li>Wrote documentation for Stereographic and Equivalent projections,
+for planes and directions.</li>
+<li>Rewrote the frontpage, with the same layout but better CSS and markup 
+code.</li>
+<li>Wrote the Interfaces documentation for the Direction->Create dialog.</li>
+<li>Wrote the Interfaces documentation for the Plane->Create dialog.</li>
+<li>Added two tutorials to build CsCl and NaCl cristalline structures.</li>
+<li>Updated the three tutorials on BCC, CFC and HCP interstices.</li>
+<li>Added a tutorial to build a structure cell of calcite (CaCO3).</li>
+<li>Updated the tutorial on orthorhombic polyethylene.</li>
+<li>Updated the Interfaces documentation for the Cell->Create dialog.</li>
+<li>Updated the Interfaces documentation for Text->Create 
+and Bond->Create dialogs.</li>
+<li>Wrote the Interfaces documentation for the second level dialogs 
+Cell Align Rotation and Cell Align Translation.</li>
+<li>Updated the Interfaces documentation for the Cell->Link dialog.</li>
+<li>Updated the Interfaces documentation for Layer->Create and
+Light->Create dialogs.</li>
+<li>Wrote the Help Interfaces documentation for all Object->Config
+dialogs (except Atom): Gamgi, Window, Layer, Light, Text, Bond, 
+Help.</li>
+<li>Changed the &lt;gamgi> XML attribute Beep to Sound, 
+to be consistent with the graphic interface.</li>
+<li>Created the file infrastructure for Help Interfaces.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Add Plane->Modify and Direction->Modify functionality.</li>
+<li>Replace set/get_data functions by structures
+defined in gtk/gamgi_object.h headers.</li>
+<li>Add Object->Copy dialogs with basic copy functionality.</li>
+<li>Add Contents and Container options in Object->Remove dialogs.</li>
+<li>Implement dynamic text objects, to measure distances,
+angles, etc. on real time.</li>
+<li>Implement global selection, including global picking
+algorithms and selection dialogs that include all the
+selection methods.</li>
+<li>Implement multiple object picking, including a
+dynamic frame with moving ants and dragging anchors,
+to select multiple objects and images from the screen.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.11.13</div><div>10th April 2006</div>
+</div>
+
+<div class="contents">
+
+Redesigned the dialogs Bond->Create, Bond->Modify and Bond->Config.
+Redesigned and improved functionality for dialogs Plane->Create
+and Direction->Create. Updated documentation for all Formats
+documentation (except for Atom).
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Found and removed a bug in gamgi_gtk_cell_modify.c:
+in static_press, static_volume must appear before static_faces.</li>
+<li>Replaced RHOMBUS, Rhombus, rhombus by PARALLELEPIPED, Parallelepiped,
+parallelepiped everywhere (the correct name for this Cell volume).</li>
+<li>Changed the &lt;gamgi> XML attributes background_r, background_g, 
+background_b, foreground_r, foreground_g, foreground_b to base_r, base_g, 
+base_b, text_r, text_g, text_b, to be consistent with the Gamgi->Config 
+dialog.</li>
+<li>Converted style and upgraded file formats documentation 
+for Window, Help and Gamgi.</li>
+<li>Converted style and upgraded file formats documentation for 
+Orbital, Group, Molecule, Cluster, Arrow, Shape, Graph and Assembly.</li>
+<li>Improved error checking for light colors in both interfaces and files.</li>
+<li>Converted style and upgraded file formats documentation for
+Text, Layer, Bond, Light objects.</li>
+<li>Redesigned the Bond->Config dialog according to the new style.</li>
+<li>Found and removed a bug: Laue planes were not properly recognized
+in the reciprocal lattice (the reciprocal lattice was used, not the direct 
+lattice), producing bogus area/node in Plane->Measure for I,F lattices.</li>
+<li>Solved all the Gtk difficulties related with 
+the implementation of notebook style Helps.</li>
+<li>Redesigned the dialog Direction->Create according to the
+new style and cleaned the code. This dialog now includes
+many other options, similar to Plane->Create.</li>
+<li>Redesigned the dialog Plane->Create according to the
+new style and cleaned the code. This dialog now includes 
+many other options to implement futurely, for atom-based planes, 
+independent planes (which own copies of the atoms in the plane), 
+ranges of family planes, etc.</li>
+<li>More improvements in www.gamgi.org: some pages have now the 
+new notebook style.</li>
+<li>The RCP code now includes a geometric and topological neighbour 
+analysis.</li>
+<li>Simplified tables and fixed the frontpage in www.gamgi.org.</li>
+<li>Changed all files in www.gamgi.org to new CSS and XHTML.</li>
+<li>Redesigned the dialogs Bond->Create and Bond->Modify 
+according to the new style and cleaned the code.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Add Plane->Modify and Direction->Modify functionality.</li>
+<li>Replace set/get_data functions by structures
+defined in gtk/gamgi_object.h headers.</li>
+<li>Add Object->Copy dialogs with basic copy functionality.</li>
+<li>Add Contents and Container options in Object->Remove dialogs.</li>
+<li>Implement dynamic text objects, to measure distances,
+angles, etc. on real time.</li>
+<li>Implement global selection, including global picking
+algorithms and selection dialogs that include all the
+selection methods.</li>
+<li>Implement multiple object picking, including a
+dynamic frame with moving ants and dragging anchors,
+to select multiple objects and images from the screen.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.11.12</div><div>13th March 2006</div>
+</div>
+
+<div class="contents">
+
+Moved everything in gamgi.org, except Documentation->Interfaces
+and the frontpage, to new XHTML and CSS styles, with simpler markup 
+and much heavier use of CSS. Notebook and Menu pure CSS pages are now 
+used. Double and triple bonds are now properly represented in both 
+Wired and Solid modes. With few modifications (C,Si,Na...), the 
+default color scheme used by Gabedit for atomic elements has been 
+adopted (resulting in a much more colorful Periodic Table).
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Moved Documentation Tutorials to the new tab-based style.</li>
+<li>Apart from the Reference Manual for Interfaces, 
+everything in www.gamgi.org should have been upgraded by 
+now to the new XHTML and CSS, including Documentation.</li>
+<li>Improved double and triple solid bond design, which is
+closer to chemical reality. These bonds are also rendered 
+with pre-compiled lists now.</li>
+<li>Gabedit has a periodic table with default colors for all elements 
+GAMGI is now using this color scheme, with a few modifications 
+(C green, Si yellow, Na blue, N lighter blue, S lighetr yellow).</li>
+<li>Double and triple bonds are now represented as double
+and triple lines in solid mode.</li>
+<li>Double and triple bonds are now represented as double
+and triple lines in wired mode.</li>
+<li>Updated documentation in www.gamgi.org: Description, 
+Installation, Code, Manuals, Bibliography, etc. Tested CSS 
+and XHTML validity.</li>
+<li>Started moving www.gamgi.org to new code, with simpler XHTML
+markup, better CSS and more elegant and intuitive interfaces
+for users. As a result, remote help support might be temporarily 
+unreliable.</li>
+<li>Successfuly compiled Gamgi on Intel-based 64 bits computers 
+running Suse Linux 10.0 x86_64. Added the configuration to make_local.
+</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Add Plane->Modify and Direction->Modify functionality.</li>
+<li>Replace set/get_data functions by structures
+defined in gtk/gamgi_object.h headers.</li>
+<li>Add Object->Copy dialogs with basic copy functionality.</li>
+<li>Add Contents and Container options in Object->Remove dialogs.</li>
+<li>Implement dynamic text objects, to measure distances,
+angles, etc. on real time.</li>
+<li>Implement global selection, including global picking
+algorithms and selection dialogs that include all the
+selection methods.</li>
+<li>Implement multiple object picking, including a
+dynamic frame with moving ants and dragging anchors,
+to select multiple objects and images from the screen.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.11.11</div><div>23th February 2006</div>
+</div>
+
+<div class="contents">
+
+Removed a couple of showstopper bugs affecting Cell->Create and 
+Cell->Modify. The Random Close Packing is now fully working in 
+Cell->Link. Global object linking is completed, though it is only 
+implemented so far in Cell->Link. Fixed size settings were removed 
+from all GAMGI dialogs, so changing fonts should be fine now.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Completed global object linking, in gamgi_gtk_object_link.c,
+seems to be working fine. Implemented only in Cell->Link so far. 
+Apart from objects with special needs (Atoms, Planes, Directions) 
+it will be trivial to extend this to all the other objects.</li>
+<li>Improved documentation: installation requirements.</li>
+<li>Upgraded for the latest Mesa 6.4.2 (solves a light bug),
+Freetype 2.1.10 and Expat 2.0.0 releases. Everything seems
+to be working fine.</li> 
+<li>With Mesa 5.0.2, a GLU sphere sets normal to (0,0,0), 
+and needs glNormal3d (0.0, 0.0, 1.0) at draw_layer to correct 
+the effect. Mesa 6.4.2, the last version, works fine.</li>
+<li>Found and removed a bug that crashed GAMGI after the
+RCP report was produced: the press code didn't know about
+the dialog change.</li>
+<li>Thanks to Daniel Burka, from the 
+<a href="http://labs.silverorange.com/">Silver Orange Laboratories</a>,
+who created the initial version, we have now a web tabs-based 
+template to show our Help documentation, available 
+<a href="http://www.gamgi.org/lab/notebook/cell_create_symmetry.html">
+here</a>.</li>
+<li>A single function, in gamgi_gtk_dialog.c, is now used 
+to create all reports in GAMGI, as in Voronoi tesselation,
+RCP construction and point symmetry analysis.</li>
+<li>The RCP building algorithm is now fully working, in the 
+Cell->Link dialog. A report dialog shows the results. Input 
+parameters were tested and are now safely controlled.</li>
+<li>Removed a simple but nasty bug (thanks Pedro) that crashed GAMGI 
+when pressing the screen with open System/Lattice/Group dialogs in 
+Cell->Create, Cell->Modify.</li>
+<li>Improved static_system, static_lattice, static_group,
+in gamgi_gtk_cell_symmetry.c, in particular removed all fixed 
+size settings. All dialogs in GAMGI are now size independent, 
+so they should look fine with any font.</li>
+<li>Removed font and slide bar settings from the xterm 
+command launched by the Shell button.</li>
+<li>Text->Create does not reset contents anymore, after 
+creating Text objects. This is more user-friendly and is 
+consistent with other object create dialogs, for example 
+Cell->Create and Atom->create.</li>
+<li>Removed size settings for: Vectors option menus in
+Direction->Create and Plane->Create, Align buttons in
+Cell->Create and Cell->Modify, List buttons in Cell->Create
+and Cell->Modify.</li>
+<li>Found and removed a bug in gamgi_mesa_axes.c: the
+length of the axes was wrongly calculated. Improved
+the code.</li>
+<li>Cleaned font menu handling in gamgi_gtk_text_create.c, 
+gamgi_gtk_text_modify.c and gamgi_gtk_text_config.c.</li>
+<li>Changed the static_row function in gamgi_gtk_help_tutorial.c,
+to avoid the bug in clist code reported below, although the bug
+was never found in Help->Tutorial.</li>
+<li>Removed size settings for: Vectors option menus in
+Cell->Link, Align->Translation, Align->Rotation; Plane/Direction
+option menus in Align->Translation, Align->Rotation; Planes
+button in Cell->Measure. With larger fonts, these widgets were
+clipping the text labels. Widget sizes should always be calculated
+automatically, anyway. These problems still exist on Text->Create, 
+Text->Modify and Window top menus.</li>
+<li>Found and removed a nasty, old bug in gamgi_gtk_cell_symmetry, 
+that crashed GAMGI (at least) when compiled with -O3, after pressing
+a List button in Cell->Create or Cell->Modify dialogs.</li>
+<li>Found and removed a minor, harmless bug in gamgi_mesa_text.c:
+height was useless.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Add Plane->Modify and Direction->Modify functionality.</li>
+<li>Replace set/get_data functions by structures
+defined in gtk/gamgi_object.h headers.</li>
+<li>Add Object->Copy dialogs with basic copy functionality.</li>
+<li>Add Contents and Container options in Object->Remove dialogs.</li>
+<li>Implement dynamic text objects, to measure distances,
+angles, etc. on real time.</li>
+<li>Implement global selection, including global picking
+algorithms and selection dialogs that include all the
+selection methods.</li>
+<li>Implement multiple object picking, including a
+dynamic frame with moving ants and dragging anchors,
+to select multiple objects and images from the screen.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.11.10</div><div>8th February 2006</div>
+</div>
+
+<div class="contents">
+
+Cleaned code and redesigned the dialogs Layer->Config, Light->Config,
+Text->Config, Gamgi->Config, Help->Config, Window->Config. Cleaned code
+and improved the design for dialogs Atom->Measure, Plane->Measure and 
+Direction->Measure. All object parsing and identification, in all dialogs,
+is now centralized in a small number of functions in gamgi_gtk_object.c
+Wrote the interface to enter data to generate RCP structures. The
+Cell->Link dialog was redesigned to futurely handle link of Objects
+but also different kinds of algorithm construction, including the RCP.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Improved CSS on www.gamgi.org.</li>
+<li>Redesigned and cleaned the dialogs Gamgi->Config 
+and Window->Config.</li>
+<li>Redesigned and cleaned the dialog Text->Config, 
+according to the new rules.</li>
+<li>Moved gamgi_gtk_gamgi_* code to gtk/gamgi/ directory.</li>
+<li>Added Rg (Roentgenium, Z = 111), to the list of accepted atom 
+elements in GAMGI.</li>
+<li>Redesigned and cleaned the dialogs Help->Config, Layer->Config
+and Light->Config, according to the new rules.</li>
+<li>Cleaned the code and improved the design of the dialogs
+Atom->Measure, Direction->Measure, Plane->Measure.</li>
+<li>Improved the Cell->Link dialog: used/unused notebook pages 
+are now automatically shown/hidden.</li>
+<li>Removed menu fixed sizing and cleaned in Cell, Layer, Light, Text 
+GTK code, to avoid problems with fonts.</li>
+<li>Improved gamgi_gtk_cell_link.c, to accept the RCP code.</li>
+<li>Replaced previous object parsing code in *modify*,
+*link* and *measure* GTK code by gamgi_gtk_object_number 
+and gamgi_gtk_object_name_number calls. All object parsing
+is now centralized in gamgi_gtk_object.c.</li>
+<li>Found and removed a bug (a typo) in gamgi_gtk_cell_measure.c,
+causing GAMGI to crash.</li>
+<li>Replaced previous object parsing code in *create* and
+*remove* GTK code by gamgi_gtk_object_name and 
+gamgi_gtk_object_name_number calls.</li>
+<li>Improved gamgi_gtk_object.c, to centralize ALL object parsing.</li>
+<li>Improved gamgi_engine_link.c, gamgi_engine_find.c and
+created gamgi_gtk_object.c, in preparation for global linking.</li>
+<li>Improved gamgi_gtk_cell_create.c: clicking the mouse only 
+results in Cell creation if Align Position is disabled.</li>
+<li>Added gamgi_gtk_object.c, to allow centralised object 
+recognition.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Add Plane->Modify and Direction->Modify functionality.</li>
+<li>Replace set/get_data functions by structures
+defined in gtk/gamgi_object.h headers.</li>
+<li>Add Object->Copy dialogs with basic copy functionality.</li>
+<li>Add Contents and Container options in Object->Remove dialogs.</li>
+<li>Implement dynamic text objects, to measure distances,
+angles, etc. on real time.</li>
+<li>Implement global selection, including global picking
+algorithms and selection dialogs that include all the
+selection methods.</li>
+<li>Implement multiple object picking, including a
+dynamic frame with moving ants and dragging anchors,
+to select multiple objects and images from the screen.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.11.9</div><div>13th January 2006</div>
+</div>
+
+<div class="contents">
+
+Epitaxial relations and all sort of complex Cell position 
+and orientation relations with the current Layer and other 
+Cells are now fully working, for all types of Cells.
+Redesigned the object selection system, so now there is
+a single entry point for ALL object selection in GAMGI.
+The global object selection mechanism is now implemented.
+Redesigned the Cell->Link dialog, and added functionality
+to allow global Cell linking with other objects. Removed 
+a couple of bugs in gtk code and math code.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Revised gamgi_math_measure.c, to correct origin and rotation issues.</li>
+<li>Corrected Cell translation with a reference Layer, in gamgi_gtk_cell_align.c.
+</li>
+<li>Complex rotation and translation relations between multiple Cells 
+and the current Layer are now working fine and can be easily established,
+including all sorts of epitaxial relations. Polished gamgi_gtk_cell_align.c,
+together with gamgi_gtk_cell_create.c and gamgi_gtk_cell_modify.c.</li>
+<li>Found and removed a very simple but nasty bug (a typo), just 
+introduced in the current version, resulting in wrong Cell->Link 
+behaviour. Checked gamgi_gtk_cell_create.c and gamgi_gtk_cell_modify.c
+for equivalent typos.</li>
+<li>Improved gamgi_gtk_cell_position.c, so second level dialogs
+in Cell->Create and Cell->Modify are now ready to handle
+translation, rotation cell alignments.</li>
+<li>Improved gamgi_gtk_cell_link.c, so Cell->Link is now ready 
+to handle object, static and dynamic linking modes.</li>
+<li>Simplified notation in gamgi_gtk_*.c files: item
+instead of menu_item, menu instead of option_menu in 
+get_data/set_data functions, button instead of toggle_button.</li>
+<li>Found and removed a bug in the Cell translation code: 
+the origin translation, after a change of origin, was wrong, 
+when rotations were involved.</li>
+<li>The mechanism to perform global object linking is working 
+fine (tested in Cell->Link) and is simple and robust.</li>
+<li>All functions are now working with the new selection functions.
+Improved the gamgi_mesa_select.c layout.</li>
+<li>Converted gamgi_gtk_modify* and gamgi_gtk_remove* 
+functions to new selection architecture.</li>
+<li>Redesigned the whole object selection architecture:
+there is now a single function managing the whole procedure,
+with a callback mechanism, making object selection code much
+more elegant and easier to maintain and expand.</li>
+<li>Gamgi is running on my IBM ThinkPad T43, with Ubuntu Breezy 5.10 
+(with all library dependencies compiled by myself).</li>
+<li>Redesigned the dialog Layer->Link, according to the 
+new style. Started preparing global object links with this 
+dialog.</li>
+<li>Added two screenshots to www.gamgi.org.</li>
+<li>Found and removed a bug in Cell->Modify: in three get_data 
+calls the old name Origin was still used, instead of Translation, 
+causing Gamgi to crash.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Add Plane->Modify and Direction->Modify functionality.</li>
+<li>Replace set/get_data functions by structures
+defined in gtk/gamgi_object.h headers.</li>
+<li>Add Object->Copy dialogs with basic copy functionality.</li>
+<li>Add Contents and Container options in Object->Remove dialogs.</li>
+<li>Implement dynamic text objects, to measure distances,
+angles, etc. on real time.</li>
+<li>Implement global selection, including global picking
+algorithms and selection dialogs that include all the
+selection methods.</li>
+<li>Implement multiple object picking, including a
+dynamic frame with moving ants and dragging anchors,
+to select multiple objects and images from the screen.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.11.8</div><div>21th December 2005</div>
+</div>
+
+<div class="contents">
+
+Redesigned completely the dialogs Light->Create and Light->Modify,
+Layer->Create and Layer->Modify, Text->Create and Texte->Modify.
+Implemented all the GUI funcionality for the second level dialogs 
+Cell->Translation and Cell->Rotation. Found and removed a Light
+bug affecting the Layer background color. Found and removed a
+bug in Cell->Modify affecting the Cell position.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Implemented all the Gtk-related functionality in
+the dialogs Align->Translation and Align->Rotation.</li>
+<li>Redesigned the dialogs Text->Create and Text->Modify,
+according to the new style used in Cell->Create and Cell->Modify.
+</li>
+<li>Implemented Align->Translation and Align->Rotation dialogs 
+in Cell->Create and Cell->Modify, to allow complex Cell positioning.</li> 
+<li>Found and removed two bugs in gamgi_gtk_cell_modify: in 
+Absolute and Relative modes, the base was the physical instead
+of the logical origin, leading to wrong cell positions in two cases.</li>
+<li>Improved error checking in gamgi_gtk_cell_modify, regarding 
+origin node.</li>
+<li>Found and removed a bug: when using a light background color, 
+this changed AFTER the first draw, when lights were created. 
+Disabling lighting before the layer blend code solves the problem, 
+so now the background color remains always constant.</li>
+<li>Improved Cell->Create and Cell->Modify dialogs, to accept 
+level 1 dialogs, to align cell origin and orientation.</li>
+<li>Redesigned the dialogs Layer->Create and Light->Modify, 
+according to the new style used in Cell->Create and Cell->Modify.
+</li>
+<li>Redesigned the dialogs Light->Create and Light->Modify, 
+according to the new style used in Cell->Create and Cell->Modify.
+</li>
+<li>To allow users to change the language immediately, without
+restarting GAMGI, we are planning to store dialog labels and 
+messages in XML files.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Add Plane->Modify and Direction->Modify functionality.</li>
+<li>Replace set/get_data functions by structures
+defined in gtk/gamgi_object.h headers.</li>
+<li>Add Object->Copy dialogs with basic copy functionality.</li>
+<li>Add Contents and Container options in Object->Remove dialogs.</li>
+<li>Implement dynamic text objects, to measure distances,
+angles, etc. on real time.</li>
+<li>Implement global selection, including global picking
+algorithms and selection dialogs that include all the
+selection methods.</li>
+<li>Implement multiple object picking, including a
+dynamic frame with moving ants and dragging anchors,
+to select multiple objects and images from the screen.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.11.7</div><div>2nd December 2005</div>
+</div>
+
+<div class="contents">
+
+A fast version of the Jodrey algorithm to generate Random
+Close Packed Structures (RCP) has been developed and tested. 
+The XML formats documentation has been fully updated. The
+word GAMGI is now a European Union Trademark.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Integrated the RCP code in GAMGI: gamgi_phys_rcp.[c,h].</li>
+<li>A new version of the RCP code, with double lists 
+for ranges and going only until density = 0.65, shows 
+no improvements.</li>
+<li>The new implementation of the RCP Jodrey algorithm 
+is about 7 times faster for 50,000 atoms than before.</li>
+<li>The word GAMGI is now a registered trademark 
+in all 25 countries of the European Union!</li>
+<li>In the RCP code, cell lists should be single but 
+range lists should be double, as data concentrates
+in the same range list, at end of the calculation.</li>
+<li>The new implementation of the RCP Jodrey algorithm is
+about 20 times faster than the previous version, 
+for a 500 atom system.</li>
+<li>Added &lt;float.h> to the list of primary libs included
+in gamgi_engine.h.</li>
+<li>Updated the formats documentation for all config data.</li>
+<li>Updated the formats documentation for all object data.</li>
+<li>A new version of the RCP code, separating all atoms
+from their pairs, shows no improvements.</li>
+<li>A second version of the Jodrey algorithm is now running,
+based on cells, about 8.5 times faster for a 500 atom system.</li>
+<li>Implemented the Jodrey algorithm to build a Random Close
+Packing (RCP) atomic glass, with periodic boundary conditions.
+</li>
+<li>Updated XML DTDs for all object and config data.</li>
+<li>Found and removed a bug in gamgi_phys_cell_link for Sphere 
+and Parallelepiped Volumes, with Objects cutoff: the first node 
+is no longer the origin, so atom coordinates were wrong.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Add Plane->Modify and Direction->Modify functionality.</li>
+<li>Replace set/get_data functions by structures
+defined in gtk/gamgi_object.h headers.</li>
+<li>Add Object->Copy dialogs with basic copy functionality.</li>
+<li>Add Contents and Container options in Object->Remove dialogs.</li>
+<li>Implement dynamic text objects, to measure distances,
+angles, etc. on real time.</li>
+<li>Implement global selection, including global picking
+algorithms and selection dialogs that include all the
+selection methods.</li>
+<li>Implement multiple object picking, including a
+dynamic frame with moving ants and dragging anchors,
+to select multiple objects and images from the screen.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.11.6</div><div>22th October 2005</div>
+</div>
+
+<div class="contents">
+
+The Cell->Create and Cell->Modify dialogs are completely new,
+providing a simpler interface and more functionality: 
+Cells axes and the Cell node (000) can now be easily controled 
+using these dialogs. Crystallographic Planes and Directions 
+in direct space can now be imported/exported to GAMGI XML files.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Simplified static_apply_object in gamgi_expat_import.c.</li>
+<li>Direct space visual representations of Planes and 
+Directions can now be exported/imported to GAMGI XML files.</li>
+<li>All the new Origin functionality is now fully available
+from the Cell->Modify dialog.</li>
+<li>Cleaned gamgi_gtk_cell_create* and gamgi_gtk_cell_modify* files.</li>
+<li>Found and removed a subtle bug in gamgi_gtk_cell_modify.c:
+enable menus before changing their order, otherwise...</li>
+<li>Merged gamgi_phys_wyckoff* into gamgi_phys_symmetry* files, 
+so all arrays with crystallographic data are now in the same file.
+</li>
+<li>Renamed gamgi_gtk_cell_crystal* and gamgi_phys_crystal* as 
+gamgi_gtk_cell_symmetry* and gamgi_phys_symmetry*, respectively.</li>
+<li>Redesigned the Cell->Modify dialog, as Cell->Create before,
+to support more Cell functionality.</li>
+<li>All the origin functionality is now working in the new
+Cell->Create dialog. This includes nodes (primitive and centered)
+and axes, with both primitive and conventional vectors.</li>
+<li>Redesigned the Dialog->Create dialog, which is now based 
+on a notebook widget, to support more Cell functionality.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Add Plane->Modify and Direction->Modify functionality.</li>
+<li>Replace set/get_data functions by structures
+defined in gtk/gamgi_object.h headers.</li>
+<li>Add Object->Copy dialogs with basic copy functionality.</li>
+<li>Add Contents and Container options in Object->Remove dialogs.</li>
+<li>Implement dynamic text objects, to measure distances,
+angles, etc. on real time.</li>
+<li>Implement global selection, including global picking
+algorithms and selection dialogs that include all the
+selection methods.</li>
+<li>Implement multiple object picking, including a
+dynamic frame with moving ants and dragging anchors,
+to select multiple objects and images from the screen.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.11.5</div><div>8th October 2005</div>
+</div>
+
+<div class="contents">
+
+Completed the reorganization of the Cell Link code, which
+is now simpler and can handle any origin node (000) change, 
+making the GAMGI patterns to link nodes even more useful.
+These origin changes are now properly handled in reciprocal
+lattice transformations and the plane (hkl) indexing in the 
+reciprocal lattice is also ready to support them (the GUI code
+is still lacking). New screenshots.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>The plane indexing for all reciprocal lattices and
+cell volumes, when the cell origin, node (000), is moved 
+to any other arbitrary node (inside the cell or not), is 
+completed and tested. This should be the last major task
+to adapt all the GAMGI Cell code to work with arbitrary
+node (000) positioning. What remains to be done is Gtk code.</li>
+<li>Improved quaternion identification globally.</li>
+<li>Improved the code handling cell origin and cell axes in 
+gamgi_expat_import_object.c and gamgi_expat_export_object.c.</li>
+<li>The Reciprocal Lattice transformation now handles gracefully
+any change in cell origin, node (000), for all Cell lattices 
+and volumes.</li>
+<li>More gamgi_phys_cell_link.c cleaning.</li>
+<li>Made a full backup for /home/gamgi/ at www_gamgi_org.</li>
+<li>Added new screenshots, from Amelia Almeida PhD thesis, 
+showing Al-based intermetallic compounds.</li>
+<li>Cleaned again gamgi_phys_cell_link.c, which is now more 
+powerful, more elegant and much simpler to maintain.</li>
+<li>New Cell->Link is now working for Wigner-Seitz Cell volumes.</li>
+<li>Updated the gamgi_phys_cell.c API, so same functions can also be used in 
+gamgi_phys_cell_link.c code.</li>
+<li>Added Debian Sid/Sarge default configuration to make_local, 
+thanks to Carlos A. Neves, Instituto de Química da Universidade de São 
+Paulo.</li>
+<li>New Cell->Link is now working for R nodes in Conventional Cell 
+volumes.</li>
+<li>New Cell->Link is now working for C nodes in Conventional Cell 
+volumes.</li>
+<li>New Cell->Link is now working for B nodes in Conventional Cell 
+volumes.</li>
+<li>New Cell->Link is now working for A nodes in Conventional Cell 
+volumes.</li>
+<li>New Cell->Link is now working for I nodes in Conventional Cell 
+volumes.</li>
+<li>New Cell->Link is now working for P nodes in Conventional Cell 
+volumes.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Add Plane->Modify and Direction->Modify functionality.</li>
+<li>Replace set/get_data functions by structures
+defined in gtk/gamgi_object.h headers.</li>
+<li>Add Object->Copy dialogs with basic copy functionality.</li>
+<li>Add Contents and Container options in Object->Remove dialogs.</li>
+<li>Implement dynamic text objects, to measure distances,
+angles, etc. on real time.</li>
+<li>Implement global selection, including global picking
+algorithms and selection dialogs that include all the
+selection methods.</li>
+<li>Implement multiple object picking, including a
+dynamic frame with moving ants and dragging anchors,
+to select multiple objects and images from the screen.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.11.4</div><div>26th September 2005</div>
+</div>
+
+<div class="contents">
+
+Planes and Directions can now be represented outside the
+Cell Volume. Removed a bug when drawing bonds. The cell
+origin can now be changed to any node, even outside the Cell
+volume. Cell axes can now be represented, with primitive
+or conventional vectors. Cell->Link already works with 
+arbitrary cell origins, for Primitive, Parallelepiped, Sphere,
+Conventional Hexagonal Cell Volumes, allowing many more patterns
+to fill Cells. Most indexing work to translate planes in
+the reciprocal lattice, when the cell origin changes, is done.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Replaced static_parallelepiped_sphere_points and 
+static_parallelepiped_sphere_index in gamgi_phys_cell_link
+by common functions static_primitive_points and static_primitive_index,
+valid also for conventional cases.</li>
+<li>Removed the special (000) node position in Sphere and Parallelepiped 
+Cell volumes. Code to create node coordinates and indexes is now
+simpler, but the node (000) is not necessarily the first in the array.</li>
+<li>Cell->Link is now working fine (including replication)
+when the lattice is hP and the Volume is Conventional.</li>
+<li>Cell->Link is now working fine (including replication) 
+when the cell origin is moved, for Primitive volumes.</li>
+<li>Cell->Link is now working fine when the cell origin 
+is moved, for Sphere and Parallelepiped volumes.</li>
+<li>Introduced functions gamgi_math_cell_orientation_get
+and gamgi_math_cell_orientation_get, so now the interface
+with a cell position/orientation is exclusively done 
+through these 4 get/set (mentioned below) functions.</li>
+<li>Separated gamgi_math_cell_position in
+gamgi_math_cell_orientation_set and gamgi_math_cell_position_set,
+so the interface with these functions is cleaner. These
+functions shift the cell to the new origin node.</li>
+<li>The cell (000) node origin can now be changed to
+any other lattice, using conventional or primitive
+vectors coordinates. The notation 000, 110, 101, 011,
+111, 211, 122 is used to indicate inner nodes in
+conventional cells.</li>
+<li>Origin axes (conventional or primitive) can now be 
+imported and exported to GAMGI XML files.</li>
+<li>Developed (and tested) functions to convert nodes from
+conventional to primitive coordinates and vice-versa.</li>
+<li>Cell axes can now be represented in Conventional and
+Primitive vectors. The new code is used also for Layer axes.
+Both Cell and Layer axes are also drawn in scan mode.</li>
+<li>Found and removed a serious old bug affecting vertical 
+bonds and axes: the rotation axis could be (0,0,0).</li>
+<li>Rewrote the code to built axes for layers and for cells.</li>
+<li>When the reciprocal lattice is determined, the origin
+should be always at (000) (users can change the origin after
+that).</li>
+<li>Found and removed a bug in gamgi_phys_plane.c:
+in gamgi_math_polygon_scan (), use cell_new->points instead 
+of cell->points, as the two arrays might be different.</li>
+<li>Found and removed a typo (but potentially harmful)
+in gamgi_math_vector_translation: n3 instead of n2.</li>
+<li>When the Cell origin changes, Planes and Directions 
+are represented correctly now, in direct space.</li>
+<li>When the Cell origin changes, properties measured from 
+Planes in the reciprocal space are correctly calculated now.</li>
+<li>Planes,Directions outside the Cell volume can now be created 
+safely (the representation is built with the 3,2 points used 
+to define the object.</li>
+<li>When the Cell origin changes, the Planes in the reciprocal 
+space are correctly identified now.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Add Plane->Modify and Direction->Modify functionality.</li>
+<li>Replace set/get_data functions by structures
+defined in gtk/gamgi_object.h headers.</li>
+<li>Add Object->Copy dialogs with basic copy functionality.</li>
+<li>Add Contents and Container options in Object->Remove dialogs.</li>
+<li>Implement dynamic text objects, to measure distances,
+angles, etc. on real time.</li>
+<li>Implement global selection, including global picking
+algorithms and selection dialogs that include all the
+selection methods.</li>
+<li>Implement multiple object picking, including a
+dynamic frame with moving ants and dragging anchors,
+to select multiple objects and images from the screen.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.11.3</div><div>10th August 2005</div>
+</div>
+
+<div class="contents">
+
+Crystallographic planes and directions can now be directly
+visualized. Sphere and Parallelepiped volumes now have the
+standard default orientation and the code is much simpler. 
+Cleaned and reorganized important sections of the crystallographic 
+code. Found and removed a nasty memory bug that went unnoticed 
+for years.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Direct visualizations of crystallographic Planes and 
+Directions can now be easily created, without restrictions, 
+for all types of Cell volumes.</li>
+<li>Replaced Cell Rhombus by Cell Parallelepiped (the correct
+name) in all gamgi_phys code. Extend futurely to the whole 
+code and documentation.</li>
+<li>Lots of cleaning in gamgi_phys_cell_create.c,
+gamgi_phys_cell.c and gamgi_phys_plane.c: more than
+2000 code lines were moved away or made redundant.</li>
+<li>Cell->Link is working again, with the new code for Cell
+Rhombus and Sphere volumes.</li>
+<li>Rewrote all the code covering Cell Parallelepiped and Sphere 
+volumes. This is much simpler and easier to maintain than the
+tricky code we had before. Moreover, now both Cell Parallelogram 
+and Sphere volumes obey the standard orientation for conventional 
+cells.</li>
+<li>Found and removed a nasty bug, that went unnoticed for years:
+points = cell->points was missing in functions handling centered
+cells in gamgi_phys_cell_create.c. It worked because points was
+defined just before, to the same address, and by "chance" it was 
+still valid!</li>
+<li>Started cleaning all the crystallographic code. Rhombus
+and Sphere in reciprocal lattice are now fully working with 
+the new code.</li>
+<li>Polygon functions are now reunited in the file 
+gamgi_math_polygon.c, which helps cleaning the Cell code.</li>
+<li>Cell rhombus volumes are now built with the same orientation
+as the other cell volumes, with the conventional vectors along
+the main axes.</li>
+<li>Uncoupled the code to find nodes inside a sphere and to get 
+the node range to search, used somewhere else. Fixed this code.</li>
+<li>Crystallographic directions can now be seen as segments, 
+for all volumes and types of cells.</li>
+<li>Found and removed a bug in gamgi_phys_plane.c: in spherical
+volumes, horizontal planes as (001) produced bogus rotation matrices.
+</li>
+<li>Replaced triangle_fans by a single loop, when describing
+a plane by a polygon.</li>
+<li>Implemented a 3D version of the Graham's algorithm to build 
+convex polygons, much simpler than our previous algorithm.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Add Plane->Modify and Direction->Modify functionality.</li>
+<li>Replace set/get_data functions by structures
+defined in gtk/gamgi_object.h headers.</li>
+<li>Add Object->Copy dialogs with basic copy functionality.</li>
+<li>Add Contents and Container options in Object->Remove dialogs.</li>
+<li>Implement dynamic text objects, to measure distances,
+angles, etc. on real time.</li>
+<li>Implement global selection, including global picking
+algorithms and selection dialogs that include all the
+selection methods.</li>
+<li>Implement multiple object picking, including a
+dynamic frame with moving ants and dragging anchors,
+to select multiple objects and images from the screen.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.11.2</div><div>16th July 2005</div>
+</div>
+
+<div class="contents">
+
+Crystallographic planes can now be represented by polygons, for all 
+volumes, with minor restrictions. The Cell orientation in a Spherical 
+volume is now the same as for Conventional, Primitive, Wigner-Seitz 
+cell volumes. 
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Polygonal planes now works for spherical Cell volumes.</li>
+<li>Found and removed a bug: sometimes GAMGI crashes in 
+gamgi_engine_copy_out_cluster, after modifying a Layer after 
+using Save several times after various Voronoi tesselations. 
+Reason: n_paints was not copied.</li>
+<li>Polygonal planes now support cell rotations and 
+translations, before and after plane creation.</li>
+<li>Polygonal planes are now working, still with shortcomings.</li>
+<li>The code to get a direct, polygonal, representation of 
+a plane is partly written and seems to work fine.</li>
+<li>Replaced large and complex static_sphere code in 
+gamgi_phys_cell_create.c, gamgi_phys_cell_link.c and 
+gamgi_phys_plane.c by small, simple and slightly slower code
+(not critical, as these functions run only once when creating, 
+linking or measuring cells). Moreover, the node orientation in 
+Sphere volume is now the same as for Conventional, Primitive and 
+Wigner-Seitz volumes.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Add Plane->Modify and Direction->Modify functionality.</li>
+<li>Replace set/get_data functions by structures
+defined in gtk/gamgi_object.h headers.</li>
+<li>Add Object->Copy dialogs with basic copy functionality.</li>
+<li>Add Contents and Container options in Object->Remove dialogs.</li>
+<li>Improve Move and Rotate interactive usability.</li>
+<li>Implement dynamic text objects, to measure distances,
+angles, etc. on real time.</li>
+<li>Implement global selection, including global picking
+algorithms and selection dialogs that include all the
+selection methods.</li>
+<li>Implement multiple object picking, including a
+dynamic frame with moving ants and dragging anchors,
+to select multiple objects and images from the screen.</li>
+<li>Review the entire GAMGI code, file by file.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.11.1</div><div>4th July 2005</div>
+</div>
+
+<div class="contents">
+
+Crystallographic planes are now working fine in the reciprocal
+space, for all Bravais lattices and cell volumes. Corrected
+several errors in the Rhombus cell volume code.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>The planes in the reciprocal lattice are now rotating and
+translating fine.</li>
+<li>The atom-plane and atom-direction for crystallographic planes
+and directions are now measured from the atom to the cell origin.</li>
+<li>All the plane properties are now measured correctly when
+the plane is directly linked to its reciprocal space cell.</li>
+<li>The distance per node now measures the real distance,
+when the direction indices are multiple.</li>
+<li>Redesigned the code to get hkl (reciprocal space) and uvw 
+(direct space) vectors in cells and cleaned code accordingly:
+gamgi_math_measure.c and gamgi_mesa_rotate_out.c.</li>
+<li>Found and removed a bug in the Cell Link code for Rhombus
+volumes: the y node coordinates can be negative, when cells
+have angles larger than 90 degrees.</li>
+<li>Found and removed a bug in the Cell Create code for Rhombus 
+volumes: node positions were not correctly generated.</li>
+<li>Found and removed a bug in the Cell Link code for Rhombus 
+volumes: the length increases for the outer cell were wrong.</li>
+<li>Determined the plane positions for all lattices and volumes
+in the reciprocal space.</li>
+<li>Determined the plane indices for all lattices and volumes
+in the reciprocal space.</li>
+<li>Planes can now be automatically added to reciprocal space
+lattices.</li>
+<li>Cleaned the toolbar,statusbar color code 
+in gamgi_gtk_window.c and gamgi_gtk_statusbar.c.</li>
+<li>The statusbar now shows accumulated Rotate,Move,Scale 
+actions done with the ruler.</li>
+<li>Rotate,Move,Scale ruler parameters can now be imported.</li>
+<li>Rotate,Move,Scale ruler parameters can now be exported.</li>
+<li>Cleaned gamgi_gtk_statusbar.c.</li>
+<li>Added file_import.html and file_export.html documentation files
+to Help->Current and Help->Topic.</li>
+<li>The ruler now supports accurate, step-by-step incremental values,
+for Rotate, Move and Scale.</li>
+<li>Added the Window->Config dialog, to set the max,step parameters 
+needed to improve the rotate,move,scale ruler functionality.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Add Plane->Modify and Direction->Modify functionality.</li>
+<li>Replace set/get_data functions by structures
+defined in gtk/gamgi_object.h headers.</li>
+<li>Add Object->Copy dialogs with basic copy functionality.</li>
+<li>Add Contents and Container options in Object->Remove dialogs.</li>
+<li>Improve Move and Rotate interactive usability.</li>
+<li>Implement dynamic text objects, to measure distances,
+angles, etc. on real time.</li>
+<li>Implement global selection, including global picking
+algorithms and selection dialogs that include all the
+selection methods.</li>
+<li>Implement multiple object picking, including a
+dynamic frame with moving ants and dragging anchors,
+to select multiple objects and images from the screen.</li>
+<li>Review the entire GAMGI code, file by file.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI old</div><div>&nbsp;</div>
+</div>
+
+<div class="contents">
+
+Changelogs for older releases can be found here.
+
+<p/>
+
+<ul>
+<li><a href="changelogs10.html">GAMGI 0.10.1 - GAMGI 0.11</a></li>
+<li><a href="changelogs09.html">GAMGI 0.09.1 - GAMGI 0.10</a></li>
+<li><a href="changelogs08.html">GAMGI 0.08.1 - GAMGI 0.09</a></li>
+<li><a href="changelogs07.html">GAMGI 0.07.18 - GAMGI 0.08</a></li>
+</ul>
+
+</div>
+
+<div id="bottom">
+<a href="../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

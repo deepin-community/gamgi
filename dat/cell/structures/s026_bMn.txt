@@ -1,0 +1,23 @@
+Structure 26
+Prototype: beta-Mn
+StrukturBericht / Pearson: A13 / cP20
+
+lattice parameters:
+Mn
+6.315
+
+Radius:
+Mn: 1.3655 (half-distance)
+
+1. Building with space group (s026.xml):
+213
+
+Wyckoff positions:
+8c, x = 0.0636
+12d, y = 0.2022
+
+Cells 1 x 1 x 1
+
+View:
+Mn: style solid, size 0.8, variancy 0.0, scale 1.0
+MnMn: method length default, style solid, scale 1.0

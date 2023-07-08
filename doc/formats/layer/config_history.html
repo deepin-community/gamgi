@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Formats: Layer Config</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Layer Config</h1>
+
+<div id="notebook">
+<ul>
+<li><a href="config_projection.html">Projection</a></li>
+<li><a href="config_position.html">Position</a></li>
+<li><span>History</span></li>
+</ul>
+</div>
+
+<div class="contents">
+
+<h3>undo, save</h3>
+
+Set the maximum number of past configurations that can be saved in memory, 
+using the <b>undo</b> and <b>save</b> mechanisms. Everytime this number 
+is exceeded, the oldest configuration is discarded forever.
+
+<p/>
+
+Although the number of <b>undo</b> and <b>save</b> levels 
+does not affect performance, the memory required to handle 
+multiple windows, with multiple layers, each layer with 
+<b>undo</b> and <b>save</b> past configurations in memory,
+can be significant. Therefore, <b>undo</b> and <b>save</b>
+parameters should be kept to relatively low values, particularly
+<b>undo</b>, where new configurations are generated automatically,
+without any user intervention. <b>save</b> works exactly as <b>undo</b>,
+except that configurations are saved manually by users.
+
+<pre>
+Example: <b>&lt;layer undo="5" save="5"/></b> (default)
+(defined in <b>GAMGI_ENGINE_UNDO</b> and <b> GAMGI_ENGINE_SAVE</b>)
+Allowed values: non-negative integer (optional)
+</pre>
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

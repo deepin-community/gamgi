@@ -1,0 +1,390 @@
+<!-- - - - - - - - - - - - - - - - - - - - 
+ |                                        |
+ | $GAMGI/doc/dtd/gml_data.dtd            |
+ |                                        |
+ | Copyright (C) 2001 Carlos Pereira      |
+ |                                        |
+ | Distributed under the terms of the GNU |
+ | General Public License: $GAMGI/LICENSE |
+ |                                        |
+ - - - - - - - - - - - - - - - - - - - - -->
+
+<!-- GAMGI Markup Language (GML) DTD: object mode -->
+
+<!ELEMENT window (layer)*>
+
+<!ELEMENT layer (light | assembly | graph | shape | arrow | cluster |
+molecule | group | plane | direction | atom | bond | orbital | text)*>
+
+<!ELEMENT light EMPTY>
+
+<!ELEMENT assembly (assembly | graph | shape | arrow | cluster | 
+molecule | group | plane | direction | atom | bond | orbital | text)*>
+
+<!ELEMENT graph (text)*>
+
+<!ELEMENT shape (text)*>
+
+<!ELEMENT arrow (text)*>
+
+<!ELEMENT cell (cluster | molecule | group |
+plane | direction | atom | bond | orbital | text)*>
+
+<!ELEMENT cluster (cluster | molecule | group |
+plane | direction | atom | bond | orbital | text)*>
+
+<!ELEMENT molecule (group | plane | direction | atom | bond | orbital | text)*>
+
+<!ELEMENT group (group | plane | direction | atom | bond | orbital | text)*>
+
+<!ELEMENT plane (direction | atom | bond | orbital | text)*>
+
+<!ELEMENT direction (atom | bond | orbital | text)*>
+
+<!ELEMENT atom (bond | orbital | text)*>
+
+<!ELEMENT bond (orbital | text)*>
+
+<!ELEMENT orbital (text)*>
+
+<!ELEMENT text (text)*>
+
+
+<!ENTITY % name "CDATA #IMPLIED">
+
+<!ENTITY % id "#ID #IMPLIED">
+
+<!ENTITY % parent "#IDREF #IMPLIED">
+
+<!ATTLIST window 
+%name;
+%id;
+
+x CDATA "10"
+y CDATA "10"
+
+width CDATA "750"
+height CDATA "550"
+
+top    (yes | no) "yes"
+medium (yes | no) "yes"
+bottom (yes | no) "yes"
+>
+
+<!ATTLIST layer
+%name;
+%id;
+%parent;
+
+perspective (yes | no) "yes"
+
+top  CDATA "0.5"
+near CDATA "1.0" 
+far  CDATA "100.0" 
+
+eye_x CDATA "0.0"
+eye_y CDATA "0.0"
+eye_z CDATA "10.0"
+
+center_x CDATA "0.0"
+center_y CDATA "0.0"  
+center_z CDATA "0.0"
+
+up_x  CDATA "0.0"
+up_y  CDATA "1.0"
+up_z; CDATA "0.0"
+
+out (yes | partial | no) "yes"
+in  (yes | partial | no) "yes"
+
+axis (yes | no) "no"
+
+red   CDATA "0.0"
+green CDATA "0.0"
+blue  CDATA "0.0"
+
+scale CDATA "1.0"
+>
+
+<!ATTLIST light
+%name;
+%id;
+%parent;
+
+ambient_r CDATA #IMPLIED 
+ambient_g CDATA #IMPLIED
+ambient_b CDATA #IMPLIED
+
+diffuse_r CDATA #IMPLIED 
+diffuse_g CDATA #IMPLIED
+diffuse_b CDATA #IMPLIED
+
+specular_r CDATA #IMPLIED
+specular_g CDATA #IMPLIED
+specular_b CDATA #IMPLIED
+
+position_x CDATA #IMPLIED 
+position_y CDATA #IMPLIED
+position_z CDATA #IMPLIED
+
+direction_x CDATA #IMPLIED
+direction_x CDATA #IMPLIED
+direction_x CDATA #IMPLIED
+
+angle CDATA "90.0"
+
+constant  CDATA "1.0"
+linear    CDATA "0.0"
+quadratic CDATA "0.0"
+radial    CDATA "0.0"
+>
+
+<!ATTLIST assembly
+%name;
+%id;
+%parent;
+
+scale CDATA "1.0"
+>
+
+<!ATTLIST graph
+%name;
+%id;
+%parent;
+
+scale CDATA "1.0"
+>
+
+<!ATTLIST shape
+%name;
+%id;
+%parent;
+
+scale CDATA "1.0"
+>
+
+<!ATTLIST arrow
+%name;
+%id;
+%parent;
+
+scale CDATA "1.0"
+>
+
+<!ATTLIST cell
+%name;
+%id;
+%parent;
+
+system (cubic | tetragonal | orthorhombic | 
+hexagonal | monoclinic | anorthic) #REQUIRED
+
+lattice (P | I | C | F | R) #REQUIRED
+
+group CDATA #IMPLIED
+
+a  CDATA #IMPLIED 
+b  CDATA #IMPLIED 
+c  CDATA #IMPLIED 
+ab CDATA #IMPLIED
+ac CDATA #IMPLIED
+bc CDATA #IMPLIED
+
+volume (conventional | primitive | wigner |
+parallelepiped | sphere | projection) #REQUIRED
+
+n1 CDATA #IMPLIED "1"
+n2 CDATA #IMPLIED "1"
+n3 CDATA #IMPLIED "1"
+
+v1  CDATA #IMPLIED
+v2  CDATA #IMPLIED
+v3  CDATA #IMPLIED
+v12 CDATA #IMPLIED
+v13 CDATA #IMPLIED
+v23 CDATA #IMPLIED
+
+x  CDATA #IMPLIED "0.0"
+y  CDATA #IMPLIED "0.0"
+z  CDATA #IMPLIED "0.0"
+
+e1 CDATA #IMPLIED "0.0"
+e2 CDATA #IMPLIED "0.0"
+e3 CDATA #IMPLIED "0.0"
+
+o1 CDATA #IMPLIED "0"
+o2 CDATA #IMPLIED "0"
+o3 CDATA #IMPLIED "0"
+o4 (000 | 011 | 101 | 110 | 111 | 122 | 211) "000"
+o_vectors (conventional | primitive) "conventional"
+
+axes (yes | no) "no"
+axes_vectors (conventional | primitive) "conventional"
+
+borders (all | faces | edges | none) "all"
+faces (yes | no) "no"
+nodes (yes | no) "yes"
+
+red   CDATA "1.0"
+green CDATA "1.0"
+blue  CDATA "1.0"
+
+scale CDATA "1.0"
+>
+
+<!ATTLIST cluster
+%name;
+%id;
+%parent;
+
+scale CDATA "1.0"
+>
+
+<!ATTLIST molecule
+%name;
+%id;
+%parent;
+
+scale CDATA "1.0"
+>
+
+<!ATTLIST group
+%name;
+%id;
+%parent;
+
+scale CDATA "1.0"
+>
+
+<!ATTLIST plane
+%name;
+%id;
+%parent;
+
+h CDATA #IMPLIED 
+k CDATA #IMPLIED 
+l CDATA #IMPLIED
+
+vectors (conventional | primitive) "conventional"
+
+projection (wulff | schmidt) #IMPLIED
+
+pole (yes | no) #IMPLIED
+trace (yes | no) #IMPLIED
+
+red   CDATA "1.0"
+green CDATA "1.0"
+blue  CDATA "0.0"
+
+scale CDATA "1.0"
+>
+
+<!ATTLIST direction
+%name;
+%id;
+%parent;
+
+u CDATA #IMPLIED
+v CDATA #IMPLIED
+l CDATA #IMPLIED
+
+vectors (conventional | primitive) "conventional"
+
+projection (wulff | schmidt) #IMPLIED
+
+pole (yes | no) #IMPLIED
+trace (yes | no) #IMPLIED
+
+red   CDATA "0.0"
+green CDATA "1.0"
+blue  CDATA "1.0"
+
+scale CDATA "1.0"
+>
+
+<!ATTLIST atom
+%name;
+%id;
+%parent;
+
+element CDATA #REQUIRED
+
+x CDATA #REQUIRED 
+y CDATA #REQUIRED
+z CDATA #REQUIRED
+
+type CDATA #IMPLIED 
+
+mass   CDATA #IMPLIED 
+radius CDATA #IMPLIED
+charge CDATA #IMPLIED
+
+style (wired | solid) "wired"
+variancy CDATA #IMPLIED
+size CDATA #IMPLIED
+
+red   CDATA #IMPLIED
+green CDATA #IMPLIED
+blue  CDATA #IMPLIED
+
+scale CDATA "1.0"
+>
+
+<!ATTLIST bond
+%name; 
+%id;
+
+parent1 #IDREF #REQUIRED
+parent2 #IDREF #REQUIRED
+
+covalency CDATA #IMPLIED
+order CDATA "1.0"
+
+style (wired, solid) "wired"
+size CDATA #IMPLIED
+
+color (yes | no) "no"
+red   CDATA #IMPLIED
+green CDATA #IMPLIED
+blue  CDATA #IMPLIED
+
+scale CDATA "1.0"
+>
+
+<!ATTLIST orbital
+%name;
+%id;
+%parent;
+
+scale CDATA "1.0"
+>
+
+<!ATTLIST text
+%name;
+%id;
+%parent;
+
+contents CDATA #REQUIRED
+
+style (wired | solid) "wired"
+
+font (roman | roman_mono | sans | sans_bold | sans_italic |
+sans_bold_italic | serif | serif_bold | script | script_bold |
+gothic_english | gothic_german | gothic_italian | symbol_sans |
+symbol_serif | symbol_serif_bold | mono mono_bold |
+mono_italic | mono_bold_italic) "roman"
+
+x  CDATA #IMPLIED "0.0"
+y  CDATA #IMPLIED "0.0"
+z  CDATA #IMPLIED "0.0"
+
+e1 CDATA #IMPLIED "0.0"
+e2 CDATA #IMPLIED "0.0"
+e3 CDATA #IMPLIED "0.0"
+
+red   CDATA #IMPLIED "0.0"
+green CDATA #IMPLIED "1.0"
+blue  CDATA #IMPLIED "0.0"
+
+scale CDATA "1.0"
+>

@@ -1,0 +1,9 @@
+<gml>
+<molecule name="C5">
+<atom element="C" x="-0.01000" y="0.00100" z="3.29999"/>
+<atom element="C" x="0.00000" y="-0.00100" z="1.60000"/>
+<atom element="C" x="0.00000" y="-0.00100" z="0.00000"/>
+<atom element="C" x="0.00000" y="0.00100" z="-1.60000"/>
+<atom element="C" x="0.01000" y="-0.00100" z="-3.29999"/>
+</molecule>
+</gml>

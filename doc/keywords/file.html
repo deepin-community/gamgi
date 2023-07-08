@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Keywords: File</title>
+<link rel="icon" type="image/png" href="../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../css/board.css"/>
+</head>
+
+<body>
+
+<div class="board">
+<div>File</div><div>&nbsp;</div>
+</div>
+
+<div class="contents">
+
+GAMGI exports files to the following formats: <b>xml</b>, <b>xyz</b>,
+<b>x3d</b>, <b>png</b>, <b>jpeg</b>, <b>tiff</b>, by simply writing the
+filename with this extension name in the <b>File->Export</b> dialog.
+
+<p/>
+
+GAMGI imports files from the following formats: <b>xml</b>, <b>xyz</b>,
+by simply writing the filename with this extension name in the
+<b>File->Import</b> dialog.
+
+<h3>xml</h3>
+
+This is the GAMGI native file format to import and export everything in GAMGI,
+including object and config data. It uses all the advantages of the XML text
+file specifications. The specific format used in GAMGI is described in detail
+in the documentation, in <b>Help->Topic->Formats</b>. GAMGI exports only
+the contents of the current object.
+
+<h3>xyz</h3>
+
+This is a simple file format to describe sets of atoms. It is very convenient
+to import and export atomic data to and from other sources. Essentially,
+the first line indicates the number of atoms, the second line is a comment,
+and then each line contains the chemical element and the x,y,z coordinates
+of a single atom. GAMGI exports only the atoms belonging to the current object.
+
+<h3>x3d</h3>
+
+This is the modern XML version of the VRML text file format specification,
+to describe 3D graphic scenes, with all sorts of objects and lights. GAMGI
+exports only the current layer of the current window, with everything inside,
+to X3D format.
+
+<h3>png, jpeg, tiff</h3>
+
+GAMGI exports the entire pixel representation of the current window, as
+a single image, to one of these formats. GAMGI also accepts the three letter
+names commonly used in some operating systems: jpg and tif.
+
+<p/>
+
+Initially Gamgi creates a ppm file of the entire screen of the current
+window, and then uses the standalone facilities pnmtopng, pnmtojpeg and
+pnmtotiff (commonly available in Unix/Linux/BSD systems) to convert to
+png, jpeg and tiff file formats.
+
+</div>
+
+<div id="bottom">
+<a href="../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+Superconductor (Tc = 103 K): TlBa2CaCu2O7-x
+Structure: 1212
+
+Space group: 123
+
+Lattice parameters:
+3.8566 12.754
+
+Wyckoff positions:
+Ba 2h, z = 0.2842
+Tl 1b
+Ca 1c
+Cu 2g, z = 0.1255
+O 4i, z = 0.1210
+O 2g, z = 0.3421
+O 1d
+
+1. with Cell (s12a.xml):
+Bond: Color 0.5,0.5,0.5, Scale 0.4
+
+2. with Polytopes (s12b.xml):
+Cell Change XYZ: 0.5, 0.5, 0.5
+Cells: 2 x 2 x 2
+Neighbours: O
+Number: 5
+
+References:
+H. Shaked, P.M. Keane, J.C. Rodriguez, F.F. Owen, R.L. Hitterman,
+J.D. Jorgensen, Crystal structures of the High-Tc Superconducting
+Copper-Oxides, Physica C, Elsevier Science, Amsterdam, 1994
+(Errata: data -> O4 is missing; image -> O4 and Bi are swapped)
+
+B. Morosin, D.S. Ginley, P.F.Hlava, M.J. Carr,
+R.J. Baughman, J.E. Schirber, E.L. Venturini, and J.F. Kwak
+Physica C 152, 413 (1988)

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE gml SYSTEM "http://www.gamgi.org/dtd/gamgi.dtd">
+<gml>
+  <gamgi>
+    <light shininess="0.0010"/>
+    <atom style="solid" size="3.00" slices="50"/>
+  </gamgi>
+  <window x="200" y="207" width="700" height="500">
+    <layer perspective="no" scale="1.351">
+      <light ambient_r="0.500" ambient_g="0.500" ambient_b="0.500"
+      diffuse_r="0.400" diffuse_g="0.400" diffuse_b="0.400" specular_r="0.300"
+      specular_g="0.300" specular_b="0.300" direction_x="0.5000"
+      direction_y="-1.0000" direction_z="-1.0000"/>
+      <cell system="c" lattice="P" a="4.0000" x="-1.9952" y="-1.8372"
+      z="-0.0058" scale="1.537"/>
+      <molecule name="glycine" scale="1.076">
+        <atom id="1" element="N" x="-1.1944" y="-0.6462" z="0.6454"
+        red="0.204" green="0.396" blue="0.643"/>
+        <atom id="2" element="C" x="-0.7282" y="0.7151" z="0.4001" red="0.306"
+        green="0.604" blue="0.024"/>
+        <atom id="3" element="C" x="0.4135" y="0.7236" z="-0.5919" red="0.306"
+        green="0.604" blue="0.024"/>
+        <atom id="4" element="O" x="0.9220" y="-0.4800" z="-1.1729"
+        red="0.800" green="0.000" blue="0.000"/>
+        <atom id="5" element="H" x="-1.6196" y="-1.2818" z="-0.1172"
+        red="0.827" green="0.843" blue="0.812"/>
+        <atom id="6" element="H" x="-0.6386" y="-1.5173" z="0.9595"
+        red="0.827" green="0.843" blue="0.812"/>
+        <atom id="7" element="H" x="-1.5524" y="1.3376" z="0.0062" red="0.827"
+        green="0.843" blue="0.812"/>
+        <atom id="8" element="H" x="-0.3923" y="1.1825" z="1.3420" red="0.827"
+        green="0.843" blue="0.812"/>
+        <atom id="9" element="O" x="0.8791" y="1.8282" z="-0.8681" red="0.800"
+        green="0.000" blue="0.000"/>
+        <atom id="10" element="H" x="1.6698" y="-0.2503" z="-1.7958"
+        red="0.827" green="0.843" blue="0.812"/>
+        <bond parent1="1" parent2="2"/>
+        <bond parent1="1" parent2="5"/>
+        <bond parent1="1" parent2="6"/>
+        <bond parent1="2" parent2="3"/>
+        <bond parent1="2" parent2="7"/>
+        <bond parent1="2" parent2="8"/>
+        <bond parent1="3" parent2="4"/>
+        <bond parent1="3" parent2="9" order="2.00"/>
+        <bond parent1="4" parent2="10"/>
+      </molecule>
+    </layer>
+    <layer perspective="no">
+      <text contents="the smallest" font="script" x="-10.1821" y="2.9416"
+      z="0.0000" scale="0.900"/>
+      <text contents="protein" font="script" x="-11.4479" y="1.8889"
+      z="0.0000" scale="0.900"/>
+      <text contents="aminoacid" font="script" x="-8.5368" y="1.8667"
+      z="0.0000" scale="0.900"/>
+      <text contents="starting with" font="script" x="-10.4243" y="-1.0889"
+      z="0.0000" scale="0.900"/>
+      <text contents="a" font="script" x="-9.5989" y="-2.1777" z="0.0000"
+      scale="0.900"/>
+      <text contents="letter" font="script" x="-7.8468" y="-2.2222" z="0.0000"
+      scale="0.900"/>
+      <text contents="G" x="-8.7544" y="-2.1778" z="0.0000" scale="0.900"/>
+      <text contents="Glycine" style="solid" font="sans_bold_italic"
+      x="5.3345" y="2.6889" z="0.0000" red="0.600" green="0.800" blue="0.200"/>
+      <text contents="C" style="solid" x="6.2608" y="1.5334" z="0.0000"
+      red="0.500" green="0.800" blue="0.500" scale="0.700"/>
+      <text contents="C" style="solid" x="7.6714" y="1.4889" z="0.0000"
+      red="0.500" green="0.800" blue="0.500" scale="0.700"/>
+      <text contents="N" style="solid" x="4.9005" y="1.5111" z="0.0000"
+      red="0.500" green="0.800" blue="0.500" scale="0.700"/>
+      <text contents="H" style="solid" x="6.7614" y="1.5334" z="0.0000"
+      red="0.500" green="0.800" blue="0.500" scale="0.700"/>
+      <text contents="H" style="solid" x="5.4280" y="1.5333" z="0.0000"
+      red="0.500" green="0.800" blue="0.500" scale="0.700"/>
+      <text contents="H" style="solid" x="9.3780" y="1.4417" z="-0.0014"
+      e1="0.28" e2="167.22" e3="193.20" red="0.500" green="0.800" blue="0.500"
+      scale="0.700"/>
+      <text contents="O" style="solid" x="8.2070" y="1.4666" z="0.0000"
+      red="0.500" green="0.800" blue="0.500" scale="0.700"/>
+      <text contents="O" style="solid" x="8.7895" y="1.4667" z="0.0000"
+      red="0.500" green="0.800" blue="0.500" scale="0.700"/>
+      <text contents="2" style="solid" x="5.9205" y="1.2222" z="0.0000"
+      red="0.500" green="0.800" blue="0.500" scale="0.600"/>
+      <text contents="2" style="solid" x="7.2947" y="1.2000" z="0.0000"
+      red="0.500" green="0.800" blue="0.500" scale="0.600"/>
+      <text contents="is good for you!" font="script" x="4.3946" y="-3.4122"
+      z="0.0000" e1="0.00" e2="30.32" e3="0.00" scale="0.850"/>
+    </layer>
+  </window>
+</gml>

@@ -1,0 +1,19 @@
+Structure 23
+Prototype: alpha-Hg
+StrukturBericht / Pearson: A10 / hR1
+
+lattice parameter:
+Hg
+3.464 6.677
+
+Radius:
+Hg 1.5025 (half-distance)
+
+1. Building with space group (s023.xml):
+Group: 166
+
+Wyckoff positions:
+Hg 1a
+
+View:
+Hg: style solid, size 1.0, variancy 1.0, scale 0.5

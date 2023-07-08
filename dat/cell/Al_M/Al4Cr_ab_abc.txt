@@ -1,0 +1,11 @@
+group 194 P6_3/mmc
+
+Al4Cr alloy
+
+left: along direction [001]
+right: in perspective
+
+hP lattice a = 1.998 nm c = 2.467 nm
+
+Amelia Almeida, Desenvolvimento de Ligas Aluminio-Metal 
+de Transicao por Sintese Assistida por Laser, PhD thesis

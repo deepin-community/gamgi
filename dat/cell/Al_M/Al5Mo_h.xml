@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE gml SYSTEM "http://www.gamgi.org/dtd/gamgi.dtd">
+<gml>
+  <gamgi>
+    <atom slices="16"/>
+  </gamgi>
+  <layer perspective="no" scale="0.5">
+    <light ambient_r="0.400" ambient_g="0.400" ambient_b="0.400"
+    diffuse_r="0.700" diffuse_g="0.700" diffuse_b="0.700" direction_x="0.0000"
+    direction_y="0.0000" direction_z="-1.0000"/>
+    <cell group="173" a="4.9100" c="8.8600" x="3.8634" y="-3.4226" z="3.7988"
+    e1="82.83" e2="89.77" e3="84.99" scale="0.710">
+      <atom element="Mo" x="1.2935" y="-3.5618" z="4.9871" radius="0.6000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Mo" x="3.6323" y="0.6210" z="7.1539" radius="0.6000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Mo" x="-1.2587" y="0.6943" z="6.7286" radius="0.6000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Mo" x="3.3657" y="-4.1259" z="9.4025" radius="0.6000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Mo" x="-1.5253" y="-4.0527" z="8.9772" radius="0.6000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Mo" x="0.8135" y="0.1301" z="11.1440" radius="0.6000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Mo" x="1.3290" y="5.2288" z="6.0936" radius="0.6000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Mo" x="3.4012" y="4.6646" z="10.5090" radius="0.6000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Mo" x="-1.4898" y="4.7379" z="10.0838" radius="0.6000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Al" x="1.3112" y="0.8335" z="5.5403" radius="0.5000"
+      red="0.000" green="0.650" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Al" x="3.6146" y="-3.7742" z="6.6006" radius="0.5000"
+      red="0.000" green="0.650" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Al" x="-1.2764" y="-3.7010" z="6.1754" radius="0.5000"
+      red="0.000" green="0.650" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Al" x="3.3834" y="0.2694" z="9.9557" radius="0.5000"
+      red="0.000" green="0.650" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Al" x="-1.5076" y="0.3426" z="9.5305" radius="0.5000"
+      red="0.000" green="0.650" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Al" x="0.7958" y="-4.2651" z="10.5908" radius="0.5000"
+      red="0.000" green="0.650" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Al" x="3.6500" y="5.0163" z="7.7071" radius="0.5000"
+      red="0.000" green="0.650" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Al" x="-1.2410" y="5.0896" z="7.2819" radius="0.5000"
+      red="0.000" green="0.650" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Al" x="0.8312" y="4.5254" z="11.6973" radius="0.5000"
+      red="0.000" green="0.650" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Al" x="3.8634" y="-3.4226" z="3.7988" radius="0.5000"
+      red="0.000" green="0.650" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Al" x="3.8812" y="0.9727" z="4.3520" radius="0.5000"
+      red="0.000" green="0.650" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Al" x="-1.0276" y="-3.3493" z="3.3735" radius="0.5000"
+      red="0.000" green="0.650" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Al" x="-1.0098" y="1.0460" z="3.9268" radius="0.5000"
+      red="0.000" green="0.650" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Al" x="5.9356" y="-3.9867" z="8.2142" radius="0.5000"
+      red="0.000" green="0.650" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Al" x="5.9534" y="0.4086" z="8.7674" radius="0.5000"
+      red="0.000" green="0.650" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Al" x="1.0446" y="-3.9135" z="7.7889" radius="0.5000"
+      red="0.000" green="0.650" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Al" x="1.0624" y="0.4818" z="8.3422" radius="0.5000"
+      red="0.000" green="0.650" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Al" x="-3.8464" y="-3.8402" z="7.3637" radius="0.5000"
+      red="0.000" green="0.650" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Al" x="-3.8286" y="0.5551" z="7.9170" radius="0.5000"
+      red="0.000" green="0.650" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Al" x="3.1168" y="-4.4776" z="12.2043" radius="0.5000"
+      red="0.000" green="0.650" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Al" x="3.1346" y="-0.0823" z="12.7576" radius="0.5000"
+      red="0.000" green="0.650" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Al" x="-1.7742" y="-4.4043" z="11.7791" radius="0.5000"
+      red="0.000" green="0.650" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Al" x="-1.7564" y="-0.0091" z="12.3324" radius="0.5000"
+      red="0.000" green="0.650" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Al" x="3.8989" y="5.3680" z="4.9053" radius="0.5000"
+      red="0.000" green="0.650" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Al" x="-0.9921" y="5.4413" z="4.4800" radius="0.5000"
+      red="0.000" green="0.650" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Al" x="5.9711" y="4.8038" z="9.3207" radius="0.5000"
+      red="0.000" green="0.650" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Al" x="1.0801" y="4.8771" z="8.8954" radius="0.5000"
+      red="0.000" green="0.650" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Al" x="-3.8109" y="4.9504" z="8.4702" radius="0.5000"
+      red="0.000" green="0.650" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Al" x="3.1523" y="4.3130" z="13.3108" radius="0.5000"
+      red="0.000" green="0.650" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Al" x="-1.7387" y="4.3862" z="12.8856" radius="0.5000"
+      red="0.000" green="0.650" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Al" x="2.9327" y="-1.3886" z="5.4054" radius="0.5000"
+      red="0.000" green="0.650" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Al" x="-1.9583" y="-1.3153" z="4.9802" radius="0.5000"
+      red="0.000" green="0.650" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Al" x="0.6116" y="-1.1761" z="3.7919" radius="0.5000"
+      red="0.000" green="0.650" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Al" x="5.0049" y="-1.9527" z="9.8208" radius="0.5000"
+      red="0.000" green="0.650" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Al" x="5.2538" y="-1.6010" z="7.0190" radius="0.5000"
+      red="0.000" green="0.650" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Al" x="0.1139" y="-1.8794" z="9.3956" radius="0.5000"
+      red="0.000" green="0.650" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Al" x="2.6838" y="-1.7402" z="8.2073" radius="0.5000"
+      red="0.000" green="0.650" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Al" x="0.3628" y="-1.5278" z="6.5938" radius="0.5000"
+      red="0.000" green="0.650" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Al" x="-2.2072" y="-1.6670" z="7.7821" radius="0.5000"
+      red="0.000" green="0.650" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Al" x="2.4350" y="-2.0919" z="11.0092" radius="0.5000"
+      red="0.000" green="0.650" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Al" x="-0.1350" y="-2.2311" z="12.1975" radius="0.5000"
+      red="0.000" green="0.650" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Al" x="-2.4560" y="-2.0187" z="10.5839" radius="0.5000"
+      red="0.000" green="0.650" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Al" x="2.2597" y="3.1948" z="4.4869" radius="0.5000"
+      red="0.000" green="0.650" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Al" x="4.5808" y="2.9823" z="6.1004" radius="0.5000"
+      red="0.000" green="0.650" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Al" x="-0.3102" y="3.0556" z="5.6752" radius="0.5000"
+      red="0.000" green="0.650" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Al" x="4.3319" y="2.6306" z="8.9023" radius="0.5000"
+      red="0.000" green="0.650" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Al" x="2.0108" y="2.8431" z="7.2888" radius="0.5000"
+      red="0.000" green="0.650" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Al" x="-0.5591" y="2.7039" z="8.4771" radius="0.5000"
+      red="0.000" green="0.650" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Al" x="1.7620" y="2.4914" z="10.0906" radius="0.5000"
+      red="0.000" green="0.650" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Al" x="-2.8802" y="2.9163" z="6.8635" radius="0.5000"
+      red="0.000" green="0.650" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Al" x="-3.1290" y="2.5647" z="9.6654" radius="0.5000"
+      red="0.000" green="0.650" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Al" x="4.0830" y="2.2789" z="11.7042" radius="0.5000"
+      red="0.000" green="0.650" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Al" x="1.5131" y="2.1397" z="12.8925" radius="0.5000"
+      red="0.000" green="0.650" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Al" x="-0.8080" y="2.3522" z="11.2789" radius="0.5000"
+      red="0.000" green="0.650" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+    </cell>
+    <atom element="Al" x="-12.9960" y="6.9550" z="-1816.5000" radius="0.5000"
+    red="0.000" green="0.650" blue="0.000" style="solid" variancy="1.00"
+    size="1.00"/>
+    <atom element="Mo" x="-10.3560" y="6.7520" z="-1816.5000" radius="0.6000"
+    red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+    size="1.00"/>
+  </layer>
+</gml>

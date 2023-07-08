@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Formats</title>
+<link rel="icon" type="image/png" href="../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../css/board.css"/>
+</head>
+
+<body>
+
+<div class="board">
+<div>File Formats</div><div>&nbsp;</div>
+</div>
+
+<div class="contents">
+
+Files can be imported in <b>.xyz</b> and <b>.xml</b> native format, 
+selected automatically by the file extension. Files can be exported 
+in <b>.ps</b>, <b>.ppm</b>, <b>.jp[e]g</b>, <b>.png</b>, <b>.tif[f]</b>,
+<b>.x3d</b> and native <b>.xml</b> formats, selected automatically by 
+the file extension. Formats <b>.jp[e]g</b>, <b>.png</b> and <b>.tif[f]</b>
+require <b>pnmtojpeg</b>, <b>pnmtopng</b>, <b>pnmtotiff</b>, widely 
+available and usually installed by default in most systems.
+
+<p/>
+
+Files can be exported using <b>File->Export</b>. Only the object and 
+config data regarding the currently selected object is actually exported!
+To  select  an object, choose <b>Object->Select</b> and press over the object.
+Or choose the object class on the menu above, with the  middle  button, before 
+pressing on the object. Or press twice <b>Layer</b>, <b>Window</b> or <b>Gamgi</b>
+on the menu above. When the object has no visual representation, press the
+mouse over the graphic area, to pop up a menu. The statusbar shows the 
+selected object (left) and layer (right).
+
+<p/>
+
+Files can be imported using <b>File->Import</b> or adding 
+filenames to the command line, when starting Gamgi:
+
+<pre><b>
+gamgi file_1.xml ... file_n.xml
+</b></pre>
+
+where file_n.xml is a fullname such as:
+
+<pre><b>
+../dat/molecule/flavors/garlic.xml
+~/gamgi/dat/molecule/flavors/garlic.xml
+http://www.gamgi.org/dat/molecule/flavors/garlic.xml
+ftp://ftp.gamgi.org/gamgi/dat/molecule/flavors/garlic.xml
+</b></pre>
+
+<p/>
+
+Object  and  config data can be mixed, so file_1.xml might be a preferences 
+file, loaded before the other object files. To automate the  procedure, just 
+add a line as this to .bashrc:
+
+<pre><b>
+alias gamgi=&apos;gamgi ~/gamgi/my_defaults.xml&apos;
+</b></pre>
+
+<p/>
+
+Detailed explanations of valid formats, are available at
+<a href="http://www.gamgi.org/formats/reference.html">
+http://www.gamgi.org/formats/formats.html</a>, <b>doc/formats/formats.html</b>
+or <b>Help->Topic->Formats</b>.
+
+</div>
+
+<div id="bottom">
+<a href="../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

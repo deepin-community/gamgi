@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Interfaces: Assembly Create</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/board.css"/>
+</head>
+
+<body>
+
+<div class="board">
+<div>Assembly Create</div><div>&nbsp;</div>
+</div>
+
+<div class="contents">
+
+<b>Assembly->Create</b> creates a new assembly.
+
+<h3>Assembly</h3>
+
+The <b>Assembly</b> entry provides a name for the assembly object. 
+This is optional: when empty (or filled with separator characters, 
+as space, tab, newline), the assembly will be named Assembly.
+Object identification is explained in <b>Introduction Identification</b>.
+
+<p/>
+
+An assembly is a container whose primary purpose is to contain other objects.
+When an assembly is created, it has no child objects and consequently no visual
+representation. The only way to select an empty assembly is therefore to write
+its identification or to use the mechanisms provided by <b>Assembly Select</b>.
+
+<p/>
+
+To avoid this problem, when <b>Ok</b> is pressed and the new assembly 
+is created, the <b>Assembly Create</b> dialog is automatically replaced 
+by the <b>Assembly Link</b> dialog, with the new assembly identification 
+already inscribed on it. How to link objects to a assembly (TODO) is 
+described in the section <b>Assembly Link</b>.
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

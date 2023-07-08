@@ -1,0 +1,29 @@
+Structure 34
+Prototype: MgNi2
+StrukturBericht / Pearson: C36 / hP24
+
+Lattice parameter:
+MgNi2         EuNi2
+4.805 15.770  5.39 17.49
+HfZn2         Cr2Ti
+5.19 16.89    4.932 16.01
+HfMn2         Cr2Zr
+5.016 16.37   5.100 16.61
+
+Radius:
+Mg 1.5985 (half-distance)
+Ni 1.2460 (half-distance)
+
+1. Building with space group (s034.xml):
+Group: 194
+
+Wyckoff positions:
+Mg 4e, z = 0.094
+Mg 4f, z = 0.844
+Ni 4f, z = 0.125
+Ni 6g
+Ni 6h, x = 0.16667
+
+View:
+Mg,Ni: style solid, size 1.0, variancy 1.0, scale 0.25
+NiNi style solid, method length, color 0.5,0.5,0.5, size 0.5, scale 0.5

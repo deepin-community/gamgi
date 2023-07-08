@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE gml SYSTEM "http://www.gamgi.org/dtd/gamgi.dtd">
+<gml>
+  <layer perspective="no" scale="0.500">
+    <light ambient_r="0.500" ambient_g="0.500" ambient_b="0.500"
+    diffuse_r="0.400" diffuse_g="0.400" diffuse_b="0.400" specular_r="0.300"
+    specular_g="0.300" specular_b="0.300" direction_x="0.0000"
+    direction_y="0.0000" direction_z="-1.0000"/>
+    <cell group="123" a="5.4100" c="15.7300" x="-3.0541" y="-7.4061"
+    z="-10.5550" e1="80.00" e2="90.00" e3="205.00">
+      <atom id="1" element="Sr" x="-3.0541" y="-3.0795" z="-9.7921"
+      style="solid"/>
+      <atom id="2" element="Sr" x="-0.7677" y="-3.9309" z="-4.9635"
+      style="solid"/>
+      <atom id="3" element="Sr" x="1.8490" y="-2.6824" z="-12.0437"
+      style="solid"/>
+      <atom id="4" element="Sr" x="4.1354" y="-3.5339" z="-7.2151"
+      style="solid"/>
+      <atom id="5" element="Sr" x="-3.0541" y="3.7583" z="-8.5864"
+      style="solid"/>
+      <atom id="6" element="Sr" x="-0.7677" y="2.9069" z="-3.7578"
+      style="solid"/>
+      <atom id="7" element="Sr" x="1.8490" y="4.1553" z="-10.8380"
+      style="solid"/>
+      <atom id="8" element="Sr" x="4.1354" y="3.3039" z="-6.0094"
+      style="solid"/>
+      <atom id="9" element="Cu" x="0.5406" y="-1.5329" z="-8.1908"
+      style="solid"/>
+      <atom id="10" element="Cu" x="0.5406" y="1.7574" z="-7.6107"
+      style="solid"/>
+      <atom id="11" element="Pb" x="0.5406" y="-5.9030" z="-8.9614"
+      style="solid"/>
+      <atom id="12" element="Pb" x="0.5406" y="6.1274" z="-6.8401"
+      style="solid"/>
+      <atom id="13" element="Y" x="-3.0541" y="0.3394" z="-9.1893"
+      style="solid"/>
+      <atom id="14" element="Y" x="-0.7677" y="-0.5120" z="-4.3606"
+      style="solid"/>
+      <atom id="15" element="Y" x="1.8490" y="0.7364" z="-11.4409"
+      style="solid"/>
+      <atom id="16" element="Y" x="4.1354" y="-0.1150" z="-6.6123"
+      style="solid"/>
+      <atom id="17" element="Cu" x="-3.0541" y="-7.4061" z="-10.5550"
+      style="solid"/>
+      <atom id="18" element="Cu" x="-0.7677" y="-8.2575" z="-5.7264"
+      style="solid"/>
+      <atom id="19" element="Cu" x="1.8490" y="-7.0091" z="-12.8066"
+      style="solid"/>
+      <atom id="20" element="Cu" x="4.1354" y="-7.8605" z="-7.9780"
+      style="solid"/>
+      <atom id="21" element="Cu" x="-3.0541" y="8.0849" z="-7.8235"
+      style="solid"/>
+      <atom id="22" element="Cu" x="-0.7677" y="7.2335" z="-2.9949"
+      style="solid"/>
+      <atom id="23" element="Cu" x="1.8490" y="8.4819" z="-10.0751"
+      style="solid"/>
+      <atom id="24" element="Cu" x="4.1354" y="7.6305" z="-5.2465"
+      style="solid"/>
+      <atom id="25" element="O" x="0.5406" y="-3.7822" z="-8.5874"
+      style="solid"/>
+      <atom id="26" element="O" x="0.5406" y="4.0067" z="-7.2141"
+      style="solid"/>
+      <atom id="27" element="O" x="-3.0541" y="-5.6231" z="-10.2406"
+      style="solid"/>
+      <atom id="28" element="O" x="-0.7677" y="-6.4745" z="-5.4120"
+      style="solid"/>
+      <atom id="29" element="O" x="1.8490" y="-5.2261" z="-12.4922"
+      style="solid"/>
+      <atom id="30" element="O" x="4.1354" y="-6.0775" z="-7.6636"
+      style="solid"/>
+      <atom id="31" element="O" x="-3.0541" y="6.3019" z="-8.1379"
+      style="solid"/>
+      <atom id="32" element="O" x="-0.7677" y="5.4505" z="-3.3093"
+      style="solid"/>
+      <atom id="33" element="O" x="1.8490" y="6.6989" z="-10.3895"
+      style="solid"/>
+      <atom id="34" element="O" x="4.1354" y="5.8475" z="-5.5609"
+      style="solid"/>
+      <atom id="35" element="O" x="-1.9109" y="-1.5084" z="-7.0257"
+      style="solid"/>
+      <atom id="36" element="O" x="-0.6025" y="-0.8842" z="-10.5658"
+      style="solid"/>
+      <atom id="37" element="O" x="2.9922" y="-1.1113" z="-9.2773"
+      style="solid"/>
+      <atom id="38" element="O" x="1.6838" y="-1.7356" z="-5.7372"
+      style="solid"/>
+      <atom id="39" element="O" x="-1.9109" y="1.3358" z="-6.5242"
+      style="solid"/>
+      <atom id="40" element="O" x="-0.6025" y="1.9600" z="-10.0643"
+      style="solid"/>
+      <atom id="41" element="O" x="2.9922" y="1.7328" z="-8.7758"
+      style="solid"/>
+      <atom id="42" element="O" x="1.6838" y="1.1086" z="-5.2357"
+      style="solid"/>
+      <bond parent1="1" parent2="27" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.400"/>
+      <bond parent1="2" parent2="28" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.400"/>
+      <bond parent1="3" parent2="29" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.400"/>
+      <bond parent1="4" parent2="30" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.400"/>
+      <bond parent1="5" parent2="31" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.400"/>
+      <bond parent1="6" parent2="32" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.400"/>
+      <bond parent1="7" parent2="33" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.400"/>
+      <bond parent1="8" parent2="34" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.400"/>
+      <bond parent1="9" parent2="25" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.400"/>
+      <bond parent1="9" parent2="35" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.400"/>
+      <bond parent1="9" parent2="36" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.400"/>
+      <bond parent1="9" parent2="37" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.400"/>
+      <bond parent1="9" parent2="38" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.400"/>
+      <bond parent1="10" parent2="26" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.400"/>
+      <bond parent1="10" parent2="39" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.400"/>
+      <bond parent1="10" parent2="40" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.400"/>
+      <bond parent1="10" parent2="41" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.400"/>
+      <bond parent1="10" parent2="42" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.400"/>
+      <bond parent1="11" parent2="25" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.400"/>
+      <bond parent1="12" parent2="26" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.400"/>
+      <bond parent1="13" parent2="35" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.400"/>
+      <bond parent1="13" parent2="36" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.400"/>
+      <bond parent1="13" parent2="39" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.400"/>
+      <bond parent1="13" parent2="40" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.400"/>
+      <bond parent1="14" parent2="35" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.400"/>
+      <bond parent1="14" parent2="38" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.400"/>
+      <bond parent1="14" parent2="39" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.400"/>
+      <bond parent1="14" parent2="42" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.400"/>
+      <bond parent1="15" parent2="36" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.400"/>
+      <bond parent1="15" parent2="37" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.400"/>
+      <bond parent1="15" parent2="40" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.400"/>
+      <bond parent1="15" parent2="41" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.400"/>
+      <bond parent1="16" parent2="37" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.400"/>
+      <bond parent1="16" parent2="38" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.400"/>
+      <bond parent1="16" parent2="41" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.400"/>
+      <bond parent1="16" parent2="42" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.400"/>
+      <bond parent1="17" parent2="27" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.400"/>
+      <bond parent1="18" parent2="28" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.400"/>
+      <bond parent1="19" parent2="29" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.400"/>
+      <bond parent1="20" parent2="30" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.400"/>
+      <bond parent1="21" parent2="31" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.400"/>
+      <bond parent1="22" parent2="32" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.400"/>
+      <bond parent1="23" parent2="33" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.400"/>
+      <bond parent1="24" parent2="34" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.400"/>
+    </cell>
+  </layer>
+</gml>

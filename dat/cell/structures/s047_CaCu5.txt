@@ -1,0 +1,28 @@
+Structure 47
+Prototype: CaCu5
+StrukturBericht / Pearson: D2_d / hP6
+
+Lattice parameter:
+CaCu5          Co5Sm
+5.082 4.078    5.0002 3.964
+Au5Ba          NdPt 5
+5.55690 4.542  5.345 4.391
+AlCu4Er        GdRh3Si2
+5.029 4.139    5.505 3.549
+
+
+Radius:
+Ca 1.9735 (half-distance)
+Cu 1.2780 (half-distance)
+
+1. Building with space group (s047.xml):
+Group: 191
+
+Wyckoff positions:
+Ca 1a
+Cu 2c
+Cu 3g
+
+View:
+Ca,Cu: style solid, size 1.0, variancy 1.0, scale 0.25
+CaCu: style solid, method length, size 0.5, color 0.5,0.5,0.5, scale 0.5

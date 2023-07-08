@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Tips</title>
+<link rel="icon" type="image/png" href="icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="css/base.css"/>
+<link rel="stylesheet" type="text/css" href="css/board.css"/>
+</head>
+
+<body>
+
+<div class="board">
+<div>Tips</div><div>&nbsp;</div>
+</div>
+
+<div class="contents">
+
+These tips result from years of experience
+and may prove useful even for advanced users.
+
+<h3>1. Select the current object</h3>
+
+Users can select the current object, the object that is moved, rotated, scaled,
+and exported to a file. The current object can be a single object or a list of objects.
+First click the mouse middle button over an object name, on the top menu. Then click
+over an object of that class, to select it, or over the Gamgi button, to select
+the current list of those objects.
+
+<h3>2. Select the current layer</h3>
+
+Users can select the current layer, the layer where are the objects
+that can be directly manipulated. Press the mouse middle button over Layer,
+on the top menu, then click over the graphic area, to select the layer from
+a pop menu. The new current layer becomes automatically the current object.
+Layers can be transparent or opaque. Objects in different layers can be
+manipulated simultaneously using lists of objects.
+
+<h3>3. Use lists of objects</h3>
+
+Handling lists of objects are a powerful technique to manipulate
+simultaneosuly arbitrary sets of objects previously selected. Using
+Object->Select dialogs, objects can be added or removed, picked one
+by one, selected by region or by a wide range of properties.
+
+<h3>4. Use lights</h3>
+
+Solid objects require lights to look good. Just press
+<b>Light->Create</b> and then <b>Ok</b> to create a light.
+If lights are interfering with wired objects, use two
+transparent layers, one with solid objects and lights,
+the other with wired objects and no lights.
+
+<h3>5. Move objects away</h3>
+
+Large objects in <b>Ortographic</b> projection tend to be too close
+to the viewer, resulting in broken lines and surfaces. The easiest
+solution is to move the objects away, along the z direction. Just
+press <b>Move</b> to activate the ruler, and press the left (negative)
+half of the ruler with the third (z axis) button, until the image
+looks correct.
+
+<h3>6. Customize the ruler</h3>
+
+In <b>Window->Config</b>, the ruler can be configured to arbitrarily
+high levels of accuracy. For example, setting <b>Rotate</b> <b>Max</b>
+and <b>Step</b> to <b>0.5</b> and <b>0.1</b> respectively, will configure
+the ruler in <b>Rotate</b> mode, from <b>-0.5</b> to <b>+0.5</b> degrees,
+in steps of <b>0.1</b> each.
+
+<h3>7. Import multiple files</h3>
+
+GAMGI can load an arbitrary number of files, local or remote,
+with a single shell command. Try for example:
+
+<pre><b>
+gamgi http://www.gamgi.org/dat/molecule/silicates/q10.xml ftp://ftp.gamgi.org/gamgi/dat/molecule/silicates/q10.xml
+</b></pre>
+
+<h3>8. Set user preferences</h3>
+
+Importing automatically a file with default data everytime
+GAMGI is launched is a flexible and powerful way to set
+preferences. For example, adding this line to <b>~/.bashrc</b>:
+<pre><b>
+alias gamgi='gamgi ~/gamgi/defaults.xml'
+</b></pre>
+will import the file <b>defaults.xml</b> everytime
+gamgi starts. To turn C atoms grey by default, add
+this data to <b>defaults.xml</b>:
+<pre><b>
+&lt;gml>
+&lt;gamgi>
+&lt;atom element="C" red="0.5" green="0.5" blue="0.5"/>
+&lt;/gamgi>
+&lt;/gml>
+</b></pre>
+
+</div>
+
+<div id="bottom">
+<a href="index.shtml">Home</a>
+</div>
+
+</body>
+</html>

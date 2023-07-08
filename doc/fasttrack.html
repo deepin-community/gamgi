@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Fasttrack</title>
+<link rel="icon" type="image/png" href="icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="css/base.css"/>
+<link rel="stylesheet" type="text/css" href="css/board.css"/>
+</head>
+
+<body>
+
+<div class="board">
+<div>Users</div><div>&nbsp;</div>
+</div>
+
+<div class="contents">
+            
+To compile GAMGI, check the library paths in
+<b>$GAMGI/src/make_local</b> and type <b>make</b>, 
+as described in the file <b>$GAMGI/INSTALL</b>. If problems 
+arise, see: <b>http://www.gamgi.org/documentation/install.html</b>.
+
+<p/>
+
+To start GAMGI, type <b>gamgi</b> in a terminal. To see how 
+GAMGI works, press <b>Help</b> on the window. To see how GAMGI 
+Help works, select <b>Help->Topic->Help</b> on the window.
+
+<p/>
+
+Unless stated otherwise, <b>$GAMGI</b> represents the 
+actual GAMGI root directory, for example <b>/opt/gamgi</b>, 
+<b>/usr/local/gamgi</b> or <b>/home/carlos/gamgi/gamgi0.11.11</b>.  
+
+</div>
+
+<div class="board">
+<div>Coders</div><div>&nbsp;</div>
+</div>
+
+<div class="contents">
+
+GAMGI source code is in the directory <b>$GAMGI/src</b>,
+distributed over the sub-directories <b>engine</b>, <b>gtk</b>, 
+<b>mesa</b>, <b>math</b>, <b>chem</b>, <b>phys</b>, <b>io</b>, 
+<b>expat</b> and <b>global</b>.
+
+<p/>
+
+To understand GAMGI control flow, the first file to check
+is <b>$GAMGI/src/global/gamgi_global_main.c</b>, where GAMGI 
+starts and ends. To understand GAMGI data flow, the first file 
+to check is <b>$GAMGI/src/engine/gamgi_engine.h</b>, which 
+contains the primary data types and definitions.
+
+<p/>
+
+Each <b>.c</b> file has a corresponding <b>.h</b> file and each 
+directory has a general <b>.h</b> file. All local functions start 
+with the name <b>static</b> and all global functions start with 
+the name of the file containing them. All functions in a <b>.c</b>
+file are listed in the corresponding <b>.h</b> file, including
+local (commented) functions and argument names, plus a rationale
+describing the control flow. GAMGI has one (redundant) global
+variable, called <b>gamgi</b>.
+
+<p/>
+
+Unless stated otherwise, <b>$GAMGI</b> represents the 
+actual GAMGI root directory, for example <b>/opt/gamgi</b>, 
+<b>/usr/local/gamgi</b> or <b>/home/carlos/gamgi/gamgi0.11.11</b>.
+
+</div>
+
+<div id="bottom">
+<a href="index.shtml">Home</a>
+</div>
+
+</body>
+</html>

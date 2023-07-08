@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Interfaces: Text Modify</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Text Modify</h1>
+
+<div id="notebook">
+<ul>
+<li><span>Contents</span></li>
+<li><a href="modify_position.html">Position</a></li>
+<li><a href="modify_view.html">View</a></li>
+</ul>
+</div>
+
+<div class="contents">
+
+Change here the message contents for a single text or a list of texts.
+
+<p/>
+
+To change a text name write the new name in the <b>Text</b> entry,
+followed by the text number (GAMGI needs the number to identify the text).
+To change the name for a list of texts, press <b>List</b> first
+and then write the new common name in the <b>Name</b> entry.
+
+<p/>
+
+To modify a text, click over its graphic image, or write its id on
+the <b>Text</b> entry. To modify a list of texts, press the button
+<b>List</b> (after creating the list of texts with <b>Text->Select</b>).
+Parameters for empty entries or <b>Local</b> choices remain unchanged.
+
+<h3>Contents</h3>
+
+The new text string should be introduced here. Currently GAMGI 
+accepts only ASCII characters in the range 32-126:
+
+<p/>
+
+<b>\t \n ! " # $ % &amp; ' ( ) * + , - . / 0 1 2 3 4 5 6 7 8 9 : ; &lt;
+= > ? @ A B C D E F G H I J K L M N O P Q R S T U V W X Y Z [ \ ] ^
+_ ` a b c d e f g h i j k l m n o p q r s t u v w x y z { | } ~ "</b>.
+  
+<p/>
+
+Currently GAMGI replaces tabs and newlines by spaces, so 
+dialog interfaces and file formats behave in the same way. 
+Currently text objects cannot be longer than GAMGI_ENGINE_LINE 
+(200) characters.
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

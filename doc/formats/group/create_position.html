@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Formats: Group Create</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Group Create</h1>
+
+<div id="notebook">
+<ul>
+<li><a href="create_type.html">Type</a></li>
+<li><a href="create_scope.html">Scope</a></li>
+<li><span>Position</span></li>
+<li><a href="create_view.html">View</a></li>
+</ul>
+</div>
+
+<div class="contents">
+
+<h3>x, y, z</h3>
+
+Set the coordinates of the group origin.
+
+<pre>
+Example: <b>&lt;group ... x="0.0" y="0.0" z="0.0"/></b> (default)
+Allowed values: real (optional, coupled)
+</pre>
+
+<h3>center_x, center_y, center_z</h3>
+
+Set the current center position for a polytope group. This is needed
+because the group position is defined relatively to its reference atoms,
+so when x,y,z and e1,e2,e3 are 0 the group is in its initial position.
+Therefore there is no relation between origin and center (unlike
+cell or text objects for example) and the latter must be specified.
+
+<pre>
+Example: <b>&lt;group ... center_x="0.0" center_y="0.0" center_z="0.0"/></b>
+(no default) Allowed values: real (optional, coupled)
+</pre>
+
+<h3>e1, e2, e3</h3>
+
+Set the three Euler angles controlling the group orientation. The first rotation
+(e1), around the initial y axis, must be between <b>0</b> and <b>180</b> degrees.
+The second rotation (e2), around the initial z axis, must be between <b>0</b>
+and <b>360</b> degrees. The third rotation (e3), around the final z axis, must
+be between <b>0</b> and <b>360</b>.
+
+<pre>
+Example: <b>&lt;group ... e1="0.0" e2="0.0" e3="0.0"/></b> (default)
+Allowed values: e1: <b>0.0</b> - <b>180.0</b>, e2, e3: <b>0.0</b> - <b>360.0</b>
+(optional, coupled)
+</pre>
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

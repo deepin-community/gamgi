@@ -1,0 +1,41 @@
+Superconductor (Tc = 70K): (Tl,Pb)(CO3)Sr4Cu2O7
+Structure: 1201 / 1201
+
+Space group: 123
+
+Lattice parameters:
+3.8200 16.5200
+
+Wyckoff positions:
+Tl,Pb 1a
+C 1b
+Sr 2h, z = 0.1596
+Sr 2h, z = 0.3725
+Cu 2g, z = 0.2654
+O 4n, x = 0.67, occupancy = 0.25
+O 2g, z = 0.1210
+O 8s, x = 0.1620 z = 0.4140, occupancy = 0.25
+O 4m, x = 0.3160, occupancy = 0.25
+O 4i, z = 0.2770
+
+Wyckoff change:
+O 4n -> O 1c
+O 8s -> O 2g, z = 0.4140
+O 4m -> remove 3/4 of O
+
+1. with Cell (s07a.xml):
+Cell Change XYZ: 0.0, 0.0, -0.2654
+
+2. with Polytopes (s07b.xml):
+Cell Change XYZ: 0.5, 0.5, 0.5
+Cells: 2 x 2 x 2
+Neighbours: O
+Number: 6
+
+References:
+H. Shaked, P.M. Keane, J.C. Rodriguez, F.F. Owen, R.L. Hitterman,
+J.D. Jorgensen, Crystal structures of the High-Tc Superconducting
+Copper-Oxides, Physica C, Elsevier Science, Amsterdam, 1994
+
+M. Huve, C. Michel, A. Maignan, M. Hervieu, C. Martin,
+and B. Raveau Physica C 205, 219 (1993)

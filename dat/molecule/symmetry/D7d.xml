@@ -1,0 +1,18 @@
+<gml>
+<molecule name="D7d">
+<atom element="He" x="0.00000" y="1.00000" z="1.0"/>
+<atom element="He" x="0.43388" y="0.90097" z="1.1"/>
+<atom element="He" x="0.78183" y="0.62349" z="1.0"/>
+<atom element="He" x="0.97493" y="0.22252" z="1.1"/>
+<atom element="He" x="0.97493" y="-0.22252" z="1.0"/>
+<atom element="He" x="0.78183" y="-0.62349" z="1.1"/>
+<atom element="He" x="0.43388" y="-0.90097" z="1.0"/>
+<atom element="He" x="0.00000" y="-1.00000" z="1.1"/>
+<atom element="He" x="-0.43388" y="-0.90097" z="1.0"/>
+<atom element="He" x="-0.78183" y="-0.62349" z="1.1"/>
+<atom element="He" x="-0.97493" y="-0.22252" z="1.0"/>
+<atom element="He" x="-0.97493" y="0.22252" z="1.1"/>
+<atom element="He" x="-0.78183" y="0.62349" z="1.0"/>
+<atom element="He" x="-0.43388" y="0.90097" z="1.1"/>
+</molecule>
+</gml>

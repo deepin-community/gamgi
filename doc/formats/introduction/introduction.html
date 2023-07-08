@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Formats: Introduction Introduction</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/board.css"/>
+</head>
+
+<body>
+
+<div class="board">
+<div>Introduction</div><div>&nbsp;</div>
+</div>
+
+<div class="contents">
+
+Using the XML native format defined in GAMGI (GML), a water molecule
+can be written as:
+
+<pre><b>
+&lt;gml>
+  &lt;molecule>
+    &lt;atom element="O" x= "0.000"  y="-0.0679" z="0.0000" id="O1"/>
+    &lt;atom element="H" x= "0.7754" y= "0.5392" z="0.0000" id="H1"/>
+    &lt;atom element="H" x="-0.7754" y= "0.5392" z="0.0000" id="H2"/>
+
+    &lt;bond parent1="O1" parent2="H1"/>
+    &lt;bond parent1="O1" parent2="H2"/>
+  &lt;/molecule>
+&lt;/gml>
+</b></pre>
+
+The file <b>$GAMGI/dat/gamgi/all.xml</b> is a fully working example,
+containing all the parameters that GAMGI accepts, for both object
+and configuration data. Using the xyz standard format, the same water 
+molecule can be written as (in this case the bonds must be added afterwards):
+
+<pre><b>
+3
+This is a comment line
+  O          0.0000         -0.0679          0.0000
+  H          0.7754          0.5392          0.0000
+  H         -0.7754          0.5392          0.0000
+</b></pre>
+
+In both formats, white lines and spaces are discarded.
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

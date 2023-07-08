@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Formats: Group Create</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Group Create</h1>
+
+<div id="notebook">
+<ul>
+<li><a href="create_type.html">Type</a></li>
+<li><span>Scope</span></li>
+<li><a href="create_position.html">Position</a></li>
+<li><a href="create_view.html">View</a></li>
+</ul>
+</div>
+
+<div class="contents">
+
+<h3>data</h3>
+
+The geometric data defining a polytope group must be entered in order to
+make the group completely independent from its reference objects. This is
+accomplished with two <b>data</b> child elements, one containig real data
+(the xyz coordinates), the other containing integer data (the number of
+loops, the number of vertices for the first loop, the offset of vertices
+for the first loop, the number of vertices for the second loop, etc.).
+
+<pre>
+Example:
+<b>&lt;data ... name="points" type="double" size="12">
+2.0000 0.0000 2.0000 2.0000 2.0000 0.0000 0.0000 0.00000.0000 0.0000
+2.0000 2.0000 &lt;/data></b> Allowed values: real (required)
+
+Example:
+<b>&lt;data ... name="points_driver" type="int" size="17">
+4 3 1 2 3 3 2 0 3 3 0 1 3 3 1 0 2 &lt;/data></b>
+Allowed values: integer (required)
+</pre>
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

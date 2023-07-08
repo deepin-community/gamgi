@@ -1,0 +1,33 @@
+Superconductor (Tc = 43K): (Eu,Ce)2(Ba,Eu)2Cu3O10-x
+Structure: 1201 T*F
+
+Space group: 139
+
+Lattice parameters:
+3.8504 28.4598
+
+Wyckoff positions:
+Eu,Ce 2e, z = 0.2942
+Ba,Eu 2e, z = 0.4245
+Cu 1a,
+Cu 2e, z = 0.1423
+O 2c
+O 2e, z = 0.0663
+O 4g, z = 0.3540
+O 2d
+
+1. with Cell (s06a.xml):
+Bond: Color 0.5,0.5,0.5, Scale 0.4
+
+2. with Polytopes (s06b.xml):
+Cells: 2 x 2 x 2
+Neighbours: O
+Number: 5
+
+References:
+H. Shaked, P.M. Keane, J.C. Rodriguez, F.F. Owen, R.L. Hitterman,
+J.D. Jorgensen, Crystal structures of the High-Tc Superconducting
+Copper-Oxides, Physica C, Elsevier Science, Amsterdam, 1994
+
+H. Sawa, K. Obara, J. Akimitsu, Y. Matsui, and S. Horiuchi,
+J. Phys. Soc. Japan 58, 2252 (1989)

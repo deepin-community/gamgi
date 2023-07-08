@@ -1,0 +1,20 @@
+/**********************
+ * information boards *
+ **********************/
+
+div.board
+  {
+  clear: both;
+  color: #fff;
+  background-color: #069;
+  font-weight: bold;
+  border-top: 2px groove #069;
+  border-right: 2px groove #069;
+  border-left: 2px groove #069;
+  margin-top: 1em;
+  padding: 0.3em 0.6em;
+  }
+
+div.board div:first-child { float: left; }
+
+div.board div { font-size: 11px; text-align: right; }

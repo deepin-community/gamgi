@@ -1,0 +1,19 @@
+Structure 27
+Prototype: alpha-U
+StrukturBericht / Pearson: A20 / oC4
+
+lattice parameters:
+a-U
+2.854 2.854 4.955
+ 
+Radius:
+U: 1.3850 (half-distance)
+
+1. Building with space group (s027.xml):
+Group: 63
+
+Wyckoff positions:
+U 2c, y = 0.1025
+
+View:
+U: style solid, size 0.8, variancy 0.0, scale 1.0

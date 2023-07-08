@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Interfaces: Atom Create</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Atom Create</h1>
+
+<div id="notebook">
+<ul>
+<li><a href="create_element.html">Element</a></li>
+<li><span>Property</span></li>
+<li><a href="create_analysis.html">Analysis</a></li>
+<li><a href="create_position.html">Position</a></li>
+<li><a href="create_view.html">View</a></li>
+</ul>
+</div>
+
+<div class="contents">
+
+Set here the atom properties.
+
+<h3>Mass</h3>
+
+The <b>Mass</b> entry sets the atomic mass. The default value is the so called
+atomic weight, the average of all naturally occurring isotopes, weighted by 
+their natural abundances, or, when these do not exist, the isotope with a longer 
+half-life time (not necessarily the easiest to synthetize and more common).
+Mass must always be positive (for dummy atoms, <b>Du</b>, the default is
+the H value).  All elements have a known mass.
+
+<p/>
+
+To define new default values, select <b>Atom->Config</b> (check 
+<b>Help->Interfaces->Atom->Config</b>) or import XML configuration 
+files (check <b>Help->Formats->Atom->Config</b>).
+
+<p/>
+
+Pressing <b>List</b>, a new dialog shows a list with the more important
+isotope mass information, taken from <a href="http://www.wikipedia.com/">
+http://www.wikipedia.com/</a>, after comparison with other sources.
+
+This list contains all naturally occurring isotopes, with their relative abundances, 
+plus all the isotopes with a half-life longer than one year (all elements until 
+Cf except At, Rn, Fr), or, when these do not exist, one day (Rn, plus Es, Fm, Md), 
+one hour (At, Lr, Rf, Db), one minute (Fr, No, Sg) or one second (Bh, Hs, Mt, Ds, Rg).
+Some isotopes have both a natural abundance and a half life decay, necessarily very 
+long. Some isotopes correspond to excited states (Rh, Ag, Sn, Ta, Re, Ir, Bi, Am).
+
+<p/>
+
+Abundances are given in percentages, half-lifes are given in years <b>y</b>,
+days <b>d</b>, hours <b>h</b>, minutes <b>m</b> and seconds <b>s</b>. Isotopes
+that exist in the excited state are signaled with an asterisk.
+
+<h3>Radius</h3>
+
+The <b>Radius</b> entry sets the atomic radius. The default values are the
+effective covalent radius. Radius must always be positive (for dummy atoms, 
+<b>Du</b>, the default is the H value). Some elements do not have a known 
+radius: Pm, At, Rn, Fr, Es, Fm, Md, No, Lr, Rf, Db, Sg, Bh, Hs, Mt, Ds, Rg.
+In this case, the default comes from the nearest element, with a smaller atomic 
+number, with a known radius. Atomic radius are also used to define default 
+minimum and maximum distance limits for bond creation, as discussed in 
+<b>Bond->Create</b>.
+
+<p/>
+
+To define new default values, select <b>Atom->Config</b> (check 
+<b>Help->Interfaces->Atom->Config</b>) or import XML configuration files 
+(check <b>Help->Formats->Atom->Config</b>).
+
+<p/>
+
+Pressing <b>List</b>, a new dialog shows a list with the more important
+radius data, taken from <a href="http://www.webelements.com/">
+http://www.webelements.com/</a> (where the original publications are 
+referenced), except the ionic radius, taken directly from Shannon's
+paper, Acta Cryst. A32, 751 (1976). The radius listed are:
+
+<p/>
+
+1) Half distance between atoms in its element natural state,
+(most from L.E. Sutton (Ed.), Table of interatomic distances
+and configuration in molecules and ions, Supplement 1956-1959,
+Special publication No. 18, Chemical Society, London, UK,
+1965.). Available up to Cf (98), except Pm, At, Rn, Fr.
+ 
+<p/>
+
+2) Effective atomic (from J.C. Slater, J. Chem. Phys. 1964, 39,
+3199), empirically derived by comparison of bond lengths in over
+1200 bond types in ionic, metallic, and covalent crystals and
+molecules. Available up to Am (95) except He, Ne, Kr, Xe, At,
+Rn, Fr.
+ 
+<p/>
+
+3) Calculated atomic (from E. Clementi, D.L.Raimondi, and W.P.
+Reinhardt, J. Chem. Phys. 1963, 38, 2686), obtained from SCF
+ab-initio calculations. Available up to Rn (86) except La, Ce.
+ 
+<p/>
+
+4) Effective covalent (including from R.T. Sanderson in Chemical
+Periodicity, Reinhold, New York, USA, 1962.), empirically obtained
+by comparing distances between single-bonded equal atoms. Available
+for all elements up to La (57), plus Lu (71) to Bi (83) plus Rn.
+ 
+<p/>
+
+5) Calculated covalent, (from Beatriz Cordero et al, in "Covalent
+radii revisited", Dalton Trans., 2008), arguably more consistent
+than the effective covalent radius. Available up to Cm (96). For C,
+there are radius available for sp3, sp2 and sp hybridization. For
+Mn, Fe, Co there are radius available for low (LS) and high (HS)
+spin configurations.                                           
+ 
+<p/>
+
+6) Van der Waals (mainly from A. Bondi, J. Phys. Chem., 1964, 68,
+441.), established from contact distances between non-bonding atoms
+in touching molecules or atoms. 
+
+<p/>
+
+7) Ionic effective (from R.D. Shannon, Acta Cryst. A32, 751, 1976.),
+empirically derived from about 1000 distances, taken mainly from
+oxide and fluoride structures, plus a range of correlations. These
+radius are a function of valence, coordination, mass (for H) and
+low (LS) and high (HS) electronic spin (for Cr, Mn, Fe, Co, Ni).
+Available for all elements up to Cf (98) expect He, Ne, Ar, Kr, Rn.
+ 
+<p/>
+
+To get the so-called ionic crystalline radius, suggested by Fumi 
+and Tosi and published also by Shannon, just sum 0.14 to the cation
+and subtract 0.14 to the anion, so the cation-anion distance remain
+unchanged. According to Shannon, it is felt that these crystal radii
+correspond more closely to the physical size of ions in a solid.
+However, they might less efective in predicting the cation
+coordination by using Pauling's first rule.
+
+<h3>Charge</h3>
+
+The <b>Charge</b> entry sets the atomic charge. The default is <b>0.0.</b>
+but all real values are valid. The most common way to use charges is to 
+attribute previously calculated values to different atoms, construct atomic 
+structures with these atoms, and then export these structures to files,
+to feed Molecular Mechanics programs requiring charge potentials.
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

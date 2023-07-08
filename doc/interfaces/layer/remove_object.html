@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Interfaces: Layer Remove</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Layer Remove</h1>
+
+<div id="notebook">
+<ul>
+<li><span>Object</span></li>
+</ul>
+</div>
+
+<div class="contents">
+
+Indicate how to remove a layer (or list of layers, previously         
+selected with Layer->Select, when <b>Global</b> is pressed).
+
+<h3>Scope</h3>
+
+When the <b>Scope</b> is <b>All</b>, the layer and all its contents 
+is removed. This is the default. When the removed layer was the 
+current layer, the layer before or the layer after becomes the new 
+current layer. When the removed layer is the last one, a new layer 
+is automatically created and made the current layer.
+
+
+<p/>
+
+When the <b>Scope</b> is <b>Contents</b>, the layer is preserved but 
+all its contents (lights, assemblies, graphs, shapes, arrows, cells, 
+clusters, molecules, groups, planes, directions, atoms, bonds, orbitals, 
+texts) is removed.
+
+<p/>
+
+When the <b>Scope</b> is <b>light</b>, <b>assembly</b>, <b>graph</b>, 
+<b>shape</b>, <b>arrow</b>, <b>cell</b>, <b>cluster</b>, <b>molecule</b>, 
+<b>group</b>, <b>plane</b>, <b>direction</b>, <b>atom</b>, <b>bond</b>, 
+<b>orbital</b> or <b>text</b>, these objects are removed from the layer. 
+
+<p/>
+
+When the target layer is the current layer, the final current layer 
+becomes the new current object.
+
+<p/>
+
+Clicking the mouse over the graphic area in the current window 
+creates a menu with all the layers in the window, which can then 
+be selected. Initially, the identification of the current layer 
+is inserted in the <b>Layer</b> entry. This task cannot be reversed, 
+so pressing <b>Ok</b> is required.
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

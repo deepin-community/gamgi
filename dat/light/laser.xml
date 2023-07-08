@@ -1,0 +1,14 @@
+<gml>
+
+  <light name="laser"
+  position_x="0.0" position_y ="0.0" position_z="5.0"
+  direction_x="0.0" direction_y ="0.0" direction_z="-1.0"
+  diffuse_r="1.0" diffuse_g="0.0" diffuse_b="0.0" angle="1.0">
+  </light>
+
+  <light name="ambient"
+  position_x="0.0" position_y ="0.0" position_z="5.0"
+  ambient_r="0.40" ambient_g="0.40" ambient_b="0.40">
+  </light>
+
+</gml>

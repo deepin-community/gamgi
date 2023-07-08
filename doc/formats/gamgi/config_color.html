@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Formats: Gamgi Config</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Gamgi Config</h1>
+
+<div id="notebook">
+<ul> 
+<li><a href="config_usability.html">Usability</a></li>
+<li><a href="config_precision.html">Precision</a></li>
+<li><span>Color</span></li>
+</ul>
+</div>
+
+<div class="contents">
+
+<h3>base_r, base_g, base_b</h3>
+
+Set the background color used in GAMGI large text messages. 
+The default is the olive green color that Red Hat used for Emacs.
+
+<p/>
+
+<pre>
+Example: <b>&lt;gamgi base_r="0.184" base_g="0.309" base_b="0.309"/></b> (default)
+(defined in <b>GAMGI_GTK_BACKGROUND_R</b>, <b>GAMGI_GTK_BACKGROUND_G</b> 
+and <b>GAMGI_GTK_BACKGROUND_B</b>)
+Allowed values: <b>0.0</b> - <b>1.0</b> (optional, coupled)
+</pre>
+
+<h3>text_r, text_g, text_b</h3>
+
+Set the foreground color used in GAMGI large text messages. 
+The default is the light yellow color that Red Hat used for Emacs.
+
+<pre>
+Example: <b>&lt;gamgi text_r="0.957" text_g="0.867" text_b="0.699"/></b> (default)
+(defined in <b>GAMGI_GTK_FOREGROUND_R</b>, <b>GAMGI_GTK_FOREGROUND_G</b> 
+and <b>GAMGI_GTK_FOREGROUND_B</b>)
+Allowed values: <b>0.0</b> - <b>1.0</b> (optional, coupled)
+</pre>
+
+<h3>title_r, title_g, title_b</h3>
+
+Set the color used in titles, in GAMGI large text messages, 
+usually with a different, larger, font.
+
+<pre>
+Example: <b>&lt;gamgi title_r="1.0" title_g="1.0" title_b="0.0"/></b>  (default)
+(defined in <b>GAMGI_GTK_TITLE_R</b>, <b>GAMGI_GTK_TITLE_G</b> and <b>GAMGI_GTK_TITLE_B</b>)
+Allowed values: <b>0.0</b> - <b>1.0</b> (optional, coupled)
+</pre>
+
+<h3>bold_r, bold_g, bold_b</h3>
+
+Set the color used to highlight contents, in GAMGI large text messages, 
+usually inside bold blocks.
+
+<pre>
+Example: <b>&lt;gamgi bold_r="1.0" bold_g="1.0" bold_b="0.0"/></b> (default) 
+(defined in <b>GAMGI_GTK_BOLD_R</b>, <b>GAMGI_GTK_BOLD_G</b> and <b>GAMGI_GTK_BOLD_B</b>)
+Allowed values: <b>0.0</b> - <b>1.0</b> (optional, coupled)
+</pre>
+
+<h3>link_r, link_g, link_b</h3>
+
+Set the color used to show URL and E-mail addresses, 
+in GAMGI large text messages. Sometimes it is chosen also to highlight 
+sub-titles.
+
+<pre>
+Example: <b>&lt;gamgi link_r="0.8" link_g="1.0" link_b="1.0"/></b> (default)
+(defined in <b>GAMGI_GTK_LINK_R</b>, <b>GAMGI_GTK_LINK_G</b> and <b>GAMGI_GTK_LINK_B</b>)
+Allowed values: <b>0.0</b> - <b>1.0</b> (optional, coupled)
+</pre>
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

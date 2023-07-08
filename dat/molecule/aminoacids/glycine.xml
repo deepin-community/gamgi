@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE gml SYSTEM "http://www.gamgi.org/dtd/gamgi.dtd">
+<gml>
+  <molecule name="glycine">
+    <atom id="1" element="N" x="-1.2770" y="-0.3925" z="0.4447"/>
+    <atom id="2" element="C" x="-0.0915" y="0.4057" z="0.1461"/>
+    <atom id="3" element="C" x="1.0227" y="-0.4594" z="-0.3921"/>
+    <atom id="4" element="O" x="0.8923" y="-1.6708" z="-0.5384"/>
+    <atom id="5" element="H" x="-2.1800" y="0.0497" z="0.8396"/>
+    <atom id="6" element="H" x="-1.3027" y="-1.4601" z="0.2837"/>
+    <atom id="7" element="H" x="-0.3342" y="1.1889" z="-0.5959"/>
+    <atom id="8" element="H" x="0.2595" y="0.9254" z="1.0570"/>
+    <atom id="9" element="O" x="2.2386" y="0.2171" z="-0.7210"/>
+    <atom id="10" element="H" x="2.1369" y="1.2232" z="-0.5240"/>
+    <bond parent1="1" parent2="2"/>
+    <bond parent1="1" parent2="5"/>
+    <bond parent1="1" parent2="6"/>
+    <bond parent1="2" parent2="3"/>
+    <bond parent1="2" parent2="7"/>
+    <bond parent1="2" parent2="8"/>
+    <bond parent1="3" parent2="4" order="2.00"/>
+    <bond parent1="3" parent2="9"/>
+    <bond parent1="9" parent2="10"/>
+  </molecule>
+</gml>

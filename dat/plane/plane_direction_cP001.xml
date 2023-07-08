@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE gml SYSTEM "http://www.gamgi.org/dtd/gamgi.dtd">
+<gml>
+  <cell system="c" lattice="P" a="1.0000" model="projection" scale="4.000">
+    <plane h="-1" k="-1" l="-1" model="pole"/>
+    <plane h="-1" k="-1" l=" 0" model="pole"/>
+    <plane h="-1" k="-1" l=" 1" model="pole"/>
+    <plane h="-1" k=" 0" l="-1" model="pole"/>
+    <plane h="-1" k=" 0" l=" 0" model="pole"/>
+    <plane h="-1" k=" 0" l=" 1" model="pole"/>
+    <plane h="-1" k=" 1" l="-1" model="pole"/>
+    <plane h="-1" k=" 1" l=" 0" model="pole"/>
+    <plane h="-1" k=" 1" l=" 1" model="pole"/>
+
+    <plane h=" 0" k="-1" l="-1" model="pole"/>
+    <plane h=" 0" k="-1" l=" 0" model="pole"/>
+    <plane h=" 0" k="-1" l=" 1" model="pole"/>
+    <plane h=" 0" k=" 0" l="-1" model="pole"/>
+    <plane h=" 0" k=" 0" l=" 1" model="pole"/>
+    <plane h=" 0" k=" 1" l="-1" model="pole"/>
+    <plane h=" 0" k=" 1" l=" 0" model="pole"/>
+    <plane h=" 0" k=" 1" l=" 1" model="pole"/>
+
+    <plane h=" 1" k="-1" l="-1" model="pole"/>
+    <plane h=" 1" k="-1" l=" 0" model="pole"/>
+    <plane h=" 1" k="-1" l=" 1" model="pole"/>
+    <plane h=" 1" k=" 0" l="-1" model="pole"/>
+    <plane h=" 1" k=" 0" l=" 0" model="pole"/>
+    <plane h=" 1" k=" 0" l=" 1" model="pole"/>
+    <plane h=" 1" k=" 1" l="-1" model="pole"/>
+    <plane h=" 1" k=" 1" l=" 0" model="pole"/>
+    <plane h=" 1" k=" 1" l=" 1" model="pole"/>
+
+    <plane h=" 1" k=" 1" l="-2" model="pole"/>
+    <plane h=" 1" k=" 1" l=" 2" model="pole"/>
+    <plane h=" 1" k="-2" l=" 1" model="pole"/>
+    <plane h=" 1" k=" 2" l=" 1" model="pole"/>
+    <plane h="-2" k=" 1" l=" 1" model="pole"/>
+    <plane h=" 2" k=" 1" l=" 1" model="pole"/>
+
+    <plane h="-1" k="-1" l="-2" model="pole"/>
+    <plane h="-1" k="-1" l=" 2" model="pole"/>
+    <plane h="-1" k="-2" l="-1" model="pole"/>
+    <plane h="-1" k=" 2" l="-1" model="pole"/>
+    <plane h="-2" k="-1" l="-1" model="pole"/>
+    <plane h=" 2" k="-1" l="-1" model="pole"/>
+
+    <plane h="-1" k=" 1" l="-2" model="pole"/>
+    <plane h="-1" k=" 1" l=" 2" model="pole"/>
+    <plane h="-1" k="-2" l=" 1" model="pole"/>
+    <plane h="-1" k=" 2" l=" 1" model="pole"/>
+    <plane h="-2" k="-1" l=" 1" model="pole"/>
+    <plane h=" 2" k="-1" l=" 1" model="pole"/>
+
+    <plane h=" 1" k="-1" l="-2" model="pole"/>
+    <plane h=" 1" k="-1" l=" 2" model="pole"/>
+    <plane h=" 1" k="-2" l="-1" model="pole"/>
+    <plane h=" 1" k=" 2" l="-1" model="pole"/>
+    <plane h="-2" k=" 1" l="-1" model="pole"/>
+    <plane h=" 2" k=" 1" l="-1" model="pole"/>
+
+    <direction u="-1" v="-1" w="-1" model="trace"/>
+    <direction u="-1" v="-1" w=" 0" model="trace"/>
+    <direction u="-1" v="-1" w=" 1" model="trace"/>
+    <direction u="-1" v=" 0" w="-1" model="trace"/>
+    <direction u="-1" v=" 0" w=" 0" model="trace"/>
+    <direction u="-1" v=" 0" w=" 1" model="trace"/>
+    <direction u="-1" v=" 1" w="-1" model="trace"/>
+    <direction u="-1" v=" 1" w=" 0" model="trace"/>
+    <direction u="-1" v=" 1" w=" 1" model="trace"/>
+
+    <direction u=" 0" v="-1" w="-1" model="trace"/>
+    <direction u=" 0" v="-1" w=" 0" model="trace"/>
+    <direction u=" 0" v="-1" w=" 1" model="trace"/>
+    <direction u=" 0" v=" 0" w="-1" model="trace"/>
+    <direction u=" 0" v=" 0" w=" 1" model="trace"/>
+    <direction u=" 0" v=" 1" w="-1" model="trace"/>
+    <direction u=" 0" v=" 1" w=" 0" model="trace"/>
+    <direction u=" 0" v=" 1" w=" 1" model="trace"/>
+
+    <direction u=" 1" v="-1" w="-1" model="trace"/>
+    <direction u=" 1" v="-1" w=" 0" model="trace"/>
+    <direction u=" 1" v="-1" w=" 1" model="trace"/>
+    <direction u=" 1" v=" 0" w="-1" model="trace"/>
+    <direction u=" 1" v=" 0" w=" 0" model="trace"/>
+    <direction u=" 1" v=" 0" w=" 1" model="trace"/>
+    <direction u=" 1" v=" 1" w="-1" model="trace"/>
+    <direction u=" 1" v=" 1" w=" 0" model="trace"/>
+    <direction u=" 1" v=" 1" w=" 1" model="trace"/>
+  </cell>
+</gml>

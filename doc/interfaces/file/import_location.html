@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Interfaces: File Import</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>File Import</h1>
+
+<div id="notebook">
+<ul>
+<li><span>Location</span></li>
+<li><a href="import_filters.html">Filters</a></li>
+</ul>
+</div>
+
+<div class="contents">
+
+Set here the complete address of the file to import.
+
+<h3>Places</h3>
+
+Choose here the directory (folder) to start searching 
+or the transfer protocol to import the file. Initially
+the default is the <b>Current</b> working directory. When the 
+dialog is reopen, <b>Places</b> always show the <b>Last</b> folder,
+even if the last selected option was <b>HTTP</b> or <b>FTP</b>.
+
+<p/>
+
+When the selected option is <b>HTTP</b> or <b>FTP</b>, the
+protocol is copied to the <b>Path</b> label below, and the
+full file name should be entered in the  <b>File</b> entry.
+For example, selecting <b>HTTP</b> and writing
+<b>www.gamgi.org/dat/molecule/silicates/q10.xml</b>
+or seleting  <b>FTP</b> and writing
+<b>ftp.gamgi.org/gamgi/dat/molecule/silicates/q10.xml</b>
+in both cases will import the silica monomer Si(OH)4.
+
+<h3>Folder</h3>
+
+Single click on a folder name, to select that folder. Click
+on <b>..</b> to go to the previous folder. The current folder
+is indicated by the <b>Path</b> label below.
+
+<h3>File</h3>
+
+Single click on a file name to transport its name to the <b>File</b>
+entry below. The complete filename is formed by the contents
+of the <b>Path</b> label plus the <b>File</b> entry. Currently
+the full file name must have less than 200 characters and
+the actual file name must have less than 50 characters.
+
+<p/>
+
+Currently GAMGI can import in the following formats: 1) native XML
+(extension .xml); 2) xyz (extension .xyz). GAMGI always uses the file
+extension to decide the file format, so for example a proper xyz
+file with an extension .xml will be parsed as a XML file and
+flagged down as an invalid file. When the filename has no
+extension, GAMGI assumes it is written in its native XML format.
+
+<p/>
+
+GAMGI accepted formats are described in the documentation in
+<b>Manuals->Formats</b> and online on <b>Help->Topic->Formats</b>.
+
+<p/>
+
+GAMGI XML format is a vectorial format, so all information is
+preserved in the file, including non-default configuration data.
+Configuration data is always written in the beginning of the file,
+so it is already loaded when the object data is imported (a necessary
+step to guarantee that after importing the file the initial state
+is fully restored again).
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

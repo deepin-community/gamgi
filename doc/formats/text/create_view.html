@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Formats: Text Create</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Text Create</h1>
+
+<div id="notebook">
+<ul>
+<li><a href="create_contents.html">Contents</a></li>
+<li><a href="create_position.html">Position</a></li>
+<li><span>View</span></li>
+</ul>
+</div>
+
+<div class="contents">
+
+<h3>style</h3>
+
+Set the rendering style of the new text object.
+GAMGI supports both <b>wired</b> (stroked) and <b>solid</b> (extruded)
+3D fonts. Stroked fonts are faster and more suited for analysis.
+Extruded fonts are made from TrueType faces and are designed for
+presentations, when combined with lights.
+  
+<pre>
+Example: <b>&lt;text style="wired"/></b> (default)
+Allowed values: <b>wired</b>, <b>solid</b> (optional)
+</pre>
+  
+<h3>font</h3>
+
+Set the font used to render the new text object.
+
+There are 14 stroked fonts currently available, including scripting and 
+mathematical fonts. The first two were made for Sun, used by the X consortium 
+and currently distributed with GLUT and freeglut packages. The 12 other fonts 
+were digitized by Allen V. Hershey, used by several packages and currently 
+distributed with GNU plotutils.
+
+<pre>
+Example: <b>&lt;text ... font="roman"/></b> (wired default)
+(defined in <b>GAMGI_IO_TEXT_WIRED</b>)
+Allowed values: <b>roman</b>, <b>roman_mono</b>, <b>sans</b>, <b>sans_bold</b>,
+<b>serif</b>, <b>serif_bold</b>, <b>script</b>, <b>script_bold</b>, <b>gothic_english</b>,
+<b>gothic_german</b>, <b>gothic_italian</b>, <b>sans_symbol</b>, <b>serif_symbol</b>,
+<b>serif_symbol_bold</b> (optional)
+</pre>
+
+There are also 12 extruded fonts currently available, made from DejaVu TrueType
+fonts, derived from the Vera fonts made by BitStream for the Gnome project.
+
+<pre>
+Example: <b>&lt;text ... font="sans"/></b> (solid default)
+(defined in <b>GAMGI_IO_TEXT_SOLID</b>)
+Allowed values: <b>sans</b>, <b>sans_bold</b>, <b>sans_italic</b>, <b>sans_bold_italic</b>,
+<b>serif</b>, <b>serif_bold</b>, <b>serif_italic</b>, <b>serif_bold_italic</b>, <b>mono</b>,
+<b>mono_bold</b>, <b>mono_italic</b>, <b>mono_bold_italic</b> (optional)
+</pre>
+
+Text objects created with these fonts can be rotated,moved,scaled on
+space, exactly as a molecule. Wired text objects look better without lights,
+because they do not reflect light. Solid text objects should be combined with
+lights, to obtain a tridimensional look.
+
+<h3>red, green, blue</h3>
+
+Set the text color, between black (0.0, 0.0, 0.0) and white (1.0, 1.0, 1.0).
+
+<pre>
+Example: <b>&lt;text ... red="0.0" green="1.0" blue="0.0"/></b> (default)
+(defined in <b>GAMGI_MESA_TEXT_R</b>, <b>GAMGI_MESA_TEXT_G</b> and <b>GAMGI_MESA_TEXT_B</b>)
+Allowed values: <b>0.0</b> - <b>1.0</b> (optional, coupled)
+</pre>
+
+<h3>scale</h3>
+
+Change the text size, including its child objects. Text objects are
+scaled around the text center. The visual representation of an object 
+is always scaled by its own scale factor multiplied by the scale factor 
+of all its parent objects until layer, inclusive.
+
+<pre>
+Example: <b>&lt;text ... scale="1.0"/></b> (default)
+(defined in <b>GAMGI_MESA_SCALE</b>)
+Allowed values: positive real (optional)
+</pre>
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

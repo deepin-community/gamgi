@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Interfaces: Plane Create</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Plane Create</h1>
+
+<div id="notebook">
+<ul>
+<li><span>Type</span></li>
+<li><a href="create_scope.html">Scope</a></li>
+<li><a href="create_projection.html">Projection</a></li>
+<li><a href="create_view.html">View</a></li>
+</ul>
+</div>
+
+<div class="contents">
+
+Set here a crystallographic or atomic plane.
+
+<h3>Reference</h3>
+
+GAMGI can handle crystallographic planes, related with a cell containing 
+the relevant crystallographic information, and atomic planes, defined by 
+three non-colinear atoms.
+
+<p/>
+
+To create crystallographic planes, set <b>Reference</b> to <b>Cell</b>.
+GAMGI automatically shows a <b>Cell</b> entry, <b>H</b>, <b>K</b>, <b>L</b> 
+entries to indicate the plane indices, plus a <b>Vectors</b> menu, to select 
+the cell vectors to use, <b>Conventional</b> or <b>Primitive</b>. For the sake 
+of simplicity, GAMGI does not accept 4-indice notation for planes or directions 
+in hexagonal cells.
+
+<p/>
+
+Pressing the mouse over a cell in the current layer, the cell identification 
+is automatically written in the <b>Cell</b> entry. When a valid cell is found
+and its <b>Type</b> is <b>Projection</b>, the default <b>Polygon</b> page 
+is automatically replaced by a <b>Projection</b> page.
+
+<p/>
+
+By default, only one family of crystallographic planes is created. 
+To create a set of families simultaneously, press the button <b>List</b>.
+
+<p/>
+
+When <b>Reference</b> is set to <b>Atoms</b>, GAMGI automatically shows
+three <b>Atom</b> entries. Pressing the mouse sucessively over three 
+non-colinear atoms in the current layer, the three entries become occupied
+and the plane defined. After pressing <b>Ok</b>, an error is shown when
+the three atoms are collinear.
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

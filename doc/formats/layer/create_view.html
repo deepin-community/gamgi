@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Formats: Layer Create</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Layer Create</h1>
+
+<div id="notebook">
+<ul>
+<li><a href="create_projection.html">Projection</a></li>
+<li><a href="create_position.html">Position</a></li>
+<li><a href="create_visibility.html">Visibility</a></li>
+<li><span>View</span></li>
+</ul>
+</div>
+
+<div class="contents">
+
+<h3>red, green, blue</h3>
+
+Set the background color of the layer. When several layers exist 
+simultaneously in a window, the background color of the graphic
+region is always the color of the current layer.
+
+<pre>
+Example: <b>&lt;layer ... red="0.0" green="0.0" blue="0.0"/></b> (default)
+(defined in <b>GAMGI_MESA_LAYER_R</b>, <b>GAMGI_MESA_LAYER_G</b>
+and <b>GAMGI_MESA_LAYER_B</b>)
+Allowed values: <b>0.0</b> - <b>1.0</b> (optional, coupled)
+</pre>
+
+<h3>axes</h3>
+
+Controls whether the absolute layer axes are shown.
+Positioned at (0,0,0), with vectors (1,0,0), (0,1,0), (0,0,1), 
+the three axes use the rgb color scheme: red for the first axis, 
+green for the second and blue for the third. 
+
+<pre>
+Example: <b>&lt;layer ... axes="no"/></b> (default)
+Allowed values: <b>yes</b>, <b>no</b> (optional)
+</pre>
+
+<h3>scale</h3>
+
+Change the size of all objects directly belonging to the layer. 
+Lights and the layer itself are not affected, as they have no 
+visual representation. Objects are scaled around the layer center.
+
+<pre>
+Example: <b>&lt;layer ... scale="1.0"/></b> (default)
+(defined in <b>GAMGI_MESA_SCALE</b>)
+Allowed values: positive real (optional)
+</pre>
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

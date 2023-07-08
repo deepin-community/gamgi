@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE gml SYSTEM "http://www.gamgi.org/dtd/gamgi.dtd">
+<gml>
+  <molecule name="chavicol">
+    <atom id="1" element="C" x="-2.2906" y="1.4497" z="0.0274"/>
+    <atom id="2" element="C" x="-0.9895" y="1.5995" z="-0.4547"/>
+    <atom id="3" element="C" x="-0.1072" y="0.5132" z="-0.4829"/>
+    <atom id="4" element="C" x="-0.5656" y="-0.7182" z="-0.0041"/>
+    <atom id="5" element="C" x="-1.8673" y="-0.8607" z="0.4787"/>
+    <atom id="6" element="C" x="-2.7561" y="0.2181" z="0.5011"/>
+    <atom id="7" element="O" x="-4.0226" y="0.0705" z="0.9723"/>
+    <atom id="8" element="C" x="1.3031" y="0.6550" z="-1.0008"/>
+    <atom id="9" element="C" x="2.2779" y="0.6119" z="0.1474"/>
+    <atom id="10" element="C" x="3.2088" y="-0.3393" z="0.3020"/>
+    <atom id="11" element="H" x="-2.9679" y="2.3191" z="0.0363"/>
+    <atom id="12" element="H" x="-0.6582" y="2.5865" z="-0.8167"/>
+    <atom id="13" element="H" x="0.1088" y="-1.5887" z="-0.0067"/>
+    <atom id="14" element="H" x="-2.2011" y="-1.8434" z="0.8509"/>
+    <atom id="15" element="H" x="-4.1205" y="-0.8536" z="1.2571"/>
+    <atom id="16" element="H" x="1.4384" y="1.6162" z="-1.5479"/>
+    <atom id="17" element="H" x="1.5027" y="-0.1602" z="-1.7336"/>
+    <atom id="18" element="H" x="2.2016" y="1.4160" z="0.9006"/>
+    <atom id="19" element="H" x="3.3157" y="-1.1603" z="-0.4232"/>
+    <atom id="20" element="H" x="3.8962" y="-0.3269" z="1.1627"/>
+    <bond parent1="1" parent2="2" order="1.50"/>
+    <bond parent1="1" parent2="6" order="1.50"/>
+    <bond parent1="1" parent2="11"/>
+    <bond parent1="2" parent2="3" order="1.50"/>
+    <bond parent1="2" parent2="12"/>
+    <bond parent1="3" parent2="4" order="1.50"/>
+    <bond parent1="3" parent2="8"/>
+    <bond parent1="4" parent2="5" order="1.50"/>
+    <bond parent1="4" parent2="13"/>
+    <bond parent1="5" parent2="6" order="1.50"/>
+    <bond parent1="5" parent2="14"/>
+    <bond parent1="6" parent2="7"/>
+    <bond parent1="7" parent2="15"/>
+    <bond parent1="8" parent2="9"/>
+    <bond parent1="8" parent2="16"/>
+    <bond parent1="8" parent2="17"/>
+    <bond parent1="9" parent2="10" order="2.00"/>
+    <bond parent1="9" parent2="18"/>
+    <bond parent1="10" parent2="19"/>
+    <bond parent1="10" parent2="20"/>
+  </molecule>
+</gml>

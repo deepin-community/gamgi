@@ -1,0 +1,686 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Changelogs: GAMGI 0.15</title>
+<link rel="icon" type="image/png" href="../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../css/board.css"/>
+</head>
+
+<body>
+
+<div class="board">
+<div>GAMGI new</div><div>&nbsp;</div>
+</div>
+
+<div class="contents">
+New developments in code, documentation and website are reported here.
+</div>
+
+<div class="board">
+<div>GAMGI 0.17.1</div><div>7th March 2014</div>
+</div>
+
+<div class="contents">
+
+Reviewed all Formats documentation and updated for Cluster, Group,
+Plane, Direction objects. Changed type for reference in XML group
+elements.  Updated Orbital interface. Reviewed GtK and OpenGL interface.
+Renewed gamgi.org domain name until 2020 and GAMGI EU trademark until
+2024. Started using sha256sum to checksum distribution tarball files.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Fixed a bug just introduced: we cannot unref the GDK visual
+after removing a GL context. Just removed this code. Apparently
+GTK does this when the widget is destroyed.</li>
+<li>Improved gamgi_gtk_area.c, used in the X version of GAMGI,
+that replaces the GTKGLExt library by our own GLX-based code.
+Javier Cabezas ported this code to GTK 3 and is working fine!
+Back ported changes so the differences between the code for
+GTK 2 and GTK 3 are absolutely minimal.</li>
+<li>We cannot use r,g,b colors because of a,b,c cell axes.</li>
+<li>Improved Axes layout in Orbital->Create and Orbital->Modify dialogs.</li>
+<li>Changed label Model to Scope in Orbital->Create and
+Orbital->Modify and changed Help interface accordingly.</li>
+<li>Checked all Help Formats documentation pages.</li>
+<li>Updated Help documentation for Cluster Formats.</li>
+<li>cluster->paints arrays are no longer zero-terminated.</li>
+<li>Synced gamgi and gamgi_exp branches.</li>
+<li>In XML files, in group elements, replaced attribute type by reference.</li>
+<li>Updated Help documentation for Plane and Direction Formats.</li>
+<li>Updated Help documentation for Group Interfaces and Formats.</li>
+<li>Renewed the <a href="http://oami.europa.eu/">EU</a>
+trademark <b>GAMGI</b> until <b>2024</b>.</li>
+<li>Updated the source code and documentation license to 
+<a href="http://www.fsf.org/licenses/gpl.html">GPL v3</a>.
+<li>Started using <a href="http://en.wikipedia.org/wiki/SHA-2">sha256sum</a>
+to checksum all distribution files.</li>
+<li>Renewed the gamgi.org domain name registration until 2020.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Rewrite the About dialog, in the notebook form, to
+include pages for Developers, Contributors, Supporters.</li>
+<li>Add a task id to operactions involving multiple scans to
+guarantee that there is no flag corruption when bonds are
+created between different molecules.</li>
+<li>Add a bond angle, which is useful to control double bonds
+in solid mode.</li>
+<li>Write documentation about lists of objects.</li>
+<li>Write documentation about Orbitals.</li>
+<li>Write tutorials about crystalographic and atomic Plane,Direction usage.</li>
+<li>Implement dynamic text objects, to measure distances,
+angles, etc. on real time.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.17</div><div>20th December 2013</div>
+</div>
+
+<div class="contents">
+
+Fixed a math bug in the Hydrogen orbital code. Fixed the way the
+Debye-Waller atomic temperature factor is handled. Fixed a makefile bug
+in the release without GtkGlExt. Orbital->Select is now fully working.
+Simplified the way axes are handled for orbitals. Added more options to
+create lists of directions and planes. Updated documentation for Formats
+and Interfaces, regarding orbitals, directions, planes. Changed some XML
+attributes for cell, direction, plane elements.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Fixed a makefile bug (introduced in gamgi0.15.6) in the GAMGI branch
+that does not require the GtkGlExt library: the make_rules contained gtkglext
+dependencies that should not be there.</li>
+<li>Planes, Directions can now be seleted by projection net: Wulff or Schmidt.</li>
+<li>Synced code, documentation and data files between gamgi and gamgi_exp
+distribution trees.</li>
+<li>Checked dat/orbital XML files to update orbital axes attributes.</li>
+<li>Checked all dat/ XML files to replace attribute type by label,
+in atom elements.</li>
+<li>Checked all dat/ XML files to replace attribute type by model,
+in plane, direction, cell elements.</li>
+<li>For the sake of consistency, replaced globally the name projection
+by net in direction and plane code and XML elements.</li>
+<li>For the sake of consistency, replaced globally the name type
+by model in cell, plane, direction code and XML elements.</li>
+<li>Changed label Type to Model in Cell->Create and Cell->Modify.</li>
+<li>Changed label Method to Type in Bond->Create.</li>
+<li>Updated Help->Formats documentation for XML Plane and Direction objects.</li>
+<li>Updated Help->Interfaces documentation for Type and Projection
+in Plane->Create, Plane->Modify, Direction->Create, Direction->Modify.</li>
+<li>The Debye-Waller atomic temperature can now take values only
+between 0.0 (blue) and 100.0 (red) as is usual in this analysis.</li>
+<li>Updated Interfaces and Formats documentation for Bond objects.</li>
+<li>Fixed the default Debye-Waller atomic temperature: the new value
+is 0.0, corresponding to an atom with a well known position.</li>
+<li>Updated Formats documentation for Atom and Cell objects.</li>
+<li>Help->Current and Help->Topic can now
+read the documentation for Orbital->Modify.</li>
+<li>Wrote documentation for Orbital->Modify.</li>
+<li>Updated documentation for Orbital->Create.</li>
+<li>Orbital axes are now handled in a much simpler way, in
+Orbital->Create, Orbital->Modify and XML native files.</li>
+<li>Orbital->Select is now working fine for all options, including
+the many properties that can be used to select orbitals.</li>
+<li>Simplified slightly the functions gamgi_gtk_select_*.c.</li>
+<li>Fixed two bugs in the H orbitals code, introduced in GAMGI 0.16.6:
+1) the terms rho**L (from Laguerre polynomials) and 1/r**L (from Legendre
+functions) cancel each other, apart from a constant that was missing.
+2) the default radius calculation was missing the rho**L term.</li>
+<li>Lists of Planes can now be selected by model:
+Polygon, Pole, Trace, Vector.</li>
+<li>Lists of Directions can now be selected by model:
+Line, Pole, Trace.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Rewrite the About dialog, in the notebook form, to
+include pages for Developers, Contributors, Supporters.</li>
+<li>Add a task id to operactions involving multiple scans to
+guarantee that there is no flag corruption when bonds are
+created between different molecules.</li>
+<li>Add a bond angle, which is useful to control double bonds
+in solid mode.</li>
+<li>Write documentation about lists of objects.</li>
+<li>Write documentation about Orbitals.</li>
+<li>Write tutorials about crystalographic and atomic Plane,Direction usage.</li>
+<li>Implement dynamic text objects, to measure distances,
+angles, etc. on real time.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.16.8</div><div>31st October 2013</div>
+</div>
+
+<div class="contents">
+
+Fixed several important bugs related with: object selection by region,
+Reset of multiple windows with Lists selected, creating multiple
+crystallographic Plane/Direction ranges, building RCP structures.
+Fixed other bugs related with: Pole/Trace simultaneous creation,
+crystallographic Plane/Direction names, visual aspect and object
+selection in stereographic projections with Poles and Traces.
+Lists of Orbitals are now working fine. Orbital->Select is already
+working for some options.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>In Stereographic Projections, raised slightly the z-height in pole
+bitmaps (GAMGI_MESA_OFFSET_BITMAP), so these always appear above traces.
+This fixes a visual glitch but also makes it much easier to select
+poles with traces around, as colors are now clearly separated.</li>
+<li>Synced gamgi and gamgi_exp code branchs.</li>
+<li>Updated static_press in Plane->Modify and Direcyion->Modify,
+so the object name is not overwritten by automatic name setting.</li>
+<li>Automatic name changing in Plane->Modify and Direction->Modify
+is working fine now, for crystallographic planes,diretcions.</li>
+<li>Found and removed a bug in Plane->Create and Direction->Create:
+in some cases, the object name indicated by the user was ignored.</li>
+<li>Found and removed a serious bug in Plane->Create and Direction->Create:
+after creating planes/directions using lists previously created with
+the List second level dialog, these were not properly reset. In some
+circunstances this could crash GAMGI.</li>
+<li>Found and removed a bug in Plane->Create and Direction->Create:
+Pole and Trace were not created simultaneosuly, when required,
+only one each time.</li>
+<li>Orbital->Select is now working. Lists of Orbitals can be copied,
+linked, selected, modified, removed, as for other objects.</li>
+<li>Synced gamgi and gamgi_exp code branchs.</li>
+<li>Fixed Cell->Link: it is working (again) fine for lists of Cells,
+in Object (above and below), Crystal and Random modes.</li>
+<li>Found and removed a simple but serious bug: when multiple windows
+were open and a list of objects was active and selected as the current
+object, Reset (but not Exit) would crash Gamgi.</li>
+<li>Cell->Link Random (RCP) was not working: replaced by older
+code. Cell->Link needs more work.</li>
+<li>Compiling again with -O3 flag.</li>
+<li>Fixed a serious bug in all Object->Select dialogs, in the
+method Region: when the sampling rectangle was not fully inside
+the graphic area, some of the sampled colors would be undefined
+and GAMGI would crash when pressing Ok. The crashes were detected
+a long time ago, but the cause was unclear until now.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Rewrite the About dialog, in the notebook form, to
+include pages for Developers, Contributors, Supporters.</li>
+<li>Add a task id to operactions involving multiple scans to
+guarantee that there is no flag corruption when bonds are
+created between different molecules.</li>
+<li>Add a bond angle, which is useful to control double bonds
+in solid mode.</li>
+<li>Write documentation about lists of objects.</li>
+<li>Write documentation about Orbitals.</li>
+<li>Write tutorials about crystalographic and atomic Plane,Direction usage.</li>
+<li>Implement dynamic text objects, to measure distances,
+angles, etc. on real time.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.16.7</div><div>3rd September 2013</div>
+</div>
+
+<div class="contents">
+
+Implemented Orbital->Modify, which is now working fine for single orbitals
+(lists of orbitals should be supported in the next release). Added automatic
+name change in Atom->Modify and Orbital->Modify. Simplified the way Laguerre
+polynomials and Legendre functions are calculated in gamgi_chem_orbital.c.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Synced gamgi/dat and gamgi_exp/dat data trees.</li>
+<li>Synced gamgi/doc and gamgi_exp/doc documentation trees.</li>
+<li>Synced gamgi/src and gamgi_exp/src code trees.</li>
+<li>Fixed more GUI glitches in Orbital->Modify.</li>
+<li>Fixed Orbital->Modify crashes: orbital->dots must be reset to 0.</li>
+<li>www.gamgi.org and ftp.gamgi.org are now served from a VM hosted
+at the IT center at the Lisboa University. Hopefully this means more
+reliable connections and less time down.</li>
+<li>Automatic name changing in Orbital->Modify is working fine now.</li>
+<li>Automatic name changing in Atom->Modify is working fine now.</li>
+<li>Implemented automatic name changing in Atom->Modify.</li>
+<li>Implemented automatic name changing in Orbital->Modify.</li>
+<li>Orbital->Modify is now working for single orbitals. Lists
+of orbitals should be working in the next release.</li>
+<li>Translation, Rotation, are now working fine for Orbital->Modify.</li>
+<li>static_apply for Orbital->Modify is mostly done.</li>
+<li>Completed static_grab for Orbital->Modify.</li>
+<li>Added static_ok_global and static_ok_local for Orbital->Modify.</li>
+<li>Completed static_press for Orbital->Modify.</li>
+<li>The GUI behaviour for Orbital->Modify is almost completed.</li>
+<li>Started working on Orbital->Modify and Orbital->Select.</li>
+<li>Updated gamgi_mesa_pick.c and gamgi_mesa_grab.c to take into
+account solid representations of orbitals.</li>
+<li>Fixed a little bug in the orbital axes mesa drawing code.</li>
+<li>Laguerre polynomials have a factor r**L (L = angular quantum number)
+that cancels exactly with the factor 1/r**L of the Legendre functions,
+so the mathematical descriptions of the H orbitals become much simpler!
+Thanks to Jose Luis Martins for pointing me to this! For such low probability
+densities (1E-6), the numerical issues are so sensitive that the orbital visual
+representations come a bit different, even for L=1, after this simplification.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Rewrite the About dialog, in the notebook form, to
+include pages for Developers, Contributors, Supporters.</li>
+<li>Add a task id to operactions involving multiple scans to
+guarantee that there is no flag corruption when bonds are
+created between different molecules.</li>
+<li>Add a bond angle, which is useful to control double bonds
+in solid mode.</li>
+<li>Write tutorials about crystalographic and atomic Plane,Direction usage.</li>
+<li>Implement dynamic text objects, to measure distances,
+angles, etc. on real time.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.16.6</div><div>21st June 2013</div>
+</div>
+
+<div class="contents">
+
+Hydrogen orbitals can now be represented in GAMGI as polygonal isosurfaces.
+As before (with orbitals represented as clouds of dots), users can choose
+which octants to see. The orbitals look really fantastic, as the screenshots
+show. Fixed few minor bugs in the GTK and Expat orbital code.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Synced gamgi/dat and gamgi_exp/dat source code trees.</li>
+<li>Synced gamgi/src and gamgi_exp/src source code trees.</li>
+<li>Added screenshots showing the new representations for orbitals.</li>
+<li>Slightly increased theta, phi accuracy when determining the orbital
+default sampling radius: tested against (6,5,-5) orbital (6hy5).</li>
+<li>Debugged code to perform signal interpolation in solid orbitals.
+Is working fine now! This was really the last obstacle to have a world
+class orbital representation in GAMGI! Time for screenshots!
+Futurely we will try to reduce the number of vertices, normals
+and triangles, and we might implement Gorauld shading, but
+none of this will change the scientific and visual capabilities
+of our current model. A glass of Port to celebrate!</li>
+<li>Implemented a method to perform signal interpolation in solid orbitals,
+to solve the signal change innaccuracy problem found earlier.</li>
+<li>Cleaned code in gamgi_chem_orbital.c and gamgi_chem_orbital.h.</li>
+<li>Fixed a bug: the orbital probability density was not properly
+exported to XML files.</li>
+<li>Orbital axes are now simpler to use and have more options.</li>
+<li>The signal code is working now: 3D orbitals look really fantastic,
+but the signal code must refined, as the lack of interpolation
+results in too much visual noise when the signal changes.</li>
+<li>Fixed the code to swap positive and negartive triangles.</li>
+<li>Fixed the signal interpolation code in static_edge.</li>
+<li>Solved an interpolation issue related with the orbital
+isosurface onion effect: force fraction to the [0,1] range.</li>
+<li>Fixed orbital solid code edge orientation: this is needed
+for exact interpolation.</li>
+<li>Fixed numerical inaccuries: just a bug splitting the
+cubes (as in a 3D chess board). Is looking great now!</li>
+<li>Debugged the solid orbital 3D code, apparently is working fine,
+still with some numerical inaccuries in the surface.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Rewrite the About dialog, in the notebook form, to
+include pages for Developers, Contributors, Supporters.</li>
+<li>Add a task id to operactions involving multiple scans to
+guarantee that there is no flag corruption when bonds are
+created between different molecules.</li>
+<li>Add a bond angle, which is useful to control double bonds
+in solid mode.</li>
+<li>Write tutorials about crystalographic and atomic Plane,Direction usage.</li>
+<li>Implement dynamic text objects, to measure distances,
+angles, etc. on real time.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.16.5</div><div>24th May 2013</div>
+</div>
+
+<div class="contents">
+
+Orbital objects can now be exported, imported to GAMGI native XML files.
+Replaced the recursive static_outside routine by a loop and stack version,
+thus removing a critical bottleneck in the solid orbital code. Fixed mem
+leaks in GTK code, sintax bugs in object selection by color, warnings
+due to unnused variables, etc.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Synced gamgi/src and gamgi_exp/src source trees.</li>
+<li>Added a screenshot showing BCC, CFC octahedral interstices: spheres, octahedra.</li>
+<li>Added two screenshots showing H-based orbitals, as clouds of points.</li>
+<li>Fixed about 25 warnings (Ubuntu 12.10) resulting
+from variables initialised but not really used.</li>
+<li>Found and removed a bug in most Object->Select dialogs,
+affecting object selection by color: search for "R", "G", "B",
+the new labels, not for "Red", Green", "Blue", the old ones.</li>
+<li>Added proper default names to H-based orbitals.</li>
+<li>The 3D code for solid orbitals 3D is looking
+really good, and very fast to get and manipulate!</li>
+<li>Improved static_outside in gamgi_chem_orbital.c: the new version
+is faster, simpler, and works for any sampling accuracy.</li>
+<li>Identified and removed a mem leak in all gtk_container_get_children calls.
+The problem occurred in gamgi_gtk_dialog.c and gamgi_gtk_statusbar.c.</li>
+<li>Replaced the recursive code in static_outside in gamgi_chem_orbital.c
+by a loop-stack version, removing the bottle-neck posed by recursion
+in the maximum number of slices allowed to render solid orbitals.</li>
+<li>Atomic H-based orbitals can now be imported from GAMGI native XML files.</li>
+<li>Atomic H-based orbitals can now be exported to GAMGI native XML files.</li>
+<li>Octants, Seed are now permanent orbital properties.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Rewrite the About dialog, in the notebook form, to
+include pages for Developers, Contributors, Supporters.</li>
+<li>Add a task id to operactions involving multiple scans to
+guarantee that there is no flag corruption when bonds are
+created between different molecules.</li>
+<li>Add a bond angle, which is useful to control double bonds
+in solid mode.</li>
+<li>Write tutorials about crystalographic and atomic Plane,Direction usage.</li>
+<li>Implement dynamic text objects, to measure distances,
+angles, etc. on real time.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.16.4</div><div>27th April 2013</div>
+</div>
+
+<div class="contents">
+
+Wrote all the Marching-Cubes / Tetra-Cubes 3D and 2D code needed
+to render solid orbitals. The 2D code is already debugged and working fine.
+Added new GAMGI mirrors:
+<a href="http://atom.ist.utl.pt">
+http://atom.ist.utl.pt</a>,
+<a href="http://gamgi.ist.utl.pt">
+http://gamgi.ist.utl.pt,
+<a href="ftp://atom.ist.utl.pt">
+ftp://atom.ist.utl.pt</a>.
+Added structure and info files for beta-quartz, beta-cristobalite and beta-trydimite.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Synced gamgi and gamgi_exp source branches.</li>
+<li>Updated make_local, to include the paths:
+-I/usr/lib/i386-linux-gnu/glib-2.0/include,
+-I/usr/lib/i386-linux-gnu/gtk-2.0/include, used by Ubuntu.</li>
+<li>Fixed a bug in the new solid orbital code: the r length test
+makes sense in the wired representation but not in the solid one.</li>
+<li>The new recursive code works for bit arrays
+as large as 160x160x160, in the worst case.</li>
+<li>The recursive code to find outer surfaces is crashing for
+bit arrays larger than 50x50x50. Looking for a loop alternative.</li>
+<li>Orbital code: wavefunction interpolation to produce the
+triangle-based representation is working really well.</li>
+<li>The triangle-based 2D solid rendering of planar surfaces in H-based
+orbitals is now well tested and working fine! This is crucial to build
+a octant-based representation of these orbitals, where users can choose
+which octants to show.</li>
+<li>Added new mirrors, <a href="http://atom.ist.utl.pt">http://atom.ist.utl.pt</a>
+and <a href="ftp://atom.ist.utl.pt">ftp://atom.ist.utl.pt</a>,
+to futurely host gamgi.org.</li>
+<li>Added nice structure and info files for high-temperature
+beta-quartz, beta-cristobalite and beta-trydimite.</li>
+<li>Implemented a new mirror: <a href="http://gamgi.ist.utl.pt/">
+http://gamgi.ist.utl.pt/</a> or <a href="http://www.gamgi.ist.utl.pt/">
+http://www.gamgi.ist.utl.pt/</a>.</li>
+<li>Simplified the way H-Orbital octants are selected in Wired mode.</li>
+<li>For each H orbital octant, wrote the topological code to
+build all the triangles needed to describe the outer 3D isosurface
+(tetra-cubes algorithm), plus the internal 2D octant boundaries.</li>
+<li>For each H orbital octant, wrote and tested the bit array code
+needed to eliminate the inner isofurfaces and show only the outer one.</li>
+<li>Simplified the octant binary code in gamgi_chem_orbital.c.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Rewrite the About dialog, in the notebook form, to
+include pages for Developers, Contributors, Supporters.</li>
+<li>Add a task id to operactions involving multiple scans to
+guarantee that there is no flag corruption when bonds are
+created between different molecules.</li>
+<li>Add a bond angle, which is useful to control double bonds
+in solid mode.</li>
+<li>Write tutorials about crystalographic and atomic Plane,Direction usage.</li>
+<li>Implement dynamic text objects, to measure distances,
+angles, etc. on real time.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.16.3</div><div>14th January 2013</div>
+</div>
+
+<div class="contents">
+
+Implemented Orbital->Copy, Orbital->Link, Orbital->Remove dialogs.
+Improved interface for Orbital->Create and all Object->Copy dialogs.
+Added Help->Current and Help->Topic documentation for dialogs
+Orbital->Create, Orbital->Copy, Orbital->Link, Orbital->Remove.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Improved readability in all Object->Copy dialogs.</li>
+<li>Added documentation for Orbital->Create, Orbital->Copy,
+Orbital->Link and Orbital->Remove.</li>
+<li>Upgraded Help->Current and Help->Topic to allocate
+Orbital->Create, Orbital->Copy, Orbital->Link, Orbital->Remove.</li>
+<li>Synced gamgi and gamgi_exp trees.</li>
+<li>Orbital->Link is now working fine (lists of orbitals not implemented yet).</li>
+<li>Fixed a glitch in all link_object.html files, resulting in a GAMGI
+error message when the Help sub-system tried to open one of these files.</li>
+<li>Orbital->Copy is now working fine (lists of orbitals not implemented yet).</li>
+<li>Orbital->Remove is now working fine (lists of orbitals not implemented yet).</li>
+<li>Started building the dialogs Orbital->Copy, Orbital->Link,
+and Orbital->Remove.</li>
+<li>The Octants layout, in the Orbital->Create dialog, is much more
+intuitive now.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Rewrite the About dialog, in the notebook form, to
+include pages for Developers, Contributors, Supporters.</li>
+<li>Add a task id to operactions involving multiple scans to
+guarantee that there is no flag corruption when bonds are
+created between different molecules.</li>
+<li>Add a bond angle, which is useful to control double bonds
+in solid mode.</li>
+<li>Write tutorials about crystalographic and atomic Plane,Direction usage.</li>
+<li>Implement dynamic text objects, to measure distances,
+angles, etc. on real time.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.16.2</div><div>2nd November 2012</div>
+</div>
+
+<div class="contents">
+
+All the Hydrogen based orbitals from 1s to 6h are now working fine in GAMGI,
+as clouds of dots above a given density. Default values for threshold
+density, number of points and sampling radius were extensively studied
+for all orbitals, to guarantee scientific correctness and optimal
+visual representations. Solid representations of these orbitals
+and complex charge descriptions of molecules and crystals, obtained
+from ab-initio calculations done with other computer packages,
+are planned to go next.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Synced gamgi/ (with GtkGLExt) and gamgi_exp/ (with GLX) versions.</li>
+<li>Filtering volume octants are now working fine for H orbitals.</li>
+<li>Completed search for best default values for H based orbitals.
+Default density is 1E-6, which is needed to show all regions in 6s
+orbitals. Points is 50000 x n, which is a reasonable compromise.
+Default radius is calculated scanning from the last maximum in f2r2
+radial density, plus a 2.0 minimum length, until the maximum density
+(searching on theta, phi) becomes lower than the default density.</li>
+<li>Improved, redesigned the Orbital->Create dialog.</li>
+<li>H orbitals are now working fine in Gamgi. Looking
+now for the best default values.</li>
+<li>Added all the code needed to build and render H orbitals.</li>
+<li>Optimized H orbital code for speed.</li>
+<li>For all Hydrogen based orbitals from n = 1 to 6,
+calculated the distances for radial polinomia maxima.</li>
+<li>For all Hydrogen based orbitals from n = 1 to 6,
+calculated the distances for radial polinomia zeros.</li>
+<li>Orbital objects can now be created, scaled (around the current
+center), moved, rotated, as any other Gamgi object.</li>
+<li>Completed the dialog Orbital->Create to build Hydrogen based
+orbitals.</li>
+<li>Wrote the graphic engine code to render Hydrogen based orbitals
+in dotted mode.</li>
+<li>Added and tested the s, p, d, f, g, h Hydrogen based
+orbitals for n = 6, in cartesian x,y,z coordinates.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Rewrite the About dialog, in the notebook form, to
+include pages for Developers, Contributors, Supporters.</li>
+<li>Add a task id to operactions involving multiple scans to
+guarantee that there is no flag corruption when bonds are
+created between different molecules.</li>
+<li>Add a bond angle, which is useful to control double bonds
+in solid mode.</li>
+<li>Write tutorials about crystalographic and atomic Plane,Direction usage.</li>
+<li>Implement dynamic text objects, to measure distances,
+angles, etc. on real time.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.16.1</div><div>4th September 2012</div>
+</div>
+
+<div class="contents">
+
+Added all the Laguerre and Legendre functions needed
+to build Hidrogen based atomic orbitals up to 5g, in
+xyz coordinates. Successfully tested dotted models of
+s,p,d,f,g Hydrogen based orbitals up to 5g. Found good
+algorithms to build surface models of orbitals. Wrote
+a first version of dialog Orbital->Create. Fixed two bugs
+on importing, exporting clusters, groups to XML files.</li>
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Added all the data needed to describe Hdrogen
+based orbitals lower than h to gamgi_chem_orbital.c.</li>
+<li>Completed a first version for the Hydrogen-based orbitals interface.</li>
+<li>I am planning to implement a tetra-cubes algorithm (a variation
+of marching cubes) to polygonize orbital representations in Gamgi.
+According to Wikipedia, a <a href="http://www.google.com/patents?vid=4710876">patent</a>
+on marching cubes was issued in 1987 and expired in 2005.</li>
+<li>Started creating dialog Orbital->Create.</li>
+<li>Implemented the nine g orbitals. They seem to be working fine.</li>
+<li>Completed the conversion from radius,tetha,phi
+to x,y,z coordinates for all g orbitals.</li>
+<li>Verified (again) the conversion from radius,theta,phi
+to x,y,z coordinates for all p, d, f orbitals.</li>
+<li>Eliminated uneeded cluster->dots and solved a bug which prevented
+cluster Voronoi seeds from being exported and imported from file.</li>
+<li>Fixed a bug in expat import/export code: unlike Groups, Clusters were
+not properly labeled as containers (the default) or polytopes, so polytope
+data was missing parameters when exported / imported.</li>
+<li>Hydrogen-based atomic orbitals are working fine, for s, p, d, f
+orbitals, currently represented only as dot clouds.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Rewrite the About dialog, in the notebook form, to
+include pages for Developers, Contributors, Supporters.</li>
+<li>Add a task id to operactions involving multiple scans to
+guarantee that there is no flag corruption when bonds are
+created between different molecules.</li>
+<li>Add a bond angle, which is useful to control double bonds
+in solid mode.</li>
+<li>Write tutorials about crystalographic and atomic Plane,Direction usage.</li>
+<li>Implement dynamic text objects, to measure distances,
+angles, etc. on real time.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI old</div><div>&nbsp;</div>
+</div>
+
+<div class="contents">
+
+Changelogs for older releases can be found here.
+
+<p/>
+
+<ul>
+<li><a href="changelogs15.html">GAMGI 0.15.1 - GAMGI 0.16</a></li>
+<li><a href="changelogs14.html">GAMGI 0.14.1 - GAMGI 0.15</a></li>
+<li><a href="changelogs13.html">GAMGI 0.13.1 - GAMGI 0.14</a></li>
+<li><a href="changelogs12.html">GAMGI 0.12.1 - GAMGI 0.13</a></li>
+<li><a href="changelogs11.html">GAMGI 0.11.1 - GAMGI 0.12</a></li>
+<li><a href="changelogs10.html">GAMGI 0.10.1 - GAMGI 0.11</a></li>
+<li><a href="changelogs09.html">GAMGI 0.09.1 - GAMGI 0.10</a></li>
+<li><a href="changelogs08.html">GAMGI 0.08.1 - GAMGI 0.09</a></li>
+<li><a href="changelogs07.html">GAMGI 0.07.18 - GAMGI 0.08</a></li>
+</ul>
+
+</div>
+
+<div id="bottom">
+<a href="../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+<gml>
+<molecule name="Fluorophenyl">
+<atom element="C" x="0.0000" y="-1.6129" z="0.0000"/>
+<atom element="C" x="-1.2000" y="-0.9020" z="0.0000"/>
+<atom element="C" x="-1.1875" y="0.4817" z="0.0000"/>
+<atom element="C" x="0.0000" y="1.1737" z="0.0000"/>
+<atom element="C" x="1.1875" y="0.4817" z="0.0000"/>
+<atom element="C" x="1.2000" y="-0.9020" z="0.0000"/>
+<atom element="H" x="-2.0293" y="-1.3755" z="-0.0200"/>
+<atom element="H" x="-2.0088" y="0.9587" z="-0.0200"/>
+<atom element="H" x="2.0088" y="0.9587" z="0.0200"/>
+<atom element="H" x="0.0000" y="2.1135" z="0.0200"/>
+<atom element="H" x="-0.0000" y="-2.5629" z="0.0000"/>
+<atom element="F" x="2.0293" y="-1.3755" z="0.0000"/>
+</molecule>
+</gml>

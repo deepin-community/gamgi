@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Interfaces: Atom Modify</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Atom Modify</h1>
+
+<div id="notebook">
+<ul>
+<li><a href="modify_element.html">Element</a></li>
+<li><a href="modify_property.html">Property</a></li>
+<li><a href="modify_analysis.html">Analysis</a></li>
+<li><a href="modify_position.html">Position</a></li>
+<li><a href="modify_view.html">View</a></li>
+<li><a href="modify_length.html">Length</a></li>
+<li><span>Angle</span></li>
+</ul>
+</div>
+
+<div class="contents">
+            
+Change here <b>Angle</b> properties between a single atom and other objects.
+
+<h3>Property</h3>
+
+The supported <b>Angle</b> properties, the same as for <b>Atom->Measure</b>,
+are listed below. Atoms and other objects may belong to different parents
+and may be bonded or not. Only objects in the current layer can be chosen.
+
+<p/>
+
+An easy technique to select the objects is to click the mouse
+sucessively over their visual representations, in the sequence
+shown in the dialog.
+
+<p/><b>3-Atom Angle</b><p/>
+
+The valence angle between directions Atom2-Atom1 and Atom2-Atom3.
+
+<p/>
+
+The signal convention is: when vector Atom2-Atom1 is rotated from 
+vector Atom2-Atom3 through a direct, counter-clockwise rotation, 
+the angle is positive, otherwise is negative. In 3D space, the direction 
+of this planar rotation depends of the side of the plane where the user 
+is, so the angle signal depends of the user position relatively to the atoms.
+
+<p/><b>4-Atom Angle</b><p/>
+
+The torsion angle between two planes, defined by Atom1-Atom2-Atom3 
+and Atom2-Atom3-Atom4. An error is shown when Atom1, Atom2, Atom3 or 
+Atom2, Atom3, Atom4 are initially aligned along a common direction, 
+because the plane Atom1-Atom2-Atom3 or Atom2-Atom3-Atom4 is undefined.
+
+<p/>
+
+The signal convention is: looking along vector Atom2-Atom3 
+(with Atom1 near the user and Atom4 away from the user), when vector common 
+direction-Atom1 is rotated from vector common direction-Atom4 by a direct, 
+counter-clockwise rotation, the angle is positive, otherwise is negative. 
+
+<p/>
+
+While the signal of the 3-atom angle depends of the user position, the 
+signal of the 4-atom angle is unique, because the four atoms define a 3D 
+construction while the three atoms define only a 2D construction. If the 
+user is looking from the other side, along the common direction Atom3-Atom2 
+(with Atom4 near the user and Atom1 away from the user), the user now sees 
+the rotation in the opposite direction, which compensates the Atom1, Atom4 
+swap, so the signal of the torsion angle remains the same.
+
+<h3>Value</h3>
+
+After selecting the property and the objects, set <b>Value</b>
+to the desired angle and press <b>Ok</b> to activate the change.
+An error is shown when some of the objects are not recognized,
+or when the angle or axis rotation cannot be determined.
+
+<p/>
+
+For all properties, of all the objects selected by users only
+the first atom is actually modified. Atoms bonded to the first
+atom are also modified, as long as they are not bonded by cyclic
+structures to any of the other selected objects (without this
+restriction, all atoms in a ring would be rotated!).
+
+<p/>
+
+In torsion angles, atoms bonded to the second atom are also
+modified, as long as they are not bonded to any of the other 
+selected objects.
+
+<p/>
+
+<b>Value</b> can take negative values, with the meaning described
+above for <b>3-Atom</b> and <b>4-Atom</b> rotations.
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

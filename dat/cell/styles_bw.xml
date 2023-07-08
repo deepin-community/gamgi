@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE gml SYSTEM "http://www.gamgi.org/dtd/gamgi.dtd">
+<gml>
+  <layer scale="1.30">
+    <light name="color" ambient_r="0.400" ambient_g="0.400"
+    ambient_b="0.400" diffuse_r="1.000" diffuse_g="1.000" diffuse_b="1.000"
+    specular_r="0.500" specular_g="0.500" specular_b="0.500"
+    direction_x="0.0000" direction_y="0.0000" direction_z="-1.0000"/>
+    <cell system="c" lattice="F" a="1.0000" x="4.0867" y="0.7817" z="1.7792"
+    e1="74.40" e2="283.16" e3="275.32" model="wigner" n1="3" n2="3" n3="3"
+    red="0.7" green="0.7" blue="0.7"
+    faces="yes"/>
+  </layer>
+  <layer scale="1.18">
+    <light name="grey" ambient_r="0.500" ambient_g="0.500" ambient_b="0.500"
+    diffuse_r="0.500" diffuse_g="0.500" diffuse_b="0.500" specular_r="0.500"
+    specular_g="0.500" specular_b="0.500" direction_x="-1.0000"
+    direction_y="-1.0000" direction_z="-1.0000"/>
+    <cell system="c" lattice="I" a="1.0000" x="-4.8734" y="-0.7961"
+    z="0.0000" model="wigner" n1="3" n2="3" n3="3" faces="yes" red="0.500"
+    green="0.500" blue="0.500"/>
+  </layer>
+  <layer scale="0.98"
+  red="1.0" green="1.0" blue="1.0">
+    <cell system="o" lattice="I" a="1.0000" b="3.0000" c="3.1000"
+    red="0.0" green="0.0" blue="0.0"
+    x="-2.0217" y="-1.2247" z="0.9305" e1="36.61" e2="327.57" e3="307.64"/>
+    <cell system="o" lattice="I" a="1.0000" b="3.0000" c="3.1000"
+    x="-2.0217" y="-1.2247" z="0.9305" e1="36.61" e2="327.57" e3="307.64"
+    model="primitive" red="0.500" green="0.500" blue="0.500"/>
+    <cell system="o" lattice="I" a="1.0000" b="3.0000" c="3.1000" x="0.0491"
+    y="-1.9241" z="1.2841" e1="36.61" e2="327.57" e3="307.64"
+    model="wigner" faces="yes" red="0.600" green="0.600" blue="0.600"/>
+    <cell system="h" lattice="P" a="1.0000" c="1.6330" x="-14.3156"
+    y="1.0076" z="0.2420" e1="37.57" e2="90.91" e3="209.33" n1="10" n2="10"
+    n3="2" borders="edges" red="0.000" green="0.000" blue="0.000"
+    scale="0.24"/>
+  </layer>
+</gml>

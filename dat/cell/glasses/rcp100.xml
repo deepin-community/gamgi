@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE gml SYSTEM "http://www.gamgi.org/dtd/gamgi.dtd">
+<gml>
+  <layer scale="0.432">
+    <light ambient_r="0.500" ambient_g="0.500" ambient_b="0.500"
+    diffuse_r="0.400" diffuse_g="0.400" diffuse_b="0.400" specular_r="0.300"
+    specular_g="0.300" specular_b="0.300" direction_x="0.0000"
+    direction_y="0.0000" direction_z="-1.0000"/>
+    <cell system="o" lattice="P" a="20.0000" b="10.0000" c="10.0000"
+    x="-9.9195" y="0.0489" z="-2.3547" e1="34.92" e2="261.59" e3="94.00">
+      <atom element="Cu" x="6.6737" y="-4.6648" z="5.4601" radius="1.4456"
+      style="solid" variancy="1.00" size="1.00"/>
+      <atom element="Cu" x="6.4590" y="-3.0911" z="1.0170" radius="1.4456"
+      style="solid" variancy="1.00" size="1.00"/>
+      <atom element="Cu" x="-1.9675" y="5.0688" z="5.1580" radius="1.4456"
+      style="solid" variancy="1.00" size="1.00"/>
+      <atom element="Cu" x="-0.0641" y="-0.0855" z="3.9454" radius="1.4456"
+      style="solid" variancy="1.00" size="1.00"/>
+      <atom element="Cu" x="-4.6539" y="-1.3455" z="7.9224" radius="1.4456"
+      style="solid" variancy="1.00" size="1.00"/>
+      <atom element="Cu" x="-8.0891" y="2.7930" z="8.7000" radius="1.4456"
+      style="solid" variancy="1.00" size="1.00"/>
+      <atom element="Cu" x="-5.6261" y="1.3665" z="8.1913" radius="1.4456"
+      style="solid" variancy="1.00" size="1.00"/>
+      <atom element="Cu" x="-5.6937" y="-2.5808" z="5.5232" radius="1.4456"
+      style="solid" variancy="1.00" size="1.00"/>
+      <atom element="Cu" x="-5.4562" y="2.3870" z="1.1241" radius="1.4456"
+      style="solid" variancy="1.00" size="1.00"/>
+      <atom element="Cu" x="-7.3277" y="6.2523" z="5.8538" radius="1.4456"
+      style="solid" variancy="1.00" size="1.00"/>
+      <atom element="Cu" x="1.4997" y="2.6520" z="8.4723" radius="1.4456"
+      style="solid" variancy="1.00" size="1.00"/>
+      <atom element="Cu" x="-5.3955" y="0.4327" z="5.4637" radius="1.4456"
+      style="solid" variancy="1.00" size="1.00"/>
+      <atom element="Cu" x="-4.1616" y="-2.4845" z="1.7063" radius="1.4456"
+      style="solid" variancy="1.00" size="1.00"/>
+      <atom element="Cu" x="1.8626" y="-1.0642" z="5.8706" radius="1.4456"
+      style="solid" variancy="1.00" size="1.00"/>
+      <atom element="Cu" x="-2.8019" y="1.7764" z="11.6834" radius="1.4456"
+      style="solid" variancy="1.00" size="1.00"/>
+      <atom element="Cu" x="-2.8701" y="4.9173" z="2.3887" radius="1.4456"
+      style="solid" variancy="1.00" size="1.00"/>
+      <atom element="Cu" x="-9.3851" y="3.8387" z="6.1019" radius="1.4456"
+      style="solid" variancy="1.00" size="1.00"/>
+      <atom element="Cu" x="-9.5242" y="-2.6463" z="2.6966" radius="1.4456"
+      style="solid" variancy="1.00" size="1.00"/>
+      <atom element="Cu" x="8.6803" y="-0.0595" z="1.7787" radius="1.4456"
+      style="solid" variancy="1.00" size="1.00"/>
+      <atom element="Cu" x="-8.5540" y="2.9473" z="1.2610" radius="1.4456"
+      style="solid" variancy="1.00" size="1.00"/>
+      <atom element="Cu" x="-6.2343" y="2.2726" z="10.8693" radius="1.4456"
+      style="solid" variancy="1.00" size="1.00"/>
+      <atom element="Cu" x="8.1322" y="2.9475" z="8.2681" radius="1.4456"
+      style="solid" variancy="1.00" size="1.00"/>
+      <atom element="Cu" x="-3.7864" y="2.9233" z="6.5913" radius="1.4456"
+      style="solid" variancy="1.00" size="1.00"/>
+      <atom element="Cu" x="3.4368" y="4.0928" z="2.5141" radius="1.4456"
+      style="solid" variancy="1.00" size="1.00"/>
+      <atom element="Cu" x="-0.0945" y="0.5517" z="9.6602" radius="1.4456"
+      style="solid" variancy="1.00" size="1.00"/>
+      <atom element="Cu" x="6.7859" y="-1.9854" z="6.8874" radius="1.4456"
+      style="solid" variancy="1.00" size="1.00"/>
+      <atom element="Cu" x="1.0365" y="-2.8139" z="3.7207" radius="1.4456"
+      style="solid" variancy="1.00" size="1.00"/>
+      <atom element="Cu" x="-7.6570" y="-1.5907" z="7.4100" radius="1.4456"
+      style="solid" variancy="1.00" size="1.00"/>
+      <atom element="Cu" x="7.1989" y="-0.1769" z="4.6697" radius="1.4456"
+      style="solid" variancy="1.00" size="1.00"/>
+      <atom element="Cu" x="9.4375" y="-2.6736" z="5.9510" radius="1.4456"
+      style="solid" variancy="1.00" size="1.00"/>
+      <atom element="Cu" x="9.0481" y="-0.4882" z="7.8897" radius="1.4456"
+      style="solid" variancy="1.00" size="1.00"/>
+      <atom element="Cu" x="8.2997" y="-2.9905" z="9.1410" radius="1.4456"
+      style="solid" variancy="1.00" size="1.00"/>
+      <atom element="Cu" x="-2.7430" y="1.2277" z="8.6974" radius="1.4456"
+      style="solid" variancy="1.00" size="1.00"/>
+      <atom element="Cu" x="-9.8914" y="2.2607" z="3.7315" radius="1.4456"
+      style="solid" variancy="1.00" size="1.00"/>
+      <atom element="Cu" x="9.3217" y="-2.8773" z="0.6634" radius="1.4456"
+      style="solid" variancy="1.00" size="1.00"/>
+      <atom element="Cu" x="6.5270" y="2.3973" z="5.8027" radius="1.4456"
+      style="solid" variancy="1.00" size="1.00"/>
+      <atom element="Cu" x="0.9848" y="-2.1749" z="8.3918" radius="1.4456"
+      style="solid" variancy="1.00" size="1.00"/>
+      <atom element="Cu" x="-3.6035" y="-0.0782" z="3.2524" radius="1.4456"
+      style="solid" variancy="1.00" size="1.00"/>
+      <atom element="Cu" x="-6.1415" y="-0.3855" z="1.8992" radius="1.4456"
+      style="solid" variancy="1.00" size="1.00"/>
+      <atom element="Cu" x="-3.2689" y="-3.6118" z="6.7186" radius="1.4456"
+      style="solid" variancy="1.00" size="1.00"/>
+      <atom element="Cu" x="-6.6967" y="-3.2209" z="2.8874" radius="1.4456"
+      style="solid" variancy="1.00" size="1.00"/>
+      <atom element="Cu" x="5.3232" y="1.3554" z="10.7253" radius="1.4456"
+      style="solid" variancy="1.00" size="1.00"/>
+      <atom element="Cu" x="-0.1558" y="0.7970" z="6.7777" radius="1.4456"
+      style="solid" variancy="1.00" size="1.00"/>
+      <atom element="Cu" x="-2.1312" y="-0.5998" z="0.8185" radius="1.4456"
+      style="solid" variancy="1.00" size="1.00"/>
+      <atom element="Cu" x="-0.1066" y="1.3347" z="0.0970" radius="1.4456"
+      style="solid" variancy="1.00" size="1.00"/>
+      <atom element="Cu" x="3.3262" y="-4.4319" z="4.4290" radius="1.4456"
+      style="solid" variancy="1.00" size="1.00"/>
+      <atom element="Cu" x="-8.0242" y="4.5474" z="3.6211" radius="1.4456"
+      style="solid" variancy="1.00" size="1.00"/>
+      <atom element="Cu" x="8.2179" y="-2.5175" z="3.3117" radius="1.4456"
+      style="solid" variancy="1.00" size="1.00"/>
+      <atom element="Cu" x="-7.6955" y="-0.8967" z="4.2914" radius="1.4456"
+      style="solid" variancy="1.00" size="1.00"/>
+      <atom element="Cu" x="2.8958" y="0.0448" z="8.3327" radius="1.4456"
+      style="solid" variancy="1.00" size="1.00"/>
+      <atom element="Cu" x="2.4355" y="1.3256" z="10.8863" radius="1.4456"
+      style="solid" variancy="1.00" size="1.00"/>
+      <atom element="Cu" x="-7.0393" y="1.8301" z="3.5272" radius="1.4456"
+      style="solid" variancy="1.00" size="1.00"/>
+      <atom element="Cu" x="-8.9835" y="0.1585" z="1.9253" radius="1.4456"
+      style="solid" variancy="1.00" size="1.00"/>
+      <atom element="Cu" x="5.0499" y="-1.6983" z="9.1837" radius="1.4456"
+      style="solid" variancy="1.00" size="1.00"/>
+      <atom element="Cu" x="-7.3992" y="0.8690" z="-0.3870" radius="1.4456"
+      style="solid" variancy="1.00" size="1.00"/>
+      <atom element="Cu" x="-4.7815" y="5.5409" z="4.6812" radius="1.4456"
+      style="solid" variancy="1.00" size="1.00"/>
+      <atom element="Cu" x="8.9545" y="-5.1728" z="7.3607" radius="1.4456"
+      style="solid" variancy="1.00" size="1.00"/>
+      <atom element="Cu" x="-8.2402" y="7.4196" z="3.3596" radius="1.4456"
+      style="solid" variancy="1.00" size="1.00"/>
+      <atom element="Cu" x="2.0973" y="-0.4028" z="0.8033" radius="1.4456"
+      style="solid" variancy="1.00" size="1.00"/>
+      <atom element="Cu" x="-4.0691" y="-4.3534" z="3.9172" radius="1.4456"
+      style="solid" variancy="1.00" size="1.00"/>
+      <atom element="Cu" x="-2.6720" y="-0.3880" z="5.9837" radius="1.4456"
+      style="solid" variancy="1.00" size="1.00"/>
+      <atom element="Cu" x="-2.2396" y="2.0840" z="1.9012" radius="1.4456"
+      style="solid" variancy="1.00" size="1.00"/>
+      <atom element="Cu" x="-1.6935" y="2.1670" z="4.7428" radius="1.4456"
+      style="solid" variancy="1.00" size="1.00"/>
+      <atom element="Cu" x="-9.1812" y="0.1542" z="9.1534" radius="1.4456"
+      style="solid" variancy="1.00" size="1.00"/>
+      <atom element="Cu" x="7.0163" y="2.0555" z="2.8397" radius="1.4456"
+      style="solid" variancy="1.00" size="1.00"/>
+      <atom element="Cu" x="6.3965" y="0.6384" z="8.1375" radius="1.4456"
+      style="solid" variancy="1.00" size="1.00"/>
+      <atom element="Cu" x="7.3442" y="-0.7111" z="10.6433" radius="1.4456"
+      style="solid" variancy="1.00" size="1.00"/>
+      <atom element="Cu" x="2.9265" y="5.2919" z="5.0951" radius="1.4456"
+      style="solid" variancy="1.00" size="1.00"/>
+      <atom element="Cu" x="4.1303" y="1.6243" z="1.1727" radius="1.4456"
+      style="solid" variancy="1.00" size="1.00"/>
+      <atom element="Cu" x="7.5398" y="-1.3182" z="-0.9963" radius="1.4456"
+      style="solid" variancy="1.00" size="1.00"/>
+      <atom element="Cu" x="5.3562" y="-2.3767" z="4.2813" radius="1.4456"
+      style="solid" variancy="1.00" size="1.00"/>
+      <atom element="Cu" x="-4.3324" y="2.8283" z="3.7527" radius="1.4456"
+      style="solid" variancy="1.00" size="1.00"/>
+      <atom element="Cu" x="-4.6006" y="0.1448" z="-0.4896" radius="1.4456"
+      style="solid" variancy="1.00" size="1.00"/>
+      <atom element="Cu" x="1.4107" y="-4.4071" z="6.6026" radius="1.4456"
+      style="solid" variancy="1.00" size="1.00"/>
+      <atom element="Cu" x="-1.0701" y="3.4640" z="7.4224" radius="1.4456"
+      style="solid" variancy="1.00" size="1.00"/>
+      <atom element="Cu" x="-0.2097" y="4.0360" z="3.1073" radius="1.4456"
+      style="solid" variancy="1.00" size="1.00"/>
+      <atom element="Cu" x="-1.8273" y="-1.5089" z="8.5122" radius="1.4456"
+      style="solid" variancy="1.00" size="1.00"/>
+      <atom element="Cu" x="-0.6658" y="-2.4700" z="6.0354" radius="1.4456"
+      style="solid" variancy="1.00" size="1.00"/>
+      <atom element="Cu" x="0.0753" y="-2.4591" z="1.0169" radius="1.4456"
+      style="solid" variancy="1.00" size="1.00"/>
+      <atom element="Cu" x="1.1086" y="3.0858" z="5.5320" radius="1.4456"
+      style="solid" variancy="1.00" size="1.00"/>
+      <atom element="Cu" x="3.2741" y="-0.3321" z="3.4555" radius="1.4456"
+      style="solid" variancy="1.00" size="1.00"/>
+      <atom element="Cu" x="-5.7230" y="5.1394" z="1.9713" radius="1.4456"
+      style="solid" variancy="1.00" size="1.00"/>
+      <atom element="Cu" x="3.6097" y="-2.8206" z="2.0199" radius="1.4456"
+      style="solid" variancy="1.00" size="1.00"/>
+      <atom element="Cu" x="4.6135" y="-0.1830" z="6.0143" radius="1.4456"
+      style="solid" variancy="1.00" size="1.00"/>
+      <atom element="Cu" x="-1.7907" y="-2.3295" z="3.3548" radius="1.4456"
+      style="solid" variancy="1.00" size="1.00"/>
+      <atom element="Cu" x="4.2447" y="2.4886" z="7.5754" radius="1.4456"
+      style="solid" variancy="1.00" size="1.00"/>
+      <atom element="Cu" x="4.6587" y="-0.8578" z="-0.4874" radius="1.4456"
+      style="solid" variancy="1.00" size="1.00"/>
+      <atom element="Cu" x="3.7660" y="2.2664" z="4.7318" radius="1.4456"
+      style="solid" variancy="1.00" size="1.00"/>
+      <atom element="Cu" x="0.3126" y="-1.0580" z="-1.5021" radius="1.4456"
+      style="solid" variancy="1.00" size="1.00"/>
+      <atom element="Cu" x="9.0248" y="3.1943" z="4.5804" radius="1.4456"
+      style="solid" variancy="1.00" size="1.00"/>
+      <atom element="Cu" x="-8.0640" y="1.0793" z="6.3714" radius="1.4456"
+      style="solid" variancy="1.00" size="1.00"/>
+      <atom element="Cu" x="1.5896" y="1.8400" z="2.5578" radius="1.4456"
+      style="solid" variancy="1.00" size="1.00"/>
+      <atom element="Cu" x="5.8424" y="-0.4976" z="2.1364" radius="1.4456"
+      style="solid" variancy="1.00" size="1.00"/>
+      <atom element="Cu" x="-8.3992" y="-3.5507" z="5.2040" radius="1.4456"
+      style="solid" variancy="1.00" size="1.00"/>
+      <atom element="Cu" x="5.9329" y="-4.3933" z="8.2423" radius="1.4456"
+      style="solid" variancy="1.00" size="1.00"/>
+      <atom element="Cu" x="-1.2748" y="-4.8957" z="4.5835" radius="1.4456"
+      style="solid" variancy="1.00" size="1.00"/>
+      <atom element="Cu" x="5.7992" y="4.6182" z="4.0987" radius="1.4456"
+      style="solid" variancy="1.00" size="1.00"/>
+      <atom element="Cu" x="3.9259" y="-2.8817" z="6.7948" radius="1.4456"
+      style="solid" variancy="1.00" size="1.00"/>
+      <atom element="Cu" x="9.1749" y="1.5268" z="10.5621" radius="1.4456"
+      style="solid" variancy="1.00" size="1.00"/>
+      <atom element="Cu" x="-6.5272" y="3.4735" z="5.8506" radius="1.4456"
+      style="solid" variancy="1.00" size="1.00"/>
+    </cell>
+  </layer>
+</gml>

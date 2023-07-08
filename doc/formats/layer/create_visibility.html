@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Formats: Layer Create</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Layer Create</h1>
+
+<div id="notebook">
+<ul>
+<li><a href="create_projection.html">Projection</a></li>
+<li><a href="create_position.html">Position</a></li>
+<li><span>Visibility</span></li>
+<li><a href="create_view.html">View</a></li>
+</ul>
+</div>
+
+<div class="contents">
+
+<h3>visibility_in, visibility_out</h3>
+
+<b>visibility_out</b> controls whether the layer, when current, attempts 
+to see the other layers: <b>all</b> - try to see the other layers; 
+<b>partial</b> - try to see the other layers in a blurred way, to distinguish 
+them from the current layer; <b>none</b> - ignore the other layers.
+
+<p/>
+
+<b>visibility_in</b> controls whether the layer autorizes other layers,
+when current, to look inside: <b>all</b> - the layer 
+can be seen; <b>partial</b>: the layer can be seen in a 
+blurred way, to distinguish it from the current layer;
+<b>none</b> - the layer cannot be seen from the outside. 
+
+<p/>
+
+<b>visibility_in</b> (a privacy condition) has always
+priority over <b>visibility_out</b> (a curiosity condition).
+By default layers are completely transparent, to the inside and 
+to the outside. 
+
+<pre>
+Example: <b>&lt;layer ... visibility_in="all" visibility_out="all"/></b> (default)
+(defined in <b>GAMGI_MESA_TRANSPARENT</b>)
+Allowed values: <b>all</b>, <b>partial</b>, <b>none</b> (optional)
+</pre>
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

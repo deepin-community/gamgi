@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Interfaces: Cell Modify</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Cell Modify</h1>
+
+<div id="notebook">
+<ul>
+<li><span>Symmetry</span></li>
+<li><a href="modify_volume.html">Volume</a></li>
+<li><a href="modify_position.html">Position</a></li>
+<li><a href="modify_origin.html">Origin</a></li>
+<li><a href="modify_view.html">View</a></li>
+</ul>
+</div>
+
+<div class="contents">
+
+Change here the symmetry and lattice parameters for a single cell
+or a list of cells.
+
+<p/>
+
+To change the cell name write the new name in the Cell entry, followed
+by the cell number (GAMGI only needs the number to identify the cell).
+
+<p/>
+
+To modify an cell, click over its graphic image, or write its identification
+(name and number) on the <b>Cell</b> entry. To modify a list of cells, press
+the button <b>List</b> (after creating the list of cells with <b>Cell->Select</b>).
+Parameters for empty entries or <b>Local</b> choices remain unchanged.
+
+<p/>
+
+To change an cell name write the new name in the <b>Cell</b> entry,
+followed by the cell number (GAMGI needs the number to identify the cell).
+To change the name for a list of cells, press <b>List</b> first
+and then write the new common name in the <b>Name</b> entry.
+
+<h3>Symmetry</h3>
+
+<b>System</b>, <b>Lattice</b> and <b>Group</b> are optional parameters, 
+but together they must provide enough information to identify the Bravais 
+lattice of the cell. Redundant information is fine, but conflicting 
+information is flagged as an error.
+
+<p/>
+
+When the entries <b>System</b>, <b>Lattice</b> or <b>Group</b> are 
+changed, the other two are updated automatically. Predictable information 
+is automatically written and conflicting information is automatically
+removed.
+
+<h3>System</h3>
+ 
+<b>System</b> identifies the crystallographic system of the cell.
+The allowed values are: <b>c</b> (cubic), <b>t</b> (tetragonal),
+<b>o</b> (orthorhombic), <b>h</b> (hexagonal), <b>m</b> (monoclinic)
+and <b>a</b> (anorthic / triclinic). Hexagonal, trigonal and
+rhombohedric cases are grouped in GAMGI in a single hexagonal system,
+corresponding to the family designation used in the International
+Tables for Crystallography.
+
+<p/>
+
+Pressing <a href="systems.html">List</a>, a second dialog shows
+all the systems that are compatible with the information currently inserted 
+in the <b>System</b>, <b>Lattice</b> and <b>Group</b> entries. 
+
+<h3>Lattice</h3>
+
+<b>Lattice</b> identifies the lattice centering of the cell. The allowed values
+are: <b>P</b> (primitive), <b>I</b> (body-centered), <b>C</b> (face-centered),
+<b>F</b> (face-centered) and <b>R</b> (rhombohedral). A, B and C centering is
+always described in GAMGI by C-based lattices. Thus monoclinic centered cells
+are always C, with unique axis b and cell choice 1. To use data reported with
+a different cell choice or unique axis please use the transformation matrices
+published in International Tables for Crystallography.
+
+<p/>
+
+The R lattices describe the seven space groups belonging to the hexagonal 
+system that are described as R groups, when using the standard Hermann-Mauguin 
+symbols: R3 (146), R-3 (148), R32 (155), R3m (160), R3c (161), R-3m (166), 
+R-3c (167).
+
+<p/>
+
+Pressing <a href="lattices.html">List</a>, a second dialog shows 
+all the lattices that are compatible with the information currently inserted 
+in the <b>System</b>, <b>Lattice</b> and <b>Group</b> entries. 
+
+<h3>Group</h3>
+
+<b>Group</b> identifies the space group of the cell, using the numerical
+notation: <b>1</b> to <b>230</b>.
+
+<p/>
+ 
+The four orthorhombic space groups 38-41, which are described with A lattices
+when using the standard Hermann-Mauguin symbols, were converted to C lattices
+(so all base-centered lattices are described as C lattices) by using a different
+axes setting, which results from the axes permutation abc->bca, as described in
+the International Tables for Crystallography. These four groups, Amm2, Aem2,
+Ama2 and Aea2, are thus described in GAMGI as Cm2m, Cm2e, Cc2m and Cc2e,
+respectively.
+
+<p/>
+
+For space groups 48, 50, 59, 68, 70 (orthorhombic), 85, 86, 88, 125, 126, 129,
+130, 133, 134, 137, 138, 141, 142 (tetragonal), 201, 203, 222, 224, 227, 228
+(cubic), there are two standard origins, denoted O1 or O2. In GAMGI the chosen
+origin is O2, at the inversion centre.
+
+<p/>
+
+Unique axis b was used for all monoclinic space groups. For space groups
+5, 7, 8, 9, 12, 13, 14, 15 (monoclinic), positions were constructed using
+Cell Choice 1.
+
+<p/>
+
+Pressing <a href="groups.html">List</a>, a second dialog shows 
+all the groups that are compatible with the information currently inserted 
+in the <b>System</b>, <b>Lattice</b> and <b>Group</b> entries. 
+
+<h3>a, b, c, ab, ac, bc</h3>
+
+Entries <b>a</b>, <b>b</b>, <b>c</b>, <b>ab</b>, <b>ac</b>, <b>bc</b>
+permit to change the lengths and angles defining the conventional cell
+vectors (redundant entries are automatically disabled). Cell lengths 
+must be positive, while cell angles must be larger than zero and smaller 
+than 180 degrees.
+
+<p/>
+
+For the cubic system, only one length is required (<b>a</b> or <b>b</b> 
+or <b>c</b>).  For the tetragonal system, two lengths are required 
+(<b>a</b> or <b>b</b> and <b>c</b>). For the orthorhombic system, 
+three lengths are required (<b>a</b> and <b>b</b> and <b>c</b>).
+
+<p/>
+
+For the hexagonal system, two lengths are required (<b>a</b>
+or <b>b</b> and <b>c</b>). For the monoclinic system, three
+lengths are required (<b>a</b> and <b>b</b> and <b>c</b>),
+plus the angle around the axis b (<b>ac</b>).
+
+<p/>
+
+For the triclinic system, all six parameters are required.
+Each angle must be smaller than the sum of the other two and
+must be larger than the absolute difference of the other two,
+otherwise an error is produced. Redundant information is fine,
+but conflicting information is always flagged as an error.
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

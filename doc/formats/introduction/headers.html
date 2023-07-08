@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Formats: Introduction Headers</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/board.css"/>
+</head>
+
+<body>
+
+<div class="board">
+<div>Introduction Headers</div><div>&nbsp;</div>
+</div>
+
+<div class="contents">
+
+Headers are optional in XML, but when included, they must 
+be written correctly. Although usefull to identify files, headers 
+are a potencial source of spelling errors, so it is often better 
+to not include them. Currently GAMGI includes full headers when 
+exporting files. The complete GML header is written as:
+
+<pre><b>
+&lt;?xml version="1.0" encoding="UTF-8" standalone="yes" ?&gt;
+&lt;!DOCTYPE gml SYSTEM "http://www.gamgi.org/dtd/gamgi.dtd"&gt;
+</b></pre>
+
+The first line is the XML declaration, the second line is the
+Document Type declaration. Even when the XML declaration is present, 
+the Document Type declaration is still optional, but when the Document 
+Type declaration is present, then the XML declaration is required.
+
+<p/>
+
+Absolutely nothing can appear in the file before the XML declaration, 
+in the same line or above, not even white space. The <b>encoding</b>
+and <b>standalone</b> parameters in the XML declaration are optional, 
+but when included, they must be written in the order above. Everything 
+is case-sensitive, except the encoding value, which could have been 
+written as <b>"utf-8"</b>, for example. No white spaces can appear 
+before <b>xml</b>.
+
+<p/>
+
+The <b>SYSTEM</b> identifier <b>"http://www.gamgi.org/dtd/gamgi.dtd"</b> 
+in the Document Type declaration is optional, but when included, it must 
+be written as above. The <b>DOCTYPE</b> identifier <b>gml</b>, identifying 
+the XML root element, must be present. No white spaces can appear before 
+<b>DOCTYPE</b>.
+
+<h3>Good:</h3>
+
+<pre><b>
+&lt;?xml version="1.0"?></b> the encoding and standalone attributes are optional<b>
+&lt;!DOCTYPE gml></b> the SYSTEM identifier is optional<b>
+
+&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?></b> 
+the Document Type declaration is optional
+</pre>
+
+<h3>Bad:</h3>
+
+<pre><b>
+&lt;?xml?></b> the version attribute is absent<b>
+
+&lt;?xml encoding="UTF-8" version="1.0" standalone="yes"?></b> 
+the attribute order is wrong<b>
+
+&lt;? xml version="1.0"?></b> white space before xml<b>
+
+&lt;! DOCTYPE gml SYSTEM "http://www.gamgi.org/dtd/gamgi.dtd"></b> 
+white space before DOCTYPE<b>
+
+&lt;!DOCTYPE gml SYSTEM "http://www.gamgi.org/dtd/gamgi.dtd"></b> 
+the XML declaration is missing
+</pre>
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

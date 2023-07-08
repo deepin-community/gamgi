@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Formats: Atom Create</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Atom Create</h1>
+
+<div id="notebook">
+<ul>
+<li><a href="create_type.html">Type</a></li>
+<li><a href="create_property.html">Property</a></li>
+<li><a href="create_analysis.html">Analysis</a></li>
+<li><a href="create_position.html">Position</a></li>
+<li><span>View</span></li>
+</ul>
+</div>
+
+<div class="contents">
+
+<h3>style</h3>
+
+Set how the atom is shown: a <b>solid</b> sphere
+or a <b>wired</b> cross. When not indicated, GAMGI uses
+the default. To change the default select <b>Atom->Config</b>
+and read <b>Help->Topics->Formats->Config->Atom</b>.
+
+<p/>
+
+The sphere provides the highest visual quality and is recommended
+to produce final images of structures, together with lights. A sphere uses
+considerable screen space though and is time consuming because it is simulated
+by numerous 2D polygons, so many vertices and normal vectors (to calculate light)
+must be allocated and calculated all the time. The cross is designed for atomistic
+modelling work. Both screen space and computing time are kept to a minimum.
+Moreover, when atoms are bonded, the crosses are not represented and atoms are
+identified just by the ends of the lines representing bonds, thus decreasing
+even further computation needs. However, because lines do not have a 3D
+representation, diffuse and specular lights are not reflected by these objects,
+and they become almost invisible when using lights with an ambient component
+lower than (0.4, 0.4, 0.4).
+
+<pre>
+Example: <b>&lt;atom style="wired"/></b> (default)
+Allowed values: <b>wired</b>, <b>solid</b> (optional)
+</pre>
+
+<h3>variancy</h3>
+
+The intrinsic size of a solid (spherical) atom in GAMGI is calculated according
+to the equation: <b>intrinsic = size x [variancy x radius + (1 - variancy) x min]</b>,
+where <b>radius</b> is the element radius currently defined and <b>min</b> is by
+default the H covalent radius, as defined in GAMGI (0.37).
+
+<p/>
+
+In <b>wired</b> mode, <b>variancy</b> is always <b>0.0</b> so all atom crosses
+have a constant size, given by <b>size</b> x <b>min</b>. In <b>solid</b> mode,
+when <b>variancy</b> is <b>0.0</b> the atom spheres have all the same size,
+when <b>variancy</b> is <b>1.0</b> the atom spheres are scaled directly by
+the atom radius.  To change the default select <b>Atom->Config</b> and read
+<b>Help->Topics->Formats->Config->Atom</b>.
+ 
+<pre>
+Example: <b>&lt;atom variancy="0.0"/></b> (default)
+Allowed values: <b>0.0</b> - <b>1.0</b> (optional)
+</pre>
+
+<h3>size</h3>
+
+Sets the size of a spherical atom, in <b>solid</b> mode. Combining atom <b>size</b>
+and <b>variancy</b> with bond <b>size</b>, it is possible to obtain a wide range
+of styles to represent atomic structures.
+
+<p/>
+
+The default is to represent atoms as constant spheres,
+slightly larger than the bonds:
+
+<pre>
+Example: <b>&lt;atom variancy="0.0" size="0.8"/>&lt;bond size="0.5"/></b>
+</pre>
+
+An elegant style is to represent atoms with constant spheres
+and the same <b>size</b> as bonds: 
+
+<pre>
+Example: <b>&lt;atom variancy="0.0" size="0.5"/>&lt;bond size="0.5"/></b>
+</pre>
+  
+To show atoms in real size, atom <b>size</b> and <b>variancy</b> must
+be set to <b>1.0</b>. This is often required in compact cristalline structures,
+to be consistent with cell dimensions, and in molecules, to emphasize the atomic
+radius and electronic distribution:
+
+<pre>
+Example: <b>&lt;atom variancy="1.0" size="1.0"/></b>
+</pre>
+
+To change the default <b>size</b>, select <b>Atom->Config</b>
+and read <b>Help->Topics->Formats->Config->Atom</b>.
+
+<pre>
+Example: <b>&lt;atom size="0.8"/></b> (default)
+Allowed values: positive real (optional)
+</pre>
+
+<h3>red, green, blue</h3>
+
+Set the atom color. When not indicated, GAMGI uses the default for the atom
+element. The default colors are essentially a superset of the CPK color scheme
+introduced by Corey, Pauling and Koltun.
+
+<p/>
+
+To see the default, just select the Periodic Table
+from <b>Atom->Create</b>, <b>Atom->Modify</b> or <b>Atom->Config</b>,
+and choose the element. To change the default select <b>Atom->Config</b>
+and read <b>Help->Topics->Formats->Config->Atom</b>.
+
+<pre>
+Example: <b>&lt;atom red="1.0" green="1.0" blue="0.0" element="Si"/></b> (default Si color)
+Allowed values: <b>0.0</b> - <b>1.0</b>, element name
+(optional, coupled)
+</pre>
+
+<h3>scale</h3>
+
+Change the atom size, including its child objects. Atom objects are
+scaled around the atom center. The visual representation of an object
+is always scaled by its own scale factor multiplied by the scale factor
+of all its parent objects until layer, inclusive.
+
+<pre>
+Example: <b>&lt;atom ... scale="1.0"/></b> (default)
+(defined in <b>GAMGI_MESA_SCALE</b>)
+Allowed values: positive real (optional)
+</pre>
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

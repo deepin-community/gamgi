@@ -1,0 +1,12 @@
+<gml>
+<molecule name="Cubane">
+<atom element="C" x="0.77000" y="0.77000" z="0.77000"/>
+<atom element="C" x="0.77000" y="0.77000" z="-0.77000"/>
+<atom element="C" x="0.77000" y="-0.77000" z="0.77000"/>
+<atom element="C" x="0.77000" y="-0.77000" z="-0.77000"/>
+<atom element="C" x="-0.77000" y="0.77000" z="0.77000"/>
+<atom element="C" x="-0.77000" y="0.77000" z="-0.77000"/>
+<atom element="C" x="-0.77000" y="-0.77000" z="0.77000"/>
+<atom element="C" x="-0.77000" y="-0.77000" z="-0.77000"/>
+</molecule>
+</gml>

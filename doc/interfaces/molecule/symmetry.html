@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Interfaces: Molecule Measure Symmetry</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/board.css"/>
+</head>
+
+<body>
+<div class="board">
+<div>Molecule Measure Symmetry</div><div>&nbsp;</div>
+</div>
+
+<div class="contents">
+
+This report describes, for the selected structure, the point 
+group of symmetry, the symmetry operations and the symmetry 
+elements.  When <b>Periodicity</b> is set to <b>Yes</b> and 
+various crystallographic point groups are possible, they are 
+listed in sequence of increasing symmetry.
+
+<h3>Point Group</h3>
+
+The chemical or crystallographic point group of symmetry 
+is reported here. When <b>Periodicity</b> is set to <b>No</b> 
+(the default), the chemical group is shown, using the Schoenflies 
+notation (or <b>Undefined</b>, if no point group can be determined). 
+
+<p/>
+
+Chemical groups for linear systems, with a rotation axis of 
+infinite order, are named <b>C0v</b> and <b>D0h</b>. The spherical 
+group, corresponding to a single atom, is named <b>Kh</b>. 
+
+<p/>
+
+When <b>Periodicity</b> is set to <b>Yes</b>, the group is named 
+using first the International and then the Schoenflies notation
+(or <b>Undefined</b>, if no point group can be determined. In
+this case, rotation axes of order different from 6, 4, 3, 2
+are discarded, all the other elements are shown).
+  
+<p/>
+
+Gamgi can find axes with any rotation order, so any chemical
+(infinite) or crystallographic (32) group of symmetry can
+be determined.
+
+<p/>
+
+When users require the crystallographic point group, Gamgi 
+determines first the chemical group and then applies the periodic
+restrictions to obtain the point group in a crystal with the 
+highest possible symmetry. When more than one option is available, 
+Gamgi shows the various solutions. For example, a C24 rotation 
+axis in a molecule can be restricted to 6 or 4 axes 
+in a periodic crystal.
+
+<p/>
+
+Gamgi tries to find all the symmetry elements independently,
+and in general each of these elements requires a different 
+tolerance. Thus, for a given tolerance, some elements 
+may be recognized and others may go missing, resulting in
+an inconsistent set of symmetry elements. When this happens,
+the group is reported <b>Undefined</b>. The solution is to
+increase the tolerance (so valid elements might be found) 
+or to decrease it (so fake elements might be discarded).
+  
+<h3>Symmetry Operations</h3>
+
+The complete set of symmetry operations, generated from the symmetry 
+elements found (forming a group, in the mathematical sense), is reported
+in abreviated format. For example, a <b>C4</b> axis generates operations 
+<b>C41</b>, <b>C42</b> (equal to <b>C21</b>), <b>C43</b> and <b>C44</b> 
+(equal to <b>E</b>), so only two <b>C4</b> operations are new, 
+described as <b>2C4</b>.
+
+<p/>
+
+In groups with infinite rotation orders, <b>C0v</b> and <b>D0h</b>, 
+rotation operations are presented, as <b>2C0</b> and <b>2S0</b>, 
+symbolizing the two directions of rotation. In these cases, a single 
+mirror plane <b>m</b> is considered (although they are infinite). 
+For the <b>Kh</b> spherical group, a single rotation axis and plane 
+are considered (although they are infinite).
+
+<h3>Symmetry Elements</h3>
+
+All symmetry elements that were found are individually reported
+here.  The inversion center is described by its coordinates.
+Mirror planes are described indicating the corresponding 
+normal vectors. For rotation axes, normal and improper, the 
+rotation order is reported, plus the normal vector describing 
+the axis, starting from the center.
+
+<p/>
+
+For all symmetry elements, the error produced when applying
+the operations of symmetry, is reported (this error is smaller
+than the tolerance, otherwise the element would have been
+rejected).
+
+<p/>
+
+Rotation axes are sorted according to increasing rotation 
+order, so more symmetric axes come first. When present,
+infinite order axes are always the first in the list.
+  
+Mirror planes and axes with the same rotation order are
+sorted according to decreasing element error, so better
+defined elements come first.
+
+<p/>
+
+When present, a horizontal mirror plane is always listed
+before the other planes. When present, a C2 axis along the 
+main direction is always listed before the other C2 axes.
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Formats: Window Create</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Window Create</h1>
+
+<div id="notebook">
+<ul>
+<li><span>Position</span></li>
+<li><a href="create_view.html">View</a></li>
+</ul>
+</div>
+
+<div class="contents">
+
+<h3>x, y</h3>
+
+Set (in pixels) the window position (the top left corner).
+<b>x</b>, <b>y</b> can be negative (meaning that the window top 
+left corner is outside the visible screen), but must be in the 
+range [-screen, +screen], otherwise an error is shown.
+
+<pre>
+Example: <b>&lt;window ... x="10" y="10"/></b> (default)
+(defined in <b>GAMGI_GTK_WINDOW_ORIGIN_X</b> and <b>GAMGI_GTK_WINDOW_ORIGIN_Y</b>)
+Allowed values: -screen_width &lt; x &lt; screen_width, 
+-screen_height &lt; y &lt; screen_height (optional, coupled)
+</pre>
+
+<h3>width, height</h3>
+
+Set (in pixels) the window dimensions. <b>width</b>, <b>height</b> must be between 
+the minimum window dimensions and two times the screen size, otherwise an error is shown.
+
+<pre>
+Example: <b>&lt;window ... width="750" height="550"/></b> (default)
+(defined in <b>GAMGI_GTK_WINDOW_WIDTH</b> and <b>GAMGI_GTK_WINDOW_HEIGHT</b>)
+Allowed values: GAMGI_GTK_WINDOW_WIDTH_MIN &lt; x &lt; 2 * screen_width, 
+GAMGI_GTK_WINDOW_HEIGHT_MIN &lt; y &lt; 2 * screen_height (optional, coupled)
+</pre>
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

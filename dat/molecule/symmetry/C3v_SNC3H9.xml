@@ -1,0 +1,18 @@
+<gml>
+<molecule name="SNC3H9">
+<atom element="S" x=".00000" y=".00000" z="2.01931"/>
+<atom element="N" x=".00000" y=".00000" z="-.02711"/>
+<atom element="C" x="-.69185" y="-1.20775" z="-.49170"/>
+<atom element="C" x="1.41391" y=".00000" z="-.46742"/>
+<atom element="C" x="-.70285" y="1.22451" z="-.45182"/>
+<atom element="H" x="-1.59827" y="-1.18850" z="-.19208"/>
+<atom element="H" x="-.25155" y="-1.98166" z="-.12625"/>
+<atom element="H" x="-.66182" y="-1.24143" z="-1.44602"/>
+<atom element="H" x="1.84024" y=".79711" z="-.15340"/>
+<atom element="H" x="1.44509" y="-.02873" z="-1.42720"/>
+<atom element="H" x="1.85535" y="-.76897" z="-.10744"/>
+<atom element="H" x="-.22753" y="1.99431" z="-.12604"/>
+<atom element="H" x="-1.59164" y="1.22356" z="-.08100"/>
+<atom element="H" x="-.75469" y="1.25489" z="-1.40468"/>
+</molecule>
+</gml>

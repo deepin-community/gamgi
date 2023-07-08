@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Formats: Plane Create</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Plane Create</h1>
+
+<div id="notebook">
+<ul>
+<li><a href="create_type.html">Type</a></li>
+<li><a href="create_projection.html">Projection</a></li>
+<li><span>Scope</span></li>
+<li><a href="create_position.html">Position</a></li>
+<li><a href="create_view.html">View</a></li>
+</ul>
+</div>
+
+<div class="contents">
+
+<h3>order</h3>
+
+A crystallographic plane does not exist as a single plane, is always
+part of a family of infinite planes, passing through all the lattice
+nodes, with equal distances between them. Each plane of a family
+(h k l) intersects the lattice in n/h n/k n/l, where n = 0 means
+the plane passing through the origin and n = 1 is the usual
+representation of the plane closest to the origin. The <b>order</b>
+parameter indicates the value of n for a specific plane.
+
+<h3>o1, o2, o3</h3>
+
+A plane can also be defined indicating explicitly the coordinates of 
+a node where the plane passes. For each plane family, there is a plane
+passing through the origin node and as nodes are equivalent, it follows
+that for any node, there is a plane of any family passing through there.
+
+<p/>
+
+When the lattice is primitive or vectors are primitive, coordinates
+<b>o1</b>, <b>o2</b>, <b>o3</b> are enough to identify any cell node.
+No default node exists as the default plane <b>order</b> (<b>1</b>)
+cannot be associated to a specific node for all lattices.
+
+<pre>
+Example: <b>&lt;cell ... o1="1" o2="0" o3="0"/></b> (no default)
+Allowed values: integer (optional, coupled)
+</pre>
+
+<h3>o4</h3>
+
+When the lattice is centered and vectors are conventional, the coordinates
+<b>o1</b>, <b>o2</b>, <b>o3</b> indicate the node in the lower-left
+corner of the cell where the plane passes. a fourth coordinate <b>o4</b> 
+is needed to point the centered node where the plane passes. By default, 
+<b>o4</b> is <b>000</b>, so no change is introduced. When the cell lattice 
+is primitive <b>P</b> or the vectors defining the node are primitive, that 
+is the only possible value for <b>o4</b>. For I, C, F, R centered lattices, 
+<b>o4</b> can also take the values:
+
+<pre>
+<b>I</b>: <b>111</b>
+<b>C</b>: <b>110</b>
+<b>F</b>: <b>110</b>, <b>101</b>, <b>011</b>
+<b>R</b>: <b>211</b>, <b>122</b>
+
+Example: <b>&lt;plane ... o4="000"/></b> (default)
+Allowed values: <b>000</b>, <b>111</b>, <b>110</b> <b>101</b>, <b>011</b>, <b>211</b>, <b>122</b> (optional)
+</pre>
+
+<h3>data</h3>
+
+The geometric data defining a polygon plane must be entered in order to
+make the plane completely independent from its reference objects. This is
+accomplished with two <b>data</b> child elements, one containig real data
+(the xyz coordinates), the other containing integer data (the number of
+loops, 1, the number of vertices for the loop, n, the offset of the
+vertices for the loop, from 0 to n-1).
+
+<pre>
+Example:
+<b>&lt;data ... name="points" type="double" size="9">
+-1.0000 0.0000 0.0000 1.0000 0.0000 0.0000 0.0000 1.0000 0.0000
+&lt;/data></b> Allowed values: real (required)
+
+Example:
+<b>&lt;data ... name="points_driver" type="int" size="5">
+1 3 0 1 2 &lt;/data></b> Allowed values: integer (required)
+</pre>
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

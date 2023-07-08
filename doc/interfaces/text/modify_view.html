@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Interfaces: Text Modify</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Text Modify</h1>
+
+<div id="notebook">
+<ul>
+<li><a href="modify_contents.html">Contents</a></li>
+<li><a href="modify_position.html">Position</a></li>
+<li><span>View</span></li>
+</ul>
+</div>
+
+<div class="contents">
+
+Change here the visual representation for a single text or a list of texts.
+
+<p/>
+
+To modify a text, click over its graphic image, or write its id on
+the <b>Text</b> entry. To modify a list of texts, press the button
+<b>List</b> (after creating the list of texts with <b>Text->Select</b>).
+Parameters for empty entries or <b>Local</b> choices remain unchanged.
+
+<p/>
+
+To change a text name write the new name in the <b>Text</b> entry,
+followed by the text number (GAMGI needs the number to identify the text).
+To change the name for a list of texts, press <b>List</b> first
+and then write the new common name in the <b>Name</b> entry.
+
+<h3>Style</h3>
+
+Gamgi supports <b>Wired</b> stroked fonts and <b>Solid</b>
+extruded fonts. Stroked fonts are faster and are more suited for
+analysis. Extruded fonts are made from TrueType faces and are 
+designed for final presentations.
+
+<p/>
+
+When a new <b>Style</b> is selected, the <b>Face</b> menu is 
+automatically updated, showing only the fonts available for 
+the new <b>Style</b>. The default font for the new <b>Style</b>
+is automatically selected.
+
+<h3>Face</h3>
+
+Currently GAMGI supports 14 stroked fonts:
+
+<pre><b>
+1) Roman and Roman Monospace;
+2) Sans and Sans Bold;
+3) Serif and Serif Bold;
+4) Script and Script Bold;
+5) Gothic English, Gothic German and Gothic Italian;
+6) Symbol Sans, Symbol Serif and Symbol Serif Bold.</b></pre>
+
+<p/>
+
+The first two were made for Sun, used by the X consortium 
+and currently distributed with GLUT and freeglut packages.
+The 12 other fonts were digitized by Allen V. Hershey, used
+by several packages and currently distributed with GNU plotutils.
+
+<p/>
+
+Currently GAMGI supports 12 extruded fonts:
+
+<pre><b>
+1) Sans, Sans Bold, Sans Italic and Sans Bold Italic;
+2) Serif, Serif Bold, Serif_Italic and Serif Bold Italic;
+3) Mono, Mono Bold, Mono Italic and Mono Bold Italic;</b></pre>
+
+<p/>
+
+The typefaces for these 12 fonts were made from DejaVu TrueType
+fonts, derived from the Vera fonts made by BitStream for the Gnome project.
+
+<h3>R, G, B</h3>
+
+The <b>R</b>, <b>G</b>, <b>B</b> entries define the text color,
+from black (0.0, 0.0, 0.0) to white (1.0, 1.0, 1.0).
+
+<h3>Scale</h3>
+
+Set the text size, including its child objects. Text objects are
+scaled around the text center. The visual representation of an object
+is always scaled by its own scale factor multiplied by the scale factor
+of all its parent objects until layer, inclusive.
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

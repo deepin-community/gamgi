@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Formats: Introduction Attributes</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/board.css"/>
+</head>
+
+<body>
+
+<div class="board">
+<div>Introduction Attributes</div><div>&nbsp;</div>
+</div>
+
+<div class="contents">
+
+Attributes describe the properties of the elements, therefore each
+attribute cannot appear more than once for each element. Attributes
+can be written in any order and separator characters (space, tab, newline) 
+before or after the attributes or their values are ignored.
+
+<p/>
+
+Some attributes are required (for example, the <b>x</b>, <b>y</b>,
+<b>z</b> atom coordinates), some are optional (for example the atom 
+<b>mass</b>) and default values are used when they are not explicitely 
+indicated. What are these default values and how to change them is the 
+subject of the <b>Gamgi</b> part of this manual.
+
+<p/>
+
+Some optional attributes are coupled (for example, the <b>red</b>, <b>green</b>, 
+<b>blue</b> atom colors), which means that, if present, the whole set must
+be indicated.
+
+<p/>
+
+Some attributes are incompatible because they describe properties that cannot 
+be valid simultaneously for the same object (for example, a cell element cannot 
+have simultaneously <b>n1</b>, <b>n2</b>, <b>n3</b> number of cells and a volume 
+set to <b>sphere</b>).
+
+<p/>
+
+For each GAMGI object, a description of all the accepted attributes,
+with their possible values and restrictions, is presented in the 
+corresponding chapter of this manual.
+
+<h3>Good:</h3>
+
+<pre><b>
+&lt;atom element="H" x="0.0" y="0.0" z="0.0"/></b> all required attributes are present<b>
+
+&lt;atom 
+      z=  "0.0" 
+      y="  0.0" 
+      x="0.0  "
+      element="H" /></b> equivalent to example above<b>
+
+&lt;atom element="H" x="0.0" y="0.0" z="0.0" mass="2.0"/></b> optional attributes may be added
+</pre>
+
+<h3>Bad:</h3>
+
+<pre><b>
+&lt;atom element="H" x="0.0" z="0.0"/></b> a required parameter is missing<b>
+
+&lt;atom element="H" x="0.0" y="0.0" z="0.0" red="1.0" blue="1.0" /></b> a coupled parameter is missing<b>
+
+&lt;atom element="H" x="0.0" y="0.0" z="0.0" element="H"/></b> the same attribute appears twice<b>
+
+&lt;cell system="c" lattice="P" a="1.0" n1="1" n2="1" n3="1" volume="sphere" v1="1.0"/></b> 
+incompatible attributes
+</pre>
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

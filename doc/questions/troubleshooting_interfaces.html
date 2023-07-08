@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Questions: Troubleshooting</title>
+<link rel="icon" type="image/png" href="../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Troubleshooting</h1>
+
+<div id="notebook">
+<ul>
+<li><span>Interfaces</span></li>
+<li><a href="troubleshooting_formats.html">Formats</a></li>
+</ul>
+</div>
+
+<div class="contents">
+
+<a name="file1"></a>
+<h3>1. After importing a file with objects, these are not visible.</h3>
+
+If the region of space that currently can be seen does not contain 
+the coordinates of the objects in the file, these will not be visible, 
+though everything is fine and working well. Possible solutions are: 
+1) scale the layer down, so objects become smaller and a larger region 
+of space can be seen at once; 2) if in doubt, use <b>Layer->Select</b> 
+to check which objects indeed belong to the current layer; 3) edit the 
+file and check whether the object coordinates are compatible with the 
+current layer field of visibility. In a default layer, objects have 
+coordinates around (0.0, 0.0, 0.0) and the viewing direction is from 
+positive to negative z axis, so objects with negative z coordinates 
+will be more easily visible; 4) use <b>Layer->Modify</b> to change 
+the layer (projection and position) parameters untill the objects 
+become visible.
+
+<a name="layer1"></a>
+<h3>2. After modifying a layer, the objects become invisible.</h3>
+
+GAMGI gives users the flexibility to change all aspects related with 
+visibility and projection of each layer, which can be bad if users 
+do not use this power in a sensible way. Possible solutions are: 
+1) scale the layer down, so objects become smaller and a larger 
+region of space can be seen at once; 2) if in doubt, use <b>Layer->Select</b>
+to check which objects indeed belong to the current Layer;  3) use 
+<b>Layer->Modify</b> to change the layer (projection and position) 
+parameters untill the objects become visible; 4) use <b>File->Export</b> 
+to export the current layer to a file, edit the file and remove the layer, 
+and then use <b>File->Import</b> to import the objects to a new, default, 
+layer; 5) Use <b>Undo</b> to recover the previous layer conditions;
+
+<a name="layer2"></a>
+<h3>3. After selecting a visible object, the object is not found.</h3>
+
+By construction, each layer is completely independent of
+the other layers in the same window, even if these are
+still visible. Therefore, only objects that are in the
+current layer can be selected directly, otherwise they
+are not found. This is valid for all objects that a layer
+can contain, including lights.
+
+<a name="light1"></a>
+<h3>4. After creating a light, the objects become invisible.</h3>
+
+A wired object does not reflect light, so diffuse and specular 
+components cannot iluminate it. When lights are not present, diffuse 
+and specular light components are (0.0, 0.0, 0.0) but ambient light 
+is (1.0, 1.0, 1.0), so objects can be seen. When a light is created, 
+all components are set initially to (0.0, 0.0, 0.0) and wired objects 
+may become invisible, if the ambient light is too small. The solution 
+is to increase the ambient light, using <b>Light->Modify</b>.
+
+<a name="light2"></a>
+<h3>5. After creating a light, the lights become invisible.</h3>
+
+Ambient light is additive, so two lights with ambient components 
+(0.3, 0.3, 0.3) will be equivalent to a light with ambient component 
+(0.6, 0.6, 0.6). When the ambient light is too strong, exceeding the 
+limit (1.0, 1.0, 1.0), diffuse and specular components cannot be seen. 
+Therefore, ambient light becomes (1.0, 1.0, 1.0) and diffuse and specular 
+components become (0.0, 0.0, 0.0), which is exactly the situation when 
+no lights are present. The solution is to decrease the ambient light, 
+using <b>Light->Modify</b>.
+
+<a name="bond1"></a>
+<h3>6. After importing a file with bonded atoms, these are not visible.</h3>
+
+In wired mode, unbonded atoms are represented by crosses.
+When bonds are formed between them, the crosses are replaced
+by simple lines joining the atoms, changing color at
+half-distance. If the atoms are in the same position or very
+close, the line cannot be seen and the atoms and bond become
+invisible. Clearly this problem only occurs for overlaping
+atoms, and the solution is to move them to correct positions.
+
+</div>
+
+<div id="bottom">
+<a href="../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

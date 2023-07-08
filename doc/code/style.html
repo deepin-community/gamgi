@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Code: Style</title>
+<link rel="icon" type="image/png" href="../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../css/board.css"/>
+</head>
+
+<body>
+
+<div class="board">
+<div>Code Style</div><div>&nbsp;</div>
+</div>
+
+<div class="contents">
+
+<h3>Code</h3>
+
+Write code as simple as possible. Writing clever code for a large application, 
+particularly in a open environment, where people with very different backgrounds
+share their work, is usually a bad ideia. The real sign of cleverness is to write 
+code that is as simple to understand and modify as possible.
+
+<p/>
+
+Use white space to separate small blocks of code. This tends to
+increase code readability without increasing visual pollution.
+
+<p/>
+
+Always write explicit comparisons, never use abreviated versions: 
+use <b>if (a != NULL)</b> or <b>if (strcmp (a, b) == 0)</b>, instead of
+<b>if (a)</b> or <b>if (!strcmp (a, b))</b>. Avoid the ternary <b>?</b>
+operator unless it really improves readability.
+  
+<p/>
+
+Whenever possible, use the same algorithms and programming techniques, 
+in different parts of the program, to improve code readability and maintenance.
+  
+<h3>Indentation</h3>
+
+Use 2 spaces for indentation. Interactive packages tend to have functions
+with relatively long names, so short indentations are prefered, and among 
+these, 2 spaces is the most common (1 space is not visible enough).
+
+<h3>Brackets</h3>
+
+This is greatly a matter of personnal preference. With visually complex 
+code (as the <b>gtk</b> code), aligned <b>{</b>, <b>}</b> brackets
+are probably more helpful, but with more ordered, clean code (as the 
+<b>engine</b> code), K&R brackets economize space and often look better.
+  
+<p/>
+
+Use brackets everytime the control flow is not clear, even if they
+are not required. This is not an excuse though to not simplify the 
+control flow as much as possible, in first place. 
+
+<h3>Comments</h3>
+
+Comments should be used to document or to separate parts of the code.
+
+<p/>
+
+When documenting code, try to clarify what is essential, using as less
+words as possible. The best way to check the quality of our own comments
+is to read them some time later, when the code details are long forgotten.
+More often than not we find out that: 1) our comments are not as clear as 
+we thought they were; 2) they explain the easy procedures, instead of 
+clarifying the really subtle points.
+
+<p/>
+
+Too many comments are as bad as too little. To decrease visual pollution,
+try to group different explanations in a single comment, separated by
+white space.
+
+<p/>
+
+When just separating code, comments should be reduced to a few words 
+maximum, to avoid visual pollution and to distinguish them from more 
+detailed, explanatory comments.
+
+<p/>
+
+Comments should look as different as possible from code, to avoid visual 
+pollution. Therefore our comments are surrounded by <b>*</b>, forming a rectangle 
+(or just an L, in the file headers, containing copyright notices, etc. where 
+the problem is less stringent, as code and comments are not competing for 
+attention).
+
+<h3>Functions</h3>
+
+Spending time trying to find good names for functions is always
+a good investement, that pays off in code readability and
+maintenance. Good names are as short and explanatory as possible,
+and must cope with name space pollution. For a in depth discussion
+of GAMGI function name space, see <b>Code Architecture</b>.
+
+<p/>
+
+To improve readability, keep a space between the function name 
+and the left bracket that follows.
+
+<p/>
+
+When writing the function prototype, always write the full function
+signature, including all the variable names in the argument list
+(not just the types), to improve maintenance.
+
+<p/>
+
+Whenever possible, use the same name for the functions, in different
+parts of the program, to improve code readability and maintenance.
+
+<h3>Variables</h3>
+
+Use short names in math code and longer names in GUI code. In math code,
+the aim is to clarify the equations as much as possible, not to bloat 
+them with longer names (comment the variable meaning instead). 
+
+<p/>
+
+In GUI code, with an object-oriented approach, use slightly longer 
+names, if needed with words separated by dashes (<b>_</b>), as this makes 
+the code easier to read. Write the most important word in the beginning,
+often the object type, always keeping the total length as small as possible: 
+<b>atom_new</b> is better than <b>new_atom</b>.
+  
+<p/>
+
+Whenever possible, use the same name for the variables, in different
+parts of the program, to improve code readability and maintenance.
+
+<h3>Line length</h3>
+
+Avoid long lines, with more than 80 columns, to avoid readability
+and printing issues.
+
+</div>
+
+<div id="bottom">
+<a href="../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

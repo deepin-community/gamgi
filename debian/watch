@@ -1,0 +1,3 @@
+version=4
+http://atom.ist.utl.pt/src/download.html gamgi-all-([\d.]+)g\.tar\.gz
+#ftp://ftp.gamgi.org/gamgi/src/gamgi-all-([\d.]+)g\.tar\.gz

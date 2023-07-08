@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE gml SYSTEM "http://www.gamgi.org/dtd/gamgi.dtd">
+<gml>
+  <molecule name="cisplantin">
+    <atom id="1" element="Pt" x="-0.1420" y="0.1410" z="0.2163"/>
+    <atom id="2" element="Cl" x="-0.1350" y="-2.0420" z="0.5613"/>
+    <atom id="3" element="Cl" x="2.0640" y="0.1270" z="0.0843"/>
+    <atom id="4" element="N" x="-0.1470" y="2.1660" z="-0.1037"/>
+    <atom id="5" element="N" x="-2.1880" y="0.1540" z="0.3393"/>
+    <atom id="6" element="H" x="0.7930" y="2.4890" z="-0.2117"/>
+    <atom id="7" element="H" x="-0.5700" y="2.6250" z="0.6773"/>
+    <atom id="8" element="H" x="-0.6680" y="2.3700" z="-0.9327"/>
+    <atom id="9" element="H" x="-2.4640" y="0.3030" z="1.2883"/>
+    <atom id="10" element="H" x="-2.5460" y="-0.7240" z="0.0213"/>
+    <atom id="11" element="H" x="-2.5510" y="0.8890" z="-0.2327"/>
+    <bond parent1="1" parent2="2"/>
+    <bond parent1="1" parent2="3"/>
+    <bond parent1="1" parent2="4"/>
+    <bond parent1="1" parent2="5"/>
+    <bond parent1="4" parent2="6"/>
+    <bond parent1="4" parent2="7"/>
+    <bond parent1="4" parent2="8"/>
+    <bond parent1="5" parent2="9"/>
+    <bond parent1="5" parent2="10"/>
+    <bond parent1="5" parent2="11"/>
+  </molecule>
+</gml>

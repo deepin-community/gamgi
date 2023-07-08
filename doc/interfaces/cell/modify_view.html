@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Interfaces: Cell Modify</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Cell Modify</h1>
+
+<div id="notebook">
+<ul>
+<li><a href="modify_symmetry.html">Symmetry</a></li>
+<li><a href="modify_volume.html">Volume</a></li>
+<li><a href="modify_position.html">Position</a></li>
+<li><a href="modify_origin.html">Origin</a></li>
+<li><span>View</span></li>
+</ul>
+</div>
+
+<div class="contents">
+
+Change here the visual representation for a single cell or a list of cells.
+
+<p/>
+
+To modify an cell, click over its graphic image, or write its identification
+(name and number) on the <b>Cell</b> entry. To modify a list of cells, press
+the button <b>List</b> (after creating the list of cells with <b>Cell->Select</b>).
+Parameters for empty entries or <b>Local</b> choices remain unchanged.
+
+<p/>
+
+To change an cell name write the new name in the <b>Cell</b> entry,
+followed by the cell number (GAMGI needs the number to identify the cell).
+To change the name for a list of cells, press <b>List</b> first
+and then write the new common name in the <b>Name</b> entry.
+
+<h3>Faces</h3>
+
+When the button <b>Faces</b> is down, the cell is represented as a 
+solid object, that users can see from the outside or from the inside. 
+This option is disabled in <b>Projection</b>, <b>Rhombus</b> and 
+<b>Sphere</b> volumes (otherwise the filtering volume would hide 
+the lattice inside).
+
+<p/>
+
+When the button <b>Faces</b> is up, the cell is represented as a wired 
+object, formed by lines connecting the vertices (or by circumpherences, 
+in the <b>Sphere</b> representation).
+
+<h3>Nodes</h3>
+
+When the button <b>Nodes</b> is up, the nodes are visible, otherwise 
+they are hidden. This option is disabled for <b>Projection</b> volumes.
+
+<h3>Borders</h3>
+
+Selecting <b>None</b>, no borders are shown in any volume representation. 
+Selecting <b>Edges</b>, the outer line contours are shown but cell
+boundaries are hidden (as long as they are in the same plane, independently 
+of the lattice parameters). Selecting <b>Faces</b>, all lines are shown, 
+except those inside the volume representation (for <b>Parallelepiped</b> 
+and <b>Sphere</b> volumes, <b>Edges</b> and <b>Faces</b> options behave 
+in the same way).
+
+<p/>
+
+Selecting <b>All</b> shows all the border lines, including those inside. 
+This option is disabled when the button <b>Faces</b> is down, because 
+in solid mode, internal borders cannot be seen from the outside and make 
+it very difficult to analyze something from the inside. Options <b>Faces</b> 
+and <b>All</b> are disabled in <b>Parallelepiped</b> and <b>Sphere</b> 
+volumes, as there are no additional lines to represent in these 
+representations, only the outer lines already shown with the option
+<b>Edges</b>. All options except <b>Edges</b> are disabled for 
+<b>Projection</b> volumes.
+
+<p/>
+
+At least one visual element, <b>Nodes</b>, <b>Faces</b> or <b>Borders</b>, 
+must be visible when the cell is created, otherwise an error is flagged.
+
+<h3>r, g, b</h3>
+
+The <b>r</b>, <b>g</b>, <b>b</b> entries define the cell color,
+from black (0.0, 0.0, 0.0) to white (1.0, 1.0, 1.0). It is used 
+to draw the lines and nodes, in wired mode, and the solid faces, 
+in solid mode. In the last case, lines and nodes are drawn using 
+the current layer background color, this way assuring a good 
+contrast and eliminating the need to define yet another color.
+
+<h3>Scale</h3>
+
+Change the cell size, including its child objects. Cell objects are
+scaled around the cell center. The visual representation of an object
+is always scaled by its own scale factor multiplied by the scale factor
+of all its parent objects until layer, inclusive.
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

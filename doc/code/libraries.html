@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Code: Libraries</title>
+<link rel="icon" type="image/png" href="../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../css/board.css"/>
+</head>
+
+<body>
+
+<div class="board">
+<div>Code Libraries</div><div>&nbsp;</div>
+</div>
+
+<div class="contents">
+
+A big application as GAMGI, involving a wide range of 
+programming technologies, must necessarily rely on libraries.
+For the sake of simplicity and freedom, for both users and 
+developers, we aim: 1) to ensure that dependencies are kept to a minimum; 
+2) to use preferentially libraries that are also written in C; 3) to use 
+only free libraries that put no legal restrictions on the applications built 
+with them.
+
+<p/>
+
+Currently GAMGI requires the following
+libraries: <a href="http://www.gtk.org">Glib/Gtk</a>,
+<a href="http://sourceforge.net/projects/mesa3d">Mesa</a>,
+<a href="http://linux.maruhn.com/sec/gtkglarea.html">Gtkglarea</a>,
+<a href="http://sourceforge.net/projects/expat">Expat</a>
+and <a href="http://www.freetype.org/">Freetype</a>.
+ 
+<h3>Mesa</h3>
+
+To render the graphics, we use Mesa, a 3D graphics library 
+that implements the complete OpenGL specification. Although Mesa
+is free software, we are not going to use any Mesa-specific
+mechanism. Every single Mesa function used in GAMGI conforms
+to the OpenGL standard. Therefore, GAMGI can be compiled, 
+linked, executed with any implementation of the OpenGL standard.
+
+<p/>
+
+From the legal point of view, users can link Gamgi GPL code
+to non-free OpenGL library implementations, to run in-house, 
+as long as the library code is not distributed. Even statically 
+compiling GAMGI against non-free libraries is legal, as long as 
+the resulting binary is used in-house only and is not distributed 
+in any way.
+
+<p/>
+
+GAMGI should run with any version of Mesa or OpenGL. In order to follow 
+the developments in the OpenGL specification, Mesa has been changing fast, 
+resulting in a couple of bugs in Mesa in the last few years.
+
+<p/>
+
+Versions above Mesa 3.0 and below Mesa 4.0.3 have a bug affecting bond 
+cylinders with diffuse lights. Versions between Mesa 4.0.3 and Mesa 5.0
+have a bug resulting in segmentation faults on exit, for some specific
+window open/close sequences. Mesa 5.0.2 has a bug in normals, affecting
+wired objects with lights. Mesa 6.0.1 has a bug affecting atom spheres
+with diffuse lights. The latest release, Mesa 6.4.2, works fine.
+
+<h3>Gtk</h3>
+
+We use Glib 1.2 and Gtk 1.2 to build all the widgets shown in GAMGI.
+Although this is great free software, Gtk development has been forked
+and redesigned to build Gtk 2.0, which is more powerful than Gtk 1.2.
+
+<p/>
+
+Unfortunately there are a couple of issues with Gtk 2.0:
+1) Apparently Gtk 2.0 is noticeably slower than Gtk 1.2
+and GtkTreeView cannot handle large numbers of nodes; 
+2) Gtk 2.0 requires a lot of libraries, including libraries
+to handle all kinds of international languages (pango and gconv), 
+to handle disabilities (atk), to handle image maps (jpeg, png and 
+tiff), plus a library just to handle all these dependencies (pkg).
+These issues are probably not important for a GNOME desktop 
+application, but they are quite relevant for scientific/engineering 
+packages. Upgrading to Gtk 2.0 is therefore not a high priority 
+for the GAMGI project, at the moment.
+
+<p/>
+
+According to our goal of reducing GAMGI dependencies to a minimum,
+we are not going to use any mechanism (such as lists and objects), 
+provided by Gtk or any other library, that falls outside the strict
+purpose of that library. We aim to prevent locking GAMGI into a specific 
+toolkit, designing the code in such a way as to make changing toolkits 
+as simple as possible (including changing from Gtk 1.2 to Gtk 2.0). 
+
+<h3>GtkGLArea</h3>
+
+GtkGLArea is essentially a wrapper around the GLX library. OpenGL does
+not depend on the operating system, so GLX is a specific library to
+handle the connection between the X Window System and OpenGL. GtkGLArea
+in turn makes the bridge between the Gtk toolkit and the OpenGL API.
+There are two different GtkGLArea libraries, one to link against
+Gtk 1.2 and another to link against Gtk 2.0. Only the first one 
+works with Gamgi.
+
+<h3>Expat</h3>
+
+Expat is arguably the fastest non-validating XML parser currently
+available, used for example in the Mozilla Gecko engine. Its
+simplicity and speed are the perfect match to read XML Gamgi files.
+
+<h3>Freetype</h3>
+
+The Freetype 2.0 library is used in GAMGI to build 3D solid fonts from 
+Truetype fonts, such as DejaVuSans.ttf. The outline for each needed 
+character is obtained from a TrueType file using Freetype, before 
+being extruded and rendered by OpenGL. As fonts are sometimes hard 
+to find, GAMGI distributes the DejaVu free fonts, initially developed 
+for the GNOME project, in the directory <b>src/io/fonts</b>.
+
+</div>
+
+<div id="bottom">
+<a href="../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+************
+* Symmetry *
+************
+
+The files in this directory exemplify all the chemical
+point groups of symmetry with n <= 8, where n is the main
+rotation axis. They were prepared for Gamgi, by Carlos Pereira:
+http://www.gamgi.org/
+
+****************
+* Bibliography *
+****************
+
+Structural data was obtained from:
+
+1) Serguei Patchkovskii, to test the program Symmetry:
+http://www.cobalt.chem.ucalgary.ca/ps/symmetry/
+
+2) Tullio Pilati and Alessandra Forni, to test the program Symmol:
+http://ccp14.minerals.csiro.au/ccp/web-mirrors/symmol/~pila/
+
+3) P.Seiler, J.D.Dunitz (1982) Acta Crystallogr., B38, 1741, 
+and then included with Symmol
+
+4) Rudolf Hundt - Bonn, and then included with Symmol
+
+Structural information was obtained from:
+
+5) Burns G., Glazer A. M., Space Groups for Solid State Scientists, 
+Academic Press (1990)
+
+6) Folhas de Química-Física Molecular, Alcácer L., Calado J.,
+AEIST - secção de folhas, IST, (1978)

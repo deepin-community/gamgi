@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE gml SYSTEM "http://www.gamgi.org/dtd/gamgi.dtd">
+<gml>
+  <molecule name="ethylene">
+    <atom id="1" element="C" x="-0.7580" y="0.5740" z="0.5827"/>
+    <atom id="2" element="C" x="0.5370" y="0.5920" z="0.9257"/>
+    <atom id="3" element="H" x="-1.2270" y="-0.3490" z="0.3137"/>
+    <atom id="4" element="H" x="-1.3230" y="1.4830" z="0.5767"/>
+    <atom id="5" element="H" x="1.1020" y="-0.3170" z="0.9307"/>
+    <atom id="6" element="H" x="1.0070" y="1.5150" z="1.1937"/>
+    <bond parent1="1" parent2="2" order="2.00"/>
+    <bond parent1="1" parent2="3"/>
+    <bond parent1="1" parent2="4"/>
+    <bond parent1="2" parent2="5"/>
+    <bond parent1="2" parent2="6"/>
+  </molecule>
+</gml>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Interfaces: Cell Link</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Cell Link</h1>
+
+<div id="notebook">
+<ul>
+<li><span>Object</span></li>
+<li><a href="link_shift.html">Shift</a></li>
+<li><a href="link_position.html">Position</a></li>
+<li><a href="link_change.html">Change</a></li>
+<li><a href="link_occupancy.html">Occupancy</a></li>
+<li><a href="link_packing.html">Packing</a></li>
+</ul>
+</div>
+
+<div class="contents">
+
+Link a cell or a list of cells to other objects,
+for example to build crystals and glasses.
+
+
+<h3>Hierarchy</h3>
+
+Atoms can be linked to objects above or below, in the Gamgi hierarchy. 
+Pressing the button <b>Below</b> (the default), the class menu 
+shows the classes of objects that can be owned by cells. Pressing
+the button <b>Above</b>, the same menu shows the classes of objects
+that can own cells.
+
+<p/>
+
+Gamgi expects users to identify first the cell or list of cells
+and then the object to link. When the <b>Atom</b> entry is active 
+and empty, clicking the mouse over a cell, on the current layer
+(local selection), its identification is transported to the <b>Atom</b> 
+entry. Gamgi is now expecting users to click on a object of the class 
+currently selected in the class menu. This object can be in 
+a different layer or window (global selection). 
+
+<p/>
+
+To select a visible object, just press the mouse over the object,
+in its window. To select objects without visual representation, such
+as layers and lights, press the mouse over the graphic area in the window,
+to create a menu with all the objects of that class in the window,
+which can then be selected.
+
+<p/>
+
+When the chosen <b>Hierarchy</b> is <b>Above</b>,
+methods designed to add multiple objects to cells are disabled:
+<b>Crystal</b> and <b>Random</b>.
+
+<h3>Method</h3>
+
+Gamgi suppports three methods to link cells: <b>Object</b>,
+<b>Crystal</b> and <b>Random</b>. The last two are designed to add
+multiple objects to cells, so they are disabled when <b>Hierarchy</b>
+is set to <b>Above</b>.
+
+<p/>
+
+The <b>Object</b> method links a cell or a list of cells to
+a single object, <b>Above</b> or <b>Below</b>.
+
+<p/>
+
+When the <b>Hierarchy</b> is <b>Above</b>, the cell is unlinked from 
+its current parent and linked to the new object. When the cell is
+moved to a different layer, its bonds are automatically removed.
+When the <b>Hierarchy</b> is <b>Below</b>, the child object is
+unlinked from its current parent and linked to the cell. An error
+is issued when the parent already owned the child object.
+
+<p/>
+
+After the linking operation, Gamgi always puts on top
+the window and layer containing the linked objects.
+
+<p/>
+
+When linking a list of cells <b>Above</b>, all cells in the list
+are unlinked and linked to the parent object. When linking a list
+of cells <b>Below</b>, the child object is replicated as many times
+as necessary to link each cell in the list to a different replica.
+
+<p/>
+
+The <b>Crystallographic</b> method is used to link the selected
+<b>Object</b> to the various cell nodes, in order to build crystals,
+liquids and other nanostructures.
+
+The linked objects can be handled independently of the cell:
+they can be rotated, scaled, moved, removed, copied, as if the
+cell did not exist, for example to create defect crystals. Users
+can specificy patterns of occupation for the cell nodes, for example
+to create mixtures of different liquids, or to build multi-layer
+arbitrary nanostructures.
+
+<p/>
+
+The <b>Random</b> method is an implementation of the Jodrey algorithm
+to build a Random Close Packing (RCP) structure: the cell volume is
+randomly packed with atoms copied from the template atom selected as
+<b>Object</b>.
+
+The RCP structure has the highest volume density among
+amorphous structures (0.62 - 0.64), which compares with the highest volume
+density among crystalline structures (0.74). The RCP structure is particularly
+suitable to describe metallic glasses, due to the nondirectional nature
+of metallic bonding combined with the absence of local charge-neutrality
+requirements.
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

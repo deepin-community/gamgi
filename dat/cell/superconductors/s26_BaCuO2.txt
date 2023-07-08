@@ -1,0 +1,29 @@
+Superconductor (Tc = 90K): (Ba,Sr)CuO2
+Structure: 0 2 "oo -1" oo
+
+Space group: 123
+
+Lattice parameters:
+3.93 3.47
+
+Wyckoff positions:
+Ba,Sr 1d
+Cu 1a
+O 2f
+
+1. with Cell (s26a.xml):
+Bond: Color 0.5,0.5,0.5, Scale 0.4
+
+2. with Polytopes (s26b.xml):
+Cell Change XYZ: 0.5, 0.5, 0.5
+Cells: 2 x 2 x 2
+Neighbours: O
+Number: 4
+
+References:
+H. Shaked, P.M. Keane, J.C. Rodriguez, F.F. Owen, R.L. Hitterman,
+J.D. Jorgensen, Crystal structures of the High-Tc Superconducting
+Copper-Oxides, Physica C, Elsevier Science, Amsterdam, 1994
+
+M. Takano, M. Azuma, Z. Hiroi, Y. Bando, and Y. Takeda,
+Physica C 176 441 (1991)

@@ -1,0 +1,242 @@
+<!-- - - - - - - - - - - - - - - - - - - - 
+ |                                        |
+ | $GAMGI/doc/dtd/gml_config.dtd          |
+ |                                        |
+ | Copyright (C) 2001 Carlos Pereira      |
+ |                                        |
+ | Distributed under the terms of the GNU |
+ | General Public License: $GAMGI/LICENSE |
+ |                                        |
+ - - - - - - - - - - - - - - - - - - - - -->
+
+<!-- GAMGI Markup Language (GML) DTD: config mode -->
+
+<!ELEMENT gamgi (file* | window* | layer* | light* | assembly* |
+graph* | shape* | arrow* | cell* | cluster* | molecule* | group* | 
+plane* | direction* | atom* | bond* | orbital* | text* | help*)>
+
+<!ELEMENT file EMPTY>
+
+<!ELEMENT window EMPTY>
+
+<!ELEMENT layer EMPTY>
+
+<!ELEMENT light EMPTY>
+
+<!ELEMENT assembly EMPTY>
+
+<!ELEMENT graph EMPTY>
+
+<!ELEMENT shape EMPTY>
+
+<!ELEMENT arrow EMPTY>
+
+<!ELEMENT cell EMPTY>
+
+<!ELEMENT cluster EMPTY>
+
+<!ELEMENT molecule EMPTY>
+
+<!ELEMENT group EMPTY>
+
+<!ELEMENT plane EMPTY>
+
+<!ELEMENT direction EMPTY>
+
+<!ELEMENT atom EMPTY>
+
+<!ELEMENT bond EMPTY>
+
+<!ELEMENT orbital EMPTY>
+
+<!ELEMENT text EMPTY>
+
+<!ELEMENT help EMPTY>
+
+<!ATTLIST gamgi
+<!-- mouse: gamgi_mesa.h -->
+beep (yes | no) "yes"
+tolerance (0 | 1 | 2 | 3 | 4 | 5) "3"
+button1 (1 | 2 | 3) "1"
+button2 (1 | 2 | 3) "2"
+button3 (1 | 2 | 3) "3"
+
+<!-- decimal precision: gamgi_math.h -->
+length      CDATA "4"
+angle       CDATA "2"
+mass        CDATA "4"
+charge      CDATA "4"
+
+<!-- documentation color: gamgi_gtk.h -->
+
+background_r CDATA #IMPLIED "0.184"
+background_g CDATA #IMPLIED "0.309"
+background_b CDATA #IMPLIED "0.309"
+
+foreground_r CDATA #IMPLIED "0.957"
+foreground_g CDATA #IMPLIED "0.867"
+foreground_b CDATA #IMPLIED "0.699"
+
+title_r CDATA #IMPLIED "1.0"
+title_g CDATA #IMPLIED "1.0"
+title_b CDATA #IMPLIED "0.0"
+
+bold_r CDATA #IMPLIED "1.0"
+bold_g CDATA #IMPLIED "1.0"
+bold_b CDATA #IMPLIED "0.0"
+
+link_r CDATA #IMPLIED "0.8"
+link_g CDATA #IMPLIED "1.0"
+link_b CDATA #IMPLIED "1.0"
+>
+
+<!ATTLIST window 
+
+<!-- ruler: -->
+rotate_max CDATA #IMPLIED
+rotate_step CDATA #IMPLIED
+move_max CDATA #IMPLIED
+move_step CDATA #IMPLIED
+scale_max CDATA #IMPLIED
+scale_step CDATA #IMPLIED
+>
+
+<!ATTLIST layer
+<!-- history: gamgi_engine.h -->
+undo CDATA "5"
+save CDATA "5"
+
+<!-- projection: gamgi_mesa.h -->
+perspective (no | yes) "yes" 
+top  CDATA "0.5" 
+near CDATA "1.0"
+far  CDATA "100.0"
+
+eye_x CDATA "0.0"
+eye_y CDATA "0.0"
+eye_z CDATA "10.0"
+
+center_x CDATA "0.0"
+center_y CDATA "0.0"
+center_z CDATA "0.0"
+
+up_x CDATA "0.0"
+up_y CDATA "1.0"
+up_z CDATA "0.0"
+>
+
+<!ATTLIST light
+<!-- color: gamgi_mesa.h -->
+shininess CDATA "0.1"
+
+ambient_r CDATA "0.0" 
+ambient_g CDATA "0.0"
+ambient_b CDATA "0.0"
+
+diffuse_r CDATA "0.0" 
+diffuse_g CDATA "0.0"
+diffuse_b CDATA "0.0"
+
+specular_r CDATA "0.0" 
+specular_g CDATA "0.0"
+specular_b CDATA "0.0"
+>
+
+<!ATTLIST assembly
+>
+
+<!ATTLIST graph
+>
+
+<!ATTLIST shape
+>
+
+<!ATTLIST arrow
+>
+
+<!ATTLIST cell
+>
+
+<!ATTLIST cluster
+>
+
+<!ATTLIST molecule
+>
+
+<!ATTLIST group
+>
+
+<!ATTLIST plane
+>
+
+<!ATTLIST direction
+>
+
+<!ATTLIST atom
+<!-- chemistry: gamgi_chem.h -->
+element CDATA #IMPLIED
+mass    CDATA #IMPLIED
+radius  CDATA #IMPLIED
+red     CDATA #IMPLIED
+green   CDATA #IMPLIED
+blue    CDATA #IMPLIED
+
+<!-- style: gamgi_mesa.h -->
+style (wired | solid) "wired"
+slices CDATA "16"
+size CDATA "0.8"
+variancy CDATA "0.0"
+min CDATA "0.3700"
+width  CDATA "2"
+>
+
+<!ATTLIST bond
+<!-- chemistry: gamgi_chem.h -->
+lower CDATA "0.80"
+upper CDATA "1.10"
+
+element1 CDATA #IMPLIED 
+element2 CDATA #IMPLIED
+min      CDATA #IMPLIED
+max      CDATA #IMPLIED
+
+<!-- style: gamgi_mesa.h -->
+style (wired | solid) "wired"
+size CDATA "0.5"
+
+color CDATA #IMPLIED
+red     CDATA #IMPLIED
+green   CDATA #IMPLIED
+blue    CDATA #IMPLIED
+>
+
+<!ATTLIST orbital
+>
+
+<!ATTLIST text
+<!-- style: gamgi_mesa.h -->
+style (wired | solid) "wired"
+
+<!-- fonts: gamgi_io.h -->
+wired (roman | roman_mono | sans | sans_bold | serif | 
+serif_bold | script | script_bold | gothic_english | 
+gothic_german | gothic_italian | symbol_sans |
+symbol_serif | symbol_serif_bold) "roman"
+
+solid (sans | sans_bold | sans_italic | sans_bold_italic | 
+serif | serif_bold | mono | mono_bold | mono_italic | 
+mono_bold_italic) "sans"
+
+red   CDATA #IMPLIED
+green CDATA #IMPLIED
+blue  CDATA #IMPLIED
+>
+
+<!ATTLIST help
+source (local | remote) "local"
+agent (gamgi | browser) "gamgi"
+
+local CDATA #IMPLIED
+remote CDATA #IMPLIED
+browser CDATA #IMPLIED
+>

@@ -1,0 +1,26 @@
+Structure 1
+Prototype: Cu
+StrukturBericht / Pearson: A1 / cF4
+
+Lattice parameter:
+Cu     Ag     Au     Al
+3.615  4.086  4.078  4.049
+Ni     Pd     Pt     Pb
+3.524  3.891  3.924  4.950
+
+Radius:
+Cu 1.2780 (half-distance)
+
+1. Building with space group (s001.xml):
+Group: 225
+
+Wyckoff positions:
+Cu 1a
+
+2. Building with structural unit (s1.xml):
+Bravais lattice: cF
+Cu: 0.0, 0.0, 0.0
+
+View:
+Cu: style solid, size 1.0, variancy 1.0, scale 0.4
+CuCu: style solid, method length, color 0.5,0.5,0.5 scale 0.5

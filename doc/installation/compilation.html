@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Installation: Compilation</title>
+<link rel="icon" type="image/png" href="../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../css/board.css"/>
+</head>
+
+<body>
+
+<div class="board">
+<div>Installation Compilation</div><div>&nbsp;</div>
+</div>
+
+<div class="contents">
+
+Building GAMGI is trivial, _as_long_as_ all libraries
+can be seen at compile time, link time and run time.
+If problems arise, see the <a href="tips.html">tips</a> section.
+
+<p/>
+
+Most Linux distributions split libraries in two packages,
+one containing the (shared object) *.so files, with a name such as
+library-version.rpm, and another containing the (header) .h files, 
+usually with a name such as library-version-devel.rpm. To run GAMGI 
+only the former are necessary, but to compile GAMGI all are required.
+
+<p/>
+
+Popular Linux distributions tend to install library-version.rpm 
+but not library-version-devel.rpm packages, to save space, assuming
+that users want to run but not to build the applications. Smaller
+libraries as Expat, GtkGLext and Freetype tend to include *.so
+and *.h files in a single package. All these libraries are available 
+from every Linux distribution, so finding and installing 
+library-version.rpm and library-version-devel.rpm is easy.
+
+<p/>
+
+<h3>Go to the source code directory</h3>
+<pre>
+<b>cd $GAMGI/gamgi_version/src</b>
+</pre>
+
+<h3>Edit the file make_local</h3>
+When installing GAMGI for the first time, edit the file 
+<b>$GAMGI/gamgi_version/src/make_local</b> and update the following 
+lines, which tell <b>gcc</b> and <b>make</b> where are the required 
+header (<b>.h</b>) and library (<b>.so</b>) files (when updating 
+the GAMGI version, just copy this file from a previous installation):
+
+<pre><b>
+PATH_EXPAT_H = -I/usr/include
+PATH_FREETYPE_H = -I/usr/include/freetype2
+PATH_X_H = -I/usr/X11R6/include
+PATH_GLIB_H = -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include
+PATH_CAIRO_H = -I/usr/include/cairo
+PATH_PANGO_H = -I/usr/include/pango-1.0
+PATH_ATK_H = -I/usr/include/atk-1.0
+PATH_GTK_H =  -I/usr/include/gtk-2.0 -I/usr/lib64/gtk-2.0/include
+PATH_MESA_H = -I/usr/include
+PATH_GTKGL_H = -I/usr/include/gtkglext-1.0 -I/usr/lib64/gtkglext-1.0/include
+
+PATH_EXPAT_L = -L/usr/lib64
+PATH_FREETYPE_L = -L/usr/lib64
+PATH_X_L = -L/usr/X11R6/lib64
+PATH_GLIB_L = -L/usr/lib64
+PATH_CAIRO_L = -L/usr/lib64
+PATH_PANGO_L = -L/usr/lib64
+PATH_ATK_L = -L/usr/lib64
+PATH_GTK_L =  -L/usr/lib64
+PATH_MESA_L = -L/usr/lib64
+PATH_GTKGL_L =-L/usr/lib64
+</b></pre>
+
+This is a typical configuration for most Linux distributions on amd64
+(for i386 and PPC hardware replace lib64 by lib). Slightly different 
+configurations, for several different distributions and architectures 
+are available from the same file.
+
+<h3>Build the executable</h3>
+To build the gamgi executable, type <b>make</b>.
+To remove object and executable files, type <b>make clean</b>.
+
+</div>
+
+<div id="bottom">
+<a href="../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

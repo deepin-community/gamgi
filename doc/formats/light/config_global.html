@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Formats: Light Config</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Light Config</h1>
+
+<div id="notebook">
+<ul>
+<li><a href="config_color.html">Color</a></li>
+<li><span>Materials</span></li>
+</ul>
+</div>
+
+<div class="contents">
+
+<h3>shininess</h3>
+
+Controls globally how solid objects shine with reflected (specular) 
+light. Increasing values result in higher levels of object reflectance. 
+Decreasing values help emphasizing the objects bright spots. When
+<b>shininess</b> is set to <b>0.0</b> no bright spots are visible.
+When specular light is set to (0.0, 0.0, 0.0), <b>shininess</b> has no effect.
+
+<pre>
+Example: <b>&lt;light ... shininess="0.1"/></b> (default)
+(defined in <b>GAMGI_MESA_LIGHT_SHININESS</b>)
+Allowed values: <b>0.0</b> - <b>1.0</b> (optional)
+</pre>
+  
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

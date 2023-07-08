@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE gml SYSTEM "http://www.gamgi.org/dtd/gamgi.dtd">
+<gml>
+  <molecule name="EtOH">
+    <atom id="1" element="C" x="-1.2536" y="0.1078" z="-0.1897"
+    charge="-0.3520"/>
+    <atom id="2" element="H" x="-1.4418" y="-0.9228" z="-0.5379"
+    charge="0.1270"/>
+    <atom id="3" element="H" x="-1.2150" y="0.7550" z="-1.0833"
+    charge="0.1270"/>
+    <atom id="4" element="H" x="-2.0976" y="0.4288" z="0.4468" charge="0.1270"/>
+    <atom id="5" element="C" x="0.0493" y="0.1716" z="0.5483" charge="-0.0600"/>
+    <atom id="6" element="H" x="0.2544" y="1.2062" z="0.9019" charge="0.0920"/>
+    <atom id="7" element="H" x="0.0265" y="-0.4796" z="1.4500" charge="0.0920"/>
+    <atom id="8" element="O" x="1.0645" y="-0.2581" z="-0.3512"
+    charge="-0.5570"/>
+    <atom id="9" element="H" x="1.9273" y="-0.2200" z="0.1247" charge="0.4030"/>
+    <bond parent1="1" parent2="2"/>
+    <bond parent1="1" parent2="3"/>
+    <bond parent1="1" parent2="4"/>
+    <bond parent1="1" parent2="5"/>
+    <bond parent1="5" parent2="6"/>
+    <bond parent1="5" parent2="7"/>
+    <bond parent1="5" parent2="8"/>
+    <bond parent1="8" parent2="9"/>
+  </molecule>
+</gml>

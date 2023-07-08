@@ -1,0 +1,706 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Changelogs: GAMGI 0.15</title>
+<link rel="icon" type="image/png" href="../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../css/board.css"/>
+</head>
+
+<body>
+
+<div class="board">
+<div>GAMGI 0.16</div><div>6th August 2012</div>
+</div>
+
+<div class="contents">
+
+This release formally completes the work started in October 2009
+with GAMGI 0.14.2 to handle lists of objects everywhere in GAMGI.
+Fixed bugs in Group->Modify, Plane->Modify and Direction->Modify,
+so these tasks are now more solid and powerful, for single objects
+and lists of objects. Upgraded documentation for all Object->Modify
+task dialogs. Upgraded Help->Current and Help->Topic accordingly.
+Added three more copper oxide superconductor structure and info files.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Synced gamgi/ and gamgi_exp/ source, data and documentation trees.</li>
+<li>Solved a problem in Plane->Modify and Direction->Modify preventing many
+useful tasks: previously old planes, directions were removed and replaced by
+new instances, so Lists could not be used to modify Type, Scope properties.</li>
+<li>Added info and structure files for supercondutors Pb2Sr2YCu3O8 and PbBaYSrCu3O8.</li>
+<li>Improved Plane->Modify and Direction->Modify: when List is selected,
+Reference must be Local, as Cell and Atoms modes are not possible.</li>
+<li>Updated Group->Modify, Plane->Modify and Direction->Modify.</li>
+<li>Updated documentation for Layer->Modify, Cell->Modify, Light->Modify.</li>
+<li>Updated documentation for Text->Modify, Bond->Modify, Atom->Modify.</li>
+<li>Fixed two little bugs in gamgi_gtk_group_modify.c: cache.radius should be
+initialized to DBL_MAX, not 0.0; the dialog should be directed to ...GROUP_MODIFY,
+not ...GROUP_CREATE, involving different documentation files.</li>
+<li>Updated documentation for Plane->Modify, Direction->Modify, Group->Create,
+Group->Modify.</li>
+<li>Updated Help->Current and Help->Topic for Group->Create and Group->Modify.</li>
+<li>Started updating documentation for all Object->Modify dialogs.</li>
+<li>Created the structure and info files for Tl2Ba2CaCu2O8 superconductor.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Rewrite the About dialog, in the notebook form, to
+include pages for Developers, Contributors, Supporters.</li>
+<li>Add a task id to operactions involving multiple scans to
+guarantee that there is no flag corruption when bonds are
+created between different molecules.</li>
+<li>Add a bond angle, which is useful to control double bonds
+in solid mode.</li>
+<li>Write tutorials about crystalographic and atomic Plane,Direction usage.</li>
+<li>Implement dynamic text objects, to measure distances,
+angles, etc. on real time.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.15.8</div><div>6th June 2012</div>
+</div>
+
+<div class="contents">
+
+Fixed a serious bug in all gamgi_engine_filter functions, that could result in crashes, namely in Plane->Create and Direction->Create. Group_>Modify is now fully working, with objects and lists of objects, making this the first release where all dialogs support lists of objects. Added structure and information files for 16 of the most important cooper oxide superconductors.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Synced gamgi_0.15.8 and gamgi_exp_0.15.8.</li>
+<li>Completed the new dialog Group->Modify. This is the last
+GAMGI dialog to fully work with object lists! Only documentation
+will be added from now on until major release 0.16.</li>
+<li>Group->Modify can now be used to change automatically Color
+and Style for all objects inside a Container Group.</li>
+<li>Group->Modify is essentially done, with objects and lists
+of objects, for all types: Container, Polytope and Local.</li>
+<li>Modifying Groups to types Container and Polytope is now working
+fine in Group->Modify.</li>
+<li>Removed parameters Atom, Element, Number, from Group objects:
+they are still used to build polytopes but are not saved anymore.</li>
+<li>Fixed the new Group->Modify interface.</li>
+<li>Removed parameters Structure, Filter, Visible, Coplanar from Group
+objects: they are still used to build polytopes but are not saved anymore.</li>
+<li>Improved dialogs: Cell->Link, Group->Create and Group->Modify.</li>
+<li>Another superconductor structure: Tl2Ba2Ca4Cu5O14.</li>
+<li>Two more superconductor structures: La2CaCu2O6 and TlBa2CaCu2O7-x.</li>
+<li>Three more superconductor structures: Tl2Ba2CuO6,
+Bi2Sr2(Gd,Ce)2Cu2O10, and Pb2(Sr,La)2Cu2O6.</li>
+<li>A third crash on Atom->Select->Region after static_grab_pixels.
+Removed the O3 optimization to see if the problem subsists.</li>
+<li>Another crash on Atom->Select->Region, after static_grab_pixels,
+this time compiled with -g.</li>
+<li>Added structure and info for another superconductor: (Tl,Pb)(CO3)Sr4Cu2O7.</li>
+<li>Improved the way defaults are handled for Wyckoff positions
+in Cell->Link.</li>
+<li>Added fluoroapatite/hydroxylapatite structure to dat/cell/etc/.</li>
+<li>Added structures for Copper Oxide high-Tc superconductors
+to dat/cell/.</li>
+<li>Added structures for chiral nanotubes to dat/mplecule/nanotubes.</li>
+<li>Found and removed a serious bug in gamgi_engine_filter.c functions:
+dlist nodes were called after being removed... This might explain also
+a crash reported earlier in static_grab_objects from Atom->Select
+with Method Region.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Rewrite the About dialog, in the notebook form, to
+include pages for Developers, Contributors, Supporters.</li>
+<li>Add a task id to operactions involving multiple scans to
+guarantee that there is no flag corruption when bonds are
+created between different molecules.</li>
+<li>Add a bond angle, which is useful to control double bonds
+in solid mode.</li>
+<li>Write tutorials about crystalographic and atomic Plane,Direction usage.</li>
+<li>Implement dynamic text objects, to measure distances,
+angles, etc. on real time.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.15.7</div><div>15th April 2012</div>
+</div>
+
+<div class="contents">
+
+Added structure (xml) and data (txt) files for the following
+model structures: alpha-Mn, beta-Mn, alpha-U, Al3Ti, Cr3Si,
+Al3Zr4, Fe3C (cementite), Al2O3 (corundum), CatiO3 (perovskite),
+MgAl2O4 (spinel), Fe2B, CdI2, beta-quartz, AuBe5, CaCu5,
+TiO2 (rutile), ZnWO4, plus Laves phases Cu2Mg, MgZn2, MgNi2.
+Added models for martensitic transformation: Bain,
+Nishiyama - Wassermann and Kurdjumov - Sachs. Added graphene
+structure to illustrate carbon nanotube (p,q) classification.
+Fixed a bug in Plane->Modify and Direction->Modify.
+Added screenshots about object lists to www.gamgi.org.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Added more crystalline structures: Fe2B, CdI2, beta-quartz.</li>
+<li>Added more crystalline structures: AuBe5, CaCu5,
+TiO2 (rutile), ZnWO4, plus Laves phases Cu2Mg, MgZn2, MgNi2.</li>
+<li>Added models for martensitic transformations:
+Bain, Nishiyama - Wassermann and Kurdjumov - Sachs.</li>
+<li>Added graphene based structure, to illustrate (zig-zag,
+arm-chair and chiral) carbon nanotube (p,q) designation.</li>
+<li>Added more crystalline structures: alpha-Mn, beta-Mn, alpha-U,
+Al3Ti, Cr3Si, Al3Zr4, Fe3C, Al2O3 (corundum), CatiO3 (perovskite),
+MgAl2O4 (spinel).</li>
+<li>A crash occurred in static_grab_objects. Select Region is
+working fine under heavy loads. Researching (and compiling with -g).
+</li>
+<li>Added new screenshots, showing Atom->Select, to select lists
+of atoms, and Plane->List, to build lists of plane families.</li>
+<li>Found and removed a bug in Plane->Modify and Direction->Modify: polygon
+Plane and line Direction wrongly showed default stereographic projection data,
+when the Cell was not linked. Fixed two related check tests.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Add object lists to Group->Modify, the only task
+dialog where lists of objects are not integrated yet.</li>
+<li>Rewrite the About dialog, in the notebook form, to
+include pages for Developers, Contributors, Supporters.</li>
+<li>Add a task id to operactions involving multiple scans to
+guarantee that there is no flag corruption when bonds are
+created between different molecules.</li>
+<li>Add a bond angle, which is useful to control double bonds
+in solid mode.</li>
+<li>Write tutorials about crystalographic and atomic Plane,Direction usage.</li>
+<li>Implement dynamic text objects, to measure distances,
+angles, etc. on real time.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.15.6</div><div>11th February 2012</div>
+</div>
+
+<div class="contents">
+
+Arbitrary lists of crystallographic families of (hkl) planes and [uvw] directions
+can now be easily created, for all models supported, with Plane->Create and
+Direction->Create. Arbitrary lists of Planes and Directions (previously selected
+with Plane->Select and Direction->Select) can now be handled exactly as a single
+object, with Plane->Modify and Direction->Modify. Fixed a few bugs. 
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Arbitrary sets of (hkl) planes can now be easily created
+with Plane->Create, for all models supported.</li>
+<li>Further improvements in Direction->Create and Direction->Modify,
+to list atoms only once and to properly remove the template direction.</li>
+<li>Arbitrary sets of [uvw] directions can now be easily created
+with Direction->Create, for all models supported except Range
+(which uses data specific for a given uvw family).</li>
+<li>More improvements in Plane->Create->List and Direction->Create->List
+dialogs. This is now ready to implement in first level dialogs.</li>
+<li>Added second level dialog Direction->Create->List to automatically
+create arbitrary sets uvw of crystallographic directions.</li>
+<li>The second level dialog Plane->Create->List, to automatically
+create arbitrary sets hkl of crystallographic planes, is working fine.</li>
+<li>Including/excluding ranges of plane indices in a GtkTreeView
+is now working in Plane->Create->List second level dialog.</li>
+<li>Resumed work on creating automatically ranges hkl of
+crystallographic planes and directions previously selected.</li>
+<li>Plane->Modify and Direction->Modify are working fine and
+ready general usage, even with lists of objects. Plane->Modify
+should be more user-friendly for cells with a reciprocal lattice.
+</li>
+<li>Found and removed a bug in gamgi_engine_copy.c: directions
+belonging to planes were not copied, affecting for example the
+Undo and Save mechanisms.</li>
+<li>Plane->Modify and Direction->Modify seems to be
+working fine for all cases now. Needs more testing.</li>
+<li>Fixed a crashing bug in Plane->Create and Direction->Create,
+when attempting to build atomic planes, directions with filtered
+atoms.</li>
+<li>Fixed a crashing bug in Plane->Create and Direction->Create,
+when attempting to create atomic planes, directions with atoms
+belonging to planes, directions.</li>
+<li>Improved Plane->Modify and Direction->Modify behaviour.</li>
+<li>Eliminated plane->atoms, plane->structure,
+plane->filter, plane->thickness.</li>
+<li>Eliminated direction->atoms, direction->structure,
+direction->filter, direction->thickness.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Rewrite the About dialog, in the notebook form, to
+include pages for Developers, Contributors, Supporters.</li>
+<li>Add a task id to operactions involving multiple scans to
+guarantee that there is no flag corruption when bonds are
+created between different molecules.</li>
+<li>Add a bond angle, which is useful to control double bonds
+in solid mode.</li>
+<li>Write tutorials about crystalographic and atomic Plane,Direction usage.</li>
+<li>Implement dynamic text objects, to measure distances,
+angles, etc. on real time.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.15.5</div><div>1st September 2011</div>
+</div>
+
+<div class="contents">
+
+Lists of arbitrary objects can now be exported, exactly as any other
+object currently selected. Added a Help->Tips entry in the Help menu,
+covering importants advices to increase GAMGI usability. Updated all
+the information for Plane->Create, Plane->Modify, Direction->Create,
+Direction->Modify. Rewrote Plane->Modify and Direction->Modify, which
+are now working with lists of Planes and Directions, still in a reduced,
+provisory mode. Added several important crystalline structures to 
+/dat/cell/structures.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Synced gamgi/ and gamgi_exp/ branches.</li>
+<li>Cleaned gamgi_gtk_plane_modify.*, gamgi_gtk_direction_modify.*,
+removed gamgi_phys_plane_reference.</li>
+<li>Fixed name changing in Plane->Modify and Direction->Modify.<li>
+<li>Direction->Modify is now working fine for all types of Directions,
+(cristalline and atomic, poles, traces, direct space lines), when
+arrays are not modified, including lists of Directions.</li>
+<li>Plane->Modify is now working fine for all types of Planes,
+(cristalline and atomic, poles, traces, reciprocal lattice vectors,
+direct space polygons), when arrays are not modified, including
+lists of Planes.</li>
+<li>Solved several issues regarding Plane->Modify and Direction->Modify:
+modifying Planes,Directions is now possible, when its Cell,Atoms parents
+are not there anymore. Seeing planes,directions properties is now much easier.
+Modifying reciprocal lattice plane vectors is now possible.</li>
+<li>Added more tips to Help->Tips.</li>
+<li>Wrote static_ok_local, static_ok_global and static_grab in
+gamgi_gtk_plane_modify.c and gamgi_gtk_direction_modify.c.</li>
+<li>Reviewd all the Direction->Modify interface. Futurely it will
+be simpler and more powerful. Currently is not working.</li>
+<li>Reviewd all the Plane->Modify interface. Futurely it will
+be simpler and more powerful. Currently is not working.</li> 
+<li>Updated Help documentation for Direction->Create and Direction->Modify.</li>
+<li>Updated Help documentation for Plane->Create and Plane->Modify.</li>
+<li>Lists of objects can now be exported, for all classes of objects.
+Bonds between members of the list are ignored.</li>
+<li>Lists of bonds, and a single bond, are now exported with the
+parent atoms.</li>
+<li>Fixed a bug: Gamgi (meaning all) could not be selected.</li>
+<li>Added a new <b>Help->Tips</b> section, with advices about
+all sort of topics related with GAMGI usage, that should prove
+quite useful even for experienced users.</li>
+<li>Bonds can now be selected according to their bond length.</li>
+<li>Added a model of a ice_clathrate with 46 water molecules.</li>
+<li>Added C60 cfc structure, with atoms,bonds or polyhedra.</li>
+<li>Added Ice-Ic, solid CO2 (dry ice) and solid C6H6
+cristalline structures to /dat/cell/structures.</li>
+<li>Added alpha-La, beta-Sn, In, As, gamma-Se, alpha-Hg
+cristalline structures to /dat/cell/structures.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Rewrite the About dialog, in the notebook form, to
+include pages for Developers, Contributors, Supporters.</li>
+<li>Add a task id to operactions involving multiple scans to
+guarantee that there is no flag corruption when bonds are
+created between different molecules.</li>
+<li>Add a bond angle, which is useful to control double bonds
+in solid mode.</li>
+<li>Write tutorials about crystalographic and atomic Plane,Direction usage.</li>
+<li>Implement dynamic text objects, to measure distances,
+angles, etc. on real time.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.15.4</div><div>19th June 2011</div>
+</div>
+
+<div class="contents">
+
+Fixed space groups 119, 120, 121, 122. Solved a problem with interactive
+handling lists of recursive objects. Fixed new and old bugs in light scaling,
+Layer->Modify, Plane->Create. Fixed a bug in ClCs tutorial, fixed
+outdated interstice cell data files. Created xml and info txt data files
+for the most relevant cfc, bcc, hcp derived cristalline structures.
+Implemented a dialog to generate lists of families of crystallographic
+planes. Implemented a unique task identifier, to futurely handle operations
+such as drawing in a safer way.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Added the most important cristalline structures
+derived from cfc, bcc, hcp to dat/cell/structures.</li>
+<li>Synced gamgi/ and gamgi_exp/ code trees.</li>
+<li>Found and removed a recent bug in scale code:
+individual lights were not scaling with the mouse.</li>
+<li>Fixed dat/cell/interstices/ files that still used type
+instead of label to designate atom types.</li>
+<li>Built Chalcopyrite with space group 122: the structure is correct.</li>
+<li>Space groups 119, 120, 121, 122 were given as P groups, should be I. Fixed.
+Group 119 had positions a,b,c,d with symmetry -42m, should be -4m2. Fixed.
+Checked lattice and symmetry labels for all other tetragonal groups:
+they are correct. Checked Wyckoff positions for groups 119, 120,
+121, 122: they are correct.</li>
+<li>Found and removed a bug in Plane->Create: area tolerance
+to dismiss plane creation in a range is too small.</li>
+<li>Found and removed a bug in Layer->Modify: layer names were not copied.</li>
+<li>Started buiding a comprehensive data base of representative
+crystallographic structures, based on the book "Structure of Materials,
+by M. de Graef and M. E. McHenry".</li>
+<li>Designed a GTK dialog to handle lists of crystallographic planes
+in Plane->Create.</li>
+<li>Fixed a HTML glitch in the CsCl tutorial.</li>
+<li>Started building a dialog to create ranges of crystallographic planes.</li>
+<li>Replaced the id mechanism to handle translation, rotation
+of lists of recursive objects, by the much simpler, slightly faster,
+marking algorithm that also works for scaling. Rotation, translation,
+scaling of lists of recursive objects works fine now, and the
+new algorithm does not interfere with all the other translation,
+rotation mechanisms devised earlier. This essentially completes the
+conceptual work, planned 10 years ago, but only initiated in October
+2009, to handle lists of objects exactly as a single object.</li>
+<li>Designed, implemented a simple, fast algorithm to scale lists
+of recursive objects. It works also for rotations, translations.</li>
+<li>Started working on gamgi_gtk_plane_set.c and gamgi_gtk_direction_set.c,
+to create flexible sets of crystallographic planes and directions.</li>
+<li>A unique id number is now generated for all rotation tasks,
+for example to avoid repetitions when rotating lists of recursive
+objects.</li>
+<li>A unique id number is now generated for all translation tasks,
+for example to avoid repetitions when translating lists of recursive
+objects, such as texts, groups, clusters or assemblies.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Rewrite the About dialog, in the notebook form, to
+include pages for Developers, Contributors, Supporters.</li>
+<li>Add a task id to operactions involving multiple scans to
+guarantee that there is no flag corruption when bonds are
+created between different molecules.</li>
+<li>Add a bond angle, which is useful to control double bonds
+in solid mode.</li>
+<li>Write tutorials about crystalographic and atomic Plane,Direction usage.</li>
+<li>Implement dynamic text objects, to measure distances,
+angles, etc. on real time.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.15.3</div><div>21st May 2011</div>
+</div>
+
+<div class="contents">
+
+Global lists of pre-selected objects can now be rotated, translated,
+scaled exactly as before for a local single object (to grab focus
+for a list of objects, just press the mouse middle button over the
+corresponding object class button, in the main menu, and then over
+the Gamgi button). Updated all the local and web documentation for
+Object->Copy and Object->Link dialogs, available for example through
+the Help tools.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Synced gamgi/src and gamgi_exp/src code branches.</li>
+<li>Synced all the interfaces documentation: www.gamgi.org,
+ftp.gamgi.org, gamgi_doc and gamgi-exp_doc. Fixed a tag
+position inconsistency in CSS notebook code.</li>
+<li>Updated the documentation for all the Object->Link dialogs.</li>
+<li>When giving focus to a list of objects, now checks first
+if the list is empty.</li>
+<li>Updated the documentation for all the Object->Copy dialogs.</li>
+<li>Fixed a little GUI bug in Layer->Copy: (disable Local in
+object mode).</li>
+<li>Developed a flexible, simple, fast, mechanism to identify each
+instance of tasks such as rotating and drawing with a unique id,
+to properly handle multi reentrance in the same object.</li>
+<li>Removed gamgi_global_selection_draw, replaced
+by equal function gamgi_mesa_draw_gamgi.</li>
+<li>Added code to implement task ids: tasks such as drawing,
+scaling, rotating, translating will have a unique id attached,
+to prevent bugs in objects with multiple parents, such as bonds,
+and lists of recursive objects, such as texts, groups, clusters
+and assemblies.</li>
+<li>Lists of pre-selected objects can now be interactively scaled
+(dragging the mouse or clicking the ruler), exactly as before for
+a single object.</li>
+<li>Lists of pre-selected objects can now be interactively translated
+(dragging the mouse or clicking the ruler), exactly as before for
+a single object. It works quite fast for 1500 atoms, on two different
+windows!</li>
+<li>Lists of pre-selected objects can now be interactively
+rotated (dragging the mouse or clicking the ruler), exactly
+as before for a single object (needs more testing).</li>
+<li>Code disabling selection lists when listed objects are
+removed is now also disabling global focus for those lists.</li>
+<li>We are a step closer to rotate,move,scale lists of previously
+selected objects: code to select objects or lists of objects,
+including statusbar info and all the required internal data
+(just gamgi->focus), are now working fine.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Rewrite the About dialog, in the notebook form, to
+include pages for Developers, Contributors, Supporters.</li>
+<li>Add a task id to operactions involving multiple scans to
+guarantee that there is no flag corruption when bonds are
+created between different molecules.</li>
+<li>Add a bond angle, which is useful to control double bonds
+in solid mode.</li>
+<li>Write tutorials about crystalographic and atomic Plane,Direction usage.</li>
+<li>Implement dynamic text objects, to measure distances,
+angles, etc. on real time.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.15.2</div><div>22nd April 2011</div>
+</div>
+
+<div class="contents">
+
+GAMGI code is now compiling fine with SINGLE_INCLUDES and SEAL_ENABLE
+enabled, so miggrating to GTK-3.0 should be relatively easy. Fixed minor
+GUI bugs in all Object->Copy and Object->Link dialogs. Polygon data
+imported from XML files is now properly checked. Updated Help files
+for Object->Copy, Object->Select, Object->Link dialogs, and updated
+Help->Current and Help->Topic accordingly. Changed XML formats for
+polygon Planes and line Directions and updated dat/ files accordingly.
+Objects can now be rotated,moved, scaled in all open windows simultaneously. 
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Addded -I/usr/include/gdk-pixbuf-2.0/ to PATH_GTK_H in make_local,
+as this is required at least by Ubuntu 10.10.</li>
+<li>Synced gamgi/src/ and gamgi_exp/src/.</li>
+<li>Synced gamgi/doc/interfaces/, gamgi_exp/doc/interfaces/,
+www.gamgi.org/interfaces/ and ftp.gamgi.org/interfaces/.</li>
+<li>Updated Help->Topic, to support the files documenting the
+new Object->Copy, Object->Select and Object->Link dialogs.</li>
+<li>Updated Help->Current, to support the files documenting the
+new Object->Copy, Object->Select and Object->Link dialogs.</li>
+<li>Updated the Help file infrastructure, to document all the
+new Object->Copy, Object->Select and Object->Link dialogs.</li>
+<li>Interactive rotation, translation, scaling now works fine for
+all windows simultaneously (after selecting Gamgi as current object).</li>
+<li>Updated planes,directions in XML files in dat/plane and dat/cell,
+to conform with the new format for polygons and lines.</li>
+<li>Fixed group->type and added cluster->type, so both types of Group and
+Cluster objects can now be correctly exported/imported to XML files.</li>
+<li>Added x,y,z, center_x,center_y,center_z, e1,e2,e3 to Cluster objects.</li>
+<li>Changed cx,cy,z by center_x, center_y, center_z parameters
+in XML files, for Plane, Group and Cluster objects.</li>
+<li>Changed the way geometry is described in Line Directions in XML files.</li>
+<li>Fixed a GUI bug in all Copy and Link dialogs: the first object must
+be local, which means in the current layer (before, objects in different
+layers could  be selected, as long as the window was the same).</li>
+<li>Reviewed and tested further all the code to import planes and directions
+from XML files. This is now robust and simpler than before.</li>
+<li>Cdata arrays for Cluster, Group, Plane, Direction polygons
+and lines are now properly tested when importing XML files.</li>
+<li>GAMGI is now compiling and running fine with -DG_DISABLE_SINGLE_INCLUDES,
+-DATK_DISABLE_SINGLE_INCLUDES, -DGDK_PIXBUF_DISABLE_SINGLE_INCLUDES,
+-DGTK_DISABLE_SINGLE_INCLUDES. As GTKGLExt does not support yet these directives,
+only the GAMGI version marked gamgi_exp (without GTKGLExt) can be currently
+built with *_SINGLE_INCLUDES enabled.</li>
+<li>GAMGI is now compiling and running fine with -DGSEAL_ENABLE enabled.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Rewrite the About dialog, in the notebook form, to
+include pages for Developers, Contributors, Supporters.</li>
+<li>Add a task id to operactions involving multiple scans to
+guarantee that there is no flag corruption when bonds are
+created between different molecules.</li>
+<li>Add a bond angle, which is useful to control double bonds
+in solid mode.</li>
+<li>Add plane area and direction length to Plane->Measure and
+Direction->Measure.</li>
+<li>Write tutorials about crystalographic and atomic Plane,Direction usage.</li>
+<li>Implement dynamic text objects, to measure distances,
+angles, etc. on real time.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.15.1</div><div>16th February 2011</div>
+</div>
+
+<div class="contents">
+
+Coordination polyhedra groups and Voronoi polyhedra clusters can now
+be exported/imported from GAMGI XML files. Polygon planes and Line
+directions can also be exported/imported from GAMGI XML files, as
+totally independent objects, so they don't depend anymore from Cell
+or Atom objects. Planes and Directions represented in stereographic
+projections can now be scaled as any other object. Improved the
+functionality offered in Plane->Create, Direction->Create and
+Group->Create (Structure and Filter menus). Removed all the code
+involving the ugly concept of dependency, envolving Plane, Direction
+and Group objects. Direction->Measure and Plane->Measure now
+can calculate also the geometrical area and length, respectively.
+Fixed bugs in Bond->Create and Direction->Measure and cleaned code.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>For the first time, polytope Groups can now be
+imported,exported to XML files, with the new data model.</li>
+<li>Directions can be imported/exported again to XML files, with
+the new data model. All types of directions seem to be working fine.</li>
+<li>Planes can be imported/exported again to XML files, with the new data
+model. All types of planes seem to be working fine, except planes on the
+reciprocal lattice.</li>
+<li>Cracked down the way to properly position Planes, Directions
+and Groups imported from polygonal data in XML files.</li>
+<li>Fixed a new bug in Reciprocal lattice: when selecting a plane,
+it would wrongly move, rotate the cross.</li>
+<li>Planes, Directions cannot be linked to another object when they
+are not polygons, lines (Stereographic projection, reciprocal lattice.</li>
+<li>Measuring area, length, with Plane->Measure, Direction->Measure just
+produces an error when Plane, Direction is not a polygon, line.</li>
+<li>Plane->Measure, Direction->Measure for crystalographic Planes, Directions
+works fine when parent is no longer a Cell, producing just an error.</li>
+<li>Crystalographic Planes, Directions now can still exist when parent
+is no longer a Cell, when they are polygons or lines.</li>
+<li>Voronoi clusters and Coordination groups can now be exported,
+imported, still with limitations: position and orientation data
+is still missing.</li>
+<li>All polygon data can now be exported and imported from GAMGI XML files.</li>
+<li>Most of the code to import polygon data, to describe Clusters,
+Groups, Planes, Directions, in a easy and solid way, is now in place.</li>
+<li>Plane->Measure and Direction->Measure now support plane
+geometrical area and direction geometric length.</li>
+<li>Added functions to calculate Plane geometrical area
+and Direction geometrical length.</li>
+<li>Fixed a bug in Direction->Measure: the distance between nodes in some
+cases was a multiple of the correct value, for centered lattices.</li>
+<li>Wrote code to build polygon arrays from XML files.</li>
+<li>glPolygonOffset is now (1,1) for Planes and (2,2)
+for Cells, so Planes have visual priority over Cells.</li>
+<li>Planes rendered as polygons now have a border, with
+the background color, which is good to distinguish them.</li>
+<li>Completed a full review of the functionality for Plane->Create,
+Direction->Create and Group->Create.</li>
+<li>The Structure options are now fully working on Plane->Create
+and Direction->Create (similar to Autonomy options before).</li>
+<li>Improved Plane->Create, Direction->Create: now there are
+4 different policies to filter atoms in Planes, Directions.</li>
+<li>Improved Group->Create: now there are 4 different policies
+to filter atoms around central atom.</li>
+<li>Improved gamgi_chem_polytope code: the number of Planes, Directions
+created, and ignored Groups, due to improper atom coordinates are now
+fully reported.</li>
+<li>Fixed a new bug in Bond->Remove: graphic area not immediately
+refreshed, in Local mode.</li>
+<li>Introduced a new parameter Structure, meaning how
+atoms are transported to new object: Copy, Link or None.</li>
+<li>Got rid of gamgi_phys_plane_compatible, gamgi_phys_direction_compatible:
+another ugly concept that does not solve the issue: atom superposition.</li>
+<li>Planes and Directions in stereographic projections and reciprocal lattice
+now can be scaled as any other object (increasing/decreasing the width).</li>
+<li>Planes and Directions in Trace mode (in Projection Cells) can
+now be scaled (changing line width) exactly as any other object.</li>
+<li>GAMGI can now export array data everytime that is necessary,
+for example in Clusters, Groups, Planes and Directions.</li>
+<li>Removed gamgi_chem_atom_unlink: removing atoms should
+never remove automatically container objects. If it makes
+sense or not that is a user prorrogative. This represents
+a change in policy, in how to handle planes, directions and
+groups. These objects can be handled, exported, imported even
+if they cannot be fully reconstructed. gamgi_chem_atom_unlink,
+gamgi_gtk_object_independence and autonomy code were among the
+ugliest code in GAMGI.</li>
+<li>Removed test function gamgi_gtk_object_independence:
+all objects must be fully independent and can be save to
+files. If it makes sense or not that is a user prorrogative.</li>
+<li>Removed parameter Autonomy from Plane, Direction and Group
+objects. Futurely these objects will always have Autonomy All.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Rewrite the About dialog, in the notebook form, to
+include pages for Developers, Contributors, Supporters.</li>
+<li>Add a task id to operactions involving multiple scans to
+guarantee that there is no flag corruption when bonds are
+created between different molecules.</li>
+<li>Add a bond angle, which is useful to control double bonds
+in solid mode.</li>
+<li>Add plane area and direction length to Plane->Measure and
+Direction->Measure.</li>
+<li>Write tutorials about crystalographic and atomic Plane,Direction usage.</li>
+<li>Implement dynamic text objects, to measure distances,
+angles, etc. on real time.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI old</div><div>&nbsp;</div>
+</div>
+
+<div class="contents">
+
+Changelogs for older releases can be found here.
+
+<p/>
+
+<ul>
+<li><a href="changelogs14.html">GAMGI 0.14.1 - GAMGI 0.15</a></li>
+<li><a href="changelogs13.html">GAMGI 0.13.1 - GAMGI 0.14</a></li>
+<li><a href="changelogs12.html">GAMGI 0.12.1 - GAMGI 0.13</a></li>
+<li><a href="changelogs11.html">GAMGI 0.11.1 - GAMGI 0.12</a></li>
+<li><a href="changelogs10.html">GAMGI 0.10.1 - GAMGI 0.11</a></li>
+<li><a href="changelogs09.html">GAMGI 0.09.1 - GAMGI 0.10</a></li>
+<li><a href="changelogs08.html">GAMGI 0.08.1 - GAMGI 0.09</a></li>
+<li><a href="changelogs07.html">GAMGI 0.07.18 - GAMGI 0.08</a></li>
+</ul>
+
+</div>
+
+<div id="bottom">
+<a href="../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

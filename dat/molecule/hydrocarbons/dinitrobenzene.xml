@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE gml SYSTEM "http://www.gamgi.org/dtd/gamgi.dtd">
+<gml>
+  <molecule name="dinitrobenzene">
+    <atom id="1" name="N" element="H" x="-2.2885" y="-1.5331" z="-0.6262"
+    label="h"/>
+    <atom id="2" element="C" x="-1.3755" y="-0.9530" z="-0.5449"/>
+    <atom id="3" element="C" x="1.0546" y="0.4682" z="-0.3924"/>
+    <atom id="4" element="C" x="-1.3925" y="0.4498" z="-0.5960"/>
+    <atom id="5" element="C" x="-0.1647" y="-1.6313" z="-0.3927"/>
+    <atom id="6" element="C" x="1.0404" y="-0.9309" z="-0.3190"/>
+    <atom id="7" element="C" x="-0.1719" y="1.1374" z="-0.5200"/>
+    <atom id="8" element="N" x="-2.5611" y="1.1363" z="-0.7158"/>
+    <atom id="9" element="H" x="-0.1646" y="-2.7145" z="-0.3345"/>
+    <atom id="10" element="H" x="1.9611" y="-1.4952" z="-0.2054"/>
+    <atom id="11" element="H" x="-0.1791" y="2.2215" z="-0.5556"/>
+    <atom id="12" element="N" x="2.2282" y="1.1554" z="-0.3398"/>
+    <atom id="13" element="O" x="-2.5126" y="2.2928" z="-1.0770"/>
+    <atom id="14" element="O" x="-3.5940" y="0.5617" z="-0.4529"/>
+    <atom id="15" element="O" x="2.1921" y="2.3657" z="-0.4021"/>
+    <atom id="16" element="O" x="3.2585" y="0.5257" z="-0.2325"/>
+    <bond name="NC" parent1="1" parent2="2"/>
+    <bond parent1="2" parent2="4"/>
+    <bond parent1="2" parent2="5"/>
+    <bond parent1="3" parent2="6"/>
+    <bond parent1="3" parent2="7"/>
+    <bond parent1="3" parent2="12"/>
+    <bond parent1="4" parent2="7"/>
+    <bond parent1="4" parent2="8"/>
+    <bond parent1="5" parent2="6"/>
+    <bond parent1="5" parent2="9"/>
+    <bond parent1="6" parent2="10"/>
+    <bond parent1="7" parent2="11"/>
+    <bond parent1="8" parent2="13"/>
+    <bond parent1="8" parent2="14"/>
+    <bond parent1="12" parent2="15"/>
+    <bond parent1="12" parent2="16"/>
+  </molecule>
+</gml>

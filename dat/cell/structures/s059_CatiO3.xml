@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE gml SYSTEM "http://www.gamgi.org/dtd/gamgi.dtd">
+<gml>
+  <layer perspective="no" scale="1.278">
+    <light ambient_r="0.500" ambient_g="0.500" ambient_b="0.500"
+    diffuse_r="0.400" diffuse_g="0.400" diffuse_b="0.400" specular_r="0.300"
+    specular_g="0.300" specular_b="0.300" direction_x="0.0000"
+    direction_y="0.0000" direction_z="-1.0000"/>
+    <cell group="221" a="3.7950" x="-0.6211" y="-2.5099" z="3.6703" e1="73.00"
+    e2="90.00" e3="292.00">
+      <atom element="Ti" x="0.4274" y="0.0269" z="1.8629" radius="0.6050"
+      style="solid" variancy="1.00" size="0.50"/>
+      <atom element="Ca" x="-0.6211" y="-2.5099" z="3.6703" radius="1.4300"
+      style="solid" variancy="1.00" size="0.50"/>
+      <atom element="Ca" x="2.8976" y="-2.0943" z="2.3108" radius="1.4300"
+      style="solid" variancy="1.00" size="0.50"/>
+      <atom element="Ca" x="-2.0427" y="-1.4811" z="0.3054" radius="1.4300"
+      style="solid" variancy="1.00" size="0.50"/>
+      <atom element="Ca" x="1.4759" y="-1.0655" z="-1.0541" radius="1.4300"
+      style="solid" variancy="1.00" size="0.50"/>
+      <atom element="Ca" x="-0.6211" y="1.1193" z="4.7799" radius="1.4300"
+      style="solid" variancy="1.00" size="0.50"/>
+      <atom element="Ca" x="2.8976" y="1.5349" z="3.4203" radius="1.4300"
+      style="solid" variancy="1.00" size="0.50"/>
+      <atom element="Ca" x="-2.0427" y="2.1480" z="1.4149" radius="1.4300"
+      style="solid" variancy="1.00" size="0.50"/>
+      <atom element="Ca" x="1.4759" y="2.5637" z="0.0554" radius="1.4300"
+      style="solid" variancy="1.00" size="0.50"/>
+      <atom element="O" x="1.1382" y="-0.4875" z="3.5453" radius="1.4000"
+      style="solid" variancy="1.00" size="0.50"/>
+      <atom element="O" x="0.4274" y="-1.7877" z="1.3081" radius="1.4000"
+      style="solid" variancy="1.00" size="0.50"/>
+      <atom element="O" x="-1.3319" y="-0.1809" z="2.5426" radius="1.4000"
+      style="solid" variancy="1.00" size="0.50"/>
+      <atom element="O" x="2.1867" y="0.2347" z="1.1831" radius="1.4000"
+      style="solid" variancy="1.00" size="0.50"/>
+      <atom element="O" x="-0.2834" y="0.5413" z="0.1804" radius="1.4000"
+      style="solid" variancy="1.00" size="0.50"/>
+      <atom element="O" x="0.4274" y="1.8415" z="2.4176" radius="1.4000"
+      style="solid" variancy="1.00" size="0.50"/>
+    </cell>
+  </layer>
+</gml>

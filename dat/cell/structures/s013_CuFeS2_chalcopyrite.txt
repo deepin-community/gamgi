@@ -1,0 +1,35 @@
+Structure 13
+Prototype: CuFeS2 (chalcopyrite)
+StrukturBericht / Pearson: E1_1 / tI16
+
+lattice parameters:
+CuFeS2      AgAlTe2
+5.24 10.3   6.296 11.83
+AlCuSe2     CdGeP2
+5.605 10.90 5.738 10.765
+
+Radius:
+Cu 1.2780 (half-distance)
+Fe 1.2410 (half-distance)
+S  1.0250 (half-distance)
+
+1. Building with space group (s013.xml):
+Group: 122
+
+Wyckoff positions:
+Cu 2a
+Fe 2b
+S  4d, x = 0.25
+
+View:
+Cu: style solid, size 1.0, variancy 1.0, scale 1.0
+Fe: style solid, size 1.0, variancy 1.0, scale 1.0
+S:  style solid, size 1.0, variancy 1.0, scale 1.0
+SCu: style solid, method length, color 0.5,0.5,0.5 scale 0.4
+SFe: style solid, method length, color 0.5,0.5,0.5 scale 0.4
+
+Information:
+http://en.wikipedia.org/wiki/Chalcopyrite
+Chalcopyrite is closely related to zinc blende ZnS. The
+unit cell is twice as large, reflecting an alternation of
+Cu+ and Fe3+ ions replacing Zn2+ ions in adjacent cells.

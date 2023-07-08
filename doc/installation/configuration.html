@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Installation: Configuration</title>
+<link rel="icon" type="image/png" href="../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../css/board.css"/>
+</head>
+
+<body>
+
+<div class="board">
+<div>Installation Configuration</div><div>&nbsp;</div>
+</div>
+
+<div class="contents">
+
+<h3>Run GAMGI from any directory</h3>
+
+If GAMGI was compiled from source and the GAMGI root directory is, 
+for example, <b>/home/carlos/gamgi</b>, then the full path for the 
+executable is <b>/home/carlos/gamgi/gamgi_version/src/gamgi</b>.
+
+<p/>
+
+To make GAMGI run from any directory, we suggest making first 
+a soft link from <b>gamgi</b> to <b>gamgi_version</b>, 
+in the GAMGI root directory:
+
+<pre><b>
+cd /home/carlos/gamgi
+ln -s gamgi_version gamgi
+</b></pre>
+
+and then a second soft link from <b>/usr/local/bin</b>
+to the executable, typing as root:
+
+<pre><b>
+cd /usr/local/bin
+ln -s /home/carlos/gamgi/gamgi/src/gamgi gamgi
+</b></pre>
+
+Because <b>/usr/local/bin</b> is one of the standard directories
+where Unix systems search for executables, GAMGI will be found 
+when called from any directory on the system.
+
+<p/>
+
+Changing to a new version of GAMGI requires only to change
+the local link (in <b>/home/carlos/gamgi</b>), while the global
+link (in <b>/usr/local/bin</b>), that needs root permission, 
+must be done only the first time GAMGI is installed.
+  
+<h3>Set the GAMGI_HELP environment variable</h3>
+
+To inform GAMGI where the help documentation files are, set the 
+<b>GAMGI_HELP</b> environment variable, pointing to the <b>doc/</b> 
+directory, where the documentation starts. This can be done by adding 
+a line as this, to the user <b>.bashrc</b> file:
+
+<pre>
+<b>GAMGI_HELP=/home/carlos/gamgi/gamgi/doc; export GAMGI_HELP</b>
+</pre>
+
+Alternatively, this information can abe given directly in GAMGI,
+selecting Help->Config, or in a config block in a GAMGI XML file.
+
+<h3>Set the GAMGI_TEXT environment variable</h3>
+
+To inform GAMGI where are the Truetype font files,
+set the <b>GAMGI_TEXT</b> environment variable, pointing
+to the directory with the files. This can be done by adding
+a line as this, to the user <b>.bashrc</b> file:
+
+<pre>
+<b>GAMGI_TEXT=/usr/X11R6/lib/X11/fonts/truetype/; export GAMGI_TEXT</b>
+</pre>
+
+GAMGI comes with all the needed font files, in the directory
+<b>$GAMGI/gamgi_version/src/io/fonts/</b>, in case they
+are not available in the system.
+
+<h3>Set the BROWSER environment variable</h3>
+
+GAMGI can be configured to automatically launch a browser
+pointing to the adequate help web page. To inform GAMGI which 
+browser should be launched, set the <b>BROWSER</b> environment
+variable, pointing to the browser executable. This can be done
+by adding a line as this, to the user <b>.bashrc</b> file:
+
+<pre>
+<b>BROWSER=/usr/X11/bin/mozilla; export BROWSER</b>
+</pre>
+
+Alternatively, this data can also be given directly in GAMGI,
+selecting Help->Config, or in a config block in a GAMGI XML file.
+
+<h3>Install pnmtopng, pnmtojpeg and pnmtotiff</h3>
+
+These tools come with every Linux distribution and are usually installed
+by default. GAMGI uses them to export .png, .jpeg and .tiff files.
+
+<h3>Define automatic default settings</h3>
+
+More experienced users, can define their own default settings
+in a XML file and load it automatically everytime GAMGI is called.
+This can be done, just adding a line as this, to the user <b>.bashrc</b> file:
+
+<pre>
+<b>alias gamgi='gamgi my_defaults.xml'</b>
+</pre>
+
+This works even if other files are called. For example, calling:
+
+<pre>
+<b>gamgi my_objects.xml</b>
+</pre>
+
+would be understood as:
+
+<pre>
+<b>gamgi my_defaults.xml my_objects.xml</b>
+</pre>
+
+and defaults in my_defaults.xml would be already applied to objects
+in my_objects.xml.
+
+<h3>Install the man page</h3>
+
+Go to directory <b>doc/man/</b> in GAMGI documentation, compress 
+the man page and copy it to the system <b>man1</b> directory, with
+the name <b>gamgi.1.gz</b>:
+
+<pre>
+<b>cd /home/carlos/gamgi/gamgi/doc/man
+gzip page
+cp page.gz /usr/share/man/man1/gamgi.1.gz</b>
+</pre>
+
+<h3>Get quick access to the files</h3>
+
+For developers, who need to have quick access to the code,
+we suggest creating a few alias in <b>.bashrc</b>
+to permit easy navigation through the GAMGI directories,
+for example:
+
+<pre>
+<b>alias sgi='cd /home/carlos/gamgi/gamgi/src'</b>
+</pre>
+
+These alias remain the same when a new GAMGI version is installed, 
+if the second symlink described above was made.
+
+</div>
+
+<div id="bottom">
+<a href="../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

@@ -1,9 +1,220 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: template-repository
-Source: https://github.com/deepin-community/template-repository
+Upstream-Name: GAMGI
+Upstream-Contact: José Carlos Pereira <carlos@pehoe.civil.ist.utl.pt>
+Source: http://www.gamgi.org/
 
 Files: *
-Copyright: 2023 Tsic404 <liuheng@deepin.org>
+Copyright: (C) 2001-2016 José Carlos Pereira
+License: GPL-3+
+
+
+Files: doc/*
+Copyright: (C) 2001-2013 José Carlos Pereira
+License: GFDL-1.3
+ Permission is granted to copy, distribute and/or modify this document under
+ the terms of the GNU Free Documentation License (GFDL), Version 1.1 or any
+ later version published by the Free Software Foundation with no Invariant
+ Sections, no Front-Cover Texts, and no Back-Cover Texts.
+Comment: On Debian GNU/Linux systems, the complete text of the GFDL license
+ v1.3 can be found in `/usr/share/common-licenses/GFDL-1.3'.
+
+
+Files: src/io/gamgi_io_font_sun.*
+Copyright: Copyright (C) 1989-1991 by Sun Microsystems, Inc. and the
+ X Consortium. All rights reserved.
+License: SUN-Expat
+ Permission to use, copy, modify, and distribute this software and its
+ documentation for any purpose and without fee is hereby granted,
+ provided that the above copyright notice appear in all copies and that
+ both that copyright notice and this permission notice appear in
+ supporting documentation, and that the names of Sun Microsystems
+ and the X Consortium not be used in advertising or publicity
+ pertaining to distribution of the software without specific, written
+ prior permission.
+ .
+ SUN MICROSYSTEMS DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE,
+ INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS, IN NO
+ EVENT SHALL SUN MICROSYSTEMS OR THE X CONSORTIUM BE LIABLE FOR ANY SPECIAL,
+ INDIRECT OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING
+ FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT,
+ NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION
+ WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+
+Files: src/io/gamgi_io_font_hershey.*
+Copyright: Copyright (C) 1967 Allen V. Hershey
+License: other
+ The Hershey fonts in this file were taken from the GNU package
+ plotutils, that includes the arrays _occidental_hershey_glyphs[] and
+ _oriental_hershey_glyphs[]. The first array includes the standard
+ (`occidental') Hershey glyphs digitized by Dr. Allen V. Hershey, some
+ glyphs due to other people, and his Japanese Hiragana and Katakana
+ glyphs. The second array includes his digitizations of Japanese
+ ideographic symbols (Kanji glyphs).  It originally included the Hiragana
+ and Katakana glyphs as well, but they were moved to the first array
+ because some people may not wish to include Kanji support.
+ .
+ Dr. Hershey digitized the glyphs c. 1967, at what is now the U.S. Naval
+ Surface Weapons Center in Dahlgren, Virginia.  For many years he
+ distributed copies of the glyphs, and his typographic software, on
+ magnetic tape.  Over 120 copies of the tape were distributed.  There
+ have been many other distributions of the glyphs.  In the 1970's they
+ were incorporated, not always with attribution, in several commercial
+ plotting packages.  They were first freely distributed in 1985(?), by
+ being posted to Usenet (to vol. 4 of mod.sources) by Pete Holzmann
+ <pete@xc.org>, then at Octopus Enterprises.  In the 1980's the glyphs
+ were incorporated in at least two freeware plotting programs, Nelson
+ Beebe's PLOT79 and Tim Pearson's PGPLOT. The latter is still available
+ (see http://astro.caltech.edu/~tjp/pgplot/).
+ .
+ The _occidental_hershey_glyphs[] array was constructed from
+ releases of the Hershey glyphs that are later than the one described in
+ the 1976 NBS publication above. For example, Fig. 15 of that work
+ portrays 43 additional glyphs digitized by Norman Wolcott of the NBS;
+ they are included here.  See the file ./doc/hershey-number for details
+ on how the array was assembled.  The original Hershey glyphs, including
+ the 43 Wolcott glyphs, are stored in the 0..3999 slots of the array.
+ .
+ The _occidental_hershey_glyphs[] array also includes non-Hershey glyphs
+ taken from various sources.  All post-Hershey glyphs have been placed in
+ slots 4000..4194.  This includes a few glyphs taken from the UGS (the
+ Unified Graphics System, developed by Bob Beach at SLAC; see Computer
+ Graphics, Fall 1974, pp. 22-23).  As well, it includes some freeware
+ glyphs developed by Thomas Wolff <wolff@inf.fu-berlin.de> and
+ distributed as part of the Ghostscript distribution.  The Beach and
+ Wolff glyphs are used in the Hershey Symbol fonts.  Locally developed
+ glyphs (accented characters, in particular) have been added too.
+ .
+ The Japanese Hiragana and Katakana glyphs digitized by Dr. Hershey,
+ formerly located among the `oriental' glyphs, are now located in slots
+ 4195..4399 of the _occidental_hershey_glyphs[] array.
+ .
+ The format of the glyphs in the _occidental_hershey_glyphs[] and
+ _oriental_hershey_glyphs[] arrays is the format in which the Hershey
+ glyphs were distributed to mod.sources in 1985(?) by Pete Holzmann, and
+ is due to Jim Hurt, then at Cognition Inc.
+ .
+ The standard hardcopy reference for the occidental Hershey glyphs, which
+ tabulates and displays them, is:
+ .
+ @TechReport{Wolcott76,
+   author =       {Norman M. Wolcott and Joseph Hilsenrath},
+   title =        {A Contribution to Computer Typesetting Techniques:
+                   Tables of Coordinates for {Hershey's} Repertory of
+                   Occidental Type Fonts and Graphic Symbols},
+   institution =  {U.S. National Bureau of Standards},
+   year =         {1976},
+   month =        {April},
+   type =         {Special Publication},
+   number =       {424},
+   OPTnote =      {US NTIS stock number PB251845}}
+ .
+ This publication is available from the NTIS (US National Technical
+ Information Service, +1 703 487 4650).  The NTIS stock number is given
+ above.  See also Dr. Hershey's original TR, which describes the
+ alphabets from which the glyphs were taken and gives information on the
+ oriental glyphs:
+ .
+ @TechReport{Hershey67,
+   author =    {Allen V. Hershey},
+   title =     {Calligraphy for Computers},
+   institution =  {U.S. Naval Weapons Laboratory},
+   address =   {Dahlgren, VA},
+   year =      {1967},
+   type =      {Report},
+   number =    {TR--2101},
+   month =     {Aug},
+   OPTnote =   {US NTIS stock number AD662398}}
+
+
+Files: src/io/gamgi_io_x3d.* src/io/gamgi_io_x3d_render.*
+Copyright: Copyright (C) 2008 Tiago Farto
+           Copyright (C) 2002 lignum Computing, Inc.
+           Copyright (C) 1991,1994,2003 Linas Vepstas
+License: GPL-2+
+Comment: License and copyright apply to portions of these files.
+
+
+Files: src/math/gamgi_math_matrix.*
+Copyright: Copyright (C) 1995-1998  Brian Paul
+           Copyright (C) 2001, 2004 Carlos Pereira
+License: LGPL-2+
+ This library is free software; you can redistribute it and/or
+ modify it under the terms of the GNU Library General Public
+ License as published by the Free Software Foundation; either
+ version 2 of the License, or (at your option) any later version.
+ .
+ This library is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ Library General Public License for more details.
+ .
+ You should have received a copy of the GNU Library General Public
+ License along with this library; if not, write to the Free Software
+ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+Comment: On Debian GNU/Linux systems, the complete text of the GNU Library
+ General Public License can be found in `/usr/share/common-licenses/LGPL-2'.
+
+
+Files: src/chem/gamgi_chem_bond_create.*
+Copyright: Copyright (C) 2000 José Luis Martins
+License: GPL-3+
+
+
+Files: src/chem/gamgi_chem_symmetry.*
+Copyright: Copyright (C) 1996, 2003 Serguei Patchkovskii
+License: GPL-2+
+
+
+Files: src/mesa/gamgi_mesa_text.*
+Copyright: Copyright (C) 1991,1994,2003 Linas Vepstas
+           Copyright (C) 2002 lignum Computing, Inc.
+License: GPL-2+
+Comment: License and copyright apply to portions of these files.
+
+
+Files: src/mesa/gamgi_mesa_trackball.*
+Copyright: Copyright (C) 1993, 1994, Silicon Graphics, Inc. ALL RIGHTS RESERVED
+License: SGI-Expat
+ Permission to use, copy, modify, and distribute this software for
+ any purpose and without fee is hereby granted, provided that the above
+ copyright notice appear in all copies and that both the copyright notice
+ and this permission notice appear in supporting documentation, and that
+ the name of Silicon Graphics, Inc. not be used in advertising
+ or publicity pertaining to distribution of the software without specific,
+ written prior permission.
+ .
+ THE MATERIAL EMBODIED ON THIS SOFTWARE IS PROVIDED TO YOU "AS-IS"
+ AND WITHOUT WARRANTY OF ANY KIND, EXPRESS, IMPLIED OR OTHERWISE,
+ INCLUDING WITHOUT LIMITATION, ANY WARRANTY OF MERCHANTABILITY OR
+ FITNESS FOR A PARTICULAR PURPOSE.  IN NO EVENT SHALL SILICON
+ GRAPHICS, INC.  BE LIABLE TO YOU OR ANYONE ELSE FOR ANY DIRECT,
+ SPECIAL, INCIDENTAL, INDIRECT OR CONSEQUENTIAL DAMAGES OF ANY
+ KIND, OR ANY DAMAGES WHATSOEVER, INCLUDING WITHOUT LIMITATION,
+ LOSS OF PROFIT, LOSS OF USE, SAVINGS OR REVENUE, OR THE CLAIMS OF
+ THIRD PARTIES, WHETHER OR NOT SILICON GRAPHICS, INC.  HAS BEEN
+ ADVISED OF THE POSSIBILITY OF SUCH LOSS, HOWEVER CAUSED AND ON
+ ANY THEORY OF LIABILITY, ARISING OUT OF OR IN CONNECTION WITH THE
+ POSSESSION, USE OR PERFORMANCE OF THIS SOFTWARE.
+ .
+ US Government Users Restricted Rights
+ Use, duplication, or disclosure by the Government is subject to
+ restrictions set forth in FAR 52.227.19(c)(2) or subparagraph
+ (c)(1)(ii) of the Rights in Technical Data and Computer Software
+ clause at DFARS 252.227-7013 and/or in similar or successor
+ clauses in the FAR or the DOD or NASA FAR Supplement.
+ Unpublished-- rights reserved under the copyright laws of the
+ United States.  Contractor/manufacturer is Silicon Graphics,
+ Inc., 2011 N.  Shoreline Blvd., Mountain View, CA 94039-7311.
+ .
+ OpenGL(TM) is a trademark of Silicon Graphics, Inc.
+
+
+Files: debian/*
+Copyright: Copyright (C) 2008-2009 Morten Kjeldgaard
+           Copyright (C) 2009-2017 The debichem team
+License: GPL-2+
+
 License: GPL-2+
  This package is free software; you can redistribute it and/or modify
  it under the terms of the GNU General Public License as published by
@@ -16,7 +227,23 @@ License: GPL-2+
  GNU General Public License for more details.
  .
  You should have received a copy of the GNU General Public License
- along with this program. If not, see <https://www.gnu.org/licenses/>
+ along with this package; if not, write to the Free Software
+ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301 USA
+Comment: On Debian GNU/Linux systems, the complete text of the GNU General
+ Public License v2 can be found in `/usr/share/common-licenses/GPL-2'.
+
+License: GPL-3+
+ This program is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
  .
- On Debian systems, the complete text of the GNU General
- Public License version 2 can be found in "/usr/share/common-licenses/GPL-2".
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License
+ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+Comment: On Debian GNU/Linux systems, the complete text of the GNU General
+ Public License v3 can be found in `/usr/share/common-licenses/GPL-3'.

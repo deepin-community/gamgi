@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Formats: Light Create</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Light Create</h1>
+
+<div id="notebook">
+<ul>
+<li><a href="create_type.html">Type</a></li>
+<li><span>Color</span></li>
+<li><a href="create_attenuation.html">Attenuation</a></li>
+</ul>
+</div>
+
+<div class="contents">
+
+<h3>ambient_r, ambient_g, ambient_b</h3>
+
+Set red, green, blue contributions for the ambient light, from black (0.0, 0.0, 0.0) 
+to white (1.0, 1.0, 1.0). When ambient parameters are not entered, the ambient component 
+is set to (0.0, 0.0, 0.0). When ambient, diffuse and specular components are all missing, 
+an error is shown. When no lights are present, ambient light is automatically set to 
+(1.0, 1.0, 1.0).
+
+<pre>
+Example: <b>&lt;light ... diffuse_r="0.5" diffuse_g="0.5" diffuse_b="0.5"/></b> (default) 
+(defined in <b>GAMGI_MESA_LIGHT_AMBIENT_R</b>, <b>GAMGI_MESA_LIGHT_AMBIENT_G</b> 
+and <b>GAMGI_MESA_LIGHT_AMBIENT_B</b>)
+Allowed values: <b>0.0</b> - <b>1.0</b> (optional, coupled)
+</pre>
+
+<h3>diffuse_r, diffuse_g, diffuse_b</h3>
+
+Set red, green, blue contributions for the diffuse light, from black (0.0, 0.0, 0.0) 
+to white (1.0, 1.0, 1.0). When diffuse parameters are not entered, the diffuse component 
+is set to (0.0, 0.0, 0.0). When ambient, diffuse and specular components are all missing, 
+an error is shown. When no lights are present, diffuse light is automatically set to 
+(0.0, 0.0, 0.0).
+
+<pre>
+Example: <b>&lt;light ... specular_r="0.4" specular_g="0.4" specular_b="0.4"/></b> (default)
+(defined in <b>GAMGI_MESA_LIGHT_DIFFUSE_R</b>, <b>GAMGI_MESA_LIGHT_DIFFUSE_G</b> 
+and <b>GAMGI_MESA_LIGHT_DIFFUSE_B</b>)
+Allowed values: <b>0.0</b> - <b>1.0</b> (optional, coupled)
+</pre>
+
+<h3>specular_r, specular_g, specular_b</h3>
+
+Set red, green, blue contributions for the specular light, from black (0.0, 0.0, 0.0)
+to white (1.0, 1.0, 1.0). When specular parameters are not entered, the specular component 
+is set to (0.0, 0.0, 0.0). When ambient, diffuse and specular components are all missing, 
+an error is shown. When no lights are present, specular light is automatically set to 
+(0.0, 0.0, 0.0).
+
+<pre>
+Example: <b>&lt;light ... specular_r="0.3" specular_g="0.3" specular_b="0.3"/></b> (default) 
+(defined in <b>GAMGI_MESA_LIGHT_SPECULAR_R</b>, <b>GAMGI_MESA_LIGHT_SPECULAR_G</b> 
+and <b>GAMGI_MESA_LIGHT_SPECULAR_B</b>)
+Allowed values: <b>0.0</b> - <b>1.0</b> (optional, coupled)
+</pre>
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

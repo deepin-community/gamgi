@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Tutorials: Random Close Packing structure</title>
+<link rel="icon" type="image/png" href="../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Random Close Packing structure</h1>
+
+<div id="notebook">
+<ul>
+<li><span>Page 1</span></li>
+</ul>
+</div>
+
+<div class="contents">
+
+The Random Close Packing (RCP) structure has the highest volume density among
+amorphous structures (0.62 - 0.64), which compares with the highest volume
+density among crystalline structures (0.74). The RCP structure is particularly
+suitable to describe metallic glasses, due to the nondirectional nature
+of metallic bonding combined with the absence of local charge-neutrality
+requirements.
+
+<p/>
+
+To build a RCP structure, first we create an orthorhombic cell with 
+the required dimensions, then a Cu atom used as model, and then link 
+the cell with the atom, to create the random structure.
+
+<p/>
+
+The result, for 50,000 atoms, can be seen in the figure at
+<a href="http://www.gamgi.org/images/screenshot12_3b.png">
+http://www.gamgi.org/images/screenshot12_3b.png</a>.
+
+<ol>
+<li>
+Press <b>Cell->Create</b> and set <b>System</b> to <b>o</b>, 
+<b>Lattice</b> to <b>P</b> (Primitive Orthorhombic), <b>a</b> 
+to <b>10</b>, <b>b</b> to <b>9</b> and <b>c</b> to <b>8</b>.
+Press <b>Ok</b> to create the cell.
+</li>
+
+<li>
+Select <b>Atom->Create</b> and set <b>Style</b> to <b>Solid</b>,
+<b>Size</b> to <b>1.0</b> and <b>Variancy</b> to <b>1.0</b>.
+Set <b>Element</b> to <b>Cu</b> and press the mouse over the 
+graphic area. A Cu atom is created where the mouse was pressed. 
+</li>
+
+<li>Select <b>Light->Create</b> and press <b>Ok</b>, 
+to iluminate the atoms. Select <b>Layer->Modify</b>, 
+go to the <b>View</b> page, set <b>Scale</b> to <b>0.5</b>, 
+to decrease the size of the objects, and press <b>Ok</b>.</li>
+
+<li>
+Select <b>Cell->Link</b>, press the mouse over the cell 
+and then over the Cu atom, to identify the objects to link.
+Select the <b>Random</b> link method and press <b>Ok</b>.
+A RCP structure with 40 atoms is created, with density 
+slightly above <b>0.62</b>.</li>
+
+<li>Press <b>Atom->Modify</b> and press the mouse sucessively
+over the initial model atom and one of the atoms just created,
+to compare the radius. By default, the RCP structure will contain
+atoms with a radius as close as possible to the model atom 
+(the number of spheres is determined by GAMGI).</li>
+
+<li>Press <b>Undo</b> (in the tools bar, below the graphic area), 
+press the backward arrow, and then <b>Ok</b>, to recover the
+previous configuration, before the RCP structure was created.</li>
+
+<li>Repeat the <b>Cell->Link</b> procedure, but this time 
+go to the <b>Packing</b> page that appear in the dialog
+when the <b>Random</b> method is selected. Increase the
+<b>Relaxation</b> time to <b>10,000</b> and press <b>Ok</b>.
+A new RCP structure is created, with a density slightly higher
+than before. In rare occasions, when the number of spheres is 
+very small, the density can achieve values as high as <b>0.68</b>: 
+the structure crystallized!</li>
+
+<li>Increasing the <b>Relaxation</b> time gives more time
+for the atoms to reorganize, improving slightly the density
+but raising considerably the computation time. Repeat the whole
+procedure with a larger <b>Relaxation</b> time to confirm that
+the density does not keep increasing above <b>0.65</b>,
+for a large number of spheres.</li>
+
+<li>Press <b>Undo</b> again, and recover the previous configuration, 
+before the RCP structure was created. Repeat the <b>Cell->Link</b> 
+procedure, go to the <b>Packing</b> page, and press <b>Number</b>,
+to fix the number of atoms to create (the radius is determined 
+by GAMGI). Set the number of atoms to <b>200</b>, for example,
+and press <b>Ok</b>. A new RCP structure with 200 atoms is 
+created. As the number of spheres increased, the radius of 
+the spheres decreased.</li>
+
+<li>When the number of solid spheres is large, the computing
+time needed to show the structure might be too demanding. In 
+this case, a good tip is to select <b>Atom->Config</b> and 
+decrease <b>Slices</b> (the number of parallels and meridians 
+used to divide the sphere into plane regions), for example 
+to <b>4</b> (the minimum accepted).
+</li>
+</ol>
+
+</div>
+
+<div id="bottom">
+<a href="../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

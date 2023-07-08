@@ -1,0 +1,7 @@
+<gml>
+<molecule name="Cs">
+<atom element="C" x="0" y="0" z="0"/>
+<atom element="C" x="0" y="0" z="1"/>
+<atom element="C" x="0" y="2" z="0"/>
+</molecule>
+</gml>

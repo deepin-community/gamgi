@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Interfaces: Group Create</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Group Create</h1>
+
+<div id="notebook">
+<ul>
+<li><span>Type</span></li>
+<li><a href="create_scope.html">Scope</a></li>
+<li><a href="create_view.html">View</a></li>
+</ul>
+</div>
+
+<div class="contents">
+            
+Chose here the group type: <b>Container</b> or <b>Polytope</b>.
+
+<h3>Container</h3>
+
+The primary purpose of a group container is to contain other objects.
+When a group container is created, it has no child objects and consequently 
+no visual representation. The only way to select an empty group is 
+thus to write its identification or to use the mechanisms provided 
+by <b>Group->Select</b>.
+
+<p/>
+
+To avoid this problem, when <b>Ok</b> is pressed and the new group is 
+created, the dialog <b>Group->Create</b> is automatically replaced by 
+<b>Group->Link</b>, with the new group identification already inscribed 
+on it. How to link objects to a group is described in the section 
+<b>Group Link</b>.
+
+<h3>Polytope</h3>
+
+For an arbitrary cloud of atoms, defined by <b>Central</b> and
+<b>Neighbours</b> settings, build a coordination polyhedron defined
+by the smallest convex polygonal representation that surrounds all
+the atoms. This is often used in Crystallography to build tetrahedra,
+octahedra, and other small regular solids, but the method can be used
+to build polyhedra for an arbitrary set of atoms, independently of
+their position or number.
+
+<p/>
+
+When Gamgi cannot build a 3D polyhedron, automatically tries to build 
+a 2D atomic plane, as in <b>Plane->Create</b>. When a 2D plane cannot 
+be defined, automatically tries to build a 1D atomic direction, as in
+<b>Direction->Create</b>. When a 1D direction cannot be defined, an 
+error is shown.
+
+<h3>Central</h3>
+
+Enter here the name and number of the central atom, around which the 
+coordination polyhedron will be built. Pressing the mouse over an atom 
+in the current layer, the atom identification is automatically written 
+in the <b>Central</b> entry.
+
+<p/>
+
+When <b>Local</b> is selected (the default), only one polyhedron is
+constructed, around the <b>Central</b> atom. When <b>Global</b> is 
+set, Gamgi builds coordination polyhedra around all the atoms in 
+the sampling universe with the same element as the <b>Central</b>
+atom.
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

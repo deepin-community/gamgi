@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE gml SYSTEM "http://www.gamgi.org/dtd/gamgi.dtd">
+<gml>
+  <molecule name="H3O+">
+    <atom id="1" element="O" x="0.1792" y="-0.2294" z="0.1221" charge="0.0500"/>
+    <atom id="2" element="H" x="-0.1025" y="0.6449" z="-0.2933"
+    charge="0.3160"/>
+    <atom id="3" element="H" x="1.1095" y="-0.4475" z="-0.1985"
+    charge="0.3160"/>
+    <atom id="4" element="H" x="-0.4456" y="-0.9508" z="-0.2049"
+    charge="0.3170"/>
+    <bond parent1="1" parent2="2"/>
+    <bond parent1="1" parent2="3"/>
+    <bond parent1="1" parent2="4"/>
+  </molecule>
+</gml>

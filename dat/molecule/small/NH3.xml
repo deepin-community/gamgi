@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE gml SYSTEM "http://www.gamgi.org/dtd/gamgi.dtd">
+<gml>
+  <molecule name="Ammonia">
+    <atom id="1" element="N" x="0.0552" y="0.0427" z="0.0341"/>
+    <atom id="2" element="H" x="0.9265" y="-0.2894" z="-0.3216"/>
+    <atom id="3" element="H" x="0.0511" y="1.0402" z="0.0018"/>
+    <atom id="4" element="H" x="-0.6828" y="-0.3024" z="-0.5423"/>
+    <bond parent1="1" parent2="2"/>
+    <bond parent1="1" parent2="3"/>
+    <bond parent1="1" parent2="4"/>
+  </molecule>
+</gml>

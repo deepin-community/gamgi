@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE gml SYSTEM "http://www.gamgi.org/dtd/gamgi.dtd">
+<gml>
+  <gamgi>
+    <atom style="solid" size="0.50"/>
+    <bond style="solid" size="0.20"/>
+  </gamgi>
+  <layer perspective="no" scale="1.063">
+    <light ambient_r="0.500" ambient_g="0.500" ambient_b="0.500"
+    diffuse_r="0.500" diffuse_g="0.500" diffuse_b="0.500" specular_r="0.500"
+    specular_g="0.500" specular_b="0.500" direction_x="0.0000"
+    direction_y="0.0000" direction_z="-1.0000"/>
+    <cluster scale="0.794">
+      <molecule name="butane">
+        <atom id="1" element="C" x="3.9082" y="-3.3620" z="-1.2372"/>
+        <atom id="2" element="C" x="2.9657" y="-2.5084" z="-2.1070"/>
+        <atom id="3" element="C" x="2.0702" y="-1.6444" z="-1.1996"/>
+        <atom id="4" element="C" x="1.1285" y="-0.7914" z="-2.0686"/>
+        <atom id="5" element="H" x="3.3281" y="-3.9967" z="-0.6009"/>
+        <atom id="6" element="H" x="4.5308" y="-3.9622" z="-1.8688"/>
+        <atom id="7" element="H" x="4.5205" y="-2.7206" z="-0.6397"/>
+        <atom id="8" element="H" x="3.5458" y="-1.8733" z="-2.7434"/>
+        <atom id="9" element="H" x="2.3533" y="-3.1497" z="-2.7060"/>
+        <atom id="10" element="H" x="2.7340" y="-0.9982" z="-0.6641"/>
+        <atom id="11" element="H" x="1.4902" y="-2.3061" z="-0.5909"/>
+        <atom id="12" element="H" x="1.7017" y="-0.1471" z="-2.7019"/>
+        <atom id="13" element="H" x="0.4618" y="-1.4285" z="-2.6113"/>
+        <bond parent1="1" parent2="2"/>
+        <bond parent1="1" parent2="5"/>
+        <bond parent1="1" parent2="6"/>
+        <bond parent1="1" parent2="7"/>
+        <bond parent1="2" parent2="3"/>
+        <bond parent1="2" parent2="8"/>
+        <bond parent1="2" parent2="9"/>
+        <bond parent1="3" parent2="4"/>
+        <bond parent1="3" parent2="10"/>
+        <bond parent1="3" parent2="11"/>
+        <bond parent1="4" parent2="12"/>
+        <bond parent1="4" parent2="13"/>
+      </molecule>
+      <molecule name="butane">
+        <atom id="14" element="C" x="3.6829" y="3.6305" z="-1.3460"/>
+        <atom id="15" element="C" x="2.8394" y="2.7219" z="-0.4312"/>
+        <atom id="16" element="C" x="1.9554" y="1.8020" z="-1.2940"/>
+        <atom id="17" element="C" x="1.1127" y="0.8942" z="-0.3799"/>
+        <atom id="18" element="H" x="3.0337" y="4.2266" z="-1.9528"/>
+        <atom id="19" element="H" x="4.2971" y="4.2692" z="-0.7460"/>
+        <atom id="20" element="H" x="4.3040" y="3.0264" z="-1.9739"/>
+        <atom id="21" element="H" x="3.4887" y="2.1257" z="0.1753"/>
+        <atom id="22" element="H" x="2.2187" y="3.3255" z="0.1975"/>
+        <atom id="23" element="H" x="1.3716" y="2.3091" z="-2.0336"/>
+        <atom id="24" element="H" x="2.5995" y="1.0982" z="-1.7784"/>
+        <atom id="25" element="H" x="0.5178" y="1.5548" z="0.2157"/>
+        <atom id="26" element="H" x="1.7189" y="0.3483" z="0.3125"/>
+        <bond parent1="14" parent2="15"/>
+        <bond parent1="14" parent2="18"/>
+        <bond parent1="14" parent2="19"/>
+        <bond parent1="14" parent2="20"/>
+        <bond parent1="15" parent2="16"/>
+        <bond parent1="15" parent2="21"/>
+        <bond parent1="15" parent2="22"/>
+        <bond parent1="16" parent2="17"/>
+        <bond parent1="16" parent2="23"/>
+        <bond parent1="16" parent2="24"/>
+        <bond parent1="17" parent2="26"/>
+        <bond parent1="17" parent2="25"/>
+      </molecule>
+      <molecule name="butane">
+        <atom id="27" element="C" x="-3.1323" y="-3.5799" z="-1.2677"/>
+        <atom id="28" element="C" x="-2.2612" y="-2.6752" z="-0.3753"/>
+        <atom id="29" element="C" x="-1.4034" y="-1.7519" z="-1.2607"/>
+        <atom id="30" element="C" x="-0.5336" y="-0.8475" z="-0.3690"/>
+        <atom id="31" element="H" x="-2.5019" y="-4.1737" z="-1.8961"/>
+        <atom id="32" element="H" x="-3.7285" y="-4.2212" z="-0.6516"/>
+        <atom id="33" element="H" x="-3.7714" y="-2.9738" z="-1.8741"/>
+        <atom id="34" element="H" x="-2.8919" y="-2.0810" z="0.2526"/>
+        <atom id="35" element="H" x="-1.6221" y="-3.2809" z="0.2325"/>
+        <atom id="36" element="H" x="-2.0665" y="-1.1394" z="-1.8352"/>
+        <atom id="37" element="H" x="-0.7937" y="-2.3254" z="-1.9273"/>
+        <atom id="38" element="H" x="0.2178" y="-1.4962" z="0.0305"/>
+        <atom id="39" element="H" x="-1.1217" y="-0.2577" z="0.3027"/>
+        <bond parent1="27" parent2="28"/>
+        <bond parent1="27" parent2="31"/>
+        <bond parent1="27" parent2="32"/>
+        <bond parent1="27" parent2="33"/>
+        <bond parent1="28" parent2="29"/>
+        <bond parent1="28" parent2="34"/>
+        <bond parent1="28" parent2="35"/>
+        <bond parent1="29" parent2="30"/>
+        <bond parent1="29" parent2="36"/>
+        <bond parent1="29" parent2="37"/>
+        <bond parent1="30" parent2="38"/>
+        <bond parent1="30" parent2="39"/>
+      </molecule>
+      <molecule name="butane">
+        <atom id="40" element="C" x="-3.3405" y="3.4124" z="-1.0669"/>
+        <atom id="41" element="C" x="-2.4489" y="2.5521" z="-1.9824"/>
+        <atom id="42" element="C" x="-1.5029" y="1.6948" z="-1.1210"/>
+        <atom id="43" element="C" x="-0.6121" y="0.8351" z="-2.0357"/>
+        <atom id="44" element="H" x="-2.7252" y="4.0522" z="-0.4692"/>
+        <atom id="45" element="H" x="-3.9981" y="4.0079" z="-1.6665"/>
+        <atom id="46" element="H" x="-3.9181" y="2.7755" z="-0.4301"/>
+        <atom id="47" element="H" x="-3.0642" y="1.9122" z="-2.5801"/>
+        <atom id="48" element="H" x="-1.8718" y="3.1887" z="-2.6201"/>
+        <atom id="49" element="H" x="-2.0454" y="1.0785" z="-0.4348"/>
+        <atom id="50" element="H" x="-0.8981" y="2.3828" z="-0.5681"
+        scale="0.908"/>
+        <atom id="51" element="H" x="-1.2896" y="0.2217" z="-2.5921"/>
+        <atom id="52" element="H" x="-0.0072" y="1.4672" z="-2.6516"/>
+        <bond parent1="40" parent2="41"/>
+        <bond parent1="40" parent2="44"/>
+        <bond parent1="40" parent2="45"/>
+        <bond parent1="40" parent2="46"/>
+        <bond parent1="41" parent2="42"/>
+        <bond parent1="41" parent2="47"/>
+        <bond parent1="41" parent2="48"/>
+        <bond parent1="42" parent2="43"/>
+        <bond parent1="42" parent2="49"/>
+        <bond parent1="42" parent2="50"/>
+        <bond parent1="43" parent2="51"/>
+        <bond parent1="43" parent2="52"/>
+      </molecule>
+      <atom id="53" element="N" x="0.2795" y="0.0275" z="-1.2083"/>
+      <bond parent1="4" parent2="53"/>
+      <bond parent1="17" parent2="53"/>
+      <bond parent1="30" parent2="53"/>
+      <bond parent1="43" parent2="53"/>
+    </cluster>
+  </layer>
+</gml>

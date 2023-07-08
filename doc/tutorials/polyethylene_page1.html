@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Tutorials: Orthorhombic Polyethylene</title>
+<link rel="icon" type="image/png" href="../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Orthorhombic Polyethylene</h1>
+
+<div id="notebook">
+<ul>
+<li><span>Page 1</span></li>
+</ul>
+</div>
+
+<div class="contents">
+            
+High-density polyethylene can crystallize in both orthorhombic and monoclinic 
+systems. Here we demonstrate how to build a crystal of orthorhombic polyethylene 
+using the crystallographic information available in the literature for this polymer.
+
+<p/>
+
+First we create a cell with the polyethylene lattice parameters and space group, 
+then one atom of C and H, to model the atoms of the structure, and finally link 
+the cell with the atoms to build the crystal, using the Wyckoff positions known 
+for C and H.
+
+<p/>
+
+Lateral and top views of the polymeric chains, for 2x10x2 conventional cells, 
+can be seen in the figure at
+<a href="http://www.gamgi.org/images/screenshot11_6b.png">
+http://www.gamgi.org/images/screenshot11_6b.png</a>.
+
+<h3>Polyethylene</h3>
+
+<ol>
+<li>
+Press <b>Cell->Create</b> and set <b>Group</b> to <b>62</b>, the Pnma space 
+group for orthorhombic polyethylene. As this is an orthorhombic system with 
+a primitive lattice, <b>System</b> and <b>Lattice</b> are automatically set 
+to <b>o</b> and <b>P</b>, respectively.
+</li>
+
+<li>
+Set the lattice parameters <b>a</b>, <b>b</b>, <b>c</b> to <b>7.48</b>, 
+<b>2.55</b>, <b>4.97</b>, respectively, the reported values for orthorhombic 
+polyethylene. The entries for angles <b>ab</b>, <b>ac</b>, <b>bc</b>
+are automatically disabled, as they must be 90 degrees.
+</li>
+
+<li>
+With this standard crystallographic orientation, the polymer chains will
+be aligned along direction b, so set the number of cells <b>n1</b>, <b>n2</b>, 
+<b>n3</b> to <b>2</b>, <b>10</b>, <b>2</b>, respectively. Press <b>Ok</b>
+to create the cell.
+</li>
+
+<li>
+Press <b>Atom->Create</b>, write <b>C</b> in the <b>Element</b> entry 
+and press the mouse over the screen (outside the cell), to create a C 
+atom. Repeat the task to create a H atom. These two atoms will act as 
+models to create the structure.
+</li>
+
+<li>
+Press <b>Cell->Link</b> and select the <b>Crystal</b> link method.
+Initially, the <b>Wyckoff</b> menu (in <b>Position</b> page) only 
+has the option, <b>1 Basis 1</b>, which is the usual crystallographic 
+base or motif. The first "1" indicates the number of objects that will 
+be linked to each crystallographic node, and the last "1" the point symmetry. 
+</li>
+
+<li>
+Press the mouse over the cell to identify it. As the cell belongs
+to space group 62, the <b>Wyckoff</b> menu is automatically updated 
+to include options for all the Wyckoff positions available for this 
+space group: <b>8 d 1</b>, <b>4 c .m.</b>, <b>4 b -1</b> and <b>4 a -1</b>. 
+</li>
+
+<li>
+Press the mouse over the C atom, to identify the atom used as a model 
+to create the C atoms of the crystal. 
+</li>
+
+<li>
+According to literature, C atoms occupy Wyckoff positions c, so select
+these positions in the Wyckoff menu: <b>4 c .m.</b>. For these positions,
+the y coordinate is known in advance, so the <b>y</b> entry is automatically
+disabled.
+</li>
+
+<li>
+Make the <b>x</b>, <b>z</b> coordinates equal to <b>0.0330</b>, <b>0.0660</b>,
+respectively, and press <b>Ok</b>. 4 atoms of C are added to each node of the 
+cell (and removed if they fall outside the cell volume).
+</li>
+
+<li>
+Repeat the link procedure, this time to add H atoms. Press the mouse first 
+over the cell, and then over the H atom. Select again Wyckoff positions c, 
+make the <b>x</b>, <b>z</b> coordinates equal to <b>0.1898</b>, <b>0.0520</b>, 
+respectively, and press <b>Ok</b>. 4 atoms of H are added to each node of the 
+cell (and removed if they fall outside the cell volume).
+</li>
+
+<li>
+Repeat the link procedure, to add the remaining H atoms. Press the mouse 
+first over the cell, and then over the H atom. Select again Wyckoff positions c, 
+make the <b>x</b>, <b>z</b> coordinates equal to <b>0.0339</b>, <b>0.2607</b>, 
+respectively, and press <b>Ok</b>. 4 atoms of H are added to each node of the 
+cell (and removed if they fall outside the cell volume).
+</li>
+
+<li>
+The atomic structure is now created. To remove the two C,H atoms used 
+as models during the building process, press <b>Atom->Remove</b> and 
+click the mouse over them.
+</li>
+
+<li>
+To create the C-C and C-H polyethylene bonds, press <b>Bond->Create</b>,
+select the method <b>Length</b> and press <b>Ok</b>.
+</li>
+
+<li>To simplify the visual analysis, press <b>Layer->Modify</b>, 
+change <b>Projection</b> to <b>Orthographic</b>, and press <b>Ok</b>.
+</li>
+
+<li>To reduce visual clutter, press <b>Cell->Modify</b> and change
+<b>Borders</b> to <b>Faces</b> or even <b>Edges</b> (in <b>View</b>
+page). Set the Euler angles <b>E1</b>,<b>E2</b>,<b>E3</b> to 
+<b>0</b>,<b>0</b>,<b>0</b> and <b>90</b>,<b>90</b>,<b>90</b>, 
+(in <b>Position</b> page) to get lateral and top views,
+respectively, of the polymer chains. Press <b>Ok</b> to activate 
+the changes.
+</li>
+
+<li>Rotate,move,scale the polyethylene cell with the mouse, to see the
+ziz-zag chains (and the partly-formed chains in the outside). Press
+<b>Atom->Measure</b> to determine lengths and angles between atoms.
+</li>
+</ol>
+
+</div>
+
+<div id="bottom">
+<a href="../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

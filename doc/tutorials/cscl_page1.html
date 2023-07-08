@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Tutorials: CsCl crystalline structure</title>
+<link rel="icon" type="image/png" href="../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>CsCl crystalline structure</h1>
+
+<div id="notebook">
+<ul>
+<li><span>Page 1</span></li>
+</ul>
+</div>
+
+<div class="contents">
+
+The CsCl structure is observed in metallic compounds such as CuZn 
+(beta-brass), AlNi, AgMg and CuPd, but also in ionic crystals
+with equal number of cations and anions, when the cation is 
+slightly smaller than the anion: CsCl, Nh4Cl, TlBr, etc.
+
+<p/>
+
+To build this structure, first we create the cell with the
+observed lattice parameters, then the Cs, Cl atoms used as models, 
+with the observed ionic radius, and then link the cell with the
+atoms.
+
+<ol>
+<li>
+Press <b>Cell->Create</b> and set <b>System</b> to <b>c</b>, 
+<b>Lattice</b> to <b>P</b> (Primitive Cubic) and <b>a</b> 
+to <b>4.018</b> (so ions will be in contact along &lt;111&gt; 
+directions). Press <b>Ok</b> to create the cell.
+</li>
+
+<li>
+Select <b>Atom->Create</b> and set <b>Style</b> to <b>Solid</b>,
+<b>Size</b> to <b>1.0</b> and <b>Variancy</b> to <b>1.0</b>.
+
+Set <b>Element</b> to <b>Cs</b>, <b>Radius</b> to <b>1.670</b>
+(ionic radius for Cs+) and press the mouse over the graphic 
+area. A Cs atom is created where the mouse was pressed. 
+</li>
+
+<li>
+Set <b>Element</b> to <b>Cl</b>, <b>Radius</b> to <b>1.810</b>
+(ionic radius for Cl-) and press the mouse over the graphic     
+area. A Cl atom is created where the mouse was pressed.
+</li>
+
+<li>
+Press <b>Cell->Link</b> and select the <b>Crystal</b> link method.
+Press the mouse over the cell, and then over the Cs atom,
+to identify the objects to link. Set the <b>x</b>, <b>y</b>, <b>z</b> 
+coordinates (<b>Position</b> page) to <b>0.5</b>, <b>0.5</b>, 
+<b>0.5</b> and press <b>Ok</b>. 1 atom of Cs is now visible,
+in the center, inside the cell.
+</li>
+
+<li>
+Repeat the link procedure above, but this time pressing the mouse 
+over the Cl atom, and setting the <b>x</b>, <b>y</b>, <b>z</b>
+coordinates to <b>0.0</b>, <b>0.0</b>, <b>0.0</b>. 8 atoms of Cl 
+are now visible, in the vertices, corresponding to a total 
+of 1 atom inside the cell.
+</li>
+
+<li>
+Select <b>Light->Create</b> and press <b>Ok</b>, to add a light
+and give atoms a three dimensional look.
+</li>
+
+<li>
+Remove the Cs,Cl atoms used as models during the building process,
+pressing <b>Atom->Remove</b> and clicking the mouse over the two atoms.
+</li>
+
+<li>Rotate,move,scale the CsCl cell with the mouse. Press
+<b>Atom->Measure</b> to determine lengths and angles between atoms.
+</li>
+</ol>
+
+</div>
+
+<div id="bottom">
+<a href="../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

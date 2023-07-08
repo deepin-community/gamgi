@@ -1,0 +1,11 @@
+<gml>
+<molecule name="D5h">
+<atom element="C" x="0" y="0" z="0"/>
+<atom element="C" x="0" y="0" z="2"/>
+<atom element="H" x="1" y="0" z="1"/>
+<atom element="H" x="0.3090" y="0.9511" z="1"/>
+<atom element="H" x="-0.8090" y="0.5878" z="1"/>
+<atom element="H" x="-0.8090" y="-0.5878" z="1"/>
+<atom element="H" x="0.3090" y="-0.9511" z="1"/>
+</molecule>
+</gml>

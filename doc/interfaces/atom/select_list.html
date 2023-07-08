@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Interfaces: Atom Select</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Atom Select</h1>
+
+<div id="notebook">
+<ul>
+<li><span>List</span></li>
+</ul>
+</div>
+
+<div class="contents">
+
+<b>Atom->Select</b> is used for two different things: 1) to set an
+atom as the current object (the object that is moved, rotated, scaled
+with the mouse); 2) to select a whole list of atoms that can be
+subsequently modified or removed using Atom->Modify or Atom->Remove.
+
+<p/>
+
+To set an atom as the current object, click the mouse over its
+visual representation. When an atom is recognized, a beep is emitted
+and the atom identification is shown in the window status bar, first
+in a highlighted color (to emphasize that the current object has
+changed) and then in the default color (after a few seconds).
+
+<p/>
+
+Only atoms in the working layer can be chosen as current object,
+even if atoms are visible in other (transparent or translucid)
+layers. For each top window, only one current object is maintained.
+This can be Gamgi (everything), Window (the current window),
+Layer (the current layer), or a child object of the current
+layer. The identification of the current object is always
+visible in the window statusbar.
+
+<p/>
+
+A faster method to set an atom as current object,
+without using the Atom->Select dialog, is to click over
+<b>Atom</b> on the main menu with the second mouse button,
+and then click over the atom visual representation.
+
+<h3>List</h3>
+
+<b>List</b> always shows a flat list of all the atoms available
+in the current <b>Scope</b>. For each atom, a hierarchical tree
+shows all its child objects.
+
+<h3>Scope</h3>
+
+This sets the initial <b>List</b> of candidate atoms, presented
+on the left, from where the atoms will be selected. Five options
+are available: <b>Gamgi</b> (atoms in all windows), <b>Window</b>
+(atoms in the current window), <b>Layer</b> (atoms ins the current
+layer), <b>Before</b> (the previous list of selected atoms) and
+<b>Current</b> (the current list of selected atoms).
+
+<p/>
+
+The list <b>Before</b> allows users to undo possible mistakes
+and is removed everytime Atom->Select closes. The list
+<b>Current</b> is the real thing, the list of atoms that
+is saved for further action when Atom->Select is closed.
+When list <b>Current</b> is not empty, the <b>Atom</b> label
+on the main menu shows a different color, to signal that a
+list of atoms has been selected.
+
+<p/>
+
+By default GAMGI always shows the list <b>Current</b>, except when
+this list is empty (for example the first time <b>Atom->Select</b>
+is called). In this case GAMGI starts with the list <b>Layer</b>.
+
+<p/>
+
+Thus the new list <b>Current</b> is usually prepared selecting
+objects from the existing list <b>Current</b>. This gives users a
+simple and effective way to prepare complex lists of objects, by
+entering successive filtering conditions and pressing <b>Ok</b>
+each time. The list <b>Current</b> thus obtained will be shorter
+and shorter and will comply with all the conditions entered before.
+
+<p/>
+
+When <b>Scope</b> is not <b>Current</b>, the selected objects that
+are not yet members of the list <b>Current</b> are added to the beginning
+of that list. Thus the list <b>Current</b> can be reduced by successive
+filtering conditions of the <b>Current</b> list or increased by
+successive additions from objects in other <b>Scope</b> lists.
+
+<h3>Action</h3>
+
+When <b>Action</b> is set to <b>Include</b> (the default), the next
+<b>Current</b> list is formed by the atoms that have been selected
+in the visible <b>List</b> on the left, using any available <b>Method</b>.
+When <b>Action</b> is set to <b>Exclude</b>, the next <b>Current</b>
+list is formed by the atoms that have not been selected in the visible
+<b>List</b>.
+
+<h3>Method</h3>
+
+There are many different techniques to indicate which atoms should be
+included or excluded to the list Current. The combo box <b>Method</b>
+sets which technique should be used: 1) <b>Pick</b>, select one atom
+each time, either pressing Ctrl and clicking on the atom visual representation
+on a graphic area or pressing Ctrl and clicking directly on the atom tree
+row on the <b>List</b>; 2) <b>Region</b>, select all atoms in a rectangle
+in a graphic area (TODO); 3) one of the 17 remaining methods, representing
+all the available atom properties.
+
+<p/>
+
+In this case, for each property, a range of values should be entered in entries
+<b>Min</b> and <b>Max</b>. When the value in <b>Min</b> is larger than the value
+in <b>Max</b>, GAMGI swaps the two limits, issues a warning, and completes
+the task. When <b>Min</b> is empty, only the <b>Max</b> condition is applied.
+When <b>Max</b> is empty, only the <b>Min</b> condition is applied. When both
+<b>Min</b> and <b>Max</b> are empty all values are accepted.
+
+<p/>
+
+These properties can be combined to get the desired selection. For example,
+to select a set of atoms between (x0, y0, z0) and (x1, y1, z1) just apply
+the property <b>X</b> between x0 and X1, then <b>Y</b> between y0 and y1
+and <b>Z</b> betweeb z0 and z1.
+
+<p/>
+
+When no conditions are specified, by defaults all atoms are included
+or excluded, according to the <b>Action</b> chosen. For example, to 
+disable entirely a list of atoms previously selected, just open 
+Atom->Select, change <b>Action</b> to <b>Exclude</b> and press <b>Ok</b>:
+the color of the <b>Atom</b> label on the main menu changes to the
+default color, signaling that no list of atoms exists.
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Formats: XYZ</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/board.css"/>
+</head>
+
+<body>
+
+<div class="board">
+<div>Formats</div><div>XYZ</div>
+</div>
+
+<div class="contents">
+
+GAMGI uses the file extension to automatically determine the file format. 
+To import or export a standard xyz file, just give the filename the 
+extension <b>.xyz</b>.
+
+<p/>
+
+The first non-empty line must be the number of atoms in the file. 
+After reading the entire file, GAMGI confirms that this number is 
+indeed correct, otherwise an error is shown and the file is not imported.
+
+<p/>
+
+The second non-empty line is a comment containing any characters.
+
+<p/>
+
+The next non-empty lines must contain each one a valid element
+(as <b>Si</b> but not <b>SI</b> or <b>si</b>) followed by valid x y z 
+coordinates, all surrounded by an arbitrary number of spaces.
+
+<p/>
+
+Currently each line cannot contain more than <b>199</b> characters.
+Empty lines anywhere are ignored.
+
+<p/>
+
+If errors are not found, GAMGI links the entire list of 
+atoms to a new molecule in the current layer, named Molecule.
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

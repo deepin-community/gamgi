@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE gml SYSTEM "http://www.gamgi.org/dtd/gamgi.dtd">
+<gml>
+  <layer>
+    <molecule>
+      <atom id="1" element="C" x="1.4137" y="0.3504" z="-4.9176"/>
+      <atom id="2" element="C" x="0.4102" y="1.3564" z="-4.9308"/>
+      <atom id="3" element="C" x="-0.3106" y="1.3573" z="-3.7062"/>
+      <atom id="4" element="C" x="-1.3165" y="0.3537" z="-3.7192"/>
+      <atom id="5" element="C" x="-1.3012" y="-0.3511" z="-4.9530"/>
+      <atom id="6" element="C" x="-0.2977" y="-1.3571" z="-4.9398"/>
+      <atom id="7" element="C" x="0.3909" y="-1.3578" z="-3.6968"/>
+      <atom id="8" element="C" x="1.3968" y="-0.3542" z="-3.6838"/>
+      <atom id="9" element="C" x="1.3816" y="0.3506" z="-2.4500"/>
+      <atom id="10" element="C" x="0.3781" y="1.3566" z="-2.4632"/>
+      <atom id="11" element="C" x="-0.3427" y="1.3575" z="-1.2385"/>
+      <atom id="12" element="C" x="-1.3486" y="0.3539" z="-1.2516"/>
+      <atom id="13" element="C" x="-1.3334" y="-0.3509" z="-2.4853"/>
+      <atom id="14" element="C" x="-0.3299" y="-1.3569" z="-2.4722"/>
+      <atom id="15" element="C" x="0.3588" y="-1.3576" z="-1.2292"/>
+      <atom id="16" element="C" x="1.3647" y="-0.3540" z="-1.2162"/>
+      <atom id="17" element="C" x="1.3494" y="0.3508" z="0.0176"/>
+      <atom id="18" element="C" x="0.3459" y="1.3568" z="0.0044"/>
+      <atom id="19" element="C" x="-0.3748" y="1.3577" z="1.2291"/>
+      <atom id="20" element="C" x="-1.3808" y="0.3541" z="1.2161"/>
+      <atom id="21" element="C" x="-1.3655" y="-0.3507" z="-0.0177"/>
+      <atom id="22" element="C" x="-0.3620" y="-1.3567" z="-0.0046"/>
+      <atom id="23" element="C" x="0.3266" y="-1.3574" z="1.2384"/>
+      <atom id="24" element="C" x="1.3325" y="-0.3538" z="1.2515"/>
+      <atom id="25" element="C" x="1.3173" y="0.3510" z="2.4852"/>
+      <atom id="26" element="C" x="0.3138" y="1.3570" z="2.4721"/>
+      <atom id="27" element="C" x="-0.4070" y="1.3579" z="3.6967"/>
+      <atom id="28" element="C" x="-1.4129" y="0.3543" z="3.6837"/>
+      <atom id="29" element="C" x="-1.3977" y="-0.3505" z="2.4499"/>
+      <atom id="30" element="C" x="-0.3941" y="-1.3565" z="2.4631"/>
+      <atom id="31" element="C" x="0.2945" y="-1.3572" z="3.7061"/>
+      <atom id="32" element="C" x="1.3004" y="-0.3536" z="3.7191"/>
+      <bond parent1="1" parent2="2"/>
+      <bond parent1="1" parent2="8"/>
+      <bond parent1="2" parent2="3"/>
+      <bond parent1="3" parent2="4"/>
+      <bond parent1="3" parent2="10"/>
+      <bond parent1="4" parent2="5"/>
+      <bond parent1="4" parent2="13"/>
+      <bond parent1="5" parent2="6"/>
+      <bond parent1="6" parent2="7"/>
+      <bond parent1="7" parent2="8"/>
+      <bond parent1="7" parent2="14"/>
+      <bond parent1="8" parent2="9"/>
+      <bond parent1="9" parent2="10"/>
+      <bond parent1="9" parent2="16"/>
+      <bond parent1="10" parent2="11"/>
+      <bond parent1="11" parent2="12"/>
+      <bond parent1="11" parent2="18"/>
+      <bond parent1="12" parent2="13"/>
+      <bond parent1="12" parent2="21"/>
+      <bond parent1="13" parent2="14"/>
+      <bond parent1="14" parent2="15"/>
+      <bond parent1="15" parent2="16"/>
+      <bond parent1="15" parent2="22"/>
+      <bond parent1="16" parent2="17"/>
+      <bond parent1="17" parent2="18"/>
+      <bond parent1="17" parent2="24"/>
+      <bond parent1="18" parent2="19"/>
+      <bond parent1="19" parent2="20"/>
+      <bond parent1="19" parent2="26"/>
+      <bond parent1="20" parent2="21"/>
+      <bond parent1="20" parent2="29"/>
+      <bond parent1="21" parent2="22"/>
+      <bond parent1="22" parent2="23"/>
+      <bond parent1="23" parent2="24"/>
+      <bond parent1="23" parent2="30"/>
+      <bond parent1="24" parent2="25"/>
+      <bond parent1="25" parent2="26"/>
+      <bond parent1="25" parent2="32"/>
+      <bond parent1="26" parent2="27"/>
+      <bond parent1="27" parent2="28"/>
+      <bond parent1="28" parent2="29"/>
+      <bond parent1="29" parent2="30"/>
+      <bond parent1="30" parent2="31"/>
+      <bond parent1="31" parent2="32"/>
+    </molecule>
+  </layer>
+</gml>

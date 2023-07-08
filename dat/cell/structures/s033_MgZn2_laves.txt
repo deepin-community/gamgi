@@ -1,0 +1,27 @@
+Structure 33
+Prototype: MgZn2
+StrukturBericht / Pearson: C14 / hP12
+
+Lattice parameter:
+MgZn2        Al2Hf
+5.221 8.567  5.24  8.68
+BeV2         Cu2Yb
+4.385 7.130  5.260 8.567
+Co2Nb        Mn3SiW 2
+4.835 7.860  4.76  7.75
+
+Radius:
+Mg 1.5985 (half-distance)
+Zn 1.3325 (half-distance)
+
+1. Building with space group (s033.xml):
+Group: 194
+
+Wyckoff positions:
+Mg 4f, z = 0.0629
+Zn 2a
+Zn 6h, x = 0.8305
+
+View:
+Mg,Zn: style solid, size 1.0, variancy 1.0, scale 0.25
+ZnZn: style solid, method length, color 0.5,0.5,0.5, size 0.5, scale 0.5

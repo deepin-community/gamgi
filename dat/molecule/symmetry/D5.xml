@@ -1,0 +1,15 @@
+<gml>
+<molecule name="D5">
+<atom element="He" x="0.09950" y="0.99504" z="1.1"/>
+<atom element="He" x="-0.09950" y="0.99504" z="0.9"/>
+<atom element="He" x="0.97708" y="0.21285" z="1.1"/>
+<atom element="He" x="0.91559" y="0.40212" z="0.9"/>
+<atom element="He" x="0.50437" y="-0.86349" z="1.1"/>
+<atom element="He" x="0.66537" y="-0.74652" z="0.9"/>
+<atom element="He" x="-0.66537" y="-0.74652" z="1.1"/>
+<atom element="He" x="-0.50437" y="-0.86349" z="0.9"/>
+<atom element="He" x="-0.91559" y="0.40212" z="1.1"/>
+<atom element="He" x="-0.97708" y="0.21285" z="0.9"/>
+
+</molecule>
+</gml>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Formats: Introduction Elements</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/board.css"/>
+</head>
+
+<body>
+
+<div class="board">
+<div>Introduction Elements</div><div>&nbsp;</div>
+</div>
+
+<div class="contents">
+
+GML files can contain object data (the objects) and configuration 
+data (their global properties). The <b>&lt;gml></b> root element 
+can thus contain elements describing all the data objects defined 
+in GAMGI, from <b>&lt;window></b>, <b>&lt;layer></b>, <b>&lt;light></b>, 
+to <b>&lt;bond></b>, <b>&lt;orbital></b>, <b>&lt;text></b>, plus 
+the global <b>&lt;gamgi></b> element.
+
+<p/>
+
+As configuration data conceptually belongs to the gamgi object, 
+it is represented inside <b>&lt;gamgi>&lt;/gamgi></b> blocks. 
+These blocks can occur in any order and as many times as needed, 
+can contain elements describing the global properties of all the 
+GAMGI objects, from <b>&lt;file></b>, <b>&lt;window></b>, 
+<b>&lt;layer></b>, to <b>&lt;orbital></b>, <b>&lt;text></b>, 
+<b>&lt;help></b>.  These elements in turn can occur in any order 
+and as many times as needed, but cannot contain other elements:
+
+<p/>
+
+Everything outside <b>&lt;gamgi>&lt;/gamgi></b> blocks is 
+considered as object data. The elements describing data objects, 
+from <b>&lt;window></b>, <b>&lt;layer></b>, <b>&lt;light></b>,
+to <b>&lt;bond></b>, <b>&lt;orbital></b>, <b>&lt;text></b>,
+can occur in any order and as many times as needed, can contain
+elements describing its child objects, in any order and as many 
+times as needed, to any nested level of depth.
+
+<p/>
+ 
+When importing GML files, objects that belong to layers and appear 
+directly below <b>&lt;gml></b>, in the hierarchy, are attributed to 
+the current layer. Layers that appear directly below <b>&lt;gml></b>, 
+in the hierarchy, are attributed to the current window.
+
+<h3>Good:</h3>
+
+<pre><b>
+&lt;gml>
+  &lt;group>
+    &lt;group/></b> a group can contain another group<b>
+  &lt;/group>
+&lt;/gml>
+
+&lt;gml>
+  &lt;window/>
+  &lt;layer/></b> layer belongs to current window, not the new window<b>
+  &lt;atom/></b> atom belongs to current layer, not the new layer<b>
+&lt;/gml>    
+
+&lt;gml>
+  &lt;gamgi>
+    &lt;atom/></b> update atom configuration data<b>
+  &lt;/gamgi>
+&lt;/gml></b>
+</pre>
+
+<h3>Bad:</h3>
+
+<pre><b>
+&lt;gml>
+  &lt;gamgi>
+    &lt;window>
+    &lt;/gamgi></b> last element in, must be first element out<b>
+  &lt;/window>
+&lt;/gml>
+
+&lt;gml>
+  &lt;molecule>
+    &lt;molecule/></b> a molecule cannot contain another molecule<b>
+  &lt;/molecule>
+&lt;/gml>
+
+&lt;gml>
+  &lt;gamgi>
+    &lt;layer>
+      &lt;atom/></b> a layer configuration element cannot contain other objects<b>
+    &lt;/layer>
+  &lt;/gamgi>    
+&lt;/gml></b>
+</pre>  
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

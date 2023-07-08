@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Interfaces: Cell Link</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Cell Link</h1>
+
+<div id="notebook">
+<ul> 
+<li><a href="link_object.html">Object</a></li>
+<li><a href="link_shift.html">Shift</a></li>
+<li><a href="link_position.html">Position</a></li>
+<li><a href="link_change.html">Change</a></li>
+<li><a href="link_occupancy.html">Occupancy</a></li>
+<li><span>Packing</span></li>
+</ul>
+</div>
+
+<div class="contents">
+
+Set here the parameters to build a Random Close Packing (RCP) structure.
+
+<h3>Radius, Number</h3>
+
+To build a RCP structure, a fixed number of atoms is randomly allocated
+in the Cell volume and then the closest atoms are sucessively moved 
+apart until the minimum atom-atom distance converges to a suitable value,
+the final hard-sphere diameter, used to determine the volume density
+and the radius for all atoms (Jodrey algorithm).
+
+<p/>
+
+By default, GAMGI calculates the number of atoms to allocate such 
+that the final atoms and the template atom will have approximately 
+the same radius. The radius are not exactly the same because the number
+of atoms must be an integer and the final radius depends of the
+random sequence and of the relaxation time, but the approximation
+is close, particularly for larger cell volumes (with more atoms).
+
+<p/>
+
+Clicking on <b>Number</b>, users can set in the enabled entry
+the number of atoms to create. These atoms and the template atom 
+will have different radius.
+
+<p/>
+
+When the Cell volume (in <b>Radius</b> mode) or the number of atoms 
+(in <b>Number</b> mode) is too small, an error is shown.
+
+<h3>Relaxation</h3>
+
+The relaxation time controls the dynamics of the convergence process.
+Typically, increasing 10 times the relaxation time, increases 10 times
+the processing time and increases slightly the density, in the range
+0.62-0.64 (the atoms have more time to find better positions).
+
+<h3>Seed</h3>
+
+Initially atoms are randomly allocated using a sequence of (pseudo) 
+random numbers, generated from a <b>Seed</b> initiator. Using different
+seeds, different random sequences and final results will be produced.
+Using the same seed, the same results will be obtained.
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

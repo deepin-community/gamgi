@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Interfaces: Cell Link</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Cell Link</h1>
+
+<div id="notebook">
+<ul> 
+<li><a href="link_object.html">Object</a></li>
+<li><a href="link_shift.html">Shift</a></li>
+<li><span>Position</span></li>
+<li><a href="link_change.html">Change</a></li>
+<li><a href="link_occupancy.html">Occupancy</a></li>
+<li><a href="link_packing.html">Packing</a></li>
+</ul>
+</div>
+
+<div class="contents">
+
+Define here the position of the linked objects.
+
+<h3>Vectors</h3>
+
+Object coordinates can be given in terms of the vectors defining: 
+1) the <b>Conventional</b> cell; 2) the <b>Primitive</b> cell,
+3) the absolute <b>Local</b> referential of the current Layer. 
+Users can enter coordinates using any of the three referentials, 
+independently of the actual Cell volume.
+
+<p/>
+
+In order to apply space group information, coordinates are first converted 
+internally to conventional vectors. After generating all the Wyckoff positions,
+these coordinates are converted to primitive vectors. These are applied
+when the cell volume is <b>Primitive</b>, <b>Wigner</b>, <b>Rhombus</b>
+or <b>Sphere</b>.
+
+<h3>Wyckoff</h3>
+
+When the crystallographic space group is known, GAMGI lists all its
+Wyckoff sites, showing for each one: 1) the number of replicas that 
+will be generated for each node (i.e. the order of the point group of 
+symmetry of that site); 2) the label of the Wyckoff site, starting from 
+"a" to "z", as in the International Tables for Crystallography (and then 
+"A", for space group 47); 3) the oriented point symmetry of the site,
+as in the International Tables for Crystallography.
+
+<p/>
+
+When space group information is unknown, the linked object is handled 
+just as part of a base or motif, so only one position is generated for 
+each node (the space group and site point symmetry are assumed to be 1) 
+and the menu has just one menu item: "1 Basis 1".
+
+<h3>x, y, z</h3>
+
+For the general Wyckoff site, with point symmetry 1, all x,y,z 
+coordinates are needed and the corresponding entries are all active. 
+For sites with higher symmetry, unnecessary coordinates are automatically 
+disabled. 
+
+<p/>
+
+Before generating the required Wyckoff positions, GAMGI always tries 
+to find equivalent positions. When redundant positions are found, they
+are discarded, and GAMGI tries to find a Wyckoff site with higher symmetry 
+that generates exactly the same set of non-redundant positions. A warning
+dialog is then produced with the obtained information, and the link
+operation proceds using just the non-redundant positions.
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+Structure 12
+Prototype: CaF2 (fluorite)
+StrukturBericht / Pearson: C1 / cF12
+
+lattice parameters:
+CaF2  F2Sr  BaCl2
+5.463 5.800 7.311
+O2Pb  O2U   Li2O
+5.349 5.372 4.611
+Na2Se K2S   ORb2
+6.823 7.406 6.740
+
+Radius:
+Ca: 1.12 (Shannon radius for charge +2 coordination 8)
+F:  1.31 (Shannon radius for charge -1 coordination 4)
+
+1. Building with space group (s012.xml):
+Group:  225
+
+Wyckoff positions:
+Ca 1a
+F  2c
+
+View:
+Ca: style solid, size 1.0, variancy 1.0, scale 0.3
+F: style solid, size 1.0, variancy 1.0, scale 0.3
+CaF: style solid, method length, color 0.5,0.5,0.5 scale 0.5

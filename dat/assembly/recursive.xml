@@ -1,0 +1,8 @@
+<gml>
+  <assembly>
+    <atom element="O" x="0.0" y="-1.05" z="0.0" style="solid"/>
+    <assembly>
+      <atom element="C" x="0.0" y="1.05" z="0.0" style="solid"/>
+    </assembly>
+  </assembly>
+</gml>

@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE gml SYSTEM "http://www.gamgi.org/dtd/gamgi.dtd">
+<gml>
+  <layer perspective="no" red="1.000" green="1.000" blue="1.000" scale="0.200">
+    <light ambient_r="0.400" ambient_g="0.400" ambient_b="0.400"
+    diffuse_r="0.700" diffuse_g="0.700" diffuse_b="0.700" direction_x="0.0000"
+    direction_y="0.0000" direction_z="-1.0000"/>
+    <cell group="12" a="25.1960" b="7.5740" c="10.9490" ac="128.70"
+    x="-9.4175" y="5.1026" z="1.7634" e1="90.00" e2="270.00" e3="90.00"
+    scale="1.958">
+      <atom element="Al" x="-9.4175" y="5.1026" z="1.7634" radius="0.5000"
+      red="1.000" green="0.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Al" x="15.7785" y="5.0988" z="1.7654" radius="0.5000"
+      red="1.000" green="0.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Al" x="-9.4181" y="5.1026" z="9.3374" radius="0.5000"
+      red="1.000" green="0.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Al" x="15.7779" y="5.0989" z="9.3395" radius="0.5000"
+      red="1.000" green="0.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Al" x="-16.2646" y="-3.4414" z="1.7628" radius="0.5000"
+      red="1.000" green="0.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Al" x="8.9315" y="-3.4451" z="1.7649" radius="0.5000"
+      red="1.000" green="0.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Al" x="-16.2651" y="-3.4414" z="9.3368" radius="0.5000"
+      red="1.000" green="0.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Al" x="8.9308" y="-3.4451" z="9.3389" radius="0.5000"
+      red="1.000" green="0.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Al" x="3.1802" y="5.1007" z="5.5514" radius="0.5000"
+      red="1.000" green="0.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Al" x="-3.6669" y="-3.4432" z="5.5509" radius="0.5000"
+      red="1.000" green="0.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Al" x="-4.8827" y="2.8563" z="1.7637" radius="0.5000"
+      red="1.000" green="0.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Al" x="-4.8833" y="2.8563" z="9.3378" radius="0.5000"
+      red="1.000" green="0.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Al" x="4.3966" y="-1.1988" z="1.7645" radius="0.5000"
+      red="1.000" green="0.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Al" x="4.3960" y="-1.1988" z="9.3385" radius="0.5000"
+      red="1.000" green="0.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Al" x="7.7151" y="2.8544" z="5.5517" radius="0.5000"
+      red="1.000" green="0.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Al" x="-8.2017" y="-1.1969" z="5.5505" radius="0.5000"
+      red="1.000" green="0.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Al" x="11.9278" y="2.9888" z="4.2419" radius="0.5000"
+      red="1.000" green="0.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Al" x="11.9276" y="2.9889" z="6.8624" radius="0.5000"
+      red="1.000" green="0.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Al" x="-12.4143" y="-1.3313" z="4.2399" radius="0.5000"
+      red="1.000" green="0.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Al" x="-12.4145" y="-1.3314" z="6.8605" radius="0.5000"
+      red="1.000" green="0.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Al" x="-0.6706" y="2.9907" z="8.0278" radius="0.5000"
+      red="1.000" green="0.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Al" x="-0.6701" y="2.9907" z="3.0744" radius="0.5000"
+      red="1.000" green="0.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Al" x="0.1835" y="-1.3331" z="8.0278" radius="0.5000"
+      red="1.000" green="0.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Al" x="0.1839" y="-1.3332" z="3.0745" radius="0.5000"
+      red="1.000" green="0.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Cr" x="-12.8413" y="0.8306" z="5.5501" radius="0.5000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Cr" x="12.3547" y="0.8269" z="5.5522" radius="0.5000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Cr" x="-0.2430" y="0.8287" z="1.7641" radius="0.5000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Cr" x="-0.2436" y="0.8288" z="9.3382" radius="0.5000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Cr" x="6.0927" y="5.0747" z="1.7646" radius="0.5000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Cr" x="6.0921" y="5.0747" z="9.3387" radius="0.5000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Cr" x="-6.5788" y="-3.4171" z="1.7637" radius="0.5000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Cr" x="-6.5794" y="-3.4171" z="9.3376" radius="0.5000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Cr" x="-6.5055" y="5.0766" z="5.5506" radius="0.5000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Cr" x="6.0189" y="-3.4190" z="5.5517" radius="0.5000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Cr" x="-2.5429" y="4.4521" z="1.7640" radius="0.5000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Cr" x="-2.5435" y="4.4522" z="9.3380" radius="0.5000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Cr" x="2.0568" y="-2.7946" z="1.7644" radius="0.5000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Cr" x="2.0562" y="-2.7946" z="9.3383" radius="0.5000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Cr" x="10.0548" y="4.4503" z="5.5520" radius="0.5000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Cr" x="-10.5415" y="-2.7928" z="5.5503" radius="0.5000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Cr" x="-2.6062" y="1.7946" z="1.7640" radius="0.5000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Cr" x="-2.6068" y="1.7947" z="9.3379" radius="0.5000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Cr" x="2.1202" y="-0.1371" z="1.7643" radius="0.5000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Cr" x="2.1195" y="-0.1372" z="9.3384" radius="0.5000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Cr" x="9.9915" y="1.7928" z="5.5521" radius="0.5000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Cr" x="-10.4782" y="-0.1353" z="5.5504" radius="0.5000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Cr" x="1.7398" y="2.6741" z="1.7643" radius="0.5000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Cr" x="1.7393" y="2.6742" z="9.3383" radius="0.5000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Cr" x="-2.2258" y="-1.0166" z="1.7639" radius="0.5000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Cr" x="-2.2265" y="-1.0167" z="9.3380" radius="0.5000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Cr" x="-10.8585" y="2.6760" z="5.5502" radius="0.5000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Cr" x="10.3718" y="-1.0186" z="5.5520" radius="0.5000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Cr" x="11.8078" y="2.7069" z="1.7651" radius="0.5000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Cr" x="11.8072" y="2.7069" z="9.3392" radius="0.5000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Cr" x="-12.2939" y="-1.0494" z="1.7632" radius="0.5000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Cr" x="-12.2945" y="-1.0493" z="9.3372" radius="0.5000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Cr" x="-0.7904" y="2.7087" z="5.5511" radius="0.5000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Cr" x="0.3038" y="-1.0512" z="5.5512" radius="0.5000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Cr" x="-7.1573" y="3.8761" z="1.7636" radius="0.5000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Cr" x="-7.1579" y="3.8761" z="9.3375" radius="0.5000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Cr" x="6.6713" y="-2.2186" z="1.7647" radius="0.5000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Cr" x="6.6707" y="-2.2185" z="9.3387" radius="0.5000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Cr" x="5.4403" y="3.8742" z="5.5516" radius="0.5000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Cr" x="-5.9270" y="-2.2167" z="5.5507" radius="0.5000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Cr" x="-9.4447" y="2.2229" z="1.7634" radius="0.5000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Cr" x="-9.4453" y="2.2229" z="9.3374" radius="0.5000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Cr" x="8.9586" y="-0.5655" z="1.7649" radius="0.5000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Cr" x="8.9581" y="-0.5654" z="9.3389" radius="0.5000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Cr" x="3.1529" y="2.2211" z="5.5514" radius="0.5000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Cr" x="-3.6397" y="-0.5636" z="5.5510" radius="0.5000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Cr" x="-6.8854" y="1.1715" z="1.7636" radius="0.5000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Cr" x="-6.8860" y="1.1715" z="9.3376" radius="0.5000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Cr" x="6.3994" y="0.4860" z="1.7647" radius="0.5000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Cr" x="6.3989" y="0.4860" z="9.3387" radius="0.5000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Cr" x="5.7123" y="1.1696" z="5.5516" radius="0.5000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Cr" x="-6.1990" y="0.4878" z="5.5507" radius="0.5000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Cr" x="-4.9188" y="5.0251" z="3.1498" radius="0.5000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Cr" x="-4.9191" y="5.0250" z="7.9517" radius="0.5000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Cr" x="4.4324" y="-3.3675" z="3.1506" radius="0.5000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Cr" x="4.4321" y="-3.3674" z="7.9525" radius="0.5000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Cr" x="7.6790" y="5.0232" z="6.9378" radius="0.5000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Cr" x="7.6791" y="5.0232" z="4.1657" radius="0.5000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Cr" x="-8.1658" y="-3.3656" z="6.9365" radius="0.5000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Cr" x="-8.1656" y="-3.3657" z="4.1644" radius="0.5000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Cr" x="-8.7143" y="3.8422" z="4.1720" radius="0.5000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Cr" x="-8.7145" y="3.8421" z="6.9289" radius="0.5000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Cr" x="8.2278" y="-2.1846" z="4.1734" radius="0.5000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Cr" x="8.2277" y="-2.1845" z="6.9303" radius="0.5000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Cr" x="3.8833" y="3.8403" z="7.9600" radius="0.5000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Cr" x="3.8838" y="3.8402" z="3.1430" radius="0.5000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Cr" x="-4.3704" y="-2.1827" z="7.9594" radius="0.5000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Cr" x="-4.3700" y="-2.1827" z="3.1423" radius="0.5000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Cr" x="13.9468" y="3.9327" z="3.1286" radius="0.5000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Cr" x="13.9464" y="3.9327" z="7.9760" radius="0.5000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Cr" x="-14.4331" y="-2.2753" z="3.1263" radius="0.5000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Cr" x="-14.4335" y="-2.2753" z="7.9736" radius="0.5000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Cr" x="1.3485" y="3.9346" z="6.9146" radius="0.5000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Cr" x="1.3487" y="3.9346" z="4.1880" radius="0.5000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Cr" x="-1.8354" y="-2.2772" z="6.9144" radius="0.5000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Cr" x="-1.8351" y="-2.2772" z="4.1877" radius="0.5000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Cr" x="9.3326" y="3.0362" z="3.1433" radius="0.5000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Cr" x="9.3321" y="3.0363" z="7.9605" radius="0.5000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Cr" x="-9.8188" y="-1.3786" z="3.1419" radius="0.5000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Cr" x="-9.8192" y="-1.3787" z="7.9589" radius="0.5000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Cr" x="-3.2655" y="3.0381" z="4.1724" radius="0.5000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Cr" x="-3.2657" y="3.0380" z="6.9294" radius="0.5000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Cr" x="2.7791" y="-1.3806" z="4.1729" radius="0.5000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Cr" x="2.7789" y="-1.3805" z="6.9298" radius="0.5000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Cr" x="-11.4764" y="1.1124" z="3.2326" radius="0.5000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Cr" x="-11.4767" y="1.1124" z="7.8679" radius="0.5000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Cr" x="10.9900" y="0.5451" z="3.2345" radius="0.5000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Cr" x="10.9897" y="0.5451" z="7.8697" radius="0.5000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Cr" x="1.1214" y="1.1105" z="7.0206" radius="0.5000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Cr" x="1.1216" y="1.1105" z="4.0818" radius="0.5000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Cr" x="-1.6083" y="0.5469" z="7.0204" radius="0.5000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Cr" x="-1.6080" y="0.5469" z="4.0816" radius="0.5000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Cr" x="-8.5177" y="1.0436" z="4.0888" radius="0.5000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Cr" x="-8.5179" y="1.0436" z="7.0122" radius="0.5000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Cr" x="8.0313" y="0.6138" z="4.0901" radius="0.5000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Cr" x="8.0310" y="0.6139" z="7.0136" radius="0.5000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Cr" x="4.0800" y="1.0418" z="7.8767" radius="0.5000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Cr" x="4.0803" y="1.0418" z="3.2263" radius="0.5000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Cr" x="-4.5670" y="0.6158" z="7.8760" radius="0.5000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Cr" x="-4.5666" y="0.6158" z="3.2256" radius="0.5000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Cr" x="6.4622" y="2.7247" z="3.1734" radius="0.5000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Cr" x="6.4619" y="2.7248" z="7.9300" radius="0.5000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Cr" x="-6.9486" y="-1.0671" z="3.1725" radius="0.5000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Cr" x="-6.9489" y="-1.0673" z="7.9289" radius="0.5000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Cr" x="-6.1359" y="2.7266" z="4.1419" radius="0.5000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Cr" x="-6.1360" y="2.7266" z="6.9594" radius="0.5000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Cr" x="5.6495" y="-1.0691" z="4.1428" radius="0.5000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+      <atom element="Cr" x="5.6492" y="-1.0691" z="6.9604" radius="0.5000"
+      red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+      size="1.00"/>
+    </cell>
+    <atom element="Cr" x="-4.1758" y="-10.8128" z="-3145.2000" radius="0.5000"
+    red="1.000" green="1.000" blue="0.000" style="solid" variancy="1.00"
+    size="1.00" scale="2.005"/>
+    <atom element="Al" x="-4.0988" y="-14.4249" z="-3145.2000" radius="0.5000"
+    red="1.000" green="0.000" blue="0.000" style="solid" variancy="1.00"
+    size="1.00" scale="1.988"/>
+  </layer>
+</gml>

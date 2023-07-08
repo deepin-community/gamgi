@@ -1,0 +1,25 @@
+Structure 61
+Prototype: CdI2
+StrukturBericht / Pearson: C6 / hP5
+
+Lattice parameters:
+CdI2
+4.224 6.859
+
+Radius:
+I: 1.3330 (half-distance)
+Cd: 1.4895 (half-distance)
+
+1. Building with space group (s061.xml):
+Group: 164
+
+Wyckoff positions:
+Cd 1a
+I 2d, z = 0.2492
+
+Cells: 3 x 3 x 1
+Cutoff: Nodes
+Polytopes: Neighbours 6
+
+View:
+I,Cd: style solid, size 1.0, variancy 1.0, scale 0.25

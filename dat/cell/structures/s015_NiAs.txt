@@ -1,0 +1,35 @@
+Structure 15
+Prototype: NiAs
+StrukturBericht / Pearson: B8_1 / hP4
+
+lattice parameters:
+NiAs        AuSe
+3.6  5.01   4.12  5.39
+NbSb        CrS
+4.270 5.447 3.419 5.550
+
+Radius:
+Ni: 1.2460 (half-distance)
+As: 1.2450 (half-distance)
+
+1. Building with space group (s015a.xml):
+194
+
+Wyckoff positions:
+Ni 2a
+As 2c
+
+Cell: primitive
+
+2. Building with conventional cell (s015b.xml):
+Change: 0.66666 (1/3) 0.33333 (2/3) 0.25 (1/4)
+
+View:
+Ni: style solid, size 1.0, variancy 1.0, scale 0.3
+As: style solid, size 1.0, variancy 1.0, scale 0.3
+NiAs: style solid, method length, color 0.5,0.5,0.5 scale 0.7
+
+Information:
+http://www.science.uwaterloo.ca/~cchieh/cact/applychem/inorgsolid.html
+The NiAs structure can be viewed as the hcp packing of
+As anions with the Ni ions occupying the octahedral sites.

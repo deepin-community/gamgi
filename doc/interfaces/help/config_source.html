@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Interfaces: Help Config</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Help Config</h1>
+
+<div id="notebook">
+<ul>
+<li><span>Source</span></li>
+<li><a href="config_agent.html">Agent</a></li>
+</ul>
+</div>
+
+<div class="contents">
+
+Define here the prefered localization of the Help documentation files.
+
+<h3>Source</h3>
+
+Indicates whether the Help documentation should be fetched
+from the local computer or from a remote (HTTP or FTP) server.
+Importing the local documentation is faster, but the remote
+documentation might be more recent.
+
+<h3>Local</h3>
+
+Indicates the path to the local <b>doc</b> directory where the
+GAMGI documentation starts. It is needed only when <b>Source</b>
+is set to <b>Local</b>.
+
+It is equivalent to create the <b>GAMGI</b> environment variable, in ~/.bashrc:
+
+<pre>
+<b>GAMGI=/home/carlos/gamgi/gamgi/; export BROWSER</b>
+</pre>
+
+<h3>Remote</h3>
+
+Indicates the path to the remote <b>doc</b> directory where the 
+GAMGI documentation starts. It is needed only when <b>Source</b> 
+is set to <b>Remote</b>. By default, it is <b>http://www.gamgi.org/</b>.
+Other option is <b>ftp://ftp.gamgi.org/gamgi/</b>.
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

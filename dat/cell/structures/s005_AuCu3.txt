@@ -1,0 +1,23 @@
+Structure 5
+Prototype: AuCu3
+StrukturBericht / Pearson: L1_2 / cP4
+
+lattice parameter:
+AuCu3  AgPt3  AlNi3  TiZn3
+3.749  3.900  3.572  3.932
+AlPt3  Al3Er  Al3U   Pd3Y
+3.876  4.215  4.287  4.074
+
+Radius:
+Au 1.4420 (half-distance)
+Cu 1.2780 (half-distance)
+
+1. Building with group space (s005.xml):
+Group: 221
+
+Wyckoff positions:
+Au 1a
+Cu 3c
+
+Au: style solid, size 1.0, variancy 1.0, scale 0.3
+Cu: style solid, size 1.0, variancy 1.0, scale 0.3

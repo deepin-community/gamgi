@@ -1,0 +1,25 @@
+Structure 29
+Prototype: Cr3Si
+StrukturBericht / Pearson: A15 / cP8
+
+Lattice parameters:
+Cr3Si  AuZr3  GeMo3  IrTi3
+4.555  5.486  4.932  5.0087
+CoV3   Mo3Os  BiNb3  Re7V3
+4.676  4.9689 5.320  4.8783
+Ti4Tl  Nb0.38Si0.24V0.38
+5.256  4.915
+
+Radius:
+Cr 1.2490 (half-distance)
+Si 1.1760 (half-distance)
+
+1. Building with space group (s029.xml):
+Group: 223
+
+Wyckoff positions:
+Cr 6c
+Si 2a
+
+View:
+Si,Cr: style solid, size 0.8, variancy 0.0, scale 1.0

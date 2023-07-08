@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE gml SYSTEM "http://www.gamgi.org/dtd/gamgi.dtd">
+<gml>
+  <layer perspective="no" scale="0.908">
+    <light ambient_r="0.500" ambient_g="0.500" ambient_b="0.500"
+    diffuse_r="0.400" diffuse_g="0.400" diffuse_b="0.400" specular_r="0.300"
+    specular_g="0.300" specular_b="0.300" direction_x="0.0000"
+    direction_y="0.0000" direction_z="-1.0000"/>
+    <cell group="152" a="4.3660" c="4.9590" x="9.3262" y="-5.8256" z="-0.4944"
+    e1="14.53" e2="90.00" e3="360.00" n1="2" n2="2" n3="1" scale="0.567">
+      <atom element="Se" x="8.3295" y="-5.2686" z="-0.6388" style="solid"
+      variancy="1.00" size="1.00" scale="0.300"/>
+      <atom id="1" element="Se" x="1.7641" y="-2.2986" z="0.2991"
+      style="solid" variancy="1.00" size="1.00" scale="0.300"/>
+      <atom id="2" element="Se" x="0.7674" y="-1.0422" z="-1.7341"
+      style="solid" variancy="1.00" size="1.00" scale="0.300"/>
+      <atom element="Se" x="8.3295" y="-4.0244" z="4.1616" style="solid"
+      variancy="1.00" size="1.00" scale="0.300"/>
+      <atom id="3" element="Se" x="2.7608" y="-0.2128" z="1.4661"
+      style="solid" variancy="1.00" size="1.00" scale="0.300"/>
+      <atom id="4" element="Se" x="0.7674" y="0.2019" z="3.0663" style="solid"
+      variancy="1.00" size="1.00" scale="0.300"/>
+      <atom id="5" element="Se" x="9.3262" y="-2.2986" z="0.2991"
+      style="solid" variancy="1.00" size="1.00" scale="0.300"/>
+      <atom id="6" element="Se" x="8.3295" y="-1.0422" z="-1.7341"
+      style="solid" variancy="1.00" size="1.00" scale="0.300"/>
+      <atom id="7" element="Se" x="5.5451" y="-0.1854" z="-0.2486"
+      style="solid" variancy="1.00" size="1.00" scale="0.300"/>
+      <atom id="8" element="Se" x="4.5484" y="1.0710" z="-2.2818"
+      style="solid" variancy="1.00" size="1.00" scale="0.300"/>
+      <atom element="Se" x="4.5484" y="-7.3817" z="-0.0911" style="solid"
+      variancy="1.00" size="1.00" scale="0.300"/>
+      <atom element="Se" x="0.7674" y="-5.2686" z="-0.6388" style="solid"
+      variancy="1.00" size="1.00" scale="0.300"/>
+      <atom element="Se" x="8.3295" y="0.2019" z="3.0663" style="solid"
+      variancy="1.00" size="1.00" scale="0.300"/>
+      <atom element="Se" x="4.5484" y="2.3151" z="2.5186" style="solid"
+      variancy="1.00" size="1.00" scale="0.300"/>
+      <atom id="9" element="Se" x="6.5418" y="-6.5523" z="3.1092"
+      style="solid" variancy="1.00" size="1.00" scale="0.300"/>
+      <atom id="10" element="Se" x="4.5484" y="-6.1376" z="4.7093"
+      style="solid" variancy="1.00" size="1.00" scale="0.300"/>
+      <atom id="11" element="Se" x="2.7608" y="-4.4391" z="2.5615"
+      style="solid" variancy="1.00" size="1.00" scale="0.300"/>
+      <atom id="12" element="Se" x="0.7674" y="-4.0244" z="4.1616"
+      style="solid" variancy="1.00" size="1.00" scale="0.300"/>
+      <atom id="13" element="Se" x="-2.0170" y="4.0409" z="-1.3440"
+      style="solid" variancy="1.00" size="1.00" scale="0.300"/>
+      <atom id="14" element="Se" x="-3.0137" y="5.2973" z="-3.3772"
+      style="solid" variancy="1.00" size="1.00" scale="0.300"/>
+      <atom id="15" element="Se" x="-1.0203" y="6.1268" z="-0.1769"
+      style="solid" variancy="1.00" size="1.00" scale="0.300"/>
+      <atom id="16" element="Se" x="-3.0137" y="6.5415" z="1.4232"
+      style="solid" variancy="1.00" size="1.00" scale="0.300"/>
+      <atom id="17" element="Se" x="5.5451" y="4.0409" z="-1.3440"
+      style="solid" variancy="1.00" size="1.00" scale="0.300"/>
+      <atom id="18" element="Se" x="4.5484" y="5.2973" z="-3.3772"
+      style="solid" variancy="1.00" size="1.00" scale="0.300"/>
+      <atom element="Se" x="1.7641" y="6.1541" z="-1.8916" style="solid"
+      variancy="1.00" size="1.00" scale="0.300"/>
+      <atom id="19" element="Se" x="-2.0170" y="-0.1854" z="-0.2486"
+      style="solid" variancy="1.00" size="1.00" scale="0.300"/>
+      <atom id="20" element="Se" x="-3.0137" y="1.0710" z="-2.2818"
+      style="solid" variancy="1.00" size="1.00" scale="0.300"/>
+      <atom element="Se" x="4.5484" y="6.5415" z="1.4232" style="solid"
+      variancy="1.00" size="1.00" scale="0.300"/>
+      <atom id="21" element="Se" x="-1.0203" y="1.9004" z="0.9184"
+      style="solid" variancy="1.00" size="1.00" scale="0.300"/>
+      <atom id="22" element="Se" x="-3.0137" y="2.3151" z="2.5186"
+      style="solid" variancy="1.00" size="1.00" scale="0.300"/>
+      <atom id="23" element="Se" x="-5.7981" y="-2.2986" z="0.2991"
+      style="solid" variancy="1.00" size="1.00" scale="0.300"/>
+      <atom id="24" element="Se" x="-6.7948" y="-1.0422" z="-1.7341"
+      style="solid" variancy="1.00" size="1.00" scale="0.300"/>
+      <atom id="25" element="Se" x="-4.8014" y="-0.2128" z="1.4661"
+      style="solid" variancy="1.00" size="1.00" scale="0.300"/>
+      <atom id="26" element="Se" x="-6.7948" y="0.2019" z="3.0663"
+      style="solid" variancy="1.00" size="1.00" scale="0.300"/>
+      <atom element="Se" x="-3.0137" y="-7.3817" z="-0.0911" style="solid"
+      variancy="1.00" size="1.00" scale="0.300"/>
+      <atom id="27" element="Se" x="-1.0203" y="-6.5523" z="3.1092"
+      style="solid" variancy="1.00" size="1.00" scale="0.300"/>
+      <atom id="28" element="Se" x="-3.0137" y="-6.1376" z="4.7093"
+      style="solid" variancy="1.00" size="1.00" scale="0.300"/>
+      <atom element="Se" x="-4.8014" y="-4.4391" z="2.5615" style="solid"
+      variancy="1.00" size="1.00" scale="0.300"/>
+      <atom id="29" element="Se" x="-9.5791" y="4.0409" z="-1.3440"
+      style="solid" variancy="1.00" size="1.00" scale="0.300"/>
+      <atom id="30" element="Se" x="-8.5824" y="6.1268" z="-0.1769"
+      style="solid" variancy="1.00" size="1.00" scale="0.300"/>
+      <atom element="Se" x="-5.7981" y="6.1541" z="-1.8916" style="solid"
+      variancy="1.00" size="1.00" scale="0.300"/>
+      <atom element="Se" x="-8.5824" y="1.9004" z="0.9184" style="solid"
+      variancy="1.00" size="1.00" scale="0.300"/>
+      <atom id="31" element="Se" x="5.5451" y="-4.4118" z="0.8468"
+      style="solid" variancy="1.00" size="1.00" scale="0.300"/>
+      <atom id="32" element="Se" x="4.5484" y="-3.1554" z="-1.1865"
+      style="solid" variancy="1.00" size="1.00" scale="0.300"/>
+      <atom id="33" element="Se" x="1.7641" y="1.9278" z="-0.7963"
+      style="solid" variancy="1.00" size="1.00" scale="0.300"/>
+      <atom id="34" element="Se" x="0.7674" y="3.1842" z="-2.8295"
+      style="solid" variancy="1.00" size="1.00" scale="0.300"/>
+      <atom id="35" element="Se" x="-2.0170" y="-4.4118" z="0.8468"
+      style="solid" variancy="1.00" size="1.00" scale="0.300"/>
+      <atom id="36" element="Se" x="-3.0137" y="-3.1554" z="-1.1865"
+      style="solid" variancy="1.00" size="1.00" scale="0.300"/>
+      <atom id="37" element="Se" x="-5.7981" y="1.9278" z="-0.7963"
+      style="solid" variancy="1.00" size="1.00" scale="0.300"/>
+      <atom id="38" element="Se" x="-6.7948" y="3.1842" z="-2.8295"
+      style="solid" variancy="1.00" size="1.00" scale="0.300"/>
+      <atom id="39" element="Se" x="6.5418" y="-2.3260" z="2.0138"
+      style="solid" variancy="1.00" size="1.00" scale="0.300"/>
+      <atom id="40" element="Se" x="4.5484" y="-1.9112" z="3.6139"
+      style="solid" variancy="1.00" size="1.00" scale="0.300"/>
+      <atom id="41" element="Se" x="2.7608" y="4.0136" z="0.3707"
+      style="solid" variancy="1.00" size="1.00" scale="0.300"/>
+      <atom id="42" element="Se" x="0.7674" y="4.4283" z="1.9709"
+      style="solid" variancy="1.00" size="1.00" scale="0.300"/>
+      <atom id="43" element="Se" x="-1.0203" y="-2.3260" z="2.0138"
+      style="solid" variancy="1.00" size="1.00" scale="0.300"/>
+      <atom id="44" element="Se" x="-3.0137" y="-1.9112" z="3.6139"
+      style="solid" variancy="1.00" size="1.00" scale="0.300"/>
+      <atom id="45" element="Se" x="-4.8014" y="4.0136" z="0.3707"
+      style="solid" variancy="1.00" size="1.00" scale="0.300"/>
+      <atom id="46" element="Se" x="-6.7948" y="4.4283" z="1.9709"
+      style="solid" variancy="1.00" size="1.00" scale="0.300"/>
+      <bond parent1="1" parent2="2" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.700"/>
+      <bond parent1="1" parent2="3" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.700"/>
+      <bond parent1="3" parent2="4" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.700"/>
+      <bond parent1="5" parent2="6" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.700"/>
+      <bond parent1="7" parent2="8" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.700"/>
+      <bond parent1="9" parent2="10" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.700"/>
+      <bond parent1="11" parent2="12" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.700"/>
+      <bond parent1="13" parent2="14" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.700"/>
+      <bond parent1="13" parent2="15" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.700"/>
+      <bond parent1="15" parent2="16" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.700"/>
+      <bond parent1="17" parent2="18" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.700"/>
+      <bond parent1="19" parent2="20" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.700"/>
+      <bond parent1="19" parent2="21" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.700"/>
+      <bond parent1="21" parent2="22" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.700"/>
+      <bond parent1="23" parent2="24" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.700"/>
+      <bond parent1="23" parent2="25" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.700"/>
+      <bond parent1="25" parent2="26" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.700"/>
+      <bond parent1="27" parent2="28" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.700"/>
+      <bond parent1="29" parent2="30" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.700"/>
+      <bond parent1="31" parent2="32" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.700"/>
+      <bond parent1="31" parent2="39" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.700"/>
+      <bond parent1="33" parent2="34" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.700"/>
+      <bond parent1="33" parent2="41" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.700"/>
+      <bond parent1="35" parent2="36" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.700"/>
+      <bond parent1="35" parent2="43" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.700"/>
+      <bond parent1="37" parent2="38" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.700"/>
+      <bond parent1="37" parent2="45" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.700"/>
+      <bond parent1="39" parent2="40" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.700"/>
+      <bond parent1="41" parent2="42" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.700"/>
+      <bond parent1="43" parent2="44" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.700"/>
+      <bond parent1="45" parent2="46" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.700"/>
+    </cell>
+  </layer>
+</gml>

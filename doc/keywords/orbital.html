@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Keywords: Orbital</title>
+<link rel="icon" type="image/png" href="../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../css/board.css"/>
+</head>
+
+<body>
+
+<div class="board">
+<div>Orbital</div><div>&nbsp;</div>
+</div>
+
+<div class="contents">
+
+Only the low-level engine infra-structure of orbital objects is implemented 
+so far. The goal is to describe: 1) simple hydrogen-like orbitals, s, p, d, f, etc., 
+and its hybridisations, sp, sp2, sp3, etc.; 2) complex representations of the 
+electronic clouds surrounding the nucleus, commonly provided by combinations of 
+Gaussian, Slater and plane wave analytic functions; 3) combinations of numerical 
+functions usually described by spline line coefficients; 4) pseudo-potentials 
+electronic descriptions. The main difficulty with orbitals is to collect the data 
+from files with completely different formats, provided by Gaussian, ADF, DSolid, 
+Plana, etc. and build a common way to handle all this information. This problem 
+must be correlated with the way GAMGI handles input/output data. Orbitals can 
+own text objects, so for example the name of the orbital can be attached to it.
+
+</div>
+
+<div id="bottom">
+<a href="../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

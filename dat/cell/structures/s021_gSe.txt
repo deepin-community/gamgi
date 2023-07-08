@@ -1,0 +1,28 @@
+Structure 21
+Prototype: gamma-Se
+StrukturBericht / Pearson: A8 / hP3
+
+lattice parameters:
+Se          Te
+4.366 4.959 4.527 5.921
+
+Radius:
+Se: 1.1605 (half-distance)
+
+1. Building with space group (s021a.xml):
+152
+
+Wyckoff positions:
+Se 1a, x = 0.7364
+
+Cells 2 x 2 x 1
+
+1. Building with different volume (s021b.xml):
+Cells 1 x 1 x 3
+
+View:
+Se: style solid, size 1.0, variancy 1.0, scale 0.3
+SeSe: style solid, method length, color 0.5,0.5,0.5 scale 0.7
+
+Features:
+Helix 3_1 of Se atoms along the c axis.

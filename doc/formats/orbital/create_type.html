@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Formats: Orbital Create</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Orbital Create</h1>
+
+<div id="notebook">
+<ul>
+<li><span>Type</span></li>
+<li><a href="create_scope.html">Scope</a></li>
+<li><a href="create_volume.html">Volume</a></li>
+<li><a href="create_position.html">Position</a></li>
+<li><a href="create_view.html">View</a></li>
+</ul>
+</div>
+
+<div class="contents">
+
+<h3>n, l, m</h3>
+
+Set the n, l, m, quantum numbers of the hydrogen-based atomic orbital.
+
+<pre>
+Example: <b>&lt;orbital ... n="1" l="0" m="0"/></b> (no default)
+Allowed values: 1 &lt;= n &lt;= 6, 0 &lt;= l &lt;= n-1, -l &lt;= m &lt;= l (required)
+</pre>
+
+<h3>charge</h3>
+
+Set the nucleus charge for the atomic orbital
+(by default 1.0, the nucleus charge for Hydrogen).
+
+<pre>
+Example: <b>&lt;orbital ... charge="1.0"/></b> (default)
+(defined in <b>GAMGI_CHEM_ORBITAL_CHARGE</b>)
+Allowed values: positive real (optional)
+</pre>
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

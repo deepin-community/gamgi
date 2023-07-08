@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Formats: Introduction Comments</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/board.css"/>
+</head>
+
+<body>
+
+<div class="board">
+<div>Introduction Comments</div><div>&nbsp;</div>
+</div>
+
+<div class="contents">
+
+A comment block in XML starts with <b>&lt;!--</b> and ends with 
+<b>--&gt;</b>. Everything can go inside a comment block, except 
+the <b>--</b> sequence, for compatibility with older format 
+specifications (SGML).
+
+<h3>Good:</h3>
+
+<pre><b>
+&lt;!--comment--></b> no spaces needed between comment symbols and text
+
+<b>&lt;!-- 
+comment --></b> comments can be spawn over multiple lines
+</pre>
+
+<h3>Bad:</h3>
+
+<pre><b>
+&lt; !-- comment --></b> left comment symbol has a space in the middle
+
+<b>&lt;-- comment --></b> left comment symbol misses a ! character
+
+<b>&lt;!-- -- comment --></b> comment has a -- sequence
+</pre>
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

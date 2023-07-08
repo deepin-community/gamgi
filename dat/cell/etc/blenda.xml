@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE gml SYSTEM "http://www.gamgi.org/dtd/gamgi.dtd">
+<gml>
+  <gamgi>
+    <atom style="solid"/>
+    <bond style="solid"/>
+  </gamgi>
+  <layer perspective="no" red="1.000" green="1.000" blue="1.000" scale="2.288">
+    <light ambient_r="0.500" ambient_g="0.500" ambient_b="0.500"
+    diffuse_r="0.400" diffuse_g="0.400" diffuse_b="0.400" specular_r="0.300"
+    specular_g="0.300" specular_b="0.300" direction_x="0.0000"
+    direction_y="0.0000" direction_z="-1.0000"/>
+    <cell group="216" a="5.4060" x="-1.5033" y="-3.1110" z="-13.2500"
+    e1="108.59" e2="2.67" e3="8.00" red="0.000" green="0.000" blue="0.000"
+    scale="0.594">
+      <atom id="1" element="S" x="1.0231" y="1.5919" z="-17.8121"/>
+      <atom id="2" element="S" x="-1.5311" y="-1.2070" z="-17.3071"/>
+      <atom id="3" element="S" x="-0.6661" y="1.1359" z="-14.4131"/>
+      <atom id="4" element="S" x="1.8980" y="-1.4240" z="-15.6321"/>
+      <atom element="Zn" x="-1.5032" y="-3.1110" z="-13.2493"/>
+      <atom id="5" element="Zn" x="-3.2432" y="-2.4382" z="-18.3232"/>
+      <atom id="6" element="Zn" x="-1.5130" y="2.2476" z="-12.5355"/>
+      <atom element="Zn" x="-3.2531" y="2.9205" z="-17.6094"/>
+      <atom id="7" element="Zn" x="3.6151" y="-2.8720" z="-14.9727"/>
+      <atom element="Zn" x="1.8752" y="-2.1991" z="-20.0466"/>
+      <atom element="Zn" x="3.6053" y="2.4866" z="-14.2589"/>
+      <atom id="8" element="Zn" x="1.8654" y="3.1594" z="-19.3329"/>
+      <atom id="9" element="Zn" x="1.0510" y="-0.3122" z="-13.7541"/>
+      <atom id="10" element="Zn" x="-0.6889" y="0.3607" z="-18.8280"/>
+      <atom id="11" element="Zn" x="0.1859" y="-2.6551" z="-16.6484"/>
+      <atom id="12" element="Zn" x="0.1761" y="2.7036" z="-15.9347"/>
+      <atom id="13" element="Zn" x="-2.3782" y="-0.0953" z="-15.4298"/>
+      <atom id="14" element="Zn" x="2.7401" y="0.1437" z="-17.1533"/>
+      <bond parent1="1" parent2="8" size="0.20"/>
+      <bond parent1="1" parent2="10" size="0.20"/>
+      <bond parent1="1" parent2="12" size="0.20"/>
+      <bond parent1="1" parent2="14" size="0.20"/>
+      <bond parent1="2" parent2="5" size="0.20"/>
+      <bond parent1="2" parent2="10" size="0.20"/>
+      <bond parent1="2" parent2="11" size="0.20"/>
+      <bond parent1="2" parent2="13" size="0.20"/>
+      <bond parent1="3" parent2="6" size="0.20"/>
+      <bond parent1="3" parent2="9" size="0.20"/>
+      <bond parent1="3" parent2="12" size="0.20"/>
+      <bond parent1="3" parent2="13" size="0.20"/>
+      <bond parent1="4" parent2="7" size="0.20"/>
+      <bond parent1="4" parent2="9" size="0.20"/>
+      <bond parent1="4" parent2="11" size="0.20"/>
+      <bond parent1="4" parent2="14" size="0.20"/>
+    </cell>
+  </layer>
+</gml>

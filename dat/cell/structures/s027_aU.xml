@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE gml SYSTEM "http://www.gamgi.org/dtd/gamgi.dtd">
+<gml>
+  <layer perspective="no" scale="1.224">
+    <light ambient_r="0.500" ambient_g="0.500" ambient_b="0.500"
+    diffuse_r="0.400" diffuse_g="0.400" diffuse_b="0.400" specular_r="0.300"
+    specular_g="0.300" specular_b="0.300" direction_x="0.0000"
+    direction_y="0.0000" direction_z="-1.0000"/>
+    <cell group="63" a="2.8540" b="2.8540" c="4.9550" x="-1.3065" y="-2.4546"
+    z="1.5456" e1="80.46" e2="90.00" e3="209.79" axes="yes">
+      <atom element="U" x="-1.0526" y="-1.2089" z="1.6076" mass="238.0280"
+      style="solid"/>
+      <atom element="U" x="0.3653" y="-1.6194" z="4.0502" mass="238.0280"
+      style="solid"/>
+      <atom element="U" x="0.9165" y="1.4212" z="0.9065" mass="238.0280"
+      style="solid"/>
+      <atom element="U" x="2.3344" y="1.0107" z="3.3491" mass="238.0280"
+      style="solid"/>
+      <atom element="U" x="0.8948" y="-1.2966" z="2.1297" mass="238.0280"
+      style="solid"/>
+      <atom element="U" x="0.3870" y="1.0984" z="2.8270" mass="238.0280"
+      style="solid"/>
+    </cell>
+  </layer>
+</gml>

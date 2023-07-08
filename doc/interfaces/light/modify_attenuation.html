@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Interfaces: Light Modify</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Light Modify</h1>
+
+<div id="notebook">
+<ul>
+<li><a href="modify_geometry.html">Geometry</a></li>
+<li><a href="modify_color.html">Color</a></li>
+<li><span>Attenuation</span></li>
+</ul>
+</div>
+
+<div class="contents">
+
+Change here the attenuation parameters for a single light or a list of lights.
+
+<p/>
+
+To modify a light, click over the graphic area to open a menu and choose a light,
+or write its identification (name and number) on the <b>Light</b> entry. To modify
+a list of lights, press the button <b>List</b> (after creating the list of lights
+with <b>Light->Select</b>). Parameters for empty entries or <b>Local</b> choices
+remain unchanged.
+
+<p/>
+
+To change a light name write the new name in the <b>Light</b> entry,
+followed by the light number (GAMGI needs the number to identify the light).
+To change the name for a list of lights, press <b>List</b> first
+and then write the new common name in the <b>Name</b> entry.
+
+<h3>Axial</h3>
+
+Change the <b>Constant</b>, <b>Linear</b>, <b>Quadratic</b> parameters 
+that control the axial attenuation. This is defined only for positional
+and spot lights. The axial attenuation factor is given by:
+
+<pre>
+Axial Attenuation Factor = 1/(<b>constant</b> + <b>linear</b>*distance + <b>quadratic</b>*distance*distance)
+</pre>
+
+<h3>Radial</h3>
+
+Change the radial attenuation, defined only for spot
+lights. The radial attenuation factor is given by:
+
+<pre>
+Radial Attenuation Factor = [max (0, vertex . direction)]**<b>radial</b>
+</pre>
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

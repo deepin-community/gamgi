@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Formats: Plane Create</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Plane Create</h1>
+
+<div id="notebook">
+<ul>
+<li><span>Type</span></li>
+<li><a href="create_projection.html">Projection</a></li>
+<li><a href="create_scope.html">Scope</a></li>
+<li><a href="create_position.html">Position</a></li>
+<li><a href="create_view.html">View</a></li>
+</ul>
+</div>
+
+<div class="contents">
+
+<h3>reference</h3>
+
+When <b>reference</b> is <b>cell</b>, the plane is crystallographic
+so plane indices are required and its parent must be a cell.
+When <b>reference</b> is <b>atoms</b>, the plane is described
+by real and integer polygon data inside two &lt;data>&lt;/data> blocks,
+so the plane becomes independent of the atoms used to define it.
+
+<pre>
+Example: <b>&lt;plane ... reference="cell"/></b> (default)
+Allowed values: <b>cell</b>, <b>atoms</b> (optional)
+</pre>
+
+<h3>h, k, l</h3>
+
+Set the indices <b>h, k, l</b> defining a crystallographic plane.
+The three indices cannot be all zero. An error is shown when these 
+indices are not indicated for a crystallographic plane or when they 
+are indicated for an atomic plane.
+
+<pre>
+Example: <b>&lt;plane ... h="1" k="0" l="0"/></b> (no default)
+Allowed values: integer (required, coupled)
+</pre>
+
+<h3>vectors</h3>
+
+Set the type of cell vectors, <b>conventional</b> or <b>primitive</b>,
+used to determine the crystallographic plane with <b>h</b>, <b>k</b>, 
+<b>l</b> indices. When the lattice is primitive there is no difference 
+between <b>conventional</b> or <b>primitive</b> cell vectors.
+An error is shown when <b>vectors</b> is set for an atomic plane.
+
+<pre>
+Example: <b>&lt;plane ... vectors="conventional"/></b> (default)
+(defined in <b>GAMGI_PHYS_PLANE_VECTORS</b>)
+Allowed values: <b>conventional</b>, <b>primitive</b> (optional)
+</pre>
+
+<h3>model</h3>
+
+An atomic plane is always represented as a <b>polygon</b>.
+A crystallographic plane can also be represented as a
+<b>pole</b>, a <b>trace</b> (for projected planes), or
+a <b>vector</b> (for reciprocal lattice planes).
+
+<pre>
+Example: <b>&lt;plane ... model="polygon"/></b> (default)
+Allowed values: <b>polygon</b>, <b>pole</b>, <b>trace</b>, <b>vector</b> (optional)
+</pre>
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

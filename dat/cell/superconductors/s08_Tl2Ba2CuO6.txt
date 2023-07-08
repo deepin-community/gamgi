@@ -1,0 +1,37 @@
+Superconductor (Tc = 95K): Tl2Ba2CuO6
+Structure: 2201
+
+Space group: 139
+
+Lattice parameters:
+3.8637 23.1392
+
+Wyckoff positions:
+Tl 2e, z = 0.2971
+Ba 2e, z = 0.0847
+Cu 1b
+O 2c
+O 2e, z = 0.3827
+O 8n, y = 0.1043 z = 0.2104, Occupancy = 0.25
+
+Wyckoff change:
+O 8n -> 2e, z = 0.2104
+
+1. with Cell (s08a.xml):
+Cell Change XYZ: 0.0, 0.0, 0.5
+Bond: Color 0.5,0.5,0.5, Scale 0.4
+
+2. with Polytopes (s08b.xml):
+Cell Change XYZ: 0.0, 0.0, 0.5
+Cells: 2 x 2 x 2
+Neighbours: O
+Number: 6
+
+References:
+H. Shaked, P.M. Keane, J.C. Rodriguez, F.F. Owen, R.L. Hitterman,
+J.D. Jorgensen, Crystal structures of the High-Tc Superconducting
+Copper-Oxides, Physica C, Elsevier Science, Amsterdam, 1994
+
+F. Izumi, J.D. Jorgensen, Y. Shimakawa, Y. Kubo, T. Manoko,
+S. Pei, T. Matsumoto, R.L. Hitterman, and Y. Kanke, Physica C
+193, 426 (1992)

@@ -1,0 +1,93 @@
+Author: Daniel Leidert <dleidert@debian.org>
+Description: Setup make files for build on Debian
+ Don't hardcode paths and try to rely on pkg-config as much as possible
+ in a cross-build compliant way.
+Bug-Debian: https://bugs.debian.org/621946
+Forwarded: no
+
+--- a/src/make_rules
++++ b/src/make_rules
+@@ -15,6 +15,7 @@ SHELL=/bin/sh
+ #================================ compiler =================================
+ 
+ CC ?= gcc
++PKG_CONFIG ?= pkg-config
+ 
+ CFLAGS ?= -O3 -Wall -ansi -g 
+ override CFLAGS += -Wno-deprecated-declarations
+@@ -30,21 +31,18 @@ EXE = gamgi
+ 
+ #================================ shared libs ==============================
+ 
+-LIBS = -lgtkglext-x11-1.0 -lgdkglext-x11-1.0 \
+-	-lGLU -lGL -lgtk-x11-2.0 -lgdk-x11-2.0 -latk-1.0 -lgdk_pixbuf-2.0 \
+-	-lpangocairo-1.0 -lpango-1.0 -lcairo -lgobject-2.0 -lgmodule-2.0 \
+-	-lglib-2.0 -lXext -lX11 -lXi -lXmu -lfreetype -lexpat -lm -ldl
++LIBS = $(shell $(PKG_CONFIG) --libs-only-l gtkglext-x11-1.0 gtk+-2.0 glib-2.0 \
++       freetype2 x11) \
++       -lXext -lXi -lXmu -lexpat -lm -ldl
+ 
+ #================================ full paths ===============================
+ 
+ PATH_H = $(PATH_GAMGI_H) \
+-	$(PATH_GTKGL_H) $(PATH_MESA_H) $(PATH_GTK_H) $(PATH_ATK_H) \
+-	$(PATH_PIXBUFF_H) $(PATH_PANGO_H) $(PATH_CAIRO_H) $(PATH_GLIB_H) \
+-	$(PATH_X_H) $(PATH_HARFBUZZ_H) $(PATH_FREETYPE_H) $(PATH_EXPAT_H)
+-
+-PATH_L = $(PATH_GTKGL_L) $(PATH_MESA_L) $(PATH_GTK_L) $(PATH_ATK_L) \
+-	$(PATH_PIXBUFF_L) $(PATH_PANGO_L) $(PATH_CAIRO_L) $(PATH_GLIB_L) \
+-	$(PATH_X_L) $(PATH_PIXBUFF_L) $(PATH_FREETYPE_L) $(PATH_EXPAT_L)
++       $(PATH_GTKGL_H) $(PATH_MESA_H) $(PATH_GTK_H) $(PATH_GLIB_H) \
++       $(PATH_X_H) $(PATH_FREETYPE_H) $(PATH_EXPAT_H)
++
++PATH_L = $(PATH_GTKGL_L) $(PATH_MESA_L) $(PATH_GTK_L) $(PATH_GLIB_L) \
++       $(PATH_X_L) $(PATH_FREETYPE_L) $(PATH_EXPAT_L)
+ 
+ #============================== compile all ================================
+ 
+--- a/src/make_local
++++ b/src/make_local
+@@ -19,32 +19,26 @@
+ #===============================================================================
+ 
+ ARCH = x86_64-linux-gnu
++PKG_CONFIG ?= pkg-config
+ 
+ PATH_EXPAT_H = -I/usr/include
+-PATH_FREETYPE_H = -I/usr/include/freetype2
+ PATH_HARFBUZZ_H = -I/usr/include/harfbuzz
+-PATH_X_H = -I/usr/include/X11
+-PATH_GLIB_H = -I/usr/include/glib-2.0 -I/usr/lib/$(ARCH)/glib-2.0/include
+-PATH_CAIRO_H = -I/usr/include/cairo
+-PATH_PANGO_H = -I/usr/include/pango-1.0
+ PATH_PIXBUFF_H = -I/usr/include/gdk-pixbuf-2.0
+-PATH_ATK_H = -I/usr/include/atk-1.0
+-PATH_GTK_H =  -I/usr/include/gtk-2.0 -I/usr/lib/$(ARCH)/gtk-2.0/include
++PATH_FREETYPE_H = -I/usr/include $(shell $(PKG_CONFIG) --cflags freetype2)
++PATH_X_H = -I/usr/include $(shell $(PKG_CONFIG) --cflags x11)
++PATH_GLIB_H = -I/usr/include $(shell $(PKG_CONFIG) --cflags glib-2.0)
++PATH_GTK_H =  -I/usr/include $(shell $(PKG_CONFIG) --cflags gtk+-2.0)
+ PATH_MESA_H = -I/usr/include
+-PATH_GTKGL_H = -I/usr/include/gtkglext-1.0 -I/usr/lib/$(ARCH)/gtkglext-1.0/include/
++PATH_GTKGL_H = -I/usr/include $(shell $(PKG_CONFIG) --cflags gtkglext-x11-1.0)
+ 
+ PATH_EXPAT_L = -L/usr/lib
+-PATH_FREETYPE_L = -L/usr/lib
+ PATH_HARFBUZZ_L = -L/usr/lib
+-PATH_X_L = -L/usr/lib
+-PATH_GLIB_L = -L/usr/lib
+-PATH_CAIRO_L = -L/usr/lib
+-PATH_PANGO_L = -L/usr/lib
+-PATH_PIXBUFF_L = -L/usr/lib
+-PATH_ATK_L = -L/usr/lib
+-PATH_GTK_L =  -L/usr/lib
++PATH_FREETYPE_L = -L/usr/lib $(shell $(PKG_CONFIG) --libs-only-L freetype2)
++PATH_X_L = -L/usr/lib $(shell $(PKG_CONFIG) --libs-only-L x11)
++PATH_GLIB_L = -L/usr/lib $(shell $(PKG_CONFIG) --libs-only-L glib-2.0)
++PATH_GTK_L = -L/usr/lib $(shell $(PKG_CONFIG) --libs-only-L gtk+-2.0)
+ PATH_MESA_L = -L/usr/lib
+-PATH_GTKGL_L =-L/usr/lib
++PATH_GTKGL_L = -L/usr/lib $(shell $(PKG_CONFIG) --libs-only-L gtkglext-x11-1.0)
+ 
+ #============================== Linux amd64 ====================================
+ #                 Debian, Fedora, Ubuntu, OpenSuse, Mageia

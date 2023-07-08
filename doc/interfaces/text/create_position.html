@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Interfaces: Text Create</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Text Create</h1>
+
+<div id="notebook">
+<ul>
+<li><a href="create_contents.html">Contents</a></li>
+<li><span>Position</span></li>
+<li><a href="create_view.html">View</a></li>
+</ul>
+</div>
+
+<div class="contents">
+
+Define here the text position and orientation.
+
+<h3>Translation</h3>
+
+The origin of a text object, defined as its top left corner,
+can be set using the <b>X</b>, <b>Y</b>, <b>Z</b> entries.
+
+A simpler way to set directly the text position is to click on 
+the screen, at the wished position, after defining all the other 
+text properties: a new text object is created at that position.
+
+<h3>Rotation</h3>
+
+The orientation of a text object, defined by the Euler angles theta, 
+phi, psi, can be set using the <b>E1</b>, <b>E2</b>, <b>E3</b> entries.
+
+<p/>
+
+Euler angles in GAMGI are defined as follows: first, the (x, y, z) 
+referential is rotated theta degrees (between 0 and 180) around the 
+y axis, then the referential is rotated phi degrees (between 0 and 360) 
+around the initial z axis, and finally it is rotated psi degrees (between 
+0 and 360) around the new z axis, always in the direct, counter-clockwise, 
+direction. If the first Euler angle (theta) is zero, the old and new z axis 
+coincide, thus (0, 0, 10) and (0, 5, 5) represent the same rotation. 
+
+<p/>
+
+By default text objects are on a plane parallel to the screen, 
+corresponding to Euler angles (0, 0, 0). For this orientation,
+<b>Wired</b> (stroked) text objects, and <b>Solid</b> (extruded) 
+text objects in a layer with an orthographic projection, will
+look exactly as normal 2D text messages.
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

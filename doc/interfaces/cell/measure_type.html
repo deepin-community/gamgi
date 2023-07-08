@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Interfaces: Cell Measure</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Cell Measure</h1>
+
+<div id="notebook">
+<ul>
+<li><span>Type</span></li>
+<li><a href="measure_reciprocal.html">Reciprocal</a></li>
+<li><a href="measure_voronoi.html">Voronoi</a></li>
+<li><a href="measure_tolerance.html">Tolerance</a></li>
+<li><a href="measure_view.html">View</a></li>
+</ul>
+</div>
+
+<div class="contents">
+            
+Chose the method of analysis: <b>Geometry</b>, <b>Reciprocal</b> or <b>Voronoi</b>.
+
+<h3>Geometry</h3>
+
+This method measures all the bond lengths, angles and torsions in the
+structure, reporting for each quantity, the number of occurrences, the
+minimum and maximum values, the average value and the standard deviation.
+Geometric relations between non bonded atoms are ignored.
+
+<p/>
+
+Undefined bond angles (when at least two atoms are coincident) are reported
+for each angle sequence. Undefined bond torsions (when at least two atoms
+are coincident or three atoms are colinear) are reported for each torsion
+sequence.
+
+<h3>Reciprocal</h3>
+
+This method builds in a new Layer the reciprocal lattice of the Cell
+lattice. Optionally, Plane objects (described by cross patterns, as in
+stereographic projections) can be added to the reciprocal lattice nodes.
+Optionally, the reciprocal lattice of the primitive lattice related
+with the Cell lattice can also be constucted.
+
+<h3>Voronoi</h3>
+
+This method determines the Voronoi tesselation of the structure,
+shows the resulting polyhedra in a new layer, and reports a large 
+list of its most important geometrical and topological properties.
+
+<p/>
+
+This analysis can be made with planar bondaries (to close the 
+outside polyhedra) or with full periodic boundary conditions,
+with equal weights for all atoms (the usual Voronoi tesselation) 
+or with a different weight for each atom (given by its atomic 
+radius, the so-called radical tesselation).
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

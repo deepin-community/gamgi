@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE gml SYSTEM "http://www.gamgi.org/dtd/gamgi.dtd">
+<gml>
+  <molecule name="Fe[Cp(CH3)5]2">
+    <atom element="Fe" x="-0.2400" y="0.5473" z="0.0000" style="solid"/>
+    <atom id="1" element="C" x="0.6445" y="1.6607" z="1.4691"/>
+    <atom id="2" element="C" x="0.7486" y="2.3278" z="0.2212"/>
+    <atom id="3" element="C" x="-0.5643" y="2.5566" z="-0.2673"/>
+    <atom id="4" element="C" x="1.7842" y="1.2629" z="2.3523"/>
+    <atom id="5" element="C" x="2.0333" y="2.7852" z="-0.4259"/>
+    <atom id="6" element="C" x="-0.9459" y="3.2844" z="-1.5191"/>
+    <atom id="7" element="H" x="2.2548" y="3.7085" z="-0.1123"/>
+    <atom id="8" element="H" x="1.9235" y="2.7887" z="-1.4199"/>
+    <atom id="9" element="H" x="2.7739" y="2.1619" z="-0.1749"/>
+    <atom id="10" element="H" x="-1.0295" y="4.2618" z="-1.3247"/>
+    <atom id="11" element="H" x="-1.8212" y="2.9357" z="-1.8543"/>
+    <atom id="12" element="H" x="-0.2423" y="3.1425" z="-2.2155"/>
+    <atom id="13" element="C" x="-1.1245" y="-0.5662" z="-1.4691"/>
+    <atom id="14" element="C" x="-1.2286" y="-1.2333" z="-0.2212"/>
+    <atom id="15" element="C" x="-0.7340" y="1.4834" z="1.7540"/>
+    <atom id="16" element="C" x="0.2540" y="-0.3888" z="-1.7540"/>
+    <atom id="17" element="C" x="0.0843" y="-1.4621" z="0.2673"/>
+    <atom id="18" element="C" x="-1.4807" y="2.0347" z="0.6800"/>
+    <atom id="19" element="C" x="1.0007" y="-0.9402" z="-0.6800"/>
+    <atom id="20" element="C" x="-2.2642" y="-0.1683" z="-2.3523"/>
+    <atom id="21" element="C" x="-2.5133" y="-1.6907" z="0.4259"/>
+    <atom id="22" element="C" x="-1.2998" y="0.8868" z="3.0198"/>
+    <atom id="23" element="C" x="0.8198" y="0.2077" z="-3.0198"/>
+    <atom id="24" element="C" x="0.4659" y="-2.1899" z="1.5191"/>
+    <atom id="25" element="C" x="-2.9713" y="2.1309" z="0.5747"/>
+    <atom id="26" element="C" x="2.4913" y="-1.0363" z="-0.5747"/>
+    <atom id="27" element="H" x="-2.7348" y="-2.6140" z="0.1123"/>
+    <atom id="28" element="H" x="-3.2539" y="-1.0674" z="0.1749"/>
+    <atom id="29" element="H" x="-2.4035" y="-1.6942" z="1.4199"/>
+    <atom id="30" element="H" x="-1.4320" y="1.6087" z="3.6990"/>
+    <atom id="31" element="H" x="-0.6646" y="0.2035" z="3.3797"/>
+    <atom id="32" element="H" x="-2.1783" y="0.4525" z="2.8205"/>
+    <atom id="33" element="H" x="0.9520" y="-0.5142" z="-3.6990"/>
+    <atom id="34" element="H" x="1.6983" y="0.6420" z="-2.8205"/>
+    <atom id="35" element="H" x="0.1846" y="0.8911" z="-3.3797"/>
+    <atom id="36" element="H" x="0.5495" y="-3.1673" z="1.3247"/>
+    <atom id="37" element="H" x="-0.2377" y="-2.0480" z="2.2155"/>
+    <atom id="38" element="H" x="1.3412" y="-1.8412" z="1.8543"/>
+    <atom id="39" element="H" x="-3.2823" y="2.9787" z="1.0042"/>
+    <atom id="40" element="H" x="-3.3898" y="1.3498" z="1.0383"/>
+    <atom id="41" element="H" x="-3.2387" y="2.1284" z="-0.3889"/>
+    <atom id="42" element="H" x="2.8023" y="-1.8842" z="-1.0042"/>
+    <atom id="43" element="H" x="2.7587" y="-1.0338" z="0.3889"/>
+    <atom id="44" element="H" x="2.9098" y="-0.2553" z="-1.0383"/>
+    <atom id="45" element="H" x="2.0012" y="2.0138" z="2.9759"/>
+    <atom id="46" element="H" x="2.5850" y="1.0548" z="1.7907"/>
+    <atom id="47" element="H" x="1.5296" y="0.4536" z="2.8818"/>
+    <atom id="48" element="H" x="-2.4812" y="-0.9193" z="-2.9759"/>
+    <atom id="49" element="H" x="-2.0096" y="0.6409" z="-2.8818"/>
+    <atom id="50" element="H" x="-3.0650" y="0.0398" z="-1.7907"/>
+    <bond parent1="1" parent2="2"/>
+    <bond parent1="1" parent2="4"/>
+    <bond parent1="1" parent2="15"/>
+    <bond parent1="2" parent2="3"/>
+    <bond parent1="2" parent2="5"/>
+    <bond parent1="3" parent2="6"/>
+    <bond parent1="3" parent2="18"/>
+    <bond parent1="4" parent2="45"/>
+    <bond parent1="4" parent2="46"/>
+    <bond parent1="4" parent2="47"/>
+    <bond parent1="5" parent2="7"/>
+    <bond parent1="5" parent2="8"/>
+    <bond parent1="5" parent2="9"/>
+    <bond parent1="6" parent2="10"/>
+    <bond parent1="6" parent2="11"/>
+    <bond parent1="6" parent2="12"/>
+    <bond parent1="13" parent2="14"/>
+    <bond parent1="13" parent2="16"/>
+    <bond parent1="13" parent2="20"/>
+    <bond parent1="14" parent2="17"/>
+    <bond parent1="14" parent2="21"/>
+    <bond parent1="15" parent2="18"/>
+    <bond parent1="15" parent2="22"/>
+    <bond parent1="16" parent2="19"/>
+    <bond parent1="16" parent2="23"/>
+    <bond parent1="17" parent2="19"/>
+    <bond parent1="17" parent2="24"/>
+    <bond parent1="18" parent2="25"/>
+    <bond parent1="19" parent2="26"/>
+    <bond parent1="20" parent2="48"/>
+    <bond parent1="20" parent2="49"/>
+    <bond parent1="20" parent2="50"/>
+    <bond parent1="21" parent2="27"/>
+    <bond parent1="21" parent2="28"/>
+    <bond parent1="21" parent2="29"/>
+    <bond parent1="22" parent2="30"/>
+    <bond parent1="22" parent2="31"/>
+    <bond parent1="22" parent2="32"/>
+    <bond parent1="23" parent2="33"/>
+    <bond parent1="23" parent2="34"/>
+    <bond parent1="23" parent2="35"/>
+    <bond parent1="24" parent2="36"/>
+    <bond parent1="24" parent2="37"/>
+    <bond parent1="24" parent2="38"/>
+    <bond parent1="25" parent2="39"/>
+    <bond parent1="25" parent2="40"/>
+    <bond parent1="25" parent2="41"/>
+    <bond parent1="26" parent2="42"/>
+    <bond parent1="26" parent2="43"/>
+    <bond parent1="26" parent2="44"/>
+  </molecule>
+</gml>

@@ -1,0 +1,36 @@
+Superconductor (Tc = 34K): Bi2Sr2(Gd,Ce)2Cu2O10
+Structure: 2201 T*
+
+Space group: 129
+
+Lattice parameters:
+3.85 17.88
+
+Wyckoff positions:
+Bi 2c, z = 0.089
+Sr 2c, z = 0.7800
+Gd,Ce 2c, z = 0.5750
+Cu 2c, z = 0.3270
+O 4f, z = 0.3270
+O 2c, z = 0.2260
+O 2b
+O 2c, z = 0.911
+
+1. with Cell (s10a.xml):
+Cell Change XYZ: -0.25, -0.25, -0.327
+Bond: Color 0.5,0.5,0.5, Scale 0.4
+
+2. with Polytopes (s10b.xml):
+Cell Change XYZ: -0.25, -0.25, -0.327
+Cells: 2 x 2 x 2
+Neighbours: O
+Number: 5
+
+References:
+H. Shaked, P.M. Keane, J.C. Rodriguez, F.F. Owen, R.L. Hitterman,
+J.D. Jorgensen, Crystal structures of the High-Tc Superconducting
+Copper-Oxides, Physica C, Elsevier Science, Amsterdam, 1994
+(Errata: data -> O4 is missing; image -> O4 and Bi are swapped)
+
+T. Arima, Y. Tokura, H. Takagi, S. Uchida, R. Beyers,
+and J.B. Torrance, Physica C 168, 79 (1990)

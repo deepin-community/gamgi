@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE gml SYSTEM "http://www.gamgi.org/dtd/gamgi.dtd">
+<gml>
+  <molecule name="O3">
+    <atom id="1" element="O" x="-1.1020" y="-0.3123" z="0.1829"/>
+    <atom id="2" element="O" x="-0.0780" y="0.4929" z="-0.0309"/>
+    <atom id="3" element="O" x="1.0260" y="-0.2206" z="-0.1513"/>
+    <bond parent1="1" parent2="2"/>
+    <bond parent1="2" parent2="3"/>
+  </molecule>
+</gml>

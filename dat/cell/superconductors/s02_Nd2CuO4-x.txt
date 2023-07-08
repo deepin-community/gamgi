@@ -1,0 +1,28 @@
+Superconductor (Tc = 24K): (Nd,Ce)2CuO4-x
+Structure: 0201 T'
+
+Space group: 139
+
+Lattice parameters:
+3.95 12.07
+
+Wyckoff positions:
+Nd,Ce 2e, z = 0.3513
+Cu 1a
+O 2c
+O 2d
+
+1. with Cell (s02a.xml):
+Bond: Color 0.5,0.5,0.5, Scale 0.4
+
+2. with Polytopes (s02b.xml):
+Cells: 2 x 2 x 2
+Neighbours: O
+Number: 4
+
+References:
+H. Shaked, P.M. Keane, J.C. Rodriguez, F.F. Owen, R.L. Hitterman,
+J.D. Jorgensen, Crystal structures of the High-Tc Superconducting
+Copper-Oxides, Physica C, Elsevier Science, Amsterdam, 1994
+
+Y. Tokura, H. Takagi, and S. Uchida, Nature 337, 345 (1989)

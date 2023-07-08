@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE gml SYSTEM "http://www.gamgi.org/dtd/gamgi.dtd">
+<gml>
+  <layer>
+    <text contents="Hello World" x="-5.1838" y="3.1761" z="2.0139" e1="51.29"
+    e2="46.40" e3="344.33" red="1.000" green="0.000" blue="1.000"/>
+    <text contents="Hello World" font="sans" x="1.3795" y="2.8299" z="-1.1149"
+    e1="25.91" e2="212.71" e3="155.29" red="0.000" green="1.000" blue="1.000"/>
+    <text contents="Hello World" font="sans_bold" x="-1.2597" y="1.3710"
+    z="0.0881" e1="0.41" e2="138.21" e3="222.54" red="0.000" green="1.000"
+    blue="1.000"/>
+    <text contents="Hello World" font="serif" x="7.8549" y="-0.8626"
+    z="-0.9511" e1="151.28" e2="112.61" e3="126.88" red="1.000" green="0.500"
+    blue="0.000"/>
+    <text contents="Hello World" font="serif_bold" x="4.9189" y="-0.9662"
+    z="-1.2500" e1="133.47" e2="102.50" e3="118.86" red="1.000" green="0.500"
+    blue="0.000"/>
+    <text contents="Hello World" font="script" x="0.8554" y="-2.1374"
+    z="0.0450" e1="1.27" e2="214.02" e3="146.41" red="1.000" green="1.000"
+    blue="0.000"/>
+    <text contents="Hello World" font="script_bold" x="7.4361" y="-2.1598"
+    z="-0.2857" e1="24.31" e2="83.59" e3="103.96" red="1.000" green="1.000"
+    blue="0.000"/>
+    <text contents="Hello World" font="gothic_english" x="-7.3841" y="0.3865"
+    z="0.0462" e1="0.41" e2="138.21" e3="222.54"/>
+    <text contents="Hello World" font="gothic_german" x="-7.5240" y="-0.7186"
+    z="0.0474" e1="0.41" e2="138.21" e3="222.54"/>
+    <text contents="Hello World" font="gothic_italian" x="-7.4680" y="-1.7381"
+    z="0.0533" e1="0.41" e2="138.21" e3="222.54" scale="0.939"/>
+    <text contents="Hello World" font="symbol_sans" x="-5.1169" y="-3.6226"
+    z="0.3753" e1="32.45" e2="96.39" e3="274.41" red="1.000" green="1.000"
+    blue="1.000" scale="0.734"/>
+    <text contents="Hello World" font="symbol_serif" x="0.1496" y="-4.4485"
+    z="-0.0337" e1="4.83" e2="126.73" e3="234.98" red="1.000" green="1.000"
+    blue="1.000" scale="0.811"/>
+    <text contents="Hello World" font="symbol_serif_bold" x="-6.6607"
+    y="-4.5893" z="0.0906" e1="0.41" e2="138.21" e3="222.54" red="1.000"
+    green="1.000" blue="1.000" scale="0.806"/>
+    <text contents="Hello World" font="roman_mono" x="-6.7750" y="1.1011"
+    z="1.5213" e1="41.09" e2="93.57" e3="297.74" red="1.000" green="0.000"
+    blue="1.000" scale="0.900"/>
+  </layer>
+</gml>

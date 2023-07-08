@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Formats: Atom Create</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Atom Create</h1>
+
+<div id="notebook">
+<ul>
+<li><span>Type</span></li>
+<li><a href="create_property.html">Property</a></li>
+<li><a href="create_analysis.html">Analysis</a></li>
+<li><a href="create_position.html">Position</a></li>
+<li><a href="create_view.html">View</a></li>
+</ul>
+</div>
+
+<div class="contents">
+
+<h3>element</h3>
+
+Identifies the atom element or a Dummy atom, represented as <b>Du</b>.
+It must be present, otherwise an error is shown. Accepted values are
+"<b>Si</b>", "<b>&nbsp;Si</b>", "<b>Si&nbsp;</b>" but not "<b>SI</b>",
+"<b>si</b>", "<b>S i</b>" or "<b>14</b>".
+
+<pre>
+Example: <b>&lt;atom ... element="Si"/></b> (Si element)
+Allowed values: element name (required)
+</pre>
+
+<h3>label</h3>
+
+<b>Label</b> is useful to describe groups of atoms which share some
+properties, for example methyl and methilene hydrogens migh have atom
+types "<b>h3</b>" and "<b>h2</b>", respectively. Although its purpose
+is different, <b>label</b> is an alphanumeric attribute exactly as
+<b>name</b> or <b>id</b>. The default is the element name,
+converted to lowercase.
+
+<pre>
+Example: <b>&lt;atom label="si" element="Si" ... /></b> (default Si type)
+Allowed values: 20 alphanumeric characters maximum
+(defined in <b>GAMGI_ENGINE_TOKEN</b>) (optional)
+</pre>
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

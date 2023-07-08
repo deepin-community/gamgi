@@ -1,0 +1,25 @@
+Structure 28
+Prototype: Al3Ti
+StrukturBericht / Pearson: D0_22 / tI8
+
+Lattice parameters:
+Al3Ti        Al3Ta
+3.836 8.579  3.837 8.550
+Al3Hf        Ga3Ta
+3.928 8.888  3.836 8.579
+Pt3V         Pd3V
+3.839 7.796  3.850 7.750
+
+Radius:
+Al 1.4315 (half-distance)
+Ti 1.4480 (half-distance)
+
+1. Building with space group (s028.xml):
+Group: 139
+
+Wyckoff positions:
+Ti 1a
+Al 1b, 2d
+
+View:
+Al,Ti: style solid, size 0.8, variancy 0.0, scale 1.0

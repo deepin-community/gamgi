@@ -1,0 +1,7 @@
+<gml>
+<molecule name="D3h">
+<atom element="H" x="1" y="0" z="1"/>
+<atom element="H" x="-0.500000" y="-0.866025" z="1"/>
+<atom element="H" x="-0.500000" y="0.866025" z="1"/>
+</molecule>
+</gml>

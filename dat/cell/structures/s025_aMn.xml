@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE gml SYSTEM "http://www.gamgi.org/dtd/gamgi.dtd">
+<gml>
+  <layer perspective="no" scale="0.975">
+    <light ambient_r="0.500" ambient_g="0.500" ambient_b="0.500"
+    diffuse_r="0.400" diffuse_g="0.400" diffuse_b="0.400" specular_r="0.300"
+    specular_g="0.300" specular_b="0.300" direction_x="0.0000"
+    direction_y="0.0000" direction_z="-1.0000"/>
+    <cell group="217" a="8.8940" x="-4.2168" y="-4.1698" z="-6.8896"
+    e1="36.74" e2="345.30" e3="18.12" scale="0.850">
+      <atom id="1" element="Mn" x="-4.2168" y="-4.1698" z="-6.8896"
+      red="1.000" green="0.480" blue="0.780" style="solid"/>
+      <atom id="2" element="Mn" x="3.0375" y="-3.2137" z="-11.9457"
+      red="1.000" green="0.480" blue="0.780" style="solid"/>
+      <atom id="3" element="Mn" x="-4.2155" y="4.5690" z="-5.2353" red="1.000"
+      green="0.480" blue="0.780" style="solid"/>
+      <atom id="4" element="Mn" x="3.0388" y="5.5251" z="-10.2914" red="1.000"
+      green="0.480" blue="0.780" style="solid"/>
+      <atom id="5" element="Mn" x="0.9289" y="-5.5199" z="0.2380" red="1.000"
+      green="0.480" blue="0.780" style="solid"/>
+      <atom id="6" element="Mn" x="8.1832" y="-4.5638" z="-4.8181" red="1.000"
+      green="0.480" blue="0.780" style="solid"/>
+      <atom id="7" element="Mn" x="0.9302" y="3.2189" z="1.8923" red="1.000"
+      green="0.480" blue="0.780" style="solid"/>
+      <atom id="8" element="Mn" x="8.1845" y="4.1750" z="-3.1638" red="1.000"
+      green="0.480" blue="0.780" style="solid"/>
+      <atom id="9" element="Mn" x="1.9838" y="0.0026" z="-5.0267" red="1.000"
+      green="0.480" blue="0.780" style="solid"/>
+      <atom id="10" element="Mn" x="2.6519" y="-2.0366" z="-9.4133"
+      red="0.610" green="1.000" blue="0.780" style="solid"/>
+      <atom id="11" element="Mn" x="-1.9465" y="2.8977" z="-5.1589"
+      red="0.610" green="1.000" blue="0.780" style="solid"/>
+      <atom id="12" element="Mn" x="1.3150" y="-3.4987" z="-1.6889"
+      red="0.610" green="1.000" blue="0.780" style="solid"/>
+      <atom id="13" element="Mn" x="5.9151" y="2.6479" z="-3.8456" red="0.610"
+      green="1.000" blue="0.780" style="solid"/>
+      <atom id="14" element="Mn" x="-0.2856" y="-1.5245" z="-5.7085"
+      red="0.610" green="1.000" blue="0.780" style="solid"/>
+      <atom id="15" element="Mn" x="2.3700" y="2.0238" z="-6.9536" red="0.610"
+      green="1.000" blue="0.780" style="solid"/>
+      <atom id="16" element="Mn" x="4.2528" y="-1.6687" z="-4.9503"
+      red="0.610" green="1.000" blue="0.780" style="solid"/>
+      <atom id="17" element="Mn" x="1.5982" y="1.1798" z="-2.4943" red="0.610"
+      green="1.000" blue="0.780" style="solid"/>
+      <atom element="Mn" x="2.4047" y="-2.2010" z="-10.4092" red="0.310"
+      green="0.480" blue="0.780" style="solid"/>
+      <atom element="Mn" x="3.1983" y="-2.2262" z="-10.2766" red="0.310"
+      green="0.480" blue="0.780" style="solid"/>
+      <atom element="Mn" x="2.7340" y="-2.8467" z="-10.0589" red="0.310"
+      green="0.480" blue="0.780" style="solid"/>
+      <atom element="Mn" x="-2.7594" y="3.3403" z="-5.6314" red="0.310"
+      green="0.480" blue="0.780" style="solid"/>
+      <atom element="Mn" x="-2.8944" y="3.1927" z="-4.8516" red="0.310"
+      green="0.480" blue="0.780" style="solid"/>
+      <atom element="Mn" x="-2.4300" y="3.8131" z="-5.0693" red="0.310"
+      green="0.480" blue="0.780" style="solid"/>
+      <atom element="Mn" x="1.5620" y="-4.0158" z="-0.8221" red="0.310"
+      green="0.480" blue="0.780" style="solid"/>
+      <atom element="Mn" x="0.7684" y="-3.9906" z="-0.9547" red="0.310"
+      green="0.480" blue="0.780" style="solid"/>
+      <atom element="Mn" x="1.2326" y="-4.4887" z="-1.3841" red="0.310"
+      green="0.480" blue="0.780" style="solid"/>
+      <atom element="Mn" x="6.7280" y="2.8869" z="-3.2441" red="0.310"
+      green="0.480" blue="0.780" style="solid"/>
+      <atom element="Mn" x="6.8630" y="3.0345" z="-4.0239" red="0.310"
+      green="0.480" blue="0.780" style="solid"/>
+      <atom element="Mn" x="6.3988" y="3.5326" z="-3.5944" red="0.310"
+      green="0.480" blue="0.780" style="solid"/>
+      <atom id="18" element="Mn" x="0.5274" y="-1.2855" z="-5.1070"
+      red="0.310" green="0.480" blue="0.780" style="solid"/>
+      <atom id="19" element="Mn" x="2.6170" y="1.5067" z="-6.0867" red="0.310"
+      green="0.480" blue="0.780" style="solid"/>
+      <atom id="20" element="Mn" x="3.4399" y="-1.2261" z="-5.4228"
+      red="0.310" green="0.480" blue="0.780" style="solid"/>
+      <atom id="21" element="Mn" x="1.3511" y="1.0153" z="-3.4902" red="0.310"
+      green="0.480" blue="0.780" style="solid"/>
+      <atom id="22" element="Mn" x="0.6623" y="-1.1379" z="-5.8868"
+      red="0.310" green="0.480" blue="0.780" style="solid"/>
+      <atom id="23" element="Mn" x="2.1447" y="0.9901" z="-3.3576" red="0.310"
+      green="0.480" blue="0.780" style="solid"/>
+      <atom id="24" element="Mn" x="1.8234" y="1.5319" z="-6.2193" red="0.310"
+      green="0.480" blue="0.780" style="solid"/>
+      <atom id="25" element="Mn" x="3.3050" y="-1.3737" z="-4.6430"
+      red="0.310" green="0.480" blue="0.780" style="solid"/>
+      <atom id="26" element="Mn" x="0.1981" y="-0.6398" z="-5.4573"
+      red="0.310" green="0.480" blue="0.780" style="solid"/>
+      <atom id="27" element="Mn" x="3.7693" y="-0.7533" z="-4.8607"
+      red="0.310" green="0.480" blue="0.780" style="solid"/>
+      <atom id="28" element="Mn" x="1.6803" y="0.3696" z="-3.1399" red="0.310"
+      green="0.480" blue="0.780" style="solid"/>
+      <atom id="29" element="Mn" x="2.2876" y="1.0338" z="-6.6488" red="0.310"
+      green="0.480" blue="0.780" style="solid"/>
+      <atom id="30" element="Mn" x="-2.1406" y="-3.6823" z="-5.2109"
+      style="solid"/>
+      <atom id="31" element="Mn" x="-1.7420" y="-3.2464" z="-7.5136"
+      style="solid"/>
+      <atom id="32" element="Mn" x="-3.1129" y="-1.7755" z="-6.2453"
+      style="solid"/>
+      <atom id="33" element="Mn" x="3.8236" y="4.2869" z="-8.0071"
+      style="solid"/>
+      <atom id="34" element="Mn" x="1.4800" y="4.3614" z="-8.3986"
+      style="solid"/>
+      <atom id="35" element="Mn" x="2.8508" y="2.8904" z="-9.6669"
+      style="solid"/>
+      <atom id="36" element="Mn" x="6.1072" y="-3.4958" z="-6.2023"
+      style="solid"/>
+      <atom id="37" element="Mn" x="5.7086" y="-3.9317" z="-3.8996"
+      style="solid"/>
+      <atom id="38" element="Mn" x="7.0799" y="-2.0994" z="-4.5426"
+      style="solid"/>
+      <atom id="39" element="Mn" x="0.1452" y="2.9016" z="-0.6864"
+      style="solid"/>
+      <atom id="40" element="Mn" x="2.4888" y="2.8271" z="-0.2949"
+      style="solid"/>
+      <atom id="41" element="Mn" x="1.1175" y="0.9948" z="0.3481"
+      style="solid"/>
+      <atom id="42" element="Mn" x="4.0601" y="0.4901" z="-3.3480"
+      style="solid"/>
+      <atom id="43" element="Mn" x="2.7686" y="-1.2356" z="-2.7425"
+      style="solid"/>
+      <atom id="44" element="Mn" x="-0.0922" y="1.0706" z="-6.4109"
+      style="solid"/>
+      <atom id="45" element="Mn" x="1.1989" y="-0.3148" z="-7.6054"
+      style="solid"/>
+      <atom id="46" element="Mn" x="4.4586" y="0.9260" z="-5.6507"
+      style="solid"/>
+      <atom id="47" element="Mn" x="3.5425" y="-0.3892" z="-7.2139"
+      style="solid"/>
+      <atom id="48" element="Mn" x="0.4250" y="-1.1611" z="-3.1340"
+      style="solid"/>
+      <atom id="49" element="Mn" x="-0.4907" y="0.6347" z="-4.1082"
+      style="solid"/>
+      <atom id="50" element="Mn" x="3.0878" y="2.3969" z="-4.3824"
+      style="solid"/>
+      <atom id="51" element="Mn" x="0.8806" y="2.4670" z="-4.7511"
+      style="solid"/>
+      <atom id="52" element="Mn" x="2.1711" y="-2.2216" z="-6.5709"
+      style="solid"/>
+      <atom id="53" element="Mn" x="1.7958" y="-2.6320" z="-4.4022"
+      style="solid"/>
+      <bond parent1="1" parent2="30" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="1" parent2="31" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="1" parent2="32" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="2" parent2="10" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="3" parent2="11" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="4" parent2="33" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="4" parent2="34" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="4" parent2="35" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="5" parent2="12" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="6" parent2="36" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="6" parent2="37" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="6" parent2="38" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="7" parent2="39" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="7" parent2="40" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="7" parent2="41" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="8" parent2="13" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="9" parent2="14" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="9" parent2="15" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="9" parent2="16" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="9" parent2="17" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="9" parent2="42" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="9" parent2="43" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="9" parent2="44" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="9" parent2="45" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="9" parent2="46" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="9" parent2="47" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="9" parent2="48" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="9" parent2="49" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="9" parent2="50" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="9" parent2="51" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="9" parent2="52" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="9" parent2="53" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="10" parent2="45" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="10" parent2="47" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="10" parent2="52" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="11" parent2="44" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="11" parent2="49" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="11" parent2="51" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="12" parent2="43" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="12" parent2="48" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="12" parent2="53" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="13" parent2="42" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="13" parent2="46" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="13" parent2="50" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="14" parent2="30" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="14" parent2="31" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="14" parent2="32" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="14" parent2="44" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="14" parent2="45" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="14" parent2="48" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="14" parent2="49" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="14" parent2="52" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="14" parent2="53" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="15" parent2="33" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="15" parent2="34" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="15" parent2="35" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="15" parent2="44" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="15" parent2="45" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="15" parent2="46" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="15" parent2="47" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="15" parent2="50" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="15" parent2="51" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="16" parent2="36" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="16" parent2="37" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="16" parent2="38" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="16" parent2="42" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="16" parent2="43" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="16" parent2="46" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="16" parent2="47" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="16" parent2="52" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="16" parent2="53" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="17" parent2="39" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="17" parent2="40" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="17" parent2="41" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="17" parent2="42" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="17" parent2="43" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="17" parent2="48" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="17" parent2="49" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="17" parent2="50" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="17" parent2="51" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="18" parent2="20" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="18" parent2="21" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="18" parent2="25" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="18" parent2="28" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="18" parent2="44" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="18" parent2="45" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="18" parent2="49" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="18" parent2="52" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="19" parent2="20" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="19" parent2="21" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="19" parent2="23" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="19" parent2="27" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="19" parent2="44" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="19" parent2="45" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="19" parent2="47" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="19" parent2="51" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="20" parent2="22" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="20" parent2="29" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="20" parent2="42" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="20" parent2="43" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="20" parent2="46" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="20" parent2="53" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="21" parent2="24" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="21" parent2="26" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="21" parent2="42" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="21" parent2="43" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="21" parent2="48" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="21" parent2="50" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="22" parent2="24" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="22" parent2="25" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="22" parent2="29" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="22" parent2="44" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="22" parent2="48" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="22" parent2="49" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="22" parent2="53" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="23" parent2="24" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="23" parent2="25" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="23" parent2="27" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="23" parent2="43" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="23" parent2="48" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="23" parent2="49" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="23" parent2="51" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="24" parent2="26" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="24" parent2="45" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="24" parent2="46" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="24" parent2="47" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="24" parent2="50" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="25" parent2="28" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="25" parent2="42" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="25" parent2="46" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="25" parent2="47" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="25" parent2="52" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="26" parent2="28" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="26" parent2="29" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="26" parent2="45" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="26" parent2="48" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="26" parent2="52" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="26" parent2="53" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="27" parent2="28" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="27" parent2="29" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="27" parent2="43" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="27" parent2="47" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="27" parent2="52" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="27" parent2="53" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="28" parent2="42" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="28" parent2="49" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="28" parent2="50" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="28" parent2="51" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="29" parent2="44" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="29" parent2="46" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="29" parent2="50" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="29" parent2="51" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="30" parent2="31" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="30" parent2="32" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="31" parent2="32" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="33" parent2="34" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="33" parent2="35" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="34" parent2="35" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="36" parent2="37" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="36" parent2="38" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="37" parent2="38" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="39" parent2="40" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="39" parent2="41" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="40" parent2="41" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="42" parent2="43" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="42" parent2="46" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="42" parent2="50" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="43" parent2="48" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="43" parent2="53" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="44" parent2="45" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="44" parent2="49" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="44" parent2="51" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="45" parent2="47" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="45" parent2="52" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="46" parent2="47" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="46" parent2="50" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="47" parent2="52" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="48" parent2="49" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="48" parent2="53" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="49" parent2="51" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="50" parent2="51" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+      <bond parent1="52" parent2="53" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500" scale="0.300"/>
+    </cell>
+    <atom element="Mn" x="-6.6179" y="0.9736" z="2.5566" style="solid"/>
+    <atom element="Mn" x="-6.6470" y="2.6934" z="2.4416" red="0.610"
+    green="1.000" blue="0.780" style="solid"/>
+    <atom element="Mn" x="-6.6101" y="3.4812" z="0.5141" red="1.000"
+    green="0.480" blue="0.780" style="solid"/>
+    <atom element="Mn" x="-6.6418" y="1.7990" z="-0.7056" red="0.310"
+    green="0.480" blue="0.780" style="solid"/>
+    <text contents="1a" x="-5.5681" y="3.1006" z="0.0000" scale="0.800"/>
+    <text contents="4c" x="-5.6079" y="2.3275" z="0.0000" scale="0.800"/>
+    <text contents="12g" x="-5.6527" y="1.5083" z="0.0000" scale="0.800"/>
+    <text contents="12g" x="-5.6276" y="0.6698" z="0.0000" scale="0.800"/>
+    <text contents="Wyckoff" x="-7.4105" y="4.0090" z="0.0000" scale="0.800"/>
+  </layer>
+</gml>

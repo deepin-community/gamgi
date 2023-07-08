@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Interfaces: Group Modify</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Group Modify</h1>
+
+<div id="notebook">
+<ul>
+<li><a href="modify_type.html">Type</a></li>
+<li><a href="modify_scope.html">Scope</a></li>
+<li><a href="modify_tolerance.html">Tolerance</a></li>
+<li><span>View</span></li>
+</ul>
+</div>
+
+<div class="contents">
+            
+Change here the visual representation for a single group or a list of groups.
+
+<p/>
+
+To modify a group, click over its graphic image, or write its identification
+(name and number) on the <b>Group</b> entry. To modify a list of groups,
+press the button <b>List</b> (after creating the list of groups with
+<b>Group->Select</b>).  Parameters for empty entries or <b>Local</b>
+choices remain unchanged.
+
+<p/>
+
+To change a group name write the new name in the <b>Group</b> entry,
+followed by the group number (GAMGI needs the number to identify the group).
+To change the name for a list of groups, press <b>List</b> first
+and then write the new common name in the <b>Name</b> entry.
+
+<h3>Style</h3>
+
+When the option <b>Solid</b> is choosen, each polyhedron is
+represented as a solid volume, that users can see from the 
+outside or from the inside.
+
+<p/>
+
+When the option <b>Wired</b> is choosen, only the face contours 
+are shown, thus producing a more light representation.
+
+<h3>Color</h3>
+
+The <b>Color</b> button controls whether the polyhedra are represented
+with their own, independent color, or inherit it from the default
+color for the neighbour element, or, when this is undefined, from the
+current color of each central atom (not necessarily the default color
+for its element).
+
+<h3>R, G, B</h3>
+
+The <b>R</b>, <b>G</b>, <b>B</b> entries define the Polyhedron color:
+(0.0, 0.0, 0.0) is black and (1.0, 1.0, 1.0) is white. It is used 
+to draw the lines in wired mode, and the solid faces in solid mode.
+In the last case, lines are drawn using the current layer background 
+color, to get a good contrast and eliminate the need to define yet 
+another color.
+
+<h3>Scale</h3>
+
+When polyhedrons are linked in <b>Independent</b> mode, the <b>Scale</b>
+factor can be used to change its size, including its child objects.
+Polytope group objects are scaled around its center.
+
+<p/>
+
+When polyhedrons are linked in <b>Automatic</b> mode, only its parent
+objects can be scaled (thus changing the size of all its child objects,
+including the polyhedron), and the <b>Scale</b> entry is disabled.
+
+<p/>
+
+The visual representation of an object is always scaled by its own scale 
+factor multiplied by the scale factor of all its parent objects until layer,
+inclusive.
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

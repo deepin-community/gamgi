@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE gml SYSTEM "http://www.gamgi.org/dtd/gamgi.dtd">
+<gml>
+  <molecule name="graphite">
+    <atom id="1" element="C" x="0.6437" y="5.0550" z="-0.2737"/>
+    <atom id="2" element="C" x="1.1269" y="5.0666" z="-1.6162"/>
+    <atom id="3" element="C" x="0.7078" y="1.6626" z="-0.3652"/>
+    <atom id="4" element="C" x="-0.2129" y="1.6400" z="-1.4545"/>
+    <atom id="5" element="C" x="0.7712" y="-1.7306" z="-0.4567"/>
+    <atom id="6" element="C" x="1.2538" y="-1.7198" z="-1.7991"/>
+    <atom id="7" element="C" x="0.8353" y="-5.1244" z="-0.5485"/>
+    <atom id="8" element="C" x="-0.0847" y="-5.1463" z="-1.6379"/>
+    <atom id="9" element="C" x="2.5287" y="5.1344" z="-1.8675"/>
+    <atom id="10" element="C" x="3.0116" y="5.1451" z="-3.2091"/>
+    <atom id="11" element="C" x="2.5928" y="1.7406" z="-1.9594"/>
+    <atom id="12" element="C" x="1.6728" y="1.7188" z="-3.0487"/>
+    <atom id="13" element="C" x="2.6563" y="-1.6526" z="-2.0508"/>
+    <atom id="14" element="C" x="3.1398" y="-1.6412" z="-3.3924"/>
+    <atom id="15" element="C" x="2.7197" y="-5.0458" z="-2.1422"/>
+    <atom id="16" element="C" x="1.7997" y="-5.0676" z="-3.2316"/>
+    <atom id="17" element="C" x="4.4141" y="5.2123" z="-3.4607"/>
+    <atom id="18" element="C" x="4.8967" y="5.2231" z="-4.8032"/>
+    <atom id="19" element="C" x="4.4783" y="1.8185" z="-3.5526"/>
+    <atom id="20" element="C" x="3.5572" y="1.7975" z="-4.6424"/>
+    <atom id="21" element="C" x="4.5423" y="-1.5740" z="-3.6441"/>
+    <atom id="22" element="C" x="5.0249" y="-1.5631" z="-4.9866"/>
+    <atom id="23" element="C" x="4.6058" y="-4.9671" z="-3.7356"/>
+    <atom id="24" element="C" x="3.6854" y="-4.9888" z="-4.8258"/>
+    <atom id="25" element="C" x="6.2992" y="5.2904" z="-5.0549"/>
+    <atom id="26" element="C" x="6.7824" y="5.3020" z="-6.3974"/>
+    <atom id="27" element="C" x="6.3633" y="1.8979" z="-5.1464"/>
+    <atom id="28" element="C" x="5.4426" y="1.8753" z="-6.2356"/>
+    <atom id="29" element="C" x="6.4274" y="-1.4959" z="-5.2383"/>
+    <atom id="30" element="C" x="6.9093" y="-1.4844" z="-6.5803"/>
+    <atom id="31" element="C" x="6.4908" y="-4.8891" z="-5.3297"/>
+    <atom id="32" element="C" x="5.5709" y="-4.9109" z="-6.4190"/>
+    <atom id="33" element="C" x="8.1849" y="5.3692" z="-6.6491"/>
+    <atom id="34" element="C" x="8.6668" y="5.3806" z="-7.9911"/>
+    <atom id="35" element="C" x="8.2483" y="1.9760" z="-6.7405"/>
+    <atom id="36" element="C" x="7.3283" y="1.9542" z="-7.8299"/>
+    <atom id="37" element="C" x="8.3118" y="-1.4172" z="-6.8320"/>
+    <atom id="38" element="C" x="8.7950" y="-1.4056" z="-8.1745"/>
+    <atom id="39" element="C" x="8.3765" y="-4.8103" z="-6.9239"/>
+    <atom id="40" element="C" x="7.4559" y="-4.8329" z="-8.0132"/>
+    <atom id="41" element="C" x="-1.6800" y="5.0345" z="-1.1093"/>
+    <atom id="42" element="C" x="-1.1974" y="5.0454" z="-2.4518"/>
+    <atom id="43" element="C" x="-1.6165" y="1.6413" z="-1.2008"/>
+    <atom id="44" element="C" x="-2.5369" y="1.6197" z="-2.2910"/>
+    <atom id="45" element="C" x="-1.5524" y="-1.7525" z="-1.2926"/>
+    <atom id="46" element="C" x="-1.0699" y="-1.7403" z="-2.6347"/>
+    <atom id="47" element="C" x="-1.4889" y="-5.1457" z="-1.3841"/>
+    <atom id="48" element="C" x="-2.4093" y="-5.1673" z="-2.4743"/>
+    <atom id="49" element="C" x="0.2051" y="5.1126" z="-2.7035"/>
+    <atom id="50" element="C" x="0.6876" y="5.1234" z="-4.0459"/>
+    <atom id="51" element="C" x="0.2685" y="1.7194" z="-2.7949"/>
+    <atom id="52" element="C" x="-0.6518" y="1.6978" z="-3.8851"/>
+    <atom id="53" element="C" x="0.3320" y="-1.6738" z="-2.8863"/>
+    <atom id="54" element="C" x="0.8152" y="-1.6622" z="-4.2289"/>
+    <atom id="55" element="C" x="0.3967" y="-5.0669" z="-2.9783"/>
+    <atom id="56" element="C" x="-0.5239" y="-5.0895" z="-4.0675"/>
+    <atom id="57" element="C" x="2.0901" y="5.1906" z="-4.2976"/>
+    <atom id="58" element="C" x="2.5727" y="5.2029" z="-5.6397"/>
+    <atom id="59" element="C" x="2.1542" y="1.7982" z="-4.3891"/>
+    <atom id="60" element="C" x="1.2336" y="1.7756" z="-5.4784"/>
+    <atom id="61" element="C" x="2.2177" y="-1.5950" z="-4.4806"/>
+    <atom id="62" element="C" x="2.7002" y="-1.5841" z="-5.8230"/>
+    <atom id="63" element="C" x="2.2811" y="-4.9882" z="-4.5720"/>
+    <atom id="64" element="C" x="1.3611" y="-5.0100" z="-5.6613"/>
+    <atom id="65" element="C" x="3.9752" y="5.2701" z="-5.8914"/>
+    <atom id="66" element="C" x="4.4581" y="5.2807" z="-7.2329"/>
+    <atom id="67" element="C" x="4.0393" y="1.8763" z="-5.9833"/>
+    <atom id="68" element="C" x="3.1193" y="1.8544" z="-7.0726"/>
+    <atom id="69" element="C" x="4.1027" y="-1.5169" z="-6.0747"/>
+    <atom id="70" element="C" x="4.5863" y="-1.5055" z="-7.4163"/>
+    <atom id="71" element="C" x="4.1668" y="-4.9094" z="-6.1662"/>
+    <atom id="72" element="C" x="3.2462" y="-4.9319" z="-7.2554"/>
+    <atom id="73" element="C" x="5.8606" y="5.3479" z="-7.4846"/>
+    <atom id="74" element="C" x="6.3438" y="5.3595" z="-8.8272"/>
+    <atom id="75" element="C" x="5.9241" y="1.9547" z="-7.5761"/>
+    <atom id="76" element="C" x="5.0037" y="1.9331" z="-8.6663"/>
+    <atom id="77" element="C" x="5.9888" y="-1.4383" z="-7.6680"/>
+    <atom id="78" element="C" x="6.4707" y="-1.4269" z="-9.0100"/>
+    <atom id="79" element="C" x="6.0523" y="-4.8315" z="-7.7594"/>
+    <atom id="80" element="C" x="5.1319" y="-4.8531" z="-8.8497"/>
+    <atom id="81" element="C" x="-4.0046" y="5.0135" z="-1.9458"/>
+    <atom id="82" element="C" x="-3.5221" y="5.0243" z="-3.2882"/>
+    <atom id="83" element="C" x="-3.9405" y="1.6197" z="-2.0376"/>
+    <atom id="84" element="C" x="-4.8605" y="1.5978" z="-3.1269"/>
+    <atom id="85" element="C" x="-3.8771" y="-1.7735" z="-2.1290"/>
+    <atom id="86" element="C" x="-3.3939" y="-1.7619" z="-3.4716"/>
+    <atom id="87" element="C" x="-3.8130" y="-5.1660" z="-2.2206"/>
+    <atom id="88" element="C" x="-4.7336" y="-5.1885" z="-3.3098"/>
+    <atom id="89" element="C" x="-2.1196" y="5.0915" z="-3.5399"/>
+    <atom id="90" element="C" x="-1.6360" y="5.1029" z="-4.8815"/>
+    <atom id="91" element="C" x="-2.0561" y="1.6983" z="-3.6313"/>
+    <atom id="92" element="C" x="-2.9761" y="1.6765" z="-4.7206"/>
+    <atom id="93" element="C" x="-1.9914" y="-1.6947" z="-3.7233"/>
+    <atom id="94" element="C" x="-1.5084" y="-1.6841" z="-5.0648"/>
+    <atom id="95" element="C" x="-1.9279" y="-5.0879" z="-3.8147"/>
+    <atom id="96" element="C" x="-2.8479" y="-5.1097" z="-4.9040"/>
+    <atom id="97" element="C" x="-0.2335" y="5.1702" z="-5.1332"/>
+    <atom id="98" element="C" x="0.2491" y="5.1810" z="-6.4757"/>
+    <atom id="99" element="C" x="-0.1700" y="1.7770" z="-5.2246"/>
+    <atom id="100" element="C" x="-1.0904" y="1.7553" z="-6.3149"/>
+    <atom id="101" element="C" x="-0.1066" y="-1.6162" z="-5.3161"/>
+    <atom id="102" element="C" x="0.3766" y="-1.6046" z="-6.6586"/>
+    <atom id="103" element="C" x="-0.0425" y="-5.0100" z="-5.4079"/>
+    <atom id="104" element="C" x="-0.9629" y="-5.0317" z="-6.4982"/>
+    <atom id="105" element="C" x="1.6516" y="5.2482" z="-6.7273"/>
+    <atom id="106" element="C" x="2.1335" y="5.2597" z="-8.0693"/>
+    <atom id="107" element="C" x="1.7150" y="1.8550" z="-6.8188"/>
+    <atom id="108" element="C" x="0.7950" y="1.8332" z="-7.9081"/>
+    <atom id="109" element="C" x="1.7791" y="-1.5374" z="-6.9103"/>
+    <atom id="110" element="C" x="2.2617" y="-1.5266" z="-8.2527"/>
+    <atom id="111" element="C" x="1.8432" y="-4.9312" z="-7.0022"/>
+    <atom id="112" element="C" x="0.9226" y="-4.9524" z="-8.0911"/>
+    <atom id="113" element="C" x="3.5360" y="5.3269" z="-8.3210"/>
+    <atom id="114" element="C" x="4.0191" y="5.3385" z="-9.6636"/>
+    <atom id="115" element="C" x="3.6007" y="1.9338" z="-8.4130"/>
+    <atom id="116" element="C" x="2.6801" y="1.9113" z="-9.5022"/>
+    <atom id="117" element="C" x="3.6642" y="-1.4594" z="-8.5044"/>
+    <atom id="118" element="C" x="4.1467" y="-1.4485" z="-9.8469"/>
+    <atom id="119" element="C" x="3.7276" y="-4.8525" z="-8.5959"/>
+    <atom id="120" element="C" x="2.8076" y="-4.8744" z="-9.6852"/>
+    <atom id="121" element="C" x="-6.3282" y="4.9916" z="-2.7817"/>
+    <atom id="122" element="C" x="-5.8457" y="5.0025" z="-4.1241"/>
+    <atom id="123" element="C" x="-6.2648" y="1.5984" z="-2.8731"/>
+    <atom id="124" element="C" x="-7.1852" y="1.5768" z="-3.9634"/>
+    <atom id="125" element="C" x="-6.2007" y="-1.7940" z="-2.9647"/>
+    <atom id="126" element="C" x="-5.7181" y="-1.7832" z="-4.3071"/>
+    <atom id="127" element="C" x="-6.1366" y="-5.1878" z="-3.0565"/>
+    <atom id="128" element="C" x="-7.0570" y="-5.2094" z="-4.1468"/>
+    <atom id="129" element="C" x="-4.4432" y="5.0697" z="-4.3758"/>
+    <atom id="130" element="C" x="-3.9607" y="5.0819" z="-5.7179"/>
+    <atom id="131" element="C" x="-4.3791" y="1.6772" z="-4.4674"/>
+    <atom id="132" element="C" x="-5.3001" y="1.6549" z="-5.5575"/>
+    <atom id="133" element="C" x="-4.3156" y="-1.7160" z="-4.5588"/>
+    <atom id="134" element="C" x="-3.8331" y="-1.7051" z="-5.9012"/>
+    <atom id="135" element="C" x="-4.2522" y="-5.1091" z="-4.6502"/>
+    <atom id="136" element="C" x="-5.1722" y="-5.1310" z="-5.7396"/>
+    <atom id="137" element="C" x="-2.5581" y="5.1491" z="-5.9696"/>
+    <atom id="138" element="C" x="-2.0756" y="5.1600" z="-7.3121"/>
+    <atom id="139" element="C" x="-2.4940" y="1.7553" z="-6.0615"/>
+    <atom id="140" element="C" x="-3.4140" y="1.7335" z="-7.1508"/>
+    <atom id="141" element="C" x="-2.4306" y="-1.6379" z="-6.1529"/>
+    <atom id="142" element="C" x="-1.9474" y="-1.6263" z="-7.4955"/>
+    <atom id="143" element="C" x="-2.3665" y="-5.0303" z="-6.2445"/>
+    <atom id="144" element="C" x="-3.2871" y="-5.0529" z="-7.3337"/>
+    <atom id="145" element="C" x="-0.6731" y="5.2272" z="-7.5638"/>
+    <atom id="146" element="C" x="-0.1895" y="5.2386" z="-8.9054"/>
+    <atom id="147" element="C" x="-0.6090" y="1.8347" z="-7.6553"/>
+    <atom id="148" element="C" x="-1.5296" y="1.8122" z="-8.7445"/>
+    <atom id="149" element="C" x="-0.5449" y="-1.5591" z="-7.7472"/>
+    <atom id="150" element="C" x="-0.0626" y="-1.5478" z="-9.0883"/>
+    <atom id="151" element="C" x="-0.4814" y="-4.9523" z="-7.8386"/>
+    <atom id="152" element="C" x="-1.4014" y="-4.9741" z="-8.9279"/>
+    <atom id="153" element="C" x="1.2130" y="5.3058" z="-9.1571"/>
+    <atom id="154" element="C" x="1.6955" y="5.3166" z="-10.4995"/>
+    <atom id="155" element="C" x="1.2764" y="1.9126" z="-9.2485"/>
+    <atom id="156" element="C" x="0.3560" y="1.8910" z="-10.3388"/>
+    <atom id="157" element="C" x="1.3399" y="-1.4806" z="-9.3400"/>
+    <atom id="158" element="C" x="1.8231" y="-1.4690" z="-10.6825"/>
+    <atom id="159" element="C" x="1.4040" y="-4.8744" z="-9.4318"/>
+    <atom id="160" element="C" x="0.4836" y="-4.8960" z="-10.5220"/>
+    <atom id="161" element="C" x="-8.6529" y="4.9706" z="-3.6181"/>
+    <atom id="162" element="C" x="-8.1697" y="4.9822" z="-4.9607"/>
+    <atom id="163" element="C" x="-8.5888" y="1.5781" z="-3.7097"/>
+    <atom id="164" element="C" x="-9.5094" y="1.5556" z="-4.7989"/>
+    <atom id="165" element="C" x="-8.5247" y="-1.8157" z="-3.8015"/>
+    <atom id="166" element="C" x="-8.0428" y="-1.8042" z="-5.1435"/>
+    <atom id="167" element="C" x="-8.4612" y="-5.2089" z="-3.8929"/>
+    <atom id="168" element="C" x="-9.3812" y="-5.2307" z="-4.9823"/>
+    <atom id="169" element="C" x="-6.7672" y="5.0494" z="-5.2124"/>
+    <atom id="170" element="C" x="-6.2843" y="5.0600" z="-6.5539"/>
+    <atom id="171" element="C" x="-6.7038" y="1.6562" z="-5.3038"/>
+    <atom id="172" element="C" x="-7.6237" y="1.6344" z="-6.3931"/>
+    <atom id="173" element="C" x="-6.6403" y="-1.7370" z="-5.3952"/>
+    <atom id="174" element="C" x="-6.1567" y="-1.7256" z="-6.7369"/>
+    <atom id="175" element="C" x="-6.5755" y="-5.1300" z="-5.4872"/>
+    <atom id="176" element="C" x="-7.4962" y="-5.1526" z="-6.5764"/>
+    <atom id="177" element="C" x="-4.8818" y="5.1273" z="-6.8056"/>
+    <atom id="178" element="C" x="-4.3992" y="5.1395" z="-8.1477"/>
+    <atom id="179" element="C" x="-4.8183" y="1.7341" z="-6.8970"/>
+    <atom id="180" element="C" x="-5.7387" y="1.7124" z="-7.9872"/>
+    <atom id="181" element="C" x="-4.7542" y="-1.6584" z="-6.9885"/>
+    <atom id="182" element="C" x="-4.2717" y="-1.6475" z="-8.3310"/>
+    <atom id="183" element="C" x="-4.6908" y="-5.0516" z="-7.0800"/>
+    <atom id="184" element="C" x="-5.6112" y="-5.0732" z="-8.1702"/>
+    <atom id="185" element="C" x="-2.9974" y="5.2059" z="-8.3993"/>
+    <atom id="186" element="C" x="-2.5142" y="5.2175" z="-9.7418"/>
+    <atom id="187" element="C" x="-2.9326" y="1.8129" z="-8.4912"/>
+    <atom id="188" element="C" x="-3.8526" y="1.7911" z="-9.5806"/>
+    <atom id="189" element="C" x="-2.8692" y="-1.5803" z="-8.5827"/>
+    <atom id="190" element="C" x="-2.3866" y="-1.5695" z="-9.9251"/>
+    <atom id="191" element="C" x="-2.8057" y="-4.9735" z="-8.6741"/>
+    <atom id="192" element="C" x="-3.7257" y="-4.9953" z="-9.7634"/>
+    <atom id="193" element="C" x="-1.1117" y="5.2848" z="-9.9935"/>
+    <atom id="194" element="C" x="-0.6291" y="5.2956" z="-11.3359"/>
+    <atom id="195" element="C" x="-1.0482" y="1.8916" z="-10.0849"/>
+    <atom id="196" element="C" x="-1.9682" y="1.8697" z="-11.1743"/>
+    <atom id="197" element="C" x="-0.9841" y="-1.5023" z="-10.1768"/>
+    <atom id="198" element="C" x="-0.5016" y="-1.4900" z="-11.5189"/>
+    <atom id="199" element="C" x="-0.9200" y="-4.8947" z="-10.2683"/>
+    <atom id="200" element="C" x="-1.8407" y="-4.9173" z="-11.3576"/>
+    <bond parent1="1" parent2="2"/>
+    <bond parent1="2" parent2="9"/>
+    <bond parent1="2" parent2="49"/>
+    <bond parent1="3" parent2="4"/>
+    <bond parent1="4" parent2="43"/>
+    <bond parent1="4" parent2="51"/>
+    <bond parent1="5" parent2="6"/>
+    <bond parent1="6" parent2="13"/>
+    <bond parent1="6" parent2="53"/>
+    <bond parent1="7" parent2="8"/>
+    <bond parent1="8" parent2="47"/>
+    <bond parent1="8" parent2="55"/>
+    <bond parent1="9" parent2="10"/>
+    <bond parent1="10" parent2="17"/>
+    <bond parent1="10" parent2="57"/>
+    <bond parent1="11" parent2="12"/>
+    <bond parent1="12" parent2="51"/>
+    <bond parent1="12" parent2="59"/>
+    <bond parent1="13" parent2="14"/>
+    <bond parent1="14" parent2="21"/>
+    <bond parent1="14" parent2="61"/>
+    <bond parent1="15" parent2="16"/>
+    <bond parent1="16" parent2="55"/>
+    <bond parent1="16" parent2="63"/>
+    <bond parent1="17" parent2="18"/>
+    <bond parent1="18" parent2="25"/>
+    <bond parent1="18" parent2="65"/>
+    <bond parent1="19" parent2="20"/>
+    <bond parent1="20" parent2="59"/>
+    <bond parent1="20" parent2="67"/>
+    <bond parent1="21" parent2="22"/>
+    <bond parent1="22" parent2="29"/>
+    <bond parent1="22" parent2="69"/>
+    <bond parent1="23" parent2="24"/>
+    <bond parent1="24" parent2="63"/>
+    <bond parent1="24" parent2="71"/>
+    <bond parent1="25" parent2="26"/>
+    <bond parent1="26" parent2="33"/>
+    <bond parent1="26" parent2="73"/>
+    <bond parent1="27" parent2="28"/>
+    <bond parent1="28" parent2="67"/>
+    <bond parent1="28" parent2="75"/>
+    <bond parent1="29" parent2="30"/>
+    <bond parent1="30" parent2="37"/>
+    <bond parent1="30" parent2="77"/>
+    <bond parent1="31" parent2="32"/>
+    <bond parent1="32" parent2="71"/>
+    <bond parent1="32" parent2="79"/>
+    <bond parent1="33" parent2="34"/>
+    <bond parent1="35" parent2="36"/>
+    <bond parent1="36" parent2="75"/>
+    <bond parent1="37" parent2="38"/>
+    <bond parent1="39" parent2="40"/>
+    <bond parent1="40" parent2="79"/>
+    <bond parent1="41" parent2="42"/>
+    <bond parent1="42" parent2="49"/>
+    <bond parent1="42" parent2="89"/>
+    <bond parent1="43" parent2="44"/>
+    <bond parent1="44" parent2="83"/>
+    <bond parent1="44" parent2="91"/>
+    <bond parent1="45" parent2="46"/>
+    <bond parent1="46" parent2="53"/>
+    <bond parent1="46" parent2="93"/>
+    <bond parent1="47" parent2="48"/>
+    <bond parent1="48" parent2="87"/>
+    <bond parent1="48" parent2="95"/>
+    <bond parent1="49" parent2="50"/>
+    <bond parent1="50" parent2="57"/>
+    <bond parent1="50" parent2="97"/>
+    <bond parent1="51" parent2="52"/>
+    <bond parent1="52" parent2="91"/>
+    <bond parent1="52" parent2="99"/>
+    <bond parent1="53" parent2="54"/>
+    <bond parent1="54" parent2="61"/>
+    <bond parent1="54" parent2="101"/>
+    <bond parent1="55" parent2="56"/>
+    <bond parent1="56" parent2="95"/>
+    <bond parent1="56" parent2="103"/>
+    <bond parent1="57" parent2="58"/>
+    <bond parent1="58" parent2="65"/>
+    <bond parent1="58" parent2="105"/>
+    <bond parent1="59" parent2="60"/>
+    <bond parent1="60" parent2="99"/>
+    <bond parent1="60" parent2="107"/>
+    <bond parent1="61" parent2="62"/>
+    <bond parent1="62" parent2="69"/>
+    <bond parent1="62" parent2="109"/>
+    <bond parent1="63" parent2="64"/>
+    <bond parent1="64" parent2="103"/>
+    <bond parent1="64" parent2="111"/>
+    <bond parent1="65" parent2="66"/>
+    <bond parent1="66" parent2="73"/>
+    <bond parent1="66" parent2="113"/>
+    <bond parent1="67" parent2="68"/>
+    <bond parent1="68" parent2="107"/>
+    <bond parent1="68" parent2="115"/>
+    <bond parent1="69" parent2="70"/>
+    <bond parent1="70" parent2="77"/>
+    <bond parent1="70" parent2="117"/>
+    <bond parent1="71" parent2="72"/>
+    <bond parent1="72" parent2="111"/>
+    <bond parent1="72" parent2="119"/>
+    <bond parent1="73" parent2="74"/>
+    <bond parent1="75" parent2="76"/>
+    <bond parent1="76" parent2="115"/>
+    <bond parent1="77" parent2="78"/>
+    <bond parent1="79" parent2="80"/>
+    <bond parent1="80" parent2="119"/>
+    <bond parent1="81" parent2="82"/>
+    <bond parent1="82" parent2="89"/>
+    <bond parent1="82" parent2="129"/>
+    <bond parent1="83" parent2="84"/>
+    <bond parent1="84" parent2="123"/>
+    <bond parent1="84" parent2="131"/>
+    <bond parent1="85" parent2="86"/>
+    <bond parent1="86" parent2="93"/>
+    <bond parent1="86" parent2="133"/>
+    <bond parent1="87" parent2="88"/>
+    <bond parent1="88" parent2="127"/>
+    <bond parent1="88" parent2="135"/>
+    <bond parent1="89" parent2="90"/>
+    <bond parent1="90" parent2="97"/>
+    <bond parent1="90" parent2="137"/>
+    <bond parent1="91" parent2="92"/>
+    <bond parent1="92" parent2="131"/>
+    <bond parent1="92" parent2="139"/>
+    <bond parent1="93" parent2="94"/>
+    <bond parent1="94" parent2="101"/>
+    <bond parent1="94" parent2="141"/>
+    <bond parent1="95" parent2="96"/>
+    <bond parent1="96" parent2="135"/>
+    <bond parent1="96" parent2="143"/>
+    <bond parent1="97" parent2="98"/>
+    <bond parent1="98" parent2="105"/>
+    <bond parent1="98" parent2="145"/>
+    <bond parent1="99" parent2="100"/>
+    <bond parent1="100" parent2="139"/>
+    <bond parent1="100" parent2="147"/>
+    <bond parent1="101" parent2="102"/>
+    <bond parent1="102" parent2="109"/>
+    <bond parent1="102" parent2="149"/>
+    <bond parent1="103" parent2="104"/>
+    <bond parent1="104" parent2="143"/>
+    <bond parent1="104" parent2="151"/>
+    <bond parent1="105" parent2="106"/>
+    <bond parent1="106" parent2="113"/>
+    <bond parent1="106" parent2="153"/>
+    <bond parent1="107" parent2="108"/>
+    <bond parent1="108" parent2="147"/>
+    <bond parent1="108" parent2="155"/>
+    <bond parent1="109" parent2="110"/>
+    <bond parent1="110" parent2="117"/>
+    <bond parent1="110" parent2="157"/>
+    <bond parent1="111" parent2="112"/>
+    <bond parent1="112" parent2="151"/>
+    <bond parent1="112" parent2="159"/>
+    <bond parent1="113" parent2="114"/>
+    <bond parent1="115" parent2="116"/>
+    <bond parent1="116" parent2="155"/>
+    <bond parent1="117" parent2="118"/>
+    <bond parent1="119" parent2="120"/>
+    <bond parent1="120" parent2="159"/>
+    <bond parent1="121" parent2="122"/>
+    <bond parent1="122" parent2="129"/>
+    <bond parent1="122" parent2="169"/>
+    <bond parent1="123" parent2="124"/>
+    <bond parent1="124" parent2="163"/>
+    <bond parent1="124" parent2="171"/>
+    <bond parent1="125" parent2="126"/>
+    <bond parent1="126" parent2="133"/>
+    <bond parent1="126" parent2="173"/>
+    <bond parent1="127" parent2="128"/>
+    <bond parent1="128" parent2="167"/>
+    <bond parent1="128" parent2="175"/>
+    <bond parent1="129" parent2="130"/>
+    <bond parent1="130" parent2="137"/>
+    <bond parent1="130" parent2="177"/>
+    <bond parent1="131" parent2="132"/>
+    <bond parent1="132" parent2="171"/>
+    <bond parent1="132" parent2="179"/>
+    <bond parent1="133" parent2="134"/>
+    <bond parent1="134" parent2="141"/>
+    <bond parent1="134" parent2="181"/>
+    <bond parent1="135" parent2="136"/>
+    <bond parent1="136" parent2="175"/>
+    <bond parent1="136" parent2="183"/>
+    <bond parent1="137" parent2="138"/>
+    <bond parent1="138" parent2="145"/>
+    <bond parent1="138" parent2="185"/>
+    <bond parent1="139" parent2="140"/>
+    <bond parent1="140" parent2="179"/>
+    <bond parent1="140" parent2="187"/>
+    <bond parent1="141" parent2="142"/>
+    <bond parent1="142" parent2="149"/>
+    <bond parent1="142" parent2="189"/>
+    <bond parent1="143" parent2="144"/>
+    <bond parent1="144" parent2="183"/>
+    <bond parent1="144" parent2="191"/>
+    <bond parent1="145" parent2="146"/>
+    <bond parent1="146" parent2="153"/>
+    <bond parent1="146" parent2="193"/>
+    <bond parent1="147" parent2="148"/>
+    <bond parent1="148" parent2="187"/>
+    <bond parent1="148" parent2="195"/>
+    <bond parent1="149" parent2="150"/>
+    <bond parent1="150" parent2="157"/>
+    <bond parent1="150" parent2="197"/>
+    <bond parent1="151" parent2="152"/>
+    <bond parent1="152" parent2="191"/>
+    <bond parent1="152" parent2="199"/>
+    <bond parent1="153" parent2="154"/>
+    <bond parent1="155" parent2="156"/>
+    <bond parent1="156" parent2="195"/>
+    <bond parent1="157" parent2="158"/>
+    <bond parent1="159" parent2="160"/>
+    <bond parent1="160" parent2="199"/>
+    <bond parent1="161" parent2="162"/>
+    <bond parent1="162" parent2="169"/>
+    <bond parent1="163" parent2="164"/>
+    <bond parent1="165" parent2="166"/>
+    <bond parent1="166" parent2="173"/>
+    <bond parent1="167" parent2="168"/>
+    <bond parent1="169" parent2="170"/>
+    <bond parent1="170" parent2="177"/>
+    <bond parent1="171" parent2="172"/>
+    <bond parent1="173" parent2="174"/>
+    <bond parent1="174" parent2="181"/>
+    <bond parent1="175" parent2="176"/>
+    <bond parent1="177" parent2="178"/>
+    <bond parent1="178" parent2="185"/>
+    <bond parent1="179" parent2="180"/>
+    <bond parent1="181" parent2="182"/>
+    <bond parent1="182" parent2="189"/>
+    <bond parent1="183" parent2="184"/>
+    <bond parent1="185" parent2="186"/>
+    <bond parent1="186" parent2="193"/>
+    <bond parent1="187" parent2="188"/>
+    <bond parent1="189" parent2="190"/>
+    <bond parent1="190" parent2="197"/>
+    <bond parent1="191" parent2="192"/>
+    <bond parent1="193" parent2="194"/>
+    <bond parent1="195" parent2="196"/>
+    <bond parent1="197" parent2="198"/>
+    <bond parent1="199" parent2="200"/>
+  </molecule>
+</gml>

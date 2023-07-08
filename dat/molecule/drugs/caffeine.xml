@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE gml SYSTEM "http://www.gamgi.org/dtd/gamgi.dtd">
+<gml>
+  <molecule name="caffeine">
+    <atom id="1" element="C" x="1.9424" y="0.2969" z="0.3428"/>
+    <atom id="2" element="N" x="0.9815" y="0.9128" z="-0.4380"/>
+    <atom id="3" element="C" x="1.3889" y="1.8121" z="-1.5273"/>
+    <atom id="4" element="C" x="-0.3626" y="0.6854" z="-0.1993"/>
+    <atom id="5" element="C" x="-0.7509" y="-0.1706" z="0.8371"/>
+    <atom id="6" element="C" x="0.2308" y="-0.7887" z="1.6228"/>
+    <atom id="7" element="N" x="1.5682" y="-0.5499" z="1.3691"/>
+    <atom id="8" element="C" x="2.5964" y="-1.1991" z="2.1946"/>
+    <atom id="9" element="N" x="-0.3897" y="-1.5486" z="2.5364"/>
+    <atom id="10" element="C" x="-1.7160" y="-1.4519" z="2.3792"/>
+    <atom id="11" element="N" x="-1.9735" y="-0.5972" z="1.3239"/>
+    <atom id="12" element="C" x="-3.2976" y="-0.2114" z="0.8141"/>
+    <atom id="13" element="O" x="-1.2887" y="1.2844" z="-0.9597"/>
+    <atom id="14" element="O" x="3.2424" y="0.5237" z="0.1044"/>
+    <atom id="15" element="H" x="1.4706" y="2.8279" z="-1.1476"/>
+    <atom id="16" element="H" x="0.6452" y="1.7804" z="-2.3206"/>
+    <atom id="17" element="H" x="2.3522" y="1.4929" z="-1.9203"/>
+    <atom id="18" element="H" x="2.8700" y="-2.1538" z="1.7501"/>
+    <atom id="19" element="H" x="2.2065" y="-1.3641" z="3.1974"/>
+    <atom id="20" element="H" x="3.4746" y="-0.5596" z="2.2476"/>
+    <atom id="21" element="H" x="-2.4602" y="-1.9574" z="2.9762"/>
+    <atom id="22" element="H" x="-3.6050" y="-0.9110" z="0.0394"/>
+    <atom id="23" element="H" x="-3.2472" y="0.7923" z="0.3975"/>
+    <atom id="24" element="H" x="-4.0194" y="-0.2315" z="1.6281"/>
+    <bond parent1="1" parent2="2"/>
+    <bond parent1="1" parent2="7"/>
+    <bond parent1="1" parent2="14" order="2.00"/>
+    <bond parent1="2" parent2="3"/>
+    <bond parent1="2" parent2="4"/>
+    <bond parent1="3" parent2="15"/>
+    <bond parent1="3" parent2="16"/>
+    <bond parent1="3" parent2="17"/>
+    <bond parent1="4" parent2="5"/>
+    <bond parent1="4" parent2="13" order="2.00"/>
+    <bond parent1="5" parent2="6" order="2.00"/>
+    <bond parent1="5" parent2="11"/>
+    <bond parent1="6" parent2="7"/>
+    <bond parent1="6" parent2="9"/>
+    <bond parent1="7" parent2="8"/>
+    <bond parent1="8" parent2="18"/>
+    <bond parent1="8" parent2="19"/>
+    <bond parent1="8" parent2="20"/>
+    <bond parent1="9" parent2="10" order="2.00"/>
+    <bond parent1="10" parent2="11"/>
+    <bond parent1="10" parent2="21"/>
+    <bond parent1="11" parent2="12"/>
+    <bond parent1="12" parent2="22"/>
+    <bond parent1="12" parent2="23"/>
+    <bond parent1="12" parent2="24"/>
+  </molecule>
+</gml>

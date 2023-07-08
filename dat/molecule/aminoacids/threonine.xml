@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE gml SYSTEM "http://www.gamgi.org/dtd/gamgi.dtd">
+<gml>
+  <molecule name="threonine">
+    <atom id="1" element="N" x="1.8954" y="-0.9739" z="-0.3037"/>
+    <atom id="2" element="C" x="0.7770" y="-0.3244" z="-0.9808"/>
+    <atom id="3" element="C" x="1.1541" y="1.0634" z="-1.4402"/>
+    <atom id="4" element="O" x="2.2598" y="1.5280" z="-1.2445"/>
+    <atom id="5" element="C" x="-0.4784" y="-0.2760" z="-0.0460"/>
+    <atom id="6" element="O" x="-0.8992" y="-1.5906" z="0.2932"/>
+    <atom id="7" element="C" x="-1.7406" y="0.3955" z="-0.6292"/>
+    <atom id="8" element="H" x="2.8485" y="-0.4828" z="-0.1738"/>
+    <atom id="9" element="H" x="1.8194" y="-1.9741" z="0.0972"/>
+    <atom id="10" element="H" x="0.5257" y="-0.9132" z="-1.8819"/>
+    <atom id="11" element="H" x="-0.1985" y="0.2584" z="0.8876"/>
+    <atom id="12" element="H" x="-1.6219" y="-1.4875" z="0.9196"/>
+    <atom id="13" element="H" x="-2.5900" y="0.3710" z="0.0787"/>
+    <atom id="14" element="H" x="-1.5804" y="1.4639" z="-0.8679"/>
+    <atom id="15" element="H" x="-2.0758" y="-0.0991" z="-1.5606"/>
+    <atom id="16" element="O" x="0.1322" y="1.7985" z="-2.1195"/>
+    <atom id="17" element="H" x="-0.7218" y="1.2259" z="-2.1791"/>
+    <bond parent1="1" parent2="2"/>
+    <bond parent1="1" parent2="8"/>
+    <bond parent1="1" parent2="9"/>
+    <bond parent1="2" parent2="3"/>
+    <bond parent1="2" parent2="5"/>
+    <bond parent1="2" parent2="10"/>
+    <bond parent1="3" parent2="4" order="2.00"/>
+    <bond parent1="3" parent2="16"/>
+    <bond parent1="5" parent2="6"/>
+    <bond parent1="5" parent2="7"/>
+    <bond parent1="5" parent2="11"/>
+    <bond parent1="6" parent2="12"/>
+    <bond parent1="7" parent2="13"/>
+    <bond parent1="7" parent2="14"/>
+    <bond parent1="7" parent2="15"/>
+    <bond parent1="16" parent2="17"/>
+  </molecule>
+</gml>

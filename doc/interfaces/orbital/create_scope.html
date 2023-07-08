@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Interfaces: Orbital Create</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Orbital Create</h1>
+
+<div id="notebook">
+<ul>
+<li><a href="create_type.html">Type</a></li>
+<li><span>Scope</span></li>
+<li><a href="create_volume.html">Volume</a></li>
+<li><a href="create_position.html">Position</a></li>
+<li><a href="create_view.html">View</a></li>
+</ul>
+</div>
+
+<div class="contents">
+
+Set here the numerical representation of an orbital.
+
+<h3>Style</h3>
+
+There are two ways to describe orbitals in GAMGI: as a cloud of random points
+describing all the regions of space where the probability density is above
+a specified value, the <b>Wired</b> approach; 2) as the outer isosurface
+linking points with the specified probability density, the <b>Solid</b>
+approach. Please note that in s orbitals, there are several different
+isosurfaces with the same probability density, GAMGI shows only the
+most external one.
+
+<h3>Density</h3>
+
+Defines the probability density (probability / volume) value used
+to accept points in <b>Wired</b> mode (when they are above this
+threeshold) or to build points in <b>Solid</b> mode (where they
+have exactly this threeshold).
+
+<p/>
+
+The low default value (<b>1E-6)</b>) was chosen to guarantee that
+all the inter-node regions are visible with default parameters.
+For example, the six inter-node regions of orbital 6s are all
+visible with the default parameters.
+
+<h3>Radius</h3>
+
+Defines the sampling volume that is scanned when building an orbital.
+In <b>Wired</b> mode, the sampling volume is the sphere with this radius.
+In <b>Solid</b> mode, the sampling volume is the cube containing this
+sphere.
+
+<p/>
+
+For each orbital, the default radius is obtained calculating first 
+the distance for the last maximum of the radial probability density
+(the first Bohr radius, for orbital 1s), then adding an offset (to
+guarantee a proper sampling region, currently 2.0 Angstrom) and finally
+increasing the radius untill the probability density becomes lower
+in all directions than the default probability density.
+
+<h3>Sampling</h3>
+
+In <b>Wired</b> mode, random points are generated and tried
+untill the number of accepted points equals <b>Sampling</b>.
+By default <b>Sampling</b> is <b>50000 x N</b>,
+where <b>N</b> is the main quantum number.
+
+<p/>
+
+In <b>Solid</b> mode, a sampling cubic grid is built for
+each octant, with <b>Sampling</b> slices on each dimension.
+By default <b>Sampling</b> is <b>50</b>.
+
+<h3>Seed</h3>
+
+In <b>Wired</b> mode, sampling points are randomly positioned using
+a sequence of (pseudo) random numbers, generated from a <b>Seed</b>
+initiator. Using different seeds, different random sequences and
+final results will be produced. Using the same seed, the same results
+will be obtained.
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

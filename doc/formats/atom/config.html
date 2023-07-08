@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Formats: Atom Config</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/board.css"/>
+</head>
+
+<body>
+
+<div class="board">
+<div>Atom Config</div><div>&nbsp;</div>
+</div>
+
+<div class="contents">
+
+<h3>element</h3>
+
+Identifies the element to which other properties apply, thus
+it must be coupled with <b>mass</b>, <b>radius</b> or <b>red</b>, 
+<b>green</b>, <b>blue</b> parameters. It must be a valid element name, 
+or a Dummy atom, represented as <b>Du</b>. Accepted values are 
+"<b>Si</b>", "<b>&nbsp;Si</b>", "<b>Si&nbsp;</b>" but not 
+"<b>SI</b>", "<b>si</b>", "<b>S i</b>" or "<b>14</b>".
+
+<h3>mass</h3>
+
+Coupled with the <b>element</b> parameter, the <b>mass</b>
+parameter can be used to change the default mass for each element. 
+The new value replaces the old one everywhere in GAMGI interfaces, 
+including the periodic table.
+
+<p/>
+
+It might be useful, sometimes, to change this parameter
+several times in the same file, to handle blocks of data
+with different atomic characteristics (in isotopic studies,
+for example).
+
+<pre>
+Default: <b>&lt;atom mass="15.9994" element="O"/></b> (default O mass)
+Allowed values: positive real, element name (optional)
+</pre>
+
+<h3>radius</h3>
+
+The covalent radius used by default in GAMGI were obtained from                       
+<a href="http://www.webelements.com/">http://www.webelements.com/</a>.
+
+<p/>
+
+Coupled with the <b>element</b> parameter, the <b>radius</b>
+parameter can be used to change the default radius for each element. 
+The new value replaces the old one everywhere in GAMGI interfaces, 
+including the periodic table.
+
+<p/>
+
+We note that the new radius becomes immediately active, and 
+might be used together with the <b>lower, upper</b> bond configuration 
+parameters, to calculate bond length ranges, when creating new 
+bonds automatically.
+
+<pre>
+Default: <b>&lt;atom radius="0.7300" element="O"/></b> (default O radius)
+Allowed values: positive real, element name (optional)
+</pre>
+
+<h3>red, green, blue</h3>
+
+Coupled with the <b>element</b> parameter, <b>red</b>, <b>green</b>, <b>blue</b>
+can be used to change the default color for an element. The new values
+replaces the old ones everywhere, including the periodic table.
+
+<pre>
+Default: <b>&lt;atom red="1.0" green="1.0" blue="0.0" element="Si"/></b> 
+(default Si color)
+Allowed values: <b>0.0</b> - <b>1.0</b>, element name 
+(optional, coupled)
+</pre>
+
+<h3>style</h3>
+
+Controls which <b>style</b> is applied by default when creating a new atom. 
+
+<pre>
+Default: <b>&lt;atom style="wired"/></b> (defined in 
+<b>GAMGI_MESA_ATOM_DRAW</b>)
+Allowed values: <b>wired</b>, <b>solid</b> (optional)
+</pre>
+
+<h3>variancy</h3>
+
+The intrinsic size of a solid (spherical) atom is calculated according 
+to the equation: 
+<pre>intrinsic = size x (variancy x radius + (1 - variancy) x min) </pre> where 
+<b>radius</b> is the element radius currently defined and <b>min</b> is the minimum
+radius, by default the H covalent radius.
+
+<p/>
+
+In <b>wired</b> mode, <b>variancy</b> is always <b>0.0</b> so 
+all atom crosses have a constant size, given by <b>size</b> x <b>min</b>.
+
+In <b>solid</b> mode, <b>variancy</b> controls how the
+size of the atom spheres is affected by the atom radius.
+When <b>variancy</b> is <b>0.0</b> the atom spheres have
+all the same size, when <b>variancy</b> is <b>1.0</b>
+the atom spheres are scaled directly by the atom radius.
+ 
+<pre>
+Default: <b>&lt;atom variancy="0.0"/></b> (defined in 
+<b>GAMGI_CHEM_ATOM_VARIANCY</b>)
+Allowed values: <b>0.0</b> - <b>1.0</b> (optional)
+</pre>
+
+<h3>size</h3>
+
+In <b>solid</b> mode, controls the size of the atom spheres.
+Combining atom <b>size</b> and <b>variancy</b> with bond <b>size</b>, 
+it is possible to obtain a wide range of styles to represent atomic 
+structures.
+
+<p/>
+
+The default is to represent atoms as constant spheres,
+slightly larger than the bonds:
+
+<pre>
+<b>&lt;atom variancy="0.0" size="0.8"/>&lt;bond size="0.5"/></b>
+</pre>
+
+An elegant style is to represent atoms with constant spheres
+and the same <b>size</b> as bonds: 
+
+<pre>
+<b>&lt;atom variancy="0.0" size="0.5"/>&lt;bond size="0.5"/></b>
+</pre>
+  
+To represent compact cristalline structures, atom <b>size</b>
+and <b>variancy</b> must be <b>1.0</b>, to be consistent with
+cell dimensions:
+
+<pre>
+<b>&lt;atom variancy="1.0" size="1.0"/></b>
+</pre>
+
+This style can also be used to represent molecules, in order 
+to emphasize the atomic radius and electronic distribution.
+
+<pre>
+Default: <b>&lt;atom size="0.8"/></b> (defined in 
+<b>GAMGI_CHEM_ATOM_SIZE</b>)
+Allowed values: positive real (optional)
+</pre>
+
+<h3>min</h3>
+
+In <b>solid</b> mode, defines the radius used by default to represent atoms, 
+when variancy is set to 0.0 and all atoms are represented with the same size, 
+as described above. By default it is the smallest radius available, the 
+Hydrogen radius.
+
+<pre>
+Default: <b>&lt;atom min="0.3700"/></b> (defined in <b>GAMGI_CHEM_ATOM_MIN</b>)
+Allowed values: positive real (optional)
+</pre>
+
+<h3>slices</h3>
+
+In <b>solid</b> mode, controls the number of fragments used to represent 
+curved surfaces such as atom spheres and bond cylinders, thus controlling 
+the visual quality of these objects. Increasing the number of fragments 
+improves noticeably the visual quality but also decreases performance 
+substantially.
+
+<pre>
+Default: <b>&lt;atom slices="16"/></b> (defined in 
+<b>GAMGI_MESA_ATOM_SLICES</b>)
+Allowed values: <b>10</b>...<b>100</b> (defined in 
+<b>GAMGI_MESA_ATOM_SLICES_MIN</b> 
+and <b>GAMGI_MESA_ATOM_SLICES_MAX</b>) (optional)
+</pre>
+
+<h3>width</h3>
+
+In <b>wired</b> mode, controls the line width used to draw atoms and bonds.
+
+<pre>
+Default: <b>&lt;atom width="2"/></b> (defined in 
+<b>GAMGI_MESA_ATOM_WIDTH</b>)
+Allowed values: <b>1</b>...<b>5</b> (defined in 
+<b>GAMGI_MESA_ATOM_WIDTH_MIN</b> and 
+<b>GAMGI_MESA_ATOM_WIDTH_MAX</b>) (optional)
+</pre>
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE gml SYSTEM "http://www.gamgi.org/dtd/gamgi.dtd">
+<gml>
+  <window x="390" y="94" width="700" height="500" medium="no" bottom="no">
+    <layer perspective="no" scale="0.864">
+      <light ambient_r="0.500" ambient_g="0.500" ambient_b="0.500"
+      diffuse_r="0.400" diffuse_g="0.400" diffuse_b="0.400" specular_r="0.300"
+      specular_g="0.300" specular_b="0.300" direction_x="0.0000"
+      direction_y="0.0000" direction_z="-1.0000"/>
+      <cell group="82" a="5.2890" c="10.4230" x="5.0377" y="-5.0616"
+      z="-2.2721" e1="84.29" e2="89.86" e3="15.04" scale="0.619">
+        <plane reference="cell" h="1" k="1" l="0" x="11.5861" y="-5.1980"
+        z="-0.3558" center_x="9.5821" center_y="-0.0475" center_z="-3.6120"
+        e1="90.94" e2="90.23" e3="347.02">
+          <atom element="Cu" x="12.7744" y="-5.2780" z="-5.5089" style="solid"/>
+          <atom element="Cu" x="6.4323" y="-5.2386" z="-1.5436" style="solid"/>
+          <atom element="Cu" x="12.7319" y="5.1435" z="-5.6804" style="solid"/>
+          <atom element="Cu" x="6.3898" y="5.1829" z="-1.7150" style="solid"/>
+          <atom element="Cu" x="9.5821" y="-0.0475" z="-3.6120" style="solid"/>
+          <atom element="Fe" x="12.7532" y="-0.0672" z="-5.5947" style="solid"/>
+          <atom element="Fe" x="6.4110" y="-0.0278" z="-1.6293" style="solid"/>
+          <atom element="Fe" x="9.6034" y="-5.2583" z="-3.5263" style="solid"/>
+          <atom element="Fe" x="9.5609" y="5.1632" z="-3.6977" style="solid"/>
+          <data name="points" type="double" size="12">
+          0.0000 5.2890 10.4230 5.2890 0.0000 10.4230 5.2890 0.0000 0.0000
+          0.0000 5.2890 0.0000
+          </data>
+          <data name="points_driver" type="int" size="6">
+          1 4 0 1 2 3
+          </data>
+        </plane>
+        <atom element="Cu" x="5.0377" y="-5.0616" z="-2.2721" style="solid"/>
+        <atom element="Cu" x="3.6665" y="-4.5501" z="-7.3546" style="solid"/>
+        <atom element="Cu" x="-0.0704" y="-5.1857" z="-0.9064" style="solid"/>
+        <atom element="Cu" x="-1.4417" y="-4.6741" z="-5.9889" style="solid"/>
+        <atom element="Cu" x="5.0630" y="5.3097" z="-1.2351" style="solid"/>
+        <atom element="Cu" x="3.6918" y="5.8212" z="-6.3176" style="solid"/>
+        <atom element="Cu" x="-0.0451" y="5.1856" z="0.1306" style="solid"/>
+        <atom element="Cu" x="-1.4163" y="5.6971" z="-4.9519" style="solid"/>
+        <atom element="Cu" x="1.8107" y="0.3178" z="-3.6120" style="solid"/>
+        <atom element="Cu" x="4.3711" y="2.9726" z="-4.0356" style="solid"/>
+        <atom element="Cu" x="4.3711" y="2.9726" z="-4.0356" style="solid"/>
+        <atom element="Cu" x="-0.7370" y="2.8485" z="-2.6699" style="solid"/>
+        <atom element="Cu" x="-0.7370" y="2.8485" z="-2.6699" style="solid"/>
+        <atom element="Cu" x="2.4900" y="-2.5308" z="-1.3300" style="solid"/>
+        <atom element="Cu" x="2.4900" y="-2.5308" z="-1.3300" style="solid"/>
+        <atom element="Cu" x="1.1187" y="-2.0193" z="-6.4125" style="solid"/>
+        <atom element="Cu" x="1.1187" y="-2.0193" z="-6.4125" style="solid"/>
+        <atom element="S" x="0.1837" y="1.7149" z="-4.4497" style="solid"/>
+        <atom element="S" x="3.4440" y="1.5135" z="-2.5151" style="solid"/>
+        <atom element="S" x="2.7161" y="4.3650" z="-4.8249" style="solid"/>
+        <atom element="S" x="0.9243" y="4.0490" z="-1.6213" style="solid"/>
+        <atom element="S" x="3.4107" y="-3.6645" z="-3.1098" style="solid"/>
+        <atom element="S" x="0.1916" y="-3.4784" z="-4.8920" style="solid"/>
+        <atom element="S" x="2.7801" y="-0.8188" z="-5.3639" style="solid"/>
+        <atom element="S" x="0.8350" y="-1.1385" z="-2.1194" style="solid"/>
+        <atom element="Fe" x="5.0504" y="0.1240" z="-1.7536" style="solid"/>
+        <atom element="Fe" x="3.6792" y="0.6356" z="-6.8361" style="solid"/>
+        <atom element="Fe" x="-0.0578" y="-0.0000" z="-0.3879" style="solid"/>
+        <atom element="Fe" x="-1.4290" y="0.5115" z="-5.4704" style="solid"/>
+        <atom element="Fe" x="1.7980" y="-4.8679" z="-4.1305" style="solid"/>
+        <atom element="Fe" x="1.8234" y="5.5034" z="-3.0935" style="solid"/>
+        <atom element="Fe" x="2.5026" y="2.6548" z="-0.8115" red="1.000"
+        green="0.000" blue="0.000" style="solid"/>
+        <atom element="Fe" x="2.5026" y="2.6548" z="-0.8115" red="1.000"
+        green="0.000" blue="0.000" style="solid"/>
+        <atom element="Fe" x="1.1314" y="3.1664" z="-5.8940" red="1.000"
+        green="0.000" blue="0.000" style="solid"/>
+        <atom element="Fe" x="1.1314" y="3.1664" z="-5.8940" red="1.000"
+        green="0.000" blue="0.000" style="solid"/>
+        <atom element="Fe" x="4.3584" y="-2.2130" z="-4.5541" red="1.000"
+        green="0.000" blue="0.000" style="solid"/>
+        <atom element="Fe" x="4.3584" y="-2.2130" z="-4.5541" red="1.000"
+        green="0.000" blue="0.000" style="solid"/>
+        <atom element="Fe" x="-0.7497" y="-2.3371" z="-3.1884" red="1.000"
+        green="0.000" blue="0.000" style="solid"/>
+        <atom element="Fe" x="-0.7497" y="-2.3371" z="-3.1884" red="1.000"
+        green="0.000" blue="0.000" style="solid"/>
+      </cell>
+      <text contents="Chalcopyrite" style="solid" font="serif" x="0.9210"
+      y="4.4327" z="0.5067" e1="16.57" e2="306.12" e3="53.53" red="0.500"
+      green="1.000" blue="0.500"/>
+      <text contents="Barbiturate" style="solid" font="serif" x="-6.0158"
+      y="-4.7715" z="0.5067" e1="16.57" e2="306.12" e3="53.53" red="0.500"
+      green="1.000" blue="0.500"/>
+    </layer>
+    <layer perspective="no">
+      <molecule name="barbiturate" scale="0.835">
+        <plane name="Plane" reference="atoms" x="-3.8756" y="4.7635"
+        z="2.1242" center_x="-6.3679" center_y="2.9233" center_z="-0.2398"
+        e1="41.16" e2="257.46" e3="111.65">
+          <atom id="1" element="C" x="-7.7291" y="2.3453" z="0.3691"/>
+          <atom id="2" element="C" x="-8.1988" y="3.7509" z="0.1202"/>
+          <atom id="3" element="C" x="-7.1000" y="4.5821" z="-0.4757"/>
+          <atom id="4" element="C" x="-5.5697" y="2.8423" z="-0.4772"/>
+          <atom id="5" element="O" x="-4.3246" y="2.4203" z="-0.7619"/>
+          <atom id="6" element="N" x="-5.8951" y="4.0904" z="-0.7282"/>
+          <atom id="7" element="O" x="-7.3228" y="5.7468" z="-0.7370"/>
+          <atom id="8" element="O" x="-8.4949" y="1.5387" z="0.8493"/>
+          <atom id="9" element="N" x="-6.4616" y="1.9622" z="0.0600"/>
+          <atom id="10" element="H" x="-3.6829" y="3.0328" z="-1.1469"/>
+          <atom id="11" element="H" x="-6.1854" y="1.0489" z="0.2315"/>
+          <bond parent1="1" parent2="2"/>
+          <bond parent1="1" parent2="8" order="2.00"/>
+          <bond parent1="1" parent2="9"/>
+          <bond parent1="2" parent2="3"/>
+          <bond parent1="3" parent2="6"/>
+          <bond parent1="3" parent2="7" order="2.00"/>
+          <bond parent1="4" parent2="5"/>
+          <bond parent1="4" parent2="6"/>
+          <bond parent1="4" parent2="9"/>
+          <bond parent1="5" parent2="10"/>
+          <bond parent1="9" parent2="11"/>
+          <data name="points" type="double" size="18">
+          -0.7272 -3.3616 -1.3783 -1.2974 -3.4604 -0.6036 -2.9491 -3.5088 1.2936
+          -5.0025 -2.2798 1.7719 -4.7398 -1.0991 -0.2405 -3.9616 -0.2819 -2.2930
+          </data>
+          <data name="points_driver" type="int" size="8">
+          1 6 0 1 2 3 4 5
+          </data>
+        </plane>
+        <atom id="12" element="C" x="-2.4009" y="-2.7002" z="-0.4797"/>
+        <atom id="13" element="O" x="-1.2924" y="-3.4528" z="-0.5984"/>
+        <atom id="14" element="N" x="-2.6942" y="-1.8394" z="-1.4281"/>
+        <atom id="15" element="C" x="-3.7671" y="-1.0619" z="-1.3843"/>
+        <atom id="16" element="O" x="-3.9691" y="-0.2920" z="-2.3013"/>
+        <atom id="17" element="C" x="-4.7414" y="-1.0999" z="-0.2429"/>
+        <atom id="18" element="C" x="-4.8081" y="0.2829" z="0.4077"/>
+        <atom id="19" element="C" x="-3.4426" y="0.6625" z="0.9209"/>
+        <atom id="20" element="C" x="-2.8482" y="1.7382" z="0.4675"/>
+        <atom id="21" element="C" x="-6.1262" y="-1.4728" z="-0.7759"/>
+        <atom id="22" element="C" x="-6.5765" y="-0.4299" z="-1.8010"/>
+        <atom id="23" element="C" x="-6.0636" y="-2.8492" z="-1.4416"/>
+        <atom id="24" element="C" x="-7.4478" y="-3.2215" z="-1.9742"/>
+        <atom id="25" element="C" x="-7.3854" y="-4.5978" z="-2.6398"/>
+        <atom id="26" element="C" x="-4.3191" y="-2.1112" z="0.7852"/>
+        <atom id="27" element="O" x="-4.9975" y="-2.2704" z="1.7763"/>
+        <atom id="28" element="N" x="-3.1923" y="-2.8541" z="0.6198"/>
+        <atom id="29" element="H" x="-0.7240" y="-3.3569" z="-1.3748"/>
+        <atom id="30" element="H" x="-5.1354" y="1.0161" z="-0.3288"/>
+        <atom id="31" element="H" x="-5.5144" y="0.2609" z="1.2381"/>
+        <atom id="32" element="H" x="-2.9549" y="0.0480" z="1.6632"/>
+        <atom id="33" element="H" x="-1.8698" y="2.0104" z="0.8350"/>
+        <atom id="34" element="H" x="-3.3359" y="2.3525" z="-0.2750"/>
+        <atom id="35" element="H" x="-6.8371" y="-1.5012" z="0.0501"/>
+        <atom id="36" element="H" x="-6.6219" y="0.5499" z="-1.3262"/>
+        <atom id="37" element="H" x="-5.8657" y="-0.4019" z="-2.6261"/>
+        <atom id="38" element="H" x="-7.5633" y="-0.6952" z="-2.1799"/>
+        <atom id="39" element="H" x="-5.3523" y="-2.8202" z="-2.2673"/>
+        <atom id="40" element="H" x="-5.7431" y="-3.5915" z="-0.7114"/>
+        <atom id="41" element="H" x="-8.1596" y="-3.2492" z="-1.1481"/>
+        <atom id="42" element="H" x="-7.7692" y="-2.4786" z="-2.7044"/>
+        <atom id="43" element="H" x="-6.6745" y="-4.5694" z="-3.4660"/>
+        <atom id="44" element="H" x="-7.0648" y="-5.3401" z="-1.9097"/>
+        <atom id="45" element="H" x="-8.3721" y="-4.8631" z="-3.0189"/>
+        <atom id="46" element="H" x="-2.9437" y="-3.4992" z="1.2992"/>
+        <bond parent1="12" parent2="13"/>
+        <bond parent1="12" parent2="14"/>
+        <bond parent1="12" parent2="28"/>
+        <bond parent1="13" parent2="29"/>
+        <bond parent1="14" parent2="15"/>
+        <bond parent1="15" parent2="16" order="2.00"/>
+        <bond parent1="15" parent2="17"/>
+        <bond parent1="17" parent2="18"/>
+        <bond parent1="17" parent2="21"/>
+        <bond parent1="17" parent2="26"/>
+        <bond parent1="18" parent2="19"/>
+        <bond parent1="18" parent2="30"/>
+        <bond parent1="18" parent2="31"/>
+        <bond parent1="19" parent2="20" order="2.00"/>
+        <bond parent1="19" parent2="32"/>
+        <bond parent1="20" parent2="33"/>
+        <bond parent1="20" parent2="34"/>
+        <bond parent1="21" parent2="22"/>
+        <bond parent1="21" parent2="23"/>
+        <bond parent1="21" parent2="35"/>
+        <bond parent1="22" parent2="36"/>
+        <bond parent1="22" parent2="37"/>
+        <bond parent1="22" parent2="38"/>
+        <bond parent1="23" parent2="24"/>
+        <bond parent1="23" parent2="39"/>
+        <bond parent1="23" parent2="40"/>
+        <bond parent1="24" parent2="25"/>
+        <bond parent1="24" parent2="41"/>
+        <bond parent1="24" parent2="42"/>
+        <bond parent1="25" parent2="43"/>
+        <bond parent1="25" parent2="44"/>
+        <bond parent1="25" parent2="45"/>
+        <bond parent1="26" parent2="27" order="2.00"/>
+        <bond parent1="26" parent2="28"/>
+        <bond parent1="28" parent2="46"/>
+      </molecule>
+      <text contents="(110)" font="serif" x="4.3973" y="-3.6096" z="-0.0026"
+      e1="0.32" e2="74.44" e3="285.73" scale="0.653"/>
+    </layer>
+  </window>
+</gml>

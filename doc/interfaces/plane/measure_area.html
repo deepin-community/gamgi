@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Interfaces: Plane Measure</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Plane Measure</h1>
+
+<div id="notebook">
+<ul>
+<li><a href="measure_length.html">Length</a></li>
+<li><span>Area</span></li>
+<li><a href="measure_angle.html">Angle</a></li>
+</ul>
+</div>
+
+<div class="contents">
+            
+Measure <b>Area</b> properties involving planes.
+
+<h3>Quantity</h3>
+
+The supported <b>Area</b> properties are listed below. Planes
+and other objects selected may belong to different structural systems
+(cells, molecules, etc.), bonded or not. Only objects in the current
+layer can be chosen.
+
+<p/>
+
+An easy technique to select the objects is to click the mouse
+sucessively over their visual representations, in the sequence
+shown in the dialog. After the last needed object is selected,
+GAMGI automatically starts the calculation.
+
+<p/><b>Plane Node Area</b><p/>
+
+The area per node in a crystallographic plane. The plane parent
+must be a cell object.
+
+<p/>
+
+The area per node is calculated for the selected plane object, dividing
+the volume per node by the distance between planes: <b>A = V / d</b>. 
+To ensure correct results, the real distance between adjacent planes 
+must be used. GAMGI uses the following algorithm: 1) determine
+the smaller possible indices from the plane indices. For primitive
+lattices or primitive vectors these are always the true Miller indices.
+
+<p/>
+
+2) for <b>C</b>, <b>I</b>, <b>F</b>, <b>R</b> centered lattices, with 
+conventional vectors, the structure factor might be zero for these
+indices. In this case, there are equivalent planes at 1/2 (base-centered,
+body-centered and face-centered lattices) or 1/3 (rombohedral) of
+the distance to the origin. In this case, use the following rules
+to obtain the true Miller indices:
+
+<p/>
+
+<pre>
+<b>C</b>: unless h+k == 2n, (h k l) becomes (2h 2k 2l)
+<b>I</b>: unless h+k+l = 2n, (h k l) becomes (2h 2k 2l)
+<b>F</b>: unless h,k,l have same parity, (h k l) becomes (2h 2k 2l)
+<b>R</b>: unless -h+k+l = 3n, (h k l) becomes (3h 3k 3l)
+</pre>
+
+<p/>
+
+For example, conventional planes (100) in cI and hR lattices are in fact 
+(200) and (300) planes respectively, so the true distance between adjacent
+planes is actually d/2 and d/3, where d is the uncorrected distance. 
+This correction is not taken into account when determining the <b>Plane 
+Separation</b>, only when calculating the <b>Plane Node Area</b> and the 
+<b>Plane Node Density</b>.
+
+<p/>
+
+3) if the plane indices are smaller or equal to the Miller indices,
+the correct distance between planes is the distance for planes with
+Miller indices, as planes with smaller indices must be multiples
+of Miller planes, with the same area/node. If the plane indices are 
+higher than the Miller indices, then the planes are either Laue planes 
+or multiples of Laue planes, and in both cases an error message is issued,
+because the area/node is not uniquely defined for these planes.
+
+<p/>
+
+For example, conventional planes (100) and (200) in cI have an 
+area/node equal to a**2, but planes (300) and (400) have no unique 
+area/node, varying between 0 and a**2. The Miller indices are (200).
+
+<p/><b>Plane Node Density</b><p/>
+
+The number of nodes per unit area in a crystallographic plane (the 
+inverse of the previous quantity). The plane parent must be a cell 
+object.
+
+<h3>Value</h3>
+
+After selecting a quantity, enter the name of the objects and
+press <b>Ok</b>. If all objects are recognized, GAMGI does the
+calculation and shows the result in the <b>Value</b> entry.
+
+<p/>
+
+When a calculation ends, GAMGI keeps the objects identification.
+To start a new calculation, just click the mouse over a new object:
+GAMGI automatically cleans the previous data and inserts the new
+object identification. When a new quantity or page is chosen,
+previous data is automatically removed.
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

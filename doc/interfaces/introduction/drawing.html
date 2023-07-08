@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Interfaces: Introduction Drawing</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/board.css"/>
+</head>
+
+<body>
+
+<div class="board">
+<div>Introduction Drawing</div><div>&nbsp;</div>
+</div>
+
+<div class="contents">
+
+A window drawing area is the only graphic zone
+in GAMGI, where all the rendering takes place.
+
+<p/>
+
+Although this drawing area is unique, it is logically formed as the superposition
+of unlimited layers, which are totally independent: they have independent lights,
+types of projection, viewing referentials, transparency properties, etc.
+
+<p/>
+
+Each window has always a currently working layer, where objects are handled
+and action occurs. The objects in the current layer are always on top, and 
+the viewport background color is always the color of the current layer.
+
+<p/>
+
+Multiple side-by-side viewports, or superimposed lateraly filtered 
+viewports, in a single drawing area, are currently not supported.
+
+<p/>
+
+Dragging the mouse over the drawing area is an effective way to change the currently 
+selected object: 1) pressing the left button rotates the object around its geometric 
+center along the three x,y,z axes: dragging horizontally rotates the object along the 
+vertical axis, dragging vertically rotates the object along the horizontal axis, and 
+dragging along a circular arc far from the center rotates the object along the axis 
+perpendicular to the screen; 2) pressing the center button moves the object in the 
+dragging direction; 3) pressing the right button and dragging up and down scales the 
+object up and down respectively. To change these defaults select <b>Gamgi->Config</b>.
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

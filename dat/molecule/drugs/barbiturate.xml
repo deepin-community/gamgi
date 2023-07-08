@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE gml SYSTEM "http://www.gamgi.org/dtd/gamgi.dtd">
+<gml>
+  <molecule name="barbiturate">
+    <atom id="1" element="C" x="0.0644" y="-1.5824" z="-0.4305"/>
+    <atom id="2" element="O" x="-0.1331" y="-2.9086" z="-0.5380"/>
+    <atom id="3" element="N" x="0.6771" y="-0.9460" z="-1.4032"/>
+    <atom id="4" element="C" x="0.9099" y="0.3587" z="-1.3719"/>
+    <atom id="5" element="O" x="1.4817" y="0.8733" z="-2.3114"/>
+    <atom id="6" element="C" x="0.4910" y="1.2225" z="-0.2179"/>
+    <atom id="7" element="C" x="1.7282" y="1.8880" z="0.3873"/>
+    <atom id="8" element="C" x="2.6832" y="0.8266" z="0.8706"/>
+    <atom id="9" element="C" x="3.8937" y="0.7596" z="0.3745"/>
+    <atom id="10" element="C" x="-0.4670" y="2.3041" z="-0.7210"/>
+    <atom id="11" element="C" x="0.2383" y="3.1609" z="-1.7744"/>
+    <atom id="12" element="C" x="-1.7009" y="1.6451" z="-1.3415"/>
+    <atom id="13" element="C" x="-2.6581" y="2.7265" z="-1.8442"/>
+    <atom id="14" element="C" x="-3.8919" y="2.0676" z="-2.4646"/>
+    <atom id="15" element="C" x="-0.1980" y="0.4047" z="0.8378"/>
+    <atom id="16" element="O" x="-0.6020" y="0.9489" z="1.8420"/>
+    <atom id="17" element="N" x="-0.3803" y="-0.9339" z="0.6832"/>
+    <atom id="18" element="H" x="0.1737" y="-3.3808" z="-1.3242"/>
+    <atom id="19" element="H" x="2.2188" y="2.5000" z="-0.3690"/>
+    <atom id="20" element="H" x="1.4297" y="2.5166" z="1.2267"/>
+    <atom id="21" element="H" x="2.3695" y="0.1221" z="1.6268"/>
+    <atom id="22" element="H" x="4.5781" y="-0.0008" z="0.7207"/>
+    <atom id="23" element="H" x="4.2073" y="1.4640" z="-0.3818"/>
+    <atom id="24" element="H" x="-0.7735" y="2.9341" z="0.1143"/>
+    <atom id="25" element="H" x="1.1162" y="3.6308" z="-1.3318"/>
+    <atom id="26" element="H" x="0.5443" y="2.5309" z="-2.6088"/>
+    <atom id="27" element="H" x="-0.4440" y="3.9318" z="-2.1320"/>
+    <atom id="28" element="H" x="-1.3936" y="1.0150" z="-2.1764"/>
+    <atom id="29" element="H" x="-2.2028" y="1.0353" z="-0.5910"/>
+    <atom id="30" element="H" x="-2.9643" y="3.3575" z="-1.0088"/>
+    <atom id="31" element="H" x="-2.1560" y="3.3373" z="-2.5945"/>
+    <atom id="32" element="H" x="-3.5854" y="1.4376" z="-3.2999"/>
+    <atom id="33" element="H" x="-4.3938" y="1.4577" z="-1.7142"/>
+    <atom id="34" element="H" x="-4.5741" y="2.8385" z="-2.8223"/>
+    <atom id="35" element="H" x="-0.8281" y="-1.4368" z="1.3805"/>
+    <bond parent1="1" parent2="2"/>
+    <bond parent1="1" parent2="3"/>
+    <bond parent1="1" parent2="17"/>
+    <bond parent1="2" parent2="18"/>
+    <bond parent1="3" parent2="4"/>
+    <bond parent1="4" parent2="5" order="2.00"/>
+    <bond parent1="4" parent2="6"/>
+    <bond parent1="6" parent2="7"/>
+    <bond parent1="6" parent2="10"/>
+    <bond parent1="6" parent2="15"/>
+    <bond parent1="7" parent2="8"/>
+    <bond parent1="7" parent2="19"/>
+    <bond parent1="7" parent2="20"/>
+    <bond parent1="8" parent2="9" order="2.00"/>
+    <bond parent1="8" parent2="21"/>
+    <bond parent1="9" parent2="22"/>
+    <bond parent1="9" parent2="23"/>
+    <bond parent1="10" parent2="11"/>
+    <bond parent1="10" parent2="12"/>
+    <bond parent1="10" parent2="24"/>
+    <bond parent1="11" parent2="25"/>
+    <bond parent1="11" parent2="26"/>
+    <bond parent1="11" parent2="27"/>
+    <bond parent1="12" parent2="13"/>
+    <bond parent1="12" parent2="28"/>
+    <bond parent1="12" parent2="29"/>
+    <bond parent1="13" parent2="14"/>
+    <bond parent1="13" parent2="30"/>
+    <bond parent1="13" parent2="31"/>
+    <bond parent1="14" parent2="32"/>
+    <bond parent1="14" parent2="33"/>
+    <bond parent1="14" parent2="34"/>
+    <bond parent1="15" parent2="16" order="2.00"/>
+    <bond parent1="15" parent2="17"/>
+    <bond parent1="17" parent2="35"/>
+  </molecule>
+</gml>

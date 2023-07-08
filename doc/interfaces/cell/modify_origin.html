@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Interfaces: Cell Modify</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Cell Modify</h1>
+
+<div id="notebook">
+<ul>
+<li><a href="modify_symmetry.html">Symmetry</a></li>
+<li><a href="modify_volume.html">Volume</a></li>
+<li><a href="modify_position.html">Position</a></li>
+<li><span>Origin</span></li>
+<li><a href="modify_view.html">View</a></li>
+</ul>
+</div>
+
+<div class="contents">
+
+Change here axes and node (0 0 0) for a single cell or a list of cells.
+
+<p/>
+
+To modify an cell, click over its graphic image, or write its identification
+(name and number) on the <b>Cell</b> entry. To modify a list of cells, press
+the button <b>List</b> (after creating the list of cells with <b>Cell->Select</b>).
+Parameters for empty entries or <b>Local</b> choices remain unchanged.
+
+<p/>
+
+To change an cell name write the new name in the <b>Cell</b> entry,
+followed by the cell number (GAMGI needs the number to identify the cell).
+To change the name for a list of cells, press <b>List</b> first
+and then write the new common name in the <b>Name</b> entry.
+
+<h3>O1, O2, O3</h3>
+
+These entries provide the coordinates of the node in the lower-left 
+corner of the cell where the new origin is, calculated with conventional 
+or primitive cell vectors. When the lattice is primitive or vectors are 
+primitive, this corner node becomes the new origin node (0 0 0) and no more
+coordinates are needed.
+
+<p/>
+
+The cell position, given by the coordinates x,y,z of the origin node,
+is not affected by a change in the origin node, so the new origin node
+must occupy the position kept by the previous origin node, forcing a
+cell translation. The new cell origin can be outside the current cell volume.
+
+<h3>O4</h3>
+
+When the lattice is centered and vectors are conventional,
+a fourth coordinate <b>o4</b> is needed to point the new origin
+node (000) to one of the centered nodes. By default, <b>o4</b>
+is <b>000</b>, so no change is introduced. When the cell lattice
+is primitive <b>P</b> or the vectors defining the origin are primitive,
+that is the only possible value for <b>o4</b>. For I, C, F, R centered
+lattices, <b>o4</b> can also take the values:
+
+<pre>
+<b>I</b>: <b>111</b>
+<b>C</b>: <b>110</b>
+<b>F</b>: <b>110</b>, <b>101</b>, <b>011</b>
+<b>R</b>: <b>211</b>, <b>122</b>
+</pre>
+
+corresponding to the numerators of the inner node coordinates,
+(1/2 1/2 1/2) for <b>I</b> lattices, (1/2 1/2 0) for <b>C</b>
+lattices, (0 1/2 1/2) (1/2 0 1/2) (1/2 1/2 0) for <b>F</b>
+lattices and (1/3 2/3 2/3) (2/3 1/3 1/3) for <b>R</b> lattices.
+
+<h3>Vectors</h3>
+
+Indicate the type of cell vectors, <b>Conventional</b> or <b>Primitive</b>,
+used to determine the node with <b>o1</b>, <b>o2</b>, <b>o3</b> coordinates,
+as described above. When <b>o4</b> is not <b>000</b>, a centered cell is
+involved and <b>Vectors</b> must be <b>Conventional</b>.
+
+<h3>Axes</h3>
+
+Controls whether cell axes are visible. Axes are positioned at node 
+(0 0 0), and can be represented either by conventional or by primitive 
+vectors. The three axes use the rgb color scheme: red for the first 
+axis, green for the second and blue for the third.
+
+<h3>Vectors</h3>
+
+Indicate the type of cell vectors to show, <b>Conventional</b> 
+or <b>Primitive</b>. These are totally independent of the vectors 
+used to indicate the node (0 0 0).
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

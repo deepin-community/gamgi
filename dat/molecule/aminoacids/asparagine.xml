@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE gml SYSTEM "http://www.gamgi.org/dtd/gamgi.dtd">
+<gml>
+  <molecule name="asparagine">
+    <atom id="1" element="N" x="-0.1465" y="1.6032" z="-0.1158"/>
+    <atom id="2" element="C" x="0.5102" y="0.3349" z="-0.4170"/>
+    <atom id="3" element="C" x="1.6452" y="0.5320" z="-1.3944"/>
+    <atom id="4" element="O" x="1.9330" y="1.6400" z="-1.8446"/>
+    <atom id="5" element="C" x="-0.5349" y="-0.6708" z="-0.9827"/>
+    <atom id="6" element="C" x="-1.7550" y="-0.9698" z="-0.1043"/>
+    <atom id="7" element="O" x="-2.8422" y="-0.4467" z="-0.2989"/>
+    <atom id="8" element="N" x="-1.6206" y="-1.7952" z="0.8989"/>
+    <atom id="9" element="H" x="0.1743" y="2.5341" z="-0.5594"/>
+    <atom id="10" element="H" x="-0.9827" y="1.6669" z="0.5643"/>
+    <atom id="11" element="H" x="0.9486" y="-0.0638" z="0.5167"/>
+    <atom id="12" element="H" x="2.7318" y="1.5523" z="-2.4891"/>
+    <atom id="13" element="H" x="-0.9235" y="-0.2943" z="-1.9494"/>
+    <atom id="14" element="H" x="-0.0487" y="-1.6294" z="-1.2386"/>
+    <atom id="15" element="H" x="-2.4446" y="-1.8069" z="1.5060"/>
+    <atom id="16" element="H" x="-0.6816" y="-2.1442" z="1.0885"/>
+    <atom id="17" element="O" x="2.3654" y="-0.6468" z="-1.7652"/>
+    <bond parent1="1" parent2="2"/>
+    <bond parent1="1" parent2="9"/>
+    <bond parent1="1" parent2="10"/>
+    <bond parent1="2" parent2="3"/>
+    <bond parent1="2" parent2="5"/>
+    <bond parent1="2" parent2="11"/>
+    <bond parent1="3" parent2="4"/>
+    <bond parent1="3" parent2="17" order="2.00"/>
+    <bond parent1="4" parent2="12"/>
+    <bond parent1="5" parent2="6"/>
+    <bond parent1="5" parent2="13"/>
+    <bond parent1="5" parent2="14"/>
+    <bond parent1="6" parent2="7"/>
+    <bond parent1="6" parent2="8"/>
+    <bond parent1="8" parent2="15"/>
+    <bond parent1="8" parent2="16"/>
+  </molecule>
+</gml>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Interfaces: Bond Link</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Bond Link</h1>
+
+<div id="notebook">
+<ul>
+<li><span>Object</span></li>
+<li><a href="link_shift.html">Shift</a></li>
+</ul>
+</div>
+
+<div class="contents">
+
+Link a bond or a list of bonds to other objects.
+
+<p/>
+
+Bonds can be linked only to objects below.
+
+<p/>
+
+Gamgi expects users to identify first the bond or list of bonds
+and then the object to link. When the <b>Bond</b> entry is active 
+and empty, clicking the mouse over a bond, on the current layer
+(local selection), its identification is transported to the <b>Bond</b> 
+entry. Pressing the <b>List</b> button, the current list of bonds
+is selected instead.
+
+<p/>
+
+Gamgi is now expecting users to click on a object of the class 
+currently selected in the class menu. This object can be in 
+a different layer or window (global selection). 
+
+<p/>
+
+To select a visible object, just press the mouse over the object,
+in its window. To select objects without visual representation, such
+as layers and lights, press the mouse over the graphic area in the window,
+to create a menu with all the objects of that class in the window,
+which can then be selected.
+
+<h3>Method</h3>
+
+Gamgi suppports only one method to link bonds: <b>Object</b>.
+
+<p/>
+
+The <b>Object</b> method links a bond or a list of bonds
+to an object hierarchically below.
+
+<p/>
+
+When linking a bond, the child object is unlinked from its current
+parent and linked to the bond. An error is issued when the parent
+already owned the child object.
+
+<p/>
+
+After the linking operation, Gamgi always puts on top
+the window and layer containing the linked objects.
+
+<p/>
+
+When linking a list of bonds, the child object is replicated as many
+times as necessary to link each bond in the list to a different replica.
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

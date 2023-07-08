@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE gml SYSTEM "http://www.gamgi.org/dtd/gamgi.dtd">
+<gml>
+  <layer perspective="no">
+    <light ambient_r="0.500" ambient_g="0.500" ambient_b="0.500"
+    diffuse_r="0.400" diffuse_g="0.400" diffuse_b="0.400" specular_r="0.300"
+    specular_g="0.300" specular_b="0.300" direction_x="0.0000"
+    direction_y="0.0000" direction_z="-1.0000"/>
+    <cell group="225" a="5.6400" x="-0.5691" y="-3.2712" z="6.1355"
+    e1="125.00" e2="6.50" e3="12.00">
+      <atom element="Cl" x="-0.5691" y="-3.2712" z="6.1355" radius="1.8100"
+      style="solid" variancy="1.00" size="1.00" scale="0.400"/>
+      <atom element="Cl" x="-3.8458" y="-2.4643" z="1.6164" radius="1.8100"
+      style="solid" variancy="1.00" size="1.00" scale="0.400"/>
+      <atom element="Cl" x="-0.5253" y="2.2863" z="7.0961" radius="1.8100"
+      style="solid" variancy="1.00" size="1.00" scale="0.400"/>
+      <atom element="Cl" x="-3.8020" y="3.0931" z="2.5770" radius="1.8100"
+      style="solid" variancy="1.00" size="1.00" scale="0.400"/>
+      <atom element="Cl" x="4.0212" y="-2.7482" z="2.9005" radius="1.8100"
+      style="solid" variancy="1.00" size="1.00" scale="0.400"/>
+      <atom element="Cl" x="0.7446" y="-1.9413" z="-1.6185" radius="1.8100"
+      style="solid" variancy="1.00" size="1.00" scale="0.400"/>
+      <atom element="Cl" x="4.0650" y="2.8093" z="3.8611" radius="1.8100"
+      style="solid" variancy="1.00" size="1.00" scale="0.400"/>
+      <atom element="Cl" x="0.7883" y="3.6162" z="-0.6580" radius="1.8100"
+      style="solid" variancy="1.00" size="1.00" scale="0.400"/>
+      <atom element="Cl" x="1.7480" y="-0.2309" z="4.9983" radius="1.8100"
+      style="solid" variancy="1.00" size="1.00" scale="0.400"/>
+      <atom element="Cl" x="-1.5287" y="0.5759" z="0.4792" radius="1.8100"
+      style="solid" variancy="1.00" size="1.00" scale="0.400"/>
+      <atom element="Cl" x="0.0877" y="-2.6062" z="2.2585" radius="1.8100"
+      style="solid" variancy="1.00" size="1.00" scale="0.400"/>
+      <atom element="Cl" x="0.1315" y="2.9512" z="3.2190" radius="1.8100"
+      style="solid" variancy="1.00" size="1.00" scale="0.400"/>
+      <atom element="Cl" x="-2.1855" y="-0.0890" z="4.3562" radius="1.8100"
+      style="solid" variancy="1.00" size="1.00" scale="0.400"/>
+      <atom element="Cl" x="2.4048" y="0.4340" z="1.1213" radius="1.8100"
+      style="solid" variancy="1.00" size="1.00" scale="0.400"/>
+      <atom element="Na" x="0.1096" y="0.1725" z="2.7388" radius="1.0200"
+      style="solid" variancy="1.00" size="1.00" scale="0.400"/>
+      <atom element="Na" x="-2.2074" y="-2.8677" z="3.8760" radius="1.0200"
+      style="solid" variancy="1.00" size="1.00" scale="0.400"/>
+      <atom element="Na" x="-2.1637" y="2.6897" z="4.8365" radius="1.0200"
+      style="solid" variancy="1.00" size="1.00" scale="0.400"/>
+      <atom element="Na" x="2.3829" y="-2.3447" z="0.6410" radius="1.0200"
+      style="solid" variancy="1.00" size="1.00" scale="0.400"/>
+      <atom element="Na" x="2.4266" y="3.2127" z="1.6016" radius="1.0200"
+      style="solid" variancy="1.00" size="1.00" scale="0.400"/>
+      <atom element="Na" x="-0.5472" y="-0.4924" z="6.6158" radius="1.0200"
+      style="solid" variancy="1.00" size="1.00" scale="0.400"/>
+      <atom element="Na" x="-3.8239" y="0.3144" z="2.0967" radius="1.0200"
+      style="solid" variancy="1.00" size="1.00" scale="0.400"/>
+      <atom element="Na" x="4.0431" y="0.0306" z="3.3808" radius="1.0200"
+      style="solid" variancy="1.00" size="1.00" scale="0.400"/>
+      <atom element="Na" x="0.7664" y="0.8374" z="-1.1383" radius="1.0200"
+      style="solid" variancy="1.00" size="1.00" scale="0.400"/>
+      <atom element="Na" x="1.7261" y="-3.0097" z="4.5180" radius="1.0200"
+      style="solid" variancy="1.00" size="1.00" scale="0.400"/>
+      <atom element="Na" x="-1.5506" y="-2.2028" z="-0.0010" radius="1.0200"
+      style="solid" variancy="1.00" size="1.00" scale="0.400"/>
+      <atom element="Na" x="1.7698" y="2.5478" z="5.4786" radius="1.0200"
+      style="solid" variancy="1.00" size="1.00" scale="0.400"/>
+      <atom element="Na" x="-1.5069" y="3.3546" z="0.9595" radius="1.0200"
+      style="solid" variancy="1.00" size="1.00" scale="0.400"/>
+    </cell>
+  </layer>
+</gml>

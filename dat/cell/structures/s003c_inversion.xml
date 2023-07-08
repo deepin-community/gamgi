@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE gml SYSTEM "http://www.gamgi.org/dtd/gamgi.dtd">
+<gml>
+  <gamgi>
+    <window rotate_max="5.00" rotate_step="1.00"/>
+  </gamgi>
+  <window>
+    <layer/>
+  </window>
+  <window x="71" y="21">
+    <layer perspective="no" scale="0.770">
+      <light ambient_r="0.500" ambient_g="0.500" ambient_b="0.500"
+      diffuse_r="0.400" diffuse_g="0.400" diffuse_b="0.400" specular_r="0.300"
+      specular_g="0.300" specular_b="0.300" direction_x="0.0000"
+      direction_y="0.0000" direction_z="-1.0000"/>
+      <cell system="h" lattice="P" a="3.2090" c="5.2100" x="0.8824"
+      y="-7.0021" z="0.0000" e1="0.00" e2="360.00" e3="0.00" n1="2" n2="2"
+      n3="1" axes="yes" scale="0.800">
+        <atom element="Ti" x="0.8824" y="-7.0021" z="0.0000" style="solid"
+        scale="1.402"/>
+        <atom element="Ti" x="4.0914" y="-1.4439" z="0.0000" style="solid"
+        scale="1.402"/>
+        <atom element="Ti" x="0.8824" y="-7.0021" z="5.2100" style="solid"
+        scale="1.402"/>
+        <atom element="Ti" x="4.0914" y="-1.4439" z="5.2100" style="solid"
+        scale="1.402"/>
+        <atom element="Ti" x="4.0914" y="-7.0021" z="0.0000" style="solid"
+        scale="1.402"/>
+        <atom element="Ti" x="5.6959" y="-4.2230" z="0.0000" style="solid"
+        scale="1.402"/>
+        <atom element="Ti" x="-0.7221" y="-4.2230" z="0.0000" style="solid"
+        scale="1.402"/>
+        <atom element="Ti" x="0.8824" y="-1.4439" z="0.0000" style="solid"
+        scale="1.402"/>
+        <atom element="Ti" x="4.0914" y="-7.0021" z="5.2100" style="solid"
+        scale="1.402"/>
+        <atom element="Ti" x="5.6959" y="-4.2230" z="5.2100" style="solid"
+        scale="1.402"/>
+        <atom element="Ti" x="-0.7221" y="-4.2230" z="5.2100" style="solid"
+        scale="1.402"/>
+        <atom element="Ti" x="0.8824" y="-1.4439" z="5.2100" style="solid"
+        scale="1.402"/>
+        <atom element="Ti" x="8.9049" y="1.3351" z="0.0000" style="solid"
+        scale="1.402"/>
+        <atom element="Ti" x="8.9049" y="1.3351" z="5.2100" style="solid"
+        scale="1.402"/>
+        <atom element="Ti" x="8.9049" y="-4.2230" z="0.0000" style="solid"
+        scale="1.402"/>
+        <atom element="Ti" x="10.5094" y="-1.4439" z="0.0000" style="solid"
+        scale="1.402"/>
+        <atom element="Ti" x="5.6959" y="1.3351" z="0.0000" style="solid"
+        scale="1.402"/>
+        <atom element="Ti" x="8.9049" y="-4.2230" z="5.2100" style="solid"
+        scale="1.402"/>
+        <atom element="Ti" x="10.5094" y="-1.4439" z="5.2100" style="solid"
+        scale="1.402"/>
+        <atom element="Ti" x="5.6959" y="1.3351" z="5.2100" style="solid"
+        scale="1.402"/>
+        <atom element="Ti" x="4.0914" y="4.1142" z="0.0000" style="solid"
+        scale="1.402"/>
+        <atom element="Ti" x="4.0914" y="4.1142" z="5.2100" style="solid"
+        scale="1.402"/>
+        <atom element="Ti" x="-0.7221" y="1.3351" z="0.0000" style="solid"
+        scale="1.402"/>
+        <atom element="Ti" x="0.8824" y="4.1142" z="0.0000" style="solid"
+        scale="1.402"/>
+        <atom element="Ti" x="-0.7221" y="1.3351" z="5.2100" style="solid"
+        scale="1.402"/>
+        <atom element="Ti" x="0.8824" y="4.1142" z="5.2100" style="solid"
+        scale="1.402"/>
+        <atom element="Ti" x="8.9049" y="6.8933" z="0.0000" style="solid"
+        scale="1.402"/>
+        <atom element="Ti" x="8.9049" y="6.8933" z="5.2100" style="solid"
+        scale="1.402"/>
+        <atom element="Ti" x="10.5094" y="4.1142" z="0.0000" style="solid"
+        scale="1.402"/>
+        <atom element="Ti" x="5.6959" y="6.8933" z="0.0000" style="solid"
+        scale="1.402"/>
+        <atom element="Ti" x="10.5094" y="4.1142" z="5.2100" style="solid"
+        scale="1.402"/>
+        <atom element="Ti" x="5.6959" y="6.8933" z="5.2100" style="solid"
+        scale="1.402"/>
+        <atom element="Ti" x="2.4869" y="-4.2230" z="0.0000" style="solid"
+        scale="1.402"/>
+        <atom element="Ti" x="7.3004" y="-1.4439" z="0.0000" style="solid"
+        scale="1.402"/>
+        <atom element="Ti" x="2.4869" y="1.3351" z="0.0000" style="solid"
+        scale="1.402"/>
+        <atom element="Ti" x="7.3004" y="4.1142" z="0.0000" style="solid"
+        scale="1.402"/>
+        <atom element="Ti" x="2.4869" y="-4.2230" z="5.2100" style="solid"
+        scale="1.402"/>
+        <atom element="Ti" x="7.3004" y="-1.4439" z="5.2100" style="solid"
+        scale="1.402"/>
+        <atom element="Ti" x="2.4869" y="1.3351" z="5.2100" style="solid"
+        scale="1.402"/>
+        <atom element="Ti" x="7.3004" y="4.1142" z="5.2100" style="solid"
+        scale="1.402"/>
+        <atom element="Ti" x="5.6959" y="-2.3705" z="2.6050" red="1.000"
+        green="0.000" blue="0.000" style="solid" scale="1.402"/>
+        <atom element="Ti" x="0.8824" y="-5.1496" z="2.6050" red="1.000"
+        green="0.000" blue="0.000" style="solid" scale="1.402"/>
+        <atom element="Ti" x="2.4869" y="-2.3705" z="2.6050" red="1.000"
+        green="0.000" blue="0.000" style="solid" scale="1.402"/>
+        <atom element="Ti" x="7.3004" y="0.4086" z="2.6050" red="1.000"
+        green="0.000" blue="0.000" style="solid" scale="1.402"/>
+        <atom element="Ti" x="5.6959" y="3.1877" z="2.6050" red="1.000"
+        green="0.000" blue="0.000" style="solid" scale="1.402"/>
+        <atom element="Ti" x="0.8824" y="0.4086" z="2.6050" red="1.000"
+        green="0.000" blue="0.000" style="solid" scale="1.402"/>
+        <atom element="Ti" x="2.4869" y="3.1877" z="2.6050" red="1.000"
+        green="0.000" blue="0.000" style="solid" scale="1.402"/>
+        <atom element="Ti" x="7.3004" y="5.9667" z="2.6050" red="1.000"
+        green="0.000" blue="0.000" style="solid" scale="1.402"/>
+        <atom element="Ti" x="4.0914" y="-5.1496" z="2.6050" red="1.000"
+        green="0.000" blue="0.000" style="solid" scale="1.402"/>
+        <atom element="Ti" x="8.9049" y="-2.3705" z="2.6050" red="1.000"
+        green="0.000" blue="0.000" style="solid" scale="1.402"/>
+        <atom element="Ti" x="4.0914" y="0.4086" z="2.6050" red="1.000"
+        green="0.000" blue="0.000" style="solid" scale="1.402"/>
+        <atom element="Ti" x="8.9049" y="3.1877" z="2.6050" red="1.000"
+        green="0.000" blue="0.000" style="solid" scale="1.402"/>
+      </cell>
+      <cell group="194" a="3.2090" c="5.2100" x="-8.9706" y="-7.0440"
+      z="0.0000" n1="2" n2="2" n3="1" axes="yes" scale="0.800">
+        <atom element="Ti" x="-7.3661" y="-0.5595" z="1.3025" red="1.000"
+        green="0.000" blue="0.000" style="solid" scale="1.402"/>
+        <atom element="Ti" x="-4.1571" y="-2.4122" z="3.9075" style="solid"
+        scale="1.402"/>
+        <atom element="Ti" x="-7.3661" y="-6.1177" z="1.3025" red="1.000"
+        green="0.000" blue="0.000" style="solid" scale="1.402"/>
+        <atom element="Ti" x="-5.7616" y="-3.3386" z="1.3025" red="1.000"
+        green="0.000" blue="0.000" style="solid" scale="1.402"/>
+        <atom element="Ti" x="-8.9706" y="-5.1913" z="3.9075" style="solid"
+        scale="1.402"/>
+        <atom element="Ti" x="-7.3661" y="-2.4122" z="3.9075" style="solid"
+        scale="1.402"/>
+        <atom element="Ti" x="-2.5526" y="2.2196" z="1.3025" red="1.000"
+        green="0.000" blue="0.000" style="solid" scale="1.402"/>
+        <atom element="Ti" x="-2.5526" y="-3.3386" z="1.3025" red="1.000"
+        green="0.000" blue="0.000" style="solid" scale="1.402"/>
+        <atom element="Ti" x="-0.9481" y="-0.5595" z="1.3025" red="1.000"
+        green="0.000" blue="0.000" style="solid" scale="1.402"/>
+        <atom element="Ti" x="-5.7616" y="2.2196" z="1.3025" red="1.000"
+        green="0.000" blue="0.000" style="solid" scale="1.402"/>
+        <atom element="Ti" x="-2.5526" y="0.3668" z="3.9075" style="solid"
+        scale="1.402"/>
+        <atom element="Ti" x="-4.1571" y="3.1459" z="3.9075" style="solid"
+        scale="1.402"/>
+        <atom element="Ti" x="-8.9706" y="0.3668" z="3.9075" style="solid"
+        scale="1.402"/>
+        <atom element="Ti" x="-7.3661" y="3.1459" z="3.9075" style="solid"
+        scale="1.402"/>
+        <atom element="Ti" x="-0.9481" y="4.9986" z="1.3025" red="1.000"
+        green="0.000" blue="0.000" style="solid" scale="1.402"/>
+        <atom element="Ti" x="-2.5526" y="5.9250" z="3.9075" style="solid"
+        scale="1.402"/>
+        <atom element="Ti" x="-8.9706" y="-3.3386" z="1.3025" red="1.000"
+        green="0.000" blue="0.000" style="solid" scale="1.402"/>
+        <atom element="Ti" x="-4.1571" y="-0.5595" z="1.3025" red="1.000"
+        green="0.000" blue="0.000" style="solid" scale="1.402"/>
+        <atom element="Ti" x="-8.9706" y="2.2196" z="1.3025" red="1.000"
+        green="0.000" blue="0.000" style="solid" scale="1.402"/>
+        <atom element="Ti" x="-4.1571" y="4.9986" z="1.3025" red="1.000"
+        green="0.000" blue="0.000" style="solid" scale="1.402"/>
+        <atom element="Ti" x="-5.7616" y="-5.1913" z="3.9075" style="solid"
+        scale="1.402"/>
+        <atom element="Ti" x="-0.9481" y="-2.4122" z="3.9075" style="solid"
+        scale="1.402"/>
+        <atom element="Ti" x="-5.7616" y="0.3668" z="3.9075" style="solid"
+        scale="1.402"/>
+        <atom element="Ti" x="-0.9481" y="3.1459" z="3.9075" style="solid"
+        scale="1.402"/>
+      </cell>
+    </layer>
+  </window>
+  <window x="151" y="133">
+    <layer perspective="no" scale="0.750">
+      <light ambient_r="0.500" ambient_g="0.500" ambient_b="0.500"
+      diffuse_r="0.400" diffuse_g="0.400" diffuse_b="0.400" specular_r="0.300"
+      specular_g="0.300" specular_b="0.300" direction_x="0.0000"
+      direction_y="0.0000" direction_z="-1.0000"/>
+      <cell system="h" lattice="P" a="3.2090" c="5.2100" x="3.2262"
+      y="-4.7143" z="-10.0850" e1="81.28" e2="90.00" e3="154.24" n1="1" n2="1"
+      n3="2" axes="yes">
+        <atom element="Ti" x="3.2262" y="-4.7143" z="-10.0850" style="solid"/>
+        <atom element="Ti" x="6.8372" y="-5.5187" z="-4.8405" style="solid"/>
+        <atom element="Ti" x="3.2261" y="0.4355" z="-9.2950" style="solid"/>
+        <atom element="Ti" x="6.8371" y="-0.3691" z="-4.0505" style="solid"/>
+        <atom element="Ti" x="1.8314" y="-5.1525" z="-7.2284" style="solid"/>
+        <atom element="Ti" x="3.6369" y="-5.5548" z="-4.6061" style="solid"/>
+        <atom element="Ti" x="6.4265" y="-4.6783" z="-10.3194" style="solid"/>
+        <atom element="Ti" x="8.2320" y="-5.0805" z="-7.6971" style="solid"/>
+        <atom element="Ti" x="1.8313" y="-0.0028" z="-6.4383" style="solid"/>
+        <atom element="Ti" x="3.6368" y="-0.4050" z="-3.8161" style="solid"/>
+        <atom element="Ti" x="6.4264" y="0.4715" z="-9.5293" style="solid"/>
+        <atom element="Ti" x="8.2319" y="0.0693" z="-6.9071" style="solid"/>
+        <atom element="Ti" x="3.2260" y="5.5852" z="-8.5049" style="solid"/>
+        <atom element="Ti" x="6.8370" y="4.7807" z="-3.2604" style="solid"/>
+        <atom element="Ti" x="1.8313" y="5.1470" z="-5.6483" style="solid"/>
+        <atom element="Ti" x="3.6367" y="4.7447" z="-3.0261" style="solid"/>
+        <atom element="Ti" x="6.4263" y="5.6213" z="-8.7393" style="solid"/>
+        <atom element="Ti" x="8.2318" y="5.2189" z="-6.1171" style="solid"/>
+        <atom element="Ti" x="5.0317" y="-5.1165" z="-7.4627" style="solid"/>
+        <atom element="Ti" x="5.0316" y="0.0332" z="-6.6727" style="solid"/>
+        <atom element="Ti" x="5.0315" y="5.1830" z="-5.8827" style="solid"/>
+        <atom id="1" element="Ti" x="3.3630" y="-2.4196" z="-7.8639"
+        style="solid"/>
+        <atom id="2" element="Ti" x="5.1685" y="-2.8218" z="-5.2416"
+        style="solid"/>
+        <atom id="3" element="Ti" x="3.3629" y="2.7302" z="-7.0739"
+        style="solid"/>
+        <atom id="4" element="Ti" x="5.1685" y="2.3280" z="-4.4516"
+        style="solid"/>
+        <atom id="5" element="Ti" x="6.5633" y="-2.3835" z="-8.0983"
+        style="solid"/>
+        <atom id="6" element="Ti" x="6.5632" y="2.7662" z="-7.3082"
+        style="solid"/>
+        <bond name="MgMg" parent1="1" parent2="2" style="solid" color="yes"
+        red="1.000" green="0.000" blue="0.000" scale="0.750"/>
+        <bond name="MgMg" parent1="1" parent2="5" style="solid" color="yes"
+        red="1.000" green="0.000" blue="0.000" scale="0.750"/>
+        <bond name="MgMg" parent1="2" parent2="5" style="solid" color="yes"
+        red="1.000" green="0.000" blue="0.000" scale="0.750"/>
+        <bond name="MgMg" parent1="3" parent2="4" style="solid" color="yes"
+        red="1.000" green="0.000" blue="0.000" scale="0.750"/>
+        <bond name="MgMg" parent1="3" parent2="6" style="solid" color="yes"
+        red="1.000" green="0.000" blue="0.000" scale="0.750"/>
+        <bond name="MgMg" parent1="4" parent2="6" style="solid" color="yes"
+        red="1.000" green="0.000" blue="0.000" scale="0.750"/>
+      </cell>
+      <cell group="194" a="3.2090" c="5.2100" x="-6.6294" y="-4.9679"
+      z="-3.6429" e1="81.28" e2="90.00" e3="154.24" n1="1" n2="1" n3="2"
+      axes="yes">
+        <atom id="7" element="Ti" x="-6.4926" y="-3.9606" z="-1.6191"
+        style="solid"/>
+        <atom id="8" element="Ti" x="-4.6870" y="-4.3629" z="1.0031"
+        style="solid"/>
+        <atom id="9" element="Ti" x="-6.4926" y="1.1891" z="-0.8291"
+        style="solid"/>
+        <atom id="10" element="Ti" x="-4.6871" y="0.7869" z="1.7931"
+        style="solid"/>
+        <atom id="11" element="Ti" x="-4.9609" y="-1.2277" z="-2.2545"
+        style="solid"/>
+        <atom id="12" element="Ti" x="-3.1554" y="-1.6299" z="0.3678"
+        style="solid"/>
+        <atom id="13" element="Ti" x="-4.9610" y="3.9221" z="-1.4645"
+        style="solid"/>
+        <atom id="14" element="Ti" x="-3.1555" y="3.5198" z="1.1578"
+        style="solid"/>
+        <atom id="15" element="Ti" x="-3.2923" y="-3.9246" z="-1.8535"
+        style="solid"/>
+        <atom id="16" element="Ti" x="-6.3557" y="-1.6660" z="0.6021"
+        style="solid"/>
+        <atom id="17" element="Ti" x="-3.2924" y="1.2252" z="-1.0635"
+        style="solid"/>
+        <atom id="18" element="Ti" x="-6.3558" y="3.4838" z="1.3922"
+        style="solid"/>
+        <bond name="MgMg" parent1="7" parent2="8" style="solid" color="yes"
+        red="1.000" green="0.000" blue="0.000" scale="0.750"/>
+        <bond name="MgMg" parent1="7" parent2="15" style="solid" color="yes"
+        red="1.000" green="0.000" blue="0.000" scale="0.750"/>
+        <bond name="MgMg" parent1="8" parent2="15" style="solid" color="yes"
+        red="1.000" green="0.000" blue="0.000" scale="0.750"/>
+        <bond name="MgMg" parent1="9" parent2="10" style="solid" color="yes"
+        red="1.000" green="0.000" blue="0.000" scale="0.750"/>
+        <bond name="MgMg" parent1="9" parent2="17" style="solid" color="yes"
+        red="1.000" green="0.000" blue="0.000" scale="0.750"/>
+        <bond name="MgMg" parent1="10" parent2="17" style="solid" color="yes"
+        red="1.000" green="0.000" blue="0.000" scale="0.750"/>
+        <bond name="MgMg" parent1="11" parent2="16" style="solid" color="yes"
+        red="0.000" green="1.000" blue="0.000" scale="0.750"/>
+        <bond name="MgMg" parent1="11" parent2="12" style="solid" color="yes"
+        red="0.000" green="1.000" blue="0.000" scale="0.750"/>
+        <bond name="MgMg" parent1="12" parent2="16" style="solid" color="yes"
+        red="0.000" green="1.000" blue="0.000" scale="0.750"/>
+        <bond name="MgMg" parent1="13" parent2="18" style="solid" color="yes"
+        red="0.000" green="1.000" blue="0.000" scale="0.750"/>
+        <bond name="MgMg" parent1="13" parent2="14" style="solid" color="yes"
+        red="0.000" green="1.000" blue="0.000" scale="0.750"/>
+        <bond name="MgMg" parent1="14" parent2="18" style="solid" color="yes"
+        red="0.000" green="1.000" blue="0.000" scale="0.750"/>
+      </cell>
+    </layer>
+  </window>
+</gml>

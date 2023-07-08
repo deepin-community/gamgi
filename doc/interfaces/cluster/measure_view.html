@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Interfaces: Cluster Measure</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Cluster Measure</h1>
+
+<div id="notebook">
+<ul>
+<li><a href="measure_type.html">Type</a></li>
+<li><a href="measure_symmetry.html">Symmetry</a></li>
+<li><a href="measure_voronoi.html">Voronoi</a></li>
+<li><a href="measure_tolerance.html">Tolerance</a></li>
+<li><span>View</span></li>
+</ul>
+</div>
+
+<div class="contents">
+            
+Select here how the calculated Voronoi polyhedra are shown.
+
+<h3>Borders</h3>
+
+Selecting <b>Faces</b>, only the borders defining the external faces
+are shown, thus producing a relatively uncluttered volume
+representation.
+
+<p/>
+
+Selecting <b>All</b> shows all the borders, including those inside the
+volume. This option is disabled when the button <b>Faces</b> is down,
+because in solid mode, internal borders cannot be seen from the outside
+and make it very difficult to analyze something from the inside.
+
+<h3>Faces</h3>
+
+When the button <b>Faces</b> is down, the tesselation is
+represented as a solid volume, that users can see from
+the outside or from the inside.
+
+<p/>
+
+When the button <b>Faces</b> is up, the tesselation is
+represented as a wired volume.
+
+<h3>Nodes</h3>
+
+When the button <b>Seeds</b> is up, the atom seeds are visible,
+otherwise they are hidden.
+
+<h3>Color</h3>
+
+The <b>Color</b> button controls whether the tesselation is represented
+with its own, independent color, or inherits the colors of the atom seeds,
+for each polyhedron. When the button <b>Faces</b> is up, an independent
+color is necessary, because polyhedrons are then represented only by
+wired shared edges, which cannot inherit the color from both faces.
+
+<h3>R, G, B</h3>
+
+The <b>R</b>, <b>G</b>, <b>B</b> entries define the tesselation color:
+(0.0, 0.0, 0.0) is black and (1.0, 1.0, 1.0) is white.
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Interfaces: Light Create</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Light Create</h1>
+
+<div id="notebook">
+<ul>
+<li><span>Geometry</span></li>
+<li><a href="create_color.html">Color</a></li>
+<li><a href="create_attenuation.html">Attenuation</a></li>
+</ul>
+</div>
+
+<div class="contents">
+
+Define here the geometry of the new light.
+
+<h3>Directional</h3>
+
+Directional lights emulate lights very far from the objects they 
+illuminate (as the Sun illuminating the Earth), so: 1) the light 
+beams can be considered as paralel; 2) the attenuation produced 
+by the distances between the objects is negligible, compared to 
+the attenuation produced by the distance from the source (the 
+intensity of the Sun light iluminating the top of a building 
+or a street nearby is approximately the same). 
+
+<p/>
+
+Directional lights are thus determined by the <b>x</b>, 
+<b>y</b>, <b>z</b> coordinates of the <b>Direction</b> vector.
+
+<h3>Positional</h3>
+
+<b>Positional</b> lights emit from a single point into all directions, 
+with equal intensity. The attenuation in the beam intensity, from the 
+source to the objects might be already significant (the visibility 
+produced by street lights decreases rapidly with distance).
+
+<p/>
+
+Positional lights are thus determined by the <b>x</b>, <b>y</b>, 
+<b>z</b> coordinates of the light <b>Position</b>.
+
+<h3>Spot</h3>
+
+Spot lights differ from positional lights because they emit in a given 
+<b>Direction</b>, as in a lamp. The <b>Angle</b> (beam aperture) between 
+this <b>Direction</b> (the spot) and the light outer limit (the cutoff), 
+can vary between almost 0 degrees (as in a laser) and 90 degrees (as in 
+a ceilling light). 
+
+<p/>
+
+A spot light is thus determined by its position, direction and angle.
+
+<p/>
+
+
+<b>Direction</b>, <b>Position</b>, <b>Angle</b> and <b>Attenuation</b> 
+entries are automatically enabled or disabled, according to the type of 
+light selected.
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

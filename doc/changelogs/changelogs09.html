@@ -1,0 +1,2106 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Changelogs: GAMGI 0.09</title>
+<link rel="icon" type="image/png" href="../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../css/board.css"/>
+</head>
+
+<body>
+
+<div class="board">
+<div>GAMGI 0.10</div><div>21st July 2004</div>
+</div>
+
+<div class="contents">
+
+Updated and extended the Interfaces documentation. Objects can now 
+be selected using also the Object->Select Dialogs. Started working
+on the implementation of the 230 crystallographic space 
+groups of symmetry.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>The redundant Wyckoff positions are now counted and removed.</li>
+<li>The positions and driver arrays for the 230 space groups
+are fully working, generating all the Wyckoff positions for
+a given (x,y,z) set of coordinates (needs more testing though).</li>
+<li>Refined the report produced by Cluster->Measure->Voronoi.</li>
+<li>Improved documentation for Cluster->Measure->Voronoi.</li>
+<li>Wrote documentation for Cluster->Measure.</li>
+<li>Wrote documentation for Molecule->Measure 
+and Molecule->Measure->Symmetry.</li>
+<li>Checked all the examples in molecule/symmetry to test
+the point symmetry code. They all work now, with different
+tolerances though.</li>
+<li>The positions and driver arrays for all the 230 space groups 
+are written and tested, making possible in the close future
+to support crystal building from space group information,
+an important goal for GAMGI.</li>
+<li>Checked ALL the Wyckoff positions, for the 230 space groups,
+against the International Tables of Crystallography, 5th Edition, 
+2002. From now on, to get space groups working on GAMGI what 
+is still required is essentially automatic work, the same for
+all groups.</li>
+<li>Generated all the Wyckoff positions, in electronic format, for 
+all the space groups of crystallography, using the Altwyk program.
+This is clearly work post-Gamgi 0.1.</li>
+<li>Fixed a minor inconsistency: exported windows 
+should not exceed 2 times the screen size, the maximum
+limit accepted for imported windows.</li>
+<li>Updated documentation for Layer->Create, Light->Create, 
+Atom->Create and Bond->Create.</li>
+<li>Added documentation for code style, architecture and libraries.</li>
+<li>Window parameters x,y,w,h can now take values in the ranges 
+[-screen_width, +screen_width], [-screen_height, +screen_height]             
+[GAMGI_GTK_WINDOW_WIDTH_MIN, 2 * screen_width] and  
+[GAMGI_GTK_WINDOW_HEIGHT_MIN, 2 * screen_height]. This solves
+the problem with negative x,y coordinates (meaning a window with
+its top corner outside the screen). Gtk 1.2 ignores the negative 
+coordinates but that is not a real problem.</li>
+<li>Added size,red,green,blue defaults in gamgi_gtk_bond_create
+(this was already done in gamgi_gtk_atom_create for size,variancy).
+Added size,variancy defaults in gamgi_gtk_atom_modify and 
+size,red,green,blue in gamgi_gtk_bond_modify, when changing 
+to wired and no color. Added error checking when changing 
+size,variancy in gamgi_gtk_atom_modify and size,red,green,blue
+in gamgi_gtk_bond_modify: style must be solid and color must be TRUE.</li>
+<li>Minor website cleanings: CSS/XHTML files, TODO tag for undone 
+tasks, updating interfaces introduction.</li>
+<li>Improved the object_create documentation files for the
+container objects: Group, Cluster, Molecule, Assembly.</li>
+<li>Improved the object_modify documentation files.</li>
+<li>Improved the documentation files for Group->Measure and Group->Modify.</li>
+<li>Improved the documentation files for the Help dialogs.</li>
+<li>Wrote the documentation files for the Object->Select dialogs.</li>
+<li>Improved the documentation files for the Object->Remove dialogs.</li>
+<li>Removed a bug in the Voronoi volume code: 
+an int was used instead of a real.</li>
+<li>Splited the code in gamgi_gtk_select.c by files as
+gamgi_gtk_text_select.c, one for each class of object, and
+connected the Object->Select dialogs with the code to select 
+individual objects.</li>
+</ul>
+  
+<h3>What is next:</h3>
+
+<ul>
+<li>Create gtk/objects directories and move gamgi_gtk_object_*
+files to there.</li>
+<li>Replace set/get_data functions by structures
+defined in gtk/gamgi_object.h headers.</li>
+<li>Implement one or two crystallographic space groups, just as a
+proof-of-concept, in order to fix the architecture for the whole
+code handling this functionality. After that, adding the other
+space groups should be a task as mechanical as possible, essentially
+adding the data prescribed in the International Critical Tables.</li>
+<li>Add Object->Copy dialogs with basic copy functionality.</li>
+<li>Add Contents and Container options in Object->Remove dialogs.</li>
+<li>Improve Move and Rotate interactive usability.</li>
+<li>Implement dynamic text objects, to measure distances,
+angles, etc. on real time.</li>
+<li>Implement global selection, including global picking
+algorithms and selection dialogs that include all the
+selection methods.</li>
+<li>Implement multiple object picking, including a
+dynamic frame with moving ants and dragging anchors,
+to select multiple objects and images from the screen.</li>
+<li>Review the entire GAMGI code, file by file.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.09.28</div><div>1st June 2004</div>
+</div>
+
+<div class="contents">
+
+Completed the Cluster->Measure interface for the Voronoi 
+code and improved light functionality. GAMGI 0.1 is now very close.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>The connection between the Voronoi code for clusters and 
+the dialog Cluster->Measure is done: now all input data can be
+controled from the graphic interface, and all output data is
+exported to the report dialog.</li>
+<li>Improved specular light effects, in curved surfaces, 
+by adding a large OpenGL Material Shininess factor.</li>
+<li>Specular light components are working fine again. The 
+problem was glMaterial functions which were removed some 
+time ago. Without them, the default for specular light 
+components is (0.0, 0.0, 0.0, 1.0), so they were not shown.</li>
+<li>Cleaned the gamgi_gtk_light_modify.c code and removed
+a bug just introduced, when we added defaults for directional,
+positional and spot lights.</li>
+<li>Completed the basic layout for the Cluster->Measure->Voronoi
+Gtk dialog.</li>
+<li>Upgraded Mesa for Mesa6.0.1, the latest release. Unfortunately
+there is a bug in this version, regarding the pre-compiled list of 
+the GLUsphere: a black spot appears in the middle. Without the
+pre-compiled list, the GLUsphere looks fine. We use this to
+draw atoms in solid mode :-(</li>
+<li>Found and removed a second bug in gamgi_gtk_light_modify:
+for directional lights, the direction was not inverted, when
+initialised, so light would be coming from the other side.</li>
+<li>Found and removed a simple but nasty bug: in gamgi_gtk_light_modify,
+some variables were called before they were initialised.</li>
+<li>Added light defaults to Light->Create and Light->Modify.</li>
+<li>Added Help->Current and Help->Topic documentation for level0 dialogs
+showing GtkText reports: currently this affects Molecule->Measure->Symmetry
+and Cluster->Measure->Voronoi.</li>
+<li>By default, scale factors are now presented with three 
+decimal figures.</li>
+<li>Documentation improvements: updated the tutorials on cell 
+interstices and light effects.</li>
+<li>Website improvements (download section: ftp and http).</li>
+<li>Found and removed a simple but nasty bug in the mesa code: 
+the maximum,minimum scale parameters were too far away from 1.0,
+causing core dumps, when exceeded.</li>
+<li>Found and removed a bug in the code exporting bonds: size and 
+red,green,blue parameters were always exported when different from 
+the default, independently of the style and color parameters.</li>
+<li>Improved the www.gamgi.org frontpage.</li>
+<li>Completed the documentation refering to File Formats.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Write the Technical Description, in www.gamgi.org.
+with sections Libraries, Style and Architecture.</li>
+<li>Improve documentation.</li>
+<li>Review the entire GAMGI code, file by file.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.09.27</div><div>12th May 2004</div>
+</div>
+
+<div class="contents">
+
+The code to handle Voronoi tesselations is mostly done:
+statistical and graphical aspects are essentially completed.
+We still need to handle a few topological inconsistencies
+and build a proper Gtk dialog to handle the options.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Calculated the remaining Voronoi edge properties. GAMGI is now
+calculating a grand total of 23 geometrical and topological properties
+for the Voronoi tesselation.</li>
+<li>Calculated Voronoi face angles and some of the edge properties.</li>
+<li>Determined local and global edges (common to various polyhedrons).</li>
+<li>Determined global vertices from local vertices, using cells.</li>
+<li>Added more Voronoi topological properties to report.</li>
+<li>More cleaning and testing for the Voronoi code.</li>
+<li>Testing the numerical stability of the Voronoi code:
+seems good, under control, but it is not a trivial task.</li> 
+<li>Cleaned the sort-merge routines for lists of slist/dlist nodes.</li>
+<li>Added standard deviation for all the Voronoi Tesselation 
+properties where it makes sense.</li>
+<li>Completed the calculation of statistical data from
+the Voronoi Tesselation: we have now 18 properties which
+should cover everything people needed.</li>
+<li>The Voronoi volumes, areas, distances, are now calculated.
+With double precision, the total volume for DNA (698 atoms) 
+calculated from the outer planar boundaries and calculated
+by summing the volume of the 698 polyhedrons gives the same
+value, for (at least) the first 11 figures!</li>
+<li>Moved the functions to merge and sort linked lists from 
+phys/gamgi_phys_voronoi.c to gamgi_engine_lists.c, where they belong.</li>
+<li>Apparently we have a good algorithm O(e) to clean 
+and handle the Voronoi edges.</li>
+<li>Apparently we have a good algorithm O(v) to clean 
+and handle the Voronoi vertices.</li>
+<li>Cleaned a bit more the Voronoi code and filtered the inner 
+faces, so the inside of the Voronoi volume can now be seen.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Redesign the www.gamgi.org front page, using improved CSS
+techniques.</li>
+<li>Write the Technical Description, in www.gamgi.org.
+with sections Libraries, Style and Architecture.</li>
+<li>Improve documentation.</li>
+<li>Review the entire GAMGI code, file by file.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.09.26</div><div>15th April 2004</div>
+</div>
+
+<div class="contents">
+
+The code to determine Voronoi polyhedra is now
+working fast and correctly, with both outer planes
+and periodic boundary conditions. A big win for GAMGI.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>White smoke! Everything is now working fine, for all tested
+systems (including the 698 atoms of DNA), in raw and PBC modes. 
+It is fast and stable, without collisions. Definitely very good news 
+for GAMGI!</li>
+<li>We have zero collisions with periodic boundary conditions,
+for small systems. This happens even when we consider the virtual
+neighbours, i.e., if seed 6 has a face with neighbour 17 in virtual
+system -1 0 +1, then seed 17 must have a face with neighbour 6 in
+virtual system +1 0 -1.</li>
+<li>We studied the numerical stability of the Voronoi code in raw mode.
+For small systems this seems to be working fine: we have 0 collisions
+and faces have always at least 3 vertices. We have now a reasonable 
+understanding of the dynamic stability of the algorithm. The algorithm
+is stable, unless wrong tolerance parameters are used.</li>
+<li>Cleaned the Voronoi code. It is much easier to understand 
+and maintain now.</li>
+<li>Voronoi faces are now orientated immediately after the polyhedron is 
+created, which is required because we must calculate the areas immediately, 
+to check if the faces are too small and should be discarded. To avoid 
+multiple scans, we add all the vertices in a single scan, using lists 
+for simplicity (we use merge sort to sort the lists).</li>
+<li>The Voronoi clusters are now painted with the corresponding 
+seed atom colors.</li>
+<li>The PBC method is now also working and is very, very fast indeed.
+Not widely tested yet, it's higly likely that still contains bugs, 
+that show up in large systems.</li>
+<li>The new Voronoi algorithm is working in raw mode. Very fast,
+but still shows problems in large systems, due to bugs.</li>
+<li>The coordinate generators and controllers for both raw
+and pbc (general image convention) conditions are in place 
+for the new, much faster, much better, Voronoi algorithm.</li>
+<li>Removed old files from the download section at www.gamgi.org 
+and ftp.gamgi.org.</li>
+<li>More experiences with GNU-arch: creating remote mirrors
+from local archives and local mirrors from remote archives is
+working fine with sftp.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Improve the Voronoi code, with and without PBC conditions.</li>
+<li>Redesign the www.gamgi.org front page, using improved CSS
+techniques.</li>
+<li>Write the Technical Description, in www.gamgi.org.
+with sections Libraries, Style and Architecture.</li>
+<li>Improve documentation.</li>
+<li>Review the entire GAMGI code, file by file.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.09.25</div><div>16th March 2004</div>
+</div>
+
+<div class="contents">
+
+Replaced Tables by CSS layout in www.gamgi.org. Improved
+Formats documentation. Help->Topic now includes all the 
+Interfaces and Formats sections.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Help->Topic now includes all the Formats and Interfaces
+sections, essentially including all the documentation that
+exists except FAQs.</li>
+<li>GAMGI is now reading the XHTML help files, with the new style.</li>
+<li>Completed the CSS changes into the XHTML website code.
+As a result, the remote help functionality is temporarily
+broken :-)</li>
+<li>Added the id attribute to light objects when importing XML files.
+Lights cannot own other objects, so this is not very useful, but
+in some cases might help documenting the data in the file.</li>
+<li>Changed axis to axes in window and layer labels. Improved
+slightly the layout for Layer->Create and Layer->Modify
+interfaces.</li>
+<li>Everything except the manuals has now been converted
+to the new CSS layout and improvements.</li>
+<li>website improvements: started replacing the layout
+tables by CSS divs in all the gamgi.org website. This
+enhances separation between style and contents,
+makes the pages easier to maintain, and more light
+because the style file is downloaded only once and
+then stays in memory.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Improve the Voronoi code, with and without PBC conditions.</li>
+<li>Redesign the www.gamgi.org front page, using improved CSS
+techniques.</li>
+<li>Write the Technical Description, in www.gamgi.org.
+with sections Libraries, Style and Architecture.</li>
+<li>Improve documentation.</li>
+<li>Review the entire GAMGI code, file by file.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.09.24</div><div>5th March 2004</div>
+</div>
+
+<div class="contents">
+
+The first version of the Voronoi tesselation code is now working.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>The first algorithm is now implemented and seems to
+be working fine: no collisions and the images look nice.
+More testing is required though.</li>
+<li>We have a new algorithm, easy to implement, that should 
+be much faster and should work well with PBC conditions.
+We will implement it on a second stage.</li>
+<li>Speeding techniques using vertices do not work,
+because seeds can share vertices without sharing faces.</li>
+<li>Definitely the minimum image convention does not
+work for Voronoy tesselation with periodic boundary conditions,
+because the closest image is not enough to correctly determine 
+al the polyhedra.</li>
+<li>The Voronoi code is progressing well: faces have been
+tested with several crystallographic systems, with 1D and 2D
+systems and large random systems. It takes now about 30s
+on this old computer for 698 seeds DNA. No collisions were 
+found when float tolerances are 1.0E-4 to 1.0E-4 or smaller. 
+Vertices are now calculated, and the results are correct so far.
+With PBC conditions, about 160 collisions were found for
+DNA 698 seeds, perhaps because the PBC code has not been
+tested so far, so it might still contain errors.</li>
+<li>Removed once for all the extension bug, which by mistake 
+was not properly removed in the version before.</li>
+<li>Corrected a bug in the memory engine lists: a slist node
+was allocated as a dlist node. This is inofensive, as long
+as a slist does not try to work as a dlist node, a fairly
+unlikely event.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Improve the Voronoi code, with and without PBC conditions.</li>
+<li>Redesign the www.gamgi.org front page, using improved CSS 
+techniques.</li>
+<li>Write the Technical Description, in www.gamgi.org.
+with sections Libraries, Style and Architecture.</li>
+<li>Improve documentation.</li>
+<li>Review the entire GAMGI code, file by file.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.09.23</div><div>14th February 2004</div>
+</div>
+
+<div class="contents">
+
+Fixed bugs. Improved the Formats documentation.
+Added part of the code needed to calculate Voronoi polyhedra.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Cleaned the Voronoi code.</li>
+<li>Improved the Formats documentation, which now includes
+object information for atoms, bonds, texts, groups, 
+molecules, clusters, assemblies.</li>
+<li>The Voronoi code is doing good progress, and all the
+problems seem to be solved (famous last words!).</li>
+<li>In some cases it is useful to have wired bonds with a
+color chosen by the user, so this is allowed now. Moreover, 
+this solution is definitely simpler for both users and coders.
+</li>
+<li>Definitely "gamgi_gdk_get_root_origin" is not working
+properly (it gave y = -17 for a window coordinate, an 
+impossible value). Changed to "gamgi_gdk_get_root_origin" 
+instead. Probably the best solution is really to scrap 
+altogether the window x,y origin parameters.</li>
+<li>Found and removed a bug: when exporting wired atoms 
+the size parameter was exported, even if this parameter 
+is only for solid atoms (the size parameter initially is 
+set to 1.0, but the default is different, 0.8).</li>
+<li>Found and removed a simple-to-remove but difficult-to-find-nasty
+bug: we had this code, "strrchr (fullname, '.') + 1;" which should
+crash when '.' is not found. Unfortunately it seems that it crashes
+only sometimes, making it difficult to spot.</li>
+<li>Started writing a full scale 3D Voronoi code to build
+Voronoi cells for any general, amorphous atomic system.
+I think the most difficult part is done :-).</li>
+<li>Player with the mechanism provided by GTK 1.2 to refresh
+the interface while the process is busy: "while (gtk_events_pending()) 
+gtk_main_iteration()". It works as expected but definitely this
+is not something to implement now because it requires software
+locks in several places, otherwise nasty things start occurring
+;-).</li>
+<li>Replaced float fmod by int % in the point symmetry code.</li>
+<li>Revised and updated the documentation on XML formats to 
+import configuration data, which is now fairly complete.</li>
+<li>Added code to import/export bond covalency, which we forgot 
+to include before.</li>
+<li>Added a layer error check: far must be larger than near.</li>
+<li>Found and removed a bug in the lightning code (thanks Maura):
+By default, when OpenGL/GAMGI starts, glNormal is set to (0.0, 0.0, 1.0). 
+When solid atoms, wired/solid cells or perhaps solid bonds are created, 
+the glNormal vector changes and the last vector becomes still effective 
+in the end, effectively being used to draw other objects and thus
+corrupting them: wired objects suddenly become too dark when different, 
+completely independent, objects are created. Now we explicitly reset 
+glNormal to (0.0, 0.0, 1.0) everytime we change it (or OpenGL functions
+change it).</li>
+<li>Gamgi now imports .xyz files containing atomic data,
+both from local disk, or through HTTP and FTP protocols.</li>
+<li>Found and corrected a bug in gamgi_engine_copy_out_cell.c:
+the cell group information was not copied, so sometimes the
+Undo/Save mechanism would result in wrong group information.</li>
+<li>Found and corrected a bug in gamgi_mesa_scan.c:
+it was glEnable-glDisable (GL_CULL_FACE) instead of 
+glDisable-glEnable (GL_CULL_FACE). This prevented
+selecting a cell when inside its volume.</li>
+<li>Found and corrected a bug in gamgi_expat_import_html:
+the html structure was not removed in the end.</li>
+<li>Separated the expat code from the import code, so
+different file formats, namely xyz, can now be imported.</li>
+<li>Found and corrected a bug in gamgi_engine_dlist.c:
+Added gamgi_engine_dlist_atom_window and 
+gamgi_engine_dlist_atom_gamgi, so now all atoms will
+be correctly exported in xyz format, even when the 
+object currently selected is Window or Gamgi.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Implement full 3D Voronoi code, with and without PBC conditions.</li>
+<li>Write the Technical Description, in www.gamgi.org.
+with sections Libraries, Style and Architecture.</li>
+<li>Improve documentation and website.</li>
+<li>Review the entire GAMGI code, file by file.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.09.22</div><div>15th December 2003</div>
+</div>
+
+<div class="contents">
+
+Redesigned the code handling cell symmetry and lattice
+parameters in Cell->Create and Cell->Modify. Fixed bugs.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Redesigned the code handling lattice parameters, which is now
+the same for Cell->Create, Cell->Modify and XML Cell Create tasks. 
+This removes a few inconsistencies in the code handling Cell->Modify
+and is easier to maintain.</li>
+<li>Removed a bug in gamgi_io_file: postscript files were open twice.</li>
+<li>Atomic data can now be exported (again) in xyz format.</li>
+<li>Updated gamgi_engine_count.c.</li>
+<li>Another round of clean-up in the point symmetry code:
+now the calculation is essentially controlled by initial
+tolerance (before optimization) and final tolerance (after
+optimization). These two parameters are now controled
+directly by the users, in the Molecule->Measure dialog.</li>
+<li>Added error messages to Group->Modify, when atoms are
+aligned: these messages were there long ago, but for some 
+reason were moved and ultimately removed somehow.</li>
+<li>Removed two bugs related with colored bonds: Bond->Create
+was not initializing the default color style when in Solid mode; 
+More important, gamgi_mesa_start_bond was initializing bond->color 
+as in bond_class->color even when the default style was wired. That 
+initialization should occur only when the default style is solid.</li>
+<li>Found and removed a bug in the code handling the 
+top,medium,bottom window flags: instead of -1,+1 we 
+should have TRUE,FALSE.</li>
+<li>Removed inconsistency in the code handling the
+top,medium,bottom window flags: F1,F2,F3 mechanisms
+are now disabled in fullcreen mode. This avoids tricky 
+inconsistency in the flags controlling the top,medium,bottom 
+menus and users don't really need this.</li>
+<li>Found and removed a bug in the graphic engine, when
+rendering colored bonds: the PushMatrix-PopMatrix instructions
+were not properly nested.</li>
+<li>Apparently we have a solid, clean, solution for the
+inconsistency in the Cell->Modify parameters.</li>
+<li>Playing with GNU-arch: it looks quite nice. Somewhere
+down the road we should look forward to move GAMGI 
+development to Gnu-Arch CVS.</li>
+</ul>
+  
+<h3>What is next:</h3>
+
+<ul>
+<li>Improve GAMGI usability with gtk_events_pending, etc.</li>
+<li>Write the Technical Description, in www.gamgi.org.
+with sections Libraries, Style and Architecture.</li>
+<li>Improve documentation and website.</li>
+<li>Review the entire GAMGI code, file by file.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.09.21</div><div>5th December 2003</div>
+</div>
+
+<div class="contents">
+
+Added a mode to interactively move,rotate the observer. 
+Before we could only interactively move,rotate the objects.
+Added Hexagonal axis for the Conventional Cell (Obverse orientation).
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Cleaned the code handling Gtk timers.</li>
+<li>Added a timer for the messages shown at 
+the Statusbar when the ruler is active.</li>
+<li>The way we handle Cell parameters (and possibly Symmetry) 
+in Cell->Modify is definitely broken. It should be not too
+difficult to fix and clean this.</li>
+<li>Found and Fixed a bug: when doing Undo or Save, 
+the selected object and layer were not updated.</li>
+<li>For the Rhombohedric Lattice, added Hexagonal axis for the 
+Conventional Cell (Obverse orientation), maintaining Rhombohedric axis 
+for the Primitive Cell. The pattern occupancy rules are also working 
+for the Conventional Rhombohedric cell.</li>
+<li>Added a confirmation dialog before removing a Layer. The rationale
+is: all objects below layer can be recovered using the Undo mechanism,
+objects that cannot be recovered this way, Gamgi, Window, Layer, should
+have a confirmation dialog.</li>
+<li>As a result of the travelling mode introduction,
+improved gamgi_gtk_layer_create, gamgi_gtk_layer_modify
+and gamgi_expat_object_import, to cope with the differences.</li>
+<li>As a result of the travelling mode introduction,
+added an axis button in the tools menu and updated 
+the tools menu code accordingly.</li>
+<li>Added the travelling mode to Rotate,Move
+the observer rather than the objects. This required
+changing also the mode to Rotate,Move the objects because
+the view referential now can be anything and we still
+want Rotate,Move operations to be related to the observer
+referential, not the (fixed) laboratory referential (as before).
+The changes are valid for Rotate,Move operations executed
+by: 1) dragging the mouse; 2) pressing the mouse over the 
+ruler. Absolute and Relative Rotate,Move applied by calling
+Object Modify windows remain the same: these values should
+always be refered to the (fixed) laboratory referential.</li>
+<li>Added a statusbar message describing the current 
+Rotate,Move,Scale values, when the ruler mode is active.</li>
+<li>Cleaned gamgi_gtk_window_reset and gamgi_gtk_gamgi_reset.</li>
+<li>Removed a minor bug in gamgi_text_modify:
+fonts were not modified, because the option_menu name
+changed and was not updated.</li>
+<li>Removed a bug in the code exporting cell
+symmetry, that was due to a old, nou updated group 
+initialization: (group = -1 instead of group = 0).</li>
+<li>Redesigned the documentation structure in gamgi.org. 
+In particular, interfaces and formats documentation are now 
+well integrated. As the documentation paths changed (in both
+http://www.gamgi.org/ and ftp://ftp.gamgi.org/gamgi/), the 
+paths in GAMGI code pointing to help documentation were changed 
+accordingly. Older versions of Gamgi looking for remote Help 
+information in gamgi.org will fail due to this path change.</li>
+<li>Updated the projects.html page.</li>
+<li>Added new screenshots, thanks Maura.</li>
+<li>Removed a bug: the flag controlling &lt;pre>&lt;/pre> tags 
+in Help files was not changing.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Improve Point Symmetry Tolerance.</li>
+<li>Improve GAMGI usability with gtk_events_pending, etc.</li>
+<li>Write the Technical Description, in www.gamgi.org.
+with sections Libraries, Style and Architecture.</li>
+<li>Improve documentation and website.</li>
+<li>Review the entire GAMGI code, file by file.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.09.20</div><div>8th November 2003</div>
+</div>
+
+<div class="contents">
+
+Implemented Atom->Config and cleaned code.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Another round of clean-up in gamgi_gtk_cell_modify
+and gamgi_gtk_cell_create.</li>
+<li>Updated the GML files in dat/light and dat/cell.
+All files in dat/ are supposed to be up-to-date now.</li>
+<li>Found and removed a GUI bug in gamgi_gtk_cell_modify:
+before the three cell symmetry parameters were independent,
+so for example changing the system would keep the old group 
+and an error was triggered if the system and the group were 
+not compatible. Now the three parameters are coupled: when
+they are all empty, Gamgi uses the old (unmodified) values;
+otherwise Gamgi ignores the old three parameters and attempts 
+to get the new symmetry using only the new parameters. 
+Definitely this is the logical way to handle this.</li>
+<li>Corrected a few mistake bugs in gamgi_expat_import_object
+and gamgi_expat_export_object: the required angle for monoclinic
+cells is now ac, and for rombohedric cells is now bc.</li>
+<li>Corrected a few mistake bugs in gamgi_gtk_text_modify:
+option_menu_name is now option_menu_style and text contents
+was not properly reset.</li>
+<li>Improved the code to check string size in gamgi_gtk_help.</li>
+<li>Removed the size test from gamgi_io_token_create, as only 
+gamgi_global_resources_help needs this; added gamgi_io_token_check_create
+to be used by gamgi_global_resources_help (with the size test).</li>
+<li>Added tests for Help incompatible attributes in gamgi_gtk_help_config
+and gamgi_expat_import_config. Cleaned gamgi_gtk_help. </li>
+<li>Wrote and tested code to export all the Help config data.</li>
+<li>Updated gamgi_global_main.c and gamgi_global_resources: 
+the color bits per pixel and the (GAMGI, BROWSER) environment 
+variables are now checked in a much proper and elegant way.</li>
+<li>Redesigned the way local,remote,browser Help paths
+are stored: now they are all allocated in dynamic memory.
+Adapted gamgi_global_resources, gamgi_gtk_help_config and
+gamgi_expat_import_config to the new method.</li>
+<li>For the sake of simplicity, removed the following OpenGL types:
+GLfloat and GLubyte, replaced by float and unsigned char.</li>
+<li>For the sake of simplicity, removed the following gamgi types:
+gamgi_long, gamgi_ulong and gamgi_uint, replaced by long,
+unsigned long and unsigned int.</li>
+<li>Added ftp://ftp.gamgi.org/gamgi/ to the list of
+available remote help addresses: before, only http://www.gamgi.org/
+was available. Currently this is not very usefull, because
+both http and ftp servers are in the same computer, but
+it is an important proof-of-concept for us.</li>
+<li>For the sake of simplicity, replaced the following Gtk types: 
+1) gpointer by void *; 2) gint by int and gamgi_bool.</li>
+<li>Completed all the functionality for the Atom->Config dialog.</li>
+<li>Improved the tests for importing GML atom config data.</li>
+<li>Cleaned the GAMGI_MATH_TOLERANCE parameters.</li>
+<li>Fixed the Gtk layout for Atom->Config dialog.</li>
+<li>Removed old size code in gamgi_engine_start.c and
+removed a bug in gamgi_mesa_draw.c and gamgi_mesa_scan.c:
+size is local in solid mode but is global in wired mode.</li>
+<li>Cleaned the atomic charge code (everything depends now of
+GAMGI_CHEM_CHARGE_MAX, as it should).</li>
+<li>Improved /dat/molecule/coordination and /dat/molecule/flavors.</li>
+<li>Cleaned gamgi_engine.h, gamgi_gtk.h, gamgi_mesa.h, gamgi_math.h, 
+gamgi_phys.h, gamgi_chem.h, gamgi_expat.h and gamgi_io.h
+(added parameters GAMGI_MATH_SIZE and GAMGI_MATH_VARIANCY).</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Improve Point Symmetry Tolerance.</li>
+<li>Improve GAMGI usability with gtk_events_pending, etc.</li>
+<li>Write the Technical Description, in www.gamgi.org.
+with sections Libraries, Style and Architecture.</li>
+<li>Improve documentation and website.</li>
+<li>Review the entire GAMGI code, file by file.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.09.19</div><div>21th October 2003</div>
+</div>
+
+<div class="contents">
+
+Text objects can now be imported and exported. Completed the code
+to export config data. Improved Atom->Create and Atom->Modify dialogs. 
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Wrote static_init for gamgi_gtk_text_modify, gamgi_gtk_bond_modify,
+gamgi_gtk_atom_modify and gamgi_gtk_cell_modify.</li>
+<li>Completed the new Atom->Create and Atom->Modify dialogs,
+and corrected some bugs in the new Bond->Modify dialog.</li>
+<li>Fixed the new layout for Atom->Create and Atom->Modify dialogs,
+that contains the new parameters Size and Variancy, that help to 
+control the way atoms look in Solid style.</li>
+<li>Fixed graphic engine for recursive text objects: 
+scale, rotate and move now works well in all cases when 
+a text object contains other text object which in turn 
+contains other text object, etc. The mechanism is the 
+same used before to link atoms to cells. This is 
+definitely good news for our graphic engine.</li>
+<li>In text objects, replaced tabs and newlines by spaces,             
+so we have the same behaviour for text objects     
+imported from (Gtk) dialogs and (Expat XML) files. 
+Gtk dialogs preserve tabs and newlines but Expat   
+replaces them by spaces, according to XML rules,   
+as text contents is entered as an attribute value. 
+Futurely we should add some meta characters to     
+allow newlines and tabs in GAMGI text contents.</li>
+<li>Added static_init and static_reset to gamgi_gtk_text_create.</li>
+<li>Added code to export text objects, including all the text parameters
+currently recognized.</li>
+<li>Added code to import text objects, including all the text parameters 
+currently recognized.</li>
+<li>Changed the line width for wired Text objects to the
+value recommended in the GNU Plotutils package (1.48).</li>
+<li>Added Darmstadtium (Z=110) to the list of recognized atomic 
+elements.</li>
+<li>Cleaned gamgi_gtk_text_modify and gamgi_gtk_bond_modify:
+removed redundant char * pointers.</li>
+<li>Added automatic bond length detection to gamgi_gtk_bond_config
+(exactly as in gamgi_gtk_bond_ccreate).</li>
+<li>Cleaned gamgi_gtk_bond_create, gamgi_gtk_layer_create
+and gamgi_gtk_light_modify: added static_init functions.</li>
+<li>Removed the following types: gamgi_char (i.e. char), gamgi_uchar 
+(i.e. unsigned char), gamgi_void (i.e. void *), gamgi_short (i.e. short) 
+and gamgi_ushort (i.e.  unsigned short). There is no real point in using
+these types and it makes thinks less clear for the unitiated... ;-)</li>
+<li>Improved layout for Text->Create and Text->Modify dialogs.</li>
+<li>Added code to export local (specific for each atomic element pair) 
+non-default bond config data.This completes the export config code.</li>
+<li>Added code to export local (specific for each atomic element)
+non-default atom config data.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Improve Point Symmetry Tolerance.</li>
+<li>Improve GAMGI usability with gtk_events_pending, etc.</li>
+<li>Write the Technical Description, in www.gamgi.org.
+with sections Libraries, Style and Architecture.</li>
+<li>Implement dynamic Text functionality.</li>
+<li>Improve Manuals documentation.</li>
+<li>Improve Formats documentation.</li>
+<li>Review the entire GAMGI code, file by file.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.09.18</div><div>7th October 2003</div>
+</div>
+
+<div class="contents">
+
+Implemented Bond->Config and redesigned Bond->Create 
+and Bond->Modify dialogs.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Separated widget creation from data presentation
+in gamgi_gtk_layer_config, gamgi_gtk_help_config
+and gamgi_gtk_gamgi_config.</li>
+<li>Separated widget creation from data presentation
+in gamgi_gtk_bond_config by adding static_init. We are 
+going to implement this criterium in all other dialogs.</li>
+<li>Completed the new Bond->Modify dialog.</li>
+<li>Removed redundant char pointers from gamgi_gtk_cell_modify
+and gamgi_gtk_layer_modify.</li>
+<li>In the file style.css that describes www.gamgi.org, 
+replaced "text-indent: 20%;" (which is not recognized by IE, 
+resulting in a empty page) by "text-indent: 35px;" which works 
+fine with both Mozilla and IE.</li>
+<li>The Bond->Config dialog is implemented and tested.</li>
+<li>Fixed the Gtk layout for Bond->Config, which includes 
+all the view parameters for Bonds (except scale: the default
+should always be 1.0, as for all other objects).</li>
+<li>Fixed the new Gtk layout for Bond->Modify, which 
+includes all the view parameters for Bonds.</li>
+<li>Started playing with arch, the new control revision system.</li>
+<li>Compiled and installed Mailman. Created the lists: mailman
+(just for administrative purposes), users and coders. We just
+need to add the old texts and email addresses before we are
+up and running, as before, but this time in full control
+(as far as you are in full control on IT these days...)!</li>
+<li>Completed the new Bond->Create dialog and cleaned the code creating bonds.</li>
+<li>Moved gamgi.org to Instituto Superior Técnico, Lisboa.</li>
+<li>Fixed the new Gtk layout for Bond->Create, which 
+includes all the view parameters for Bonds.</li>
+<li>When the selected object is Gamgi or Window, removed the
+code to scale,move,rotate the current layer, introduced weeks ago. 
+This allows users to specificaly select those objects to prevent
+unwanted rotations,moves,scales. As the current object is now
+permanently shown in the statusbar, users can immeadiately
+see if they are selecting Window or Gamgi by mistake.</li>
+<li>The window->focus object and window->layer objects are now 
+indicated in the statusbar (first on red, then on the default 
+color). </li>
+<li>The website download section now supports FTP also.</li>
+<li>Created mechanisms to show,update,reset window->focus object
+and window->layer layer in each window statusbar, to increase usability. 
+When objects are selected, these mechanisms are already working. 
+They are not implemented yet when objects are created,modified,removed 
+though.</li>
+<li>To increase usability, added the following characters 
+"()[]{}<>+-." to the list of allowed characters in object names. 
+This is useful for example in coordination compounds, and planes, 
+directions as well.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Improve Point Symmetry Tolerance.</li>
+<li>Improve GAMGI usability with gtk_events_pending, etc.</li>
+<li>Write the Technical Description, in www.gamgi.org.
+with sections Libraries, Style and Architecture.</li>
+<li>Implement dynamic Text functionality.</li>
+<li>Improve Manuals documentation.</li>
+<li>Improve Formats documentation.</li>
+<li>Review the entire GAMGI code, file by file.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.09.17</div><div>10th September 2003</div>
+</div>
+
+<div class="contents">
+
+Added Gamgi->Config and Layer->Config dialogs. Added new styles
+to represent Atoms and Bonds.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Added color,red,green,blue parameters to expat functions
+that export bond object,config data.</li>
+<li>Added color,red,green,blue parameters to expat functions
+that import bond object,config data.</li>
+<li>Added size,variancy parameters to atom,bond objects in 
+import,export expat functions.</li>
+<li>Added the global parameters to gamgi->atom,gamgi->bond 
+in export expat functions.</li>
+<li>Removed gamgi->window->x, gamgi->window->y, gamgi->window->width, 
+and gamgi->window->height: users don't really want to configure these 
+parameters.</li>
+<li>Added a new style to represent bonds, where these have
+their own color, exactly as in plastic models.</li>
+<li>Solved the text color and alignment issues, in GtkStatusBar:
+This allows our statusbar messages to be much more friendly.</li>
+<li>Added variancy,size parameters for atoms and bond size 
+parameters for bonds. Previously these parameters were defined
+globally only. This means that now we can have very different
+atom, bond styles in the same space: layer, cell, cluster, 
+molecule, group, etc.</li>
+<li>Cleaned the code handling the layer perspective parameters.</li>
+<li>Cleaned the code handling the layer modelview parameters.</li>
+<li>Added and tested the Gamgi->Config dialog.</li>
+<li>Removed negative color components in lights: 
+users don't need this and is confusing.</li>
+<li>Added and tested the Layer->Config dialog.</li>
+<li>Removed a bug in the gamgi_gtk_key.c keystroke handling code and 
+cleaned the code.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Improve Point Symmetry Tolerance.</li>
+<li>Improve GAMGI usability with gtk_events_pending, etc.</li>
+<li>Write the Technical Description, in www.gamgi.org.
+with sections Libraries, Style and Architecture.</li>
+<li>Implement dynamic Text functionality.</li>
+<li>Improve Manuals documentation.</li>
+<li>Improve Formats documentation.</li>
+<li>Review the entire GAMGI code, file by file.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.09.16</div><div>2nd September 2003</div>
+</div>
+
+<div class="contents">
+
+Essentially a cleaning release.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Elements without config parameters now give an error when
+imported with any config parameters (instead of being silently
+ignored, as before).</li>
+<li>Added a tolerance (GAMGI_MATH_TOLERANCE) in all floating point 
+comparisons that occur in gamgi_expat_export_object.c and 
+gamgi_expat_export_config.c.</li>
+<li>Removed gamgi->gamgi->font: users don't really want 
+to configure these parameters.</li>
+<li>Removed gamgi->layer->axis, gamgi->layer->visibility_in,
+gamgi->layer->visibility_in, gamgi->layer->[red,gree,blue]:
+users don't really want to configure these parameters.</li>
+<li>Removed gamgi->cell->red, gamgi->cell->red,
+gamgi->cell->red: users don't really want to configure 
+these parameters.</li>
+<li>Removed gamgi->light->ambient_[rgb], gamgi->light->diffuse_[rgb],
+gamgi->light->specular_[rgb]: users don't really want to configure
+these parameters.</li>
+<li>Added code to export all the gamgi->layer config parameters.</li>
+<li>Replaced GAMGI_MATH_ZERO_OFFSET by GAMGI_MATH_TOLERANCE,
+GAMGI_MATH_LENGTH_TOLERANCE, GAMGI_MATH_ANGLE_TOLERANCE
+and GAMGI_MATH_CELL_TOLERANCE.</li>
+<li>Removed gamgi->window->top, gamgi->window->medium, 
+gamgi->window->bottom: users don't really want to configure 
+these parameters.</li>
+<li>Added code to export all the gamgi->gamgi config parameters.</li>
+<li>Removed gamgi->gamgi->color, gamgi->gamgi->order, 
+gamgi->gamgi->scale and gamgi->gamgi->attenuation:
+users don't really want to configure these parameters.</li>
+<li>Removed a few usability glitches: window origin and size 
+are now exported, text_create dialogs are not automatically 
+removed, conventional volume is now the cells default.</li>
+<li>Improved www.gamgi.org and changed the style to (IBM) blue colors.</li>
+<li>Cleaned the tools menu and hruler code, and moved it from
+gamgi_gtk_bottom.c to gamgi_gtk_window.c (former gamgi_gtk_window.c).</li>
+<li>The code collecting global resources is now reunited in a single
+file, gamgi_global_resources. Previously this code was in 
+gamgi_global_main, gamgi_global_start and gamgi_mesa_resources.</li>
+<li>Improved the usability of the rotate,scale,move tool buttons: 
+added an active (red) color when the button is active and removed 
+the noisy beep when the button is selected.</li>
+<li>Cleaned the file writing code, so now there is only one fprintf 
+function and only one error checking function, when writing to disk.
+For example .xml and .ps files are now handled by the same functions.
+</li>
+<li>Added File->Config in Window top menu and Help topic menu.</li>
+<li>Removed the Scope code (container, contents,etc.) in
+the dialogs to remove objects, until we write this stuff,
+which at the moment can only confuse users.</li>
+</ul>
+ 
+<h3>What is next:</h3>
+
+<ul>
+<li>Improve Point Symmetry Tolerance.</li>
+<li>Improve GAMGI usability with gtk_events_pending, etc.</li>
+<li>Write the Technical Description, in www.gamgi.org.
+with sections Libraries, Style and Architecture.</li>
+<li>Implement dynamic Text functionality.</li>
+<li>Improve Manuals documentation.</li>
+<li>Improve Formats documentation.</li>
+<li>Review the entire GAMGI code, file by file.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.09.15</div><div>22th August 2003</div>
+</div>
+
+<div class="contents">
+
+Solved two OpenGL issues (half-bonds and partial transparency),
+cleaned the XML (GML) object exporting code and added all the 
+required infra-structure to export XML (GML) config data.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Added the infra-structure required to export XML/GML config 
+data. The code is simple and elegant, thus easy to maintain. 
+Now we just have to add all the config parameters... ;-)</li>
+<li>Redesigned the code that exports XML/GML object data.
+The code is much more elegant now, output writing errors 
+can now be properly checked, element smart closing is now
+working for all elements (even gml), and the layout is now
+properly established to soon start writing config data.</li>
+<li>Found and removed a bug in gamgi_expat_export.c: bonds 
+were never printed out when the object with focus was Gamgi, 
+due to the scope searched when bond parent is determined.</li>
+<li>Added layer parameters visibility_in, visibility_out to 
+gamgi_expat_import_object, gamgi_expat_import_config and 
+gamgi_expat_export_object.</li>
+<li>Solved the problem of partial layer visibility, replacing
+Fog by Blending OpenGL funcionality. It does exactly what we want 
+and is much faster, because it does not depend of the objects depth 
+(as Fog) and is done only once, after all translucid layers have been 
+rendered (with Fog it was done for each translucid layer). 
+As a side-effect, now translucid layers are represented first and then 
+the transparent layers (and finally the current layer, as before).
+This is essentially required by the blending mechanism, and it 
+makes sense, as transparent layers should have priority over
+translucid layers.</li>
+<li>Solved the problem of less-than-perfect half-bond rendering 
+due to floating point innacuracies and the way OpenGL handles lines. 
+This was probably our top bug now, because it seriously compromised 
+the quality of bond representations, both wired and solid.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Improve Point Symmetry Tolerance.</li>
+<li>Improve GAMGI usability with gtk_events_pending, etc.</li>
+<li>Write the Technical Description, in www.gamgi.org.
+with sections Libraries, Style and Architecture.</li>
+<li>Implement dynamic Text functionality.</li>
+<li>Improve Manuals documentation.</li>
+<li>Improve Formats documentation.</li>
+<li>Review the entire GAMGI code, file by file.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.09.14</div><div>13th August 2003</div>
+</div>
+
+<div class="contents">
+
+Added about 250 new structures to $GAMGI/dat/molecule/.
+Added the first config dialog: Help->Config. Corrected
+several bugs.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Added automatically a slash "/" for both local and remote
+pathnames, as a / too much is ok, a / too little is ko.</li>
+<li>Found and removed a little bug with symlinks for Help->Search:
+when using Local+Browser, that resulted in browsers not finding
+the CSS style, because the real and linked files were at different 
+directory depths. Changed keywords/ to users/keywords/, so both
+files have now the same depth.</li>
+<li>Updated Help->Config on GML files, so now users can configure 
+directly on its default GML file the documentation source, the 
+documentation agent and their pathnames.</li>
+<li>Added Help->Config, so now users can configure on-the-fly
+the documentation source, the documentation agent and their 
+pathnames.</li>
+<li>Simplified the whole window model: now task0, help0 and config 
+dialogs are exactly the same. gamgi->help0 is handled by 
+window->task0, gamgi->help1 is replaced by window->help. For final 
+users, there are now task0, task1 (non-modal, fixed, local) help 
+(non-modal non-fixed, local), and question, message (modal, fixed, 
+global) dialogs.</li>
+<li>Added more structures to the 
+$GAMGI/dat/molecule/fullerenes directory.</li>
+<li>Replaced gamgi_gtk_help_text (used locally and also in 
+gamgi_gtk_help_start) and static_text (used in 
+gamgi_gtk_molecule_measure) by a single function,
+gamgi_gtk_dialog_text_create.</li>
+<li>Added Config topics to Help->Topic tree.</li>
+<li>Removed Config options for width, height in Help
+and other GtkText widgets: we don't really need this.</li>
+<li>Improved window menus: 1) now menuitems are aligned
+some space from left; 2) options not available yet changed
+to grey; 3) added menuitems for Config, at the very end,
+after separators, to emphasize that this is different.</li>
+<li>Sent messages to people maintainig structural databases,
+asking if they are happy we use their data to create our
+GML files.</li>
+<li>Added bonds to the fullerenes structures,
+in the $GAMGI/dat/molecule/fullerenes directory.</li>
+<li>Added more molecules to the sugars directory,
+from the Glactone's CD-ROM of PDB Files.</li>
+<li>Added a new directory $GAMGI/dat/molecule/flavors,
+containing molecules producing flavors and fragrances,
+from the Glactone's CD-ROM of PDB Files.</li>
+<li>Added a new directory $GAMGI/dat/molecule/silicates,
+containing silicate clusters that I studied during my PhD.
+</li>
+<li>Added a new directory $GAMGI/dat/molecule/hydrocarbons,
+containing hydrocarbons from the Mathmol molecular library.
+</li>
+<li>In Group->Modify, when torsion is set to 0, sometimes 
+the atom seems to disappear. Actually this is not a bug. 
+What happens is, for some specific angles (typically 
+this happens for CH3 methyl groups with tetrahedral angles), 
+after modifying the atom coordinates, the new atom position 
+becomes exactly the same as for some other atom around, so 
+both atoms occupy the same visual point and it looks as if 
+the modified atom had disappeared, which is definitely not 
+the case. This is not really a bug, it is the correct procedure, 
+the solution is just to press Undo and next time to choose 
+better the atom sequence to define the torsion angle.</li>
+<li>Added a new directory $GAMGI/dat/molecule/photosynthesis,
+containing molecules from Mathmol molecular library that
+participating in photosynthesis.</li>
+<li>Changed default colors for N, P, Na, Cl and S. Esentially
+these are the usual CPK colors, with minor modifications.</li>
+<li>Added a new directory $GAMGI/dat/molecule/sugars,
+containing the sugars in the Mathmol molecular library.</li>
+<li>Eventually I made my mind about colors for elements
+in the periodoc table of elements: we will define colors
+one by one, according to the properties of the elements,
+according to the CPK model, and making sure that each
+element has a different color.</li>
+<li>Added a new directory $GAMGI/dat/molecule/lipids,
+containing the lipids in the Mathmol molecular library.</li>
+<li>Found and removed a bug in the bond creating bonds:
+Both atoms must be marked in the first scan, otherwise
+bonded atoms might be marked too late, the ids are 
+not written to output and bonds parent ids are wrong.</li>
+<li>Found and removed a little bug on the XML exporting code: 
+default atom type and mass are printed for isolated atoms.
+There are actually two problems here, the mass and type
+bugs are unrelated. The mass bug was removed in a satistactory 
+way, by decreasing the default masses to 4 decimal figures only, 
+so default masses for atoms created on GAMGI and from GML files 
+are the same. This consistency will go away, however, if users 
+decrease the decimal figures used to represent mass, as default
+masses created from GAMGI will have less significant numbers 
+than masses created from GML files, so they will be different 
+and will be printed by default in output files. The type bug 
+was removed by requiring always a non-empty type, and setting 
+the same default for both GUI and GML IO mechanisms.</li>
+<li>Added a new directory $GAMGI/dat/molecule/drugs,
+containing most common drugs, from different sources.</li>
+<li>Added a new directory $GAMGI/dat/molecule/nanotube,
+containing Armchair (n,n) and Zigzag (n,0) nanotubes.</li>
+<li>Converted the aminoacids section of Mathmol to GML:
+the 20 proteic amonoacids that form the building blocks
+of life are now in $GAMGI/dat/molecule/life.</li>
+<li>Added another group of structures to $GAMGI/dat/molecule/symmetry, 
+created by Tullio Pilati, Alessandra Forni, to test the 
+program Symmol, plus P.Seiler, J.D.Dunitz and Rudolf Hundt.</li>
+<li>It seems the gtk bug on file_selection only happens with the
+gtk library compiled in Suse 8.1, probably due to the choice of
+compiling flags they used to build it. When downloading Gtk 
+directly from www.gtk.org and compilling it myself, the problem 
+disapears.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Improve Point Symmetry Tolerance.</li>
+<li>Improve GAMGI usability with gtk_events_pending, etc.</li>
+<li>Rewrite the entire bond drwaing code.</li>
+<li>Write the Technical Description, in www.gamgi.org.
+with sections Libraries, Style and Architecture.</li>
+<li>Implement dynamic Text functionality.</li>
+<li>Improve Manuals documentation.</li>
+<li>Improve Formats documentation.</li>
+<li>Review the entire GAMGI code, file by file.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.09.13</div><div>31th July 2003</div>
+</div>
+
+<div class="contents">
+
+This version completes work that we have been
+developing in the previous releases: point group
+determination, system/lattice/group cell symmetry.
+Counting down to GAMGI 0.10.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Found and removed a bug in the code exporting cells,
+(introduced in version 0.09.7): the origin position was never 
+printed out, because cell->points is now constant, after we 
+changed the way cells are rotated and moved.</li>
+<li>The new system/lattice/group way of handling cell 
+symmetry is now implemented in GAMGI XML importing and
+exporting code. This also means that all the cell files 
+in $GAMGI/dat must be changed to the new format.</li>
+<li>Implemented a color periodic table, where colors are
+a function of atomic numbers only. Chemical usability
+ might not be optimal though, needs improvements.</li>
+<li>Found a bug in Gtk1.2.10,in gtk_file_selection, that 
+shows up in File->Import: after double-clicking several times,
+a gtk warning is shown about gtk_object_set_data with unknown
+object. Fortunately not a critical bug.</li>
+<li>Found and removed a bug: conventional axes were mistakenly
+used when building spherical and rhombus cell volumes, instead 
+of primitive axes as it should: corrected.</li>
+<li>Moved the Monoclinic crystallographic system from the 
+second-setting (c unique axis) to the first-setting (b-unique
+axis). The advantage of this change is that the Monoclinic 
+base-centered lattice can now be defined as C-centered, exactly 
+as the Orthorhombic base-centered lattice. Therefore all base-centered
+lattices are now handled in GAMGI as C-based, with considerable
+advantages for everyone. Unfortunately, The International Tables 
+of Crystallography and most crystallographic sources handle 
+Orthorhombic space groups 38-41 as A-centered, so for these
+4 space groups we use a different setting to transform them
+in C-centered space groups, as can be seen in the list of
+space groups produced by Cell->Create or Cell->Modify (the
+exact procedure is described in International Tables 
+of Crystallography). This implies to permut cell parameters 
+and atom coordinates according to the transformation 
+(a,b,c)->(b,c.a), relatively to the values printed in International 
+Tables of Crystallography. Fortunately this only happens for these 
+4 space groups, out of 230. Moreover, these 4 space groups are not 
+very common in Nature.</li>
+<li>Added 0 for space groups, as a way to reset previous group
+information in Cell->Modify. In Cell->Create, empty and 0
+mean the same (unknown group). In Cell->Modify, empty means keep 
+current group information, 0 means set group to 0 (unknown).</li>
+<li>Cleaned the mechanism to select Gamgi, Window and Layer using
+a double click (before, Status bar was not updated and the beep sound
+was not activated, in this special case).</li>
+<li>Moreover, in name of simplicity, removed the parent(s) identification 
+in the Status bar message, when an object is selected.</li>
+<li>Improved the usability when Gamgi or Window is selected: now
+Gamgi checks if the object with focus is Gamgi or Window, and
+when it is, GAMGI automatically uses the current layer to rotate,
+translate and scale (either with the mouse or using the ruler).</li>
+<li>Added test files for all point groups of symmetry, in
+Gamgi XML format (copied from Serguei Patchkovskii's symmetry code).
+</li>
+<li>Cleaned the reporting section of the point symmetry 
+code.</li>
+<li>Molecule->Measure can now be used to determine the 
+chemical point group of symmetry. We need to fine tune 
+the various tolerances used to determine the symmetry 
+elements though.</li>
+<li>Added a function with a variable argument list, 
+to insert text in GtkText with printf variable formats.
+Used this function to clean Help->Start and Molecule->Measure.
+</li>
+<li>Moved the color settings for showing information, 
+from gamgi->help to gamgi->gamgi, as they are going
+to be used throughout GAMGI, not just in the Help section.</li>
+<li>Removed the configuration options for width_min, height_min,
+both for top windows and help windows. This information should
+not be configurable, really. Of course it can still be changed 
+at compile time.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Convert the pdb format of the MathMol
+molecules to GAMGI GML native format.</li>
+<li>Convert the EXAMPLE symmetry files 
+of Symmol to GAMGI GML native format.</li>
+<li>Write the Technical Description, in www.gamgi.org.
+with sections Libraries, Style and Architecture.</li>
+<li>Implement dynamic Text functionality.</li>
+<li>Improve Manuals documentation.</li>
+<li>Improve Formats documentation.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.09.12</div><div>21th July 2003</div>
+</div>
+
+<div class="contents">
+
+Introduced crystallographic space groups of symmetry in GAMGI.
+This is mostly a working release, several things are not properly
+tested or are in development (the change Monoclinic B->C, for example). 
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Improved and cleaned the Systems/Lattices/Groups interface
+in Cell->Create and Cell->Modify.</li>
+<li>Started the process of improving the way we handle
+Monoclinic base-centered lattices (change from B-centerd
+to C-centered) and Rombohedric lattices (add conventional
+hexagonal axes, obverse orientation, and modify the orientation
+of the primitive, rombohedral, cell, to make both conveniently
+compatible).</li>
+<li>Automatic sensitive/insensitive mechanisms to handle
+valid/invalid lattice parameters are now fully working,
+including systems, lattices and space groups.</li>
+<li>Cleaned names for functions and arrays regarding cell crystal
+and text font code.</li>
+<li>Changed the order of the angles defining lattice parameters,
+so below each a,b,c axis is now the corresponding alpha, beta, gamma
+angle, as usually defined in Crystalography.</li>
+<li>Merged the Systems/Lattices/Groups interface with Cell->Create
+and Cell->Modify.</li>
+<li>Removed a couple of bugs in the "static_changed" routines
+of the Cell crystal interface.</li>
+<li>
+Completed the interface that will be used in Cell->Create and Cell->Modify
+to handle simultaneously systems, lattices and space groups.</li>
+<li>Clarified the issue of handling point group symmetry, considering
+all symmetry operations (chemical groups) and considering only operations
+compatible with translation symmetry (crystallographic groups).</li>
+<li>We are going to implement conventional cells for rombohedric
+lattices using obverse hexagonal axes.</li>
+<li>We are going to change centered monoclinic lattices from the
+first setting (B-centered) to the second setting setting (C-centered),
+so all base-centered lattices are C-based (and not B- or A-based).</li>
+<li>We are going to change the order of the crystal angle parameters,
+so each angle will appear immediately below the corresponding normal
+axis (i.e. bc below a, ac below b and ab below c).</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Improve the code determining point group symmetry.</li>
+<li>Complete basic Help documentation.</li>
+<li>Implement dynamic Text functionality.</li>
+<li>Add Help configuration from XML files.</li>
+<li>Convert the pdb format of the MathMol
+molecules to GAMGI GML native format.</li>
+<li>Convert to XML Gamgi format the files describing all the
+point symmetry groups with rotation order not larger than 8.</li>
+<li>Write the Technical Description, in www.gamgi.org.
+with sections Libraries, Style and Architecture.</li>
+<li>Improve the Formats documentation.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.09.11</div><div>5th July 2003</div>
+</div>
+
+<div class="contents">
+
+Merged the point symmetry code (though it is not
+usable yet) and added Help->Start. This is mostly
+a working release.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Added xyz files describing all point symmetry groups with 
+rotation order not larger than 8 to $GAMGI/data/molecule/symmetry.
+</li>
+<li>Minor updates in copyrights and people attributions.</li>
+<li>Ported the point symmetry code to GAMGI. Made a brief
+test, it seems to be working, but is not usable yet.</li>
+<li>Improved minor aspects in the point symmetry code, regarding
+D0h, C0v and Kh groups (with infinite rotation axes).</li>
+<li>There is a free code to determine all the elements of symmetry in
+space groups, written by J. Luis Martins, that we can adapt to run in Gamgi.
+This includes lattice and point operations, plus screw rotations and glides.
+Definitely good news!</li>
+<li>We have now a good solution to handle space groups in Gamgi and
+use this information to create cristal structures.</li>
+<li>The point symmetry code now calculates all the
+symmetry operations, for all groups.</li>
+<li>Cleaned the optimization section of the
+point symmetry code.</li>
+<li>Found and removed a bug in the code to link Wigner_Seitz
+cells: the closer node is not necessarily one of the eight
+vertices of the primitive cell that contains the object,
+it can be the vertex of an adjacent primitive cell
+(in fact this problem should occur only for triclinic,
+monoclinic and trigonal lattices, exactly the lattices
+where we are not calculating WS cells yet).</li>
+<li>More cleaning work in the point symmetry code.</li>
+<li>Started working on the point crystallographic groups:
+we can now convert about half of the chemical group
+cases to its corresponding crystallographic groups.</li>
+<li>After finding the chemical group, an exaustive set of
+tests is now applied (for any rotation order) to ensure that
+the symmetry elements found are consistent with the group.</li>
+<li>The rotation order limitation is gone. Now we can have
+chemical groups with any rotation order (D237d, C128v...).
+</li>
+<li>The string comparison to get the group is gone. Now we
+have a proper algorithm to get all the chemical groups.</li>
+<li>Point symmetry code: removed all the memleaks; clarified
+some points, thanks to Serguei.</li>
+<li>Found another code to determine pont group symmetry, very
+similar in its goals (but with totally different algorithms)
+to SYMMETRY: SYMMOL.</li>
+<li>Point symmetry code: updated the macros, cleaned again the whole thing.
+We need to remove memleaks and understand the optimization code; after
+that we need to implement a generic algorithm to get the point group,
+this way removing all the current dependencies on rotation order.
+After that, we can start thinking about porting it to GAMGI!</li>
+<li>More progress on the point symmetry code: i) we have now a global
+understanding of the code; ii) after cleaning the code, it runs 10%
+faster; iii) the global variables are gone; iv) the set of
+tests now includes all the groups that the code can currently detect;
+v) we are working on the algorithm to get the point group, to
+replace the current string comparison, this way allowing us to
+obtain chemical groups with higher, unlimited, rotation axes.</li>
+<li>The point symmetry code to find the improper rotation axes
+is essentially understood.</li>
+<li>Added Help Start, minor refinements in the help documentation
+and organization, added a slash internally to the path of the
+GAMGI environment variable, because a slash too little is bad
+but a slash too much is ok.</li>
+<li>More progress regarding point symmetry code: the code to
+find the proper rotation axes is understood (infinite, two-fold
+and higher order axis, without limit).</li>
+<li>Point symmetry code: the reporting functions are under control.
+</li>
+<li>Added functionality to change all the Help configuration data
+from GML (XML) files, including control data (local, browser), color
+data (background, foreground, title, bold, link) and geometry
+data (width, height, width_min, height_min).</li>
+<li>Improved Help Tutorial.</li>
+<li>Good progress on the point symmetry code: inversion and
+reflection are mostly under control.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Improve the code determining point group symmetry.</li>
+<li>Complete basic Help documentation.</li>
+<li>Implement dynamic Text functionality.</li>
+<li>Add Help configuration from XML files.</li>
+<li>Convert the pdb format of the MathMol
+molecules to GAMGI GML native format.</li>
+<li>Convert to XML Gamgi format the files describing all the
+point symmetry groups with rotation order not larger than 8.</li>
+<li>Write the Technical Description, in www.gamgi.org.
+with sections Libraries, Style and Architecture.</li>
+<li>Improve the Formats documentation.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.09.10</div><div>23th May 2003</div>
+</div>
+
+<div class="contents">
+
+This release completes the basic Help infra-structure in GAMGI:
+Help->Current, Help->Topic, Help->Search and Help->Tutorial
+are all working fine, happilly reading the XHTML files (Help->Start will
+be added soon).
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Updated the Help documentation.</li>
+<li>Cleaned the Current, Topic, Search and Tutorial Help options.</li>
+<li>Current, Topic, Search and Tutorial Helps are now working
+fine with XHTML files, with local and remote data, with gamgi 
+and browser agent.</li>
+<li>Added proper space handling to documentation Help dialogs.
+Ascii characters with accents (essentially representing ISO-8859-1 
+character set) are accepted. Special symbols, that start 
+with an ampersand, are handled automatically.</li>
+<li>Removed a bug in gamgi_expat_import.c: on line of code
+that was impossible to be executed but potentially damaging
+because it was a potential source of confusion (and it would
+crash GAMGI if one day we changed the logic and the test would
+start to be executed).</li>
+<li>Added fonts and colors to documentation Help dialogs.</li>
+<li>Working on the code to determine the point group of symmetry
+of atomic structures, written by Serguei Patchkovskii.
+Currently the code uses brute force algorithms, and can determine
+all point groups of symmetry, as long as there are no
+proper axes with order bigger than 8, and improper axes with
+order bigger than 10. Good progress ;-).</li>
+<li>Replaced "black" color by NULL on top window buttons and 
+menu_items, so theme colors will work fine now. However, highlight 
+"red" color on Help, Remove, Close, etc. buttons and menu_items is 
+still enforced, to emphasize these labels.</li>
+<li>Renewed this domain name <a href="http://gamgi.org">gamgi.org</a>, 
+with <a href="http://domainsnext.com">domainsnext.com</a>,
+until 2005 September 12th.</li>
+<li>Merged all the code using gdk_color in a single set of functions, 
+defined in gamgi_gtk_dialog.c.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Keep working on the code determining point group symmetry.</li>
+<li>Implement Help->Start (hard-coded in GAMGI).</li>
+<li>Complete basic Help documentation.</li>
+<li>Implement dynamic Text functionality.</li>
+<li>Add Help configuration from XML files.</li>
+<li>Convert the pdb format of the MathMol
+molecules to GAMGI GML native format.</li>
+<li>Write the Technical Description, in www.gamgi.org.
+with sections Libraries, Style and Architecture.</li>
+<li>Improve the Formats documentation.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.09.9</div><div>9th May 2003</div>
+</div>
+
+<div class="contents">
+
+This is the first release that gracefully handles XHTML 
+Help files, an important step for GAMGI Documentation.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Set default and minimum dimensions for Help documentation windows.
+</li>
+<li>The new code to handle Help files, allowing users 4 options,
+using local or remote (HTTP) documentation and using GAMGI or a browser 
+as the retrieving agent, is now working, for Help->Current, Help->Topic, 
+Help->Search and Help->Tutorial, (for Help->Tutorial there is still a 
+little path problem to solve).</li>
+<li>GAMGI is now handling XHTML Help files, an important step
+in achieving a good documentation infra-structure for GAMGI.</li>
+<li>Moved the expat errors from expat/ to io/, as a first step
+to implement a unified error handling procedure.</li>
+<li>Changed the "Progress" menu item to a "Demo" menu item with a
+submenu with a menu item "Progress" (this is just tested and proved
+code).</li>
+<li>Removed the "Control" menu item, as we are going to do this
+differently anyway (directly on each object menu).</li>
+<li>The Help Search menus are working again (still as xhtml
+red as txt).</li>
+<li>Save current layer in history before importing GML files,
+so users can undo it later on: done.</li>
+<li>Rewrote the code that recursively stores GML file names. It is
+much simpler and easier to maintain now, and seems to work just fine.
+</li>
+<li>The merge of the GML and XHTML code trees is now completed.
+Cleaned the whole import expat code, which now looks elegant and
+simple to maintain.</li>
+<li>The merge of the codes handling GML and XHTML error messages is
+now completed.</li>
+<li>Removed a double bug in the Expat code reading XML window size.</li>
+<li>Minor website improvements: improved &lt;img> tags and added &lt;a>
+tags, updated status of Mesa bugs, added a section regarding WM
+environment, in the install documentation chapter.</li>
+<li>The basic machinery to handle Help XHTML files is now in place.</li>
+<li>Moved the error routines out of gamgi_expat_import.c, in preparation
+to handle Help XML files with the same code base.</li>
+<li>Corrected end of gamgi_expat_import_config and gamgi_expat_import_data.
+</li>
+<li>Improved static_import and static_file in gamgi_expat_import.c
+and static_parse in gamgi_io_file.c, so: 1) All files (including XML files
+defined internally) are now routed through the same routines and parsed
+in the same way; 2) The length of filename and fullname (including protocol,
+hostname, pathname and filename) are now safely checked, for all files,
+in a single place.</li>
+<li>The fullscreen code was left commented by mistake. Corrected.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Reunite all code handling gtk colors in a single place.</li>
+<li>Improve Help colors, fonts, formats, etc., when GAMGI is
+the agent (instead of an external browser).</li>
+<li>Fix the code to handle Help->Tutorial.</li>
+<li>Start implementing point group symmetry.</li>
+<li>Improve Text functionality.</li>
+<li>Convert the pdb format of the MathMol
+molecules to GAMGI GML native format.</li>
+<li>Write the Technical Description, in www.gamgi.org.
+with sections Libraries, Style and Architecture.</li>
+<li>Improve the Formats documentation.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.09.8</div><div>18th April 2003</div>
+</div>
+
+<div class="contents">
+
+GAMGI is now importing files from FTP connections and
+exporting rasterized color Postscript files. All the code
+handling files has been cleaned and reunited in the file
+gamgi_io_file.c.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>GAMGI is now importing files also from FTP connections,
+using automatic anonymous login, exactly as browsers do.</li>
+<li>Improved the HTTP code and removed two bugs on it:
+1) HTTP connections with long headers would be rejected;
+2) everything before the first "<" character would be ignored,
+instead of flagged as an XML error.</li>
+<li>Web site improvements: 1) links look better; 2) fonts look
+better; 3) added links to HTTP and FTP resources.</li>
+<li>Reorganized the code that actually reads and parses
+XML files, so now this is done by a single routine, which
+doesn't know if the data comes from a local file or from
+HTTP or FTP connections.</li>
+<li>Improved the ftp client code, which now looks solid
+and ready for production.</li>
+<li>I think we have a winner design to the problem
+of handling automatic text objects (to automatically
+measure lengths, angles, dihedrals, etc...): for each
+automatic measurement, the common atom parent must own
+the master text object and each atom must own a slave
+text object. This should work fine both with online and
+XML file descriptions (using ids to link the text objects).
+</li>
+<li>Cleaned gamgi_mesa_gl_area.*, gamgi_mesa_pick.*,
+and gamgi_file_io.* (which now contains the ps code)
+and removed the files gamgi_io_file_ps.*. Integrating
+the ftp client code should be quite easy now.</li>
+<li>Removed a long time bug in the filename parsing code.</li>
+<li>GAMGI is now exporting color encapsulated postscript files,
+(that Ghostview and Gimp can read) of the rasterized drawing areas
+(vectorial representations are still far away), using the free
+code that Mark Kilgard wrote for the OpenGL green book.</li>
+<li>We have decided how to implement the interface for
+configuration data: clicking on the top menu labels with
+the right button.This is simple, elegant and technically
+it is easy to implement and maintain.</li>
+<li>Started collecting all functions that open, read and close
+files (including shell and dialog parsing) in a single
+file gamgi_io_file.c. This is in preparation for the ftp
+client and also to prepare important improvements in the
+help mechanisms suppoted by GAMGI.</li>
+<li>Inverted the vector direction in directional lights,
+so it has the same physical meaning in directional and
+positional lights, always pointing from the light source
+to the light destination.</li>
+<li>The FTP client code is now working fine, with the PASV mode
+(the most modern). This means that soon it will be possible to
+fetch XML GAMGI files using the FTP protocol. GAMGI already
+supports HTTP 1.0 and HTTP 1.1 (the most modern) protocols.</li>
+<li>Added a tutorial on directional, positional and spot lights.</li>
+<li>Found and removed a bug in the light code: when rotating a
+light (direction) with the mouse, it was working fine for
+directional but not for spot lights, because OpenGL handles these
+lights differently.</li>
+<li>Removed the old files that imported/exported xyz simple files.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Start implementing point group symmetry.</li>
+<li>Improve Text functionality.</li>
+<li>Convert the pdb format of the MathMol
+molecules to GAMGI GML native format.</li>
+<li>Write the Technical Description, in www.gamgi.org.
+with sections Libraries, Style and Architecture.</li>
+<li>Improve the Formats documentation.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.09.7</div><div>26th March 2003</div>
+</div>
+
+<div class="contents">
+
+Major changes in the graphic engine handling cell and text objects.
+Code to read local and HTTP files is now much more robust.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Layers are now scaling to layer->center, instead of (0,0,0) as before</li>
+<li>Changed completely the way cell coordinates are handled: before we were
+centering and rotating and moving the whole bunch of coordinates, now we
+are updating only the origin, the center, and a rotation quaternion.
+As a result: 1) handling large cells should be noticeably faster;
+2) floating point degradation is totally avoided. Lots of things
+had to be changed to achieve this but the code looks pretty solid
+at the moment.</li>
+<li>Found and removed a bug in the HTTP code: in HTTP connections,
+the block size can be smaller than requested, depending of the net
+connection. We went through all the HTTP code, and thanks to the
+expert advice on the Expat mailling list, this code is now fully
+working, looks really solid, and is much simpler and elegant than
+before.</li>
+<li>We did good progress in the FTP client for GAMGI.</li>
+<li>The functions calculating the center, for each kind of object,
+are now reunited in a single file: gamgi_mesa_center_out.c.</li>
+<li>Text objects are now scaled, rotated and translated exactly
+as Cell objects.</li>
+<li>Handling termination in local XML files is more solid now.</li>
+<li>Found a  floating point precision bug in the code showing bonds:
+actually this is a Mesa5.0 bug, Brian said this bug was
+already removed and next release Mesa5.0.1 will be fine.</li>
+<li>Updated to latest Expat release: Expat1.95.6</li>
+<li>Updated this trusted computer to Suse Linux 8.1.</li>
+<li>Gamgi is now running on SGI Irix, with four
+R12000 Processors.</li>
+<li>Cleaned the code used to handle Text objects.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Start implementing point group symmetry.</li>
+<li>Improve Text functionality.</li>
+<li>Convert the pdb format of the MathMol 
+molecules to GAMGI GML native format.</li>
+<li>Write the Technical Description, in www.gamgi.org. 
+with sections Libraries, Style and Architecture.</li>
+<li>Improve the Formats documentation.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.09.6</div><div>3rd March 2003</div>
+</div>
+
+<div class="contents">
+
+Text Modify has been implemented, Cell Link for Hexagonal Cells 
+is more solid, several other important bugs have been removed.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Decided to change again the way of scaling objects.</li>
+<li>Text Modify is now fully working, including orientation
+(Euler angles, etc.).</li>
+<li>The origin in Cell Create can now be indicated by pointing 
+directly with the mouse, as happens already with Texts and Atoms.</li>
+<li>Gamgi loaded 290,000 atoms in about 50 sec, in a Pentium II 400MHz 
+based machine.</li>
+<li>Implemented conversion from rotation matrix to quaternion, 
+and from rotation matrix to Euler angles. These operations are 
+required to handle text and other objects, and complete the set
+of rotation transformations that we will ever need in GAMGI.</li>
+<li>Found and removed a bug in the matrix->quaternion code (equations 
+in the book Games Programming Gems were incorrect...). </li>
+<li>Solved a long standing mistery related with quaternions
+and the corresponding transformation matrix, as they were
+implemented in GAMGI (taken from GtkGLArea and the green book):
+three mathematical bugs combined gave the right answer. Very
+difficult to spot, because it worked (with a few workarounds,
+for consistency with other rotations techniques), and correcting 
+one or two bugs would break the whole thing, only correcting all 
+the three bugs at once (in different sections of the code...) 
+things started working again...</li>
+<li>Improved CSS and XHTML page alignment in the website: it should
+work essentially fine now for most browsers, old and new...</li>
+<li>How to convert a rotation matrix to a quaternion is
+a solved issue (we need this to modify text and other objects).</li>
+<li>Reunited all mathematical functions dealing with Euler angles and 
+quaternions in files math_euler.* and math_quaternion.*</li>
+<li>Found and removed two bugs related with Cell Link of Hexagonal 
+cells: the >if< logic was broken.</li>
+<li>Found and removed a bug related with Cell Modify of Hexagonal 
+Conventional cells: the nodes were not translated in the end.</li>
+<li>Web site improvments, including tutorials on CCC, CFC and HC 
+interstices.</li>
+<li>Started looking into Patchkovskii's symmetry code 
+to determine point group symmetry.</li>
+<li>Found and corrected a bug in the axis code (axis
+status was not mesa_started or engine_copied, resulting sometimes
+in unwanted axis).</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Start implementing point group symmetry.</li>
+<li>Improve Text functionality.</li>
+<li>Convert the pdb format of the MathMol 
+molecules to GAMGI GML native format.</li>
+<li>Write the Technical Description, in www.gamgi.org. 
+with sections Libraries, Style and Architecture.</li>
+<li>Improve the Formats documentation.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.09.5</div><div>12th February 2003</div>
+</div>
+
+<div class="contents">
+
+Improved the font data formats and text handling. Corrected several minor problems.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Improved the ref/unref mechanism to control which fonts must
+be in memory at a given time.</li>
+<li>Found amd removed a bug when writing beam lights (the
+angle parameter was missing).</li>
+<li>Removed the light material parameters, as they are
+not currently used.</li>
+<li>Found and removed a potential bug when creating a light
+from a file. Cleaned the code initializing colors in lights
+and layers.</li>
+<li>Implemented the layer XYZ axis functionality.</li>
+<li>Implemented in and out partial visibility, using Fog:
+objects in partially visible layers, merge with the background.</li>
+<li>Found and removed a bug in the text scaling code: text
+was scaling around the center, not around the origin.</li>
+<li>Found and removed a bug in the cell rendering code (it
+was introduced on purpose, for testing, somewhere around
+gamgi 0.08.28, and later we forgot to remove it).</li>
+<li>Found and removed a bug in the layer switching mode (the
+gl_area was not updated after changing layers).</li>
+<li>Found and removed a bug in the code that adds quaternions.</li>
+<li>Removed the arrays for Hershey fonts that are redundant in the 
+32-126 ASCII range.</li>
+<li>Removed the y-coordinate for each character translation, which
+was always 0.0.</li>
+<li>Each individual stroked font is now compiled only when there
+is at least one text object using it, and is removed immediately
+when it is not being used anymore. Previously all fonts were compiled
+at launch time and removed only in the end.</li>
+<li>Cleaned the whole font format and removed the lines arrays,
+which were used to drive the font drawing.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Start implementing point group symmetry.</li>
+<li>Improve Text functionality.</li>
+<li>Convert the pdb format of the MathMol 
+molecules to GAMGI GML native format.</li>
+<li>Write the Technical Description, in www.gamgi.org. 
+with sections Libraries, Style and Architecture.</li>
+<li>Improve the Formats documentation.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.09.4</div><div>3th February 2003</div>
+</div>
+
+<div class="contents">
+
+Added Hershey stroked fonts, for text objects. This is
+just a working release, to save data, not a general purpose
+version.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Implemented the following Hershey stroked fonts (from char 32 to 126):
+Sans, Sans_Bold, Sans_Symbol, Serif, Serif_Bold, Serif_Symbol, 
+Serif_Symbol_Bold, Script, Script_Bold, Gothic_English, Gothic_German,
+Gothic_Italian</li>
+<li>Improved the font handling architecture, in particular,
+data coming from different sources is now stored in different files.</li>
+<li>We should change the font data format, from float to byte, to
+decrease memory usage. We should also decrease the size of the font 
+files, to decrease disk usage. More importantly, we need to compile
+fonts only on demand, removing the fonts when they are not used anymore.
+This can be done using references, and OpenGL generate lists facilities.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Start implementing point group symmetry.</li>
+<li>Improve Text functionality.</li>
+<li>Convert the pdb format of the MathMol 
+molecules to GAMGI GML native format.</li>
+<li>Write the Technical Description, in www.gamgi.org. 
+with sections Libraries, Style and Architecture.</li>
+<li>Improve the Formats documentation.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.09.3</div><div>28th January 2003</div>
+</div>
+
+<div class="contents">
+
+Improvements on Text objects.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Clarified a problem of consistency between two rotating functions.</li>
+<li>Cleaned Links, Projects and Install html pages.</li>
+<li>Defined style for html pages in Formats documentation.</li>
+<li>Added Formats documentation for Gamgi configuration.</li>
+<li>Wrote Formats documentation for Window, Layer,
+Atom and Bond configuration (not available yet).</li>
+<li>Text objects are moving, scaling and rotating.</li>
+<li>The global model to rotate texts is working well,
+even when texts and cells (where the model is different)
+are rotating simultaneously. This is good news, because
+it means that texts will be fast and we don't need to
+rely on plan B ;-)</li>
+<li>Hershey fonts are already included in the source code,
+although they are not implemented yet. The encoding mechanism
+is fully understood though, which means that it should not be
+difficult to implement them (just boring...).</li>
+<li>A second version of the Text Create task dialog is
+implemented, allowing users to control almost all
+the relevant parameters, and choosing the position 
+directly with the mouse.</li>
+<li>A first version of the Text Modify task dialog
+is already reading input but still not changing it.</li>
+<li>Minor cleanups in the mesa_center_* code.</li>
+<li>Minor cleanups in gtk_dialog.c and gtk_atom_modify.c code.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Start implementing point group symmetry.</li>
+<li>Improve Text functionality.</li>
+<li>Convert the pdb format of the MathMol 
+molecules to GAMGI GML native format.</li>
+<li>Write the Technical Description, in www.gamgi.org. 
+with sections Libraries, Style and Architecture.</li>
+<li>Improve the Formats documentation.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.09.2</div><div>18th January 2003</div>
+</div>
+
+<div class="contents">
+
+Roman and Mono_Roman stroked fonts (from Sun) are implemented,
+marking the oficial beginning of text objects in GAMGI.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>The bug in Mesa shared pre-compiled
+lists was removed, apparently in Mesa 4.0.3,
+and is definitely not present in the latest
+release, Mesa 5.0. :-)</li>
+<li>Removed a bug in the mesa code that originated
+blurred lines in cells when drawn for the first time.</li>
+<li>The Roman and Mono_Roman stroked fonts freely
+available from Sun Microsystems, that are included
+with both GLUT and Freeglut, are now implemented
+in GAMGI, as part of the text object functionality.</li>
+<li>Cleaned gtk (function names, layer parameters),
+and expat code (layer parameters).</li>
+<li>Implemented gtk_text_remove and created a first 
+version for gtk_text_create, so it is possible now
+to create and remove a text object in GAMGI, though
+much improvements are needed.</li>
+<li>Obtained the atomic structure (from MathMol database) 
+for many interesting molecules (though they are still in
+pdb format).</li>
+<li>Obtained the set of default CPK element colors used 
+in Rasmol, though not for all elements. Unfortunately
+this set of colors is different from the one used by
+InsightII, though it might be equal to the one used
+by Cerius2, we need to investigate more.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Improve Text functionality, and start
+implementing the Text Modify task dialog.</li>
+<li>Convert the pdb format of the MathMol 
+molecules to GAMGI GML native format.</li>
+<li>Write the Technical Description, in www.gamgi.org. 
+with sections Libraries, Style and Architecture.</li>
+<li>Improve the Formats documentation.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.09.1</div><div>11th January 2003</div>
+</div>
+
+<div class="contents">
+
+Changed the website to XHTML1.0 and CSS1.0.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Changed the entire website to XHTML1.0 and CSS1.0. The advantages are:
+1) the style (fonts, colors, dimensions...) for the whole website is now
+defined in a single file, making it much easier to change and improve the
+web pages; 2) the web pages are simpler, because they don't contain style
+information; 3) The web pages are now in XML format, the same used natively
+in GAMGI (although the language is different, of course), thus we expect
+to obtain important sinergies. In paticular, this means that GAMGI will
+be able to read pages from the GAMGI website, so all the help documentation
+can be written in XHTML and used both in the website and in GAMGI directly,
+in the Help functionality.</li>
+<li>Added Cell Link documentation to show how ocuppancy patterns work.</li>
+<li>Added the file $GAMGI/dat/all.xml, containing all the parameters that 
+GAMGI currently understands and improved several other examples in the 
+same $GAMGI/dat/ data distribution.</li>
+<li>improved the DTDs in $GAMGI/doc/dtd/, which now include all 
+the accepted parameters and are conforming with all.xml</li>
+<li>cleaned the code in gamgi_expat_import_config and
+gamgi_expat_import_data, to handle missing parameters,
+according to all.xml</li>
+<li>deleted the code to remove a window when more windows
+are launched at startup, because there was a bug in it and
+because we need to think more about the best way to handle
+these situations.</li>
+<li>found a nasty bug :-( when multiple windows are open and closed,
+which occurs with Mesa 4.0.2 and Mesa 4.0, but not with Mesa 3.0.
+Apparently this is a bug that found its way to Mesa newest releases, 
+in the code handling shared, pre-compiled, OpenGL lists.</li>
+<li>Corrected a few minor bugs in gamgi_gtk_help_current.c and
+gamgi_gtk_help_topic.c, and updated the documentation path
+in gamgi_io.h</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Write the Technical Description, in www.gamgi.org. with sections 
+Libraries, Style and Architecture.</li>
+<li>Improve the Formats documentation.</li>
+<li>Try to solve a couple of minor and major bugs related with Mesa.</li>
+<li>Time to write new code and decrease the size 
+of the list shown above in the hacker section!</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI old</div><div>&nbsp;</div>
+</div>
+
+<div class="contents">
+
+Changelogs for older releases can be found here.
+
+<p/>
+
+<ul>
+<li><a href="changelogs08.html">GAMGI 0.08.1 - GAMGI 0.09</a></li>
+<li><a href="changelogs07.html">GAMGI 0.07.18 - GAMGI 0.08</a></li>
+</ul>
+
+</div>
+
+<div id="bottom">
+<a href="../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Formats: Cell Create</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Cell Create</h1>
+
+<div id="notebook">
+<ul>
+<li><a href="create_symmetry.html">Symmetry</a></li>
+<li><a href="create_volume.html">Volume</a></li>
+<li><span>Position</span></li>
+<li><a href="create_origin.html">Origin</a></li>
+<li><a href="create_view.html">View</a></li>
+</ul>
+</div>
+
+<div class="contents">
+
+<h3>x, y, z</h3>
+
+Set the cell origin, always defined as the position of the node (000).
+For <b>conventional</b>, <b>primitive</b>, <b>wigner</b> and 
+<b>rhombus</b> volumes, the origin is initially at the lower-left
+corner. For <b>sphere</b> and <b>projection</b> volumes, the origin 
+is initially at the center. When the volume is <b>projection</b>, 
+the origin cannot be changed.
+  
+<pre>
+Example: <b>&lt;cell ... x="0.0" y="0.0" z="0.0"/></b> (default)
+(defined in <b>GAMGI_MESA_CELL_X</b>, <b>GAMGI_MESA_CELL_Y</b> and <b>GAMGI_MESA_CELL_Z</b>)
+Allowed values: real (optional, coupled)
+</pre>
+  
+<h3>e1, e2, e3</h3>
+  
+Set the three Euler angles controlling the cell orientation. The first 
+rotation (e1), around the initial y axis, must be between <b>0</b> 
+and <b>180</b> degrees. The second rotation (e2), around the initial 
+z axis, must be between <b>0</b> and <b>360</b> degrees. The third rotation 
+(e3), around the final z axis, must be between <b>0</b> and <b>360</b>.
+
+<p/>
+
+By default (e1, e2 and e3 equal to zero), the first crystallographic 
+vector is aligned along the x-axis, the second vector lies above, on 
+the x-y plane, and the third vector has a positive z coordinate, thus 
+pointing to the user (right-handed orientation).
+  
+<pre>
+Example: <b>&lt;cell ... e1="0.0" e2="0.0" e3="0.0"/></b> (default)
+(defined in <b>GAMGI_MESA_CELL_E1</b>, <b>GAMGI_MESA_CELL_E2</b> and <b>GAMGI_MESA_CELL_e3</b>)
+Allowed values: e1: <b>0.0</b> - <b>180.0</b>, e2, e3: <b>0.0</b> - <b>360.0</b> (optional, coupled)
+</pre>
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

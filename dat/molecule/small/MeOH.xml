@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE gml SYSTEM "http://www.gamgi.org/dtd/gamgi.dtd">
+<gml>
+  <molecule name="MeOH">
+    <atom id="1" element="C" x="-0.6848" y="0.1403" z="0.2697"
+    charge="-0.1750"/>
+    <atom id="2" element="H" x="-0.8094" y="1.2198" z="0.5021" charge="0.1140"/>
+    <atom id="3" element="H" x="-0.8854" y="-0.4529" z="1.1876"
+    charge="0.1140"/>
+    <atom id="4" element="H" x="-1.4438" y="-0.1326" z="-0.4804"
+    charge="0.1140"/>
+    <atom id="5" element="O" x="0.5802" y="-0.1503" z="-0.2993"
+    charge="-0.5720"/>
+    <atom id="6" element="H" x="1.2716" y="0.0880" z="0.3590" charge="0.4060"/>
+    <bond parent1="1" parent2="2"/>
+    <bond parent1="1" parent2="3"/>
+    <bond parent1="1" parent2="4"/>
+    <bond parent1="1" parent2="5"/>
+    <bond parent1="5" parent2="6"/>
+  </molecule>
+</gml>

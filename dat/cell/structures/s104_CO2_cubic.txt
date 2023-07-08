@@ -1,0 +1,26 @@
+Structure 104
+Prototype: CO2-cubic
+StrukturBericht / Pearson: - / cP12
+
+lattice parameters:
+CO2-cubic
+5.056
+ 
+Radius:
+O: 0.6037 (half-distance)
+C: 0.7130 (half-distance)
+
+1. Building with space group (s104.xml):
+Group: 205
+
+Wyckoff positions:
+O 8c, x = 0.1324
+C 4a
+
+Cells: 2 x 2 x 2
+
+View:
+O: style solid, size 1.0, variancy 1.0, scale 0.3
+C: style solid, size 1.0, variancy 1.0, scale 0.3
+OC: style solid, method length, color 0.5,0.5,0.5 scale 0.6
+

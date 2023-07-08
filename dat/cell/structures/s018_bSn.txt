@@ -1,0 +1,23 @@
+Structure 18
+Prototype: beta-Sn
+StrukturBericht / Pearson: A5 / tI4
+
+lattice parameters:
+b-Sn          Ge
+5.8197 3.1750 4.9585 2.7463
+
+Radius:
+Sn: 1.8695 (half-distance)
+
+1. Building with space group (s018.xml):
+141
+
+Wyckoff positions:
+Sn 2a
+
+Change:
+0.0, 0.25, -0.125
+
+View:
+Sn: style solid, size 1.0, variancy 1.0, scale 0.2
+SnSn: style solid, method length, color 0.5,0.5,0.5 scale 0.6

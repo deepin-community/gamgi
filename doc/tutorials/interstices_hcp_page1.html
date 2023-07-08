@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Tutorials: Interstices in the HCP structure</title>
+<link rel="icon" type="image/png" href="../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Interstices in the HCP structure</h1>
+
+<div id="notebook">
+<ul>
+<li><span>Page 1</span></li>
+<li><a href="interstices_hcp_page2.html">Page 2</a></li>
+</ul>
+</div>
+
+<div class="contents">
+
+To show the size and position of the HCP interstices, we need to create
+a cell with lattice parameters valid for a compact structure, and then
+link it with atoms representing the structure and atoms representing
+the interstices. The <b>Radius</b> of the structural atoms is set to
+<b>1.0</b>, so the <b>Radius</b> of the interstitial atoms shows
+its comparative size.
+
+<p/>
+
+The final result, showing two cells with octahedral (left) and 
+tetrahedral (right) interstices, with some structural atoms removed 
+to increase visibility, can be seen in the figure at 
+<a href="http://www.gamgi.org/images/int_hcp.gif">
+http://www.gamgi.org/images/int_hcp.gif</a>.
+
+<h3>Octahedral interstices</h3>
+
+<ol>
+<li>
+Press <b>Cell->Create</b> and set <b>System</b> to <b>h</b>,
+<b>Lattice</b> to <b>P</b> (Hexagonal), <b>a</b> to <b>2.0</b>
+(so the structural atoms will be in contact along &lt;100&gt; 
+directions) and <b>c</b> to <b>3.266</b> (perfect HCP structure). 
+Press <b>Ok</b> to create the cell.
+</li>
+
+<li>
+Select <b>Atom->Create</b> and set <b>Style</b> to <b>Solid</b>,
+<b>Size</b> to <b>1.0</b> and <b>Variancy</b> to <b>1.0</b>.
+
+Set <b>Element</b> to <b>Ti</b>, for example (a HCP metal), 
+<b>Radius</b> to <b>1.0</b> and press the mouse over the graphic 
+area. A Ti atom is created where the mouse was pressed.
+</li>
+
+<li>
+Create a second atom, this time setting <b>Element</b> to <b>C</b>
+(for example) and <b>Radius</b> to <b>0.414</b> (the size of the HCP
+octahedral interstices). A new atom representing the octahedral
+interstitial atom is now visible, where the mouse was pressed.
+</li>
+
+<li>
+Press <b>Cell->Link</b> and select the <b>Crystal</b> link method.
+Press the mouse over the cell, and then over the interstitial atom,
+to identify the objects to link. Set <b>x</b>, <b>y</b>, <b>z</b>
+coordinates (<b>Position</b> page) to <b>0.666</b>, <b>0.333</b>,
+<b>0.25</b> and press <b>Ok</b>. 3 interstitial atoms are now visible, 
+centered in alternated triangles (positions C) at height c/4, all 
+inside the cell, corresponding to 1/2 of the octahedral interstices 
+available.
+</li>
+
+<li>
+Repeat the procedure above with <b>x</b>, <b>y</b>, <b>z</b> coordinates
+set to <b>0.666</b>, <b>0.333</b>, <b>0.75</b> to allocate the remaining 
+interstices. 6 interstitial atoms are now visible, centered in alternated 
+triangles (positions C) at heights c/4 and 3c/4, all inside the cell.
+</li>
+
+<li>
+To represent the structural atoms, repeat the linking procedure above,
+but this time pressing the mouse over the Ti structural atom, to identify
+the linked atom, and setting <b>x</b>, <b>y</b>, <b>z</b> coordinates
+to <b>0.0</b>, <b>0.0</b>, <b>0.0</b>. 14 structural atoms are now visible, 
+at the corners and centered on the basal faces of the cell (positions A), 
+corresponding to 3 structural atoms inside the cell or 1/2 of the atoms available.
+</li>
+
+<li>
+Repeat the procedure above with <b>x</b>, <b>y</b>, <b>z</b> coordinates
+set to <b>0.333</b>, <b>0.666</b>, <b>0.5</b> to allocate the remaining 
+Ti structural atoms. 3 additional structural atoms are now visible, centered 
+in alternated triangles (positions B) at height c/2, corresponding to a 
+total of 6 atoms inside the cell. 
+</li>
+
+<li>
+Select <b>Light->Create</b> and press <b>Ok</b>, to add a light
+and give atoms a three dimensional look.
+</li>
+
+<li>
+Press <b>Cell->Select</b> and click the mouse over the cell,  
+to select it. Rotate,move,scale the cell with the mouse. To have 
+a better view inside the cell, remove some of the structural atoms outside. 
+Select <b>Atom->Remove</b> and press the mouse over the atoms to remove.
+</li>
+</ol>
+
+</div>
+
+<div id="bottom">
+<a href="../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Tutorials: Voronoi tesselation</title>
+<link rel="icon" type="image/png" href="../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Voronoi tesselation</h1>
+
+<div id="notebook">
+<ul>
+<li><span>Page 1</span></li>
+<li><a href="voronoi_page2.html">Page 2</a></li>
+</ul>
+</div>
+
+<div class="contents">
+
+Voronoi tesselation is used in a wide range of scientific areas,
+from medicine to economics, as a technique to split some intensive 
+quantity among a given set of objects. When these are atoms, the 
+Voronoi tesselation provides a way to relate the electronic distribution 
+of the atomic structure with its topologigal and geometric properties.
+
+<p/>
+
+First we create a water molecule and calculate its Voronoi
+tesselation, changing the boundary offset, the boundary conditions,
+and the atomic weights. The four polyhedra obtained can be seen 
+in the figure at
+<a href="http://www.gamgi.org/images/voronoi1.png">
+http://www.gamgi.org/images/voronoi1.png</a>.
+
+<h3>Water</h3>
+
+<ol>
+<li>
+Press <b>Atom->Create</b>, set <b>Element</b> to <b>O</b>,
+set <b>X</b>, <b>Y</b>, <b>Z</b> to <b>0</b>, <b>0</b>, <b>0</b>,
+and press <b>Ok</b>, to create the O atom.</li>
+
+<li>Set <b>Element</b> to <b>H</b>, set <b>X</b>, <b>Y</b>, <b>Z</b> to
+<b>0.6</b>, <b>0.7749</b>, <b>0</b>, and press <b>Ok</b>,
+to create the first H atom. To create the second, set <b>Element</b> to
+<b>H</b>, and <b>X</b>, <b>Y</b>, <b>Z</b> to <b>0.6</b>, <b>-0.7749</b>,
+<b>0</b>, before pressing <b>Ok</b>.</li>
+
+<li>Select <b>Molecule->Create</b>, write a name for the molecule, 
+for example <b>water</b>, and press <b>Ok</b>. The new molecule has no
+contents yet, so the dialog <b>Molecule->Link</b> replaces automatically
+the previous one. Press the mouse over one of the atoms and press
+<b>Ok</b>, to link it to the molecule. Repeat for the other two atoms.</li>
+
+<li>Select <b>Bond->Create</b> and click over the <b>O</b> and a
+<b>H</b> atom to create a bond. Repeat with the other <b>H</b> atom.
+To see the object hierarchy, select for example <b>Molecule->Select</b>.
+To save the molecule, press <b>File->Export</b> and write the file name,
+for example <b>water.xml</b>, before pressing <b>Ok</b>.
+</li>
+
+<li>Select <b>Molecule->Measure</b>, set <b>Method</b> to <b>Voronoi</b>,
+and click on the molecule. A polyhedra cluster object is shown, in a new 
+layer (with <b>Visibility</b> to the <b>Outside</b> set to <b>None</b>), 
+describing the tesselation of the water molecule. A long report is also 
+produced, with geometrical and topological properties. To see what 
+these properties mean press <b>Help->Current</b>. Close the report window,
+rotate the cluster and move it to the top right corner of the graphic area.</li>
+
+<li>Select <b>Layer->Select</b> (or press <b>Layer</b> on the top menu
+with the mouse middle button) and click the mouse on the screen, to list
+the available layers and select the first one, that contains the water 
+molecule. The water and the cluster are now both visible (because this 
+layer has <b>Visibility</b> to the <b>Outside</b> set to <b>All</b>).</li>
+
+<li>Select again <b>Molecule->Measure</b>, set <b>Method</b> to <b>Voronoi</b>,
+but this time change <b>Offset</b> to <b>0.1</b> (<b>Voronoi</b> page), 
+before clicking on the molecule. The 6 outside planes are now much closer 
+to the atoms, so the cluster produced is much smaller and its shape is 
+also different. Rotate the cluster and move it to the bottom right corner 
+of the graphic area.</li>
+
+<li>Select again the layer containing the water molecule. Select again
+<b>Molecule->Measure</b>, set <b>Method</b> to <b>Voronoi</b> but this time
+change <b>Boundaries</b> to <b>Periodic</b> (<b>Voronoi</b> page), before 
+clicking on the molecule. Instead of defining 6 outer planes, the water 
+molecule was now surrounded by 26 virtual copies of its own, and the cluster 
+obtained reflects these changes.</li>
+
+<li>Select <b>Cluster->Copy</b>, change <b>Number</b> to <b>2</b>, click 
+on the cluster and press <b>Ok</b>, to produce two new copies of the original 
+cluster. Select <b>Cluster->Select</b> and confirm that there are now three
+clusters exactly equal. Then click on the visible cluster to select it and
+move it to the right until it just touches the central one. Click again on 
+the visible cluster to select it and move it to the left until it just 
+touches the central one. The three clusters together define a continuous 
+pattern, showing that periodic boundary conditions were applied. Select 
+<b>Cluster->Remove</b> and click on the left and right clusters to remove 
+them. Move the remaining cluster to the top left corner of the graphic area.
+</li>
+
+<li>Select again the layer containing the water molecule. Select again
+<b>Molecule->Measure</b>, set <b>Method</b> to <b>Voronoi</b>,
+<b>Boundaries</b> to <b>Periodic</b> but this time change <b>Variancy</b> 
+to <b>1.0</b> (<b>Voronoi</b> page), before clicking on the molecule. 
+This time larger atoms have larger polyhedra so these are much smaller 
+for H than for O. Move the cluster to the bottom left corner of the graphic 
+area and select again the layer containing the water molecule, to see the 
+four polyhedra obtained so far.</li>
+</ol>
+
+</div>
+
+<div id="bottom">
+<a href="../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

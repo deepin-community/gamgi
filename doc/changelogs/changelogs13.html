@@ -1,0 +1,1272 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Changelogs: GAMGI 0.13</title>
+<link rel="icon" type="image/png" href="../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../css/board.css"/>
+</head>
+
+<body>
+
+<div class="board">
+<div>GAMGI 0.14</div><div>23rd September 2009</div>
+</div>
+
+<div class="contents">
+
+Added 9 geometry and 9 topology properties to the report
+produced by Group->Create in Polytope mode. Implemented
+and tested Group->Modify for Polytopes, including transitions
+in Autonomy and type of polytope: polyhedron, plane, direction.
+Added Help documentation for Group->Create, Group->Modify,
+Atom->Create, Atom->Modify. Fixed bugs. New screenshot.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Enough testing... this is it, GAMGI 0.14!</li>
+<li>Fixed a few error handling issues in Group->Modify and Group->Create.</li>
+<li>Moved parent initialization from gamgi_engine_copy_out.c to
+gamgi_engine_copy.c, so copy_out functions can be used elsewhere
+without erasing parent information.</li>
+<li>Group->Modify is working fine in Autonomy mode: All -> None.</li>
+<li>Fixed a bug in Plane->Modify and Direction->Modify: origin 
+and euler were not initialized, before entering the new values.</li>
+<li>Group->Modify is working fine in these Autonomy transitions:
+None -> None, None -> All and All -> All. All -> None is not working yet.
+Partial Autonomy is not going to be supported soon.</li>
+<li>Position and orientation is working for Group->Create
+for all cases, and for Group->Modify when Autonomy is NONE.</li>
+<li>Further improvements in Group->Modify: GUI, behaviour.</li>
+<li>Group->Modify is working, except position and orientation.</li>
+<li>Improved the Group->Modify interface and behaviour.</li>
+<li>Found and temporarily fixed a bug (disabled autonomy option for 
+planes, directions coming from polytope code): currently atomic planes
+and directions created from Group->Create cannot support all the functionality
+available from Plane->Create or Direction->Create (due to single inheritance, 
+exactly as Group->Create). These planes, directions can then be easily
+modified, including Autonomy, with Plane->Modify or Direction->Modify.</li>
+<li>Modified the way gamgi_chem_polytope and gamgi_gtk_group_create
+transfer data, so it works also for gamgi_gtk_group_modify.</li>
+<li>Fixed two bugs in polytope code: Scale was not updated and
+color was wrong in one case when creating planes or directions.</li>
+<li>Created a YBa2Cu3O7 screenshot showing 2D and 3D polytopes.</li>
+<li>Group->Create Polytope is now reporting 9 geometry properties:
+polyhedron volumes, areas, lengths and aberrations, face areas,
+lengths and aberrations, edge lengths and angles.</li>
+and edge lengths.</li>
+<li>Added Help->Current and Help->Topic support for Group->Create->Polytope
+and Group->Modify->Polytope. Previously this was available only for 
+Group->Create and Group->Modify.</li>
+<li>Found and removed a Group->Create bug: the current action
+was GROUP_CREATE but it should be GROUP_CREATE_POLYTOPE.</li>
+<li>Group->Create Polytope is now reporting 9 topology properties:
+number of polyhedrons, faces, edges and vertices, number of faces,
+edges and vertices per polyhedron, number of edges|vertices per edge,
+number of faces|edges per vertex.</li>
+<li>The Web, Help->Current and Help->Topic are now reading the new 
+documentation for Atom->Modify, Atom->Config, Group->Create, 
+Group->Modify.</li>
+<li>Updated documentation for dialog Atom->Config.</li>
+<li>Increased CSS notebook ul width to 60em to avoid tag wrapping
+in Atom->Modify.</li>
+<li>Updated documentation for the new dialog Group->Modify.</li>
+<li>Updated documentation for the new dialog Atom->Modify.</li>
+<li>Fixed a bug in polytope code: the central atom color 
+should be used, not the color for the central atom element.</li>
+<li>Wrote documentation for the new dialog Group->Create.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Replace GtkFileSelection by GtkFileChooserWidget.</li>
+<li>Rewrite the About dialog, in the notebook form, to
+include pages for Developers, Contributors, Supporters.</li>
+<li>Add a task id to operactions involving multiple scans to
+guarantee that there is no flag corruption when bonds are
+created between different molecules.</li>
+<li>Add a bond angle, which is useful to control double bonds
+in solid mode.</li>
+<li>Add plane area and direction length to Plane->Measure and
+Direction->Measure.</li>
+<li>Write tutorials about crystalographic and atomic Plane,Direction usage.</li>
+<li>Implement dynamic text objects, to measure distances,
+angles, etc. on real time.</li>
+<li>Improve selection dialogs, including list selection methods.</li>
+<li>Implement multiple object picking, including a
+dynamic frame with moving ants and dragging anchors,
+to select multiple objects and images from the screen.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.13.15</div><div>10th August 2009</div>
+</div>
+
+<div class="contents">
+
+Designed, implemented and tested a new algorithm to merge coplanar
+faces in 3D polytopes. Tolerance for visible and coplanar polytope
+faces in now controled by users in Group->Create. Improved layout
+for Atom->Create and Atom->Modify interfaces. Replaced a wide range 
+of GTK 1 deprecated functions by new GTK 2 routines. Fixed a few 
+drawing bugs.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Tolerance for visible and coplanar faces is now defined
+directly by users (including disabling face merging).</li>
+<li>Fixed for Groups the bug previously found for Clusters related
+with different scaling for Container and Polytope types.</li>
+<li>The new algorithm to merge coplanar faces is working fine, 
+even with rather complex examples, with 50,000 atoms!</li>
+<li>Implemented a new algorithm to merge coplanar faces in 3D polytopes.</li>
+<li>Found and removed a bug: Cluster objects of Container and Polytope
+types must be scaled in different ways. This problem applies also to 
+Group, Molecule and Association objects.<li>
+<li>Removed the polytope code to merge coplanar faces, as this is plagued 
+to raise lots of problems due to finite floating point numerical precision. 
+Merging faces will be done only in the end, after the polytope calculation,
+a much more solid solution.</li>
+<li>Profiled the polytope code with 50,000 atoms in a cube and on a sphere:
+we got exactly the same results (3.000000 and 79.000000 sec, respectively) 
+with or without speedups. Therefore removed speedups, to simplify the code 
+and make it less error prone.</li>
+<li>Improved the View page layout, in Atom->Create and Atom->Modify dialogs.</li>
+<li>The rendering thickness for Cell and Group wired objects is different: fixed.</li>
+<li>Found a bug related with half-bonds in Atom->Modify.</li>
+<li>Removed first and second GTK_OBJECT casts in g_signal_connect_swaped 
+calls.</li>
+<li>Removed GTK_OBJECT cast in g_signal_connect_after calls.</li>
+<li>Clarified a problem and filled a bug report for Gnome MetaCity related
+with gtk_window_set_transient and fullscreen mode that afects Gamgi.</li>
+<li>Replaced deprecated GTK function: gtk_menu_append. Except in old 
+files gamgi_gtk_file_export.c and gamgi_gtk_file_import.c, that will be
+replaced soon, no GTK deprecated functions are now used in Gamgi.</li>
+<li>Removed option_menu widgets and fixed g_object_get_data labels
+in static_rotation_ok in gamgi_gtk_cell_align.c. When converting to GTK 2
+combo boxes, this was left unfinished, so Gamgi would crash immediately
+when attempting to align a Cell with the Layer or another Cell.</li>
+<li>Replaced deprecated GTK function: gtk_window_set_policy.</li>
+<li>Replaced GTK 1 progress by GTK 2 progress bar widget.</li>
+<li>Replaced deprecated GTK functions: gtk_notebook_set_homogeneous_tabs,
+gtk_notebook_set_page, gtk_signal_handler_block_by_func and
+gtk_signal_handler_unblock_by_func.</li>
+<li>Improved make_rules, following the suggestions of Daniel Leidert, 
+from the Debichem group, packaging Gamgi for the Debian distribution.</li>
+<li>Prepared
+<a href="http://www.gamgi.org/screenshots/screenshots14.html">
+screenshots</a> showing the new polytope code.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Replace GtkFileSelection by GtkFileChooserWidget.</li>
+<li>Rewrite the About dialog, in the notebook form, to
+include pages for Developers, Contributors, Supporters.</li>
+<li>Add a task id to operactions involving multiple scans to
+guarantee that there is no flag corruption when bonds are
+created between different molecules.</li>
+<li>Add a bond angle, which is useful to control double bonds
+in solid mode.</li>
+<li>Add plane area and direction length to Plane->Measure and
+Direction->Measure.</li>
+<li>Write tutorials about crystalographic and atomic Plane,Direction usage.</li>
+<li>Implement dynamic text objects, to measure distances,
+angles, etc. on real time.</li>
+<li>Improve selection dialogs, including list selection methods.</li>
+<li>Implement multiple object picking, including a
+dynamic frame with moving ants and dragging anchors,
+to select multiple objects and images from the screen.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.13.14</div><div>15th July 2009</div>
+</div>
+
+<div class="contents">
+
+Fixed a couple of bugs in chem and gtk code, including a nasty
+brown paper bag that crashed the new polytope code in many systems.
+Everything that can be measured with Atom->Measure can now be modified
+with the new Atom->Modify dialog. The oldest dialog in Gamgi, Group->Modify,
+has been replaced by an entirely different dialog, to modify Groups, 
+including polytopes.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Added bond cleaning when creating Polytopes and improved this
+cleaning for Planes and Directions.</li>
+<li>Improved layout for View page in Atom->Create and Atom->Modify.
+Variancy is now a combo box entry, with 0.0 and 1.0 sugestions.</li>
+<li>Improved layout for View page in Bond->Modify and Atom->Modify.</li>
+<li>Fixed position for Autonomy combo box in Plane->Modify and 
+Direction->Modify dialogs.</li>
+<li>Completed interface behaviour in Group->Modify dialog.</li>
+<li>Improved Scale behaviour in Group->Modify,
+Plane->Modify, Direction->Modify dialogs.</li>
+<li>Replaced Property by Quantity in Plane->Measure and
+Direction->Measure dialogs.</li>
+<li>Designed and implemented the new Group->Modify dialog.</li>
+<li>Modifying atom-2atom distances is now working fine.
+All the quantities that can be measured with Atom->Measure
+can now be modified with the new dialog Atom->Modify.</li>
+<li>Modifying atom-direction distances is now working fine.</li>
+<li>Modifying atom-3atom distances is now working fine.</li>
+<li>Modifying atom-plane distances is now working fine for all cases.</li>
+<li>Fixed a old bug when modifying a torsion angle: the terminal
+branches of the second atom should change as well, not just the
+first atom and its terminal branches.</li>
+<li>The only task dialog in GAMGI still from the first generation,
+Group->Modify, has been removed. It will be replaced soon 
+by a dialog handling Polytopes, among other things.</li>
+<li>All the functionality previously available in Group->Modify
+is now available in Atom->Modify, in the mode Geometry.</li>
+<li>Completed all the GTK code for the new Atom->Modify dialog.</li>
+<li>The new Atom->Modify dialog will be used to set all the quantities 
+that are measured in Atom->Measure, replacing the old Group->Modify dialog 
+that will be used to modify Group objects such as polytopes.</li>
+<li>The new Atom->Modify dialog is almost finished:
+removed a sync bug resulting in a GTK warning.</li>
+<li>Found and removed a bug in gamgi_chem_geometry.c:
+sequence array off limits by 1, for bond angles.</li>
+<li>Removed all warnings at -O3 compilation level, on Fedora 9.</li>
+<li>Found and removed a crashing bug in gamgi_chem_polytope.c:
+in static_vertex_create, first total should not be there.</li>
+<li>Found and removed a bug in gamgi_gtk_atom_modify.c:
+when style changes, update draw, not atom->draw.</li>
+<li>Designed the new Group->Modify dialog: based on Atom->Measure
+and Group->Create, the first page has radio buttons to jump 
+between the two sets of pages (Atoms and Polytope). Opens initially
+in one of the two sets (Atoms), in the second page, to preserve
+a rule always followed in GAMGI GUIs: users are required to fill 
+only the starting visible notebook page, all the others are optional 
+or have suitable defaults.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Complete the 3D polytope code, including documentation.</li>
+<li>Replace GtkFileSelection by GtkFileChooserWidget.</li>
+<li>Rewrite the About dialog, in the notebook form, to
+include pages for Developers, Contributors, Supporters.</li>
+<li>Add a task id to operactions involving multiple scans to
+guarantee that there is no flag corruption when bonds are
+created between different molecules.</li>
+<li>Add a bond angle, which is useful to control double bonds
+in solid mode.</li>
+<li>Add plane area and direction length to Plane->Measure and
+Direction->Measure.</li>
+<li>Write tutorials about crystalographic and atomic Plane,Direction usage.</li>
+<li>Implement dynamic text objects, to measure distances,
+angles, etc. on real time.</li>
+<li>Improve selection dialogs, including list selection methods.</li>
+<li>Implement multiple object picking, including a
+dynamic frame with moving ants and dragging anchors,
+to select multiple objects and images from the screen.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.13.13</div><div>13th May 2009</div>
+</div>
+
+<div class="contents">
+
+Improved, tested, cleaned the polytope code and redesigned the way data 
+is stored to increase maintenance and readibility. Added speedups to make
+the code more efficient. This code builds a 3D convex hull for 50,000 atoms
+under 3 seconds on my desktop system. Moved the corresponding graphic interface 
+from Cell->Link to Group->Create. Added new options (Autonomy) and defaults 
+(color, neighbour elements, number of neighbours). Removed (GTK 1) GTK_OBJECT 
+casts for all g_signal_connect calls.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Removed the GTK_OBJECT () cast (from GTK 1) in g_signal_connect 
+calls, in all src/*/*c and src/*/*/*c files (but not in 
+g_signal_connect_after and g_signal_connect_swapped calls).</li>
+<li>Removed Polytope code from Cell->Link (this is now in Group->Create).</li>
+<li>In the polytope code, added error checks to see if: 1) the selected 
+atom is outside the current object selection; 2) Global mode is wrongly 
+used with unrestricted neighbour distance.</li>
+<li>Added parameter autonomy to Group objects, as in Planes
+and Directions. Autonomy All and None are now working fine
+for Groups created by the Polytope code.</li>
+<li>When building polytopes, use central atom default color, 
+when neighbour element is undefined and default neighbour 
+color cannot be used.</li>
+<li>The central atom is now added, in first place, to new 1d-, 
+2d- and 3d- polytopes, just before the neighbour atoms.</li>
+<li>Found and removed a bug in the polytope code: each new Group object 
+should belong to the first parent above the corresponding central Atom
+that is at least a Group object, not to the current selection.</li>
+<li>Redesigned the interface for Group->Create: it looks clean and
+functional now.</li>
+<li>The polytope code is now available from Group->Create.</li>
+<li>The polytope code is now working fine for a cube with 50,000 atoms!
+(screenshot soon...). It looks fast also (about 2-3 seconds on my 
+2 year old system).</li>
+<li>Found and removed a bug in the speedup code.</li>
+<li>Added speedup code to accelerate search for conflicts and edges
+in arrays.</li>
+<li>Debugged polytope code with new data structures.</li>
+<li>Changed policy for types and macros: from now on, these will be local
+when usage is local, instead of being defined in global headers, as before.</li>
+<li>Redesigned data structures for faces, edges and vertices in polytope code.
+The new structures are much easier to maintain and understand.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Rewrite Group->Modify, to include Polytopes and upgraded
+Atoms mode.</li>
+<li>Complete the 3D polytope code, including documentation.</li>
+<li>Replace GtkFileSelection by GtkFileChooserWidget.</li>
+<li>Rewrite the About dialog, in the notebook form, to
+include pages for Developers, Contributors, Supporters.</li>
+<li>Add a task id to operactions involving multiple scans to
+guarantee that there is no flag corruption when bonds are
+created between different molecules.</li>
+<li>Add a bond angle, which is useful to control double bonds
+in solid mode.</li>
+<li>Add plane area and direction length to Plane->Measure and
+Direction->Measure.</li>
+<li>Write tutorials about crystalographic and atomic Plane,Direction usage.</li>
+<li>Implement dynamic text objects, to measure distances,
+angles, etc. on real time.</li>
+<li>Improve selection dialogs, including list selection methods.</li>
+<li>Implement multiple object picking, including a
+dynamic frame with moving ants and dragging anchors,
+to select multiple objects and images from the screen.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.13.12</div><div>28th April 2009</div>
+</div>
+
+<div class="contents">
+
+The polytope code seems to be working fine now, in 1D (automatically producing 
+a range of atomic directions), 2D ((automatically producing a range of atomic 
+planes) and 3D conditions (automatically producing a range of polyhedra atomic
+groups). In the last case, the array-based (for speed) 3D convex hull incremental 
+algorithm, with conflict lists, is still operating with restrictions (the code to 
+handle and merge coplanar faces is still switched off). Moreover, no documentation 
+is currently avalable. The code is temporarily available from Cell->Link and 
+then Link Polytope (though we plan to move it to Group->Create instead). This 
+functionality is very important to describe crystallographic structures such 
+as minerals, superconductors, etc. but also to analyse glasses, liquids, etc.
+We are now getting close to GAMGI 0.14.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>The planar polytope code, building atomic planes, is working.</li>
+<li>The linear polytope code, building atomic directions, is working.</li>
+<li>The topology arrays (faces, edges, vertices) should be replaced
+by structures containing arrays, to improve maintenance.</li>
+<li>Testing the polytope code: seems to be working fine!</li>
+<li>Decreasing tolerance to 1.0E-10 fixed numerical problems with the 
+incremental algorithm in the polytope code (coplanar code switched off).</li>
+<li>the same conflict might be retrieved from both faces around the visible 
+edge: we have now a simple solution to this bug: use a unique identifier 
+everytime we get conflicts for a new face.</li>
+<li>Solved the realloc bugs due to outdated array memory addresses.</li>
+<li>Debugging the core polytope code (currently without coplanar faces) 
+is doing good progress.</li>
+<li>Simplified the code handling the initial polytope.</li>
+<li>Simplified,reviewed the polytope code handling faces,vertices arrays.</li>
+<li>Completed and tested the polytope code related with conflict lists.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Complete the 3D polytope code, including documentation.</li>
+<li>Replace GtkFileSelection by GtkFileChooserWidget.</li>
+<li>Add a task id to operactions involving multiple scans to
+guarantee that there is no flag corruption when bonds are
+created between different molecules.</li>
+<li>Add a bond angle, which is useful to control double bonds
+in solid mode.</li>
+<li>Add plane area and direction length to Plane->Measure and
+Direction->Measure.</li>
+<li>Write tutorials about crystalographic and atomic Plane,Direction usage.</li>
+<li>Implement dynamic text objects, to measure distances,
+angles, etc. on real time.</li>
+<li>Improve selection dialogs, including list selection methods.</li>
+<li>Implement multiple object picking, including a
+dynamic frame with moving ants and dragging anchors,
+to select multiple objects and images from the screen.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.13.11</div><div>29th March 2009</div>
+</div>
+
+<div class="contents">
+All the GTK 1 menus have now been replaced by GTK 2 Combo boxes.
+Wrote the GTK interface (currently only in Cell->Link) to build
+3D and 2D polytopes around central atoms. Improved polytope code 
+and wrote the remaining sampling code needed to get polytope neighbours. 
+Debugged and tested all the polytope sampling, starting, exporting code, 
+except the core incremental algorithm code. Fixed a bug in the XML code 
+importing crystallographic directions with centered nodes.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Improved static_group and static_cluster in gamgi_io_x3d.c</li>
+<li>Updated gamgi_mesa_scan and gamgi_io_x3d for group objects.</li>
+<li>The polytope code is now building the initial tetrahedron for
+all central atoms. All users options are working fine, including lights.</li>
+<li>Centering polytope groups is now working fine (rotations, scaling).</li>
+<li>The code building the initial tetrahedron, for the polytope incremental 
+algorithm, is working fine. The final exporting code is also working fine.</li>
+<li>The default color for Planes and Directions (in XML, GTK interfaces),
+can now be configured from GAMGI XML files.</li>
+<li>Found and removed a bug in the gamgi_expat_import_object.c: o4 node
+coordinates were not properly imported for Directions, resulting in a error.</li>
+<li>Inverted the distance-ordered neihbours, so farthest atoms are added
+first in the polytope incremental algorithm, thus potentially removing 
+closer atoms and decreasing the number of expensive polyhedra recalculations.</li>
+<li>Simplified the polytope code: removed array xyz (using array neighbours 
+instead), removed routines static_visible, static_coplanar, static_mix, 
+static_valid_tetrahedron (using new routine static_mix instead),
+removed variable t_neighbours (using n_vertices instead).</li>
+<li>Wrote the polytope code to build the initial tetrahedron, 
+orientated counter-clockwise.</li>
+<li>Fixed a name conflict between Random and Polytope Link methods.</li>
+<li>Fixed a bug when measuring notebook size: in some cases, this size 
+is given by tag size. Solution: hide tags when measuring size.</li>
+<li>Added View (Style, Color) parameters to Polytope Cell->Link interface.</li>
+<li>The routines to create,reset,free topology arrays in the polytope code 
+are running fine.</li>
+<li>The routines to scan neighbours in the polytope code are now working fine.</li>
+<li>Wrote all the (cell based) scanning code needed to find the closest 
+neighbours for each central atom in the polytope building code.</li>
+<li>Implemented a dialog to build arbitrary polytopes from Cell->Link dialogs.</li>
+<li>Converted the last GTK 1 Option Menus (Cell Type) in Cell Create 
+and Cell Modify to GTK 2 Combo Boxes.</li>
+<li>Converted Borders GTK 1 option_menu to GTK 2 combo box,
+in gamgi_gtk_cell_create.c and gamgi_gtk_cell_modify.c.</li>
+<li>Converted Faces, Nodes GTK 1 option_menus to GTK 2 combo boxes,
+in gamgi_gtk_cell_modify.c.</li>
+<li>Fixed the X3D bond child scaling code (Tiago Farto).</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Replace GtkFileSelection by GtkFileChooserWidget.</li>
+<li>Add a task id to operactions involving multiple scans to
+guarantee that there is no flag corruption when bonds are
+created between different molecules.</li>
+<li>Add a bond angle, which is useful to control double bonds
+in solid mode.</li>
+<li>Add plane area and direction length to Plane->Measure and
+Direction->Measure.</li>
+<li>Write tutorials about crystalographic and atomic Plane,Direction usage.</li>
+<li>Implement dynamic text objects, to measure distances,
+angles, etc. on real time.</li>
+<li>Improve selection dialogs, including list selection methods.</li>
+<li>Implement multiple object picking, including a
+dynamic frame with moving ants and dragging anchors,
+to select multiple objects and images from the screen.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.13.10</div><div>7th January 2009</div>
+</div>
+
+<div class="contents">
+
+Fixed a few copyright issues raised by the Debian legal team.
+This release includes most of the code needed to implement
+a fast, sophisticated 3D convex hull incremental algorithm. 
+This is array-based (to be faster), with arrays of cell lists 
+(to speed up sampling), conflict lists (to be NlogN), can handle 
+coplanar issues, arbitrarily large faces, periodic boundary conditions, 
+etc. It will be useful to describe arbitrary sets of arbitrary polyhedra
+defined by atoms, such as in superconductors, silicates, glasses, etc.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Wrote, cleaned, redesigned segments of the 3D convex hull code.</li>
+<li>Finnished most of the (3D convex hull) code to build arbitrary 
+polytopes.</li>
+<li>Updated the Group object, to receive the new polytope 
+functionality.</li>
+<li>Redesigned the new chemical polytope code.</li>
+<li>Morten Kjeldgaard (Ubuntu) pointed my attention to GL2PS: 
+an OpenGL to PostScript printing library. This looks very,
+very interesting for the future.</li>
+<li>Improved the Postscript header. GAMGI now understands 
+and accepts both .ps and .eps name extensions.</li>
+<li>Fixed the legal issues regarding Mark Kilgard's 
+green book code. Many thanks to Mark Kilgard, for 
+clarifying the issues raised by  Michael Banck.</li>
+<li>Anonymous ftp.gamgi.org is working fine again.</li>
+<li>Fixed the legal copyrights and notices in gamgi_io_file
+and gamgi_mesa_area covering Mark Kilgard's code explained
+in the book: OpenGL programming for the X Window System.</li>
+<li>Fixed the legal copyrights and notices in gamgi_mesa_text
+and gamgi_io_x3d_render files covering OGLFT and GLE libraries.
+Thanks to Morten Kjeldgaard (Ubuntu) and Michael Banck (Debian) 
+for raising these issues.</li>
+<li>Moved www.gamgi.org to a new computer. Everything is working
+fine except anonymous ftp. Hopefully this will be back soon.</li>
+<li>The hard core of the array-based 3D convex hull algorithm, with 
+conflict lists and coplanar handling, is now in place, but has not 
+been tested yet.</li>
+<li>Started implementing a fast (NlogN) 3D convex hull algorithm, (using
+arrays to be faster, as in the Voronoi code). This will allow users to
+generate arbitrary polytopes with GAMGI. This is particularly useful in
+Crystallography (silicates, superconductors, etc.) to represent tetrahedrons, 
+octahedrons, etc. A 2D convex hull algorithm has been already implemented 
+in order to describe polygonal planes.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Replace GtkFileSelection by GtkFileChooserWidget.</li>
+<li>Add a task id to operactions involving multiple scans to
+guarantee that there is no flag corruption when bonds are
+created between different molecules.</li>
+<li>Add a bond angle, which is useful to control double bonds
+in solid mode.</li>
+<li>Add plane area and direction length to Plane->Measure and
+Direction->Measure.</li>
+<li>Write tutorials about crystalographic and atomic Plane,Direction usage.</li>
+<li>Implement dynamic text objects, to measure distances,
+angles, etc. on real time.</li>
+<li>Improve selection dialogs, including list selection methods.</li>
+<li>Implement multiple object picking, including a
+dynamic frame with moving ants and dragging anchors,
+to select multiple objects and images from the screen.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.13.9</div><div>30th October 2008</div>
+</div>
+
+<div class="contents">
+
+This release merges all the X3D (the new XML version of VRML) code developed by 
+Tiago Farto, after extensive cleaning. This includes code to describe all the objects 
+currently supported by GAMGI, as layers, cells, clusters, molecules, groups, planes, 
+directions, atoms, bonds and texts. As X3D handles a single 3D space (while GAMGI 
+handles multiple 3D spaces through layers), only objects in the current layer 
+are exported, the other layers are ignored.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Cleaned and tested cylinder bonds code in static_bond in gamgi_io_x3d.c.</li>
+<li>Cleaned and tested line bonds code in static_bond in gamgi_io_x3d.c.</li>
+<li>Cleaned gamgi_io_x3d.c: static_scale, static_unscale, static_text, 
+static_orbital, static_atom, static_direction, static_plane, static_group,
+static_molecule, static_cluster, static_cell, static_assembly, static_layer.</li>
+<li>Merged all the X3D (the new XML version of VRML) code developed by Tiago Farto,
+after cleaning (files gamgi_io_x3d.c and gamgi_io_x3d_render.c.). This includes code 
+to describe all the objects currently supported by GAMGI, as layers, cells, clusters, 
+molecules, groups, planes, directions, atoms, bonds and texts. Thanks Tiago, for this
+very nice work!.</li>
+<li>Replaced h_addr by h_addr_list[0] in gamgi_io_socket.c, as suggested by
+Morten Kjeldgaard (Ubuntu), as h_addr has been deprecated in version 2.8 of 
+libc6, that will be used in Ubuntu 8.10. Thanks Morten!.</li>
+<li>Removed file dat/cell/polymers/polyethylene_sulfide.cif, that 
+is not used at all by GAMGI and cannot be distributed, from both my 
+latest distribution and GAMGI 0.13.8, released a few weeks ago.
+Thanks to Morten Kjeldgaard (Ubuntu), for noticing this.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Replace GtkFileSelection by GtkFileChooserWidget.</li>
+<li>Add a task id to operactions involving multiple scans to
+guarantee that there is no flag corruption when bonds are 
+created between different molecules.</li>
+<li>Add a bond angle, which is useful to control double bonds
+in solid mode.</li>
+<li>Add plane area and direction length to Plane->Measure and
+Direction->Measure.</li>
+<li>Write tutorials about crystalographic and atomic Plane,Direction usage.</li>
+<li>Implement dynamic text objects, to measure distances,
+angles, etc. on real time.</li>
+<li>Improve selection dialogs, including list selection methods.</li>
+<li>Implement multiple object picking, including a
+dynamic frame with moving ants and dragging anchors,
+to select multiple objects and images from the screen.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.13.8</div><div>3rd August 2008</div>
+</div>
+
+<div class="contents">
+
+This is a bug fix release. Several new and old bugs, simple but puzzling 
+and affecting productivity, were clarified and removed. Converted Cell 
+Align option menus (Gtk 1) to combo boxes (Gtk 2).
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Fixed a simple but old and relevant bug in the Expat code:
+conventional axes were exported when they should be primitive.</li>
+<li>Fixed a bug with Gtk 2.0 code: the window bottom bar 
+must be hidden after showing the window, otherwise this does 
+not work properly when coming from XML files.</li>
+<li>Replaced all the GTK 1 option menus in gamgi_gtk_cell_align 
+by GTK 2 combo boxes and cleaned the code.</li>
+<li>Fixed a Gtk warning in Atom->Config: Charge entry is not there.</li>
+<li>Changed sligthly the mass, radius, charge defaults policy: all atoms
+must now have valid mass, radius, charge. For Dummy atoms the default
+mass and radius is 1.0. Elements without a known radius get radius from 
+the lower element that has one. For all elements default charge is 0.0</li>
+<li>Reorganized all the atomic mass, radius, color data in Gamgi: 
+all this data is now stored in arrays in gamgi_chem_property.c.</li>
+<li>Synced mass, radius atomic defaults with the new mass, radius data.</li>
+<li>Fixed a bug in Gtk code: when pressing with the mouse on the ruler 
+and move,rotate,scale mode was off, garbage messages would show up.</li>
+<li>Fixed the mathematical algorithm to solve systems of two linear
+Diophantine equations: we were missing some solutions because we were 
+not taking into account all the infinite intermediate solutions.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Replace GtkFileSelection by GtkFileChooserWidget.</li>
+<li>Add a bond angle, which is useful to control double bonds
+in solid mode.</li>
+<li>Add plane area and direction length to Plane->Measure and
+Direction->Measure.</li>
+<li>Write tutorials about crystalographic and atomic Plane,Direction usage.</li>
+<li>Implement dynamic text objects, to measure distances,
+angles, etc. on real time.</li>
+<li>Improve selection dialogs, including list selection methods.</li>
+<li>Implement multiple object picking, including a
+dynamic frame with moving ants and dragging anchors,
+to select multiple objects and images from the screen.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.13.7</div><div>8th July 2008</div>
+</div>
+
+<div class="contents">
+
+Added mass data for most important isotopes, including isotope abundance and 
+half-life (source: wikipedia). Added radius data including natural half-distances, 
+effective and calculated atomic radius, effective and calculated (2008) covalent 
+radius, Van der Waals radius (webelements). Added the widely used Shannon ionic 
+radius, depending of valence and coordination (Acta Cryst. paper). Cleaned and 
+replaced option menus by combo boxes in Cell->Link, Cell->Create and Cell->Modify.
+Added new screenshots. Improved Help information for exported type formats, 
+Atom->Create and Atom->Modify. Many thanks to Pedro Isidoro and Luis Veiros, 
+who contributed to this release (providing the Shannon original papers and 
+collecting atomic data).  
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Fixed warnings in gamgi_phys_cell_link due to discarded attributes.</li>
+<li>From now on, for ALL atoms, including Dummy (Du), atomic mass and 
+radius must always be positive and charge can take any real value.</li>
+<li>Updated Cell->Link, Atom->Create, Atom->Modify Help documentation.</li>
+<li>Added mass, radius information to documentation covering Atom->Create
+and Atom->Modify.</li>
+<li>Cleaned the interface and behaviour of Cell->Link.</li>
+<li>Replaced all option menus (GTK 1) in Cell->Link by combo boxes (GTK 2).</li>
+<li>Changed Atom->Create and Atom->Modify Help documentation for
+notebook style. Updated Help->Current and Help->Topic accordingly.</li>
+<li>Added 5 new screenshots, to represent the 0.13 series.</li>
+<li>Simplified notation for mass and radius data, available from
+Atom->Create and Atom->Modify.</li>
+<li>The 2008 covalent radius are now fully working on Gamgi.</li>
+<li>Grabed from <a href="http://www.webelements.com/">WebElements</a>
+the new (2008) calculated covalent radius, available for Z <= 96.</li>
+<li>Updated effective and calculated atomic radius data, from 
+<a href="http://www.webelements.com/">WebElements</a>.</li>
+<li>The complete ionic Shannon (1976) radius are now fully working on Gamgi.</li>
+<li>The atomic radius information for all elements, including half-distance in
+natural state, atomic effective, atomic calculated, covalent and Van der Waals
+radius, is now working.</li>
+<li>The isotopic information for all elements, including isotope abundance, 
+half-life and excited states, is now working.</li>
+<li>Replaced the option menu (GTK 1) Scope, in Cell->Remove, by
+a combo box (GTK 2).</li>
+<li>Added a new size, GAMGI_ENGINE_STRING, currently 50, for pair values.</li>
+<li>Replaced option menu (GTK 1) Borders, in Object->Measure dialogs by
+combo box (GTK 2).</li>
+<li>Added main introduction file main.html to Help->Current.</li>
+<li>Added JPEG, PNG, TIFF, PPM, PS, XYZ files to Help->Topic->Introduction.</li>
+<li>Added Interfaces, Formats files to Help->Topic. Cleaned headers.</li>
+<li>The XML Cell parameter "o_vectors" is now "origin_vectors".</li>
+<li>In Cell->Create and Cell->Modify, improved the Origin page interface 
+and behaviour.</li>
+<li>Replaced option menus (GTK 1) origin vectors, axes, axes vectors,
+in Cell->Create and Cell->Modify by combo boxes (GTK 2).</li>
+<li>In Gtk Combo Boxes, the renderer should be added AFTER the
+tree store. In Gtk Tree Views the renderer should be added BEFORE
+the tree store. All Combo Boxes and Tree Views now follow this rule.</li>
+<li>Replaced o4 option menus (GTK 1) by combo boxes (GTK 2) in
+Cell->Create, Cell->Modify.</li>
+<li>Replaced o4 option menus (GTK 1) by combo boxes (GTK 2) in 
+Plane->Create, Plane->Modify, Direction->Create, Direction->Modify.</li>
+<li>Fixed a little offset bug when handling the reference combo box in 
+Direction->Modify, in static_autonomy (introduced in GAMGI 0.13.5).</li>
+<li>Updated the make_local file: the default configuration should work fine 
+for Fedora 8.0, Ubunty 7.10, Suse 10.3, Mandriva 2008 on xf86 machines. The 
+commented configuration for the same distributions on amd64 is exactly the
+same, except lib is replaced everywhere by lib64.</li>
+<li>Updated the users mailling list address in Help->Start.</li>
+<li>Added second level dialogs to show atomic mass, radius and charge,
+from Atom->Create, Atom->Config and Atom->Config.</li>
+<li>We have now clear ideias on how to implement general, powerful polytopes
+in GAMGI to describe atomic structures. Each polytope will be created as an
+independent Group object, from Group->Link, Molecule->Link, Cluster->Link 
+or Cell->Link, entering the number of neighbours or the desired neighbour 
+shell thickness. Each procedure will create just one or all the equivalent 
+polytopes. From the math point of view, an incremental algorithm, with 
+conflicting information, a O(n) algorithm, will be used to calculate the 
+arbitrarily complex 3D convex hulls we need to build.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Replace everywhere GtkCombo and GtkOptionMenu by GtkComboBox.</li>
+<li>Replace GtkFileSelection by GtkFileChooserWidget.</li>
+<li>Redesign Atom->Create and Atom->Modify, according with the new
+notebook style, with more properties, including a wide range of atomic
+radius.</li>
+<li>Add a bond angle, which is useful to control double bonds
+in solid mode.</li>
+<li>Add plane area and direction length to Plane->Measure and
+Direction->Measure.</li>
+<li>Write tutorials about crystalographic and atomic Plane,Direction usage.</li>
+<li>Implement dynamic text objects, to measure distances,
+angles, etc. on real time.</li>
+<li>Improve selection dialogs, including list selection methods.</li>
+<li>Implement multiple object picking, including a
+dynamic frame with moving ants and dragging anchors,
+to select multiple objects and images from the screen.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.13.6</div><div>4th June 2008</div>
+</div>
+
+<div class="contents">
+
+Redesigned entirely Atom->Create, Atom->Modify and Atom->Config, as notebook dialogs,
+including new parameters: element number, atom temperature and occupancy (to handle
+diffraction data). This is also ready to merge detailed mass, radius and charge information.
+Replaced most dynamic Option Menus (GTK 1) by ComboBoxes (GTK 2). Removed a simple bug 
+in Light->Modify (added in the previous release), that turned this dialog almost unnusable.
+Used the icons made by Jakub to show a favicon at www.gamgi.org. The code by Tiago Farto
+to export to X3D format is almost finished.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Updated gamgi_expat_import_help.c, to support the CSS attributes 
+image/png and icon, introduced to indicate the favicon image.</li>
+<li>Updated the Authors page.</li>
+<li>Atom new config attribute, temperature, can now be imported,exported 
+to XML files.</li>
+<li>Atom new attributes, temperature and occupancy, can now be imported,exported 
+to XML files.</li>
+<li>Redesigned Atom->Config according to the notebook style and 
+added new functionality: atom temperature, element number.</li>
+<li>Fixed a bug in Light->Modify: essentially a typo, resulting
+in Error messages when trying to modify even simple lights.</li>
+<li>Redesigned Atom->Modify according to the notebook style and added
+new functionality: atom temperature, occupancy, element number.</li>
+<li>Added a favicon (actually gamgi16.png) to www.gamgi.org (and doc/ documentation).</li>
+<li>Synced doc/ and www.gamgi.org/ documentation.</li>
+<li>Redesigned Atom->Create according to the notebook style and added 
+new functionality: atom temperature, occupancy, element number.</li>
+<li>Replaced Option Menus by Combo Boxes in Group->Remove, Molecule->Remove,
+Cluster->Link.</li>
+<li>Played with favicons for www.gamgi.org.</li>
+<li>Replaced Option Menus by Combo Boxes in Group->Link, Molecule->Link,
+Cluster->Link.</li>
+<li>Replaced Option Menus by Combo Boxes in Assembly->Link, Assembly->Remove.</li>
+<li>Replaced Option Menus by Combo Boxes in Plane->Link, Direction->Link.</li>
+<li>Replaced Option Menus by Combo Boxes in Plane->Remove, Direction->Remove.</li>
+<li>Replaced dynamic Option Menus in Text->Create, 
+Text->Modify, Text->Config by dynamic Option Boxes.</li>
+<li>Replaced Option Menus by Combo Boxes in Text->Remove, Bond->Remove, 
+Atom->Remove, Light->Remove, Layer->Remove, Window->Remove.</li>
+<li>Replaced Option Menus by Combo Boxes in Text->Link, Bond->Link, 
+Atom->Link, Light->Link, Layer->Link, Window->Link.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Replace everywhere GtkCombo and GtkOptionMenu by GtkComboBox.</li>
+<li>Replace GtkFileSelection by GtkFileChooserWidget.</li>
+<li>Redesign Atom->Create and Atom->Modify, according with the new
+notebook style, with more properties, including a wide range of atomic
+radius.</li>
+<li>Add a bond angle, which is useful to control double bonds
+in solid mode.</li>
+<li>Add plane area and direction length to Plane->Measure and
+Direction->Measure.</li>
+<li>Write tutorials about crystalographic and atomic Plane,Direction usage.</li>
+<li>Implement dynamic text objects, to measure distances,
+angles, etc. on real time.</li>
+<li>Improve selection dialogs, including list selection methods.</li>
+<li>Implement multiple object picking, including a
+dynamic frame with moving ants and dragging anchors,
+to select multiple objects and images from the screen.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.13.5</div><div>12th May 2008</div>
+</div>
+
+<div class="contents">
+
+Replaced Combos (GTK 1) by ComboBoxEntries (GTK 2). Replaced
+most static Option Menus (GTK 1) by ComboBoxes (GTK 2). Fullscreen 
+mode is working again, in Enlightenment, Gnome, KDE, XFCE, 
+BlackBox, IceWM, etc. Topics in Help->Topic and Help->Tutorial 
+can now be selected with double click. Fixed the window size in 
+Select and File dialogs. GAMGI comes now with its own Tango! 
+<a href="../icon/icon.html">icons</a>, beatifully created by 
+Jakub Szypulka!</li>. Renewed gamgi.org until September 2015.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Replaced the two Property option menus in Atom->Measure,
+by Combo Boxes.</li>
+<li>Replaced all eight gtk_combo_box_entry_new_text constructions
+by gtk_combo_box_entry_new, which is lower-level, more flexible.</li>
+<li>Replaced the four Method option menus in Group->Measure, 
+Molecule->Measure, Cluster->Measure, Cell->Measure by Combo Boxes.</li>
+<li>Replaced the Light Type option Menu in Light->Modify by a Combo Box.</li>
+<li>Replaced the seven Projection, Type, Reference and Instance 
+Option Menus in Plane->Modify and Direction->Modify by Combo Boxes.</li>
+<li>Replaced the four Vector Option Menus in Plane->Create,
+Plane->Modify, Direction->Create, Direction->Modify, by Combo Boxes.</li>
+<li>Replaced the four Autonomy Option Menus in Plane->Create,
+Plane->Modify, Direction->Create, Direction->Modify, by Combo Boxes.</li>
+<li>Replaced all gtk_combo_box_new_text by gtk_combo_box_new, 
+which is the same, but with much more control.</li>
+<li>We have a working model to replace dynamic option menus,
+with variable options and sensitivities.</li>
+<li>Cleaned mesa_gamgi_text: simplified static_extrusion and removed
+extruded->extra (these vertices are now saved in extruded->vertices).</li>
+<li>Updated fullscreen mode, including Page_Up and Page_Down. This
+works now on all Linux tested environments: Enlightenment, Gnome, KDE, 
+BlackBox, IceWm, XFCE.</li>
+<li>Double-click now works in both Help->Topic and Help->Tutorial.</li>
+<li>Increased the size for File->Import and File->Export dialogs.</li>
+<li>Changed x,y,x and r,g,b labels to X,Y,Z and R,G,B, to be consistent
+with the general rule that the first letter in labels is uppercase.</li>
+<li>Replaced OptionMenu by ComboBox for Projection, Visibility_in,
+Visibility_out and Axes menus in Layer->Modify.</li>
+<li>Replaced OptionMenu by ComboBox for Style and Color menus 
+in Bond->Create, Bond->Modify, Bond->Config and Text->Config.</li>
+<li>Fullscreen mode is working again, with GTK-2.0. Tested 
+on Enlightenment, IceWM, BlackBox, KDE, Gnome, XFCE.</li>
+<li>GAMGI has now its own Tango! <a href="../icon/icon.html">icons</a>
+icons, beatifully desined by Jakub Szypulka!</li>
+<li>Replaced deprecated gdk functions, so GAMGI now compiles
+fine with -DGDK_DISABLE_DEPRECATED flag.</li>
+<li>Increased size for Object->Select dialogs.</li>
+<li>Fixed a visual bug in Plane->Measure: the dialog changed
+size when the selected option changed.</li>
+<li>Fixed size in Cell->Link and Help->Config and clarified
+the entry sizes globally.</li>
+<li>Fixed a few calls to set button state: toogle buttons should 
+use gtk_toggle_button_set_active, radio buttons should use
+gtk_button_clicked.</li>
+<li>Replaced OptionMenu by ComboBox for Style menus in Text->Create 
+and Text->Modify.</li>
+<li>We have a working model to replace static GTK 1 OptionMenus by GTK 2 ComboBoxes.</li>
+<li>Replaced GtkCombo by GtkComboBox in Atom->Config, Atom->Create and Atom->Modify.</li>
+<li>Replaced GtkCombo by GtkComboBox in Bond->Config, Bond->Create and Bond->Modify.</li>
+<li>Renewed gamgi.org for another 5 years, so it is available until September 2015.</li>
+<li>Replaced everywhere direct checks on GTK_TOGGLE_BUTTON (button)->active by 
+calls to function gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (button)).</li>
+<li>We have a simple working model for Gtk 2.0 ComboBox, to replace Gtk 1.0 
+Combo widgets.</li>
+<li>Replaced gtk_radio_button_group() by gtk_radio_button_get_group() 
+everywhere.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Replace everywhere GtkCombo and GtkOptionMenu by GtkComboBox.</li>
+<li>Replace GtkFileSelection by GtkFileChooserWidget.</li>
+<li>Redesign Atom->Create and Atom->Modify, according with the new
+notebook style, with more properties, including a wide range of atomic
+radius.</li>
+<li>Add a bond angle, which is useful to control double bonds
+in solid mode.</li>
+<li>Add plane area and direction length to Plane->Measure and
+Direction->Measure.</li>
+<li>Write tutorials about crystalographic and atomic Plane,Direction usage.</li>
+<li>Implement dynamic text objects, to measure distances,
+angles, etc. on real time.</li>
+<li>Improve selection dialogs, including list selection methods.</li>
+<li>Implement multiple object picking, including a
+dynamic frame with moving ants and dragging anchors,
+to select multiple objects and images from the screen.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.13.4</div><div>1st April 2008</div>
+</div>
+
+<div class="contents">
+
+Replaced GtkClists in Cell dialogs Systems, Lattices, Groups, plus Help->Tutorial,
+for GtkTreeview with GtkListstores. Replaced GtkCTrees in Help->Topic plus
+all GtkCTrees in Object->Select dialogs by GtkTreeview with GtkTreestores.
+Simplified recursive object selection code that crashed GAMGI, at the -O3 level 
+of optimization. Replaced more Gtk-1.0 by Gtk-2.0 functions. We are much closer
+to have a completely Gtk-2.0 based GAMGI now.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Replaced everywhere gtk_timeout_remove by g_source_remove.</li>
+<li>Replaced everywhere gtk_timeout_add by g_timeout_add.</li>
+<li>Replaced everywhere gtk_container_border_width 
+by gtk_container_set_border_width.</li>
+<li>Found and removed a crashing bug in gamgi_mesa_select.c, when 
+compiling with -O3. Simplifying the code eliminates the problem.</li>
+<li>Replaced GtkCTree by GtkTreeview in all Object->Select dialogs. 
+This means that all Gtk 1.0 GtkCTrees and GtkClists have now been 
+replaced by Gtk 2.0 GtkTreeviews.</li>
+<li>>Replaced GtkCTree by GtkTreeview in Help->Topic and improved Help->Tutorial:
+the model is now almost the same for these List and Tree Help dialogs.</li>
+<li>Aligned pages in Help Tutorial.</li>
+<li>The model for building Trees with GtkTreeView seems clear now.</li>
+<li>Replaced GtkClist by GtkTreeview in Cell Symmetry second level dialogs:
+Systems, Lattices and Groups. So all deprecated GtkClists in GAMGI have now 
+been replaced by GtkTreeview widgets.</li>
+<li>Replaced GtkClist by GtkTreeview in Help->Tutorial.</li>
+<li>We have now working models to replace all GtkClists by GtkTreeviews.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Replace everywhere GtkCombo and GtkOptionMenu by GtkComboBox.</li>
+<li>Replace GtkFileSelection by GtkFileChooserWidget.</li>
+<li>Redesign Atom->Create and Atom->Modify, according with the new
+notebook style, with more properties, including a wide range of atomic
+radius.</li>
+<li>Add a bond angle, which is useful to control double bonds
+in solid mode.</li>
+<li>Add plane area and direction length to Plane->Measure and
+Direction->Measure.</li>
+<li>Write tutorials about crystalographic and atomic Plane,Direction usage.</li>
+<li>Implement dynamic text objects, to measure distances,
+angles, etc. on real time.</li>
+<li>Improve selection dialogs, including list selection methods.</li>
+<li>Implement multiple object picking, including a
+dynamic frame with moving ants and dragging anchors,
+to select multiple objects and images from the screen.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.13.3</div><div>23th March 2008</div>
+</div>
+
+<div class="contents">
+
+Replaced GtkText by GtkTextview everywhere in GAMGI, so GTK_ENABLE_BROKEN is
+no longer needed to compile with Gtk-2.0. Fixed bugs in locale, Ctr-C, atomic 
+radius, dialogs size and widget focus. Updated documentation to reflect the 
+change to Gtk-2.0/GtkGLext-1.0 libraries. Improved man page and icons.
+
+<h3>What is new:</h3>
+<ul>
+<li>Replaced gtk_style_unref() by g_object_unref() everywhere.</li>
+<li>Problems with gtk_widget_modify_fg|bg|base.c: moved back to style calls.</li>
+<li>Updated documentation: all the Installation files.</li>
+<li>Updated documentation: Requirements (front page, installation, project 
+technical) and Formats Attributes (manuals introduction).</li>
+<li>Updated cell/create_symmetry.html and cell/modify_symmetry documentation.</li>
+<li>All Help documentation is now shown with Gtk 2.0 GtkTextView instead 
+of Gtk 1.2 GtkText. #define GTK_ENABLE_BROKEN is no longer needed.</li>
+<li>Help->Start and all sorts of Group/Molecule/Cluster/Cell reports are 
+now working fine with Gtk 2.0 GtkTextView instead of Gtk 1.2 GtkText.</li>
+<li>Replaced Gtk 1.2 style code in gamgi_gtk_dialog.c by Gtk 2.0 
+gtk_widget_modify_[base|fg|bg].c calls.</li>
+<li>Replaced everywhere gtk_widget_grab_default by gtk_widget_grab_focus .</li>
+<li>Replaced GtkText by GtkTextView in Text->Create and Text->Modify.</li>
+<li>Fixed a bug in decimal number separator: when LC_ALL=french
+or other comma-based country, everything worked with commas, but
+data files (dot-based) could not be imported. For the time being 
+everything will work in dots. We will come to this again when GAMGI 
+interfaces get translated to other non-english languages. This is 
+explained in the man page.</li>
+<li>Fixed a bug in gamgi_expat_export_object: when atomic
+radius is -1 (not defined), it should not be exported.</li>
+<li>Fixed the sizes for dialog Help->Tutorial, 
+and Cell second level dialogs System, Lattice, Group.</li>
+<li>Solved the accelerator group bug (Ctr-C not working): 
+"key_realease_event" was handled before the accelerator. 
+Solution: use g_signal_connect_after for keys.</li>
+<li>GAMGI has now its own <a href="../icon/icon.html">icon</a>. 
+Still needs some expert work. Tiago Farto, thanks for the transparency!</li>
+<li>Made clear in the documentation that monoclinic base-centered 
+cells in GAMGI always use cell choice 1 (with unique axis b).</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Replace GtkTrees and GtkClists by GtkTreeviews.</li>
+<li>Replace GtkFileSelection by GtkFileChooserWidget.</li>
+<li>Redesign Atom->Create and Atom->Modify, according with the new
+notebook style, with more properties, including a wide range of atomic
+radius.</li>
+<li>Add a bond angle, which is useful to control double bonds
+in solid mode.</li>
+<li>Add plane area and direction length to Plane->Measure and
+Direction->Measure.</li>
+<li>Write tutorials about crystalographic and atomic Plane,Direction usage.</li>
+<li>Implement dynamic text objects, to measure distances,
+angles, etc. on real time.</li>
+<li>Improve selection dialogs, including list selection methods.</li>
+<li>Implement multiple object picking, including a
+dynamic frame with moving ants and dragging anchors,
+to select multiple objects and images from the screen.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.13.2</div><div>5th March 2008</div>
+</div>
+
+<div class="contents">
+
+Ported GAMGI to GTK 2.0/GTKGLext 1.0. Apart from very minor details everything seems to be working fine. This was essential to guarantee the GAMGI future. Some widgets still need to be replaced but the main issues are solved. Added a man page, images for icons, instructions for distributions. Fixed light, plane, direction bugs.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Remove a warning and fixed a bug in both gamgi_gtk_plane_modify 
+and gamgi_gtk_direction_modify.</li>
+<li>Added a DISTROS file with instructions for distributions.</li>
+<li>Fixed a simple, just introduced, crashing bug in gamgi_gtk_light_create:
+a g_object_set_data function was removed by mistake when porting to GTK 2.0.</li>
+<li>Replaced Gtkglarea by Gtkglext library and modified the code in 
+gamgi_mesa_area, gamgi_mesa_select and gamgi_global_main accordingly.
+GAMGI is now running apparently fine with Gtkglext, with multiple drawing 
+areas, shared pre-compiled lists and window-independent OpenGL resources.</li>
+<li>We have only one show stopper bug now, in gtkglarea code, 
+crashing GAMGI with GTK 2.0 on exit.</li>
+<li>Removed an resulting in lots of warnings when starting a top window 
+(GTK complaining about NULL pointers to functions in callbacks).</li>
+<li>Reduced the number of const char * issues to only two.</li>
+<li>Fixed combo boxes entry size in gamgi_gtk_bond_create and gamgi_gtk_bond_modify.</li>
+<li>replaced gtk_signal_connect_while_alive by g_signal_connect calls.</li>
+<li>Fixed problemas in window statusbar, with
+gtk_statusbar_set_has_resize_grip (statusbar, FALSE).</li>
+<li>First and second level dialogs seem to be working fine.</li>
+<li>Top menus are now working fine, but position, width should be improved.</li>
+<li>Replaced gtk_object_set_data, gtk_object_get_data, by 
+g_object_set_data, g_object_get_data. Replaced GTK_OBJECT by G_OBJECT.</li>
+<li>Gamgi is linking and running, sort of, on GTK 2.0, with #define GTK_ENABLE_BROKEN.</li>
+<li>Replaced gtk_entry_new_with_max_length and gtk_widget_set_usize by gtk_entry_new, 
+gtk_entry_set_width_chars, gtk_entry_set_max_length.</li>
+<li>Created a man page for Gamgi, with all the basic surviving skills.</li>
+<li>Started the process to create an icon for Gamgi: <a href="http://www.gamgi.org/icon/">
+http://www.gamgi.org/icon/</a>.</li>
+<li>Changed gtk_widget_set_usize to gtk_widget_set_size_request functions.</li>
+<li>Commented gtk_accel_group_new Ctr-C acceleration.</li>
+<li>Commented gtk_signal_connect_while_alive functions.</li>
+<li>Changed gtk_signal_connect_object to g_signal_connect_swapped functions.</li>
+<li>Changed all GTK_SIGNAL_FUNC to G_CALLBACK macros.</li>
+<li>Changed all gtk_signal_connect to g_signal_connect functions.</li>
+<li>Added DISABLE_DEPRECATED cflags to make_rules.</li>
+<li>Added library GtkGLArea 2.0. GAMGI is now compiling 
+(but not linking yet) with GTK 2.0 and GtkGLArea 2.0.</li> 
+<li>Replaced all char *name by const char *name, in
+gtk_entry_get_text commands, to avoid warnings.</li>
+<li>Commented all gtk_widget_set_usize commands, to compile.</li>
+<li>Started a new development branch, to move GAMGI to 
+GTK 2. Updated the make_rules file accordingly.</.li>
+<li>Found and removed a light bug: exporting shininess with 2 decimal 
+figures resulted in parameter loss. Increased to 4 decimal figures.</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Redesign Atom->Create and Atom->Modify, according with the new
+notebook style, with more properties, including a wide range of atomic
+radius.</li>
+<li>Add a bond angle, which is useful to control double bonds
+in solid mode.</li>
+<li>Add plane area and direction length to Plane->Measure and
+Direction->Measure.</li>
+<li>Write tutorials about crystalographic and atomic Plane,Direction usage.</li>
+<li>Replace set/get_data functions by structures
+defined in gtk/gamgi_object.h headers.</li>
+<li>Implement dynamic text objects, to measure distances,
+angles, etc. on real time.</li>
+<li>Improve selection dialogs, including list selection methods.</li>
+<li>Implement multiple object picking, including a
+dynamic frame with moving ants and dragging anchors,
+to select multiple objects and images from the screen.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI 0.13.1</div><div>14th February 2008</div>
+</div>
+
+<div class="contents">
+
+Analysed, cleaned, removed all issues generating warnings when compiling
+with -O3 added to default gcc -g -Wall -ansi, in both xf86 and xf86_64
+architectures, with gcc 3.3.4 (Suse 10.0) and gcc 4.1.2 (Fedora 8),
+plus pointer_to_int and int_to_pointer conversions in non-32 bit
+machines. Found and removed 4 actual bugs in the process.
+
+<h3>What is new:</h3>
+
+<ul>
+<li>Cleaned array addressing in gamgi_phys_wigner (static_orthorhombic_c, 
+static_orthorhombic_f, static_orthorhombic_i_high, static_orthorhombic_i_low,
+static_rhombohedral_high and static_rhombohedral_low).</li>
+<li>gcc 4.1.2 on xf86_64: cleaned all issues generating warnings 
+when compiling with -O3 added to default gcc -g -Wall -ansi.</li>
+<li>gcc 4.1.2 on xf86_64: cleaned all int-to-pointer and pointer-to-int
+conversions generating warnings in chem/ and expat/ code when compiling 
+with default gcc -g -Wall -ansi.</li>
+<li>gcc 4.1.2 on xf86_64: cleaned all int-to-pointer and pointer-to-int
+conversions generating warnings in mesa/ code when compiling with default
+gcc -g -Wall -ansi.</li>
+<li>gcc 4.1.2 on xf86_64: cleaned all int-to-pointer and pointer-to-int 
+conversions generating warnings in gtk/ code when compiling with default 
+gcc -g -Wall -ansi.</li>
+<li>gcc 4.1.2 on xf86_64: cleaned all int-to-pointer and pointer-to-int 
+conversions generating warnings in engine/ code when compiling with default 
+gcc -g -Wall -ansi. These conversions are now handled by properly designed 
+macros, which are also easily found with grep.</li>
+<li>gcc 3.3.4 on xf86: cleaned all issues in phys/ code generating warnings 
+when compiling with -O3 added to default gcc -g -Wall -ansi.</li>
+<li>gcc 3.3.4 on xf86: cleaned all issues in gtk/ code generating warnings when 
+compiling (gcc 3.3.4 on xf86) with -O3 added to default gcc -g -Wall -ansi (one 
+real bug found in gamgi_gtk_cell_modify.c: one truely missing initialization).</li>
+<li>gcc 3.3.4 on xf86: cleaned all issues in chem/ code generating warnings when 
+compiling with -O3 added to default gcc -g -Wall -ansi (two real bugs found in 
+gamgi_chem_symmetry.c: one truely missing initialization and two code lines 
+wrongly exchanged).</li>
+<li>gcc 3.3.4 on xf86: cleaned all issues in math/ and mesa/ code generating 
+warnings when compiling with -O3 added to default gcc -g -Wall -ansi.</li>
+<li>gcc 3.3.4 on xf86: cleaned all issues in engine/ and expat/ code generating 
+warnings when compiling with -O3 added to default gcc -g -Wall -ansi (one real 
+bug found in gamgi_expat_import_object.c: a variable depending on the order of 
+function argument handling, which is implementation dependent).</li>
+</ul>
+
+<h3>What is next:</h3>
+
+<ul>
+<li>Redesign Atom->Create and Atom->Modify, according with the new
+notebook style, with more properties, including a wide range of atomic
+radius.</li>
+<li>Add a bond angle, which is useful to control double bonds
+in solid mode.</li>
+<li>Add plane area and direction length to Plane->Measure and 
+Direction->Measure.</li>
+<li>Write tutorials about crystalographic and atomic Plane,Direction usage.</li>
+<li>Port GAMGI to GTK 2.* or (3.*).</li>
+<li>Replace set/get_data functions by structures
+defined in gtk/gamgi_object.h headers.</li>
+<li>Implement dynamic text objects, to measure distances,
+angles, etc. on real time.</li>
+<li>Improve selection dialogs, including list selection methods.</li>
+<li>Implement multiple object picking, including a
+dynamic frame with moving ants and dragging anchors,
+to select multiple objects and images from the screen.</li>
+</ul>
+
+</div>
+
+<div class="board">
+<div>GAMGI old</div><div>&nbsp;</div>
+</div>
+
+<div class="contents">
+
+Changelogs for older releases can be found here.
+
+<p/>
+
+<ul>
+<li><a href="changelogs12.html">GAMGI 0.12.1 - GAMGI 0.13</a></li>
+<li><a href="changelogs11.html">GAMGI 0.11.1 - GAMGI 0.12</a></li>
+<li><a href="changelogs10.html">GAMGI 0.10.1 - GAMGI 0.11</a></li>
+<li><a href="changelogs09.html">GAMGI 0.09.1 - GAMGI 0.10</a></li>
+<li><a href="changelogs08.html">GAMGI 0.08.1 - GAMGI 0.09</a></li>
+<li><a href="changelogs07.html">GAMGI 0.07.18 - GAMGI 0.08</a></li>
+</ul>
+
+</div>
+
+<div id="bottom">
+<a href="../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

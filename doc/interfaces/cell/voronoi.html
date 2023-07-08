@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Interfaces: Cell Measure Voronoi</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/board.css"/>
+</head>
+
+<body>
+
+<div class="board">
+<div>Cell Measure Voronoi</div><div>&nbsp;</div>
+</div>
+
+<div class="contents">
+
+The Voronoi tesselation produces a polygonal representation,
+plus a report of topological and geometrical properties.
+For each atom there is a Voronoi polyhedron.
+
+<p/>
+
+Throughout the report, <b>Minimum</b> is the minimum value,
+<b>Maximum</b> is the maximum value, <b>Average</b> is the 
+mean value and <b>Deviation</b> is the standard deviation,
+in the universe formed by all the polyhedrons available.
+
+<h3>Polyhedrons</h3>
+
+Total number of polyhedrons. Polyhedrons with outer faces are considered 
+<b>External</b>, all the others are <b>Internal</b>.
+
+<h3>Faces</h3>
+
+Total number of faces. Outer faces are considered <b>External</b>,
+all the others are <b>Internal</b>.
+
+<h3>Edges</h3>
+
+Total number of edges. Edges in outer faces are considered <b>External</b>,
+all the others are <b>Internal</b>.
+
+<h3>Vertices</h3>
+
+Total number of vertices. Vertices in outer faces are considered <b>External</b>,
+all the others are <b>Internal</b>.
+
+<h3>Polyhedron Faces</h3>
+
+Number of faces per polyhedron. The minimum value is 4 (tetrahedron).
+
+<h3>Polyhedron Edges</h3>
+
+Number of edges per polyhedron. The minimum value is 6 (tetrahedron).
+
+<h3>Polyhedron Vertices</h3>
+
+Number of vertices per polyhedron. The minimum value is 4 (tetrahedron).
+
+<h3>Face Vertices</h3>
+
+Number of vertices per face. The minimum value is 3 (triangle).
+
+<h3>Edge polyhedrons</h3>
+
+Number of polyhedrons sharing an edge. The minimum value is 1.
+(system edge).
+
+<h3>Edge faces</h3>
+
+Number of faces sharing an edge. The minimum value is 2.
+(system edge).
+
+<h3>Vertex Polyhedrons</h3>
+
+Number of polyhedrons sharing a vertex. The minimum value is 1
+(system corner).
+
+<h3>Vertex Faces</h3>
+
+Number of faces sharing a vertex. The minimum value is 3
+(system corner).
+
+<h3>Vertex Edges</h3>
+
+Number of edges sharing a vertex. The minimum value is 3
+(system corner).
+
+<h3>System Volume</h3>
+
+Volume of the global system (including polyhedrons non-selected
+for analysis), obtained by: 1) limiting the volume with six outer
+planes (the <b>Real</b> value); 2) summing the volumes of all 
+the polyhedrons (the <b>Calculated</b> value).
+
+<p/>
+
+Comparing the two values provides a quantitative assertion of the
+global geometrical accuracy achieved with the Voronoi tesselation.
+
+<h3>Polyhedron Volumes</h3>
+
+The volume for each polyhedron, obtained by summing the volumes of all its triangular
+piramids.
+
+<h3>Polyhedron Areas</h3>
+
+The area for each polyhedron, obtained by summing the areas of all its faces.
+
+<h3>Polyhedron Lengths</h3>
+
+The length for each polyhedron, obtained by summing the lengths of all its edges.
+
+<h3>System Anisotropy</h3>
+
+For each polyhedron face, determine the following matrix, 
+where <b>n</b> is the unit vector normal to the face:
+
+<pre><b>
+q11 = n(1) * n(1) - 1/3
+q12 = n(1) * n(2)
+q13 = n(1) * n(3)
+q21 = n(2) * n(1)
+q22 = n(2) * n(2) - 1/3
+q23 = n(2) * n(3)
+q31 = n(3) * n(1)
+q32 = n(3) * n(2)
+q33 = n(3) * n(3) - 1/3
+</b></pre>
+
+Then scale the matrix <b>q</b> by <b>A/V**2/3</b>, where <b>A</b>
+is the face area and <b>V</b> is the polyhedron volume. Finally
+sum for all polyhedron faces. The <b>q</b> matrix thus obtained
+describes the polyhedron matrix anisotropy.
+ 
+<p/>
+
+To obtain the <b>System Anisotropy</b>, sum these matrices for 
+all polyhedrons, multiplied by the corresponding polyhedron volume 
+fractions. The trace of the resulting matrix must be zero.
+
+<p/>
+
+The <b>System Anisotropy</b> is independent of the orientation
+of the system.
+  
+<h3>Polyhedron Anisotropy</h3>
+
+To obtain a scalar <b>Polyhedron Anisotropy</b>, the following equation
+is applied:
+
+<pre><b>
+q = sqrt { [q11**2 + q12**2 + q13**2 + q21**2 +
+q22**2 + q23**2 + q31**2 + q32**2 + q33**2] / 9 }
+</b></pre>
+
+For symmetrical solids such as the tetrahedron, the octahedron,
+the cube, the dodecahedron, or even the Kelvin 8+6 polyhedron, 
+the scalar <b>Polyhedron Anisotropy</b> is always zero.
+
+<p/>
+
+The scalar <b>Polyhedron Anisotropy</b> is independent 
+of the orientation of the polyhedron.
+
+<h3>Polyhedron Aberration</h3>
+
+The ratio between the area of a polyhedron and the
+area of a sphere with the same volume. As a sphere
+is the 3D object with a smaller area/volume ratio,
+<b>Spherical Aberration</b> is always above 1.0.
+
+<h3>Face Areas</h3>
+
+The area for each face, obtained by summing the areas of all its triangles.
+Faces with an area smaller than a given tolerance (the <b>Area</b> tolerance
+in the <b>Cell->Measure</b> dialog) are removed.
+
+<h3>Face Lengths</h3>
+
+The perimeter for each face, obtained by summing the lengths of all its edges.
+
+<h3>Face Angles</h3>
+
+The angle between adjacent faces (between 0 and 180 degrees).
+
+<h3>Face Aberration</h3>
+
+The ratio between the perimeter of a face and the
+perimeter of a circumpherence with the same area. As
+a circumpherence is the 2D object with a smaller perimeter/area
+ratio, <b>Circular Aberration</b> is always above 1.0.
+
+<h3>Edge Lengths</h3>
+
+The length for each edge. Edges with a length smaller than a given tolerance
+(the <b>Vertex</b> tolerance in the <b>Cell->Measure</b> dialog) are removed.
+
+<h3>Edge Angles</h3>
+
+The angle between adjacent edges (between 0 and 180 degrees).
+
+<h3>Seed Lengths</h3>
+
+The distance between atom seeds. The minimum distance must be larger
+than a given tolerance (<b>GAMGI_MATH_TOLERANCE_LENGTH</b>, currently 1.0E-4), 
+otherwise an error is flagged and the tesselation is canceled.
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

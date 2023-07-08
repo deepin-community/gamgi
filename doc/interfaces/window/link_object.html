@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Interfaces: Window Link</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Window Link</h1>
+
+<div id="notebook">
+<ul>
+<li><span>Object</span></li>
+<li><a href="link_shift.html">Shift</a></li>
+</ul>
+</div>
+
+<div class="contents">
+
+Link a window or a list of windows to layers.
+
+<h3>Object</h3>
+
+Windows can be linked only to <b>Layer</b> objects.
+
+<p/>
+
+Gamgi expects users to identify first a window or list of windows
+and then a layer to link. When the <b>Window</b> entry is active 
+and empty, pressing the mouse over the graphic area in the current
+window (local selection) creates a menu with all the windows in Gamgi, 
+which can then be selected. The current window is initially
+proposed in the <b>Window</b> entry. Pressing the <b>List</b>
+button, the current list of windows is selected instead.
+
+<p/>
+
+Gamgi is now expecting users to click over the graphic area in a 
+window (global selection), to create a menu with all the layers in 
+that window, which can then be selected, to enter the <b>Layer</b> 
+entry.
+
+<p/>
+
+In the link mode <b>Object</b>, the selected layer must be in a different 
+window. In the link mode <b>All</b>, the layer can be any layer in the 
+selected window or any non-empty layer in another window.
+
+<h3>Method</h3>
+
+Gamgi suppports two methods to link windows: <b>Object</b>
+and <b>All</b>.
+
+<p/>
+
+The <b>Object</b> method links a window to a single <b>Layer</b>.
+The layer is unlinked from its previous window and linked to the 
+new window. The layer history kept by the <b>Undo</b> and <b>Save</b> 
+mechanisms is preserved in this operation. An error is issued when 
+the selected layer was already in the window.
+
+<p/>
+
+After the linking operation, Gamgi always 
+puts on top the selected window and layer.
+
+<p/>
+
+When linking a list of windows, the layer is replicated as many times
+as necessary to link each window in the list to a different replica.
+The layer history kept by the <b>Undo</b> and <b>Save</b>
+mechanisms is not copied to the replicas.
+
+<p/>
+
+The <b>All</b> method moves all the non-empty layers in all the
+other windows to the selected window, remove all the other windows
+which now have only empty layers, and finally put the selected
+layer as current layer. An error is issued when the selected layer 
+cannot be found among the layers reunited in the window.
+
+<p/>
+
+When a list of windows is selected, the <b>All</b> method is disabled.
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

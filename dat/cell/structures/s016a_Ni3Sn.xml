@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE gml SYSTEM "http://www.gamgi.org/dtd/gamgi.dtd">
+<gml>
+  <layer perspective="no">
+    <light ambient_r="0.500" ambient_g="0.500" ambient_b="0.500"
+    diffuse_r="0.400" diffuse_g="0.400" diffuse_b="0.400" specular_r="0.300"
+    specular_g="0.300" specular_b="0.300" direction_x="0.0000"
+    direction_y="0.0000" direction_z="-1.0000"/>
+    <cell group="194" a="5.2750" c="4.2340" x="3.0518" y="-2.2133" z="6.2512"
+    e1="85.83" e2="90.00" e3="335.41">
+      <atom element="Sn" x="3.0519" y="-2.2133" z="6.2512" style="solid"
+      variancy="1.00" size="1.00" scale="0.300"/>
+      <atom element="Sn" x="-3.0611" y="-1.5881" z="-2.3246" style="solid"
+      variancy="1.00" size="1.00" scale="0.300"/>
+      <atom element="Sn" x="3.0519" y="2.0095" z="6.5591" style="solid"
+      variancy="1.00" size="1.00" scale="0.300"/>
+      <atom element="Sn" x="-3.0611" y="2.6347" z="-2.0167" style="solid"
+      variancy="1.00" size="1.00" scale="0.300"/>
+      <atom element="Sn" x="2.7647" y="0.1186" z="3.3812" style="solid"
+      variancy="1.00" size="1.00" scale="0.300"/>
+      <atom element="Sn" x="5.2469" y="-1.8645" z="1.4673" style="solid"
+      variancy="1.00" size="1.00" scale="0.300"/>
+      <atom element="Sn" x="-0.2917" y="0.4312" z="-0.9067" style="solid"
+      variancy="1.00" size="1.00" scale="0.300"/>
+      <atom element="Sn" x="2.1904" y="-1.5519" z="-2.8206" style="solid"
+      variancy="1.00" size="1.00" scale="0.300"/>
+      <atom element="Sn" x="-2.1996" y="-2.2495" z="6.7472" style="solid"
+      variancy="1.00" size="1.00" scale="0.300"/>
+      <atom element="Sn" x="-5.2561" y="-1.9369" z="2.4593" style="solid"
+      variancy="1.00" size="1.00" scale="0.300"/>
+      <atom element="Sn" x="5.2469" y="2.3583" z="1.7752" style="solid"
+      variancy="1.00" size="1.00" scale="0.300"/>
+      <atom element="Sn" x="2.1904" y="2.6709" z="-2.5127" style="solid"
+      variancy="1.00" size="1.00" scale="0.300"/>
+      <atom element="Sn" x="-2.1996" y="1.9733" z="7.0551" style="solid"
+      variancy="1.00" size="1.00" scale="0.300"/>
+      <atom element="Sn" x="-5.2561" y="2.2859" z="2.7672" style="solid"
+      variancy="1.00" size="1.00" scale="0.300"/>
+      <atom element="Sn" x="-2.4868" y="0.0824" z="3.8772" style="solid"
+      variancy="1.00" size="1.00" scale="0.300"/>
+      <atom element="Sn" x="-0.0046" y="-1.9007" z="1.9633" style="solid"
+      variancy="1.00" size="1.00" scale="0.300"/>
+      <atom element="Sn" x="-0.0046" y="2.3221" z="2.2712" style="solid"
+      variancy="1.00" size="1.00" scale="0.300"/>
+      <atom element="Ni" x="1.6672" y="-0.0558" z="5.7732" style="solid"
+      variancy="1.00" size="1.00" scale="0.300"/>
+      <atom element="Ni" x="0.4261" y="-2.2314" z="6.4993" style="solid"
+      variancy="1.00" size="1.00" scale="0.300"/>
+      <atom element="Ni" x="-2.9175" y="0.4131" z="-0.6587" style="solid"
+      variancy="1.00" size="1.00" scale="0.300"/>
+      <atom element="Ni" x="-4.1586" y="-1.7625" z="0.0674" style="solid"
+      variancy="1.00" size="1.00" scale="0.300"/>
+      <atom element="Ni" x="0.4261" y="1.9914" z="6.8071" style="solid"
+      variancy="1.00" size="1.00" scale="0.300"/>
+      <atom element="Ni" x="-4.1586" y="2.4603" z="0.3753" style="solid"
+      variancy="1.00" size="1.00" scale="0.300"/>
+      <atom element="Ni" x="3.8623" y="0.2929" z="0.9893" style="solid"
+      variancy="1.00" size="1.00" scale="0.300"/>
+      <atom element="Ni" x="4.1493" y="-2.0389" z="3.8592" style="solid"
+      variancy="1.00" size="1.00" scale="0.300"/>
+      <atom element="Ni" x="2.6211" y="-1.8826" z="1.7153" style="solid"
+      variancy="1.00" size="1.00" scale="0.300"/>
+      <atom element="Ni" x="1.5236" y="-2.0570" z="4.1073" style="solid"
+      variancy="1.00" size="1.00" scale="0.300"/>
+      <atom element="Ni" x="2.3340" y="0.4493" z="-1.1547" style="solid"
+      variancy="1.00" size="1.00" scale="0.300"/>
+      <atom element="Ni" x="1.0929" y="-1.7263" z="-0.4286" style="solid"
+      variancy="1.00" size="1.00" scale="0.300"/>
+      <atom element="Ni" x="-0.4353" y="-1.5700" z="-2.5725" style="solid"
+      variancy="1.00" size="1.00" scale="0.300"/>
+      <atom element="Ni" x="-1.5328" y="-1.7444" z="-0.1806" style="solid"
+      variancy="1.00" size="1.00" scale="0.300"/>
+      <atom element="Ni" x="-0.9586" y="-0.0739" z="6.0212" style="solid"
+      variancy="1.00" size="1.00" scale="0.300"/>
+      <atom element="Ni" x="-4.0150" y="0.2387" z="1.7333" style="solid"
+      variancy="1.00" size="1.00" scale="0.300"/>
+      <atom element="Ni" x="4.1493" y="2.1839" z="4.1671" style="solid"
+      variancy="1.00" size="1.00" scale="0.300"/>
+      <atom element="Ni" x="2.6211" y="2.3402" z="2.0232" style="solid"
+      variancy="1.00" size="1.00" scale="0.300"/>
+      <atom element="Ni" x="1.5236" y="2.1658" z="4.4151" style="solid"
+      variancy="1.00" size="1.00" scale="0.300"/>
+      <atom element="Ni" x="1.0929" y="2.4965" z="-0.1208" style="solid"
+      variancy="1.00" size="1.00" scale="0.300"/>
+      <atom element="Ni" x="-0.4353" y="2.6528" z="-2.2647" style="solid"
+      variancy="1.00" size="1.00" scale="0.300"/>
+      <atom element="Ni" x="-1.5328" y="2.4784" z="0.1272" style="solid"
+      variancy="1.00" size="1.00" scale="0.300"/>
+      <atom element="Ni" x="-1.3892" y="0.2568" z="1.4853" style="solid"
+      variancy="1.00" size="1.00" scale="0.300"/>
+      <atom element="Ni" x="0.1390" y="0.1005" z="3.6292" style="solid"
+      variancy="1.00" size="1.00" scale="0.300"/>
+      <atom element="Ni" x="1.2365" y="0.2749" z="1.2373" style="solid"
+      variancy="1.00" size="1.00" scale="0.300"/>
+      <atom element="Ni" x="-1.1022" y="-2.0751" z="4.3553" style="solid"
+      variancy="1.00" size="1.00" scale="0.300"/>
+      <atom element="Ni" x="-2.6304" y="-1.9188" z="2.2114" style="solid"
+      variancy="1.00" size="1.00" scale="0.300"/>
+      <atom element="Ni" x="-3.7279" y="-2.0932" z="4.6033" style="solid"
+      variancy="1.00" size="1.00" scale="0.300"/>
+      <atom element="Ni" x="-1.1022" y="2.1477" z="4.6631" style="solid"
+      variancy="1.00" size="1.00" scale="0.300"/>
+      <atom element="Ni" x="-2.6304" y="2.3040" z="2.5192" style="solid"
+      variancy="1.00" size="1.00" scale="0.300"/>
+      <atom element="Ni" x="-3.7279" y="2.1296" z="4.9112" style="solid"
+      variancy="1.00" size="1.00" scale="0.300"/>
+    </cell>
+  </layer>
+</gml>

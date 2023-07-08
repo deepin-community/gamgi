@@ -1,0 +1,36 @@
+Superconductor (Tc = 35K): (Nd,Sr,Ce)2CuO4
+Structure: 0201 T*
+
+Space group: 129
+
+Lattice parameters:
+3.86 12.50
+
+Wyckoff positions:
+Nd,Sr,Ce 2c, z = 0.3893
+Nd,Sr,Ce 2c, z = 0.1035
+Cu 2c, z = 0.7490
+O 4f, z = 0.2378
+O 8j, x = 0.2958, z = 0.5709
+O 2a
+
+Change Wyckoff:
+O 8j -> O 2c, z = 0.5709
+
+1. with Cell (s03a.xml):
+Cell Change XYZ: -0.25, -0.25, -0.7490
+Bond: Color 0.5,0.5,0.5, Scale 0.4
+
+2. with Polytopes (s03b.xml):
+Cell Change XYZ: -0.25, -0.25, -0.7490
+Cells: 2 x 2 x 2
+Neighbours: O
+Number: 5
+
+References:
+H. Shaked, P.M. Keane, J.C. Rodriguez, F.F. Owen, R.L. Hitterman,
+J.D. Jorgensen, Crystal structures of the High-Tc Superconducting
+Copper-Oxides, Physica C, Elsevier Science, Amsterdam, 1994
+
+F. Izumi, E. Takayama-Muromachi, A. Fujimori, T. Kamiyama,
+H. Asano, J. Akimitsu, and H. Sawa, Physica C 158, 440 (1989)

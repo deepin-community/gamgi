@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE gml SYSTEM "http://www.gamgi.org/dtd/gamgi.dtd">
+<gml>
+  <layer>
+    <light ambient_r="0.500" ambient_g="0.500" ambient_b="0.500"
+    diffuse_r="0.400" diffuse_g="0.400" diffuse_b="0.400" specular_r="0.300"
+    specular_g="0.300" specular_b="0.300" direction_x="0.0000"
+    direction_y="0.0000" direction_z="-1.0000"/>
+    <group x="2.6615" y="1.0893" z="0.6985" center_x="2.6615"
+    center_y="1.0893" center_z="0.6985" e1="141.73" e2="286.01" e3="284.42"
+    red="1.000" green="0.500" blue="0.650">
+      <plane name="Plane" reference="atoms" x="-3.9498" y="-1.8387" z="0.6644"
+      center_x="-5.4180" center_y="-1.2399" center_z="-0.1091" e1="141.73"
+      e2="286.01" e3="284.42" red="1.000" green="0.500" blue="0.650">
+        <atom element="C" x="-5.5038" y="-3.2257" z="1.3778" red="1.000"
+        green="0.500" blue="0.650" style="solid"/>
+        <atom element="C" x="-3.2389" y="0.6836" z="-1.0933" red="1.000"
+        green="0.500" blue="0.650" style="solid"/>
+        <atom element="C" x="-8.0020" y="-0.0841" z="-1.5477" red="1.000"
+        green="0.500" blue="0.650" style="solid"/>
+        <atom element="C" x="-8.0888" y="-1.8792" z="-0.2052" red="1.000"
+        green="0.500" blue="0.650" style="solid"/>
+        <atom element="C" x="-2.2563" y="-1.6940" z="0.9232" red="1.000"
+        green="0.500" blue="0.650" style="solid"/>
+        <data name="points" type="double" size="15">
+        -1.7191 0.0105 -0.0000 -0.6289 3.0922 0.0000 4.1929 2.6101 0.0000 4.2138
+        0.3669 -0.0000 1.5304 -1.5828 -0.0000
+        </data>
+        <data name="points_driver" type="int" size="7">
+        1 5 0 1 2 3 4
+        </data>
+      </plane>
+      <atom id="1" element="C" x="3.3724" y="3.6115" z="-1.0592" red="1.000"
+      green="0.500" blue="0.650" style="solid"/>
+      <atom id="2" element="C" x="-1.3907" y="2.8439" z="-1.5136" red="1.000"
+      green="0.500" blue="0.650" style="solid"/>
+      <atom id="3" element="C" x="-1.4775" y="1.0487" z="-0.1712" red="1.000"
+      green="0.500" blue="0.650" style="solid"/>
+      <atom id="4" element="C" x="1.1075" y="-0.2977" z="1.4119" red="1.000"
+      green="0.500" blue="0.650" style="solid"/>
+      <atom id="5" element="C" x="4.3550" y="1.2339" z="0.9572" red="1.000"
+      green="0.500" blue="0.650" style="solid"/>
+      <bond parent1="1" parent2="5" style="solid" color="yes" red="1.000"
+      green="0.500" blue="0.650"/>
+      <bond parent1="1" parent2="2" style="solid" color="yes" red="1.000"
+      green="0.500" blue="0.650"/>
+      <bond parent1="2" parent2="3" style="solid" color="yes" red="1.000"
+      green="0.500" blue="0.650"/>
+      <bond parent1="3" parent2="4" style="solid" color="yes" red="1.000"
+      green="0.500" blue="0.650"/>
+      <bond parent1="4" parent2="5" style="solid" color="yes" red="1.000"
+      green="0.500" blue="0.650"/>
+      <text contents="Hello" style="solid" x="5.1280" y="2.3350" z="0.0235"
+      e1="0.45" e2="256.70" e3="102.88" red="1.000" green="0.500" blue="0.650"/>
+    </group>
+  </layer>
+</gml>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE gml SYSTEM "http://www.gamgi.org/dtd/gamgi.dtd">
+<gml>
+  <molecule name="CCl4">
+    <atom id="1" element="C" x="-0.5479" y="0.2642" z="-0.5834"/>
+    <atom id="2" element="Cl" x="-0.7580" y="1.0551" z="0.9133"/>
+    <atom id="3" element="Cl" x="-1.5465" y="-0.6587" z="-1.2687"/>
+    <atom id="4" element="Cl" x="0.9529" y="-0.7376" z="-0.2738"/>
+    <atom id="5" element="Cl" x="0.1323" y="1.4217" z="-1.7628"/>
+    <bond parent1="1" parent2="2"/>
+    <bond parent1="1" parent2="3"/>
+    <bond parent1="1" parent2="4"/>
+    <bond parent1="1" parent2="5"/>
+  </molecule>
+</gml>

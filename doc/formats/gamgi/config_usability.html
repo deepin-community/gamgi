@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Formats: Gamgi Config</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Gamgi Config</h1>
+
+<div id="notebook">
+<ul> 
+<li><span>Usability</span></li>
+<li><a href="config_precision.html">Precision</a></li>
+<li><a href="config_color.html">Color</a></li>
+</ul>
+</div>
+
+<div class="contents">
+
+<h3>sound</h3>
+
+To disable/enable the internal computer sound, used in GAMGI,
+for example, to signal that an object has been recognized.  
+
+<pre>
+Example: <b>&lt;gamgi sound="yes"/></b> (defined in <b>GAMGI_GTK_BEEP</b>) (default)
+Allowed values: <b>yes</b>, <b>no</b> (optional)
+</pre>
+
+<h3>tolerance</h3>
+
+When selecting objects with the mouse, the sampled area is 
+defined by the pixel where the user clicked the mouse, plus a
+<b>tolerance</b> given by the number of neighbour shells that 
+should be considered. Thus a tolerance of <b>0</b> means that 
+only the chosen pixel should be considered, while a tolerance 
+of <b>1</b> means that the 8 pixels around should also be taken 
+into account.
+
+<p/>
+
+Small tolerances demand precision when pointing to the object,
+but large tolerances make it too easy to select more than one
+object, in which case GAMGI considers the object selection as
+unsucessfull.
+
+<pre>
+Example: <b>&lt;gamgi tolerance="3"/></b> (default)
+(defined in <b>GAMGI_MESA_PICK_TOLERANCE</b>)
+Allowed values: <b>0</b> - <b>5</b> (defined in <b>GAMGI_MESA_PICK_TOLERANCE_MAX</b>) (optional)
+</pre>
+
+<h3>button1, button2, button3</h3>
+
+GAMGI expects to work with a 3-button mouse, where <b>button1</b> handles
+operations such as rotating and menu selection, <b>button2</b> handles
+operations such as moving and object selection, and <b>button3</b>
+handles operations such as scaling. By default, these logical buttons
+point to the physical buttons left (1), middle (2) and right (3),
+respectively, but this can be changed, by pointing <b>button1</b>, 
+<b>button2</b>, <b>button3</b> to different combinations of values
+<b>1</b>, <b>2</b> and <b>3</b>, prodiving 6 possible sequences.
+
+<p/>
+
+This should be usefull for left-hand users and when handling 
+a 2-button mouse, to link the most important tasks to the two buttons 
+available.
+
+<pre>
+Example: <b>&lt;gamgi button1="1" button2="2" button3="3"/></b>) (default)
+Allowed values: <b>1</b>, <b>2</b>, <b>3</b> (optional, coupled)
+</pre>
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

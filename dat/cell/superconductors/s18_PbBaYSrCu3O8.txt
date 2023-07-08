@@ -1,0 +1,32 @@
+Superconductor (Tc = 50K): PbBaYSrCu3O8
+Structure: 0223
+
+Space group: 139
+
+Lattice parameters:
+3.842 27.66
+
+Wyckoff positions:
+Ba,Pb 2e, z = 0.2900
+Y,Sr 2e, z = 0.4370
+Cu 1a
+Cu 2e, z = 0.1220
+O 2c
+O 2e, z = 0.2000
+O 4g, z = 0.1180
+
+1. with Cell (s18a.xml):
+Bond: Color 0.5,0.5,0.5, Scale 0.32
+
+2. with Polytopes (s18b.xml):
+Cells: 2 x 2 x 2
+Neighbours: O
+Number: 5, 4
+
+References:
+H. Shaked, P.M. Keane, J.C. Rodriguez, F.F. Owen, R.L. Hitterman,
+J.D. Jorgensen, Crystal structures of the High-Tc Superconducting
+Copper-Oxides, Physica C, Elsevier Science, Amsterdam, 1994
+
+T. Rouillon, R.Retoux, D. Groult, C. Michel, M. Hervieu, J. Provost,
+and B. Raveau, J. Solid State Chem. 78, 322 (1989)

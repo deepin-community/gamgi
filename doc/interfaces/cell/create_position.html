@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Interfaces: Cell Create</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Cell Create</h1>
+
+<div id="notebook">
+<ul>
+<li><a href="create_symmetry.html">Symmetry</a></li>
+<li><a href="create_volume.html">Volume</a></li>
+<li><span>Position</span></li>
+<li><a href="create_origin.html">Origin</a></li>
+<li><a href="create_view.html">View</a></li>
+</ul>
+</div>
+
+<div class="contents">
+
+Define here the cell position.
+
+<h3>Translation</h3>
+
+The origin of a cell object, defined by its (0 0 0) node,
+can be set using the <b>x</b>, <b>y</b>, <b>z</b> entries.
+
+<p/>
+
+By default, in <b>Conventional</b>, <b>Primitive</b> and 
+<b>Parallelepiped</b> volumes, this node is at a corner 
+of the cell volume, in a <b>Sphere</b> volume it is at the 
+center, and in a <b>Wigner</b> volume it is at the center of 
+the first Wigner-Seitz cell.
+
+<p/>
+
+A simpler way to set directly the cell position is to click on
+the screen, at the wished position, after defining all the other
+cell properties: a new cell object is created at that position.
+
+<p/>
+
+To define exactly the cell translation, relatively to other cell 
+or relatively to the current layer, press <a href="translation.html">
+Align</a>.
+
+<h3>Rotation</h3>
+
+The orientation of a cell object, defined by the Euler angles theta,
+phi, psi, can be set using the <b>E1</b>, <b>E2</b>, <b>E3</b> entries.
+
+<p/>
+
+Euler angles in GAMGI are defined as follows: first, the (x, y, z)
+referential is rotated theta degrees (between 0 and 180) around the
+y axis, then the referential is rotated phi degrees (between 0 and 360)
+around the initial z axis, and finally it is rotated psi degrees (between
+0 and 360) around the new z axis, always in the direct, counter-clockwise,
+direction. If the first Euler angle (theta) is zero, the old and new z axis
+coincide, thus (0, 0, 10) and (0, 5, 5) represent the same rotation.
+
+<p/>
+
+By default, the first conventional vector is aligned with the x axis 
+(even if conventional vectors are not actually represented), the second 
+vector is in the xy plane and the third vector has a positive z coordinate 
+(pointing to the user), corresponding to Euler angles (0, 0, 0).
+
+<p/>
+
+The cell orientation is independent of the volume representation.
+This way, conventional, primitive and Wigner-Seitz cells can be easily 
+compared, as they have the same orientation.
+
+<p/>
+
+To define exactly the cell rotation, relatively to other cell 
+or relatively to the current layer, press <a href="rotation.html">
+Align</a>.
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

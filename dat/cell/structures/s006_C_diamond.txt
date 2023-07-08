@@ -1,0 +1,29 @@
+Structure 6
+Prototype: C (diamond)
+StrukturBericht / Pearson: A4 / cF8
+
+lattice parameter:
+C     Si
+3.56  5.431
+Ge    a-Sn
+5.657 6.491
+
+Radius:
+C 0.7130 (half-distance)
+
+1. Building with space group (s006.xml):
+Group: 227
+
+Wyckoff positions:
+C 2a
+
+Change: -0.125 (1/8) -0.125 (1/8) -0.125 (1/8)
+
+2. Building with structural unit (s006.xml):
+Bravais lattice: cF
+C: 0.0, 0.0, 0.0
+C: 1/4, 1/4, 1/4
+
+View:
+C: style solid, size 1.0, variancy 1.0, scale 0.4
+CC style solid, method length, color 0.5,0.5,0.5 scale 0.6

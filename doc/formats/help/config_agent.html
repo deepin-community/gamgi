@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Formats: Help Config</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Help Config</h1>
+
+<div id="notebook">
+<ul>
+<li><a href="config_source.html">Source</a></li>
+<li><span>Agent</span></li>
+</ul>
+</div>
+
+<div class="contents">
+            
+<h3>agent</h3>
+
+Indicates whether the Help documentation should
+be presented with GAMGI or an external browser.
+
+<pre>
+Example: <b>&lt;help agent="gamgi"/></b> (default)
+Allowed values: <b>gamgi</b>, <b>browser</b> (optional)
+</pre>
+
+<h3>browser</h3>
+
+Shows the path to the prefered browser executable.
+It is needed only when <b>agent</b> is set to <b>browser</b>.
+
+This is equivalent to create the <b>BROWSER</b> environment variable, 
+containing the same path.
+ 
+<pre>
+Example: <b>&lt;help browser="/usr/bin/firefox"/></b> (default)
+(after defining BROWSER in ~/.bashrc: <b>BROWSER=/usr/bin/firefox; export BROWSER</b>)
+Allowed values: 100 ASCII characters maximum (defined in <b>GAMGI_IO_PATHNAME</b>) (optional)
+</pre>
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

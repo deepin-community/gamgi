@@ -1,0 +1,6 @@
+<gml>
+<gamgi>
+<help source="remote" agent="browser" local="/home/carlos/gamgi/gamgi/"
+remote="http://www.gamgi.org/" browser="/usr/bin/X11/mozilla"/>
+</gamgi>
+</gml>

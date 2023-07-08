@@ -1,0 +1,42 @@
+******************
+* Photosynthesis *
+******************
+
+The files in this directory describe molecules
+participating in photosynthesis. They were 
+prepared for Gamgi, by Carlos Pereira:
+http://www.gamgi.org/
+
+****************
+* Bibliography *
+****************
+
+Structural data was obtained from:
+
+1) the Mathmol library of molecular structures,
+Scientific Visualization Center, New York University:
+http://www.nyu.edu/pages/mathmol/library/index.html
+
+2) Glactone's CD-ROM of PDB Files, Department 
+of Chemistry, Georgia State University:
+http://chemistry.gsu.edu/cwcs/MM-CD/workshop02/readme.htm
+
+Structural information was obtained from:
+
+3) Luis S. Campos, Entender a Bioquímica,
+3ª Edição, Escolar Editora (2002)
+
+4) Gerard Kleywegt, Hetero-compound Information Centre,
+Department of Cell and Molecular Biology, Uppsala University:
+http://xray.bmc.uu.se/hicup/
+
+5) Helen M. Berman, John Westbrook, Zukang Feng, Gary Gilliland,
+T. N. Bhat, Helge Weissig, Ilya N. Shindyalov and Philip E. Bourne,
+the Protein Data Bank, Research Collaboratory for Structural 
+Bioinformatics, Department of Chemistry, Rutgers University, USA, 
+National Institute of Standards and Technology, USA, San Diego 
+Supercomputer Center, University of California, San Diego, USA, 
+Department of Pharmacology, University of California, San Diego, 
+USA and The Burnham Institute, California, San Diego, USA:
+http://www.rcsb.org/pdb/
+http://nar.oupjournals.org/cgi/content/full/28/1/235

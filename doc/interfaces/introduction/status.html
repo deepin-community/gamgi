@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Interfaces: Introduction Status</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/board.css"/>
+</head>
+
+<body>
+
+<div class="board">
+<div>Introduction Status</div><div>&nbsp;</div>
+</div>
+
+<div class="contents">
+
+Each top window has a status bar at the bottom, providing information about 
+the current working environment.
+
+<p/>
+
+All the text information related with the GAMGI status that needs to be 
+reported is shown in the status bar, except errors and warnings, which are reported 
+directly on their own dialog windows, and (TODO) GAMGI actions, which will be appended 
+to the current log file. In the normal configuration, the statusbar includes 
+a status area on the left, a field showing the current object, a field showing 
+the current layer, and finally a watch on the right.
+
+<p/>
+
+When the tools ruler is active, the current translation length, rotation angle 
+or scaling factor (depending on the selected action) is shown in the status area,
+in real time, so users know exactly which value will be applied before clicking
+the mouse.
+
+<p/>
+
+When an object is selected, a beep is emitted and the status bar identifies
+the object, using the format <b>object_name object_id</b>, thus confirming
+the selection of that object. The object identification is initially shown
+in red (to highlight that the current object has changed), and after a few
+seconds in black (the permanent color).
+
+<p/>
+
+When a layer is selected, a beep is emitted and the status bar identifies 
+the layer, using the format <b>object_name object_id</b>, thus confirming 
+the selection of that layer. The layer identification is initially shown 
+in red (to highlight that the current layer has changed), and after a few 
+seconds in black (the permanent color).
+
+<p/>
+
+When a slow task is taking place, that requires the user to wait, a progress bar 
+appears after the watch, moving forward and backward, until the task is completed, 
+this way giving the user an hint that GAMGI did not stop and is working to finish the 
+task. When the time needed for doing a task can be predicted exactly, the progress bar 
+becomes a continuous bar that moves forward only, reaching the right end position when 
+the task is completed. This method of showing progress is useful for example in 
+multi-frame animations of Molecular Dynamics simulations and normal mode vibrations, 
+where the number of frames is previously known.
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

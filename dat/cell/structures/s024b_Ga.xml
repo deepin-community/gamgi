@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE gml SYSTEM "http://www.gamgi.org/dtd/gamgi.dtd">
+<gml>
+  <layer perspective="no" scale="0.850">
+    <light ambient_r="0.500" ambient_g="0.500" ambient_b="0.500"
+    diffuse_r="0.400" diffuse_g="0.400" diffuse_b="0.400" specular_r="0.300"
+    specular_g="0.300" specular_b="0.300" direction_x="0.0000"
+    direction_y="0.0000" direction_z="-1.0000"/>
+    <cell group="64" a="4.5170" b="7.6450" c="4.5110" x="-4.7938" y="-4.8424"
+    z="1.9774" e1="76.41" e2="89.29" e3="257.06" n1="2" n2="1" n3="2">
+      <atom id="1" element="Ga" x="-4.5252" y="-4.2324" z="0.9567"
+      style="solid" variancy="1.00" size="1.00" scale="0.300"/>
+      <atom id="2" element="Ga" x="-0.1261" y="-4.5247" z="1.9396"
+      style="solid" variancy="1.00" size="1.00" scale="0.300"/>
+      <atom id="3" element="Ga" x="4.2729" y="-4.8171" z="2.9225"
+      style="solid" variancy="1.00" size="1.00" scale="0.300"/>
+      <atom id="4" element="Ga" x="-3.6399" y="-1.8684" z="-2.3021"
+      style="solid" variancy="1.00" size="1.00" scale="0.300"/>
+      <atom id="5" element="Ga" x="0.7592" y="-2.1608" z="-1.3191"
+      style="solid" variancy="1.00" size="1.00" scale="0.300"/>
+      <atom id="6" element="Ga" x="5.1581" y="-2.4531" z="-0.3362"
+      style="solid" variancy="1.00" size="1.00" scale="0.300"/>
+      <atom id="7" element="Ga" x="-4.4706" y="0.1521" z="2.0164"
+      style="solid" variancy="1.00" size="1.00" scale="0.300"/>
+      <atom id="8" element="Ga" x="-4.1599" y="-1.7030" z="0.0743"
+      style="solid" variancy="1.00" size="1.00" scale="0.300"/>
+      <atom id="9" element="Ga" x="-0.0715" y="-0.1403" z="2.9994"
+      style="solid" variancy="1.00" size="1.00" scale="0.300"/>
+      <atom id="10" element="Ga" x="0.2391" y="-1.9953" z="1.0572"
+      style="solid" variancy="1.00" size="1.00" scale="0.300"/>
+      <atom id="11" element="Ga" x="4.3275" y="-0.4327" z="3.9823"
+      style="solid" variancy="1.00" size="1.00" scale="0.300"/>
+      <atom id="12" element="Ga" x="4.6382" y="-2.2878" z="2.0402"
+      style="solid" variancy="1.00" size="1.00" scale="0.300"/>
+      <atom id="13" element="Ga" x="-3.5853" y="2.5160" z="-1.2424"
+      style="solid" variancy="1.00" size="1.00" scale="0.300"/>
+      <atom id="14" element="Ga" x="-3.2746" y="0.6610" z="-3.1845"
+      style="solid" variancy="1.00" size="1.00" scale="0.300"/>
+      <atom id="15" element="Ga" x="0.8137" y="2.2237" z="-0.2594"
+      style="solid" variancy="1.00" size="1.00" scale="0.300"/>
+      <atom id="16" element="Ga" x="1.1245" y="0.3686" z="-2.2016"
+      style="solid" variancy="1.00" size="1.00" scale="0.300"/>
+      <atom id="17" element="Ga" x="5.2128" y="1.9312" z="0.7235"
+      style="solid" variancy="1.00" size="1.00" scale="0.300"/>
+      <atom id="18" element="Ga" x="5.5234" y="0.0762" z="-1.2186"
+      style="solid" variancy="1.00" size="1.00" scale="0.300"/>
+      <atom id="19" element="Ga" x="-4.1053" y="2.6815" z="1.1340"
+      style="solid" variancy="1.00" size="1.00" scale="0.300"/>
+      <atom id="20" element="Ga" x="0.2938" y="2.3890" z="2.1169"
+      style="solid" variancy="1.00" size="1.00" scale="0.300"/>
+      <atom id="21" element="Ga" x="4.6928" y="2.0967" z="3.0999"
+      style="solid" variancy="1.00" size="1.00" scale="0.300"/>
+      <atom id="22" element="Ga" x="-3.2200" y="5.0454" z="-2.1248"
+      style="solid" variancy="1.00" size="1.00" scale="0.300"/>
+      <atom id="23" element="Ga" x="1.1790" y="4.7530" z="-1.1419"
+      style="solid" variancy="1.00" size="1.00" scale="0.300"/>
+      <atom id="24" element="Ga" x="5.5780" y="4.4606" z="-0.1588"
+      style="solid" variancy="1.00" size="1.00" scale="0.300"/>
+      <atom id="25" element="Ga" x="-1.4591" y="-3.5140" z="-2.1730"
+      style="solid" variancy="1.00" size="1.00" scale="0.300"/>
+      <atom id="26" element="Ga" x="-2.3069" y="-2.8791" z="1.8105"
+      style="solid" variancy="1.00" size="1.00" scale="0.300"/>
+      <atom id="27" element="Ga" x="2.9400" y="-3.8065" z="-1.1901"
+      style="solid" variancy="1.00" size="1.00" scale="0.300"/>
+      <atom id="28" element="Ga" x="2.0920" y="-3.1715" z="2.7935"
+      style="solid" variancy="1.00" size="1.00" scale="0.300"/>
+      <atom id="29" element="Ga" x="-1.4045" y="0.8703" z="-1.1133"
+      style="solid" variancy="1.00" size="1.00" scale="0.300"/>
+      <atom id="30" element="Ga" x="-1.0938" y="-0.9847" z="-3.0555"
+      style="solid" variancy="1.00" size="1.00" scale="0.300"/>
+      <atom id="31" element="Ga" x="-2.2524" y="1.5053" z="2.8703"
+      style="solid" variancy="1.00" size="1.00" scale="0.300"/>
+      <atom id="32" element="Ga" x="-1.9418" y="-0.3497" z="0.9282"
+      style="solid" variancy="1.00" size="1.00" scale="0.300"/>
+      <atom id="33" element="Ga" x="2.9946" y="0.5780" z="-0.1304"
+      style="solid" variancy="1.00" size="1.00" scale="0.300"/>
+      <atom id="34" element="Ga" x="3.3053" y="-1.2771" z="-2.0725"
+      style="solid" variancy="1.00" size="1.00" scale="0.300"/>
+      <atom id="35" element="Ga" x="2.1467" y="1.2130" z="3.8533"
+      style="solid" variancy="1.00" size="1.00" scale="0.300"/>
+      <atom id="36" element="Ga" x="2.4573" y="-0.6421" z="1.9111"
+      style="solid" variancy="1.00" size="1.00" scale="0.300"/>
+      <atom id="37" element="Ga" x="-1.0392" y="3.3997" z="-1.9958"
+      style="solid" variancy="1.00" size="1.00" scale="0.300"/>
+      <atom id="38" element="Ga" x="-1.8871" y="4.0347" z="1.9879"
+      style="solid" variancy="1.00" size="1.00" scale="0.300"/>
+      <atom id="39" element="Ga" x="3.3599" y="3.1074" z="-1.0128"
+      style="solid" variancy="1.00" size="1.00" scale="0.300"/>
+      <atom id="40" element="Ga" x="2.5119" y="3.7424" z="2.9708"
+      style="solid" variancy="1.00" size="1.00" scale="0.300"/>
+      <bond parent1="1" parent2="8" style="solid" color="yes" red="0.800"
+      green="0.800" blue="0.800" scale="0.600"/>
+      <bond parent1="2" parent2="10" style="solid" color="yes" red="0.800"
+      green="0.800" blue="0.800" scale="0.600"/>
+      <bond parent1="3" parent2="12" style="solid" color="yes" red="0.800"
+      green="0.800" blue="0.800" scale="0.600"/>
+      <bond parent1="4" parent2="8" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500"/>
+      <bond parent1="4" parent2="14" style="solid" color="yes" red="0.800"
+      green="0.800" blue="0.800" scale="0.600"/>
+      <bond parent1="5" parent2="10" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500"/>
+      <bond parent1="5" parent2="16" style="solid" color="yes" red="0.800"
+      green="0.800" blue="0.800" scale="0.600"/>
+      <bond parent1="6" parent2="12" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500"/>
+      <bond parent1="6" parent2="18" style="solid" color="yes" red="0.800"
+      green="0.800" blue="0.800" scale="0.600"/>
+      <bond parent1="7" parent2="8" style="solid" color="yes" red="0.800"
+      green="0.800" blue="0.800" scale="0.600"/>
+      <bond parent1="7" parent2="19" style="solid" color="yes" red="0.800"
+      green="0.800" blue="0.800" scale="0.600"/>
+      <bond parent1="9" parent2="10" style="solid" color="yes" red="0.800"
+      green="0.800" blue="0.800" scale="0.600"/>
+      <bond parent1="9" parent2="20" style="solid" color="yes" red="0.800"
+      green="0.800" blue="0.800" scale="0.600"/>
+      <bond parent1="11" parent2="12" style="solid" color="yes" red="0.800"
+      green="0.800" blue="0.800" scale="0.600"/>
+      <bond parent1="11" parent2="21" style="solid" color="yes" red="0.800"
+      green="0.800" blue="0.800" scale="0.600"/>
+      <bond parent1="13" parent2="19" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500"/>
+      <bond parent1="13" parent2="14" style="solid" color="yes" red="0.800"
+      green="0.800" blue="0.800" scale="0.600"/>
+      <bond parent1="13" parent2="22" style="solid" color="yes" red="0.800"
+      green="0.800" blue="0.800" scale="0.600"/>
+      <bond parent1="15" parent2="20" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500"/>
+      <bond parent1="15" parent2="16" style="solid" color="yes" red="0.800"
+      green="0.800" blue="0.800" scale="0.600"/>
+      <bond parent1="15" parent2="23" style="solid" color="yes" red="0.800"
+      green="0.800" blue="0.800" scale="0.600"/>
+      <bond parent1="17" parent2="21" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500"/>
+      <bond parent1="17" parent2="18" style="solid" color="yes" red="0.800"
+      green="0.800" blue="0.800" scale="0.600"/>
+      <bond parent1="17" parent2="24" style="solid" color="yes" red="0.800"
+      green="0.800" blue="0.800" scale="0.600"/>
+      <bond parent1="25" parent2="30" style="solid" color="yes" red="0.800"
+      green="0.800" blue="0.800" scale="0.600"/>
+      <bond parent1="26" parent2="32" style="solid" color="yes" red="0.800"
+      green="0.800" blue="0.800" scale="0.600"/>
+      <bond parent1="27" parent2="34" style="solid" color="yes" red="0.800"
+      green="0.800" blue="0.800" scale="0.600"/>
+      <bond parent1="28" parent2="36" style="solid" color="yes" red="0.800"
+      green="0.800" blue="0.800" scale="0.600"/>
+      <bond parent1="29" parent2="32" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500"/>
+      <bond parent1="29" parent2="30" style="solid" color="yes" red="0.800"
+      green="0.800" blue="0.800" scale="0.600"/>
+      <bond parent1="29" parent2="37" style="solid" color="yes" red="0.800"
+      green="0.800" blue="0.800" scale="0.600"/>
+      <bond parent1="31" parent2="32" style="solid" color="yes" red="0.800"
+      green="0.800" blue="0.800" scale="0.600"/>
+      <bond parent1="31" parent2="38" style="solid" color="yes" red="0.800"
+      green="0.800" blue="0.800" scale="0.600"/>
+      <bond parent1="33" parent2="36" style="solid" color="yes" red="0.500"
+      green="0.500" blue="0.500"/>
+      <bond parent1="33" parent2="34" style="solid" color="yes" red="0.800"
+      green="0.800" blue="0.800" scale="0.600"/>
+      <bond parent1="33" parent2="39" style="solid" color="yes" red="0.800"
+      green="0.800" blue="0.800" scale="0.600"/>
+      <bond parent1="35" parent2="36" style="solid" color="yes" red="0.800"
+      green="0.800" blue="0.800" scale="0.600"/>
+      <bond parent1="35" parent2="40" style="solid" color="yes" red="0.800"
+      green="0.800" blue="0.800" scale="0.600"/>
+    </cell>
+    <atom element="Ga" x="0.3817" y="-6.7472" z="-4.9999" style="solid"
+    variancy="1.00" size="1.00" scale="0.300"/>
+  </layer>
+</gml>

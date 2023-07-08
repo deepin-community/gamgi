@@ -1,0 +1,147 @@
+/*****************
+ * default style *
+ *****************/
+
+* { margin: 0; padding: 0; }
+
+body
+  {
+  color: #000;
+  background-color: #000;
+  background-image: url(gradient.png);
+  background-repeat: repeat-y;
+  font: 11px verdana, arial, helvetica, sans-serif;
+  text-align: center;
+  padding: 1.5em 20px;
+  }
+
+/***************
+ * links style *
+ ***************/
+
+a { font-weight: bold; }
+
+a:link, a:visited, a:active { text-decoration: none }
+a:hover { text-decoration: underline overline }
+
+a:link { color: #069; }
+a:visited { color: #69c; }
+a:hover, a:active { color: #f80; }
+
+/******************
+ * contents style *
+ ******************/
+
+div.contents
+  {
+  color: #000;
+  background-color: #fff;
+  text-align: left;
+  text-indent: 0;
+  padding: 0.5em 1em;
+  margin-bottom: 1em;
+  border-left: 2px groove #069;
+  border-right: 2px groove #069;
+  border-bottom: 2px groove #069;
+  }
+
+/*******************
+ * IE6: Holly Hack *
+ *******************/
+
+* html div.contents { height: 1%; }
+div.contents { display: block; }
+
+div.contents:first-letter { color: #f80; font-size: xx-large; }
+
+div.contents img 
+  {
+  float: left; 
+  margin-right: 10px; 
+  margin-bottom: 5px; 
+  }
+
+/****************
+ * tables style *
+ ****************/
+
+table
+  {
+  width: 50em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+  font-size: 11px;
+  }
+
+table tr.odd { background-color: #cef; }
+
+table tr.even { background-color: #9cf; }
+
+table td { text-align: left; text-indent: 0.5em; }
+
+table td.center { font-weight: bold; text-align: center; }
+
+/****************
+ * bottom style *
+ ****************/
+
+#bottom
+  {
+  clear: both; 
+  text-align: center; 
+  color: #fff;
+  margin: 1.5em; 
+  }
+
+#bottom a { color: #fff; }
+
+/********************
+ * delimiters style *
+ ********************/
+
+.clear { clear: both; }
+
+.center { text-align: center; }
+
+b { color: #f80; }
+
+p { margin: .3em 0; padding: .3em 0; }
+
+ul, ol { margin-left: 2em; }
+
+ol.inline { margin-left: 0; }
+
+ol.inline li { display: inline; margin-right: 1em; }
+
+pre
+  {
+  font: 11px verdana, arial, helvetica, sans-serif; 
+  margin: 0.5em 0;
+  padding: 0;
+  }
+
+/****************
+ * titles style *
+ ****************/
+
+h1
+  {
+  clear: both;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding-top: 1.5em;
+  padding-bottom: 0.5em;
+  }
+
+h3
+  {
+  clear: both;
+  color: #888;
+  text-align: left;
+  font-size: 11px;
+  padding-top: 1em;
+  }

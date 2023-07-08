@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE gml SYSTEM "http://www.gamgi.org/dtd/gamgi.dtd">
+<gml>
+  <layer perspective="no" scale="0.650">
+    <cell system="c" lattice="I" a="2.3100" x="-11.9554" y="-3.2828"
+    z="2.3319" e1="148.32" e2="267.81" e3="30.04">
+      <atom element="C" x="-11.9785" y="-3.8887" z="1.3488" radius="0.1550"/>
+      <atom element="C" x="-10.7581" y="-2.2320" z="0.2990" radius="0.1550"/>
+      <atom element="C" x="-10.0177" y="-4.9484" z="1.9560" radius="0.1550"/>
+      <atom element="C" x="-8.7973" y="-3.2918" z="0.9060" radius="0.1550"/>
+      <atom element="C" x="-10.3647" y="-2.9842" z="2.1105" radius="0.1550"/>
+      <atom element="C" x="-10.4111" y="-4.1960" z="0.1445" radius="0.1550"/>
+      <atom element="C" x="-10.9750" y="-3.8127" z="2.6354" radius="0.1550"/>
+      <atom element="C" x="-9.7546" y="-2.1559" z="1.5857" radius="0.1550"/>
+      <atom element="C" x="-11.0212" y="-5.0244" z="0.6694" radius="0.1550"/>
+      <atom element="C" x="-9.8009" y="-3.3678" z="-0.3804" radius="0.1550"/>
+      <atom element="C" x="-11.3683" y="-3.0603" z="0.8239" radius="0.1550"/>
+      <atom element="C" x="-9.4076" y="-4.1200" z="1.4309" radius="0.1550"/>
+      <atom element="C" x="-11.3452" y="-2.4544" z="1.8070" radius="0.1550"/>
+      <atom element="C" x="-9.3844" y="-3.5141" z="2.4140" radius="0.1550"/>
+      <atom element="C" x="-11.3914" y="-3.6662" z="-0.1591" radius="0.1550"/>
+      <atom element="C" x="-9.4307" y="-4.7259" z="0.4479" radius="0.1550"/>
+      <atom element="C" x="-10.9980" y="-4.4185" z="1.6523" radius="0.1550"/>
+      <atom element="C" x="-9.7778" y="-2.7619" z="0.6026" radius="0.1550"/>
+      <atom element="Si" x="-11.9554" y="-3.2828" z="2.3319" radius="1.0000"/>
+      <atom element="Si" x="-10.7349" y="-1.6260" z="1.2821" radius="1.0000"/>
+      <atom element="Si" x="-8.7742" y="-2.6858" z="1.8891" radius="1.0000"/>
+      <atom element="Si" x="-12.0016" y="-4.4945" z="0.3658" radius="1.0000"/>
+      <atom element="Si" x="-10.7813" y="-2.8379" z="-0.6839" radius="1.0000"/>
+      <atom element="Si" x="-10.0409" y="-5.5543" z="0.9729" radius="1.0000"/>
+      <atom element="Si" x="-8.8205" y="-3.8976" z="-0.0770" radius="1.0000"/>
+      <atom element="Si" x="-10.3879" y="-3.5901" z="1.1274" radius="1.0000"/>
+    </cell>
+    <cell system="c" lattice="I" a="2.3100" x="-10.0627" y="1.5701" z="2.9755"
+    e1="147.18" e2="273.10" e3="307.14">
+      <atom element="C" x="-10.6865" y="2.5108" z="2.3481" radius="0.2910"/>
+      <atom element="C" x="-10.6189" y="1.2606" z="0.4067" radius="0.2910"/>
+      <atom element="C" x="-9.0470" y="2.1605" z="1.2565" radius="0.2910"/>
+      <atom element="C" x="-10.9490" y="3.2316" z="0.5006" radius="0.2910"/>
+      <atom element="C" x="-9.8835" y="2.6481" z="2.2875" radius="0.2910"/>
+      <atom element="C" x="-9.8161" y="1.3980" z="0.3462" radius="0.2910"/>
+      <atom element="C" x="-11.4554" y="1.7484" z="1.4379" radius="0.2910"/>
+      <atom element="C" x="-10.1463" y="3.3689" z="0.4400" radius="0.2910"/>
+      <atom element="C" x="-10.9968" y="1.7931" z="2.1122" radius="0.2910"/>
+      <atom element="C" x="-9.6877" y="3.4137" z="1.1143" radius="0.2910"/>
+      <atom element="C" x="-9.3574" y="1.4428" z="1.0206" radius="0.2910"/>
+      <atom element="C" x="-11.2595" y="2.5138" z="0.2647" radius="0.2910"/>
+      <atom element="C" x="-10.5044" y="1.2128" z="1.8159" radius="0.2910"/>
+      <atom element="C" x="-9.1952" y="2.8334" z="0.8179" radius="0.2910"/>
+      <atom element="C" x="-10.8346" y="3.1836" z="1.9097" radius="0.2910"/>
+      <atom element="C" x="-10.7671" y="1.9336" z="-0.0317" radius="0.2910"/>
+      <atom element="C" x="-9.3912" y="2.0678" z="1.9913" radius="0.2910"/>
+      <atom element="C" x="-11.2933" y="3.1388" z="1.2354" radius="0.2910"/>
+      <atom element="C" x="-10.9630" y="1.1681" z="1.1416" radius="0.2910"/>
+      <atom element="C" x="-9.6538" y="2.7886" z="0.1436" radius="0.2910"/>
+      <atom element="C" x="-9.7017" y="1.3502" z="1.7553" radius="0.2910"/>
+      <atom element="C" x="-11.6036" y="2.4212" z="0.9995" radius="0.2910"/>
+      <atom element="C" x="-10.0318" y="3.3210" z="1.8492" radius="0.2910"/>
+      <atom element="C" x="-9.9642" y="2.0709" z="-0.0922" radius="0.2910"/>
+      <atom element="Si" x="-11.9648" y="2.6411" z="2.2196" radius="1.0000"/>
+      <atom element="Si" x="-8.7535" y="3.1906" z="1.9777" radius="1.0000"/>
+      <atom element="Si" x="-10.6555" y="4.2617" z="1.2217" radius="1.0000"/>
+      <atom element="Si" x="-9.9951" y="0.3201" z="1.0342" radius="1.0000"/>
+      <atom element="Si" x="-11.8971" y="1.3911" z="0.2782" radius="1.0000"/>
+      <atom element="Si" x="-8.6859" y="1.9406" z="0.0363" radius="1.0000"/>
+      <atom element="Si" x="-10.5879" y="3.0116" z="-0.7196" radius="1.0000"/>
+      <atom element="Si" x="-10.3254" y="2.2908" z="1.1280" radius="1.0000"/>
+    </cell>
+    <cell system="c" lattice="F" a="2.8300" x="1.0362" y="-2.4694" z="2.2315"
+    e1="60.68" e2="226.78" e3="293.68">
+      <atom element="Si" x="1.0362" y="-2.4694" z="2.2315"/>
+      <atom element="Si" x="-1.2336" y="-1.1001" z="1.2406"/>
+      <atom element="Si" x="0.9955" y="-4.1724" z="-0.0284"/>
+      <atom element="Si" x="-1.2743" y="-2.8032" z="-1.0193"/>
+      <atom element="Si" x="-2.9232" y="-2.8985" z="2.6262"/>
+      <atom element="Si" x="-0.6942" y="-5.9706" z="1.3571"/>
+      <atom element="Si" x="-2.9640" y="-4.6014" z="0.3662"/>
+      <atom element="Si" x="0.1711" y="-4.2200" z="1.7942"/>
+      <atom element="Si" x="-2.0988" y="-2.8508" z="0.8035"/>
+      <atom element="Si" x="-0.9843" y="-4.3869" z="0.1690"/>
+      <atom element="Si" x="-0.1191" y="-2.6363" z="0.6061"/>
+      <atom element="Si" x="-1.8087" y="-4.4345" z="1.9917"/>
+      <atom element="C" x="-0.0987" y="-1.7848" z="1.7360" radius="0.4140"/>
+      <atom element="C" x="-0.1394" y="-3.4877" z="-0.5239" radius="0.4140"/>
+      <atom element="C" x="-1.7883" y="-3.5832" z="3.1216" radius="0.4140"/>
+      <atom element="C" x="-1.8292" y="-5.2860" z="0.8619" radius="0.4140"/>
+      <atom element="C" x="-0.9639" y="-3.5355" z="1.2989" radius="0.4140"/>
+      <atom element="C" x="0.1915" y="-3.3685" z="2.9244" radius="0.4140"/>
+      <atom element="C" x="-2.0784" y="-1.9994" z="1.9334" radius="0.4140"/>
+      <atom element="C" x="0.1507" y="-5.0716" z="0.6644" radius="0.4140"/>
+      <atom element="C" x="-2.1192" y="-3.7022" z="-0.3266" radius="0.4140"/>
+      <atom element="C" x="1.0159" y="-3.3209" z="1.1015" radius="0.4140"/>
+      <atom element="C" x="-1.2540" y="-1.9517" z="0.1107" radius="0.4140"/>
+      <atom element="C" x="-0.6737" y="-5.1193" z="2.4871" radius="0.4140"/>
+      <atom element="C" x="-2.9436" y="-3.7500" z="1.4963" radius="0.4140"/>
+    </cell>
+    <cell system="c" lattice="F" a="2.8200" x="-1.0394" y="3.1507" z="-0.8549"
+    e1="60.32" e2="232.94" e3="109.74">
+      <atom element="C" x="-0.8001" y="2.7619" z="0.2775" radius="0.2250"/>
+      <atom element="C" x="-1.5225" y="2.5957" z="2.1287" radius="0.2250"/>
+      <atom element="C" x="-0.3373" y="1.1726" z="1.3895" radius="0.2250"/>
+      <atom element="C" x="0.4171" y="2.9614" z="1.8443" radius="0.2250"/>
+      <atom element="C" x="-0.3213" y="1.9840" z="2.5425" radius="0.2250"/>
+      <atom element="C" x="0.4011" y="2.1501" z="0.6913" radius="0.2250"/>
+      <atom element="C" x="-0.7842" y="3.5732" z="1.4305" radius="0.2250"/>
+      <atom element="C" x="-1.5385" y="1.7843" z="0.9757" radius="0.2250"/>
+      <atom element="Si" x="-1.0394" y="3.1507" z="-0.8549"/>
+      <atom element="Si" x="1.3627" y="1.9273" z="-0.0273"/>
+      <atom element="Si" x="-1.0075" y="4.7735" z="1.4511"/>
+      <atom element="Si" x="1.3947" y="3.5501" z="2.2787"/>
+      <atom element="Si" x="-2.5161" y="1.1956" z="0.5414"/>
+      <atom element="Si" x="-0.1140" y="-0.0278" z="1.3690"/>
+      <atom element="Si" x="-2.4842" y="2.8185" z="2.8474"/>
+      <atom element="Si" x="-1.7618" y="2.9846" z="0.9963"/>
+      <atom element="Si" x="0.6405" y="1.7613" z="1.8239"/>
+      <atom element="Si" x="-0.5767" y="1.5615" z="0.2570"/>
+      <atom element="Si" x="0.1777" y="3.3505" z="0.7119"/>
+      <atom element="Si" x="-1.2990" y="1.3954" z="2.1082"/>
+    </cell>
+    <cell system="h" lattice="P" a="2.0000" c="3.2660" x="10.9264" y="-3.3354"
+    z="-0.8232" e1="32.06" e2="69.77" e3="95.16">
+      <atom element="Si" x="10.1466" y="-2.7244" z="0.9134" radius="1.0000"/>
+      <atom element="Si" x="10.7483" y="-4.4228" z="1.7812" radius="1.0000"/>
+      <atom element="Si" x="8.8266" y="-3.8772" z="1.8769" radius="1.0000"/>
+      <atom element="C" x="10.8370" y="-3.8782" z="0.4785" radius="0.4140"/>
+      <atom element="C" x="8.9152" y="-3.3327" z="0.5741" radius="0.4140"/>
+      <atom element="C" x="9.5169" y="-5.0312" z="1.4421" radius="0.4140"/>
+      <atom element="C" x="11.1368" y="-3.0649" z="1.8624" radius="0.4140"/>
+      <atom element="C" x="9.2151" y="-2.5194" z="1.9581" radius="0.4140"/>
+      <atom element="C" x="9.8167" y="-4.2179" z="2.8259" radius="0.4140"/>
+      <atom element="Si" x="10.9264" y="-3.3354" z="-0.8232" radius="1.0000"/>
+      <atom element="Si" x="9.0045" y="-2.7899" z="-0.7276" radius="1.0000"/>
+      <atom element="Si" x="11.5280" y="-5.0339" z="0.0446" radius="1.0000"/>
+      <atom element="Si" x="9.6063" y="-4.4884" z="0.1402" radius="1.0000"/>
+      <atom element="Si" x="7.6846" y="-3.9428" z="0.2359" radius="1.0000"/>
+      <atom element="Si" x="10.2080" y="-6.1868" z="1.0081" radius="1.0000"/>
+      <atom element="Si" x="8.2863" y="-5.6412" z="1.1037" radius="1.0000"/>
+      <atom element="Si" x="11.5259" y="-1.7087" z="1.9446" radius="1.0000"/>
+      <atom element="Si" x="9.6041" y="-1.1632" z="2.0403" radius="1.0000"/>
+      <atom element="Si" x="12.1276" y="-3.4072" z="2.8124" radius="1.0000"/>
+      <atom element="Si" x="8.2841" y="-2.3162" z="3.0036" radius="1.0000"/>
+    </cell>
+    <cell system="h" lattice="P" a="2.0000" c="3.2660" x="10.6669" y="2.6392"
+    z="-0.7599" e1="36.98" e2="71.56" e3="98.09">
+      <atom element="Si" x="10.6669" y="2.6392" z="-0.7599" radius="1.0000"/>
+      <atom element="Si" x="8.7173" y="3.0523" z="-0.5904" radius="1.0000"/>
+      <atom element="Si" x="11.4398" y="1.0562" z="0.1870" radius="1.0000"/>
+      <atom element="Si" x="9.4903" y="1.4691" z="0.3564" radius="1.0000"/>
+      <atom element="Si" x="7.5407" y="1.8821" z="0.5260" radius="1.0000"/>
+      <atom element="Si" x="10.2631" y="-0.1140" z="1.3033" radius="1.0000"/>
+      <atom element="Si" x="8.3136" y="0.2989" z="1.4727" radius="1.0000"/>
+      <atom element="Si" x="11.2884" y="4.5031" z="1.8491" radius="1.0000"/>
+      <atom element="Si" x="9.3389" y="4.9161" z="2.0185" radius="1.0000"/>
+      <atom element="Si" x="12.0613" y="2.9200" z="2.7959" radius="1.0000"/>
+      <atom element="Si" x="8.1622" y="3.7458" z="3.1349" radius="1.0000"/>
+      <atom element="Si" x="9.9367" y="3.3190" z="0.9728" radius="1.0000"/>
+      <atom element="Si" x="10.7095" y="1.7359" z="1.9196" radius="1.0000"/>
+      <atom element="Si" x="8.7600" y="2.1489" z="2.0892" radius="1.0000"/>
+      <atom element="C" x="9.7035" y="2.6202" z="-0.0056" radius="0.2250"/>
+      <atom element="C" x="10.4764" y="1.0371" z="0.9412" radius="0.2250"/>
+      <atom element="C" x="8.5268" y="1.4500" z="1.1108" radius="0.2250"/>
+      <atom element="C" x="10.1698" y="4.0180" z="1.9512" radius="0.2250"/>
+      <atom element="C" x="10.9427" y="2.4349" z="2.8980" radius="0.2250"/>
+      <atom element="C" x="8.9930" y="2.8478" z="3.0674" radius="0.2250"/>
+      <atom element="C" x="10.9000" y="3.3382" z="0.2185" radius="0.2250"/>
+      <atom element="C" x="8.9504" y="3.7512" z="0.3879" radius="0.2250"/>
+      <atom element="C" x="11.6728" y="1.7551" z="1.1653" radius="0.2250"/>
+      <atom element="C" x="9.7233" y="2.1680" z="1.3348" radius="0.2250"/>
+      <atom element="C" x="7.7737" y="2.5809" z="1.5043" radius="0.2250"/>
+      <atom element="C" x="10.4962" y="0.5851" z="2.2816" radius="0.2250"/>
+      <atom element="C" x="8.5466" y="0.9980" z="2.4511" radius="0.2250"/>
+      <atom element="C" x="11.0554" y="3.8042" z="0.8707" radius="0.2250"/>
+      <atom element="C" x="9.1058" y="4.2171" z="1.0402" radius="0.2250"/>
+      <atom element="C" x="11.8283" y="2.2211" z="1.8176" radius="0.2250"/>
+      <atom element="C" x="9.8787" y="2.6341" z="1.9870" radius="0.2250"/>
+      <atom element="C" x="7.9292" y="3.0470" z="2.1566" radius="0.2250"/>
+      <atom element="C" x="10.6515" y="1.0509" z="2.9339" radius="0.2250"/>
+      <atom element="C" x="8.7020" y="1.4639" z="3.1033" radius="0.2250"/>
+    </cell>
+    <text contents="BCC" style="solid" x="-11.4934" y="5.8064" z="-0.0306"
+    e1="0.15" e2="179.45" e3="180.56"/>
+    <text contents="CFC" style="solid" x="-1.7721" y="6.0055" z="0.0000"/>
+    <text contents="HCP" style="solid" x="9.0673" y="5.9461" z="0.0258"
+    e1="0.15" e2="179.45" e3="180.56"/>
+    <text contents="Oct" style="solid" x="-15.0044" y="-3.4833" z="0.0000"/>
+    <text contents="Tet" style="solid" x="-14.7786" y="2.4577" z="0.0000"/>
+  </layer>
+</gml>

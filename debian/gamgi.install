@@ -1,0 +1,3 @@
+src/gamgi.real usr/lib/gamgi/
+debian/gamgi.desktop usr/share/applications/
+debian/gamgi.xpm usr/share/pixmaps/

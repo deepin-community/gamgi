@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE gml SYSTEM "http://www.gamgi.org/dtd/gamgi.dtd">
+<gml>
+  <molecule name="Cyclohexane">
+    <atom id="1" element="C" x="1.4522" y="0.1344" z="0.9100"/>
+    <atom id="2" element="C" x="0.9640" y="1.3186" z="0.0551"/>
+    <atom id="3" element="C" x="-0.3413" y="0.9294" z="-0.6633"/>
+    <atom id="4" element="C" x="-1.4154" y="0.5729" z="0.3811"/>
+    <atom id="5" element="C" x="-0.9272" y="-0.6113" z="1.2360"/>
+    <atom id="6" element="C" x="0.3781" y="-0.2221" z="1.9544"/>
+    <atom id="7" element="H" x="2.2536" y="0.6366" z="1.2351"/>
+    <atom id="8" element="H" x="1.4584" y="-0.6969" z="0.3544"/>
+    <atom id="9" element="H" x="1.6594" y="1.7500" z="-0.5196"/>
+    <atom id="10" element="H" x="0.7971" y="2.1089" z="0.6447"/>
+    <atom id="11" element="H" x="-0.1744" y="0.1391" z="-1.2529"/>
+    <atom id="12" element="H" x="-0.6584" y="1.6983" z="-1.2184"/>
+    <atom id="13" element="H" x="-2.2630" y="0.3201" z="-0.0855"/>
+    <atom id="14" element="H" x="-1.5823" y="1.3631" z="0.9707"/>
+    <atom id="15" element="H" x="-0.7603" y="-1.4016" z="0.6464"/>
+    <atom id="16" element="H" x="-1.6247" y="-0.8428" z="1.9141"/>
+    <atom id="17" element="H" x="0.2112" y="0.5682" z="2.5440"/>
+    <atom id="18" element="H" x="0.6952" y="-0.9910" z="2.5095"/>
+    <bond parent1="1" parent2="2"/>
+    <bond parent1="1" parent2="6"/>
+    <bond parent1="1" parent2="7"/>
+    <bond parent1="1" parent2="8"/>
+    <bond parent1="2" parent2="3"/>
+    <bond parent1="2" parent2="10"/>
+    <bond parent1="2" parent2="9"/>
+    <bond parent1="3" parent2="4"/>
+    <bond parent1="3" parent2="11"/>
+    <bond parent1="3" parent2="12"/>
+    <bond parent1="4" parent2="5"/>
+    <bond parent1="4" parent2="13"/>
+    <bond parent1="4" parent2="14"/>
+    <bond parent1="5" parent2="6"/>
+    <bond parent1="5" parent2="15"/>
+    <bond parent1="5" parent2="16"/>
+    <bond parent1="6" parent2="17"/>
+    <bond parent1="6" parent2="18"/>
+  </molecule>
+</gml>

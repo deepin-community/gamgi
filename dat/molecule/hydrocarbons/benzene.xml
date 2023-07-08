@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE gml SYSTEM "http://www.gamgi.org/dtd/gamgi.dtd">
+<gml>
+  <molecule name="benzene">
+    <atom id="1" element="C" x="-1.3393" y="1.8497" z="-0.4827"/>
+    <atom id="2" element="C" x="0.0137" y="1.8687" z="-0.1237"/>
+    <atom id="3" element="C" x="0.7527" y="0.6797" z="-0.1167"/>
+    <atom id="4" element="C" x="0.1387" y="-0.5283" z="-0.4687"/>
+    <atom id="5" element="C" x="-1.2143" y="-0.5473" z="-0.8267"/>
+    <atom id="6" element="C" x="-1.9533" y="0.6417" z="-0.8337"/>
+    <atom id="7" element="H" x="-1.9093" y="2.7667" z="-0.4877"/>
+    <atom id="8" element="H" x="0.4877" y="2.8007" z="0.1473"/>
+    <atom id="9" element="H" x="1.7967" y="0.6947" z="0.1593"/>
+    <atom id="10" element="H" x="0.7087" y="-1.4453" z="-0.4627"/>
+    <atom id="11" element="H" x="-1.6883" y="-1.4793" z="-1.0977"/>
+    <atom id="12" element="H" x="-2.9973" y="0.6267" z="-1.1107"/>
+    <bond parent1="1" parent2="2" order="1.50"/>
+    <bond parent1="1" parent2="6" order="1.50"/>
+    <bond parent1="1" parent2="7" order="1.50"/>
+    <bond parent1="2" parent2="3" order="1.50"/>
+    <bond parent1="2" parent2="8" order="1.50"/>
+    <bond parent1="3" parent2="4" order="1.50"/>
+    <bond parent1="3" parent2="9"/>
+    <bond parent1="4" parent2="5"/>
+    <bond parent1="4" parent2="10"/>
+    <bond parent1="5" parent2="6"/>
+    <bond parent1="5" parent2="11"/>
+    <bond parent1="6" parent2="12"/>
+  </molecule>
+</gml>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Tutorials: Directional and positional lights</title>
+<link rel="icon" type="image/png" href="../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Directional and positional lights</h1>
+
+<div id="notebook">
+<ul>
+<li><span>Page 1</span></li>
+<li><a href="lights_page2.html">Page 2</a></li>
+</ul>
+</div>
+
+<div class="contents">
+            
+We demonstrate here the three types of lights that GAMGI 
+(and OpenGL) supports, plus other illumination issues.
+
+First we create an atom with a large curved surface, that we will
+use as a target, then we create the various lights and point them
+to the surface.
+
+<h3>Directional light</h3>
+
+<ol>
+<li>
+Press <b>Atom->Create</b> and set <b>Element</b> to <b>O</b>, 
+<b>Position</b> to <b>(0.0, 0.0, 0.0)</b>, <b>Style</b> to 
+<b>Solid</b> and <b>Scale</b> to <b>15.0</b>.
+After pressing <b>Ok</b>, a large sphere representing the new atom 
+becomes visible, seen as a circle because tridimensional effects cannot 
+be seen in the absence of diffuse and specular light components.
+</li>
+
+<li>
+Press <b>Light->Create</b> and set color <b>Ambient</b> (<b>Color</b> page)
+to <b>(0.0, 0.0, 0.0)</b>, and <b>Diffuse</b> to <b>(0.8, 0.8, 0.8)</b>. 
+After pressing <b>Ok</b>, a default <b>Directional</b> light is created, 
+illuminating the atom sphere, whose shape is now clearly visible.
+</li>
+
+<li>
+To select the light, either: 1) press the mouse middle button over the top 
+menu where it says <b>Light</b>, and then press the mouse over the drawing 
+area; or 2) press <b>Light->Select</b>, to open the dialog to select lights, 
+and then press the mouse over the drawing area. In both cases, a menu pops up, 
+showing one menu item, for the only light available. After choosing this light, 
+it becomes the selected object.
+</li>
+
+<li>
+Press the left button and dragg the mouse to rotate the light direction,
+exactly as if rotating a molecule.
+</li>
+</ol>
+
+<h3>Positional light</h3>
+
+<ol>
+<li>
+Press <b>Light->Modify</b> and press the mouse over the drawing area. A menu 
+pops up, showing one menu item, for the only light available. After choosing 
+this light, confirm its properties and then set <b>Light</b> to <b>Positional</b>.
+After pressing <b>Ok</b>, the light becomes positional, with the new parameters.
+</li>
+
+<li>
+Press the middle button and dragg the mouse to move the light position,
+exactly as if moving a molecule.
+</li>
+</ol>
+
+<h3>Spot light</h3>
+
+<ol>
+<li>
+Press <b>Light->Modify</b> and press the mouse over the graphic area. 
+A menu pops up, showing one menu item, for the only light available. 
+After choosing this light, confirm its properties, in particular 
+the new light position, that was changed with the mouse.
+</li>
+
+<li>
+Set <b>Light</b> to <b>Spot</b> and <b>Angle</b> to <b>10.0</b>.
+After pressing <b>Ok</b>, the light becomes a spot, with the new 
+parameters. Because the beam angle cutoff is only 10 degrees and 
+the light is only 10 length units away, only the central part of 
+the atom sphere is illuminated (setting angle to 1.0 emulates a laser).
+</li>
+
+<li>
+Press <b>Light->Create</b> and set color <b>Ambient</b> to <b>(0.4, 0.4, 0.4)</b> 
+and <b>Diffuse</b> to <b>(0.0, 0.0, 0.0)</b>. After pressing <b>Ok</b>, 
+a second light is created, and its weak ambient light illuminates the 
+whole atom as a halo. The selected object is still the first light.
+</li>
+
+<li>
+Press the left button and dragg the mouse to rotate the light direction,
+exactly as if rotating a molecule. Press the middle button and dragg the 
+mouse to move the light position, exactly as if moving a molecule. Press
+the right button and dragg the mouse to increase or decrease the angle
+cutoff, exactly as if scaling a molecule.
+</li>
+</ol>
+
+</div>
+
+<div id="bottom">
+<a href="../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

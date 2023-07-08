@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Interfaces: Light Modify</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Light Modify</h1>
+
+<div id="notebook">
+<ul>
+<li><a href="modify_geometry.html">Geometry</a></li>
+<li><span>Color</span></li>
+<li><a href="modify_attenuation.html">Attenuation</a></li>
+</ul>
+</div>
+
+<div class="contents">
+
+Change here the color components for a single light or a list of lights.
+
+<p/>
+
+To modify a light, click over the graphic area to open a menu and choose a light,
+or write its identification (name and number) on the <b>Light</b> entry. To modify
+a list of lights, press the button <b>List</b> (after creating the list of lights 
+with <b>Light->Select</b>). Parameters for empty entries or <b>Local</b> choices
+remain unchanged.
+
+<p/>
+
+To change a light name write the new name in the <b>Light</b> entry,
+followed by the light number (GAMGI needs the number to identify the light).
+To change the name for a list of lights, press <b>List</b> first
+and then write the new common name in the <b>Name</b> entry.
+
+<h3>Ambient</h3>
+
+These <b>R</b>, <b>G</b>, <b>B</b> entries change the ambient color
+of the new light. This can vary between black (0.0, 0.0, 0.0) and 
+white (1.0, 1.0, 1.0). 
+
+<p/>
+
+This component emulates light scattered so many times, that it does
+not depend of the radiation direction, or the materials surface.
+
+Wired objects cannot reflect diffuse or specular light, so they need 
+some ambient light to be visible.
+
+<h3>Diffuse</h3>
+
+These <b>R</b>, <b>G</b>, <b>B</b> entries change the diffuse color
+of the new light. This can vary between black (0.0, 0.0, 0.0) and 
+white (1.0, 1.0, 1.0). 
+
+<p/>
+
+This component emulates light equally reflected in all
+directions (as the light reflected by a hammered glass).
+
+Solid objects need some diffuse light to show its tridimensional 
+shape.
+
+<h3>Specular</h3>
+
+These <b>R</b>, <b>G</b>, <b>B</b> entries change the specular color
+of the new light. This can vary between black (0.0, 0.0, 0.0) and 
+white (1.0, 1.0, 1.0). 
+
+<p/>
+
+This component emulates light reflected mainly along
+specific directions (as the light reflected by a metal).
+
+Solid objects need some specular light to show brightness effects.
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

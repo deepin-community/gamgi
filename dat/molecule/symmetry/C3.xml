@@ -1,0 +1,11 @@
+<gml>
+<molecule name="C3">
+<atom element="C" x="0" y="0" z="0"/>
+<atom element="H" x="1" y="0" z="1"/>
+<atom element="He" x="0.995037" y="0.099504" z="1"/>
+<atom element="H" x="-0.500000" y="-0.866025" z="1"/>
+<atom element="He" x="-0.411346" y="-0.911479" z="1"/>
+<atom element="H" x="-0.500000" y="0.866025" z="1"/>
+<atom element="He" x="-0.583691" y="0.811976" z="1"/>
+</molecule>
+</gml>

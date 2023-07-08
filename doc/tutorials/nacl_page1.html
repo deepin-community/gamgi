@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Tutorials: NaCl crystalline structure</title>
+<link rel="icon" type="image/png" href="../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>NaCl crystalline structure</h1>
+
+<div id="notebook">
+<ul>
+<li><span>Page 1</span></li>
+</ul>
+</div>
+
+<div class="contents">
+
+The NaCl rocksalt structure is widely observed in ionic crystals,
+with equal number of cations and anions, when the cation is
+significantly smaller than the anion: NaCl, KCl, LiF, MgO,
+CaO, SrO, NiO, CoO, MnO and PbO.
+
+<p/>
+
+To build this structure, first we create the cell with the
+observed lattice parameters, then the Na, Cl atoms used as models, 
+with the observed ionic radius, and then link the cell with the
+atoms.
+
+<ol>
+<li>
+Press <b>Cell->Create</b> and set <b>System</b> to <b>c</b>, 
+<b>Lattice</b> to <b>F</b> (Face-Centered Cubic) and <b>a</b> 
+to <b>5.660</b> (so the ions will be in contact along &lt;100&gt; 
+directions). Press <b>Ok</b> to create the cell.
+</li>
+
+<li>
+Select <b>Atom->Create</b> and set <b>Style</b> to <b>Solid</b>,
+<b>Size</b> to <b>1.0</b> and <b>Variancy</b> to <b>1.0</b>.
+
+Set <b>Element</b> to <b>Na</b>, <b>Radius</b> to <b>1.020</b>
+(ionic radius for Na+) and press the mouse over the graphic
+area. A Na atom is created where the mouse was pressed.
+</li>
+
+<li>
+Set <b>Element</b> to <b>Cl</b>, <b>Radius</b> to <b>1.810</b>
+(ionic radius for Cl-) and press the mouse over the graphic
+area. A Cl atom is created where the mouse was pressed.
+</li>
+
+<li>
+Press <b>Cell->Link</b> and select the <b>Crystal</b> link 
+method. Press the mouse over the cell, and then over the Na atom,
+to identify the objects to link. Set the <b>x</b>, <b>y</b>, <b>z</b> 
+coordinates (<b>Position</b> page) to <b>0.5</b>, <b>0.0</b>, 
+<b>0.0</b> and press <b>Ok</b>. 13 Na atoms are now visible, 
+12 in the edges and 1 in the center, corresponding to a total 
+of 4 Na atoms inside the cell.
+</li>
+
+<li>
+Repeat the link procedure above, but this time pressing the mouse 
+over the Cl atom, and setting the <b>x</b>, <b>y</b>, <b>z</b> 
+coordinates to <b>0.0</b>, <b>0.0</b>, <b>0.0</b>. 14 Cl atoms are 
+now visible, 8 in the vertices and 6 in the face, corresponding to 
+a total of 4 Cl atoms inside the cell.
+</li>
+
+<li>
+Select <b>Light->Create</b> and press <b>Ok</b>, to add a light
+and give atoms a three dimensional look.
+</li>
+
+<li>
+Remove the Na,Cl atoms used as models during the building process,
+pressing <b>Atom->Remove</b> and clicking the mouse over the two atoms.
+</li>
+
+<li>Rotate,move,scale the NaCl cell with the mouse. Press
+<b>Atom->Measure</b> to determine lengths and angles between atoms.
+</li>
+
+<li>
+Repeat the whole procedure, this time setting the cell type in
+<b>Cell->Create</b> (<b>Type</b> page) to: 1) <b>Primitive</b>;
+and 2) <b>Wigner-Seitz</b>.
+</li>
+</ol>
+
+</div>
+
+<div id="bottom">
+<a href="../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Formats: PPM</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/board.css"/>
+</head>
+
+<body>
+
+<div class="board">
+<div>Formats</div><div>PPM</div>
+</div>
+
+<div class="contents">
+
+GAMGI uses the file extension to automatically determine the file format. 
+To export a standard .ppm file of the whole graphic area of a GAMGI window, 
+just give the filename the extension <b>.ppm</b>.
+These files start with an header:
+
+<p/>
+
+<pre><b>
+P3
+#Made with GAMGI 0.12.8
+750 402
+255
+</b></pre>
+
+where the first line indicates the type of file, the second line 
+is a comment, the third line is the number of columns (750) and lines (402)
+and the fourth line is the maximum color value (255).
+
+<p/>
+
+After the header, the number of lines and columns in the file is the 
+same as in the graphic area (from top to bottom), each position describing 
+a pixel as a triplet of rgb colors, ranging from <b>0</b> to <b>255</b> 
+(the maximum allowed value).
+
+<p/>
+
+This format produces notoriously large files, although very simple,
+without loss of information and well supported by most graphics 
+applications, such as the GIMP and XV.
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

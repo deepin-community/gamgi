@@ -1,0 +1,29 @@
+Superconductor (Tc = 38K): (La,Ba)2CuO4
+Structure: 0201
+
+Space group: 139
+
+Lattice parameters:
+3.7873 13.2883
+
+Wyckoff positions:
+La,Ba 2e, z = 0.3606
+Cu 1a
+O 2c
+O 2e, z = 0.1828
+
+1. with Cell (s01a.xml):
+Bond: Color 0.5,0.5,0.5, Scale 0.4
+
+2. with Polytopes (s01b.xml):
+Cells: 2 x 2 x 2
+Neighbours: O
+Number: 6
+
+References:
+H. Shaked, P.M. Keane, J.C. Rodriguez, F.F. Owen, R.L. Hitterman,
+J.D. Jorgensen, Crystal structures of the High-Tc Superconducting
+Copper-Oxides, Physica C, Elsevier Science, Amsterdam, 1994
+
+J.D. Jorgensen, H.-B. Schuttler, D.G. Hinks, D.W. Capone II, K. Zhang,
+M.B. Brodsky, and D.J. Scalapino, Phys. Rev. Lett. 58, 1024 (1987)

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Interfaces: Bond Create </title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Bond Create</h1>
+
+<div id="notebook">
+<ul>
+<li><a href="create_type.html">Type</a></li>
+<li><span>Length</span></li>
+<li><a href="create_property.html">Property</a></li>
+<li><a href="create_view.html">View</a></li>
+</ul>
+</div>
+
+<div class="contents">
+
+Set here the length and element criteria used in <b>Length</b>
+and <b>Delaunay</b> models to create new bonds.
+
+<h3>Element, Element</h3>
+
+When the <b>Element</b> entries are empty (the default), GAMGI attempts 
+to create bonds for all pairs of atoms. When the <b>Element</b> entries
+are occupied with valid element names, only bonds between atoms of these 
+elements are considered.
+
+<p/>
+
+When both elements are recognized, minimum and maximum bond length 
+limits for this element pair - calculated according to the rules 
+described below - are automatically writen in the <b>Minimum</b>, 
+<b>Maximum</b> entries, otherwise these entries are left empty.
+
+<p/>
+
+When pressing <b>Ok</b>, the <b>Element</b> entries must be 
+both empty or valid, otherwise an error dialog is shown. 
+
+<h3>Minimum, Maximum</h3>
+
+When the <b>Minimum</b>, <b>Maximum</b> entries are empty (the default), 
+GAMGI attempts to use its own data to set a valid range of bond lengths,
+for each element pair.
+
+<p/>
+
+For each atom pair, GAMGI checks whether specific minimum and maximum
+bond length limits have been configured. If the atoms distance is in
+the configured interval, a new bond is created. To configure bond 
+length limits for specific element pairs, select <b>Bond->Config</b>.
+
+<p/>
+
+If no bond length interval has been configured for this element pair,
+GAMGI attempts to calculate automatic minimum and maximum limits, summing
+the two atom radius and multiplying by lower and upper factors (currently
+0.80 and 1.10 by default). If the atoms distance is in the calculated
+interval, a new bond is created. To configure these lower and upper
+factors, valid for all element pairs, select <b>Bond->Config</b>.
+
+<p/>
+
+If no radius is defined for at least one of the elements, then no bond
+is created. To configure the atom radius, for specific elements, select
+<b>Atom->Config</b>.
+
+<p/>
+
+When the <b>Minimum</b>, <b>Maximum</b> entries are occupied with 
+valid length values, only bonds between these limits will be considered,
+for all element pairs.
+
+<p/>
+
+When pressing <b>Ok</b>, the <b>Minimum</b>, <b>Maximum</b> entries must 
+be both empty or valid, otherwise an error is shown. The <b>Minimum</b> 
+cannot excede the <b>Maximum</b> length, otherwise an error is shown.
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

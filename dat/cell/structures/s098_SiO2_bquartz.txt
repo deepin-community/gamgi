@@ -1,0 +1,41 @@
+Structure 98
+Prototype: SiO2 beta-Quartz
+StrukturBericht / Pearson: - / hP9
+
+Lattice parameters:
+SiO2
+4.9965 5.4546
+
+Radius:
+I: 1.3330 (half-distance)
+Cd: 1.4895 (half-distance)
+
+1. Building with space group (s098.xml):
+Group: 180
+
+Wyckoff positions:
+Si 6g, x = 0.5
+O 12k, x = 0.4147, y = 0.2078, z = 0.1666
+
+Cells: 3 x 3 x 1
+Cutoff: Nodes
+Polytopes: Neighbours 6
+
+View:
+I,Cd: style solid, size 1.0, variancy 1.0, scale 0.25
+
+ii) b-quartz
+
+Structure Hexagonal
+Space Group: P6222 (No. 180)
+a=4.9965 ~E c=5.4546 ~E
+a=b=90.0, g=120.0
+Z=3
+
+Atomic Positional Parameters
+Si 6g 0.5000 0.0000 0.0000
+O 12k 0.4147 0.2078 0.1666
+
+References
+Y le Page and G Donnay (1976) Acta Crystallographica, B, 32, 2456.
+

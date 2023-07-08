@@ -1,0 +1,79 @@
+##########################################
+#
+# $GAMGI/src/make_paths
+#
+# Copyright (C) 2004 Carlos Pereira
+#
+# Distributed under the terms of the GNU
+# General Public License: $GAMGI/LICENSE
+#
+
+
+#================================ header paths =================================
+
+PATH_GAMGI_H = -I$(SRC)engine -I$(SRC)gtk/gamgi -I$(SRC)gtk/file \
+	-I$(SRC)gtk/window -I$(SRC)gtk/layer -I$(SRC)gtk/light \
+	-I$(SRC)gtk/assembly -I$(SRC)gtk/cell -I$(SRC)gtk/cluster \
+	-I$(SRC)gtk/molecule -I$(SRC)gtk/group -I$(SRC)gtk/plane \
+	-I$(SRC)gtk/direction -I$(SRC)gtk/atom -I$(SRC)gtk/bond \
+	-I$(SRC)gtk/orbital -I$(SRC)gtk/text -I$(SRC)gtk/help \
+	-I$(SRC)gtk -I$(SRC)mesa -I$(SRC)math -I$(SRC)chem \
+	-I$(SRC)phys -I$(SRC)io -I$(SRC)expat -I$(SRC)global
+
+#================================ file paths ===================================
+
+vpath gamgi_engine%        $(SRC)engine
+vpath gamgi_gtk_gamgi%     $(SRC)gtk/gamgi
+vpath gamgi_gtk_file%      $(SRC)gtk/file
+vpath gamgi_gtk_window%    $(SRC)gtk/window
+vpath gamgi_gtk_layer%     $(SRC)gtk/layer
+vpath gamgi_gtk_light%     $(SRC)gtk/light
+vpath gamgi_gtk_assembly%  $(SRC)gtk/assembly
+vpath gamgi_gtk_cell%      $(SRC)gtk/cell
+vpath gamgi_gtk_cluster%   $(SRC)gtk/cluster
+vpath gamgi_gtk_molecule%  $(SRC)gtk/molecule
+vpath gamgi_gtk_group%     $(SRC)gtk/group
+vpath gamgi_gtk_plane%     $(SRC)gtk/plane
+vpath gamgi_gtk_direction% $(SRC)gtk/direction
+vpath gamgi_gtk_atom%      $(SRC)gtk/atom
+vpath gamgi_gtk_bond%      $(SRC)gtk/bond
+vpath gamgi_gtk_orbital%   $(SRC)gtk/orbital
+vpath gamgi_gtk_text%      $(SRC)gtk/text
+vpath gamgi_gtk_help%      $(SRC)gtk/help
+vpath gamgi_gtk%           $(SRC)gtk
+vpath gamgi_mesa%          $(SRC)mesa
+vpath gamgi_math%          $(SRC)math
+vpath gamgi_chem%          $(SRC)chem
+vpath gamgi_phys%          $(SRC)phys
+vpath gamgi_io%            $(SRC)io
+vpath gamgi_expat%         $(SRC)expat
+vpath gamgi_global%        $(SRC)global
+
+#============================= makefile paths ==================================
+
+include $(SRC)engine/makefile
+include $(SRC)gtk/gamgi/makefile
+include $(SRC)gtk/file/makefile
+include $(SRC)gtk/window/makefile
+include $(SRC)gtk/layer/makefile
+include $(SRC)gtk/light/makefile
+include $(SRC)gtk/assembly/makefile
+include $(SRC)gtk/cell/makefile
+include $(SRC)gtk/cluster/makefile
+include $(SRC)gtk/molecule/makefile
+include $(SRC)gtk/group/makefile
+include $(SRC)gtk/plane/makefile
+include $(SRC)gtk/direction/makefile
+include $(SRC)gtk/atom/makefile
+include $(SRC)gtk/bond/makefile
+include $(SRC)gtk/orbital/makefile
+include $(SRC)gtk/text/makefile
+include $(SRC)gtk/help/makefile
+include $(SRC)gtk/makefile
+include $(SRC)mesa/makefile
+include $(SRC)math/makefile
+include $(SRC)chem/makefile
+include $(SRC)phys/makefile
+include $(SRC)io/makefile
+include $(SRC)expat/makefile
+include $(SRC)global/makefile

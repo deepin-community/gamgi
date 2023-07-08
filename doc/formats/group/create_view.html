@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Formats: Group Create</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Group Create</h1>
+
+<div id="notebook">
+<ul>
+<li><a href="create_type.html">Type</a></li>
+<li><a href="create_scope.html">Scope</a></li>
+<li><a href="create_position.html">Position</a></li>
+<li><span>View</span></li>
+</ul>
+</div>
+
+<div class="contents">
+
+<h3>faces</h3>
+
+Controls the visual representation of a <b>polytope</b> group. When
+<b>faces</b> is <b>yes</b> (the default), the polyhedron is represented
+by solid polygons, that users can see from the outside or from the inside.
+When <b>faces</b> is <b>no</b>, the polyhedron is represented by wired
+lines connecting the vertices.
+
+<pre>
+Example: <b>&lt;group ... faces="yes"/></b> (default)
+Allowed values: <b>yes</b>, <b>no</b> (optional)
+</pre>
+
+<h3>red, green, blue</h3>
+
+Set the color of a polytope group, between black (0.0, 0.0, 0.0)
+and white (1.0, 1.0, 1.0).
+
+<pre>
+Example: <b>&lt;group ... red="0.0" green="1.0" blue="1.0"/></b> (default)
+(defined in <b>GAMGI_MESA_GROUP_R</b>, <b>GAMGI_MESA_GROUP_G</b>
+and <b>GAMGI_MESA_GROUP_B</b>)
+Allowed values: <b>0.0</b> - <b>1.0</b> (optional, coupled)
+</pre>
+
+<h3>scale</h3>
+
+Change the group size, including its child objects.The visual representation
+of an object is always scaled by its own scale factor multiplied by the scale
+factor of all its parent objects until layer, inclusive.
+
+<p/>
+
+<b>Polytope</b> groups are scaled around the group center, while
+<b>Container</b> groups are scaled around the viewport center. This happens
+because <b>Polytope</b> groups have a geometric center, defined by the
+polyhedra, while <b>Container</b> groups may have only atoms, and using its
+geometric center as the scaling center has the weird effect that moving one
+atom changes the visual representation of the other atoms, because the
+scaling center and thus the scaling transformation has changed!
+
+<pre>
+Example: <b>&lt;group ... scale="1.0"/></b> (default)
+(defined in <b>GAMGI_MESA_SCALE</b>)
+Allowed values: positive real (optional)
+</pre>
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

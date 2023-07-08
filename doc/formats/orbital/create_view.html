@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Formats: Orbital Create</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Orbital Create</h1>
+
+<div id="notebook">
+<ul>
+<li><a href="create_type.html">Type</a></li>
+<li><a href="create_scope.html">Scope</a></li>
+<li><a href="create_volume.html">Volume</a></li>
+<li><a href="create_position.html">Position</a></li>
+<li><span>View</span></li>
+</ul>
+</div>
+
+<div class="contents">
+
+<h3>base_r, base_g, base_b</h3>
+
+Set here the r, g, b color components of the orbital, from black
+(0.0, 0.0, 0.0) to white (1.0, 1.0, 1.0), when the wavefunction
+is positive.
+
+When <b>phase</b> is <b>no</b> these r, g, b components
+are used to color the whole orbital.
+
+<pre>
+Example: <b>&lt;orbital ... base_r="1.0" base_g="0.5" base_b="0.0"/></b> (default)
+(defined in <b>GAMGI_MESA_ORBITAL_BASE_R</b>, <b>GAMGI_MESA_ORBITAL_BASE_G</b>
+and <b>GAMGI_MESA_ORBITAL_BASE_B</b>)
+Allowed values: real (optional, coupled)
+</pre>
+
+<h3>phase_r, phase_g, phase_b</h3>
+
+Set here the r, g, b color components of the orbital, from black
+(0.0, 0.0, 0.0) to white (1.0, 1.0, 1.0), when the wavefunction
+is negative.
+
+When <b>phase</b> is <b>no</b> the whole orbital
+is colored using only the base r, g, b components.
+
+<pre>
+Example: <b>&lt;orbital ... base_r="0.5" base_g="0.5" base_b="1.0"/></b> (default)
+(defined in <b>GAMGI_MESA_ORBITAL_PHASE_R</b>, <b>GAMGI_MESA_ORBITAL_PHASE_G</b>
+and <b>GAMGI_MESA_ORBITAL_PHASE_B</b>)
+Allowed values: real (optional, coupled)
+</pre>
+
+<h3>frame_r, frame_g, frame_b</h3>
+
+Set here the r, g, b color components of the orbital frame,
+from black (0.0, 0.0, 0.0) to white (1.0, 1.0, 1.0).
+
+When <b>frame</b> is <b>no</b> the frame r, g, b
+components are ignored.
+
+<pre>
+Example: <b>&lt;orbital ... base_r="1.0" base_g="1.0" base_b="1.0"/></b> (default)
+(defined in <b>GAMGI_MESA_ORBITAL_FRAME_R</b>, <b>GAMGI_MESA_ORBITAL_FRAME_G</b>
+and <b>GAMGI_MESA_ORBITAL_FRAME_B</b>)
+Allowed values: real (optional, coupled)
+</pre>
+
+<h3>scale</h3>
+
+Change the orbital size, including its child objects. Orbital objects are
+scaled around the orbital center. The visual representation of an object
+is always scaled by its own scale factor multiplied by the scale factor
+of all its parent objects until layer, inclusive.
+
+<pre>
+Example: <b>&lt;orbital ... scale="1.0"/></b> (default)
+(defined in <b>GAMGI_MESA_SCALE</b>)
+Allowed values: positive real (optional)
+</pre>
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

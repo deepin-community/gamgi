@@ -1,0 +1,112 @@
+###########################################
+#
+# $GAMGI/src/make_local
+#
+# Copyright (C) 2004, 2008 Carlos Pereira
+#
+# Distributed under the terms of the GNU
+# General Public License: $GAMGI/LICENSE
+#
+
+#===============================================================================
+#                   insert your local library paths 
+#                                 or 
+#                uncomment usual configurations below
+#===============================================================================
+
+#=============================== Linux xf86 ====================================
+#                 Debian, Fedora, Ubuntu, OpenSuse, Mageia
+#===============================================================================
+
+ARCH = x86_64-linux-gnu
+
+PATH_EXPAT_H = -I/usr/include
+PATH_FREETYPE_H = -I/usr/include/freetype2
+PATH_HARFBUZZ_H = -I/usr/include/harfbuzz
+PATH_X_H = -I/usr/include/X11
+PATH_GLIB_H = -I/usr/include/glib-2.0 -I/usr/lib/$(ARCH)/glib-2.0/include
+PATH_CAIRO_H = -I/usr/include/cairo
+PATH_PANGO_H = -I/usr/include/pango-1.0
+PATH_PIXBUFF_H = -I/usr/include/gdk-pixbuf-2.0
+PATH_ATK_H = -I/usr/include/atk-1.0
+PATH_GTK_H =  -I/usr/include/gtk-2.0 -I/usr/lib/$(ARCH)/gtk-2.0/include
+PATH_MESA_H = -I/usr/include
+PATH_GTKGL_H = -I/usr/include/gtkglext-1.0 -I/usr/lib/$(ARCH)/gtkglext-1.0/include/
+
+PATH_EXPAT_L = -L/usr/lib
+PATH_FREETYPE_L = -L/usr/lib
+PATH_HARFBUZZ_L = -L/usr/lib
+PATH_X_L = -L/usr/lib
+PATH_GLIB_L = -L/usr/lib
+PATH_CAIRO_L = -L/usr/lib
+PATH_PANGO_L = -L/usr/lib
+PATH_PIXBUFF_L = -L/usr/lib
+PATH_ATK_L = -L/usr/lib
+PATH_GTK_L =  -L/usr/lib
+PATH_MESA_L = -L/usr/lib
+PATH_GTKGL_L =-L/usr/lib
+
+#============================== Linux amd64 ====================================
+#                 Debian, Fedora, Ubuntu, OpenSuse, Mageia
+#===============================================================================
+
+# PATH_EXPAT_H = -I/usr/include
+# PATH_FREETYPE_H = -I/usr/include/freetype2
+# PATH_X_H = -I/usr/include/X11
+# PATH_GLIB_H = -I/usr/include/glib-2.0 \
+#	-I/usr/lib64/glib-2.0/include \
+#	-I/usr/lib/i386-linux-gnu/glib-2.0/include \
+#	-I/usr/lib/x86_64-linux-gnu/glib-2.0/include
+# PATH_CAIRO_H = -I/usr/include/cairo
+# PATH_PANGO_H = -I/usr/include/pango-1.0
+# PATH_ATK_H = -I/usr/include/atk-1.0
+# PATH_GTK_H =  -I/usr/include/gtk-2.0 -I/usr/include/gdk-pixbuf-2.0 \
+#	-I/usr/lib64/gtk-2.0/include \
+#	-I/usr/lib/i386-linux-gnu/gtk-2.0/include \
+#	-I/usr/lib/x86_64-linux-gnu/gtk-2.0/include
+# PATH_MESA_H = -I/usr/include
+# PATH_GTKGL_H = -I/usr/include/gtkglext-1.0 -I/usr/lib64/gtkglext-1.0/include
+#
+# PATH_EXPAT_L = -L/usr/lib64
+# PATH_FREETYPE_L = -L/usr/lib64
+# PATH_X_L = -L/usr/lib64
+# PATH_GLIB_L = -L/usr/lib64
+# PATH_CAIRO_L = -L/usr/lib64
+# PATH_PANGO_L = -L/usr/lib64
+# PATH_ATK_L = -L/usr/lib64
+# PATH_GTK_L =  -L/usr/lib64
+# PATH_MESA_L = -L/usr/lib64
+# PATH_GTKGL_L =-L/usr/lib64
+
+#================================= OpenBSD =====================================
+#
+# PATH_EXPAT_H = -I/usr/X11R6/include
+# PATH_FREETYPE_H = -I/usr/X11R6/include/freetype2
+# PATH_X_H = -I/usr/X11R6/include
+# PATH_GLIB_H = I/usr/local/include/glib-2.0 -I/usr/local/lib/glib-2.0/include
+# PATH_CAIRO_H = -I/usr/local/include/cairo
+# PATH_PANGO_H = -I/usr/local/include/pango-2.0
+# PATH_ATK_H = -I/usr/local/include/atk-2.0
+# PATH_GTK_H =  -I/usr/local/include/gtk-2.0 -I/usr/local/lib/gtk-2.0/include \
+#	-I/usr/include/gdk-pixbuf-2.0/
+# PATH_MESA_H = -I/usr/X11R6/include/GL
+# PATH_GTKGL_H = -I/usr/local/include/gtkglext-1.0 \
+#	-I/usr/local/lib/gtkglext-1.0/include
+#
+# PATH_EXPAT_L = -L/usr/X11R6/lib
+# PATH_FREETYPE_L = -L/usr/X11R6/lib
+# PATH_X_L = -L/usr/X11R6/lib
+# PATH_GLIB_L = -L/usr/local/lib
+# PATH_CAIRO_L = -L/usr/local/lib
+# PATH_PANGO_L = -L/usr/local/lib
+# PATH_ATK_L = -L/usr/local/lib
+# PATH_GTK_L = -L/usr/local/lib
+# PATH_MESA_L = -L/usr/X11R6/lib
+# PATH_GTKGL_L = -L/usr/local/lib
+#
+#======================== Mac OS X 1.03 / MacPort  =============================
+#
+#======================== Mac OS X 1.03 / Fink =================================
+#
+#======================== Linux Yellow Dog ppc =================================
+#

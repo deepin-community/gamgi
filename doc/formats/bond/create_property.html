@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Formats: Bond Create</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Bond Create</h1>
+
+<div id="notebook">
+<ul>
+<li><a href="create_type.html">Type</a></li>
+<li><span>Property</span></li>
+<li><a href="create_view.html">View</a></li>
+</ul>
+</div>
+
+<div class="contents">
+
+<h3>covalency</h3>
+
+Specifies the degree of covalent character of a bond. 
+A fully ionic bond might have covalency equal to <b>0.0</b>,
+while a fully covalent bond might have covalency equal to <b>1.0</b>.
+
+<pre>
+Example: <b>&lt;bond ... covalency="0.5"/></b> (no default)
+Allowed values: positive real (optional)
+</pre>
+
+<h3>order</h3>
+
+Specifies the bond order, <b>1.0</b> for a single bond, <b>2.0</b> 
+for a double bond, <b>3.0</b> for a triple bond and <b>1.5</b> for 
+a benzene aromatic bond.
+
+<p/>
+
+In <b>wired</b> mode, single, double and triple bonds are
+described by one, two and three paralel lines, respectively.
+In <b>solid</b> mode, a single bond is described by a cylinder,
+a double bond has two additional cylinders coming slightly
+outside of the central cylinder, opposite to each other, 
+and a triple bond has two more additional cylinders, all 
+four making angles of 90 degrees between them.
+
+<pre>
+Example: <b>&lt;bond ... order="1.0"/></b> (default)
+Allowed values: positive real (optional)
+</pre>
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

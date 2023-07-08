@@ -1,0 +1,29 @@
+<!-- - - - - - - - - - - - - - - - - - - - 
+ |                                        |
+ | $GAMGI/doc/dtd/gml.dtd                 |
+ |                                        |
+ | Copyright (C) 2001 Carlos Pereira      |
+ |                                        |
+ | Distributed under the terms of the GNU |
+ | General Public License: $GAMGI/LICENSE |
+ |                                        |
+ - - - - - - - - - - - - - - - - - - - - -->
+
+<!-- GAMGI Markup Language (GML) DTD -->
+
+<!-- DTD rules to handle config information -->
+<!ENTITY % gml_config SYSTEM "gml_config.dtd">
+
+<!-- DTD rules to handle data information -->
+<!ENTITY % gml_data SYSTEM "gml_object.dtd">
+
+<!-- root element: gml -->
+<!ELEMENT gml (gamgi* | window* | layer* | light* | assembly* |
+graph* | shape* | arrow* | cell* | cluster* | molecule* | group* | 
+plane* | direction* | atom* | bond* | orbital* | text* | help*)>
+
+<!-- config mode: inside a <gamgi></gamgi> block -->
+%gml_config;
+
+<!-- data mode : outside a <gamgi></gamgi> block -->
+%gml_object;

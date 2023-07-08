@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE gml SYSTEM "http://www.gamgi.org/dtd/gamgi.dtd">
+<gml>
+  <gamgi>
+    <light shininess="0.5000"/>
+    <atom style="solid" size="0.50" variancy="1.00" slices="30"/>
+    <bond style="solid" size="0.30" color="yes" red="0.700" green="0.700"
+    blue="0.700"/>
+  </gamgi>
+  <layer perspective="no" red="0.500" green="0.700" blue="1.000" scale="1.369">
+    <light ambient_r="0.500" ambient_g="0.500" ambient_b="0.500"
+    diffuse_r="0.400" diffuse_g="0.400" diffuse_b="0.400" specular_r="0.300"
+    specular_g="0.300" specular_b="0.300" direction_x="-0.5494"
+    direction_y="0.3260" direction_z="-0.7693"/>
+    <molecule name="NbO6-GeO4" scale="0.892">
+      <atom id="1" element="O" x="-0.5484" y="-0.3288" z="1.2414"/>
+      <atom id="2" element="O" x="-4.4476" y="-0.1516" z="0.3682"/>
+      <atom id="3" element="O" x="-2.9379" y="-0.9343" z="2.6282"/>
+      <atom id="4" element="O" x="-2.0580" y="0.4540" z="-1.0184"/>
+      <atom id="5" element="O" x="-2.5688" y="1.6334" z="1.5011"/>
+      <atom id="6" element="O" x="-2.4272" y="-2.1138" z="0.1086"/>
+      <atom id="7" element="Nb" x="-2.4981" y="-0.2402" z="0.8050" red="0.450"
+      green="1.000" blue="0.790"/>
+      <atom id="8" element="Ge" x="-5.8247" y="0.8439" z="0.4197" red="1.000"
+      green="1.000" blue="0.560"/>
+      <atom id="9" element="O" x="-6.3004" y="1.0716" z="2.0360"/>
+      <atom id="10" element="O" x="-7.1555" y="0.0055" z="-0.2253"/>
+      <atom id="11" element="O" x="-5.6084" y="2.1665" z="-0.6259"/>
+      <atom id="12" element="Ge" x="0.9983" y="-0.5903" z="0.5807" red="0.000"
+      green="0.000" blue="1.000"/>
+      <atom id="13" element="O" x="2.1684" y="-0.4288" z="1.8064"/>
+      <atom id="14" element="O" x="1.2809" y="0.5246" z="-0.6651"/>
+      <atom id="15" element="O" x="1.1028" y="-2.1859" z="0.0027"/>
+      <atom id="16" element="O" x="-2.1788" y="2.6394" z="0.1873"
+      scale="0.236"/>
+      <atom id="17" element="O" x="-3.1970" y="-2.3484" z="-1.3889"
+      scale="0.236"/>
+      <atom id="18" element="O" x="1.9754" y="-1.9396" z="-1.4353"
+      scale="0.182"/>
+      <atom id="19" element="O" x="0.7793" y="1.4877" z="-1.9731"
+      scale="0.142"/>
+      <atom id="20" element="O" x="-7.5485" y="-0.5075" z="-1.7977"
+      scale="0.246"/>
+      <atom id="21" element="O" x="-7.1178" y="0.9682" z="0.5491"
+      scale="0.259"/>
+      <atom id="22" element="O" x="-6.3912" y="2.5963" z="-2.0725"
+      scale="0.230"/>
+      <atom element="K" x="-0.9095" y="1.9758" z="0.5267"/>
+      <atom id="23" element="O" x="-3.3598" y="-2.1260" z="3.7647" red="0.700"
+      green="0.700" blue="0.700" scale="0.289"/>
+      <atom id="24" element="O" x="-1.5082" y="0.7689" z="-2.5959"
+      scale="0.295"/>
+      <atom id="25" element="O" x="3.8630" y="-1.3846" z="3.8562"/>
+      <atom id="26" element="O" x="3.5869" y="1.3979" z="3.4304"/>
+      <atom id="27" name="C" element="O" x="2.2448" y="-1.2192" z="4.3500"
+      scale="0.026"/>
+      <atom id="28" element="O" x="4.5800" y="-1.7252" z="1.1580"/>
+      <atom id="29" element="O" x="6.0112" y="0.0997" z="2.7693"/>
+      <atom element="K" x="6.3635" y="-1.5829" z="1.0750"/>
+      <atom id="30" element="O" x="3.4778" y="-2.1915" z="-0.0494"
+      scale="0.105"/>
+      <atom id="31" element="O" x="3.1051" y="2.6268" z="2.3591" scale="0.048"/>
+      <atom id="32" element="O" x="4.3135" y="1.0548" z="0.7186"/>
+      <atom id="33" element="Nb" x="4.0881" y="-0.1648" z="2.2874" red="0.450"
+      green="1.000" blue="0.790"/>
+      <atom id="34" element="O" x="5.3468" y="2.3656" z="0.3962" scale="0.062"/>
+      <atom id="35" element="O" x="7.2730" y="1.1011" z="3.3121" scale="0.042"/>
+      <bond parent1="1" parent2="3" style="wired"/>
+      <bond parent1="1" parent2="5" style="wired"/>
+      <bond parent1="1" parent2="6" style="wired"/>
+      <bond parent1="1" parent2="7"/>
+      <bond parent1="1" parent2="12"/>
+      <bond parent1="1" parent2="13" style="wired"/>
+      <bond parent1="1" parent2="14" style="wired"/>
+      <bond parent1="1" parent2="15" style="wired"/>
+      <bond parent1="2" parent2="3" style="wired"/>
+      <bond parent1="2" parent2="5" style="wired"/>
+      <bond parent1="2" parent2="6" style="wired"/>
+      <bond parent1="2" parent2="7"/>
+      <bond parent1="2" parent2="8"/>
+      <bond parent1="2" parent2="9" style="wired"/>
+      <bond parent1="2" parent2="10" style="wired"/>
+      <bond parent1="2" parent2="11" style="wired"/>
+      <bond parent1="3" parent2="5" style="wired"/>
+      <bond parent1="3" parent2="6" style="wired"/>
+      <bond parent1="3" parent2="7"/>
+      <bond parent1="3" parent2="23"/>
+      <bond parent1="4" parent2="7"/>
+      <bond parent1="4" parent2="24"/>
+      <bond parent1="5" parent2="7"/>
+      <bond parent1="5" parent2="16"/>
+      <bond parent1="6" parent2="7"/>
+      <bond parent1="6" parent2="17"/>
+      <bond parent1="8" parent2="9"/>
+      <bond parent1="8" parent2="10"/>
+      <bond parent1="8" parent2="11"/>
+      <bond parent1="9" parent2="10" style="wired"/>
+      <bond parent1="9" parent2="11" style="wired"/>
+      <bond parent1="9" parent2="21"/>
+      <bond parent1="10" parent2="20"/>
+      <bond parent1="11" parent2="22"/>
+      <bond parent1="12" parent2="13"/>
+      <bond parent1="12" parent2="14"/>
+      <bond parent1="12" parent2="15"/>
+      <bond parent1="13" parent2="14" style="wired"/>
+      <bond parent1="13" parent2="15" style="wired"/>
+      <bond parent1="13" parent2="25" style="wired"/>
+      <bond parent1="13" parent2="26" style="wired"/>
+      <bond parent1="13" parent2="28" style="wired"/>
+      <bond parent1="13" parent2="32" style="wired"/>
+      <bond parent1="13" parent2="33"/>
+      <bond parent1="14" parent2="19"/>
+      <bond parent1="15" parent2="18"/>
+      <bond parent1="25" parent2="26" style="wired"/>
+      <bond name="OC" parent1="25" parent2="27"/>
+      <bond parent1="25" parent2="28" style="wired"/>
+      <bond parent1="25" parent2="29" style="wired"/>
+      <bond parent1="25" parent2="33"/>
+      <bond parent1="26" parent2="29" style="wired"/>
+      <bond parent1="26" parent2="31"/>
+      <bond parent1="26" parent2="32" style="wired"/>
+      <bond parent1="26" parent2="33"/>
+      <bond parent1="28" parent2="29" style="wired"/>
+      <bond parent1="28" parent2="30"/>
+      <bond parent1="28" parent2="32" style="wired"/>
+      <bond parent1="28" parent2="33"/>
+      <bond parent1="29" parent2="32" style="wired"/>
+      <bond parent1="29" parent2="33"/>
+      <bond parent1="29" parent2="35"/>
+      <bond parent1="32" parent2="33"/>
+      <bond parent1="32" parent2="34"/>
+    </molecule>
+    <molecule name="new" scale="0.928"/>
+    <text contents="K" style="solid" x="0.1325" y="1.9163" z="3.1816"
+    e1="6.85" e2="301.24" e3="60.50" red="1.000" green="1.000" blue="1.000"
+    scale="0.600"/>
+    <text contents="+" style="solid" x="0.3346" y="2.2335" z="3.5843"
+    e1="7.13" e2="300.14" e3="61.51" red="1.000" green="1.000" blue="1.000"
+    scale="0.400"/>
+    <text contents="O" style="solid" x="-6.5402" y="-0.9161" z="-2.0120"
+    e1="7.13" e2="300.14" e3="61.51" red="1.000" green="1.000" blue="1.000"
+    scale="0.600"/>
+    <text contents="2-" style="solid" x="-6.3028" y="-0.6493" z="-1.6806"
+    e1="7.18" e2="300.87" e3="60.63" red="1.000" green="1.000" blue="1.000"
+    scale="0.400"/>
+    <text contents="Nb" style="solid" x="3.9310" y="0.0656" z="4.9983"
+    e1="7.13" e2="300.14" e3="61.51" red="1.000" green="1.000" blue="1.000"
+    scale="0.600"/>
+    <text contents="5+" style="solid" x="4.4503" y="0.4078" z="-0.3701"
+    e1="7.13" e2="300.14" e3="61.51" red="1.000" green="1.000" blue="1.000"
+    scale="0.400"/>
+    <text contents="Si" style="solid" x="-4.6043" y="0.8114" z="0.1858"
+    e1="7.13" e2="300.14" e3="61.51" red="1.000" green="1.000" blue="1.000"
+    scale="0.600"/>
+    <text contents="4+" style="solid" x="-4.3502" y="1.2140" z="0.5221"
+    e1="7.13" e2="300.14" e3="61.51" red="1.000" green="1.000" blue="1.000"
+    scale="0.400"/>
+    <text contents="Ge" style="solid" x="-0.9409" y="-1.7123" z="0.5841"
+    e1="7.25" e2="299.77" e3="62.15" red="1.000" green="1.000" blue="1.000"
+    scale="0.600"/>
+    <text contents="4+" style="solid" x="-0.3849" y="-1.3701" z="0.9059"
+    e1="7.13" e2="300.14" e3="61.51" red="1.000" green="1.000" blue="1.000"
+    scale="0.400"/>
+  </layer>
+</gml>

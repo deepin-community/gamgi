@@ -1,0 +1,16 @@
+<gml>
+<molecule name="Benzene">
+<atom element="C" x=".00000" y="-1.61294" z=".00000"/>
+<atom element="C" x="-1.20003" y="-.90199" z=".00000"/>
+<atom element="C" x="-1.18751" y=".48167" z=".00000"/>
+<atom element="C" x=".00000" y="1.17367" z=".00000"/>
+<atom element="C" x="1.18751" y=".48167" z=".00000"/>
+<atom element="C" x="1.20003" y="-.90199" z=".00000"/>
+<atom element="H" x=".00000" y="-2.45000" z=".00000"/>
+<atom element="H" x="-2.02929" y="-1.37546" z=".00000"/>
+<atom element="H" x="-2.00875" y=".95868" z=".00000"/>
+<atom element="H" x="2.00875" y=".95800" z=".00000"/>
+<atom element="H" x="2.02929" y="-1.37500" z=".00000"/>
+<atom element="H" x=".00000" y="2.11300" z=".00000"/>
+</molecule>
+</gml>

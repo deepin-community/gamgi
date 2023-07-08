@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Tutorials: Interstices in the CFC structure</title>
+<link rel="icon" type="image/png" href="../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Interstices in the CFC structure</h1>
+
+<div id="notebook">
+<ul>
+<li><a href="interstices_cfc_page1.html">Page 1</a></li>
+<li><span>Page 2</span></li>
+</ul>
+</div>
+
+<div class="contents">
+
+<h3>Tetrahedral interstices</h3>
+
+<ol>
+<li>
+Press <b>Cell->Remove</b> and click the mouse over the cell, to remove it.
+Otherwise, just scale it down and move it away from the center, to economize 
+space. This way, the two cells containing octahedral and tetrahedral 
+interstices can be compared later.
+</li>
+
+<li>
+Press <b>Cell->Create</b> and set <b>System</b> to <b>c</b>,
+<b>Lattice</b> to <b>F</b> (Face-Centered Cubic) and <b>a</b>
+to <b>2.828</b> (so the structural atoms will be in contact
+along &lt;110&gt; directions). Press <b>Ok</b> to create the cell.
+</li>
+
+<li>
+Press <b>Atom->Modify</b> and click the mouse over the interstitial 
+atom, to select it. Change its <b>Radius</b> to <b>0.225</b>, the size   
+of the CFC tetrahedral interstices and press <b>Ok</b>.                    
+</li>
+
+<li>
+Press <b>Cell->Link</b> and select the <b>Crystal</b> link method.
+Press the mouse over the cell, and then over the interstitial atom,
+to identify the objects to link. Set <b>x</b>, <b>y</b>, <b>z</b>
+coordinates (<b>Position</b> page) to <b>0.25</b>, <b>0.25</b>,
+<b>0.25</b> and press <b>Ok</b>. 4 interstitial atoms are now visible,
+corresponding to 4 interstices inside the cell or 1/2 of the tetrahedral 
+interstices available.</li>
+
+<li>
+Repeat the procedure above with <b>x</b>, <b>y</b>, <b>z</b> coordinates set
+to <b>0.75</b>, <b>0.75</b>, <b>0.75</b> to allocate the remaining interstices. 
+8 interstitial atoms are now visible, centered in the octant cubes, corresponding 
+to a total of 8 tetrahedral interstices inside the cell.
+</li>
+
+<li>
+To represent the structural atoms, repeat the linking procedure above,
+but this time pressing the mouse over the Cu structural atom, to identify
+the linked atom, and setting <b>x</b>, <b>y</b>, <b>z</b> coordinates
+to <b>0.0</b>, <b>0.0</b>, <b>0.0</b>. 14 structural atoms are now visible,
+8 in the vertices and 6 centered in the faces, corresponding to a total
+of 4 atoms inside the cell.
+</li>
+
+<li>
+To remove the Cu,C atoms used as models during the building process,
+press <b>Atom->Remove</b> and click the mouse over them.
+</li>
+
+<li>
+Rotate,move,scale the cell with the mouse. To have a better view inside
+the cell, remove some of the structural atoms outside. Select
+<b>Atom->Remove</b> and press the mouse over the atoms to remove.
+</li>
+</ol>
+
+</div>
+
+<div id="bottom">
+<a href="../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

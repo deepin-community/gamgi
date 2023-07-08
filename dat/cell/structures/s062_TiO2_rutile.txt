@@ -1,0 +1,28 @@
+Structure 62
+Prototype: TiO2 (Rutile)
+StrukturBericht / Pearson: C4 / tP6
+
+Lattice parameter:
+TiO2
+4.537 2.958
+
+Radius:
+Ti4+: 0.6050 (Shannon radius for charge +4 coordination 6)
+O2-: 1.36 (Shannon radius for charge -2 coordination 3)
+
+1. Building with space group (s062a.xml):
+Group: 136
+
+Wyckoff positions:
+Ti 2a
+O 4f, x = 0.3053
+
+Cells: 1 x 1 x 2
+
+2. Building with polytopes (s062b.xml):
+Cell Link: Cutoff Nodes
+Group Create: Local, O, 6
+
+View:
+Ti,O: style solid, size 1.0, variancy 1.0, scale 0.3
+TiO: style solid, method length, size 0.1, scale 1.0

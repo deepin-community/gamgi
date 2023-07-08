@@ -1,0 +1,11 @@
+To check the result:
+	groff -man -Tascii page | less
+
+To install:
+	gzip page
+	cp page.gz /usr/share/man/man1/gamgi.1.gz
+	man gamgi
+
+To produce a postcript version:
+	groff -man page > page.ps
+

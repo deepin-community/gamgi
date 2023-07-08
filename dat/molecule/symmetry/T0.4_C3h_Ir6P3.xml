@@ -1,0 +1,13 @@
+<gml>
+<molecule name="Ir6P3">
+<atom element="Ir" x="1.49000" y="-1.80760" z="-0.12816"/>
+<atom element="Ir" x="1.49600" y="1.00837" z="-1.59734"/>
+<atom element="Ir" x="1.49000" y="0.79922" z="1.72550"/>
+<atom element="Ir" x="-1.49000" y="-1.80760" z="-0.12816"/>
+<atom element="Ir" x="-1.49000" y="1.00837" z="-1.59734"/>
+<atom element="Ir" x="-1.49600" y="0.79922" z="1.72550"/>
+<atom element="P" x="0.00000" y="2.63688" z="-2.70556"/>
+<atom element="P" x="0.00000" y="0.84600" z="3.70396"/>
+<atom element="P" x="0.00000" y="-3.58145" z="-1.00118"/>
+</molecule>
+</gml>

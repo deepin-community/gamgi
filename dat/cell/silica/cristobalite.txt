@@ -1,0 +1,25 @@
+SiO2 - Cristobalite (beta)
+Lattice parameters:
+7.16
+
+Radius:
+Si 1.1760 (half-distance)
+O: 0.6037 (half-distance)
+
+Space group: 227
+
+Wyckoff positions:
+Si 2a
+O  4c
+
+Cristobalite_111.xml:
+Cells: 1 x 1 x 1
+Change: -0.125, -0.125, -0.125
+
+Cristobalite_222.xml:
+Cells: 2 x 2 x 2
+
+Cutoff: Nodes
+Polytopes: Neighbours 4
+
+Source: http://www.minweb.co.uk/quartz/bcridata.html

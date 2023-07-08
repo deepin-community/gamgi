@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Formats: Layer Create</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/notebook.css"/>
+</head>
+
+<body>
+<h1>Layer Create</h1>
+
+<div id="notebook">
+<ul>
+<li><a href="create_projection.html">Projection</a></li>
+<li><span>Position</span></li>
+<li><a href="create_visibility.html">Visibility</a></li>
+<li><a href="create_view.html">View</a></li>
+</ul>
+</div>
+
+<div class="contents">
+
+<h3>eye_x, eye_y, eye_z</h3>
+
+Define the observer position in the layer space. The distance from 
+<b>eye</b> to <b>center</b> must be in the <b>near</b>-<b>far</b> range. 
+When not indicated, GAMGI uses default values. To change the default, 
+select <b>Layer->Config</b> and read <b>Help->Topics->Formats->Config->Layer</b>.
+
+<pre>
+Example: <b>&lt;layer ... eye_x="0.0" eye_y="0.0" eye_z="10.0"/></b> (default)
+(defined in <b>GAMGI_MESA_LAYER_EYE_X</b>, <b>GAMGI_MESA_LAYER_EYE_Y</b> 
+and <b>GAMGI_MESA_LAYER_EYE_Z</b>)
+Allowed values: real (optional, coupled)
+</pre>
+
+<h3>center_x, center_y, center_z</h3>
+
+Define the position to where the observer is looking in the layer space. 
+The distance from <b>eye</b> to <b>center</b> must be in the 
+<b>near</b>-<b>far</b> range. When not indicated, GAMGI uses default 
+values. To change the default, select <b>Layer->Config</b> and read 
+<b>Help->Topics->Formats->Config->Layer</b>.
+
+<pre>
+Example: <b>&lt;layer ... center_x="0.0" center_y="0.0" center_z="0.0"/></b> (default)
+(defined in <b>GAMGI_MESA_LAYER_CENTER_X</b>, <b>GAMGI_MESA_LAYER_CENTER_Y</b> 
+and <b>GAMGI_MESA_LAYER_CENTER_Z</b>)
+Allowed values: real (optional, coupled)
+</pre>
+
+<h3>up_x, up_y, up_z</h3>
+
+Define the up direction, relative to the observer, in the layer space. 
+When not indicated, GAMGI uses default values. To change the default, 
+select <b>Layer->Config</b> and read 
+<b>Help->Topics->Formats->Config->Layer</b>.
+
+<pre>
+Example: <b>&lt;layer ... up_x="0.0" up_y="1.0" up_z="0.0"/></b> (default)
+(defined in <b>GAMGI_MESA_LAYER_UP_X</b>, <b>GAMGI_MESA_LAYER_UP_Y</b>
+and <b>GAMGI_MESA_LAYER_UP_Z</b>)
+Allowed values: non-zero real (optional, coupled)
+</pre>
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>

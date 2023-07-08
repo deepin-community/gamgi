@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<title>GAMGI Interfaces: Plane Modify</title>
+<link rel="icon" type="image/png" href="../../icon/gamgi16.png"/>
+<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/notebook.css"/>
+</head>
+
+<body>
+
+<h1>Plane Modify</h1>
+
+<div id="notebook">
+<ul>
+<li><a href="modify_type.html">Type</a></li>
+<li><span>Scope</span></li>
+<li><a href="modify_projection.html">Projection</a></li>
+<li><a href="modify_position.html">Position</a></li>
+<li><a href="modify_view.html">View</a></li>
+</ul>
+</div>
+
+<div class="contents">
+
+Set here the polygon representation and atomic structure for a single plane.
+
+<p/>
+
+To modify a plane, click over its graphic image, or write its identification
+(name and number) on the <b>Plane</b> entry. To modify a list of planes, press
+the button <b>List</b> (after creating the list of planes with <b>Plane->Select</b>).
+Parameters for empty entries or <b>Local</b> choices remain unchanged.
+
+<p/>
+
+To change a plane name write the new name in the <b>Plane</b> entry,
+followed by the plane number (GAMGI needs the number to identify the plane).
+To change the name for a list of planes, press <b>List</b> first
+and then write the new common name in the <b>Name</b> entry.
+
+<h3>Structure</h3>
+
+It is often useful to recreate in a plane the atomic
+structure existing in the parent object. A list is first
+created, with all the atoms closer to the plane than
+the distance defined by <b>Thickness</b>.
+
+<p/>
+
+When <b>Structure</b> is set to <b>Copy</b>, listed atoms
+are copied to the atomic or crystallographic plane just created.
+
+When <b>Structure</b> is set to <b>Link</b>, listed atoms
+are linked to the atomic or crystallographic plane just created.
+
+When <b>Structure</b> is set to <b>None</b>, only a polygonal
+representation of the plane is created, without atoms.
+
+<h3>Filter</h3>
+
+After collecting a list of atoms close enough to the plane,
+a filtering condition may be applied. This can be very useful
+to avoid atom superposition, resulting for example from atoms
+copied before to different planes.
+
+<p/>
+
+When <b>Filter</b> is set to <b>Class</b>,
+atoms belonging to another planes are ignored.
+
+When <b>Filter</b> is set to <b>Child</b>, atoms not
+belonging directly to the plane parent are ignored.
+
+When <b>Filter</b> is set to <b>Identical</b>, atoms
+closer than a given distance (currently <b>1.0E-2</b>,
+as defined in <b>GAMGI_MATH_TOLERANCE_STRUCTURE</b>) to
+a previous atom are ignored.
+
+When <b>Filter</b> is set to <b>None</b>, no filtering
+condition is applied.
+
+<h3>Thickness</h3>
+
+The polygonal representation of the plane is expanded as much as 
+possible, limited by the cell volume, in crystallographic planes, 
+and by the atoms within a <b>Thickness</b> range of the plane 
+defined by the three atoms, in atomic planes.
+
+<h3>Range</h3>
+
+A crystallographic plane does not exist as a single plane, is always
+part of a family of infinite planes, passing through all the lattice 
+nodes, with equal distances between them. Each plane of a family 
+(h k l) intersects the lattice in n/h n/k n/l, where n = 0 means 
+the plane passing through the origin and n = 1 is the usual 
+representation of the plane closest to the origin.
+
+<p/>
+
+The range of planes to create is defined by the values entered near to 
+the buttons <b>Start</b> and <b>End</b>, describing the initial and final 
+values of n. For example, setting <b>Start</b> to <b>-1</b> and <b>End</b> 
+to <b>1</b> creates 3 planes, intersecting the axes in: 1) -1/h -1/k -1/l; 
+2) 0; 3) 1/h 1/k 1/l. By default, only the nearest plane to the origin is 
+considered: <b>Start</b> = <b>1</b> and <b>End</b> = <b>1</b>.
+
+<p/>
+
+Pressing the <b>Start</b> button, the entry is disabled and GAMGI creates 
+automatically all the planes from the beginning of the cell volume to the 
+final plane specified. Pressing the <b>End</b> button, the entry is disabled
+and GAMGI creates automatically all the planes from the end of the cell volume 
+to the first plane specified. When both buttons are pressed, GAMGI creates
+automatically all the planes from the beginning to the end of the cell volume.
+
+<h3>Node</h3>
+
+A plane can also be defined indicating explicitly the coordinates of 
+a node where the plane passes. For each plane family, there is a plane 
+passing through the origin node and as nodes are equivalent, it follows 
+that for any node, there is a plane of any family passing through there. 
+To select the node, press <b>Node</b>, to open a second level dialog.
+
+<h3>O1, O2, O3</h3>
+
+These entries provide the coordinates of the node in the lower-left
+corner of the cell where the plane passes, calculated with conventional
+or primitive cell vectors. When the lattice is primitive or vectors are
+primitive, this corner node becomes the place where the plane passes.
+
+<h3>O4</h3>
+
+When the lattice is centered and vectors are conventional, a fourth 
+coordinate <b>O4</b> is needed to point the centered node where the 
+plane passes. By default, <b>o4</b> is <b>000</b>, so no change is 
+introduced. When the cell lattice is primitive <b>P</b> or the vectors 
+defining the node are primitive, that is the only possible value for 
+<b>o4</b>. For I, C, F, R centered lattices, <b>o4</b> can also take 
+the values:
+
+<pre>
+<b>I</b>: <b>111</b>
+<b>C</b>: <b>110</b>
+<b>F</b>: <b>110</b>, <b>101</b>, <b>011</b>
+<b>R</b>: <b>211</b>, <b>122</b>
+</pre>
+
+corresponding to the numerators of the inner node coordinates,
+(1/2 1/2 1/2) for <b>I</b> lattices, (1/2 1/2 0) for <b>C</b>
+lattices, (0 1/2 1/2) (1/2 0 1/2) (1/2 1/2 0) for <b>F</b>
+lattices and (1/3 2/3 2/3) (2/3 1/3 1/3) for <b>R</b> lattices.
+
+<p/>
+
+After entering the node coordinates, pressing <b>Ok</b> saves the data,
+closes the second level dialog, and disables the range information in
+the first level dialog. Pressing <b>Cancel</b>, the current data in
+both dialogs is maintained and the second level dialog is closed.
+
+<p/>
+
+Pressing <b>Range</b> in the first level dialog, removes the second 
+level data, closes the second level dialog, enables and initializes 
+(if empty) the range data.
+
+<p/>
+
+The vectors used for the node coordinates, <b>Conventional</b>
+or <b>Primitive</b>, are those used to define the plane indices,
+in the <b>Type</b> page, of the first dialog.
+
+<p/>
+
+When adding information in the second level dialog, the cell must
+have been entered before, so GAMGI can check if the node information is
+correct or not. For the same reason, when the <b>Cell</b> or <b>Vectors</b>
+information in the <b>Type</b> page is changed, all the information in the
+second level dialog is automatically discarded, as it might be wrong.
+
+</div>
+
+<div id="bottom">
+<a href="../../index.shtml">Home</a>
+</div>
+
+</body>
+</html>
